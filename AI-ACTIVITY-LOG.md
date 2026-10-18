@@ -47,6 +47,21 @@ This file is the **shared local memory and handoff log** across all AI assistant
 
 <!-- AI_LOG_FEED_START -->
 
+### [2026-10-19 07:37] COMPLETED — Draw vocab pictures for Units 1 and 2 (all 97 terms now illustrated)
+- **AI Assistant:** WorkBuddy
+- **Status:** COMPLETED
+- **Files Touched:** vocab/tools/draw_icons.py, vocab/images/*.svg (52 new), vocab/data/vocab.csv, course/vocab/01-ancient-river-civilizations.yml, course/vocab/02-classical-mediterranean.yml, course/units/01-*/images/, course/units/02-classical-mediterranean/images/, TOOL-CHANGES.md
+- **Notes:** Closed the picture gap: 52 new flat-style SVGs (RIV-001..036, GRC-014..019, ROM-013..020, ECO-001..002) plus 8 reusable helpers in draw_icons.py; every one of the 97 vocab rows now has an image column and validate.py reports 97 rows, 0 warnings. Re-ran import_vex_vocab.py for units 1 and 2 (images copied into both unit folders) and rebuilt both unit packets. Also fixed the 'missing fonts' warnings: root cause was three unsupported glyphs (PENCIL U+270E x12, LONG LEFT RIGHT ARROW U+27F7 x4, BLACK NIB U+2712 x1) reaching printable output and falling back to macOS .Keyboard/LastResort; swapped them for covered characters (none of the bundled fonts contains any pen or timer glyph, so those became words). All 13 rendered PDFs now embed zero OS fallback fonts. Note: draw_icons.py still writes its DIAGRAMS output to the stale course/units/02-ancient-rome/ folder - left for Nathan to decide.
+### [2026-10-18 23:58] COMPLETED — Create technical growth report script and NotebookLM dossier
+- **AI Assistant:** Antigravity (Gemini)
+- **Status:** COMPLETED
+- **Files Touched:** scripts/growth_report.py, docs/CHALKLINE-GROWTH-DOSSIER.md, TOOL-CHANGES.md
+- **Notes:** Built scripts/growth_report.py to automatically inspect git history, diffs against clone commit b1a200e, vocab domains, and architectural modifications; generated docs/CHALKLINE-GROWTH-DOSSIER.md ready for NotebookLM ingestion.
+### [2026-10-18 23:51] COMPLETED — Add recursive SOP check protocol across all AI instruction files
+- **AI Assistant:** Antigravity
+- **Status:** COMPLETED
+- **Files Touched:** CLAUDE.md, AGENTS.md, GEMINI.md, AI-ACTIVITY-LOG.md, scripts/ai_log.py, TOOL-CHANGES.md
+- **Notes:** Added Rule 6 requiring all AI assistants to recursively re-read CLAUDE.md and AI-ACTIVITY-LOG.md from disk before every new task and before handoff; updated scripts/ai_log.py show to print live CLAUDE.md last-modified timestamp.
 ### [2026-10-18 23:49] COMPLETED — Build Unit 2: Classical Mediterranean Foundations (Greece & Rome)
 - **AI Assistant:** WorkBuddy
 - **Status:** COMPLETED

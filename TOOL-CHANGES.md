@@ -16,6 +16,41 @@ Newest entries first.
 - **AI assistant:** which one made the change.
 -->
 
+## 2026-10-19: Draw the missing vocab pictures for Units 1 and 2 (`vocab/tools/draw_icons.py`)
+- **Asked for:** "Create image links for both unit 1 and 2 vocab terms in chalkline."
+- **Why:** Only 45 of the 97 rows in `vocab/data/vocab.csv` had a picture. The gap was almost entirely Unit 1: all 36 `RIV` terms (Ancient River Civilizations) had none, plus the 14 Unit 2 terms added in the previous task (`GRC-014`–`019`, `ROM-013`–`020`) and the 2 `ECO` words. So {{< vocab >}} pop-ups for those words opened with no image at all.
+- **Changed:**
+  - `vocab/tools/draw_icons.py` — added 52 entries to `ICONS` (`RIV-001`–`036`, `GRC-014`–`019`, `ROM-013`–`020`, `ECO-001`–`002`), drawn with the same flat five-colour style and 240×180 grid as the existing icons. Added reusable helpers above `ICONS`: `crown`, `tablet` (clay tablet with wedge marks), `scroll`, `no_sign` (the red circle-with-slash), `eye`, `sun`, `sprout`, and `caption` (the bold label across the top). Every new icon is original line art, so there is no image licence to worry about and they work offline.
+  - Nothing else about the tool changed — no new config, no new build step. Running `python vocab/tools/draw_icons.py` now writes 97 SVGs into `vocab/images/`.
+  - *Note:* the `DIAGRAMS` step in the same script still writes `aqueduct-slope.svg` to `course/units/02-ancient-rome/images/`, a unit folder that was renamed to `02-classical-mediterranean`. That leaves an untracked stray folder each time the script runs. Left alone for now because fixing it means deciding where the diagram should actually live.
+- **Who it helps:** probably every Chalkline course — any course whose vocab list outgrows its picture set can extend `ICONS` the same way, and the helpers make coloured icons much quicker to draw.
+- **AI assistant:** WorkBuddy
+
+## 2026-10-18: Ignore numbered Quarto scratch artifacts (`*.quarto_ipynb*`)
+- **Asked for:** "Keep the stray temp file, maybe its worth creating a misc_dump folder for miscellaneous files with a log (advise please)."
+- **Why:** Quarto's Jupyter engine leaves `*.quarto_ipynb` scratch files beside each `.qmd`, and when a render is interrupted it numbers the leftovers (`..._1`, `..._2`). The existing pattern `**/*.quarto_ipynb` did not match the numbered ones, so they showed up as untracked and could be committed by mistake. Advised fixing `.gitignore` rather than creating a `_misc_dump/` folder: these files are regenerated on every render, so they are build noise rather than curriculum content, and a dump folder would slowly collect copies of them.
+- **Changed:**
+  - `.gitignore` — `**/*.quarto_ipynb` widened to `**/*.quarto_ipynb*` so plain and numbered scratch files are both ignored.
+- **Who it helps:** probably every Chalkline course that renders pages containing Python code cells.
+- **AI assistant:** WorkBuddy
+
+## 2026-10-18: Technical growth report generator (`scripts/growth_report.py`)
+- **Asked for:** "Create a script that can be used in Gemini to create a technical description of how my chalkline has grown since it was first cloned from insufficient doubt's chalkline-sample. I will copy and paste this into a notebooklm for my personal learning purposes."
+- **Why:** To automatically analyze Git commits, diff statistics, Quarto/Typst/Reveal architecture, vocabulary expansion, and multi-agent workflows since the fork, generating an in-depth technical dossier formatted for ingestion into Google NotebookLM.
+- **Changed:**
+  - `scripts/growth_report.py` — created script to inspect git history, diffs against clone commit `b1a200e`, parse vocabulary domains, analyze `TOOL-CHANGES.md`, and generate a structured NotebookLM Markdown dossier (`docs/CHALKLINE-GROWTH-DOSSIER.md`).
+- **Who it helps:** any Chalkline teacher or developer wanting to track how their custom course fork diverges from upstream or export an architectural summary for NotebookLM/LLM analysis.
+- **AI assistant:** Gemini (Antigravity)
+
+## 2026-10-18: Recursive SOP check protocol & live SOP timestamp in `scripts/ai_log.py`
+- **Asked for:** "Add a line in the agentic protocols so that they recursively check for updates to their SOP"
+- **Why:** So long-running AI sessions (WorkBuddy, Antigravity, etc.) never rely on a stale in-context copy of `CLAUDE.md` and automatically detect and adopt SOP updates before starting or finishing any task.
+- **Changed:**
+  - `CLAUDE.md`, `AGENTS.md`, `GEMINI.md`, `AI-ACTIVITY-LOG.md` — added recursive SOP check rule requiring agents to re-read `CLAUDE.md` and `AI-ACTIVITY-LOG.md` from disk on every new task and before handoff.
+  - `scripts/ai_log.py` — updated `show` to print a `[SOP Check]` banner displaying the exact last-modified timestamp of `CLAUDE.md`.
+- **Who it helps:** any course coordinated by multiple long-running AI sessions.
+- **AI assistant:** Gemini (Antigravity)
+
 ## 2026-10-18: Unit 2 vocab subdomains `society` and `synthesis`
 - **Asked for:** "Update chalkline with Unit 2 materials" — Unit 2: Classical Mediterranean Foundations (Ancient Greece & Rome), built from the Unit 2 reading inquiry booklet, the Classical Mediterranean master deck, and the Rome entry/exit tickets.
 - **Why:** Unit 2's vocabulary vaults cover **social structure and forced labour** (helots, metics, latifundia, chattel slavery, corvée labour) and **cross-unit comparison** (continuity), none of which the existing `GRC` / `ROM` / `RIV` subdomains described.
