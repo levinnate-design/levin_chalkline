@@ -4,12 +4,12 @@ window.VOCAB_CONFIG = {
   title: "History Vocab",
 
   // Topic names for each domain (the ID prefix in data/vocab.csv), in English and 中文.
-  domainNames: { GRC: "Ancient Greece", ROM: "Ancient Rome" },
-  domainZh: { GRC: "古希腊", ROM: "古罗马" },
+  domainNames: { GRC: "Ancient Greece", ROM: "Ancient Rome", ECO: "Economics" },
+  domainZh: { GRC: "古希腊", ROM: "古罗马", ECO: "经济学" },
 
   // 中文 for subdomains, and nicer English names where "daily-life" -> "Daily life" isn't enough.
   subdomainZh: { geography: "地理", government: "政府", culture: "文化", army: "军队",
-                 "daily-life": "日常生活", engineering: "工程" },
+                 "daily-life": "日常生活", engineering: "工程", systems: "制度" },
   subdomainZhByDomain: {},
   subdomainNames: {},
 

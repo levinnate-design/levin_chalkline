@@ -1,14 +1,13 @@
-# Builds the TEACHER version of the site on every push to main and publishes it to GitHub Pages:
-#   https://insufficientdoubt.github.io/chalkline-sample/
-# (This sample is all demo content, so its teacher version, with answer keys, is fine to show publicly.
-#  Don't publish a real course's teacher version this way: GitHub Pages sites are public.)
+# Builds the STUDENT version of the site on every push to main and publishes it to GitHub Pages:
+#   https://levinnate-design.github.io/levin_chalkline/
+# (Student version: no answer keys or teacher-only notes, safe to share publicly with students.)
 
-name: Publish teacher site
+name: Publish student site
 
 on:
   push:
     branches: [main]
-  workflow_dispatch:          # or run it by hand: Actions tab > Publish teacher site > Run workflow
+  workflow_dispatch:          # or run it by hand: Actions tab > Publish student site > Run workflow
 
 permissions:
   contents: read
@@ -40,14 +39,14 @@ jobs:
         with:
           version: 1.10.19     # same version as on our computers
 
-      - name: Build the teacher site
+      - name: Build the student site
         run: |
           export QUARTO_PYTHON="$(which python)"
-          quarto render --profile teacher
+          quarto render
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: _site-teacher
+          path: _site
 
   deploy:
     needs: build

@@ -58,6 +58,7 @@ website:
         href: vocab/app/index.html   # the vocab app (copied in via resources above)
         icon: book
       - auto: course/units      # one section per unit folder, titled from its index.qmd
+      - auto: course/summatives # one section per summative folder, titled from its index.qmd
 
 # Defaults for each output format. Individual files choose which formats they use.
 format:

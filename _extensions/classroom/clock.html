@@ -1,8 +1,9 @@
 <!--
   Clock overlay for reveal.js slides: shows the current time in the bottom-left corner.
 
-  Included in every slide deck by _quarto.yml (format > revealjs > include-after-body).
-  Press K to show or hide it. The choice is remembered on this computer.
+  Included in every slide deck by _extensions/classroom/filter.lua.
+  - Press K to show or hide it (remembered on this computer).
+  - Drag it anywhere on the screen to reposition it (position is remembered too).
 -->
 <style>
   #slide-clock {
@@ -10,14 +11,19 @@
     left: 52px;
     bottom: 10px;
     z-index: 40;
-    padding: 2px 12px;
+    padding: 3px 14px;
     border-radius: 999px;
-    background: rgba(0, 52, 119, 0.85);
+    background: rgba(0, 52, 119, 0.9);
     color: #fff;
     font: 600 18px/1.4 system-ui, sans-serif;
     font-variant-numeric: tabular-nums;
-    pointer-events: none;
+    cursor: grab;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   }
+  #slide-clock:active { cursor: grabbing; }
   #slide-clock[hidden] { display: none; }
   /* Hide in print/PDF export. */
   @media print { #slide-clock { display: none; } }
@@ -29,8 +35,10 @@
   if (/[?&]receiver/.test(window.location.search)) return;
 
   const KEY = "slide-clock-visible";
+  const POS_KEY = "slide-clock-pos";
   const clock = document.createElement("div");
   clock.id = "slide-clock";
+  clock.title = "Drag to move clock · Press K to hide/show";
   clock.setAttribute("aria-hidden", "true");
   document.body.appendChild(clock);
 
@@ -40,6 +48,46 @@
   function saveSetting(on) {
     try { localStorage.setItem(KEY, on ? "1" : "0"); } catch (e) { /* private window */ }
   }
+
+  // Restore saved drag position if within viewport
+  try {
+    const saved = JSON.parse(localStorage.getItem(POS_KEY) || "null");
+    if (saved && typeof saved.left === "number" && typeof saved.top === "number") {
+      clock.style.left = Math.max(4, Math.min(window.innerWidth - 100, saved.left)) + "px";
+      clock.style.top = Math.max(4, Math.min(window.innerHeight - 40, saved.top)) + "px";
+      clock.style.bottom = "auto";
+    }
+  } catch (e) {}
+
+  // Make clock draggable with mouse or touch
+  let dragging = false, offX = 0, offY = 0;
+  clock.addEventListener("pointerdown", function (e) {
+    if (e.button && e.button !== 0) return;
+    dragging = true;
+    const rect = clock.getBoundingClientRect();
+    offX = e.clientX - rect.left;
+    offY = e.clientY - rect.top;
+    clock.setPointerCapture(e.pointerId);
+    e.preventDefault();
+    e.stopPropagation();
+  });
+  clock.addEventListener("pointermove", function (e) {
+    if (!dragging) return;
+    const x = Math.max(4, Math.min(window.innerWidth - clock.offsetWidth - 4, e.clientX - offX));
+    const y = Math.max(4, Math.min(window.innerHeight - clock.offsetHeight - 4, e.clientY - offY));
+    clock.style.left = x + "px";
+    clock.style.top = y + "px";
+    clock.style.bottom = "auto";
+    clock.style.right = "auto";
+  });
+  clock.addEventListener("pointerup", function (e) {
+    if (!dragging) return;
+    dragging = false;
+    try {
+      const rect = clock.getBoundingClientRect();
+      localStorage.setItem(POS_KEY, JSON.stringify({ left: Math.round(rect.left), top: Math.round(rect.top) }));
+    } catch (err) {}
+  });
 
   function update() {
     // Uses the computer's own 12- or 24-hour setting.

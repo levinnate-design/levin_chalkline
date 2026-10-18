@@ -122,7 +122,9 @@ local function packet_for_this_page()
   if not f then return nil end
   local packets = quarto.json.decode(f:read("a"))
   f:close()
-  local unit = (quarto.doc.input_file or ""):match("units[/\\]([^/\\]+)[/\\]index%.qmd$")
+  local input = quarto.doc.input_file or ""
+  local unit = input:match("units[/\\]([^/\\]+)[/\\]index%.qmd$")
+            or input:match("summatives[/\\]([^/\\]+)[/\\]index%.qmd$")
   return unit and packets[unit]
 end
 

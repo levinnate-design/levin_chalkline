@@ -87,7 +87,10 @@ end
 local function Meta(meta)
   local clock = meta.clock
   local off = clock ~= nil and pandoc.utils.stringify(clock) == "false"
-  if quarto.doc.is_format("revealjs") and not off then include_once("clock.html") end
+  if quarto.doc.is_format("revealjs") then
+    if not off then include_once("clock.html") end
+    include_once("countdown.html")
+  end
   -- Web pages: links to slideshows open in a new tab (slides-new-tab: false turns it off).
   local nt = meta["slides-new-tab"]
   local nt_off = nt ~= nil and pandoc.utils.stringify(nt) == "false"

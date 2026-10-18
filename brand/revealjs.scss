@@ -263,6 +263,26 @@ $presentation-h2-font-size: 1.45em;
 .reveal .section-slide h2 { color: #fff; font-size: 2.2em; text-align: center; }
 .reveal .section-slide h2::after { margin: 0.2em auto 0; background: $orange; }
 
+// Any slide with a dark background (e.g. {background-color="#003477"}): ensure high contrast
+// for headings, bold text, and Chinese text, while keeping dark text inside light callouts/cards.
+.reveal .slides section.has-dark-background,
+.reveal .slides section.section-slide {
+  color: #fff;
+  h1, h2, h3, h4, p, li { color: #fff; }
+  h2::after { background: $orange; }
+  strong { color: $orange; }
+  .zh { color: $turquoise; }
+  .small-note { color: rgba(255, 255, 255, 0.88); }
+  a, .vocab-term { color: $turquoise; border-bottom-color: $turquoise; }
+
+  .callout, .card, .challenge, .goal, .success, .judges, .example-line, .vocab-card {
+    color: #1F2933;
+    h1, h2, h3, h4, p, li { color: #1F2933; }
+    strong, .zh { color: $navy; }
+    a, .vocab-term { color: $navy; }
+  }
+}
+
 .reveal .closing { text-align: center; }
 .reveal .closing-crest { display: block; font-size: 0.7em; color: $orange; font-weight: 700; letter-spacing: 0.04em; }
 .reveal .closing-big { display: block; margin-top: 0.8em; font-size: 2.6em; font-weight: 700; color: #fff; line-height: 1.1; }

@@ -18,6 +18,8 @@ website:
   draft-mode: gone
   # ---- Everything below is written by scripts/catalog.py before each render. Don't edit by hand. ----
   drafts:
+  - course/summatives/02-unit-2-summative/student-summative-booklet.qmd
+  - course/summatives/02-unit-2-summative/summative-slides.qmd
   - course/units/01-ancient-greece/athens-vs-sparta.qmd
   - course/units/01-ancient-greece/class-vote.qmd
   - course/units/01-ancient-greece/greek-ideas-slides.qmd

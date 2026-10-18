@@ -87,24 +87,32 @@ def formats_of(meta):
     return [FORMATS.get(n.split("+")[0], n) for n in names]
 
 
+SECTION_DIRS = ("units", "summatives")
+
+
 def load_units():
-    """One entry per unit folder, in folder order: id, number, title, description, objectives."""
+    """One entry per unit or summative folder, in folder order: id, section, number, title, description, objectives."""
     units = []
-    for folder in sorted((COURSE / "units").iterdir()):
-        index = folder / "index.qmd"
-        if not folder.is_dir() or not index.exists():
+    for section in SECTION_DIRS:
+        sec_dir = COURSE / section
+        if not sec_dir.exists():
             continue
-        meta = front_matter(index)
-        units.append({
-            "id": folder.name,
-            "number": meta.get("unit"),
-            "title": meta.get("title", folder.name),
-            "short": meta.get("short-title", meta.get("title", folder.name)),
-            "description": meta.get("description", ""),
-            "objectives": meta.get("objectives", []),
-            "path": index.relative_to(ROOT).with_suffix(".html").as_posix(),
-            "order": len(units) + 1,
-        })
+        for folder in sorted(sec_dir.iterdir()):
+            index = folder / "index.qmd"
+            if not folder.is_dir() or not index.exists():
+                continue
+            meta = front_matter(index)
+            units.append({
+                "id": folder.name,
+                "section": section,
+                "number": meta.get("unit"),
+                "title": meta.get("title", folder.name),
+                "short": meta.get("short-title", meta.get("title", folder.name)),
+                "description": meta.get("description", ""),
+                "objectives": meta.get("objectives", []),
+                "path": index.relative_to(ROOT).with_suffix(".html").as_posix(),
+                "order": len(units) + 1,
+            })
     return units
 
 
@@ -117,7 +125,8 @@ def load_packets():
     plus "files" (the .qmd paths) and "extras" (the PDF paths)."""
     packets = []
     for unit in load_units():
-        folder = COURSE / "units" / unit["id"]
+        section = unit.get("section", "units")
+        folder = COURSE / section / unit["id"]
         found = []
         for path in folder.glob("*.qmd"):
             if path.name.startswith("_") or path.name == "index.qmd":
@@ -137,7 +146,7 @@ def load_packets():
             chapters.insert(spot, entry)
         if chapters:
             packets.append({**unit,
-                            "pdf": f"course/units/{unit['id']}/{unit['id']}-packet.pdf",
+                            "pdf": f"course/{section}/{unit['id']}/{unit['id']}-packet.pdf",
                             "chapters": chapters,
                             "files": [c["qmd"] for c in chapters if "qmd" in c],
                             "extras": [c["pdf"] for c in chapters if "pdf" in c]})
@@ -177,7 +186,7 @@ def load_catalog():
         if kind == "slides" and not path.stem.endswith("slides"):
             print(f"catalog: {path.relative_to(ROOT)} won't open in a new tab; name slideshow files ...slides.qmd")
         rel = path.relative_to(COURSE).parts
-        if rel[0] == "units" and rel[1] in units:
+        if rel[0] in SECTION_DIRS and len(rel) > 1 and rel[1] in units:
             unit = units[rel[1]]
             group, group_order = unit["short"], unit["order"]
         else:
@@ -265,8 +274,8 @@ def parent_drafts():
         rel = path.relative_to(ROOT)
         if path.name.startswith("_"):
             continue
-        if path.name == "index.qmd" and len(rel.parts) == 4 and rel.parts[1] == "units":
-            continue   # course/units/<unit>/index.qmd
+        if path.name == "index.qmd" and len(rel.parts) == 4 and rel.parts[1] in SECTION_DIRS:
+            continue   # course/units/<unit>/index.qmd or course/summatives/<summative>/index.qmd
         if path.name == "index.qmd" and any("parent" in (front_matter(q).get("audience") or [])
                                             for q in path.parent.rglob("*.qmd") if q != path):
             continue   # a section page (posters, say) with something for families in it

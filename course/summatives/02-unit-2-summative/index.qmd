@@ -1,0 +1,27 @@
+---
+title: "Unit 2 - Summative"
+short-title: "Unit 2 - Summative"
+unit: "S2"
+format: html
+description: "Two-week (6-lesson) summative inquiry and historical essay on Classical Mediterranean governance, law, and continuous dependence on slavery."
+objectives:
+  - "I can formulate a focused research question and an arguable 'to what extent' thesis statement (MYP Criterion B)."
+  - "I can gather, cite, and evaluate historical evidence from library books and class texts (MYP Criterion B)."
+  - "I can analyze how Classical governance (Athens, Sparta, Rome) represented progress for citizens while depending on slavery (MYP Criterion D)."
+  - "I can draft, peer-audit, revise, and communicate a structured academic essay with a complete Works Cited list (MYP Criterion C)."
+listing:
+  contents: "*.qmd"
+  type: table
+  fields: [title, type, description]
+  field-display-names:
+    type: Type
+  sort: "order"
+  filter-ui: false
+  sort-ui: false
+---
+
+{{< objectives >}}
+
+{{< packet >}}
+
+## Materials
