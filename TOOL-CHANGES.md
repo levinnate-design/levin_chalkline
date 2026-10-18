@@ -16,6 +16,17 @@ Newest entries first.
 - **AI assistant:** which one made the change.
 -->
 
+## 2026-10-18: Unit 2 vocab subdomains `society` and `synthesis`
+- **Asked for:** "Update chalkline with Unit 2 materials" — Unit 2: Classical Mediterranean Foundations (Ancient Greece & Rome), built from the Unit 2 reading inquiry booklet, the Classical Mediterranean master deck, and the Rome entry/exit tickets.
+- **Why:** Unit 2's vocabulary vaults cover **social structure and forced labour** (helots, metics, latifundia, chattel slavery, corvée labour) and **cross-unit comparison** (continuity), none of which the existing `GRC` / `ROM` / `RIV` subdomains described.
+- **Changed:**
+  - `vocab/schema.yaml` — `domains`: `GRC` adds `society`, `ROM` adds `society`, `RIV` adds `synthesis`.
+  - `vocab/config.js` — `subdomainZh`: added `society: "社会与劳动"` and `synthesis: "跨单元综合"` so the vocab app labels the new cards in 中文.
+  - `vocab/data/vocab.csv` — 18 new Unit 2 terms: `GRC-014`–`GRC-019`, `ROM-013`–`ROM-020`, `RIV-033`–`RIV-036`.
+  - `course/units/02-classical-mediterranean/` — new unit folder (index + overview + 3-lesson reading packets, guided notes, entry/exit tickets) and `course/vocab/02-classical-mediterranean.yml` (29 terms).
+- **Who it helps:** any course whose unit vocabulary includes social structure, coerced labour, or cross-unit synthesis — probably most history and social-science courses.
+- **AI assistant:** WorkBuddy
+
 ## 2026-10-18: Shared local AI Activity Log (`AI-ACTIVITY-LOG.md` & `scripts/ai_log.py`) for multi-agent sync
 - **Asked for:** "I want you include a new Workbuddy account into the chalkline work flow, create something that I can copy and paste into workbuddy to get it set up." / "Create a set up such that the various AI tools have a log on my local storage that they upload to so that all my AI platforms can be up to date with what each of them have been doing."
 - **Why:** So multiple AI assistants and accounts (Antigravity subagents, Tencent WorkBuddy accounts, Claude, etc.) working across `chalkline-mingwan` and WeDrive can see what each platform has done or is currently working on without stepping on each other.

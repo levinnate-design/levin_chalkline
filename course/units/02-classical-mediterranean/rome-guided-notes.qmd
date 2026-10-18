@@ -1,0 +1,115 @@
+---
+title: "Lesson 2 Guided Notes (ET2) 第2课课堂笔记与过关检测"
+subtitle: "In-Class PPT Tracker · Checks & Balances Triangle · Latifundia Domino · Cornell Notes"
+type: worksheet
+description: "Guided notes for Lesson 2: the checks-and-balances triangle to label, the four-step latifundia domino chain, Cornell notes with answer prompts, the Stage 3 synthesis paragraph, and the ET2 checklist."
+order: 7
+audience: [teacher, student]
+doc-type: Worksheet
+name-box: true
+format:
+  html: default
+  typst: default
+---
+
+```{python}
+import sys; sys.path.append("scripts")
+from vocab import load_unit, pick, word_bank
+terms = load_unit(2)
+```
+
+## Lesson 2 In-Class PPT Tracker & Guided Notes (50 minutes)
+
+**Deck:** Unit 2 Classical Mediterranean (Lesson 2 · Rome) — use this beside your booklet pages 6–9.
+
+---
+
+## STAGE 1: Checks and Balances Triangle 共和国权力制衡三角图
+
+*Slides 2–5 · 10 minutes*
+
+Draw the three branches and add arrows showing how each one **checks** the others.
+
+| Branch | Who they are | Their power | Their check on others |
+|---|---|---|---|
+| **1. {{< vocab "consul" text="Consuls" zh=true >}} (2)** 执政官 | Two magistrates, **1-year term** | Command the legions | Mutual {{< vocab "veto" zh=true >}} — each can block the other |
+| **2. {{< vocab "senate" text="Senate" zh=true >}} (~300)** 元老院 | {{< vocab "patrician" text="Patrician" zh=true >}} elders, **for life** | Treasury and foreign treaties | Controls the money the consuls need |
+| **3. {{< vocab "tribune" text="Tribunes" zh=true >}}** 保民官 | Elected by {{< vocab "plebeian" text="plebeians" zh=true >}} | Forum veto over magistrates | Can cancel a patrician official's decision |
+
+{{< drawing-box label="Draw the triangle: Consuls ⟷ Senate ⟷ Tribunes, with arrows both ways" height="4.2in" >}}
+
+**Bilingual anchor 双语锚点:** *{{< vocab "veto" zh=true >}}* = Latin for **"I forbid!"**（拉丁语原意：“我禁止！”）
+
+---
+
+## STAGE 2: The Latifundia Economic Domino 大庄园经济危机骨牌模型
+
+*Slides 7–9 · 12 minutes*
+
+Follow each arrow: what did step 1 force to happen next?
+
+**1. Conquest 军事扩张**
+
+Rome defeated Carthage and imported hundreds of thousands of {{< blank 2.2in >}}.
+
+**2. {{< vocab "latifundia" text="Latifundia" zh=true >}} 大庄园**
+
+{{< vocab "patrician" text="Patricians" zh=true >}} joined farmlands into slave plantations, producing crops at {{< blank 2.2in >}} cost to them.
+
+**3. Bankruptcy 小农破产**
+
+Free {{< vocab "plebeian" text="plebeian" zh=true >}} farmers could not compete, so they migrated into Rome as {{< blank 2.2in >}}.
+
+**4. Collapse 共和覆灭**
+
+Generals formed private armies → civil wars → the first emperor, {{< blank 1.6in >}}, in {{< blank 0.8in >}} BCE.
+
+::: {.content-visible when-profile="teacher"}
+**Answer key — Stage 2:** 1. enslaved war captives · 2. zero (or almost zero) labour cost · 3. an unemployed urban underclass / landless poor · 4. Augustus · 27
+
+Look-for: if students write "the slaves rebelled" for step 3, correct it — the farmers were ruined *economically*, and Spartacus' revolt came a generation later. The domino is about prices and land, not rebellion.
+:::
+
+---
+
+### Cornell Notes: Cue Column & Main Notes 康奈尔笔记
+
+| Cornell Cue Column 关键线索 | Class Lecture Notes & Explanations 主听课记录区 |
+|---|---|
+| **Overthrow 509 BCE** — meaning of *res publica* vs. a king | *Res publica* = "public affairs": citizens elect representatives instead of obeying a {{< blank 1.4in >}}. |
+| **{{< vocab "patrician" text="Patricians" zh=true >}} vs. {{< vocab "plebeian" text="plebeians" zh=true >}}** — aristocrats vs. working class | Patricians owned the land; plebeians {{< blank 2.2in >}}. |
+| **{{< vocab "Twelve Tables" zh=true >}}** — why write laws on bronze? | To stop patrician judges making secret, biased rulings. It gave citizens {{< blank 1.8in >}}. |
+| **Table VIII slave fine** — who received the 150 coins? | The {{< blank 1in >}}, proving enslaved people were classed as {{< blank 1.4in >}}. |
+| **Augustus, 27 BCE** — end of the Republic | Mass slavery ruined small farmers, creating volunteer armies loyal to {{< blank 1.4in >}}, not to the Senate. |
+
+---
+
+## STAGE 3: Lesson 2 Summary Synthesis 本课核心要点总结
+
+*Criterion D · Thinking critically*
+
+In **2–3 complete sentences**, {{< vocab "explain" zh=true >}} how Rome's military conquests ultimately destroyed the economic freedom of its **own** {{< vocab "plebeian" text="plebeian" zh=true >}} citizen-soldiers.
+
+{{< lines 4 >}}
+
+---
+
+**End-of-Class Checklist 课末自查清单**
+
+- [ ] Checks-and-balances triangle labelled（权力制衡三角图完成）
+- [ ] Latifundia domino chain complete（大庄园骨牌链完成）
+- [ ] Exit Ticket (ET2) submitted（出场票已提交）
+
+Teacher Outline Stamp 教师盖章处: [ {{< blank 1.5in >}} ]
+
+::: {.content-visible when-profile="teacher"}
+### Stage 3 model response 参考范文要素
+
+A Proficient answer should contain three moves:
+
+1. **Claim:** Rome's conquests imported enormous numbers of enslaved captives (about 33% of Italy by 100 BCE).
+2. **Cause:** {{< vocab "patrician" text="Patricians" zh=true >}} bought land and ran {{< vocab "latifundia" zh=true >}} with that zero-cost labour, so free {{< vocab "plebeian" text="plebeian" zh=true >}} farmers could not sell grain at a price that covered their costs and lost their land.
+3. **Consequence:** ruined farmers became the recruits of generals' private armies, which broke the Republic — so the soldiers who won the Mediterranean lost their own farms doing it.
+
+**Common error:** blaming Julius Caesar alone. He is step 4 of the chain, not the cause. Ask: "Where did his soldiers come from, and why were they landless?"
+:::

@@ -1,0 +1,169 @@
+---
+title: "Lesson 2 Reading Packet: Ancient Rome 第2课双语阅读手册"
+subtitle: "The Republic, the Twelve Tables & Mass Slavery · 共和国政制、成文法典与大庄园奴隶制危机"
+type: reference
+description: "Bilingual student reading for Lesson 2 (booklet pages 6–8): the overthrow of the monarchy in 509 BCE, the consuls–senate–tribunes checks triangle, the Twelve Tables as both progress and oppression, and the four-step domino chain that destroyed the Republic."
+order: 5
+audience: [teacher, student, parent]
+doc-type: Reference
+name-box: false
+format:
+  html: default
+  typst: default
+---
+
+```{python}
+import sys; sys.path.append("scripts")
+from vocab import load_unit, pick, word_bank
+terms = load_unit(2)
+```
+
+```{python}
+#| output: asis
+print(word_bank({
+    "Lesson 2 — Republic & Government": pick(terms, "republic", "patrician", "plebeian", "tribune", "consul", "senate", "veto", "forum"),
+    "Lesson 2 — Law, Land & Labour": pick(terms, "Twelve Tables", "due process", "latifundia", "chattel slavery", "empire"),
+}))
+```
+
+## Lesson 2 Learning Targets · 第2课学习目标
+
+- **Learning Target (I can...):** I can {{< vocab "explain" zh=true >}} how the Roman Republic balanced power between {{< vocab "patrician" text="patricians" zh=true >}} and {{< vocab "plebeian" text="plebeians" zh=true >}}, and {{< vocab "analyse" text="analyse" zh=true >}} how Mediterranean conquest and mass slavery caused the Republic to collapse into an {{< vocab "empire" zh=true >}}.
+- **Language Target (SIOP):** I can write a cause-and-effect sentence using:
+
+  > "Because Roman conquests imported large numbers of **[enslaved war captives]**, free plebeian farmers **[could not compete and lost their land]**, which consequently led to **[the fall of the Republic]**."
+
+::: {.callout-note title="Central Guiding Reading Question · 核心阅读探究问题" icon=false}
+**How did the Roman Republic balance power across social classes, how did the Twelve Tables establish public justice, and why did Mediterranean conquest and mass slavery cause the Republic to collapse?**
+
+罗马共和国如何在不同阶级间实现权力平衡？《十二铜表法》如何奠定公共正义？为什么对外征服和大规模奴隶制最终导致共和国走向解体？
+:::
+
+---
+
+## 1. Bilingual Vocabulary Vault · 双语核心词汇库
+
+| English Term | 中文 | Student-Friendly Definition | In-Context Sentence |
+|---|---|---|---|
+| **{{< vocab "republic" zh=true >}}** T3 | 共和国 | A government where citizens elect leaders to represent them and make laws. | Rome set up a {{< vocab "republic" zh=true >}} so no king could rule again. |
+| **{{< vocab "patrician" zh=true >}}** T3 | 贵族（土地所有者） | A wealthy, land-owning aristocrat with inherited political power. | Wealthy {{< vocab "patrician" text="patricians" zh=true >}} filled the {{< vocab "senate" text="Senate" zh=true >}}. |
+| **{{< vocab "plebeian" zh=true >}}** T3 | 平民（普通公民） | A free Roman commoner: farmer, artisan or trader — the majority. | Free {{< vocab "plebeian" text="plebeian" zh=true >}} farmers fought in Rome's legions. |
+| **{{< vocab "veto" zh=true >}}** T2 | 否决权（“我禁止”） | The constitutional power to block or cancel an official decision. | {{< vocab "tribune" text="Tribunes" zh=true >}} shouted *veto* to protect commoners. |
+| **{{< vocab "Twelve Tables" zh=true >}}** T3 | 《十二铜表法》 | Rome's first written legal code, carved on bronze and posted in the {{< vocab "forum" text="Forum" zh=true >}}. | The Twelve Tables made the law public for all free men. |
+| **{{< vocab "latifundia" zh=true >}}** T3 | 奴隶制大庄园 | Giant farms owned by patricians and worked entirely by slaves. | Slaves on the {{< vocab "latifundia" zh=true >}} bankrupted free small farmers. |
+| **{{< vocab "chattel slavery" zh=true >}}** T3 | 人身买卖奴隶制 | A system where human beings are legally classed as saleable property. | Roman {{< vocab "chattel slavery" zh=true >}} denied enslaved people all legal rights. |
+| **{{< vocab "tribune" zh=true >}}** T3 | 保民官 | An official elected by plebeians to protect their rights from patricians. | A {{< vocab "tribune" zh=true >}} had immunity and veto power. |
+
+*T2 = general academic word · T3 = subject-specific word*
+
+---
+
+## 2. The Core Bilingual Text · 核心双语文本
+
+### PART I — From Monarchy to Republic: The Architecture of Power 王政到共和
+
+#### The Overthrow of Monarchy and the Birth of the Republic · 废除君主制与共和国的诞生
+
+According to historical tradition, Rome was first ruled by harsh Etruscan kings. In **509 BCE**, Roman aristocrats overthrew the tyrannical monarchy and declared that Rome would never again be ruled by a single king. They built a new kind of state: a **{{< vocab "republic" zh=true >}}** — from the Latin *res publica*, "public affairs". In a republic, supreme power is held by citizens who have the right to vote for their leaders.
+
+Early Roman society was split into two sharply unequal classes. The **{{< vocab "patrician" text="patricians" zh=true >}}** were wealthy hereditary landowners who held nearly all religious and judicial authority. The **{{< vocab "plebeian" text="plebeians" zh=true >}}** were the common farmers, artisans and merchants: they paid taxes and made up most of the Roman army.
+
+公元前509年，罗马贵族推翻了专制君主制，庄严宣告罗马永远不再受国王统治，建立了全新的“**共和国**”（res publica，意为“公共事务”）。国家最高权力属于享有选举权的公民。然而社会被划分为两个极不平等的阶层：**贵族**（patricians），垄断司法与宗教特权的土地所有者；以及**平民**（plebeians），承担赋税并组成军队主力的普通小农与工匠。
+
+::: {.callout-tip title="Quick Summary · 核心要点小结" icon=false}
+Romans threw out their king in 509 BCE and built a republic where citizens voted for leaders. Rich {{< vocab "patrician" text="patricians" zh=true >}} held power, while common {{< vocab "plebeian" text="plebeian" zh=true >}} farmers had to fight for their rights.
+
+*（罗马废除君主制建立共和国。贵族垄断权力，平民为了权利展开抗争。）*
+:::
+
+#### The Three Branches of Constitutional Checks and Balances · 宪制分权制衡的三大支柱
+
+To stop any one person seizing despotic power, the Republic split power into three branches that could check each other:
+
+1. **The {{< vocab "consul" text="Consuls" zh=true >}} (executive)** — two magistrates elected each year to command the legions. Because each held the absolute power to {{< vocab "veto" zh=true >}} (*"I forbid"*) the other, nothing happened unless both agreed.
+2. **The {{< vocab "senate" text="Senate" zh=true >}} (aristocratic)** — about 300 {{< vocab "patrician" text="patricians" zh=true >}} serving **for life**, controlling treasury funds and foreign treaties.
+3. **The Assemblies and {{< vocab "tribune" text="Tribunes" zh=true >}} (democratic)** — {{< vocab "plebeian" text="plebeians" zh=true >}} elected {{< vocab "tribune" text="tribunes" zh=true >}} who stood in the {{< vocab "forum" text="Forum" zh=true >}} and used the veto to strike down decisions by patrician magistrates.
+
+为了防止个人专权，罗马构建了三大权力制衡支柱：**执政官（行政分支）**：两名贵族长官，统领军团，拥有互相**否决**（veto）的权力；**元老院（贵族分支）**：约300名终身制贵族，掌控国家财政与外交；**公民大会与保民官（民主分支）**：平民选举**保民官**，有权行使否决权保护平民免受贵族法官欺压。
+
+### ✎ Checkpoint 2.1: Stop & Annotate Task (The Three Branches)
+
+- **Step 1:** Put a **BOX** around the Roman official who had the power to command the legions.
+- **Step 2:** **CIRCLE** the assembly that controlled the state treasury and served for life.
+- **Step 3:** **UNDERLINE** the special power given to {{< vocab "tribune" text="tribunes" zh=true >}} to protect common {{< vocab "plebeian" text="plebeians" zh=true >}}.
+
+---
+
+### PART II — Written Law on Bronze: The Twelve Tables (451 BCE) 青铜法典
+
+#### Public Inscription in the Roman Forum · 罗马广场上的成文法典
+
+In the Republic's early years, Rome's laws were not written down. Unwritten religious customs were memorized and interpreted in secret by {{< vocab "patrician" text="patrician" zh=true >}} judges, who routinely favoured their own wealthy families. Angry and desperate for justice, {{< vocab "plebeian" text="plebeians" zh=true >}} demanded that the laws be carved into writing.
+
+In **451 BCE**, ten officials compiled Rome's first complete legal code. The laws were engraved on twelve giant bronze tablets and hung publicly in the Roman {{< vocab "forum" text="Forum" zh=true >}} for all citizens to read. They became known as the **{{< vocab "Twelve Tables" zh=true >}}**.
+
+早期罗马法律未成文，由贵族法官秘密传授与垄断解释，审判中肆意偏袒贵族。平民强烈要求法条公开。公元前451年，罗马编纂第一部成文法典，镌刻在十二块青铜板上并公开放置在广场上供所有人查阅，史称“**《十二铜表法》**”。
+
+#### Due Process for Citizens vs. Chattel Property for Slaves · 公民正当程序与奴隶财产属性
+
+The Twelve Tables were historic **progress**: they established that all free citizens had a right to equal protection under written law. The code introduced civil **{{< vocab "due process" zh=true >}}** — defendants were presumed innocent until proven guilty, the burden of proof rested on the accuser, and trials had to be public.
+
+Yet the code also built severe inequality into the law. **Table VIII** punished physical injury according to class status, and it wrote **{{< vocab "chattel slavery" zh=true >}}** into Roman law: an enslaved person was not a legal person at all, but disposable economic property owned by a master.
+
+《十二铜表法》是重大历史进步，确立了自由公民受成文法平等保护的原则及正当诉讼程序（无罪推定、举证责任在原告）。然而第八表明确规定依身份等级量刑，并将**人身奴隶制**写入法典：奴隶被定性为可随意买卖处置的私有财产，而非法律主体。
+
+| **Tabula I — De in ius vocando** 第一表：出庭诉讼法定正当程序 | **Tabula VIII — De delictis** 第八表：侵权、身份量刑与奴隶财产制 |
+|---|---|
+| *"Si in ius vocat, ito..."* — if summoned to court, he shall go. The accuser bears the burden of proof; the verdict is public in the Forum. | *"Si os fregit: libero CCC, servo CL assium."* — a free man's broken bone costs 300 coins; a slave's costs 150 coins, **paid to the master**. |
+| **Progress 进步:** due process protected free {{< vocab "plebeian" text="plebeians" zh=true >}}. | **Oppression 压迫:** enslaved people were codified as their master's property. |
+
+::: {.callout-important title="Challenge Think-Box · 高阶思辨探究" icon=false}
+Table VIII says a free man's broken bone costs 300 coins, but a slave's costs 150. **When an enslaved person is injured, who receives the 150 coins?** How does this show that ancient written law protected elite **property** rather than universal human rights?
+
+*（折断奴隶骨骼罚150阿斯，这笔钱赔给了谁？如何证明成文法维护的是财产权而非人权？）*
+:::
+
+### ✎ Checkpoint 2.2: Primary Source Spotlight (The Twelve Tables)
+
+> "Table VIII.2: If anyone breaks another free man's limb, retaliate in kind... If a free man suffers a broken bone, the fine is 300 coins; if a slave, 150 coins."
+
+**Quick-write:** The Twelve Tables were progress for {{< vocab "plebeian" text="plebeians" zh=true >}} because laws were {{< blank 1.6in >}}, but continued oppression for slaves by treating them as {{< blank 1.6in >}}.
+
+---
+
+### PART III — Conquest, Latifundia, and the Crisis of Mass Slavery 扩张与奴隶制危机
+
+#### Mediterranean Dominance and the Influx of War Captives · 地中海霸权与战俘奴役潮
+
+During the third and second centuries BCE, Rome defeated Carthage in the **Punic Wars** and gained Mediterranean dominance. Conquest flooded Italy with hundreds of thousands of enslaved war captives. By **100 BCE, about one out of every three people (33%) in Italy** was an enslaved captive held in **{{< vocab "chattel slavery" zh=true >}}**.
+
+布匿战争击败迦太基后，罗马确立了地中海霸权。数十万战俘作为奴隶涌入意大利。到公元前100年，意大利半岛上约有**三分之一（33%）**的人口是被剥夺了一切权利的奴隶。
+
+#### The Latifundia Crisis and Peasant Bankruptcy · 大庄园扩张与平民小农破产
+
+{{< vocab "patrician" text="Patricians" zh=true >}} used vast war profits to buy rural farmland and to join estates into giant commercial plantations called **{{< vocab "latifundia" zh=true >}}**, worked entirely by unpaid slaves. Small {{< vocab "plebeian" text="plebeian" zh=true >}} farmers returning from the legions found their farms ruined. Unable to compete with zero-cost slave labour, huge numbers of plebeian farmers migrated into Rome as a poor, unemployed underclass.
+
+贵族利用战争暴利兼并农田，建立完全依靠无偿奴隶劳动的巨型种植园——“**大庄园**”（latifundia）。自耕农随军归来发现农田破产，在无法与零成本奴隶劳动竞争的绝境下，数以百万计的平民丧失土地涌入罗马城，沦为无业流民。
+
+#### Private Armies, Civil War, and the Rise of Augustus · 私人军团、内战与帝国建立
+
+This labour crisis destroyed the Republic. Ambitious generals — Marius, Sulla, then Julius Caesar — recruited landless men into **private armies** loyal to themselves rather than to the {{< vocab "senate" text="Senate" zh=true >}}. Civil wars erupted for decades. In **27 BCE**, Caesar's heir Octavian emerged supreme as Emperor **Augustus**, ending the Republic and beginning the *Pax Romana* — the Roman Peace.
+
+危机敲响了共和国的丧钟。统帅（马略、苏拉、恺撒）招募失地贫民组建私人军队，引发数十年内战。公元前27年，屋大维（奥古斯都）终结共和登基为帝，开启两百年“罗马和平”时代。
+
+### ✎ Checkpoint 2.3: Historical Materialism Domino Chain
+
+Number the four steps **1 to 4** in the correct order.
+
+- [ ] {{< vocab "patrician" text="Patricians" zh=true >}} build giant {{< vocab "latifundia" zh=true >}} with unpaid slave labour.
+- [ ] Generals recruit landless men into private armies → {{< vocab "empire" text="Empire" zh=true >}}.
+- [ ] Rome conquers the Mediterranean; war captives flood Italy.
+- [ ] Free {{< vocab "plebeian" text="plebeian" zh=true >}} farmers go bankrupt and crowd into cities.
+
+::: {.content-visible when-profile="teacher"}
+**Answer key — Checkpoint 2.3:** 1. Rome conquers the Mediterranean → 2. Patricians build latifundia → 3. Free plebeian farmers go bankrupt → 4. Generals recruit landless men into private armies → Empire.
+
+**Checkpoint 2.2:** laws were *written down and made public*; treating them as *economic property*.
+
+Look-for: the single most important idea is that everyone assumed these consequences were intentional? No — the point is structural: slavery made small farming uneconomic, which removed the Republic's own citizen-soldier base. Students who write "the generals were greedy" have missed the material cause.
+:::

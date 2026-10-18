@@ -1,0 +1,117 @@
+---
+title: "Lesson 3 Synthesis: Comparative Matrix & CER Draft 第3课对比矩阵与 CER 论证"
+subtitle: "Cross-Unit Review & Unit 2 Formative Checkpoint 3 · Rivers vs. Seas (Criterion B & D)"
+type: worksheet
+description: "The master cross-civilization comparative matrix (geography, written law, labour), the cross-unit debatable question with hypothesis and evidence notes, and the Claim–Evidence–Reasoning synthesis paragraph draft."
+order: 9
+audience: [teacher, student]
+doc-type: Worksheet
+name-box: true
+format:
+  html: default
+  typst: default
+---
+
+## Lesson 3 In-Class PPT Tracker & Guided Notes (50 minutes)
+
+**Deck:** Unit 2 Classical Mediterranean (Lesson 3 · Rivers vs. Seas) — use this beside your booklet pages 10–13.
+
+---
+
+## STAGE 1: The Big Cross-Unit Question 跨单元核心探究问题
+
+*Slide 2 · 5 minutes*
+
+> **"Did the transition from Bronze Age floodplains to the Classical Mediterranean truly liberate ordinary working people?"**
+
+**My initial hypothesis 课前初步假设 (write one sentence, Yes / No / To an extent):**
+
+{{< lines 3 >}}
+
+---
+
+## STAGE 2: Master Cross-Civilization Comparative Matrix 跨文明核心要素对比矩阵
+
+*Slides 4–8 · 20 minutes*
+
+Complete this matrix using your Unit 1 materials and your Unit 2 reading packets. Leave the last column until the end — that is where you decide **change or continuity**.
+
+| Analytical dimension | Unit 1: River valleys 大河文明 (Mesopotamia / Egypt) | Unit 2: Mediterranean 地中海文明 (Greece / Rome) | Change or continuity? 变迁或延续? |
+|---|---|---|---|
+| **1. Geography & state power 地理与政治权力** | Open floodplains needed coordinated irrigation, so power went to {{< blank 2in >}} kings. | Mountains and coasts fostered decentralized {{< blank 2in >}} and a {{< blank 1.4in >}}. | {{< blank 1.8in >}} |
+| **2. Written law & justice 成文法典与司法正义** | Hammurabi used {{< blank 1.8in >}} scaled to social rank. | The Twelve Tables created public {{< blank 1.8in >}} for citizens. | {{< blank 1.8in >}} |
+| **3. Labour & hierarchy 劳动力与社会等级** | Peasant {{< blank 1.8in >}} labour and debt bondage. | Mass {{< blank 1.8in >}} and large latifundia plantations. | {{< blank 1.8in >}} |
+
+**Star dimension 重点维度:** put a ★ beside the row that best supports your hypothesis from Stage 1.
+
+::: {.content-visible when-profile="teacher"}
+**Answer key — Stage 2**
+
+| Dimension | Expected Unit 1 entry | Expected Unit 2 entry | Expected verdict |
+|---|---|---|---|
+| 1. Geography & power | Centralized {{< vocab "theocracy" text="theocracies" >}} / {{< vocab "hydraulic empire" text="hydraulic empires" >}} under god-kings | Independent {{< vocab "city-state" text="poleis" >}} (Athens' assembly, Rome's {{< vocab "republic" >}}) | **Major change** |
+| 2. Written law | {{< vocab "lex talionis" >}}: punishment scaled to rank | Public {{< vocab "due process" >}}: burden of proof, open trial | **Change** in procedure; **continuity** in excluding slaves |
+| 3. Labour | {{< vocab "corvee labor" >}} by legally free peasants | {{< vocab "chattel slavery" >}} (~33% of Roman Italy) | **Fundamental continuity** |
+
+Look-for: rows 2 and 3 are where real thinking happens. Row 3 focuses on the one row that, if a student marks it "continuity", demonstrates they understand the unit's thesis. Students who mark row 1 as "continuity" have usually misread the question — probe which evidence they used.
+:::
+
+---
+
+## Checkpoint 3.3: Dual-Track Comparative Notes 双轨比较笔记
+
+Fill in each gap with a phrase from the matrix.
+
+- **Dimension 1 — Geography & state power:** rivers required coordinated irrigation under god-kings; Mediterranean mountains and seas fostered decentralized {{< blank 2.2in >}}.
+- **Dimension 2 — Evolution of written law:** Hammurabi scaled penalties to class rank; the Roman Twelve Tables created public due process, but enslaved people remained classified as {{< blank 2.2in >}}.
+- **Dimension 3 — Labour regimes (materialist continuity):** Egypt conscripted peasant {{< blank 1.6in >}}; the Mediterranean expanded mass {{< blank 1.6in >}}. Elite civic leisure was bought by {{< blank 2.2in >}}.
+
+---
+
+## STAGE 3: CER Synthesis Drafting Box 综合论证草稿栏
+
+*Criterion D(ii) — 25 minutes*
+
+Write a full Claim–Evidence–Reasoning paragraph. Use the frames below and then {{< vocab "synthesize" text="synthesize" zh=true >}} them into one paragraph underneath.
+
+**{{< vocab "formulate" text="Formulate" zh=true >}} your CLAIM 观点:**
+
+> Although Classical Mediterranean civilizations developed {{< blank 2.4in >}}, they failed to truly liberate ordinary workers.
+
+**{{< vocab "document" text="Document" zh=true >}} your EVIDENCE 证据 (one fact from each unit):**
+
+> While Unit 1 river {{< vocab "theocracy" text="theocracies" zh=true >}} relied on {{< blank 2.2in >}}, Mediterranean societies intensified exploitation into mass {{< blank 2.2in >}}.
+
+- Unit 1 fact I will cite: {{< blank 3in >}}
+- Unit 2 fact I will cite: {{< blank 3in >}}
+
+**REASONING 推理 — "{{< vocab "explain" zh=true >}} why":**
+
+> This demonstrates that despite political changes, both systems fundamentally depended on {{< blank 3in >}}.
+
+### Full paragraph draft 段落草稿
+
+{{< lines 8 >}}
+
+---
+
+## End-of-Class Checklist 课末自查清单
+
+- [ ] Comparative matrix completed（对比矩阵完成）
+- [ ] Checkpoint 3.3 notes gaps filled（双轨笔记填空完成）
+- [ ] CER draft completed（CER 草稿完成）
+- [ ] Formative Checkpoint 3 signed（形成性检测点 3 已签字）
+
+Teacher Outline Stamp 教师盖章处: [ {{< blank 1.5in >}} ]
+
+::: {.content-visible when-profile="teacher"}
+### Suggested demonstration paragraph 参考范文（教师版）
+
+> Although Classical Mediterranean civilizations developed new political systems like direct democracy and written due process, they failed to truly liberate ordinary workers. In Unit 1, Egyptian peasants were technically free but were conscripted into {{< vocab "corvee labor" >}} whenever the Nile flooded, hauling stone for the pharaoh's monuments. In the Mediterranean, that dependence became harsher, not gentler: by 100 BCE about a third of people in Roman Italy were held in {{< vocab "chattel slavery" >}}, and the Twelve Tables priced an enslaved person's broken bone at 150 coins payable to the master, not to the injured person. This shows that while authority moved from god-kings to assemblies, both systems fundamentally depended on unfree labour: the leisure that made citizen politics possible was bought with someone else's freedom.
+
+**Proficiency notes**
+
+- **PR (Proficient):** claim names both the change and the limit; one specific fact from each unit; a closing sentence about the shared economic base.
+- **EX (Exceeding):** also evaluates the source — e.g. notes that Table VIII is evidence *biased towards property owners*, or compares Unit 1's legally free corvée peasant with Rome's enslaved person on whether "legal freedom" mattered in practice.
+- **DE/EM:** factual summary only, with no causal link between politics and labour.
+:::

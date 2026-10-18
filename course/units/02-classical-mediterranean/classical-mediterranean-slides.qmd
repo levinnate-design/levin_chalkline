@@ -1,0 +1,390 @@
+---
+title: "Classical Mediterranean Foundations"
+subtitle: "古典地中海文明的奠基 · Unit 2 — Greece, Rome & the Slavery Legacy"
+type: slides
+description: "Master deck for all three Unit 2 lessons: mountain geography and the Greek polis, Athenian democracy's paradox, Rome's checks and balances, the Twelve Tables, the latifundia domino chain, cross-unit synthesis, and the summative launch."
+order: 2
+audience: [teacher, student, parent]
+format: revealjs
+title-slide-attributes:
+  data-background-color: "#003477"
+---
+
+# Unit 2: Classical Mediterranean Foundations {background-color="#003477"}
+
+**第二单元：古典地中海文明的奠基——权力、治理与奴隶制遗产**
+
+- **Grades:** 7–8 (MYP Years 2–3) · Shenzhen Mingwan School · Humanities & Social Studies
+- **Key Concept 核心概念:** Systems 系统与制度 — governance, law and labour
+- **Related Concepts 相关概念:** Governance 治理 · Causality 因果关系 · Civilization 文明
+- **Dual-Track:** IB MYP Individuals & Societies + CNC World History (2022课标)
+
+::: {.notes}
+Tell students to open their Unit 2 Reading & Inquiry Booklet to page 1. This deck covers all three lessons in one sitting pattern: Lesson 1 = Greece, Lesson 2 = Rome, Lesson 3 = cross-unit synthesis. Each booklet page number is printed in every slide header so students can follow along.
+:::
+
+---
+
+## Global Context & Statement of Inquiry · 全球背景与探究陈述
+
+**Global Context 全球背景: Fairness and Development 公平与发展**
+
+:::: {.columns}
+::: {.column width="50%"}
+
+- **Core Inquiry 核心探究:** Power, authority and access to justice (权力、权威与司法正义).
+- **Fundamental Contradiction 根本矛盾:** expanding civic liberty for male citizens while subjugating an unfree underclass.
+
+:::
+::: {.column width="50%"}
+
+**SOI 探究陈述:**
+
+> Geographic realities shape systems of governance; yet systemic order remained anchored to {{< vocab "social hierarchy" >}} and forced labour.
+
+*“地理环境深刻塑造了治理系统；然而制度在根本上都未能脱离阶层分化与强迫劳动。”*
+
+:::
+::::
+
+# Lesson 1 · Classical Greece {background-color="#003477"}
+
+Geography, the {{< vocab "city-state" text="Polis" >}} & {{< vocab "direct democracy" >}}
+
+---
+
+## Lesson 1 Hook: Terrain & Isolation · 第1课导入：地形与地理阻隔
+
+**Lesson Objective 学习目标 (I can...):** explain how Greece's mountainous terrain led to independent {{< vocab "city-state" text="city-states" >}}, and say who held power and who was shut out.
+
+**Do-Now Challenge 课前思考 (2 min):**
+
+:::: {.columns}
+::: {.column width="33%"}
+**75% rugged mountains**
+
+崎岖群山占陆地面积四分之三，无大型可通航河谷
+:::
+::: {.column width="33%"}
+**Overland isolation**
+
+山脊阻隔，单一君主难以跨越山谷行军统治
+:::
+::: {.column width="33%"}
+**Maritime highway**
+
+爱琴海两千余岛屿，海路成为希腊人的交通生命线
+:::
+::::
+
+Look at your **booklet pages 2 and 5**. Write one sentence predicting what kind of government this land would produce.
+
+{{< timer 2 >}}
+
+---
+
+## The Greek Polis: Geography & Autonomy · 群山阻隔与城邦自治
+
+:::: {.columns}
+::: {.column width="55%"}
+
+- **No hydraulic need 无大规模水利协作需求:** no giant floodplains, so no need for a centralized god-king.
+- **The rise of the polis 城邦体制兴起:** each isolated valley became an independent, self-ruling {{< vocab "city-state" >}} — Athens, Sparta, Corinth.
+- **Local patriotism 城邦自治忠诚:** loyalty belonged to one's own polis, not to a "Greek nation".
+
+:::
+::: {.column width="45%"}
+
+**Bilingual anchor 双语锚点**
+
+> **{{< vocab "city-state" text="Polis" >}}** 城邦 — a city plus the farmland around it, governing itself.
+
+(|城市| + |国家| = one small, fiercely independent state)
+
+**PACKET ACTION 手册操作 (page 3):**
+
+Underline the **two** physical barriers, and write *ISOLATION* beside the sentence explaining why one king could not rule Greece.
+
+:::
+::::
+
+---
+
+## Athenian Direct Democracy on the Pnyx · 普尼克斯山丘上的直接民主
+
+:::: {.columns}
+::: {.column width="50%"}
+
+- **Direct voting 直接表决:** citizens voted on laws themselves in the {{< vocab "assembly" text="Ecclesia" >}} — they did not elect politicians to decide for them.
+- **The Pnyx hill 普尼克斯山丘:** up to 6,000 adult male citizens gathered on the stone *bema* platform to debate.
+- **Pericles' wage reform 津贴制:** public officials were paid a daily stipend, so poor citizens could afford to serve.
+
+:::
+::: {.column width="50%"}
+
+**Primary source 一手史料 (431 BCE)**
+
+> "Our constitution is called a {{< vocab "democracy" >}} because power is in the hands of the whole people."
+
+— Pericles' Funeral Oration 伯里克利《国葬演说》
+
+{{< timer 3 >}}
+
+**Turn & Talk (60 s):** Pericles says "the whole people". Using the evidence on the next slide, is he right?
+
+:::
+::::
+
+---
+
+## The Democratic Paradox: Who Held Power? · 雅典民主的悖论
+
+**Athens' population by group (estimated shares):**
+
+:::: {.columns}
+::: {.column width="50%"}
+
+| Group 群体 | Share | Could vote? |
+|---|---|---|
+| Free adult male {{< vocab "citizen" text="citizens" >}} | ~12% | **Yes — the only group** |
+| Women and children | ~35% | No |
+| {{< vocab "metic" text="Metics" >}} (foreign residents) | ~18% | No — paid tax, rowed in the navy |
+| Enslaved people | ~35% | No — {{< vocab "chattel slavery" text="chattel property" >}} |
+
+:::
+::: {.column width="50%"}
+
+**Active task 课堂活动 (page 5, Stage 2)**
+
+Colour your pie chart, then finish this sentence:
+
+> "Athenian democracy was an elite luxury subsidized by forced labour."
+
+*雅典民主是建立在强迫劳动之上的精英特权。*
+
+**Think about it:** free men could spend whole days debating philosophy in the Assembly only because enslaved workers mined silver at Laurion and farmed the estates.
+
+:::
+::::
+
+---
+
+## Sparta & Formative Checkpoint 1 · 斯巴达对比与第1课过关检测
+
+:::: {.columns}
+::: {.column width="45%"}
+
+**The Spartan contrast 斯巴达对照**
+
+- An {{< vocab "oligarchy" >}}: two hereditary kings, a council of elders, five overseers.
+- Conquered neighbours were made state-owned serfs: {{< vocab "helot" text="helots" >}} — outnumbering citizens about **8 to 1**.
+- Constant fear of revolt turned Sparta into a permanent army; boys entered barracks at age seven.
+- Later, Alexander's campaigns spread Greek ideas eastward → {{< vocab "Hellenistic civilization" >}}.
+
+:::
+::: {.column width="55%"}
+
+**Exit Ticket ET1 · 5 minutes, independent 独立作答**
+
+1. **Factual 事实):** state **one** geographic reason why Greece developed separate {{< vocab "city-state" text="poleis" >}} rather than one unified river empire.
+2. **Conceptual 概念):** name **two** groups shut out of voting in Athens, and {{< vocab "explain" >}} why that makes democracy a paradox.
+3. **Application 迁移):** how did Alexander's conquests spread Hellenistic culture?
+
+{{< timer 5 >}}
+
+:::
+::::
+
+::: {.notes}
+Collect ET1 before moving on. Most common misconception: helots are "slaves like Athens had". They were not private property — the Spartan state owned them and bound them to the land.
+:::
+
+# Lesson 2 · Ancient Rome {background-color="#003477"}
+
+{{< vocab "republic" >}}, {{< vocab "Twelve Tables" >}} & Mass Slavery
+
+---
+
+## From Monarchy to the Roman Republic · 推翻王政：罗马共和国的诞生
+
+**Lesson Objective 学习目标 (I can...):** explain how the Republic balanced power between {{< vocab "patrician" text="patricians" >}} and {{< vocab "plebeian" text="plebeians" >}}, and analyse how mass slavery made the Republic collapse into an {{< vocab "empire" >}}.
+
+**Revolution of 509 BCE 公元前509年革命**
+
+:::: {.columns}
+::: {.column width="33%"}
+**Overthrow of tyranny**
+
+罗马人推翻伊特鲁里亚暴君，宣誓永不再立国王
+:::
+::: {.column width="33%"}
+**Res publica 公共事务**
+
+a state whose supreme power belongs to citizens who elect representatives
+:::
+::: {.column width="33%"}
+**Two unequal classes**
+
+{{< vocab "patrician" text="patricians" >}} 贵族 vs {{< vocab "plebeian" text="plebeians" >}} 平民
+:::
+::::
+
+---
+
+## The Architecture of Checks & Balances · 罗马共和国宪制三角
+
+:::: {.columns}
+::: {.column width="60%"}
+
+| Branch | Who | Power |
+|---|---|---|
+| 1. **{{< vocab "consul" text="Consuls" >}}** 执政官 | Two elected magistrates, **1-year term** | Command the legions; each can veto the other |
+| 2. **{{< vocab "senate" >}}** 元老院 | ~300 {{< vocab "patrician" text="patricians" >}}, **for life** | Treasury, foreign treaties |
+| 3. **{{< vocab "tribune" text="Tribunes" >}}** 保民官 | Elected by plebeians | Forum veto check to protect commoners |
+
+:::
+::: {.column width="40%"}
+
+**Bilingual anchor 双语锚点**
+
+> **{{< vocab "veto" >}}** 否决权 — Latin for *"I forbid!"*
+
+拉丁语原意：“我禁止！”
+
+**PACKET TASK 手册操作 (page 9, Stage 1):**
+
+Draw the arrows showing each branch checking the other two.
+
+:::
+::::
+
+---
+
+## Primary Source: The Twelve Tables (451 BCE) · 《十二铜表法》的双重面孔
+
+:::: {.columns}
+::: {.column width="50%"}
+
+**Table I — due process 第一表：诉讼正当程序**
+
+> "If someone is summoned to court, he shall go."
+
+- Laws carved on bronze ended secret {{< vocab "patrician" text="patrician" >}} court bias.
+- Progress: public rules, burden of proof on the accuser.
+
+:::
+::: {.column width="50%"}
+
+**Table VIII — injury and slaves 第八表：侵权与奴隶财产**
+
+> Broken bone of a free man = 300 coins.
+> Broken bone of a slave = 150 coins.
+
+**Who received the 150 coins? The master.**
+Slaves were {{< vocab "chattel slavery" text="property" >}}, not legal persons.
+
+:::
+::::
+
+**Critical verdict 辩证结论:** real progress in written {{< vocab "due process" >}} for free citizens — and continued legal oppression for enslaved people.
+
+---
+
+## Conquest, Latifundia & the Fall of the Republic · 唯物史观四步因果链
+
+**The four-step domino 四步历史骨牌:**
+
+:::: {.columns}
+::: {.column width="50%"}
+
+1. **Conquest 军事扩张** — Rome beat Carthage in the Punic Wars; hundreds of thousands of war captives flooded Italy.
+2. **{{< vocab "latifundia" >}} 大庄园** — {{< vocab "patrician" text="patricians" >}} bought farmland and ran it with unpaid enslaved workers.
+
+:::
+::: {.column width="50%"}
+
+3. **Bankruptcy 小农破产** — free {{< vocab "plebeian" text="plebeian" >}} farmers could not compete with zero-cost slave labour, so they moved to Rome.
+4. **Collapse 共和覆灭** — generals recruited desperate landless men into private armies → civil wars → Emperor Augustus in 27 BCE.
+
+:::
+::::
+
+**Statistic 关键数据:** by 100 BCE about **33% (1 in 3)** of people in Roman Italy was enslaved. The Republic was eaten from the inside.
+
+# Lesson 3 · Rivers vs. Seas {background-color="#003477"}
+
+Cross-Civilization Synthesis & Summative Launch
+
+---
+
+## Master Comparative Matrix · 跨单元核心要素对比
+
+**Continuity vs. Change 延续与变迁**
+
+| Dimension | Unit 1: River valleys | Unit 2: Mediterranean | Verdict |
+|---|---|---|---|
+| **1. Geography & power** | Floodplains → {{< vocab "theocracy" text="theocratic" >}} god-kings | Mountains & seas → assemblies, {{< vocab "republic" >}} | **Major change 重大变迁** |
+| **2. Written law** | Hammurabi: {{< vocab "lex talionis" >}} scaled by rank | {{< vocab "Twelve Tables" >}}: public {{< vocab "due process" >}} for citizens | **Change** in procedure, **continuity** for slaves |
+| **3. Labour regimes** | Peasant {{< vocab "corvee labor" >}} | Mass {{< vocab "chattel slavery" >}} (33% of Italy) | **Fundamental continuity 根本延续** |
+
+{{< timer 8 >}}
+
+Copy the "Verdict" column into **booklet page 12**.
+
+---
+
+## Writing Task: CER Synthesis Paragraph · 撰写跨单元 CER 综合段落
+
+**Prompt 写作题:** *Did Mediterranean systems liberate workers?*
+
+:::: {.columns}
+::: {.column width="34%"}
+**Claim 观点**
+
+"Although Classical Mediterranean civilizations developed [direct democracy / written due process], they failed to truly liberate ordinary workers."
+:::
+::: {.column width="33%"}
+**Evidence 证据**
+
+Cite **one** fact from Unit 1 (corvée dyke labour / Hammurabi §199) **and one** from Unit 2 ({{< vocab "latifundia" >}} / Twelve Tables Table VIII).
+:::
+::: {.column width="33%"}
+**Reasoning 推理**
+
+{{< vocab "explain" >}} **why** citizen politics fundamentally rested on an exploited economic base.
+:::
+::::
+
+Draft it in **booklet page 13**.
+
+---
+
+## Summative Task Launch (GRASPS) · 终结性学术论文发布
+
+**The Mingwan Academic Symposium Commission 明湾学校学术研讨会**
+
+- **Role & goal 角色与目标:** as a junior comparative historian, write a **5-paragraph comparative essay (400–600 words)** judging whether classical systems were authentic progress.
+- **Civilization pairing track 文明配对 (choose one 二选一):**
+  - **Track A:** Mesopotamia (Hammurabi) vs. the Roman Republic ({{< vocab "Twelve Tables" >}} & {{< vocab "latifundia" >}})
+  - **Track B:** Ancient Egypt (pharaoh {{< vocab "theocracy" >}}) vs. Classical Athens ({{< vocab "democracy" >}} & slavery)
+- **HALT protocol 严禁 AI 生成:** supervised in-class drafting on Toddle, with a verified handwritten paper trail.
+
+See the **[Unit 2 Summative booklet](../../summatives/02-unit-2-summative/index.html)** for the full six-lesson plan and rubrics.
+
+---
+
+## Debatable Question & Final Portfolio Check · 终极辩论与材料检查
+
+**Unit debatable question 单元终极辩论题:**
+
+> "To what extent did Classical Mediterranean systems represent authentic progress, given their continuous dependence on slavery?"
+
+*“在何种程度上，古典地中海治理系统代表了真正的人类进步？抑或它们只是将压迫披上了新的外衣？”*
+
+**Today's hand-in checklist 今日材料检查清单**
+
+- [x] **Page 5:** demographic pyramid & Athens/Sparta comparison complete
+- [x] **Page 9:** checks-and-balances triangle & latifundia domino complete
+- [x] **Page 13:** comparative matrix & CER draft complete
+
+Present your open booklet for the **teacher outline stamp 手册盖章**.

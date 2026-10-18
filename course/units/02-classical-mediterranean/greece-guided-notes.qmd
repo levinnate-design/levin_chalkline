@@ -1,0 +1,137 @@
+---
+title: "Lesson 1 Guided Notes & Exit Ticket (ET1) 第1课课堂笔记与过关检测"
+subtitle: "In-Class PPT Tracker · Demographic Pyramid · Cornell Notes · ET1"
+type: worksheet
+description: "Guided notes for Lesson 1: the 4-step geography causal chain, the Athenian demographic pyramid to colour, Cornell notes with answer prompts, Stage 3 synthesis writing, and Exit Ticket ET1."
+order: 4
+audience: [teacher, student]
+doc-type: Worksheet
+name-box: true
+format:
+  html: default
+  typst: default
+---
+
+```{python}
+import sys; sys.path.append("scripts")
+from vocab import load_unit, pick, word_bank
+terms = load_unit(2)
+```
+
+## Lesson 1 In-Class PPT Tracker & Guided Notes (50 minutes)
+
+**Deck:** Unit 2 Classical Mediterranean (Lesson 1 · Greece) — keep this page open beside your booklet pages 2–5.
+
+---
+
+## STAGE 1: Warm-Up & Geography Causal Chain 地理与城邦因果链
+
+*Slides 2–4 · 8 minutes*
+
+Complete the chain. Each arrow asks "what happened next?"
+
+**1. Physical Reality 地理现实**
+
+About **75%** of Greece is covered by {{< blank 1.2in >}}, with over {{< blank 1.2in >}} islands scattered across the Aegean.
+
+**2. Transport Challenge 交通挑战**
+
+Overland travel was exhausting, and this prevented the growth of a central {{< blank 1.6in >}}.
+
+**3. Political Result 政治结果**
+
+Greece fractured into independent {{< blank 1.6in >}}, called *poleis*.
+
+**4. Economic Adaptation 经济适应**
+
+Rocky soil forced Greeks outward to sea trade in {{< blank 1.2in >}}, {{< blank 1.2in >}} and pottery, importing grain, timber and metal.
+
+::: {.content-visible when-profile="teacher"}
+**Answer key — Stage 1:** 1. rugged mountains · 2,000 · 2. monarchy / imperial government · 3. city-states · 4. olive oil · wine
+
+Look-for: step 3 is where students most often write "empires". Ask what stopped a king from ruling both Athens and Sparta — the answer is in step 2, not step 3.
+:::
+
+---
+
+## STAGE 2: Athenian Demographic Pyramid 雅典人口金字塔与民主真相
+
+*Slides 6–8 · 12 minutes*
+
+**Read the shares, then colour the pyramid across from largest to smallest group.**
+
+| Group | Share | Rights at Athens |
+|---|---|---|
+| Free adult male {{< vocab "citizen" text="citizens" zh=true >}} | **12%** | The **only** group permitted to vote |
+| Women and children | **35%** | No political voice, secluded indoors |
+| {{< vocab "metic" text="Metics" zh=true >}} (foreign resident merchants) | **18%** | Paid taxes and served in the navy, but no vote |
+| Enslaved human beings | **35%** | {{< vocab "chattel slavery" text="Chattel property" zh=true >}}: mines, farms, workshops |
+
+{{< drawing-box label="Colour the Athens pyramid here: largest group first" height="4in" >}}
+
+**Sentence to complete underneath your pyramid:**
+
+> Athenian democracy was an elite luxury subsidized by forced labour, because {{< blank 3in >}}.
+
+---
+
+### Cornell Notes: Cue Column & Main Notes 康奈尔笔记
+
+Fill the right-hand column with your own words as we go through the deck.
+
+| Cornell Cue Column 关键线索 | Class Lecture Notes & Explanations 主听课记录区 |
+|---|---|
+| **Direct vs. modern** — how did citizen voting differ from today? | Direct: citizens vote on laws themselves. Modern: citizens {{< blank 2in >}}. |
+| **Pericles' wage reform** — why pay officials a daily stipend? | So poor men could afford to {{< blank 2.4in >}}. |
+| **Laurion silver mines** — who did the lethal work underground? | {{< blank 2.4in >}} mined the silver that paid for the fleet. |
+| **Spartan {{< vocab "helot" text="helots" zh=true >}}** — their ratio to citizens, and the fear | They outnumbered citizens {{< blank 1.2in >}}. Boys entered barracks at age {{< blank 0.6in >}}. |
+| **Hellenistic blend** — the cultures united by Alexander | Greek, {{< blank 1in >}}, {{< blank 1in >}} and Indian ideas merged. |
+
+---
+
+## STAGE 3: Lesson 1 Summary Synthesis 本课核心要点总结
+
+*Criterion A & D synthesis*
+
+In **2–3 complete sentences**, {{< vocab "explain" zh=true >}} why Athenian civic freedom was an "elite privilege" enabled by the exploitation of enslaved workers.
+
+{{< lines 4 >}}
+
+---
+
+## Exit Ticket ET1 第1课过关检测
+
+*5 minutes, independent 独立作答*
+
+**Q1 · Factual 事实性理解:** State **ONE** geographic reason why Greece developed separate {{< vocab "city-state" text="poleis" zh=true >}} rather than one unified river empire.
+
+{{< lines 2 >}}
+
+**Q2 · Conceptual 概念性理解:** {{< vocab "identify" text="Identify" zh=true >}} **TWO** groups excluded from voting in Athens, and {{< vocab "explain" zh=true >}} why this made democracy a paradox.
+
+{{< lines 3 >}}
+
+**Q3 · Application 迁移应用:** How did Alexander's conquests spread Hellenistic culture?
+
+{{< lines 3 >}}
+
+---
+
+**End-of-Class Checklist 课末自查清单**
+
+- [ ] Active annotations in the reading packet complete（阅读批注完成）
+- [ ] Stage 1 causal chain and Stage 2 pyramid done（因果链与人口金字塔完成）
+- [ ] Cornell notes filled（康奈尔笔记填写完毕）
+- [ ] Exit Ticket ET1 submitted（过关检测已提交）
+
+Teacher Outline Stamp 教师盖章处: [ {{< blank 1.5in >}} ]
+
+::: {.content-visible when-profile="teacher"}
+### ET1 suggested answers 参考要点
+
+- **Q1:** Rugged mountains covered about 75% of the land and cut it into isolated valleys, so overland travel was too slow for one king to govern the whole region. (Also accepted: no great navigable river system, no need for coordinated irrigation.)
+- **Q2:** Women, metics (foreign residents) and enslaved people — any two. It is a paradox because the city that invented rule by "the whole people" let only 10–15% of residents vote, and its citizens' free time rested on 35% of the population being enslaved.
+- **Q3:** Alexander founded Greek-style cities (named Alexandria) across Egypt, Persia and the Indus borderlands. Greek settlers mixed with local cultures, spreading Greek language, art and ideas — the Hellenistic civilization.
+
+**Common slip:** students say metics were "slaves". Metics were free people who could not vote; enslaved people were property.
+:::

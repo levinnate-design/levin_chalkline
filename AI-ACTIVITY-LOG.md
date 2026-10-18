@@ -24,6 +24,7 @@ This file is the **shared local memory and handoff log** across all AI assistant
    *(If you edit `AI-ACTIVITY-LOG.md` directly instead, run `python /Users/nathaniellevin/chalkline-mingwan/scripts/ai_log.py sync` afterward so the Chalkline and WeDrive copies stay identical.)*
 4. **Never Delete Earlier Entries:** Always add new entries at the top of the **Activity Feed** section.
 5. **Log All Deletions & Protect Non-Git Files:** If you delete or move files (in `chalkline-mingwan` or WeDrive), explicitly prefix them with `DELETED:` or `MOVED:` in `--files`. Never delete `AI-ACTIVITY-LOG.md`, `TOOL-CHANGES.md`, `CLAUDE.md`, `vocab/data/vocab.csv`, or foundational MYP PDFs. In WeDrive (which has no Git history), move retired drafts to an `_Archive/` folder unless Nathan explicitly asks for permanent deletion.
+6. **Recursively Check for SOP Updates:** Before starting **every** new task (and before finishing any multi-step task), re-read `/Users/nathaniellevin/chalkline-mingwan/CLAUDE.md`, `AGENTS.md`, and `AI-ACTIVITY-LOG.md` from disk—never rely solely on an earlier read cached in your conversation context—so any SOP updates take effect immediately.
 
 
 ---
@@ -35,6 +36,7 @@ This file is the **shared local memory and handoff log** across all AI assistant
 - **WeDrive Source Folder:** `/Users/nathaniellevin/Library/Containers/com.tencent.WeWorkMac/Data/WeDrive/明湾学校/Social Studies`
 - **Units & Summatives Status:**
   - `course/units/01-ancient-river-civilizations/` — Built (Unit 1 Overview, Mesopotamia, Ancient Egypt, Indus Valley slides, textbooks, learning sheets, formatives, review matrix/slides, supplemental readings).
+  - `course/units/02-classical-mediterranean/` — Built (Unit 2 Overview, 15-slide Classical Mediterranean master deck, Lesson 1 Greece reading packet + guided notes/ET1, Lesson 2 Rome reading packet + entry/exit tickets + guided notes/ET2, Lesson 3 cross-unit synthesis reading + comparative matrix & CER draft).
   - `course/summatives/02-unit-2-summative/` — Built (6-lesson Classical Mediterranean summative inquiry booklet & slides).
   - `course/references/command-terms.qmd` & `course/references/curriculum-building/` — Built & synced (20 IB MYP Command Terms `CMD-001`–`CMD-020` in `vocab.csv` + official MYP PDFs).
   - `course/units/91-test-unit-1-ancient-greece/` & `92-test-unit-2-ancient-rome/` — Archived sample units rebranded as Test Units 91 & 92.
@@ -45,6 +47,16 @@ This file is the **shared local memory and handoff log** across all AI assistant
 
 <!-- AI_LOG_FEED_START -->
 
+### [2026-10-18 23:49] COMPLETED — Build Unit 2: Classical Mediterranean Foundations (Greece & Rome)
+- **AI Assistant:** WorkBuddy
+- **Status:** COMPLETED
+- **Files Touched:** course/units/02-classical-mediterranean/*, course/vocab/02-classical-mediterranean.yml, vocab/data/vocab.csv, vocab/schema.yaml, vocab/config.js, TOOL-CHANGES.md
+- **Notes:** Added a new unit folder course/units/02-classical-mediterranean with index.qmd, unit-2-overview.qmd (reference), classical-mediterranean-slides.qmd (15-slide revealjs master deck), greece-reading-packet.qmd, greece-guided-notes.qmd, rome-reading-packet.qmd, rome-entry-exit-tickets.qmd, rome-guided-notes.qmd, cross-unit-synthesis.qmd, unit-2-review-matrix.qmd. Content taken only from the three linked WeDrive sources (Unit 2 master student reading inquiry booklet, Classical Mediterranean master deck, Rome Entry:Exit Tickets) plus the existing Summative folder; other WeDrive files were unused reference material. Added 18 new vocab terms (GRC-014..019, ROM-013..020, RIV-033..036) and new subdomains society (GRC/ROM) and synthesis (RIV); vocab validate.py reports 97 rows, 0 warnings. Student site (_site) fully rendered including the 33-page unit packet. Teacher edition (_site-teacher) has all HTML pages but its PDFs/packet still need the launcher's full startup build.
+### [2026-10-18 23:47] COMPLETED — Build Unit 2: Classical Mediterranean Foundations (Greece & Rome)
+- **AI Assistant:** WorkBuddy
+- **Status:** COMPLETED
+- **Files Touched:** course/units/02-classical-mediterranean/*, course/vocab/02-classical-mediterranean.yml, vocab/data/vocab.csv, vocab/schema.yaml, vocab/config.js, TOOL-CHANGES.md
+- **Notes:** Added a new unit folder course/units/02-classical-mediterranean with index.qmd, unit-2-overview.qmd (reference), classical-mediterranean-slides.qmd (15-slide revealjs master deck), greece-reading-packet.qmd, greece-guided-notes.qmd, rome-reading-packet.qmd, rome-entry-exit-tickets.qmd, rome-guided-notes.qmd, cross-unit-synthesis.qmd, unit-2-review-matrix.qmd. Content taken only from the three linked WeDrive sources (Unit 2 master student reading inquiry booklet, Classical Mediterranean master deck, Rome Entry:Exit Tickets) plus the existing Summative folder; other WeDrive files were unused reference material. Added 18 new vocab terms (GRC-014..019, ROM-013..020, RIV-033..036) and new subdomains society (GRC/ROM) and synthesis (RIV); vocab validate.py reports 97 rows, 0 warnings. Student site (_site) fully rendered including the 33-page unit packet. Teacher edition (_site-teacher) has all HTML pages but its PDFs/packet still need the launcher's full startup build.
 ### [2026-10-18 22:27] COMPLETED — Make .venv standalone in chalkline-mingwan and commit Git safety checkpoint
 - **AI Assistant:** Antigravity
 - **Status:** COMPLETED

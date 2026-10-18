@@ -1,0 +1,36 @@
+---
+title: "Unit 2: Classical Mediterranean Foundations"
+short-title: "Unit 2 · Classical Mediterranean"
+unit: 2
+format: html
+description: "How the mountains of Greece and the Republic of Rome moved power from god-kings to citizens — and why both systems still rested on forced labour."
+objectives:
+  - "I can explain how mountainous and maritime geography led Greece to split into independent city-states (poleis) instead of one river empire."
+  - "I can analyse why Athenian direct democracy was an exclusionary paradox, since it depended on enslaved labour."
+  - "I can describe how the Twelve Tables gave Roman citizens public due process while writing chattel slavery into the law."
+  - "I can trace how conquest, latifundia and mass slavery bankrupted plebeian farmers and toppled the Republic."
+  - "I can synthesise evidence from Unit 1 and Unit 2 to judge whether classical Mediterranean systems were real progress for working people."
+listing:
+  contents: "*.qmd"
+  type: table
+  fields: [title, type, description]
+  field-display-names:
+    type: Type
+  sort: "order"
+  filter-ui: false
+  sort-ui: false
+---
+
+::: {.callout-note title="Statement of Inquiry · 单元探究命题" icon=false}
+**Mountains and seas shaped new {{< vocab "republic" >}}s and citizen assemblies, yet public freedom stayed anchored to {{< vocab "social hierarchy" >}} and forced labour.**
+
+“地理环境深刻塑造了治理系统；然而制度在根本上都未能脱离阶层分化与强迫劳动的基石。”
+
+**Key Concept:** Systems (系统与制度) · **Related Concepts:** Governance (治理), Causality (因果关系), Civilization (文明) · **Global Context:** Fairness and Development (公平与发展)
+:::
+
+{{< objectives >}}
+
+{{< packet >}}
+
+## Materials

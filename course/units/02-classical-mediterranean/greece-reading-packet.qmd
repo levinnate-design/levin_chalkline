@@ -1,0 +1,169 @@
+---
+title: "Lesson 1 Reading Packet: Classical Greece 第1课双语阅读手册"
+subtitle: "Geography, the Polis & Direct Democracy · 爱琴海地理、城邦分立与雅典民主的悖论"
+type: reference
+description: "Bilingual student reading for Lesson 1 (booklet pages 2–4): Aegean geography and independent city-states, Pericles' direct democracy, exclusion and slavery, Sparta's helots, and Hellenistic cultural diffusion."
+order: 3
+audience: [teacher, student, parent]
+doc-type: Reference
+name-box: false
+format:
+  html: default
+  typst: default
+---
+
+```{python}
+import sys; sys.path.append("scripts")
+from vocab import load_unit, pick, word_bank
+terms = load_unit(2)
+```
+
+```{python}
+#| output: asis
+print(word_bank({
+    "Lesson 1 — Government & Geography": pick(terms, "city-state", "assembly", "democracy", "citizen", "direct democracy", "oligarchy"),
+    "Lesson 1 — Society & Culture": pick(terms, "metic", "helot", "social hierarchy", "cultural diffusion", "Hellenistic civilization"),
+}))
+```
+
+## Lesson 1 Learning Targets · 第1课学习目标
+
+- **Learning Target (I can...):** I can {{< vocab "explain" zh=true >}} how Greece's mountainous terrain led to independent {{< vocab "city-state" text="city-states" zh=true >}}, and {{< vocab "describe" zh=true >}} who held power and who was excluded in Athenian {{< vocab "direct democracy" zh=true >}}.
+- **Language Target (SIOP):** I can write a structured comparative sentence using the frame:
+
+  > "While Athens granted civic voting power to **[free adult male citizens]**, it systematically excluded **[women, foreigners, and enslaved people]**..."
+
+::: {.callout-note title="Central Guiding Reading Question · 核心阅读探究问题" icon=false}
+**How did Greece's mountainous and maritime geography shape its decentralized political systems, and why was Athenian democracy an exclusionary paradox?**
+
+古希腊的多山与海洋地理如何塑造了其分散独立的城邦政治？为什么说雅典的直接民主在本质上是一个排他性的悖论？
+:::
+
+---
+
+## 1. Bilingual Vocabulary Vault · 双语核心词汇库
+
+| English Term | 中文 | Student-Friendly Definition | In-Context Sentence |
+|---|---|---|---|
+| **Polis** T3 | 城邦 | An independent Greek state made of one city and the farmland around it. | Athens and Sparta were two independent {{< vocab "city-state" text="poleis" zh=true >}}. |
+| **{{< vocab "direct democracy" zh=true >}}** T3 | 直接民主 | Citizens vote on laws directly in an assembly instead of electing politicians. | Athenians practised direct democracy on the Pnyx. |
+| **{{< vocab "oligarchy" zh=true >}}** T3 | 寡头政治 | A government ruled by a small, powerful group of military or wealthy leaders. | Sparta was governed as a strict military {{< vocab "oligarchy" zh=true >}}. |
+| **{{< vocab "helot" text="Helot" zh=true >}}** T3 | 希洛人（国家农奴） | A state-owned farm worker in ancient Sparta, bound to the land. | The {{< vocab "helot" text="helots" zh=true >}} farmed so Spartans could train for war. |
+| **{{< vocab "citizen" zh=true >}}** T2 | 公民（法定成员） | A legally recognized member of a state with civic political rights. | Only adult free males were recognized as {{< vocab "citizen" text="citizens" zh=true >}}. |
+| **{{< vocab "cultural diffusion" zh=true >}}** T2 | 文化扩散 | The spreading and mixing of ideas, technologies and customs across cultures. | Alexander's conquests spread Greek ideas eastward. |
+| **{{< vocab "assembly" text="Assembly (Ecclesia)" zh=true >}}** T3 | 公民大会 | The gathering where all Athenian citizens met to debate and vote. | Thousands of citizens voted at the democratic {{< vocab "assembly" zh=true >}}. |
+| **{{< vocab "social hierarchy" zh=true >}}** T2 | 社会等级制度 | A system ranking groups of people one above another by status or power. | Enslaved captives sat at the bottom of the {{< vocab "social hierarchy" zh=true >}}. |
+
+*T2 = general academic word · T3 = subject-specific word*
+
+---
+
+## 2. The Core Bilingual Text · 核心双语文本
+
+### PART I — The Mountainous Sea: How Geography Fragmented Greece 群山与海洋
+
+#### Land Isolation and Mountainous Fragmentation · 地理阻隔与山脉分割
+
+Ancient Greece was not a single, unified country like the river valley kingdoms of Egypt or Mesopotamia. Instead, it was a collection of hundreds of independent city-states, which the Greeks called **{{< vocab "city-state" text="poleis" zh=true >}}** (singular: *polis*). Physical geography was the main reason for this political division.
+
+About **75 percent** of mainland Greece was covered by rugged, stony mountains. These mountain chains crisscrossed the peninsula, cutting the land into many isolated valleys and small coastal plains. Land travel across the jagged peaks was slow and exhausting. That made it almost impossible for one monarch to conquer, communicate with, and rule the whole region.
+
+古代希腊并不像古埃及或美索不达米亚那样是一个统一的中央集权大国。相反，它由数百个独立的城市国家组成，希腊人称之为“**城邦**”（polis）。自然地理环境是造成这种政治分裂的首要原因。希腊半岛约75%的土地被崎岖险峻的石质山脉所覆盖，将陆地切割成许多相互孤立的山谷和狭窄平原。翻越山峰的陆路交通极其缓慢艰难，使得单一统治者几乎不可能建立大一统帝国。
+
+::: {.callout-tip title="Quick Summary · 核心要点小结" icon=false}
+Mountains covered 75% of Greece and kept communities separated. Because people could not easily travel over the rugged rocks, they built separate {{< vocab "city-state" text="city-states" zh=true >}} instead of one big empire.
+
+*（山脉覆盖了希腊75%的土地并阻隔了交通，迫使人们建立了各自独立的城邦，而非统一的帝国。）*
+:::
+
+#### The Maritime Highway and Overseas Trade · 海洋通道与海外贸易
+
+The rocky mountain soil was poor for growing grain, so the ancient Greeks turned outward to the sea. Greece had a jagged coastline with hundreds of natural bays and more than **2,000 islands** scattered across the Aegean, Ionian and Mediterranean Seas. The sea became the Greeks' highway.
+
+Greek sailors traded olive oil, wine and pottery for foreign grain, timber and metal. This maritime trade brought Greeks into regular contact with older civilizations. Still, while the sea connected Greeks economically, fierce isolation on land meant each valley developed its own laws, local customs and independent {{< vocab "city-state" text="system of government" zh=true >}}.
+
+由于贫瘠多石的山地土壤难以出产充足的粮食，古希腊人转向海洋寻求生存。海洋成为了古希腊人的“交通公路”。频繁的海运贸易让希腊人与外界紧密接触；然而陆地上闭塞的地形却使每个山谷都孕育出了截然不同的法律与高度自治的**治理制度**。
+
+::: {.callout-important title="Challenge Think-Box · 高阶思辨探究" icon=false}
+**Compare** Greece's geography with the {{< vocab "hydraulic empire" text="hydraulic river valleys" zh=true >}} of Unit 1, then {{< vocab "explain" zh=true >}} the reason below. Why did annual river flooding promote absolute centralized kingship in Egypt, while the Aegean maritime environment promoted decentralized civic autonomy?
+
+*（对比希腊与第一单元大河文明：为何规律洪水促成埃及中央集权，而爱琴海群山海岛却催生城邦自治？）*
+:::
+
+### ✎ Checkpoint 1.1: Stop & Annotate Task (Geography & Power)
+
+- **Step 1:** Use a **YELLOW** highlighter to mark **TWO** physical barriers that kept Greek {{< vocab "city-state" text="poleis" zh=true >}} separated.
+- **Step 2:** Use a **GREEN** highlighter to mark **TWO** ways the sea helped Greeks survive economically.
+- **Step 3:** In the right margin, write the word **"ISOLATION"** beside the sentence explaining why one central king could not rule Greece.
+
+---
+
+### PART II — Athenian Direct Democracy under Pericles 雅典直接民主
+
+#### The Direct Democratic System on the Pnyx · 普尼克斯山丘上的直接民主
+
+In Athens, citizens built an extraordinary new system: **{{< vocab "direct democracy" zh=true >}}**. Unlike modern representative states, where citizens elect politicians to speak and vote for them, Athenian citizens took part directly in making state decisions.
+
+During Athens' Golden Age in the fifth century BCE, the statesman Pericles introduced daily wages for public officials. This reform let poorer citizens take time off work to serve on juries and hold government posts. Every few weeks, thousands of eligible men walked up to the **Pnyx** — a rocky hillside auditorium — to speak, debate foreign alliances and vote on public laws in the open {{< vocab "assembly" text="Assembly (Ecclesia)" zh=true >}}.
+
+在雅典城邦，公民们开创了一种非凡的政治制度——“**直接民主**”。与现代代议制不同，雅典公民直接参与决策。执政官伯里克利推行公职津贴制度，让贫穷平民也能担任公职。每隔几周，数千名合格男性便登上普尼克斯山丘，在**公民大会**（Ecclesia）上公开发言并表决法律。
+
+::: {.callout-note title="Language Support Frame · 语言支架" icon=false}
+Athenian democracy was **direct** because citizens... **(voted directly on laws / chose policies themselves rather than choosing representatives)**.
+:::
+
+#### The Reality of Civic Exclusion · 政治排斥的残酷现实
+
+However, this famous democracy held a profound contradiction. Athenian political rights went only to adult, free male {{< vocab "citizen" text="citizens" zh=true >}} who had finished military training and were born to two Athenian citizen parents. This privileged voting group made up only about **10 to 15 percent** of Athens' total population. The vast majority of residents were shut out of political power.
+
+Women were denied legal rights, could not own property and were expected to remain secluded inside the home. Foreign residents, known as **{{< vocab "metic" text="metics" zh=true >}}**, paid taxes and fought in the navy, but were never allowed to vote or own land.
+
+然而，这种民主包含着不可否认的内在矛盾。雅典政治权利仅授予成年自由男性公民，且父母均须为雅典人。这一特权投票群体仅占雅典总人口的**10%至15%**。妇女被剥夺了一切政治权利与财产权；外邦人照章纳税并随军作战，却绝无投票或购地资格。
+
+#### The Enslaved Foundation of Leisure · 奴隶劳作供养下的清谈特权
+
+Most importantly, Athenian democracy was financially and materially supported by an exploited underclass of enslaved human beings. Enslaved people were almost **one-third (33%)** of the city's population. They had zero human rights and were classified in law as {{< vocab "chattel slavery" text="chattel property" zh=true >}}.
+
+Enslaved workers toiled in lethal conditions in the silver mines of **Laurion**, ploughed estates, loaded trade ships and ran workshops. Free male citizens could spend entire days in the Assembly debating philosophy and theatre **only because** unfree forced labourers did the hard physical work that kept Athenian society alive.
+
+最为关键的是，雅典民主在物质基础上完全依赖于一个被残酷剥削的奴隶阶层。奴隶占全城总人口的近**三分之一（33%）**，被定性为财产。奴隶在劳里翁银矿的致命恶劣环境中苦役。自由男性公民之所以能整日在公民大会清谈政治与哲学，完全是由这群不自由的强迫劳工所供养。
+
+---
+
+### PART III — The Spartan Contrast & Hellenistic Diffusion 斯巴达与希腊化文明
+
+#### The Spartan Militarized Oligarchy & the Helots · 斯巴达军事寡头制与希洛人危机
+
+In the southern Peloponnese, Sparta chose a radically different social structure. Sparta was an **{{< vocab "oligarchy" zh=true >}}** ruled by two hereditary kings, an elder council and five overseers. Instead of founding overseas trade colonies, Sparta invaded neighbouring Messenia and forced the conquered people into collective agricultural serfdom.
+
+These state-owned agricultural workers were called **{{< vocab "helot" text="helots" zh=true >}}**. They outnumbered Spartan citizens by at least **eight to one (8:1)**. Because Spartans lived in constant fear of a helot revolt, the whole polis became a brutal, permanent military machine, with boys entering army barracks at age seven.
+
+坐落于南部的斯巴达城邦则走向了完全不同的道路。斯巴达是一个由两位国王和元老院共治的**寡头政治**国家。斯巴达人武装征服邻邦，将原住民沦为集体的国家农奴——“**希洛人**”（helots）。希洛人人口是斯巴达公民的**八倍以上**。由于时刻恐惧希洛人暴动，斯巴达彻底改造成常备军事机器，男童自七岁起便进入军营受训。
+
+#### Alexander the Great and Hellenistic Cultural Diffusion · 亚历山大大帝与文化扩散
+
+Centuries later, the Macedonian king **Alexander the Great** marched his armies eastward, conquering the Persian Empire and ancient Egypt and reaching the borderlands of the Indus River. His empire fractured quickly after his death, but his expansion ignited massive **{{< vocab "cultural diffusion" zh=true >}}**.
+
+In every conquered province Alexander founded Greek-style cities named *Alexandria*, filled with Greek merchants, scholars and soldiers. This mixing of Greek, Persian, Egyptian and Indian ideas, language and artistic techniques created **{{< vocab "Hellenistic civilization" zh=true >}}**.
+
+数个世纪后，马其顿国王亚历山大大帝挥师东征，征服波斯、埃及并推进至印度河流域。他的军事扩张引发了深远的**文化扩散**。他在各地建立以其名字命名的希腊化城市，促成了希腊、波斯、埃及与印度文明的深度交融，孕育出崭新的“希腊化文明”。
+
+---
+
+## Checkpoint 1.2: Turn & Talk — The Democratic Paradox 同伴合作探究
+
+> "Our constitution is called a democracy because power is in the hands not of a minority, but of the whole people..."
+>
+> — Pericles' Funeral Oration, 431 BCE（伯里克利《国葬演说》）
+
+**Partner A:** "Pericles claims power was held by **[the whole people]**, but historical evidence shows that only **[10 to 15% / free adult male citizens]** could actually vote."
+
+**Partner B:** "I agree. Athenian democracy was a paradox because while it gave freedom to citizens, it completely depended on the forced labour of **[enslaved workers]** and the exclusion of **[women and metics]**."
+
+## ✎ Checkpoint 1.3: Athens vs. Sparta Retrieval Matrix 城邦制度对比
+
+| Analytical Category | Athens 雅典 | Sparta 斯巴达 |
+|---|---|---|
+| **Ruling system 政体** | {{< vocab "direct democracy" zh=true >}} ({{< vocab "assembly" text="Assembly" zh=true >}} / Pnyx) | Military {{< vocab "oligarchy" zh=true >}} (2 kings + council) |
+| **Unfree labour 劳动力** | {{< vocab "chattel slavery" text="Chattel slaves" zh=true >}} — private property, ~33% | {{< vocab "helot" text="Helots" zh=true >}} — state-owned serfs, ~8:1 ratio |
+| **Core state goal 目标** | Civic debate, maritime trade and navy | Total military discipline and preventing revolt |

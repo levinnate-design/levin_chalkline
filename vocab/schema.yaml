@@ -28,9 +28,9 @@ vocab:
     - {name: status,        required: true}
 
   domains:
-    RIV: [geography, mesopotamia, egypt, indus]
-    GRC: [geography, government, culture]
-    ROM: [government, army, daily-life, engineering]
+    RIV: [geography, mesopotamia, egypt, indus, synthesis]
+    GRC: [geography, government, culture, society]
+    ROM: [government, army, daily-life, engineering, society]
     ECO: [systems]
     CMD: [knowing, investigating, communicating, thinking]
 

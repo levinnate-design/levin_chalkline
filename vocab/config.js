@@ -10,6 +10,7 @@ window.VOCAB_CONFIG = {
   // 中文 for subdomains, and nicer English names where "daily-life" -> "Daily life" isn't enough.
   subdomainZh: { geography: "地理与文明要素", government: "政府", culture: "文化", army: "军队",
                  "daily-life": "日常生活", engineering: "工程", systems: "制度",
+                 society: "社会与劳动", synthesis: "跨单元综合",
                  mesopotamia: "美索不达米亚", egypt: "古埃及", indus: "印度河流域",
                  knowing: "标准 A：知识与理解", investigating: "标准 B：调查研究",
                  communicating: "标准 C：交流表达", thinking: "标准 D：批判性思考" },

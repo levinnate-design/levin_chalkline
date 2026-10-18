@@ -1,0 +1,108 @@
+---
+title: "Ancient Rome — Lesson 2 Entry & Exit Tickets 第2课进场票与出场票"
+subtitle: "Front: entry ticket (prior knowledge, geography check, reading recall) · Back: exit ticket (Twelve Tables check, key takeaway, questions)"
+type: worksheet
+description: "Printable half-page tickets for Lesson 2: an entry ticket checking prior knowledge, Roman geography and the three branches, and an exit ticket checking the Twelve Tables and key takeaways."
+order: 6
+audience: [teacher, student]
+doc-type: Worksheet
+name-box: true
+format:
+  html: default
+  typst: default
+---
+
+## ENTRY TICKET — Front 进场票（正面）
+
+**"ANCIENT ROME — LESSON 2 · ENTRY TICKET"**
+
+### 1. Prior Knowledge 先验知识储备
+
+In 1–2 sentences, share anything you already know about ancient Rome (famous people, stories, places, or achievements).
+
+请用 1–2 句话写出你对古罗马已经了解的任何知识（例如：著名人物、历史故事、地标建筑或重要成就）。
+
+{{< lines 2 >}}
+
+### 2. Geography Check 地理知识考查 (MCQ)
+
+On which peninsula and along which river was the city of Rome originally founded?
+
+罗马城最初建于哪个半岛以及哪条河流沿岸？
+
+- [ ] **A.** Balkan Peninsula / Danube River（巴尔干半岛 / 多瑙河）
+- [ ] **B.** Italian Peninsula / Tiber River（意大利半岛 / 台伯河）
+- [ ] **C.** Iberian Peninsula / Tagus River（伊比利亚半岛 / 塔霍河）
+- [ ] **D.** Anatolian Peninsula / Euphrates River（小亚细亚半岛 / 幼发拉底河）
+
+### 3. Reading Recall 预习回忆
+
+Briefly {{< vocab "describe" >}} the main responsibility of each branch of the Roman Republic.
+
+简要描述罗马共和国各分支的职责：
+
+- **{{< vocab "consul" text="Consuls" >}} 执政官:** {{< blank 3in >}}
+- **{{< vocab "senate" text="Senate" >}} 元老院:** {{< blank 3in >}}
+- **Assemblies & {{< vocab "tribune" text="Tribunes" >}} 公民大会与保民官:** {{< blank 3in >}}
+
+### 4. Social Structure 阶级社会构成
+
+Name the two main social classes in early Rome.
+
+写出古罗马早期的两大主要社会阶层名称：
+
+- Wealthy noble landowners 富裕的贵族阶层: {{< blank 2in >}}
+- Common citizens (farmers, merchants, artisans) 普通平民阶层: {{< blank 2in >}}
+
+{{< pagebreak >}}
+
+## EXIT TICKET — Back 出场票（背面）
+
+**"ANCIENT ROME — LESSON 2 · EXIT TICKET"**
+
+### 1. Concept Check 核心概念检测 (MCQ)
+
+Why were the {{< vocab "Twelve Tables" >}} (*Lex Duodecim Tabularum*) significant in Roman society?
+
+为什么《十二铜表法》在古罗马社会中具有重要意义？
+
+- [ ] **A.** They allowed the king to rule without any laws.（它们允许国王在没有任何法律约束的情况下统治。）
+- [ ] **B.** They established written laws applying to all citizens.（它们确立了适用于所有公民的成文法。）
+- [ ] **C.** They declared that only {{< vocab "patrician" text="patricians" >}} were allowed to hold property.（它们规定只有贵族才能拥有财产。）
+- [ ] **D.** They were treaties signed with neighbouring tribes for peace.（它们是与邻近部落签署的和平条约。）
+
+### 2. Key Takeaway 课堂收获
+
+What is the most important thing you now understand about Roman government or society after today's lesson?
+
+学完今天的课程后，关于罗马的政体或社会，你理解得最清楚的一项关键内容是什么？
+
+{{< lines 3 >}}
+
+### 3. Curious Inquiries 探索与疑问
+
+**What I now know about Rome 我的已知知识:**
+
+{{< lines 3 >}}
+
+**Question or topic to explore 我的疑问 / 衍生话题:**
+
+{{< lines 3 >}}
+
+---
+
+::: {.content-visible when-profile="teacher"}
+### Answer key 参考答案（仅供教师版使用）
+
+**Entry ticket**
+
+- **Q2: B** — the Italian Peninsula, along the Tiber River. (Usual distractor chosen: A, because students know rivers from Unit 1.)
+- **Q3:** Consuls commanded the legions and could veto each other (1-year term) · Senate controlled the treasury and foreign treaties (~300 patricians for life) · Assemblies voted and elected tribunes, who used the veto to protect plebeians.
+- **Q4:** {{< vocab "patrician" text="patricians" >}} (贵族) and {{< vocab "plebeian" text="plebeians" >}} (平民).
+
+**Exit ticket**
+
+- **Q1: B** — the Twelve Tables published the law in writing in the Forum. Push back gently on students who choose D: treaties existed, but "Lex Duodecim Tabularum" was a *lex*, a statute.
+- **Bonus follow-up for fast finishers:** who got the 150 coins when an enslaved person's bone was broken? (The master — see your reading packet, Table VIII.)
+- **Q3 look-for:** strong answers ask *why* Rome's own farmers were ruined by Rome's own victories.
+:::

@@ -1,0 +1,138 @@
+---
+title: "Lesson 3 Reading Packet: Rivers vs. Seas 第3课跨单元综合阅读"
+subtitle: "Cross-Civilization Synthesis Bridge · 大河与海洋的对话（Unit 1 → Unit 2）"
+type: reference
+description: "Bilingual comparative reading for Lesson 3 (booklet pages 10–12): why floodplains made theocracies while mountains and seas made assemblies and republics, how written law evolved from lex talionis to due process, and how forced labour continued in every ancient civilization."
+order: 8
+audience: [teacher, student, parent]
+doc-type: Reference
+name-box: false
+format:
+  html: default
+  typst: default
+---
+
+```{python}
+import sys; sys.path.append("scripts")
+from vocab import load_unit, pick, word_bank
+terms = load_unit(2)
+```
+
+```{python}
+#| output: asis
+print(word_bank({
+    "Lesson 3 — Environment & Power": pick(terms, "hydraulic empire", "theocracy", "city-state", "republic"),
+    "Lesson 3 — Law & Labour": pick(terms, "lex talionis", "due process", "corvee labor", "chattel slavery", "continuity"),
+}))
+```
+
+## Lesson 3 Learning Targets · 第3课学习目标
+
+- **Learning Target (I can...):** I can cross-reference evidence from Unit 1 (Mesopotamia / Egypt) and Unit 2 (Greece / Rome) across geography, written law and slavery to {{< vocab "identify" text="identify" zh=true >}} {{< vocab "continuity" text="continuities" zh=true >}} and changes.
+- **Language Target (SIOP):** I can write a synthesis sentence using comparative transition stems:
+
+  > "Although Roman law advanced due process beyond Hammurabi's Code by establishing **[presumption of innocence]**, both systems maintained continuity by **[treating enslaved humans as property]**."
+
+::: {.callout-note title="Central Guiding Reading Question · 核心阅读探究问题" icon=false}
+**How did classical Mediterranean systems modify or continue the environmental adaptations, legal codes and labour systems of ancient river valley theocracies?**
+
+古典地中海文明如何继承并改造了古代大河神权国家的地理适应、成文法典与劳动力剥削体制？
+:::
+
+---
+
+## 1. Bilingual Vocabulary Vault · 双语核心词汇库
+
+| English Term | 中文 | Student-Friendly Definition | In-Context Sentence |
+|---|---|---|---|
+| **{{< vocab "theocracy" zh=true >}}** T3 | 神权政治 | Government led by rulers treated as living gods or their chosen priests. | Egyptian pharaohs ruled as divine kings in a {{< vocab "theocracy" zh=true >}}. |
+| **{{< vocab "hydraulic empire" zh=true >}}** T3 | 水利专制帝国 | A state whose power comes from controlling large-scale river irrigation. | Mesopotamian cities were {{< vocab "hydraulic empire" text="hydraulic empires" zh=true >}} managing flood canals. |
+| **{{< vocab "corvee labor" zh=true >}}** T3 | 劳役制（国家强迫劳役） | Unpaid work a state forces peasants to do, such as building dykes. | Egyptian peasants gave seasonal {{< vocab "corvee labor" zh=true >}} on the pyramids. |
+| **{{< vocab "lex talionis" zh=true >}}** T3 | 同态复仇法 | The rule that a punishment should match the injury — "an eye for an eye". | Hammurabi enforced {{< vocab "lex talionis" zh=true >}} scaled strictly to social rank. |
+| **{{< vocab "continuity" zh=true >}}** T2 | 历史延续性 | The reality that certain social or economic patterns stay the same. | Unfree forced labour is a major {{< vocab "continuity" zh=true >}} across civilizations. |
+| **{{< vocab "due process" zh=true >}}** T2 | 法定正当程序 | Fair, public court steps that must be followed before judging someone. | Roman law advanced civil {{< vocab "due process" zh=true >}} for free male citizens. |
+
+---
+
+## 2. The Core Bilingual Text · 核心双语文本
+
+### PART I — Environment and Power: Floodplain Monarchies vs. Maritime Republics 环境与王权
+
+#### Monumental Irrigation Engineering and Centralized Theocracies · 大河水利统筹与集权神权政体
+
+In Unit 1, we found that the earliest civilizations were born on the wide floodplains of the Tigris, Euphrates and Nile. Flat, open terrain and yearly floods laid down rich agricultural silt. But surviving there required monumental engineering: thousands of labourers had to coordinate digging irrigation canals, building protective levees and storing surplus grain.
+
+The need for mass coordination produced absolute, centralized **{{< vocab "theocracy" text="theocracies" zh=true >}}**. Kings like Hammurabi claimed a divine mandate from the sun god Shamash, while Egyptian pharaohs were worshipped as living gods on Earth. Power sat entirely in the hands of an autocratic royal court — the classic **{{< vocab "hydraulic empire" zh=true >}}**.
+
+在第一单元中，文明诞生于大河冲积平原。平坦开阔的地形和规律或不规律的洪水沉积了肥沃淤泥。然而大规模灌溉、开渠筑堤需要调动数以万计的劳动力，这种对大规模集体协作的需求催生了高度集权的**神权政治**（如巴比伦王宣称君权神授，埃及法老被视为活神），国家大权绝对集中于王廷。
+
+::: {.callout-tip title="Quick Summary · 核心要点小结" icon=false}
+Rivers required god-kings to manage big irrigation projects. Mountains and seas let Greeks and Romans build citizen assemblies and a {{< vocab "republic" zh=true >}} instead.
+
+*（大河水利需要神圣君主集权，地中海山海环境则促成了公民大会与共和国。）*
+:::
+
+#### Mountainous Fragmentation, Maritime Trade and Citizen Councils · 山海阻隔、海上商路与公民议事
+
+The Classical Mediterranean was shaped by mountains and open sea corridors instead. With no great river systems, Mediterranean farmers did **not** need one vast irrigation bureaucracy under a divine monarch.
+
+Greece's broken geography produced hundreds of fiercely independent {{< vocab "city-state" text="poleis" zh=true >}}, where free citizens experimented with {{< vocab "direct democracy" zh=true >}} and oligarchic councils. Rome's central peninsular geography along the Tiber supported a balanced constitutional {{< vocab "republic" zh=true >}} with elected magistrates.
+
+Put simply: political authority moved away from divine god-kings toward structured citizen assemblies. **That was a major historical change.**
+
+与大河平原形成鲜明对比的是，古典地中海世界为群山和海洋走廊所塑造。大河水系的缺失意味着无需维持庞大的中央灌溉官僚网络。希腊破碎的地貌孕育了数百个独立城邦与民主/寡头实践；罗马半岛地形哺育了宪制共和国。政治权力从神圣君主转移到公民大会，标志着重大的历史**变迁**。
+
+### ✎ Checkpoint 3.1: Stop & Annotate Task (Continuity vs. Change)
+
+- **Step 1:** Use a **BLUE** pen to underline the sentence showing a **MAJOR CHANGE** in how political authority was organized (from god-kings to citizen assemblies).
+- **Step 2:** Use an **ORANGE** pen to underline the sentence showing a **FUNDAMENTAL CONTINUITY** in how civilization was economically maintained (reliance on forced labour).
+
+---
+
+### PART II — The Evolution of Written Justice: Hammurabi to the Twelve Tables 成文司法演进
+
+#### Retributive Status Law vs. Secular Public Due Process · 同态身份复仇法向世俗正当程序的演进
+
+The story of written law shows both remarkable progress and lasting oppression.
+
+In Bronze Age Mesopotamia, the **Code of Hammurabi** (c. 1750 BCE) carved 282 judgments onto a diorite stele. It enforced **{{< vocab "lex talionis" zh=true >}}** ("an eye for an eye") *strictly according to social rank*: if an aristocrat blinded another aristocrat, his own eye was knocked out; but if he blinded an enslaved person, he merely paid a silver fine.
+
+Over a thousand years later, the Roman **{{< vocab "Twelve Tables" zh=true >}}** (451 BCE) advanced jurisprudence by establishing secular **{{< vocab "due process" zh=true >}}**. Accuser and defendant had to appear in an open forum, decisions required witness evidence, and citizens could appeal capital judgments.
+
+Yet this legal progress offered **zero** protection to enslaved humans, who stayed classified as commercial property, subject to physical torture and private execution.
+
+成文法演进既揭示了进步，也印证了压迫的延续。《汉谟拉比法典》确立了依据等级量刑的**同态复仇**原则；一千多年后的罗马《十二铜表法》确立了公开审判、证人举证等世俗**正当程序**。然而这种法律进步带有狭隘的阶级性：奴隶依然被界定为买卖财产，毫无基本人权。
+
+---
+
+### PART III — The Unfree Foundation of Civilization: Coerced Labour Continues 劳工制度延续
+
+#### Peasant Corvée Conscription in the Bronze Age Floodplains · 青铜时代大河平原的农民劳役征发
+
+When we examine the economic foundation of these societies, a striking **{{< vocab "continuity" zh=true >}}** appears. Bronze Age civilizations depended on coerced, unequal human labour to produce food surpluses and monumental architecture.
+
+In ancient Egypt, tens of thousands of peasant farmers were conscripted through mandatory **{{< vocab "corvee labor" zh=true >}}** during the annual Nile flood to build pyramids, temples and irrigation dykes under royal supervision. Egyptian peasants were technically free in law, but their bodies and labour belonged to the pharaoh's {{< vocab "theocracy" text="theocratic" zh=true >}} state.
+
+深入审视经济基础，可以发现深刻的历史**延续性**。古埃及在尼罗河泛滥期通过强制**劳役制**（corvée）征发数以万计的农民修建金字塔和水渠。虽然农民在名义上自由，但劳动力完全隶属于法老神权统治机器。
+
+#### The Intensification of Systematic Chattel Slavery in the Mediterranean · 地中海成体系奴隶制的激化
+
+Rather than abolishing servitude, the Classical Mediterranean world radicalized it into systematic **{{< vocab "chattel slavery" zh=true >}}**. Enslaved labour was not an occasional by-product of war. It was the indispensable economic engine of antiquity.
+
+Athenian citizens could sit for weeks in the Assembly, and Roman {{< vocab "patrician" text="patricians" zh=true >}} could govern from the {{< vocab "senate" text="Senate" zh=true >}}, **solely because** enslaved captives toiled in dark silver mines, rowed naval galleys and harvested food on {{< vocab "latifundia" zh=true >}}.
+
+So: the architecture of government changed dramatically. The economic base did not. Both systems rested firmly on unfree labour.
+
+古典地中海世界不仅没有废除奴役，反而将其激化为成体系的**人身买卖奴隶制**。雅典公民能够集会辩论、罗马贵族能够执掌元老院，完全是因为奴隶在银矿、战船和奴隶制大庄园里流血流汗。虽然治理体制改变，两者在本质上均牢固建立在剥削劳工的基石之上。
+
+---
+
+## Checkpoint 3.2: Turn & Talk — The True Cost of Civic Liberty 公民自由的真正代价
+
+**Speaker 1:** "Classical governance represented real progress because [citizens gained voting rights and written due process], which people under god-kings never had."
+
+**Speaker 2:** "However, economically it was continuous because [both systems completely depended on forced labour to maintain state power]."
+
+> **Hint for both speakers:** use at least one named fact as evidence — mining laurion silver, Athens' ~15% citizen share, the Twelve Tables' 150 coins paid to the master, or Rome's 33% enslaved population.
+
+Complete your written version of this comparison in the **unit review matrix**.

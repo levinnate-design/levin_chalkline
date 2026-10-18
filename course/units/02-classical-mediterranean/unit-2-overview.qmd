@@ -1,0 +1,161 @@
+---
+title: "Unit 2 Overview & Inquiry Guide 第二单元课程总览与探究指南"
+type: reference
+description: "Statement of Inquiry, 3-tiered inquiry questions, MYP Criteria A/C/D & CNC alignment, the 3-lesson learning arc, and a comparative sentence frame bank."
+order: 1
+audience: [teacher, student, parent]
+doc-type: Reference
+name-box: false
+format:
+  html: default
+  typst: default
+---
+
+```{python}
+import sys; sys.path.append("scripts")
+from vocab import load_unit, pick, word_bank
+terms = load_unit(2)
+```
+
+| Course / 学科 | MYP Individuals & Societies (整合人文) & CNC History (部编版历史) | Target Grade / 年级 | Grade 7–8 (MYP Years 2–3) |
+|---|---|---|---|
+| **Duration / 周期** | 2–3 Weeks (Core 3-Lesson Arc · 45–50 min periods) + the Unit 2 Summative | **School / 学校** | Shenzhen Mingwan School (深圳明湾学校) |
+| **Frameworks** | IB MYP I&S Guide · Mingwan Assessment Policy · CNC History Standards (2022) | **Target Criteria** | Criteria A (Knowing), C (Communicating), D (Thinking Critically) |
+
+---
+
+## 1. Unit Architecture & Conceptual Lens 单元架构与概念透镜
+
+- **Key Concept (核心概念):** **Systems (系统 / 制度)** — The structures of governance, written law and labour that Mediterranean civilizations built, and how those structures decided who held power.
+- **Related Concepts (相关概念):** **Governance (治理), Causality (因果关系), Civilization (文明)** — How mountain isolation and open sea routes caused independent {{< vocab "city-state" text="city-states" zh=true >}} and a {{< vocab "republic" zh=true >}} to appear instead of centralized {{< vocab "hydraulic empire" text="hydraulic empires" zh=true >}}.
+- **Global Context (全球背景):** **Fairness and Development (公平与发展)** — Civic liberty for a few versus mass enslavement for many; who gets justice, and who pays for it.
+- **Dual-Track Framework:** IB MYP Individuals & Societies paired with CNC World History (2022课标).
+
+::: {.callout-important title="Statement of Inquiry (SOI · 单元探究命题)" icon=false}
+**EN — full form:** Geographic realities shape the systems of governance and social order that civilizations construct, determining who holds power, how laws are enforced, and how societies balance collective authority against individual rights; yet across both ancient floodplains and classical seas, systemic order remained inextricably anchored to social hierarchy and forced labour.
+
+**EN — short form (for slides):** Geographic realities shape systems of governance; yet systemic order remained anchored to social hierarchy and forced labour.
+
+**CN:** 地理环境深刻塑造了文明所构建的治理系统与社会秩序，决定了权力的归属、法律的执行以及集体权威与个体权利的平衡方式；然而，无论是在远古的大河平原还是古典的地中海世界，制度的建立在根本上都未能脱离阶层分化与强迫劳动的基石。
+:::
+
+### Unit Core Learning Targets 单元核心学习目标 (*"I can..."*)
+
+1. {{< vocab "explain" text="Explain" zh=true >}} how mountainous and {{< vocab "city-state" text="maritime" zh=true >}} environments led to decentralized {{< vocab "city-state" text="city-states" zh=true >}} and a {{< vocab "republic" zh=true >}} rather than a unified river empire.
+2. {{< vocab "analyse" text="Analyse" zh=true >}} why Athenian {{< vocab "direct democracy" zh=true >}} was an exclusionary paradox supported by {{< vocab "chattel slavery" text="chattel" zh=true >}} slave labour.
+3. {{< vocab "describe" text="Describe" zh=true >}} how the {{< vocab "Twelve Tables" zh=true >}} created public {{< vocab "due process" zh=true >}} for citizens while writing slavery into the law as property.
+4. {{< vocab "evaluate" text="Evaluate" zh=true >}} whether classical Mediterranean systems represented real progress for ordinary working people.
+
+---
+
+## 2. Three-Tiered Inquiry Questions 三级探究问题链
+
+### 2.1 Factual Questions (事实性问题 · DOK 1–2: Recall & Knowledge)
+
+1. {{< vocab "identify" text="Identify" zh=true >}} the percentage of mainland Greece covered by mountains, and say why this mattered for Greek unity. *(约75%，山脉切割陆地使统一帝国难以维系)*
+2. Which four groups lived in Athens, and roughly what share of the population could vote? *(成年男性公民约10–15%，其余为妇女儿童、外邦人与奴隶)*
+3. {{< vocab "list" text="List" zh=true >}} the three branches of the Roman Republic and one duty of each. *(执政官统帅军团、元老院掌财政外交、保民官行使否决权保护平民)*
+4. In which year were the {{< vocab "Twelve Tables" >}} published, and on what material were they written? *(公元前451年，青铜板)*
+5. What share of people in Italy was enslaved by about 100 BCE? *(约三分之一，33%)*
+
+### 2.2 Conceptual Questions (概念性问题 · DOK 2–3: Relational Analysis & Explanation)
+
+1. {{< vocab "explain" text="Explain" zh=true >}} why the absence of a great river system removed the need for a centralized god-king in Greece and Rome. *(无需大规模灌溉协作，权力从神权君主转向公民议事机构)*
+2. In what ways was the {{< vocab "Twelve Tables" >}} both progress and oppression at the same time? *(公开成文法保障公民正当程序；第八表却把奴隶定为财产)*
+3. How did military conquest lead, step by step, to the fall of the Republic? *(征服→战俘涌入→大庄园→小农破产→私人军团→内战→奥古斯都称帝)*
+4. How do historians {{< vocab "interpret" zh=true >}} Sparta's fear of a {{< vocab "helot" text="helot" zh=true >}} revolt shaping its whole society? *(希洛人以八比一的人数比例压倒斯巴达人，恐惧促成常备军事化体制)*
+
+### 2.3 Debatable Questions (辩论性问题 · DOK 3–4: Evaluation & Historical Argumentation)
+
+1. {{< vocab "discuss" text="Discuss" zh=true >}}: Was Athenian democracy real democracy, or an elite privilege bought with forced labour?
+2. {{< vocab "evaluate" text="Evaluate" zh=true >}}: Did the classical Mediterranean truly advance human freedom, or simply give oppression a new shape?
+3. **Unit debatable question (单元终极辩论题):** *To what extent did Classical Mediterranean systems represent authentic progress, given their continuous dependence on slavery?*
+
+---
+
+## 3. Standards & Competencies Mapping 标准与核心素养映射
+
+### 3.1 IB MYP Individuals & Societies Criteria (Years 2–3)
+
+- **Criterion A: Knowing and Understanding (了解与理解)**
+  - *Strand i:* Consistently and accurately {{< vocab "use" zh=true >}} subject-specific vocabulary in context ({{< vocab "city-state" text="polis" >}}, {{< vocab "direct democracy" >}}, {{< vocab "oligarchy" >}}, {{< vocab "helot" text="helots" >}}, {{< vocab "metic" text="metics" >}}, {{< vocab "Twelve Tables" >}}, {{< vocab "due process" >}}, {{< vocab "latifundia" >}}, {{< vocab "chattel slavery" >}}, {{< vocab "continuity" >}}).
+  - *Strand ii:* {{< vocab "demonstrate" text="Demonstrate" zh=true >}} detailed knowledge of how geography, law and labour regimes worked in Athens, Sparta and Rome.
+- **Criterion C: Communicating (沟通表达)**
+  - *Strand i:* Communicate analysis in clear, academic English suitable for history.
+  - *Strand ii:* Structure comparative writing logically (*Claim → Evidence from Unit 1 → Evidence from Unit 2 → Analytical Synthesis*).
+  - *Strand iii:* Use cause-and-effect connectors (*consequently, whereas, stemming from, as a result*).
+- **Criterion D: Thinking Critically (批判性思维)**
+  - *Strand i:* {{< vocab "analyse" text="Analyse" zh=true >}} primary sources (Pericles' Funeral Oration, Twelve Tables Table I and Table VIII).
+  - *Strand ii:* {{< vocab "synthesize" text="Synthesize" zh=true >}} evidence across two units to build a historical argument.
+  - *Strand iii:* {{< vocab "evaluate" text="Evaluate" zh=true >}} whose interests a written law code served.
+
+### 3.2 Chinese National Curriculum (CNC 2022) Core History Literacies (义务教育历史核心素养)
+
+- **唯物史观 (Historical Materialism):** 理解奴隶劳动所提供的经济基础支撑了雅典民主与罗马共和的上层建筑；奴隶制危机推动罗马由共和走向帝国。
+- **时空观念 (Temporal-Spatial Concepts):** 掌握爱琴海海岸线破碎、多山环海的地理特征，以及公元前509年共和建立、公元前451年《十二铜表法》、公元前27年奥古斯都的关键时间节点。
+- **史料实证 (Historical Evidence):** 结合伯里克利《国葬演说》原文与《十二铜表法》原条文，理解一手史料的证据价值与阶级局限。
+- **历史解释 (Historical Interpretation):** 能够辩证解释古希腊民主政治的历史进步性与阶级局限性，以及共和国衰亡的深层经济根源。
+
+---
+
+## 4. The Core 3-Lesson Inquiry Arc 核心三课探究序列
+
+| Lesson | Focus Module | Key Learning Engagements | Formative Checkpoint |
+|---|---|---|---|
+| **Lesson 1** (Pages 2–5) | **Classical Greece: Geography, the Polis & Direct Democracy** — 爱琴海地理、城邦分立、公民直接民主与排他性悖论 | • Reasoning chain: *75% mountains → overland isolation → independent {{< vocab "city-state" text="poleis" >}} → maritime trade*<br>• Athenian institutions on the Pnyx: the {{< vocab "assembly" text="Ecclesia" >}}, Pericles' paid stipend<br>• Demographic pie chart: who voted and who was shut out<br>• Primary source: Pericles' Funeral Oration, 431 BCE<br>• {{< vocab "oligarchy" text="Oligarchic" >}} contrast: Sparta and the {{< vocab "helot" text="helots" >}}; Alexander's {{< vocab "cultural diffusion" >}} | **Checkpoints 1.1–1.3 + Exit Ticket ET1** *(Crit. A/D)* |
+| **Lesson 2** (Pages 6–9) | **Ancient Rome: The Republic, Twelve Tables & Mass Slavery** — 权力制衡、成文法典、对外征服与大庄园奴隶制危机 | • 509 BCE: monarchy overthrown, *res publica* founded<br>• Checks-and-balances triangle: {{< vocab "consul" text="consuls" >}}, {{< vocab "senate" >}}, {{< vocab "tribune" text="tribunes" >}} and the {{< vocab "veto" >}}<br>• Primary source analysis: Twelve Tables, Table I vs Table VIII<br>• Four-step domino chain: conquest → {{< vocab "latifundia" >}} → bankruptcy → {{< vocab "empire" >}} | **Checkpoints 2.1–2.3 + Entry/Exit Tickets (ET2)** *(Crit. A/D)* |
+| **Lesson 3** (Pages 10–13) | **Rivers vs. Seas: Cross-Civilization Synthesis Bridge** — 大河与海洋的对话：环境、法典演变与唯物劳工延续性 | • Environment comparison: {{< vocab "hydraulic empire" text="hydraulic empires" >}} versus mountain-and-sea republics<br>• Legal evolution: {{< vocab "lex talionis" >}} → written {{< vocab "due process" >}}<br>• Labour comparison: {{< vocab "corvee labor" >}} → {{< vocab "chattel slavery" >}}<br>• Master comparative matrix across three dimensions<br>• CER synthesis paragraph (Claim–Evidence–Reasoning) | **Checkpoints 3.1–3.3 + CER Draft** *(Crit. A/C/D)* |
+
+> **Assessment link 评估衔接:** Lesson 3's debatable question launches the **[Unit 2 Summative: The Mingwan Academic Symposium Commission](../../summatives/02-unit-2-summative/index.html)** — a 5-paragraph comparative essay written across six supervised lessons.
+
+---
+
+## 5. Academic Vocabulary & Sentence Frame Bank 双语词汇与学术句型库
+
+```{python}
+#| output: asis
+print(word_bank({
+    "Greece: Geography & Government": pick(terms, "city-state", "assembly", "citizen", "democracy"),
+    "Greece: Power & Exclusion": pick(terms, "direct democracy", "oligarchy", "helot", "metic", "social hierarchy"),
+    "Greece: Culture & Empire": pick(terms, "cultural diffusion", "Hellenistic civilization"),
+    "Rome: Republic & Checks": pick(terms, "republic", "consul", "senate", "tribune", "veto", "patrician", "plebeian", "forum"),
+    "Rome: Law, Land & Slavery": pick(terms, "Twelve Tables", "due process", "latifundia", "chattel slavery", "empire"),
+    "Cross-Unit Synthesis": pick(terms, "hydraulic empire", "theocracy", "corvee labor", "lex talionis", "continuity"),
+}))
+```
+
+### Synthesis Sentence Frames (比较与论证句型支架)
+
+- **Cause-and-effect chain 因果链句式:**
+  - *"Because Roman conquests imported large numbers of **enslaved war captives**, free {{< vocab "plebeian" >}} farmers **could not compete and lost their land**, which consequently led to **the fall of the Republic**."*
+- **Exclusion comparison 排他性对比句式:**
+  - *"While Athens granted civic voting power to **free adult male citizens**, it systematically excluded **women, metics and enslaved people**."*
+- **Comparative synthesis 跨单元比较句式:**
+  - *"Although Roman law advanced due process beyond Hammurabi's Code by establishing **a public burden of proof**, both systems maintained continuity by **treating enslaved humans as property**."*
+- **Central claim 中心论点句式:**
+  - *"Although Classical Mediterranean civilizations developed **[direct democracy / written due process]**, they failed to truly liberate ordinary workers."*
+- **Concluding sentence 总结升华句式:**
+  - *"Therefore elite civic freedom rested directly upon an exploited forced-labour base; the {{< vocab "continuity" >}} between the two eras is {{< vocab "chattel slavery" >}} itself."*
+
+::: {.content-visible when-profile="teacher"}
+---
+
+## 6. Teacher Reference: Mingwan Criterion-Referenced Proficiency Scale (Toddle Reporting)
+
+Reported against the *Mingwan Planning, Assessing, Reporting and Reflecting Handbook* 5-level scale: **EX (Exceeding)**, **PR (Proficient)**, **DE (Developing)**, **EM (Emerging)**, **NE (Not Evident)**.
+
+| Performance Band | Criterion A: Knowing & Understanding | Criterion C: Communicating | Criterion D: Thinking Critically |
+|---|---|---|---|
+| **EX (Exceeding / 卓越)**<br>90–100% | Independently uses domain terminology (*polis, oligarchy, helot, due process, latifundia, chattel slavery*) and gives nuanced causal explanations linking geography to governance. | Paragraph structure is exceptionally logical; integrates complex cause-and-effect stems; embeds a genuine counter-argument about who "progress" served. | Deep critical insight when evaluating the Twelve Tables or the demographic paradox; synthesises both units with precision and names the source's limitations. |
+| **PR (Proficient / 熟练达标)**<br>75–89% | Uses required terminology accurately; fully explains the chain *mountains → poleis* and *conquest → latifundia → collapse*, with concrete facts (33%, 8:1, Tables I & VIII). | Clear academic English; follows the 5–7 sentence structure (*Claim → Evidence A → Evidence B → Synthesis*); uses at least two cause-and-effect stems. | Accurately analyses both primary sources; cites specific evidence from each; evaluates how elite interests shaped written law. |
+| **DE (Developing / 发展阶段)**<br>60–74% | Uses some terminology accurately, with minor definitional slips; gives basic descriptions but causal links stay partial. | Emerging clarity with some sentence errors; basic claim and evidence present, but transitions are loose or required stems missing. | Identifies basic links between slavery and civic leisure; mentions evidence but summarises rather than analyses. |
+| **EM (Emerging / 起步阶段)**<br>1–59% | Fragmented recall of vocabulary and facts; struggles to separate Athens, Sparta and Rome. | Communication is unclear or fragmented; disconnected phrases; no paragraph structure. | Struggles to interpret the sources; offers unsupported opinions without citing evidence. |
+| **NE (Not Evident / 未达标准)** | No response or completely irrelevant response. | No response or completely irrelevant response. | No response or completely irrelevant response. |
+
+### Look-fors during the arc 过程性观察要点
+
+- **Checkpoint 1.1:** Look for students marking *two* physical barriers (rugged mountains, isolated valleys) rather than copying whole sentences.
+- **Checkpoint 1.3:** The Athens/Sparta labour row is where the biggest misconception appears — {{< vocab "helot" text="helots" >}} were state-owned serfs, while Athenian slaves were private property.
+- **Checkpoint 2.3:** Common error is reversing steps 3 and 4. Bankruptcy of small farmers comes *before* private armies, not after.
+- **Checkpoint 3.3:** Students often claim labour "improved" under Rome. Ask who received the 150-coin fine in Table VIII (the master, not the injured enslaved person).
+:::
