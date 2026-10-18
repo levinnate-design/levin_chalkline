@@ -1,0 +1,386 @@
+---
+title: "City-States in Mesopotamia"
+subtitle: "美索不达米亚的城邦 · Periods 1–3: Environment, Culture & Hammurabi's Code"
+type: slides
+description: "Unpredictable rivers and the 5-stage causal chain, Sumerian polytheism and the social pyramid, and Sargon's empire to Hammurabi's Code."
+order: 2
+audience: [teacher, student, parent]
+format: revealjs
+title-slide-attributes:
+  data-background-color: "#003477"
+  data-background-image: images/stele-of-hammurabi.png
+  data-background-opacity: "0.35"
+---
+
+```{python}
+import sys; sys.path.append("scripts")
+from vocab import load_unit, pick, card_grid
+terms = load_unit(1)
+```
+
+# Period 1: Environment & City-States 第1节：环境与早期城邦 {background-color="#003477"}
+
+**Big Question · 核心问题:** Why did {{< vocab "city-state" text="city-states" >}} emerge in {{< vocab "Mesopotamia" >}}? *(城邦为何在两河流域出现？)*
+
+## Period 1 Flow · 今日流程 (45 min)
+
+:::: {.columns}
+::: {.column width="50%"}
+1. **Warm-up 导入 (5–7′):** Why Rivers? — Look at the map and predict *(看地图预测，再与同桌分享)*
+2. **Direct Instruction 讲授 (13–15′):** The 5-stage causal chain & three environmental challenges *(因果链与三大环境挑战)*
+:::
+::: {.column width="50%"}
+3. **Learning Activity 学习活动 (17–18′):** Map Activity — Label the {{< vocab "Fertile Crescent" >}} & explain the southern plain *(标注地图并解释南部平原)*
+4. **Exit Ticket 当堂检测 (5′):** Three short questions without notes *(三道简答题，不看笔记)*
+:::
+::::
+
+::: notes
+Standard G8 timing: 5′ Warm-up, 13′ Direct Instruction, 17′ Map Activity, 5′ Exit Ticket.
+G7 Adaptation timing: 7′ Warm-up (with sentence frames), 15′ Direct Instruction (with Bilingual Summary Pauses), 18′ Chunked Map Activity (Chunk 1: Features 5′, Chunk 2: Cities 6′, Challenge: Region Analysis 5′), 5′ Exit Ticket.
+:::
+
+## Warm-up: Why Rivers? 导入：为什么是河流？
+
+:::: {.columns}
+::: {.column width="48%"}
+![](images/fertile-crescent-map.png){fig-alt="Map of the Fertile Crescent, c. 2500 B.C."}
+
+::: {.small-note}
+Figure 1 · The {{< vocab "Fertile Crescent" >}}, c. 2500 B.C. — Tigris & Euphrates flow into the Persian Gulf.
+:::
+:::
+::: {.column width="52%"}
+Look at the map and answer in **Learning Sheet 1 (WU1)**:
+
+1. **Q1:** Why might people want to live near a river? *(人们为什么想住在河流附近？)*
+2. **Q2:** What problems could a river cause? *(河流可能带来什么问题？)*
+3. **Q3:** Pick **one invention** that helps people live near rivers and {{< vocab "explain" >}} why.
+
+{{< timer 3 >}}
+:::
+::::
+
+::: notes
+Instructions:
+1. Write 1–2 sentences for each question (G7: complete the sentence frames).
+2. Swap with your partner for 30 seconds.
+3. Cold-call 2 students to share.
+:::
+
+## Direct Instruction: The 5-Stage Causal Chain 从河流到城邦的因果链
+
+::: {.timeline}
+- **Stage 1 · Unpredictable Floods 难以预测的洪水**
+  Spring snowmelt flooded the Tigris and Euphrates without warning, leaving behind rich {{< vocab "silt" >}} — or scorching drought.
+- **Stage 2 · {{< vocab "irrigation" text="Irrigation" >}} & Cooperation 灌溉与集体合作**
+  Villagers dug canals and dikes together to bring river water to dry fields.
+- **Stage 3 · Food {{< vocab "surplus" text="Surplus" >}} 农业余粮**
+  Reliable water allowed farmers to harvest more grain than their families needed.
+- **Stage 4 · {{< vocab "division of labour" text="Division of Labour" >}} 社会分工**
+  With extra food, some people became potters, weavers, metalworkers, scribes, and priests.
+- **Stage 5 · {{< vocab "city-state" text="City-State" >}} 城邦诞生**
+  Villages grew into walled cities (like **Uruk** and **Ur**) ruling their surrounding farmland.
+:::
+
+::: {.small-note}
+**Timeline:** c. 4500 B.C. farming villages → c. 3300 B.C. Sumerian {{< vocab "city-state" text="city-states" >}} → c. 2330 B.C. Sargon's first {{< vocab "empire" >}}
+:::
+
+::: notes
+THINK Cold Call: Why did surplus food create a need for priests and artisans?
+G7 Adaptation — Bilingual Summary Pause (双语总结停顿): Have students turn to a classmate and explain the 5-stage causal chain in Chinese for 45 seconds.
+:::
+
+## Three Challenges, Three Solutions 三大环境挑战与解决方案
+
+| Environmental Challenge 环境挑战 | Sumerian Solution 苏美尔人的解决方案 |
+|---|---|
+| **1. Unpredictable flooding & drought**<br>洪水暴烈无常，雨季后酷热干旱 | **{{< vocab "irrigation" text="Irrigation" >}} ditches & canals**<br>修建灌溉水渠与防洪堤坝 |
+| **2. No natural barriers for defense**<br>平原开阔，缺乏山脉或沙漠等天然屏障 | **Mud-brick city walls**<br>用晒干的泥砖修筑高大城墙 |
+| **3. Few natural resources**<br>缺乏木材、石料和金属矿产 | **Long-distance trade**<br>用余粮、布匹和陶器换取石料、木材和青铜 |
+
+::: {.callout-tip title="Think · 思考" icon=false}
+Which of these three solutions needed the **most cooperation and leadership** — and why? Add your notes to **FA2** on your Learning Sheet.
+:::
+
+::: notes
+Point out: These solutions required organization, cooperation, laws, and leaders — the beginning of organized government!
+G7 Adaptation: Include a 45-second Bilingual Summary Pause after reviewing the 3 challenges and solutions.
+:::
+
+## Learning Activity: FA1 Map Activity 地图定位与区域分析
+
+:::: {.columns}
+::: {.column width="46%"}
+![](images/fertile-crescent-map.png){fig-alt="Map of the Fertile Crescent"}
+:::
+::: {.column width="54%"}
+**MYP Criterion A — Knowing & Understanding**
+
+1. **Label on your map (地图标注):**
+   - **Rivers & Gulf:** Tigris River, Euphrates River, Persian Gulf *(G7 Chunk 1 also: Taurus Mts., Zagros Mts., Syrian & Arabian Deserts)*
+   - **Cities:** Ur, Uruk, Babylon
+2. **Q1 Location (位置 · 2 sentences):** Where are the Tigris and Euphrates river valleys found?
+3. **Q2 Region (区域 · 2 sentences):** Why did {{< vocab "city-state" text="city-states" >}} cluster on the **southern plain**, not in the northern mountains?
+
+{{< timer 12 >}}
+:::
+::::
+
+## Period 1 Exit Ticket & Summary 当堂检测与总结
+
+:::: {.columns}
+::: {.column width="52%"}
+::: {.callout-warning title="Exit Ticket ET1 (5 min · No Notes)" icon=false}
+1. What does **{{< vocab "Mesopotamia" >}}** mean in Greek?
+2. {{< vocab "list" text="List" >}} the **three environmental challenges** the Sumerians faced.
+3. Give **one solution** for each challenge.
+:::
+:::
+::: {.column width="48%"}
+::: {.callout-note title="Historian's Habit · 历史学家的思维" icon=false}
+**Rivers → {{< vocab "silt" text="Silt" >}} & {{< vocab "irrigation" text="Irrigation" >}} → {{< vocab "surplus" text="Surplus" >}} → {{< vocab "division of labour" text="Specialization" >}} → {{< vocab "city-state" text="City-States" >}}**
+
+Go back to **WU1**: What did you learn today that you did *not* predict at the start of class? *(Predict → Check Evidence → Revise)*
+:::
+:::
+::::
+
+# Period 2: Sumerian Culture & Beliefs 第2节：苏美尔文化与信仰 {background-color="#003477"}
+
+**Big Question · 核心问题:** How did Sumerian beliefs and society reflect a harsh environment? *(苏美尔的信仰与社会阶层如何反映严酷的环境？)*
+
+## Warm-up: Predict the Land 导入：预测这片土地
+
+:::: {.columns}
+::: {.column width="48%"}
+![](images/fertile-crescent-map.png){fig-alt="Fertile Crescent Map"}
+:::
+::: {.column width="52%"}
+Look at the map in **Learning Sheet 2 (WU2)**:
+
+1. **Q1:** Where do you think **most people** lived? Mark it on the map and {{< vocab "explain" >}} why (2 sentences).
+2. **Q2:** Where did **very few people** live? Why? (2 sentences).
+
+{{< timer 3 >}}
+:::
+::::
+
+## Gods of a Harsh Land 严酷之地的众神
+
+:::: {.columns}
+::: {.column width="56%"}
+- **{{< vocab "polytheism" text="Polytheism" >}} (多神信仰):** Sumerians worshipped nearly 3,000 gods who controlled nature — storms, rivers, and rain.
+- **Enlil (恩利尔):** God of storms and air, feared as one of the most powerful gods.
+- Because flooding was violent and unpredictable, Sumerians believed their gods were **powerful, moody, and easily angered**.
+- At the center of every city stood a massive mud-brick **{{< vocab "ziggurat" >}} (塔庙)** where priests offered sacrifices to keep the gods calm.
+- **Gloomy Afterlife (阴暗的来世观):** Souls went to a dark *"land of no return… where they live on dust and clay."*
+:::
+::: {.column width="44%"}
+![](images/ziggurat-diagram.png){fig-alt="Cutaway illustration of a Mesopotamian ziggurat"}
+
+::: {.small-note}
+**Causal chain:** Harsh environment → powerful, angry gods → priests & {{< vocab "ziggurat" >}} at the city center.
+:::
+:::
+::::
+
+## Direct Instruction: The Sumerian Social Pyramid 社会金字塔
+
+:::: {.columns}
+::: {.column width="54%"}
+1. **Top Tier (最高层): Kings & Priests (国王与祭司)**
+   - Priests communicated with the gods; military commanders became full-time kings who passed power down in {{< vocab "dynasty" text="dynasties" >}}.
+2. **Second Tier (第二层): Wealthy Merchants (富商)**
+   - Traded grain and cloth for distant timber, stone, and copper.
+3. **Third Tier (第三层): Farmers, Artisans & Labourers (农民、工匠与劳工)**
+   - The vast majority who worked the fields and workshops.
+4. **Bottom Tier (底层): Enslaved People (奴隶)**
+   - Foreign war captives or Sumerians working off family debts.
+:::
+::: {.column width="46%"}
+::: {.callout-note title="Women in Sumer · 苏美尔女性的地位" icon=false}
+- Sumerian women had **more legal rights** than women in many later civilizations.
+- Could **own property**, farm, and run businesses or shops.
+- Upper-class women could become priestesses and learn to read and write {{< vocab "cuneiform" >}}, though most girls could not attend school.
+:::
+
+**Think:** Why were **priests** at the very top of the pyramid alongside kings?
+:::
+::::
+
+## Primary Source Evidence: Votive Statue & Gold Ram 一手史料：还愿雕像与乌尔金羊
+
+:::: {.columns}
+::: {.column width="48%"}
+![](images/sumerian-votive-statue.png){fig-alt="Votive statue of Iku-Shamagen, King of Mari" height="260px"}
+
+**Left:** Limestone votive statue of **Iku-Shamagen, King of Mari** (c. 2500 B.C., Louvre). Hands folded in eternal prayer inside a temple.
+:::
+::: {.column width="48%"}
+![](images/ram-in-a-thicket-ur.png){fig-alt="Ram in a Thicket from the Royal Cemetery at Ur" height="260px"}
+
+**Right:** **Gold Ram of Ur** (*Ram in a Thicket*, c. 2600 B.C., Penn Museum). Gold, silver, and lapis lazuli burial treasure from a royal tomb.
+:::
+::::
+
+::: {.small-note}
+**Think:** Both {{< vocab "primary source" >}} artifacts link the king to the gods and the afterlife. What does this suggest about Sumerian kingship?
+:::
+
+## Learning Activity: FA3 Source Analysis (3-Step Method) 史料三步法
+
+:::: {.columns}
+::: {.column width="42%"}
+::: {.callout-tip title="3-Step Source Method · 史料三步法" icon=false}
+1. **Observe (观察):** What do you see? Materials, pose, eyes, size.
+2. **Infer (推断):** What might it mean? Why was it made?
+3. **Evidence (证据):** Point to the specific visual detail that proves your idea.
+:::
+:::
+::: {.column width="58%"}
+**MYP Criterion D — Thinking Critically (Learning Sheet 2 · FA3)**
+
+- **Q1:** {{< vocab "describe" text="Describe" >}} what you see in each artifact.
+- **Q2:** Why was the statue placed in the temple? What does *"votive"* (还愿) mean?
+- **Q3:** The gold ram came from a royal tomb. What does it tell us about Sumerian beliefs about death?
+- **Q4:** What do both artifacts suggest about Sumerian kingship?
+- **Q5:** {{< vocab "document" text="Document" >}} (cite) the source of both artifacts.
+
+{{< timer 12 >}}
+:::
+::::
+
+## Period 2 Exit Ticket & Summary 当堂检测与总结
+
+:::: {.columns}
+::: {.column width="52%"}
+::: {.callout-warning title="Exit Ticket ET2 (5 min · No Notes)" icon=false}
+1. What is **{{< vocab "polytheism" >}}**? Name **one** Sumerian god.
+2. What did Sumerians expect after death? Where did the soul go?
+3. {{< vocab "list" text="List" >}} the **four levels** of Sumerian society from top to bottom.
+:::
+:::
+::: {.column width="48%"}
+::: {.callout-note title="Beliefs Mirrored the Land · 信仰映射土地" icon=false}
+**Harsh environment → powerful gods → priests & {{< vocab "ziggurat" >}} → social pyramid**
+
+Next period we reuse **Observe → Infer → Evidence** to judge King Hammurabi's stone law code!
+:::
+:::
+::::
+
+# Period 3: Empires & Hammurabi's Code 第3节：帝国与《汉谟拉比法典》 {background-color="#003477"}
+
+**Big Question · 核心问题:** Was the {{< vocab "Code of Hammurabi" >}} a fair system of justice? *(《汉谟拉比法典》是一个公正的司法体系吗？)*
+
+## Warm-up: Law Quick-Judge 导入：律法快评
+
+> *"If a man puts out the eye of another man, his eye shall be put out."*
+> *(若人毁他人之眼，其眼亦当被毁。)* — **{{< vocab "Code of Hammurabi" >}}, Law §196**
+
+::: {.poll type="choice" options="FAIR (公正) | UNFAIR (不公正) | IT DEPENDS (视情况而定)"}
+Vote now and be ready to give **one reason** for your verdict!
+:::
+
+## Direct Instruction: From City-States to Empire 从城邦到帝国
+
+::: {.timeline}
+- **c. 3300–2350 B.C. · Sumerian {{< vocab "city-state" text="City-States" >}} Fight for Water & Land**
+  Constant wars between independent city-states weakened Sumer and left it vulnerable to outside conquerors.
+- **c. 2330 B.C. · Sargon of Akkad Builds the First {{< vocab "empire" text="Empire" >}}**
+  Sargon defeated the Sumerian city-states and united northern and southern {{< vocab "Mesopotamia" >}} into the world's first **{{< vocab "empire" >}}**, spreading Sumerian {{< vocab "cuneiform" >}} and beliefs through **{{< vocab "cultural diffusion" >}}**.
+- **1792–1750 B.C. · Hammurabi of Babylon & the 282 Laws**
+  The Amorite king **Hammurabi** united all of Mesopotamia under the Babylonian Empire and carved **282 laws** on black stone steles placed across the empire.
+:::
+
+::: {.small-note}
+**Why carve laws on stone?** So the rules were **public, permanent, seen by everyone** — and backed by the authority of the gods.
+:::
+
+## Primary Source: The Stele of Hammurabi 汉谟拉比石柱
+
+:::: {.columns}
+::: {.column width="42%"}
+![](images/stele-of-hammurabi.png){fig-alt="Top relief of the Stele of Hammurabi, Louvre Museum" height="420px"}
+:::
+::: {.column width="58%"}
+**Basalt stele, c. 1750 B.C. · Louvre Museum, Paris**
+
+- **Observe (观察):** King Hammurabi (standing on the left) receives the royal rod and ring — symbols of justice and rule — from **Shamash** (沙马什), the sun-god and god of justice, seated on a mountain throne with flames rising from his shoulders.
+- **Use Observe → Infer → Evidence:**
+  1. **Q1:** Why did the artist carve the god **seated higher** than the standing king? *(艺术家为什么把神画在国王之上？)*
+  2. **Q2:** Does authority in Babylon come from **the people** or from **the gods**? How does this make people obey the laws?
+:::
+::::
+
+## Primary Source: Selected Laws from Hammurabi's Code 法典节选
+
+::: {.callout-note title="Prologue (法典序言)" icon=false}
+*"…to bring about the rule of righteousness in the land, to destroy the wicked and the evil-doers; **so that the strong should not harm the weak**…"* *(“以正乾坤……使强者不得欺凌弱者。”)*
+:::
+
+| Law Clause 法条 | Rule & Punishment 规定与刑罚 |
+|---|---|
+| **§8 (Theft 盗窃)** | Stealing from a **temple or palace** → repay **30×**; stealing from a **common citizen** → repay **10×**; if the thief cannot pay → **death (处死)**. |
+| **§53 (Water Control 水利)** | If a man is too lazy to strengthen his **{{< vocab "irrigation" >}} dam** and it breaks and floods his neighbors' fields, **he shall be sold for money** to replace the ruined grain. |
+| **§142–143 (Family 家庭)** | **§142:** A blameless wife whose husband mistreats her may take her dowry and return to her father's house. **§143:** If she is at fault and wastes her house, she shall be **thrown into the river**. |
+| **§196, §198, §199 (Injury 伤害)** | **§196:** Put out the eye of a **free nobleman** → **put out his eye** (*"an eye for an eye"*).<br>**§198:** Put out the eye of a **commoner/freed man** → pay **1 gold mina**.<br>**§199:** Put out the eye of a **man's slave** → pay **half the slave's value in silver**. |
+
+## Learning Activity: FA5/FA6 Argument Paragraph 论证段落写作
+
+:::: {.columns}
+::: {.column width="54%"}
+**MYP Criterion C (Communicating) & Criterion D (Thinking Critically)**
+
+**Prompt:** *Was the {{< vocab "Code of Hammurabi" >}} a fair system of justice?* Write a **5–7 sentence paragraph** in **Learning Sheet 3 (FA5/FA6)**:
+
+1. **Position (立场):** State clearly whether the Code was fair, unfair, or fair only for certain groups.
+2. **Evidence (证据):** Cite **at least TWO specific laws** (e.g., `§8`, `§53`, `§142–143`, `§196 vs. §199`).
+3. **Counter-Argument (反方观点):** Acknowledge the opposite side (*"Some may argue that the Prologue…; however…"*).
+4. **Conclusion (结论):** End with a strong concluding sentence.
+:::
+::: {.column width="46%"}
+::: {.callout-tip title="Sentence Starters · 句型支架" icon=false}
+- *"The Code of Hammurabi was (fair / unfair) because Law §___ states that…"*
+- *"Comparing Law §196 and Law §199 shows that…"*
+- *"Some may argue the Code brought order because…; however,…"*
+- *"In conclusion, Hammurabi's Code (did / did not) protect the weak because…"*
+:::
+
+{{< timer 15 >}}
+:::
+::::
+
+## Period 3 Exit Ticket & Module 1 Synthesis 全课收束
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.callout-warning title="Exit Ticket ET3 (5 min · No Notes)" icon=false}
+1. Who was **Hammurabi**, and when did he rule Babylon?
+2. Pick **one law** (`§8`, `§53`, `§142–143`, `§196–199`): was it fair or unfair by today's standards? Why?
+3. Did the Code reach its Prologue goal — *"the strong should not harm the weak"*? Cite **one law** to prove your answer.
+:::
+:::
+::: {.column width="50%"}
+::: {.callout-important title="Formative Assessment Preview · 形成性评估预告" icon=false}
+**Formative Section 2 Prompt:** Choose **ONE environmental challenge** the Sumerians faced and write a 5–7 sentence paragraph explaining:
+
+1. How the Sumerians **solved** this challenge;
+2. How that solution required **social change** (cooperation, leaders, social classes);
+3. How growing social complexity led to a **formal law code** like the {{< vocab "Code of Hammurabi" >}}.
+:::
+:::
+::::
+
+## Unit 1 Mesopotamia Key Vocabulary 本课核心词汇
+
+```{python}
+#| output: asis
+print(card_grid(pick(terms,
+    "Fertile Crescent", "Mesopotamia", "silt", "irrigation", "surplus",
+    "division of labour", "city-state", "polytheism", "ziggurat",
+    "cuneiform", "dynasty", "empire", "cultural diffusion", "Code of Hammurabi"
+)))
+```

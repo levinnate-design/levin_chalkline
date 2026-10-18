@@ -1,0 +1,56 @@
+---
+title: "The Assembly Votes 公民大会投票"
+type: handout
+description: "A classroom Athenian Assembly: speeches for and against, a show-of-hands vote, a tally, and a reflection on who got to vote."
+order: 5
+audience: [teacher, student]
+doc-type: Activity
+name-box: true
+format:
+  html: default
+  typst: default
+---
+
+Today our class is the {{< vocab "assembly" zh=true >}} of Athens. Like real Athenian {{< vocab "citizen" text="citizens" zh=true >}}, you will listen to speeches and then {{< vocab "vote" zh=true >}}.
+
+## The question
+
+> **Should our class have 10 minutes of free reading every day?**
+
+## How it works
+
+1. **Speeches.** Two speakers argue *for*, then two argue *against*. Each speaks for one minute.
+2. **Questions.** Anyone may ask a speaker one question.
+3. **Vote.** Raise your hand for *yes*, then for *no*. The teacher counts.
+4. **Twist.** Your teacher may say only *some* students can vote this time, just like Athens.
+
+## Tally
+
+| | Vote 1: everyone | Vote 2: only "citizens" |
+|---|---|---|
+| **Yes** | | |
+| **No** | | |
+| **Result** | | |
+: {tbl-colwidths="[24,38,38]"}
+
+{{< pagebreak >}}
+
+## {{< vocab "reflect" text="Reflect" zh=true >}} on the vote
+
+**a.** Did the result change in Vote 2? {{< vocab "explain" text="Explain" zh=true >}} why.
+
+{{< lines 2 >}}
+
+**b.** Was it fair that only some people could vote in Athens? {{< vocab "explain" text="Explain" zh=true >}}.
+
+{{< lines 2 >}}
+
+**c.** {{< vocab "identify" text="Identify" zh=true >}} one way our class vote was like the real Assembly, and one way it was different:
+
+{{< lines 2 >}}
+
+::: {.content-visible when-profile="teacher"}
+::: {.callout-note title="Teacher notes"}
+For Vote 2, choose "citizens" by a rule students didn't pick (birthday month, or seats on one side of the room), then let only them vote. Most classes see the result flip. Use **b.** to connect to who was left out in Athens: women, enslaved people and foreigners.
+:::
+:::

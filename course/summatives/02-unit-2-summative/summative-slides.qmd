@@ -32,10 +32,10 @@ Read the prompt aloud together. Emphasize that "To what extent" requires weighin
 ::: {.callout-note title="Assessment 1: Booklet 手册 (Crit B)" icon=false}
 **Lessons 1–2** *(finalized by Lesson 3)*
 
-1. Prompt breakdown & Research Question
+1. Prompt breakdown & {{< vocab "formulate" text="Formulate" >}} Research Question
 2. Initial & Revised Thesis Statement
-3. Research Log (Library Books & Class Texts)
-4. Criterion B Self-Assessment Checklist
+3. {{< vocab "investigate" text="Research" >}} Log (Library Books & Class Texts)
+4. Criterion B Self-Assessment & {{< vocab "evaluate" text="Source Evaluation" >}}
 :::
 :::
 ::: {.column width="50%"}
@@ -56,20 +56,20 @@ Make sure students check off their chosen pathway (Standard 4-paragraph or Advan
 
 | Band 等级 | Crit B: Investigating 探究 (Booklet) | Crit D: Thinking Critically 批判性思维 | Crit C: Communicating 沟通表达 |
 |---|---|---|---|
-| **EX (90–100%)** | Nuanced RQ & thesis; rich balanced book + text evidence; deep source evaluation | Analyzes governance vs. slavery contradiction, perspectives & counter-claim | Persuasive academic English; sophisticated transitions; full citations |
-| **PR (75–89%)** | Clear RQ & arguable thesis; accurate evidence from books & texts; checklist complete | Clearly explains governance progress & slavery limits using specific evidence | Clear formal English; follows essay blueprint; accurate source list |
-| **DE (60–74%)** | Basic claim; partial checklist; relies mostly on one source or descriptive facts | Describes facts separately without analyzing the contradiction | Uneven paragraph structure; limited transitions; incomplete citations |
+| **EX (90–100%)** | {{< vocab "formulate" text="Formulates" >}} nuanced RQ & thesis; rich balanced book + text evidence; deep source {{< vocab "evaluate" text="evaluation" >}} | {{< vocab "analyse" text="Analyzes" >}} governance vs. slavery contradiction, perspectives & counter-claim | Persuasive academic English; sophisticated transitions; full {{< vocab "document" text="citations" >}} |
+| **PR (75–89%)** | Clear RQ & arguable thesis; accurate evidence from books & texts; checklist complete | Clearly {{< vocab "explain" text="explains" >}} governance progress & slavery limits using specific evidence | Clear formal English; follows essay blueprint; accurate source list |
+| **DE (60–74%)** | Basic claim; partial checklist; relies mostly on one source or descriptive facts | {{< vocab "describe" text="Describes" >}} facts separately without {{< vocab "analyse" text="analyzing" >}} the contradiction | Uneven paragraph structure; limited transitions; incomplete citations |
 | **EM (1–59%)** | Unclear or missing RQ/thesis; minimal source evidence recorded | Unsupported personal opinions without historical evidence | Fragmented writing; minimal academic vocabulary; no citations |
 
 ## Two-Week Roadmap 两周六课时路线图
 
 | Week & Lesson | Workshop Goal 本课核心任务 | Checkpoint 评估节点 |
 |---|---|---|
-| **W1 · Lesson 1** | Deconstruct prompt, draft RQ & Thesis, harvest book/text evidence | Crit B Check 1 |
-| **W1 · Lesson 2** | Complete Source Checklist; draft Intro + Body 1 & Body 2 | Crit B Check 2 |
-| **W1 · Lesson 3** | Finalize Crit B Checklist; draft Body 3 (Advanced) + Conclusion | **Crit B Finalized** & 1st Draft |
+| **W1 · Lesson 1** | Deconstruct prompt, {{< vocab "formulate" >}} RQ & Thesis, {{< vocab "investigate" >}} book/text evidence | Crit B Check 1 |
+| **W1 · Lesson 2** | Complete Source {{< vocab "evaluate" text="Evaluation" >}}; draft Intro + Body 1 & Body 2 | Crit B Check 2 |
+| **W1 · Lesson 3** | Finalize Crit B Checklist; draft Body 3 (Advanced) + Conclusion ({{< vocab "synthesize" >}}) | **Crit B Finalized** & 1st Draft |
 | **W2 · Lesson 4** | Peer Audit (Track A) or 1st Draft Catch-Up Buffer (Track B) | Peer Audit & Action Plan |
-| **W2 · Lesson 5** | Write 2nd Draft revisions & compile Works Cited list | Polished 2nd Draft |
+| **W2 · Lesson 5** | Write 2nd Draft revisions & {{< vocab "document" >}} Works Cited list | Polished 2nd Draft |
 | **W2 · Lesson 6** | Type final English essay into **Toddle** & submit booklet | **Toddle Submission** |
 
 ---
@@ -90,7 +90,7 @@ Lesson 1 (50 min):
 
 ## Lesson 1 · Step 1.1: Deconstruct the Prompt 拆解题目
 
-In **Booklet Step 1.1**, we break the prompt into **three key parts**:
+In **Booklet Step 1.1**, we {{< vocab "analyse" text="analyze" >}} and break the prompt into **three key parts**:
 
 1. **"To what extent…"** 在多大程度上…… *(Measuring how much real progress was achieved)*
 2. **"…systems of governance represent progress…"** 治理体系代表进步…… *(Breakthroughs in citizen rights, voting & written law)*
@@ -109,14 +109,14 @@ This overview slide introduces the three parts of Step 1.1. Press Down (↓) to 
 :::
 
 - **"To what extent"** means your answer cannot just be *"Yes"* or *"No."*
-- You must weigh **both sides** on a scale:
+- You must {{< vocab "evaluate" >}} and weigh **both sides** on a scale:
   - **Side A:** Political & legal breakthroughs for free male {{< vocab "citizen" text="citizens" >}}
   - **Side B:** Systemic dependence on slavery and exclusion of the majority
 
 ## Step 1.1 (Part 2): "…governance represent progress…" 治理进步 {.subslide}
 
 ::: {.callout-tip title="Row 2 Guiding Question 第二行思考引导" icon=false}
-**Which system(s) will you analyze? How did voting, checks & balances, or written law protect citizens?**
+**Which system(s) will you {{< vocab "analyse" text="analyze" >}}? How did voting, checks & balances, or written law protect citizens?**
 
 你将分析哪些制度？公民投票、权力制衡或成文法如何保障公民权利？
 :::
@@ -141,7 +141,7 @@ This overview slide introduces the three parts of Step 1.1. Press Down (↓) to 
 
 ## Lesson 1 · Step 1.2: Thesis Statement Frame 中心论点模板
 
-Use this frame to write an arguable **"To what extent"** claim in English:
+{{< vocab "use" text="Use" >}} this frame to {{< vocab "formulate" >}} an arguable **"To what extent"** claim in English:
 
 ::: {.callout-tip title="Model Thesis Frame 中心论点句型模板" icon=false}
 *"Although Classical Mediterranean governance in **[Athens / the Roman Republic / Greece and Rome]** represented significant political and legal progress through **[citizen voting / checks and balances / the Twelve Tables]**, this progress was fundamentally limited because **[these societies continuously depended on institutional slavery and excluded the majority of the population from civic rights]**."*
@@ -155,13 +155,13 @@ Use this frame to write an arguable **"To what extent"** claim in English:
 
 :::: {.columns}
 ::: {.column width="62%"}
-Gather evidence from **both** Library Books and Class Texts:
+{{< vocab "investigate" text="Investigate" >}} and gather evidence from **both** Library Books and Class Texts:
 
 - ☐ **Source 1:** Class Textbook / Unit Reading Packet 课堂教材
 - ☐ **Source 2:** Library Book #1 图书馆书籍 #1
 - ☐ **Source 3:** Library Book #2 or Primary Source (Twelve Tables)
 - ☐ **Source 4:** Counter-Claim or Unit 1 Baseline 补充史料
-- **Always record:** Title, Author & **Page Numbers** (`pp. xx–xx`)!
+- **Always {{< vocab "document" >}}:** Title, Author & **Page Numbers** (`pp. xx–xx`)!
 :::
 ::: {.column width="38%"}
 {{< timer 25 >}}
@@ -176,7 +176,7 @@ Circulate to check that students record exact page numbers and book titles, and 
 
 Before class ends today:
 
-1. **Check Claim-Evidence Alignment (Step 1.4):** Does the evidence you found match your initial thesis? Revise your thesis if needed.
+1. **{{< vocab "reflect" text="Reflect" >}} on Claim-Evidence Alignment (Step 1.4):** Does the evidence you found match your initial thesis? Revise your thesis if needed.
 2. **Start Criterion B Checklist:** Tick your Lesson 1 progress on the 6 criteria.
 3. **Sign Progress Tracker (Page 1):** Mark your Week 1 · L1 status (`Completed` / `In Progress` / `Needs Help`).
 
@@ -198,14 +198,14 @@ Lesson 2 (50 min):
 
 ## Lesson 2 · Source Value & Limitation 史料价值与局限
 
-In **Step 1.4**, evaluate **one** library book or primary source you used:
+In **Step 1.4**, {{< vocab "evaluate" >}} **one** library book or primary source you used:
 
 :::: {.columns}
 ::: {.column width="50%"}
 ::: {.callout-note title="1. Source Value 史料价值" icon=false}
 Why is this source helpful for your essay?
 
-- Provides specific laws, statistics, or historian analysis of {{< vocab "democracy" >}}, the {{< vocab "republic" >}}, or slavery.
+- Provides specific laws, statistics, or historian {{< vocab "analyse" text="analysis" >}} of {{< vocab "democracy" >}}, the {{< vocab "republic" >}}, or slavery.
 :::
 :::
 ::: {.column width="50%"}
@@ -222,8 +222,8 @@ What is one limitation of this source?
 | Part | Role in Paragraph 段落作用 | Sentence Starter 英文句型支架 |
 |---|---|---|
 | **T** · Topic Sentence | State the main point of the paragraph | *"A major political breakthrough in [Athens/Rome] was…"* |
-| **E** · Evidence | Cite specific laws, numbers, or facts + source | *"According to [Author, p. xx], the Twelve Tables…"* |
-| **E** · Explanation | Analyze **how/why** this shows progress or limits | *"This empowered citizens by… / From an enslaved worker's view…"* |
+| **E** · Evidence | {{< vocab "document" text="Cite" >}} specific laws, numbers, or facts + source | *"According to [Author, p. xx], the Twelve Tables…"* |
+| **E** · {{< vocab "explain" text="Explanation" >}} | {{< vocab "analyse" text="Analyze" >}} **how/why** this shows progress or limits | *"This empowered citizens by… / From an enslaved worker's view…"* |
 | **L** · Link | Connect back to your "to what extent" thesis | *"Therefore, civic progress remained restricted to a minority."* |
 
 ## Sentence Starters: Body 1 & Body 2 英文学术句型库 {.subslide}
@@ -282,16 +282,16 @@ Lesson 3 (50 min):
 ::: {.callout-tip title="Advanced Path 进阶路径 (Body 3)" icon=false}
 **Counter-Claim & Rebuttal 反方观点与批驳**
 
-1. **Counter-Claim:** *"Some historians argue that judged by ancient standards, [democracy / law] was still revolutionary because…"*
-2. **Rebuttal:** *"Nevertheless, this overlooks the reality that citizen freedom was directly financed by enslaved labor…"*
+1. **{{< vocab "formulate" text="Formulate" >}} Counter-Claim:** *"Some historians argue that judged by ancient standards, [democracy / law] was still revolutionary because…"*
+2. **{{< vocab "justify" text="Justify" >}} Rebuttal:** *"Nevertheless, this overlooks the reality that citizen freedom was directly financed by enslaved labor…"*
 :::
 :::
 ::: {.column width="50%"}
 ::: {.callout-note title="Standard Path 标准路径 (Deepen Body 1 & 2)" icon=false}
 **Deepen Perspective & Citations 深化分析**
 
-1. Check that Body 1 and Body 2 both cite **specific page numbers** from library books and class texts.
-2. Explicitly compare the lived experience of a free male {{< vocab "citizen" >}} vs. an enslaved laborer or helot.
+1. Check that Body 1 and Body 2 both {{< vocab "document" text="cite" >}} **specific page numbers** from library books and class texts.
+2. Explicitly {{< vocab "analyse" text="analyze" >}} and compare the lived experience of a free male {{< vocab "citizen" >}} vs. an enslaved laborer or helot.
 :::
 :::
 ::::
@@ -300,10 +300,10 @@ Lesson 3 (50 min):
 
 :::: {.columns}
 ::: {.column width="62%"}
-Your conclusion must do **three things**:
+Your conclusion must {{< vocab "synthesize" >}} your essay in **three steps**:
 
 1. **Restate your thesis** in fresh words (do not copy-paste).
-2. **Weigh both sides:** Balance civic/legal achievements against the human cost of chattel slavery and helotry.
+2. **{{< vocab "evaluate" text="Evaluate" >}} & weigh both sides:** Balance civic/legal achievements against the human cost of chattel slavery and helotry.
 3. **Final "To What Extent" Judgment:** Give a clear, reasoned historical verdict.
 :::
 ::: {.column width="38%"}
@@ -330,7 +330,7 @@ Lesson 4 (50 min):
 :::: {.columns}
 ::: {.column width="62%"}
 - **Track A (Ready for Peer Audit 已完成初稿):**
-  1. Swap booklets and rate the **6 Criteria C & D Checkpoints** in Section 3 (`Strong` / `Developing` / `Missing`).
+  1. Swap booklets and {{< vocab "evaluate" >}} the **6 Criteria C & D Checkpoints** in Section 3 (`Strong` / `Developing` / `Missing`).
   2. Write **2 Glows (亮点)** and **2 Grows (改进点)**.
 - **Track B (Drafting Buffer 仍在完成初稿):**
   1. Finish remaining 1st Draft paragraphs (first 25 min), then complete a rapid audit & **Author's Revision Plan**.
@@ -345,11 +345,11 @@ Lesson 4 (50 min):
 | Checkpoint 核查点 | What to Look For 互评检查重点 |
 |---|---|
 | **1. Thesis Clarity (Crit D)** | Does the Intro end with a clear *"to what extent"* claim linking governance and slavery? |
-| **2. Governance Evidence (Crit B/D)** | Does Body 1 cite specific laws/facts from library books or class texts? |
-| **3. Slavery & Perspectives (Crit D)** | Does Body 2 contrast the perspective of a free citizen vs. an enslaved worker/helot? |
-| **4. Counter-Claim (Adv · Crit D)** | *(If Advanced Path)* Does Body 3 state a fair counter-argument and refute it with evidence? |
+| **2. Governance Evidence (Crit B/D)** | Does Body 1 {{< vocab "document" text="cite" >}} specific laws/facts from library books or class texts? |
+| **3. Slavery & Perspectives (Crit D)** | Does Body 2 {{< vocab "analyse" text="analyze" >}} and contrast the perspective of a free citizen vs. an enslaved worker/helot? |
+| **4. Counter-Claim (Adv · Crit D)** | *(If Advanced Path)* Does Body 3 state a fair counter-argument and {{< vocab "justify" >}} its rebuttal with evidence? |
 | **5. Structure & Transitions (Crit C)** | Are paragraphs organized with analytical transitions (*however, whereas, despite*)? |
-| **6. Source Citations (Crit C)** | Are book titles/authors and page numbers explicitly cited inside the paragraphs? |
+| **6. Source Citations (Crit C)** | Are book titles/authors and page numbers explicitly {{< vocab "document" text="documented" >}} inside the paragraphs? |
 
 ---
 
@@ -371,10 +371,10 @@ Lesson 5 (50 min):
 
 | Area 维度 | Developing (DE · 60–74%) | Proficient / Exceeding (PR/EX · 75–100%) |
 |---|---|---|
-| **Analysis (Crit D)** | Lists facts about government and slavery separately | Analyzes the **contradiction**: how citizen freedom depended on enslaved labor |
+| **Analysis (Crit D)** | {{< vocab "list" text="Lists" >}} facts about government and slavery separately | {{< vocab "analyse" text="Analyzes" >}} the **contradiction**: how citizen freedom depended on enslaved labor |
 | **Perspectives (Crit D)** | Mentions only one viewpoint | Contrasts **free citizen** vs. **enslaved person / helot / woman** |
 | **Transitions (Crit C)** | Basic connectors (*First, Second, Also*) | Analytical transitions (*However, Whereas, Despite these legal protections*) |
-| **Citations (Crit C)** | No page numbers or source names | In-text citations `(Author, p. xx)` + full **Works Cited** list |
+| **Citations (Crit C)** | No page numbers or source names | In-text citations `(Author, p. xx)` + {{< vocab "document" text="documented" >}} **Works Cited** list |
 
 ## Lesson 5 · 2nd Draft & Works Cited Workshop 第二稿与文献整理
 
@@ -383,7 +383,7 @@ Lesson 5 (50 min):
 In **Section 4** of your booklet:
 
 1. **Write your revised Second Draft** using your partner's feedback and your Revision Plan.
-2. **Complete the Works Cited Organizer:**
+2. **Complete the Works Cited Organizer ({{< vocab "document" text="Document" >}}):**
    - `Author. Title of Book. Publisher, Year, pp. xx–xx.`
    - Check that every source cited in your essay is listed!
 :::
@@ -412,7 +412,7 @@ Lesson 6 (50 min):
 :::: {.columns}
 ::: {.column width="62%"}
 1. **Booklet Only 仅限使用纸质手册:** Type directly from your physical Summative Booklet into Toddle. **No AI tools, translators, or external websites.**
-2. **Include Works Cited 附上参考文献:** Type your full Works Cited list at the bottom of your essay.
+2. **Include Works Cited 附上参考文献:** {{< vocab "document" text="Document" >}} your full Works Cited list at the bottom of your essay.
 3. **Pre-Submission Check (Section 5):**
    - ☐ Crit B Checklist 100% finished
    - ☐ Essay & Works Cited proofread in Toddle
@@ -423,7 +423,7 @@ Lesson 6 (50 min):
 :::
 ::::
 
-## End-of-Summative Reflection 总结性评估自我反思 {.poll-summary-slide}
+## End-of-Summative {{< vocab "reflect" text="Reflection" >}} 总结性评估自我反思 {.poll-summary-slide}
 
 ::: {.poll type="smileys"}
 How confident do you feel about the historical argument and evidence in your final essay?

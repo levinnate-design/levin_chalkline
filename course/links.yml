@@ -4,7 +4,7 @@
 - title: Ancient Greece (Simple English Wikipedia)
   url: https://simple.wikipedia.org/wiki/Ancient_Greece
   type: reference
-  unit: 01-ancient-greece
+  unit: 91-test-unit-1-ancient-greece
   source: Wikipedia
   audience: [teacher, student, parent]
   description: An easy-English overview of ancient Greece, for reading at home.
@@ -12,7 +12,7 @@
 - title: Ancient Rome (Simple English Wikipedia)
   url: https://simple.wikipedia.org/wiki/Ancient_Rome
   type: reference
-  unit: 02-ancient-rome
+  unit: 92-test-unit-2-ancient-rome
   source: Wikipedia
   audience: [teacher, student, parent]
   description: An easy-English overview of ancient Rome, for reading at home.
@@ -22,4 +22,11 @@
   type: vocab
   source: School
   audience: [teacher, student, parent]
-  description: All 25 words from both units, with pictures and Chinese.
+  description: All course vocabulary and MYP command terms, with pictures and Chinese.
+
+- title: Command Terms (Vocab App / 指令词卡片)
+  url: vocab/app/#CMD
+  type: vocab
+  source: School
+  audience: [teacher, student, parent]
+  description: Interactive flashcards and audio for all 20 IB MYP Individuals & Societies command terms.

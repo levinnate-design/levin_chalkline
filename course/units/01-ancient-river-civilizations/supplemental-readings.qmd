@@ -1,0 +1,46 @@
+---
+title: "Prehistory & Supplemental Readings 史前社会与拓展阅读"
+type: reference
+description: "Foundational Prehistory readings (Paleolithic & Neolithic Agricultural Revolution) and extension packets on the Phoenicians, Origins of Judaism, the Assyrian Empire, and the Persian Empire."
+order: 16
+packet: false
+audience: [teacher, student, parent]
+doc-type: Reference
+name-box: false
+format:
+  html: default
+  typst: default
+---
+
+This page collects foundational readings on **Prehistory (史前社会)** and **Supplemental Extension Readings** on neighboring Near Eastern and Mediterranean civilizations (the Phoenicians, Origins of Judaism, the Assyrian Empire, and the Persian Empire).
+
+---
+
+## Part 1 · Prehistory Foundations 史前社会基础
+
+Before the rise of river valley cities around 3500–2500 B.C., early humans transitioned from Paleolithic foraging bands to Neolithic farming villages during the **Agricultural Revolution (农业革命)**, producing the first food {{< vocab "surplus" zh=true >}} and {{< vocab "division of labour" zh=true >}}.
+
+- 📄 **[Prehistory Reading Packet (English PDF)](supplemental/Prehistory-Reading.pdf)** — Foundational reading on early human migration, the Paleolithic Era, and the Neolithic Agricultural Revolution.
+- 📄 **[史前社会 · 单元导学与阅读材料 (中文 PDF)](supplemental/Y1S1_compressed.pdf)** — 中文版史前社会导学与阅读资料（旧石器时代、新石器时代与早期农业定居点）。
+
+---
+
+## Part 2 · Supplemental Readings & Extension Packets 拓展阅读材料
+
+These readings from *World History: Patterns of Interaction* explore the seafaring traders, religious traditions, and empires that connected and succeeded the early river valley civilizations through trade and {{< vocab "cultural diffusion" zh=true >}}.
+
+| Topic 主题 | Textbook Chapter Reading 教材章节 | Reading & Analysis Packet 阅读与分析练习 | Key Connections 核心联系 |
+|---|---|---|---|
+| **1. Seafaring Traders & the Phoenicians**<br>航海贸易者与腓尼基人 | [📄 Phoenicians Textbook Reading (PDF)](supplemental/Phoenicians.pdf)<br>*(pp. 72–76)* | [📄 Minoan and Phoenician Trade — Extension Reading (PDF)](supplemental/Minoan%20and%20Phoenician%20Trade%20-%20Extension%20Reading.pdf) | Mediterranean trade networks, purple dye, and the phonetic **alphabet** (腓尼基字母) — contrast with {{< vocab "cuneiform" zh=true >}} and {{< vocab "hieroglyphics" zh=true >}}. |
+| **2. The Origins of Judaism**<br>犹太教的起源 | [📄 Judaism Textbook Reading (PDF)](supplemental/Judaism.pdf)<br>*(pp. 77–82)* | [📄 Origins of Judaism — Reading and Analysis (PDF)](supplemental/Origins%20of%20Judaism%20-%20Reading%20and%20Analysis.pdf) | Abraham's migration from **Ur (乌尔)** in {{< vocab "Mesopotamia" zh=true >}} to Canaan, ethical monotheism (一神教 — contrast with {{< vocab "polytheism" zh=true >}}), the Torah, and the Ten Commandments (contrast with the {{< vocab "Code of Hammurabi" zh=true >}}). |
+| **3. The Assyrian Empire**<br>亚述帝国 | [📄 Assyria Textbook Reading (PDF)](supplemental/Assyria.pdf)<br>*(pp. 95–98)* | [📄 Assyrian Empire — Reading and Analysis (PDF)](supplemental/Assyrian%20Empire%20-%20Reading%20and%20Analysis.pdf) | How Mesopotamia's flat land with **no natural barriers** led to military organization, iron weapons, imperial administration, and King Ashurbanipal's library of {{< vocab "cuneiform" zh=true >}} tablets at Nineveh. |
+| **4. The Persian Empire**<br>波斯帝国 | [📄 Persia Textbook Reading (PDF)](supplemental/Persia.pdf)<br>*(pp. 99–103)* | [📄 Persian Empire Leaders — Reading and Analysis (PDF)](supplemental/Persian%20Empire%20Leaders%20-%20Reading%20and%20Analysis.pdf) | Cyrus the Great's policy of religious and cultural tolerance, Darius's satrapies and the **Royal Road**, uniting the {{< vocab "Fertile Crescent" zh=true >}}, Egypt, and the borders of the Indus Valley into one {{< vocab "empire" zh=true >}}. |
+
+---
+
+## Works Cited 文献来源
+
+- Beck, Roger B., et al. "Seafaring Traders." *World History: Patterns of Interaction*, McDougal Littell, 2008, pp. 72–76.
+- Beck, Roger B., et al. "The Origins of Judaism." *World History: Patterns of Interaction*, McDougal Littell, 2008, pp. 77–82.
+- Beck, Roger B., et al. "The Assyrian Empire." *World History: Patterns of Interaction*, McDougal Littell, 2008, pp. 95–98.
+- Beck, Roger B., et al. "The Persian Empire." *World History: Patterns of Interaction*, McDougal Littell, 2008, pp. 99–103.

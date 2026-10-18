@@ -1,0 +1,143 @@
+---
+title: "Unit 1 Overview & Inquiry Guide 第一单元课程总览与探究指南"
+type: reference
+description: "Statement of Inquiry, 3-tiered inquiry questions, MYP Criteria A/C/D & CNC alignment, 5-week learning arc, and academic sentence frame bank."
+order: 1
+audience: [teacher, student, parent]
+doc-type: Reference
+name-box: false
+format:
+  html: default
+  typst: default
+---
+
+```{python}
+import sys; sys.path.append("scripts")
+from vocab import load_unit, pick, word_bank
+terms = load_unit(1)
+```
+
+| Course / 学科 | MYP Individuals & Societies (整合人文) & CNC History (部编版历史) | Target Grade / 年级 | Grade 7–8 (MYP Years 2–3) |
+|---|---|---|---|
+| **Duration / 周期** | 4–5 Weeks (16–18 Instructional Periods · 45 min each) | **School / 学校** | Shenzhen Mingwan School (深圳明湾学校) |
+| **Frameworks** | IB MYP I&S Guide · Mingwan Assessment Policy · CNC History Standards (2022) | **Target Criteria** | Criteria A (Knowing), C (Communicating), D (Thinking Critically) |
+
+---
+
+## 1. Unit Architecture & Conceptual Lens 单元架构与概念透镜
+
+- **Key Concept (核心概念):** **Time, Place, and Space (时间、地点与空间)** — How geographic physical constraints (river flooding, lack vs. presence of natural barriers, {{< vocab "monsoon" zh=true >}} winds) shaped human survival strategies, settlement patterns, political governance, and civilizational continuity.
+- **Related Concepts (相关概念):** **Civilization (文明), Causality (因果关系), Governance (治理/政权), Culture (文化)** — Deconstructing the environmental catalyst for agricultural {{< vocab "surplus" zh=true >}}, {{< vocab "division of labour" zh=true >}}, {{< vocab "polytheism" text="polytheistic" zh=true >}} and {{< vocab "theocracy" text="theocratic" zh=true >}} worldviews, municipal engineering, and public law.
+- **Global Context (全球背景):** **Orientation in Space and Time (空间与时间中的定位)** — How early human communities adapted to, transformed, and were constrained by their physical surroundings between **3500 B.C. and 1500 B.C.**
+
+::: {.callout-important title="Statement of Inquiry (SOI · 单元探究命题)" icon=false}
+**EN:** Human communities turned unpredictable river environments into the world's first cities, and the solutions they invented — from {{< vocab "irrigation" zh=true >}} to writing to laws — became the foundation of {{< vocab "civilization" zh=true >}}.
+
+**CN:** 当人类社群把难以预料的河流环境改造成世界上最早的城市时，他们发明的解决方案——从灌溉、书写到法律——便奠定了人类文明的根基。
+:::
+
+---
+
+## 2. Three-Tiered Inquiry Questions 三级探究问题链
+
+### 2.1 Factual Questions (事实性问题 · DOK 1–2: Recall & Knowledge)
+
+1. {{< vocab "identify" text="Identify" zh=true >}} the three major river valleys that gave rise to the earliest civilizations examined in this unit. *(底格里斯-幼发拉底河、尼罗河、印度河)*
+2. What three environmental challenges did the Sumerians face regarding water, terrain, and natural resources? *(泛滥无常/干旱、缺乏天然防御屏障、缺乏木材/石料等建材)*
+3. How did the annual predictability of the Nile flood differ from the flooding of the Tigris and Euphrates? *(尼罗河每年7–10月定期泛滥沉积肥沃黑土 Kemet，两河则暴烈难以预测)*
+4. What architectural and municipal features characterized the planned cities of Mohenjo-Daro and Harappa? *(正交{{< vocab "grid system" zh=true >}}、标准烧结砖、{{< vocab "citadel" zh=true >}}、地下排水排污系统)*
+5. What {{< vocab "primary source" zh=true >}} evidence do the 282 clauses of the {{< vocab "Code of Hammurabi" zh=true >}} provide regarding Babylonian social hierarchy and public order? *(以眼还眼同态复仇、基于贵族/平民/奴隶的阶级不平等刑罚、水利堤坝维护法令)*
+
+### 2.2 Conceptual Questions (概念性问题 · DOK 2–3: Relational Analysis & Explanation)
+
+1. {{< vocab "explain" text="Explain" zh=true >}} how a river's flooding pattern influenced a civilization's religious worldview and concept of the afterlife. *(苏美尔人面对暴烈洪水形成严酷、难以捉摸的众神观与阴暗的“不归之地”；埃及人面对规律泛滥形成仁慈众神与充满希望的来世永生观)*
+2. In what ways did the physical lack of natural barriers in {{< vocab "Mesopotamia" zh=true >}} versus strong desert and {{< vocab "cataract" zh=true >}} barriers in Egypt dictate their historical continuity and imperial systems? *(美索不达米亚平原开阔无险导致{{< vocab "city-state" zh=true >}}割据与政权频繁更迭；埃及沙漠与浅滩屏障促成早期政治统一与持续3000年的文明延续)*
+3. Why did agricultural {{< vocab "surplus" zh=true >}} and large-scale water control necessitate the rise of centralized authority and formal legal codes? *(修建与维护灌溉水利、协调防洪抢险需要强制性组织纪律与公共法律监督，如法典第53条对怠忽水利的惩处)*
+4. How do historians {{< vocab "interpret" zh=true >}} Indus Valley governance and culture when its 400-symbol written script on {{< vocab "Harappan seals" zh=true >}} remains undeciphered? *(依靠考古实物推断：标准砖模、全城下水道印证强有力中央市政规划；缺少大型王陵与武器印证相对和平的商业社会)*
+
+### 2.3 Debatable Questions (辩论性问题 · DOK 3–4: Evaluation & Historical Argumentation)
+
+1. {{< vocab "discuss" text="Discuss" zh=true >}}: Did geography determine human history, or did human ingenuity and social organization overcome environmental limits? *(地理环境是决定了文明的兴起，还是仅提供了物质舞台？)*
+2. {{< vocab "evaluate" text="Evaluate" zh=true >}}: Was the {{< vocab "Code of Hammurabi" zh=true >}} a fair system of justice or an instrument of elite social control? *(《汉谟拉比法典》是维护社会公义的法典，还是统治阶层维护既得利益与阶层压迫的工具？)*
+3. Which environmental trade-off was more advantageous for long-term civilizational survival: Egypt's isolated stability or Mesopotamia's dynamic, trade-dependent vulnerability? *(封闭稳定的生态堡垒与开放脆弱但促进{{< vocab "cultural diffusion" zh=true >}}的十字路口，何者更有利于文明发展？)*
+
+---
+
+## 3. Standards & Competencies Mapping 标准与核心素养映射
+
+### 3.1 IB MYP Individuals & Societies Criteria (Years 2–3)
+
+- **Criterion A: Knowing and Understanding (了解与理解)**
+  - *Strand i:* Consistently and accurately {{< vocab "use" zh=true >}} subject-specific vocabulary in context ({{< vocab "Fertile Crescent" >}}, {{< vocab "silt" >}}, {{< vocab "irrigation" >}}, {{< vocab "surplus" >}}, {{< vocab "division of labour" >}}, {{< vocab "city-state" >}}, {{< vocab "polytheism" >}}, {{< vocab "theocracy" >}}, {{< vocab "pharaoh" >}}, {{< vocab "cataract" >}}, {{< vocab "delta" >}}, {{< vocab "ka" >}}, {{< vocab "mummification" >}}, {{< vocab "monsoon" >}}, {{< vocab "citadel" >}}, {{< vocab "grid system" >}}).
+  - *Strand ii:* {{< vocab "demonstrate" text="Demonstrate" zh=true >}} detailed knowledge and understanding of historical content and concepts through developed descriptions, explanations, and causal comparisons.
+- **Criterion C: Communicating (沟通表达)**
+  - *Strand i:* Communicate information and analytical ideas in clear, academic English appropriate for historical discourse.
+  - *Strand ii:* Structure comparative writing logically using specified paragraph conventions (*Claim → Evidence Source A → Evidence Source B → Analytical Synthesis*).
+  - *Strand iii:* Integrate targeted cause-and-effect transitional connectors (*due to, stemming from, consequently, whereas, as a result*).
+- **Criterion D: Thinking Critically (批判性思维)**
+  - *Strand i:* {{< vocab "analyse" text="Analyse" zh=true >}} primary source artifacts and legal texts (Stele of Hammurabi, King Narmer's Double Crown, {{< vocab "Harappan seals" >}}).
+  - *Strand ii:* {{< vocab "synthesize" text="Synthesize" zh=true >}} comparative indicators from visual stimulus matrices to construct valid historical arguments.
+  - *Strand iii:* {{< vocab "evaluate" text="Evaluate" zh=true >}} the values, limitations, and perspectives of historical records and undeciphered archaeological finds.
+
+### 3.2 Chinese National Curriculum (CNC 2022) Core History Literacies (义务教育历史核心素养)
+
+- **唯物史观 (Historical Materialism):** 理解物质资料生产（大河灌溉农业）是人类早期文明形成的基础；生产力发展（余粮与工具）推动阶级分化与国家产生。
+- **时空观念 (Temporal-Spatial Concepts):** 掌握古代两河流域、古埃及尼罗河流域、印度河流域的地理位置及公元前3500年至公元前1500年的关键时间线。
+- **史料实证 (Historical Evidence):** 结合《汉谟拉比法典》石碑铭文、纳尔迈调色板、摩亨佐-达罗遗址规划及哈拉帕印章，掌握由物证实史、孤证不立的实证方法。
+- **历史解释 (Historical Interpretation):** 能够辩证解释大河自然生态与早期法律、神权统治及城市形态之间的内在因果链。
+
+---
+
+## 4. Scaffolded 5-Week Learning Arc 递进式教学序列
+
+| Week / Period | Focus Module | Key Learning Engagements | Formative Checkpoint |
+|---|---|---|---|
+| **W1 · P1–2** | **Module 1A: Mesopotamia Geography** — Unpredictable waters & the 5-stage causal chain | • Map labeling: Tigris, Euphrates, Persian Gulf, Ur, Babylon<br>• Modeling the causal chain: *floods → {{< vocab "silt" >}} → {{< vocab "irrigation" >}} → {{< vocab "surplus" >}} → {{< vocab "city-state" text="city-states" >}}*<br>• Analyzing the 3 environmental challenges & human solutions | **Learning Sheet 1 (Crit. A):** Causal Chain Graphic Organizer & Southern Plain Analysis |
+| **W1 · P3 – W2 · P1** | **Module 1B: Sumerian Culture & Hammurabi's Code** — {{< vocab "polytheism" text="Polytheism" >}}, {{< vocab "ziggurat" text="ziggurats" >}} & legal stratification | • Ziggurat religious & administrative role deconstruction<br>• Primary source reading: Stele of Hammurabi (Shamash scene, Prologue, Laws §8, §53, §142–143, §196–199)<br>• "You Be the Judge" structured debate | **Learning Sheets 2–3 & Mesopotamia Formative A (Crit. A/D):** Hammurabi Legal Analysis Paragraph |
+| **W2 · P2–3 – W3 · P1** | **Module 2A: Ancient Egypt Geography & Theocracy** — Nile rhythm & divine kingship | • NASA Landsat satellite map analysis of the Nile ribbon & {{< vocab "delta" >}}<br>• Contrasting Egyptian desert/{{< vocab "cataract" >}} barriers with Mesopotamian open plains<br>• King Narmer & the Double Crown unification | **Egypt Learning Sheet P1 (Crit. A):** Geographic Fortress & Nile Stability Response |
+| **W3 · P2–3** | **Module 2B: Egyptian Monuments, Writing & Society** — {{< vocab "pyramid" text="Pyramids" >}}, {{< vocab "ka" >}}, {{< vocab "mummification" >}}, {{< vocab "hieroglyphics" >}} & {{< vocab "Rosetta Stone" >}} | • Engineering & economic analysis of the Great Pyramid at Giza<br>• Primary source: Herodotus on mummification & Weighing of the Heart<br>• Scribe Challenge ("Creating a Language") & Social Pyramid | **Egypt Learning Sheets P2–3 & Egypt Formative (Crit. A/C/D):** First-Person Persona Synthesis Paragraph |
+| **W4 · P1–3** | **Module 3: Indus Valley Urban Planning & Decline** — Harappa & Mohenjo-Daro | • {{< vocab "monsoon" text="Monsoon" >}} seasonal cycle decoding (winter dry vs. summer wet)<br>• Mohenjo-Daro blueprint walk: {{< vocab "grid system" >}}, baked bricks, {{< vocab "citadel" >}}, underground sewers<br>• Artifact study: {{< vocab "Harappan seals" >}} & undeciphered script<br>• Decline hypothesis seminar: tectonic shifts vs. soil exhaustion | **Indus Learning Sheet (Crit. B/D):** Archaeological Deduction Matrix & Historical Limitation Brief |
+| **W5 · P1–2** | **Module 4: Cross-Civilizational Synthesis & Review** — Environment to Law | • Completing the 3-Civilization Comparative Matrix across 5 dimensions<br>• Group decision argument ("Which river valley would you settle in?")<br>• Timed paragraph drafting with cause-and-effect sentence stems | **Review Matrix & Synthesis Checklist (Crit. A/C/D)** |
+
+---
+
+## 5. Academic Vocabulary & Sentence Frame Bank 双语词汇与学术句型库
+
+```{python}
+#| output: asis
+print(word_bank({
+    "Geography & Civilization": pick(terms, "civilization", "silt", "irrigation", "surplus", "division of labour", "cultural diffusion", "primary source", "secondary source"),
+    "Mesopotamia": pick(terms, "Fertile Crescent", "Mesopotamia", "city-state", "dynasty", "polytheism", "ziggurat", "cuneiform", "empire", "Code of Hammurabi"),
+    "Ancient Egypt": pick(terms, "cataract", "delta", "pharaoh", "theocracy", "ka", "mummification", "pyramid", "hieroglyphics", "papyrus", "Rosetta Stone"),
+    "Indus Valley": pick(terms, "subcontinent", "monsoon", "Harappan civilization", "Indo-Gangetic Plain", "citadel", "grid system", "Harappan seals"),
+}))
+```
+
+### Synthesis Paragraph Sentence Frames (比较与因果论证句型支架)
+
+- **Central Claim (Topic Sentence / 中心论点句):**
+  - *"Early river civilizations developed powerful leaders and strict laws because their harsh environments required **[collective coordination / water management / defense against invasion]**."*
+- **Evidence from Primary Law & Environment (美索不达米亚法典与环境证据):**
+  - *"According to the {{< vocab "Code of Hammurabi" >}}, Law §53 demonstrates that when an individual failed to maintain the {{< vocab "irrigation" >}} dam and caused flooding, the community **[punished the offender and compensated victims]**; this reveals that environmental water danger directly stimulated legal responsibility."*
+  - *"Furthermore, the prologue shows that King Hammurabi claimed divine authority from the justice god Shamash to ensure that **[the strong would not harm the weak / laws were obeyed as sacred]**."*
+- **Cross-Civilization Comparison (跨文明对比证据):**
+  - *"Moreover, unlike Ancient Egypt, which enjoyed natural desert protection and predictable Nile flooding, {{< vocab "Mesopotamia" >}} had no natural barriers; **as a result**, Mesopotamian rulers had to enforce **[strict public law codes / heavy defensive mud-brick walls]** to prevent social disorder."*
+  - *"Similarly, in the {{< vocab "Harappan civilization" >}}, unpredictable {{< vocab "monsoon" >}} floods required a strong central government to engineer **[elevated {{< vocab "citadel" text="citadels" >}} / a city-wide {{< vocab "grid system" >}} and brick drainage sewers]**."*
+- **Synthesis & Concluding Sentence (总结升华句):**
+  - *"Therefore, formal legal codes, {{< vocab "theocracy" text="theocratic" >}} rulers, and planned cities were not merely instruments of royal power, but necessary human solutions to overcome unpredictable ecological threats."*
+
+::: {.content-visible when-profile="teacher"}
+---
+
+## 6. Teacher Reference: Mingwan Criterion-Referenced Proficiency Scale (Toddle Reporting)
+
+In accordance with the *Mingwan Planning, Assessing, Reporting and Reflecting Handbook*, student performance across Criteria A, C, and D is reported against the 5-level proficiency scale: **EX (Exceeding)**, **PR (Proficient)**, **DE (Developing)**, **EM (Emerging)**, and **NE (Not Evident)**.
+
+| Performance Band | Criterion A: Knowing & Understanding | Criterion C: Communicating | Criterion D: Thinking Critically |
+|---|---|---|---|
+| **EX (Exceeding / 卓越)**<br>90–100% | • Independently and accurately uses a wide range of domain terminology (*silt, theocracy, Lex Talionis, citadel, subterranean drainage*).<br>• Provides nuanced, developed causal explanations connecting geography to social institutions. | • Paragraph structure is exceptionally logical and fluent.<br>• Flawlessly integrates complex cause-and-effect stems (*Stemming from..., Consequently..., Whereas...*).<br>• Embeds an analytical counter-argument comparing trade-offs. | • Demonstrates deep critical insight when evaluating primary and secondary evidence.<br>• Synthesizes legal and environmental sources with precision (e.g., connecting Law §53 flood liability directly to plain irrigation vulnerability). |
+| **PR (Proficient / 熟练达标)**<br>75–89% | • Consistently uses required terminology accurately in context.<br>• Fully explains the causal chain (*floods → irrigation → surplus → laws*) and environmental stability with concrete historical facts. | • Communicates clearly in academic English.<br>• Adheres to the 5–7 sentence paragraph structure (*Claim → Evidence A → Evidence B → Synthesis*).<br>• Integrates at least two required cause-and-effect stems. | • Accurately analyzes the limitations of undeciphered sources.<br>• Cites specific evidence from both legal texts (§53/Shamash) and comparative geography (desert vs. plain).<br>• Evaluates how environmental danger stimulated legal codification. |
+| **DE (Developing / 发展阶段)**<br>60–74% | • Uses some terminology accurately; minor inaccuracies in complex definitions.<br>• Provides basic descriptions of river conditions and inventions, but causal connections remain partial or simplified. | • Communicates with emerging clarity; occasional sentence structure errors.<br>• Paragraph has a basic claim and evidence, but lacks tight transitional flow or omits required stems. | • Identifies basic historical connections between floods and laws.<br>• Mentions evidence from sources, but summary is superficial or relies on direct copying without analysis.<br>• Partially explains historical limitations of Indus seals. |
+| **EM (Emerging / 起步阶段)**<br>1–59% | • Demonstrates fragmented recall of vocabulary and facts.<br>• Struggles to distinguish features between Mesopotamia, Egypt, and the Indus Valley. | • Communication is unclear or heavily fragmented.<br>• Fails to follow paragraph conventions; writes disconnected phrases; no cause-and-effect stems used. | • Struggles to interpret sources or distinguish between primary artifacts and environmental data.<br>• Expresses unsupported personal opinions without citing source evidence. |
+| **NE (Not Evident / 未达标准)** | • No response or completely irrelevant response provided. | • No response or completely irrelevant response provided. | • No response or completely irrelevant response provided. |
+:::

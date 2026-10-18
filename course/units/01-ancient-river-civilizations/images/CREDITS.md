@@ -1,0 +1,22 @@
+# Picture credits — Unit 1: Ancient River Civilizations
+
+- **fertile-crescent-map.png:** Map of the Fertile Crescent, c. 2500 B.C., adapted from HMH *World History* Chapter 2 Lesson 1 instructional slides.
+- **ziggurat-diagram.png:** Cutaway illustration of a Mesopotamian ziggurat, adapted from HMH *World History* Chapter 2 Lesson 1.
+- **sumerian-votive-statue.png:** Limestone votive statue of Iku-Shamagen, King of Mari (c. 2500 B.C.), National Museum of Damascus / Wikimedia Commons (Public Domain).
+- **ram-in-a-thicket-ur.png:** *Ram in a Thicket* (Gold Ram of Ur), Royal Cemetery at Ur (c. 2600–2400 B.C.), British Museum / Wikimedia Commons (CC BY-SA).
+- **stele-of-hammurabi.png:** Upper relief of the Stele of the Code of Hammurabi (c. 1750 B.C.), Louvre Museum / Wikimedia Commons (Public Domain).
+- **ancient-egypt-map.png:** Map of Ancient Egypt, 3000–2000 B.C., adapted from HMH *World History* Chapter 2 Lesson 3.
+- **fourth-dynasty-egypt-map.png:** Map of 4th Dynasty Old Kingdom Egypt, Wikimedia Commons (CC BY-SA).
+- **nile-satellite-view.png:** NASA Landsat satellite mosaic of the Nile River Valley and Delta at night/day (Public Domain).
+- **great-pyramid-giza.png:** Great Pyramid of Giza diagram and photograph, adapted from HMH *World History* Chapter 2 Lesson 3.
+- **herodotus-bust.png:** Roman marble bust of Herodotus (2nd century A.D. copy of a 4th century B.C. Greek original), Metropolitan Museum of Art (Public Domain, CC0).
+- **tutankhamun-mask.png:** Funerary mask of Tutankhamun (c. 1323 B.C.), Egyptian Museum, Cairo / Wikimedia Commons (CC BY-SA).
+- **rosetta-stone.png:** The Rosetta Stone (196 B.C.), British Museum, London / Wikimedia Commons (CC BY-SA 4.0, © Hans Hillewaert).
+- **egyptian-social-pyramid.png:** Ancient Egyptian social hierarchy diagram, adapted from HMH *World History* Chapter 2 Lesson 3.
+- **ancient-india-monsoons-map.png:** Map of the Indian Subcontinent and seasonal monsoons, adapted from HMH *World History* Chapter 2 Lesson 4.
+- **mohenjo-daro-citadel-plan.png:** Archaeological plan of the citadel and Great Bath at Mohenjo-Daro, adapted from HMH *World History* Chapter 2 Lesson 4.
+- **indus-priest-king.png:** Steatite "Priest-King" sculpture from Mohenjo-Daro (c. 2000–1900 B.C.), National Museum of Pakistan / Wikimedia Commons (CC BY-SA).
+- **mohenjo-daro-plumbing.jpg, mohenjo-daro-great-bath.jpg, mohenjo-daro-sewer.jpg:** Photographs of the Great Bath, wells, and brick drainage channels at Mohenjo-Daro, UNESCO World Heritage site / Wikimedia Commons (CC BY-SA).
+- **harappan-seals.png:** Steatite stamp seals with animal motifs and Indus script (elephant, rhinoceros, zebu bull), British Museum / National Museum, New Delhi / Wikimedia Commons.
+- **river-valleys-overview.jpg:** Map and collage of the four Old World river valley civilizations, Unit 1 Review Deck.
+- **GRC-002.svg, ROM-005.svg:** Original Chalkline vocabulary icons (`vocab/images/`).

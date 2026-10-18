@@ -1,0 +1,88 @@
+---
+title: "Republic or Empire? 共和国还是帝国？"
+type: worksheet
+description: "Sort ten facts into the Roman Republic or the Roman Empire, put five events in order, and explain the change. Teacher copy has an answer key."
+order: 3
+audience: [teacher, student]
+doc-type: Worksheet
+name-box: true
+format:
+  html: default
+  typst: default
+---
+
+```{python}
+import sys; sys.path.append("scripts")
+from vocab import load_unit, pick, word_bank
+terms = load_unit(92)
+```
+
+```{python}
+#| output: asis
+print(word_bank({
+    "Government": pick(terms, "republic", "senate", "consul", "emperor", "empire"),
+    "Army": pick(terms, "legion"),
+}))
+```
+
+## 1. {{< vocab "identify" text="Identify" zh=true >}} and sort the facts
+
+Write each letter in the right column.
+
+:::: {layout-ncol=2}
+::: {}
+**A.** Two {{< vocab "consul" text="consuls" zh=true >}} lead for one year.\
+**B.** Augustus rules for life.\
+**C.** Citizens elect their leaders.\
+**D.** The ruler's face is on every coin.\
+**E.** Romans have just removed their last king.
+:::
+::: {}
+**F.** About 200 years of peace, the *Pax Romana*.\
+**G.** No one person may hold all the power.\
+**H.** The Colosseum is finished in AD 80.\
+**I.** Julius Caesar is a general.\
+**J.** The western half falls in AD 476.
+:::
+::::
+
+:::: {layout-ncol=2}
+::: {}
+**Republic 共和国** (509–27 BC)
+{{< lines 2 >}}
+:::
+::: {}
+**Empire 帝国** (27 BC – AD 476)
+{{< lines 2 >}}
+:::
+::::
+
+## 2. Put them in order
+
+Number the events from 1 (first) to 5 (last).
+
+☐ Augustus becomes the first emperor\
+☐ Rome becomes a republic\
+☐ The western empire falls\
+☐ Julius Caesar is killed\
+☐ The Colosseum is finished
+
+## 3. {{< vocab "explain" text="Explain" zh=true >}} the change
+
+{{< vocab "explain" text="Explain" zh=true >}} why some Romans wanted to keep the {{< vocab "republic" zh=true >}}, even when an {{< vocab "emperor" zh=true >}} brought peace.
+
+*Some Romans wanted to keep the republic because …*
+
+{{< lines 4 >}}
+
+::: {.content-visible when-profile="teacher"}
+{{< pagebreak >}}
+
+::: {.callout-note title="Answer key"}
+**1.** Republic: A, C, E, G, I. Empire: B, D, F, H, J.
+
+**2.** 1 Rome becomes a republic (509 BC); 2 Julius Caesar is killed (44 BC); 3 Augustus becomes the first emperor (27 BC); 4 the Colosseum is finished (AD 80); 5 the western empire falls (AD 476).
+
+**3.** Any reasoned answer: citizens lost their vote over leaders; one person held all the power; an emperor could be cruel or weak, and no one could replace him for a year.
+:::
+:::

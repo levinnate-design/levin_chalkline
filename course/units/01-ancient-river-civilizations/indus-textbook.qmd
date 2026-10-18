@@ -1,0 +1,232 @@
+---
+title: "Indus Valley Student Textbook 印度河流域双语教材"
+type: reference
+description: "Bilingual student reading packet for Chapter 2 Lesson 4: Planned Cities on the Indus, covering geography, monsoons, Mohenjo-Daro grid planning, Harappan seals, and decline."
+order: 12
+audience: [teacher, student, parent]
+doc-type: Reference
+name-box: false
+format:
+  html: default
+  typst: default
+---
+
+```{python}
+import sys; sys.path.append("scripts")
+from vocab import load_unit, pick, word_bank, vocab_table
+terms = load_unit(1)
+```
+
+::: {.callout-note title="Big Question · 本课核心问题" icon=false}
+**How did the people of the Indus Valley create one of the world's first planned cities, and why did this {{< vocab "civilization" zh=true >}} eventually disappear?**
+*(印度河流域的居民如何创造了世界上最早的规划城市之一？这一文明最终为何消亡？)*
+
+- **Main Idea (核心问题 · Interaction with Environment):** The first Indian civilization built well-planned cities on the banks of the Indus River. *(最早的印度文明在印度河两岸建起了规划良好的城市。)*
+- **Why It Matters Now (现实意义):** The culture of India today has its roots in the civilization of the early Indus cities. *(今日印度文化的根源可追溯至早期印度河城市文明。)*
+- **Learning Goals (学习目标):** Use geographic vocabulary to explain how the Indus people adapted to their environment; analyze evidence for city planning and trade. *(运用地理词汇解释印度河人如何适应环境；分析城市规划与贸易的证据。)*
+:::
+
+```{python}
+#| output: asis
+print(word_bank({
+    "Geography & Climate": pick(terms, "subcontinent", "Indo-Gangetic Plain", "monsoon", "silt"),
+    "Planned Cities & Culture": pick(terms, "Harappan civilization", "grid system", "citadel", "Harappan seals"),
+}))
+```
+
+---
+
+## Section 0 · In This Lesson 本课概览
+
+### 5 Things You Will Learn 你将学到的 5 个核心要点
+1. The Indian {{< vocab "subcontinent" zh=true >}} is a landmass separated from Asia by mountains; rivers and {{< vocab "monsoon" text="monsoons" zh=true >}} shaped where people could farm. *(印度次大陆是一块被山脉与亚洲隔开的陆地；河流与季风决定了人们能耕种的区域。)*
+2. Around 2500 B.C., the {{< vocab "Harappan civilization" zh=true >}} arose in the Indus Valley and built carefully planned cities such as **Mohenjo-Daro (摩亨佐-达罗)** and **Harappa (哈拉帕)**. *(约公元前 2500 年，哈拉帕文明在印度河流域兴起，建造了摩亨佐-达罗、哈拉帕等精心规划的城市。)*
+3. Harappan cities used a {{< vocab "grid system" zh=true >}} of streets, {{< vocab "citadel" text="citadels" zh=true >}}, standard bricks, and advanced plumbing and sewage systems. *(哈拉帕城市采用网格街道、城堡、标准砖块以及先进的排水和排污系统。)*
+4. Harappan culture developed an undeciphered writing system, traded with {{< vocab "Mesopotamia" zh=true >}}, and shared religious ideas that influenced later Indian culture. *(哈拉帕文化发展出尚未破译的文字系统，与美索不达米亚进行贸易，并分享了影响后世印度文化的宗教观念。)*
+5. Around 1500 B.C., the Indus Valley civilization declined, possibly because of earthquakes, floods, river course changes, soil exhaustion, and **Aryan (雅利安人)** migration. *(约公元前 1500 年，印度河流域文明衰落，原因可能包括地震、洪水、河道改道、土壤耗竭以及雅利安人迁入。)*
+
+### Key Dates 关键年代
+- **c. 7000 B.C.** — Farming begins in the highlands of the Indian subcontinent. *(约公元前 7000 年 — 印度次大陆高地开始出现农业。)*
+- **c. 3200 B.C.** — Villages appear along the Indus River. *(约公元前 3200 年 — 印度河沿岸出现村落。)*
+- **c. 2500 B.C.** — Planned cities of the Harappan civilization are built. *(约公元前 2500 年 — 哈拉帕文明的规划城市建成。)*
+- **c. 1750 B.C.** — Quality of building in Indus cities declines. *(约公元前 1750 年 — 印度河城市的建筑质量开始下降。)*
+- **c. 1500 B.C.** — Aryan peoples enter the Indus Valley. *(约公元前 1500 年 — 雅利安人进入印度河流域。)*
+
+---
+
+## Section 1 · The Geography of the Indian Subcontinent 印度次大陆的地理
+
+> **MAIN IDEA A:** How did mountains, rivers, and seasonal winds shape life in the Indian subcontinent? *(山脉、河流与季风如何塑造了印度次大陆的生活？)*
+
+Geographers often refer to the landmass that includes India, Pakistan, and Bangladesh as the Indian {{< vocab "subcontinent" zh=true >}}. A wall of the highest mountains in the world — the Hindu Kush, Karakorum, and Himalayan ranges — separates this region from the rest of Asia. *(地理学家通常把包括印度、巴基斯坦和孟加拉国在内的陆地称为印度次大陆。世界上最高的山脉——兴都库什山、喀喇昆仑山和喜马拉雅山脉——像一堵墙，将这一地区与亚洲其余部分隔开。)*
+
+The Indus and Ganges rivers form a huge, flat, fertile plain known as the {{< vocab "Indo-Gangetic Plain" zh=true >}}. The Indus flows southwest from the Himalayas to the Arabian Sea, while the Ganges flows eastward to the Bay of Bengal. These rivers carry water and {{< vocab "silt" zh=true >}} for farming, much like the Nile, Tigris, and Euphrates. *(印度河与恒河形成了一片广阔、平坦而肥沃的平原，称为印度-恒河平原。印度河从喜马拉雅山脉向西南流入阿拉伯海，恒河则向东流入孟加拉湾。这些河流为农业带来水和淤泥，类似于尼罗河、底格里斯河与幼发拉底河。)*
+
+South of the plain lies the **Deccan Plateau (德干高原)**, a dry highland bordered by the Eastern and Western Ghats. A narrow coastal strip receives monsoon rains and stays lush and tropical. *(平原以南是德干高原，一块被东高止山和西高止山环绕的干燥高地。狭窄的海岸带受到季风降雨，保持繁茂的热带景观。)*
+
+![Figure 1: Ancient India, 2500–1500 B.C. and Monsoon Winds](images/ancient-india-monsoons-map.png){width="85%" fig-alt="Map of Ancient India and Monsoon Winds"}
+
+*→ Workbook · FA1 Label the map of Ancient India (练习册 · FA1 标注古印度地图)*
+
+---
+
+## Section 2 · Monsoons and Environmental Challenges 季风与环境挑战
+
+> **MAIN IDEA A:** What problems did farmers face because of monsoons and rivers? *(因季风与河流，农民面临哪些问题？)*
+
+Seasonal winds called {{< vocab "monsoon" text="monsoons" zh=true >}} dominate India's climate. From October to February, winter monsoons from the northeast blow dry air westward. From June through October, summer monsoons carry moist air from the ocean, bringing heavy rains. Too little rain causes drought; too much causes floods. *(称为季风的季节性风主导着印度的气候。10 月至次年 2 月，来自东北的冬季季风带来干燥空气；6 月至 10 月，夏季季风从海洋带来湿润空气与暴雨。雨水太少导致干旱，太多则引发洪灾。)*
+
+::: {.callout-note}
+### Connect to Today 联系当下
+Modern India still depends on monsoon rains. A weak or late monsoon can damage crops and affect the economy of the whole region. *(现代印度仍然依赖季风降雨。季风偏弱或迟到会损害作物，影响整个地区的经济。)*
+:::
+
+Indus farmers shared many problems with the people of Mesopotamia and Egypt *(印度河农民与美索不达米亚和埃及人一样面临许多问题)*:
+
+- **Unpredictable floods:** Yearly floods spread rich soil, but Indus floods were unpredictable. *(洪水每年带来肥沃土壤，但印度河洪水难以预测。)*
+- **Shifting river courses:** Rivers sometimes changed course, forcing people to move. *(河流有时会改道，迫使人们迁移。)*
+- **Unreliable monsoon cycle:** The wet-and-dry cycle of monsoons was unreliable; drought brought hunger and too much rain swept away villages. *(季风干湿周期不稳定；干旱带来饥荒，暴雨则冲毁村庄。)*
+
+*→ Workbook · FA2 Interpret the monsoon maps (练习册 · FA2 解读季风地图)*
+
+---
+
+## Section 3 · Civilization Emerges on the Indus 印度河流域文明的兴起
+
+> **MAIN IDEA B:** What evidence do we have about the origins and spread of the Harappan civilization? *(关于哈拉帕文明的起源与扩张，我们有哪些证据？)*
+
+Historians know less about the Indus Valley civilization than about Mesopotamia or Egypt because its writing has not been deciphered. Evidence comes mainly from archaeological digs, many of which remain unexplored. *(由于印度河流域文字尚未破译，历史学家对它的了解少于美索不达米亚和埃及。证据主要来自考古发掘，其中许多遗址尚未被探索。)*
+
+No one is sure how settlement began. People may have arrived by sea from Africa in the south, while northern migrants may have crossed the Khyber Pass. By about 7000 B.C., farmers in the highlands raised crops and herded sheep and goats. By 3200 B.C., villages lined the Indus River. *(人类如何开始定居仍不确定。一些人可能从非洲经海路抵达南部，而北方移民可能穿过开伯尔山口。约公元前 7000 年，高地农民开始种植作物、饲养牛羊。到公元前 3200 年，印度河沿岸已布满村庄。)*
+
+Around 2500 B.C., while Egyptians built {{< vocab "pyramid" text="pyramids" zh=true >}}, people in the Indus Valley began building India's first cities. They constructed strong levees and earthen walls to keep floodwater out. When that was not enough, they built human-made islands to raise cities above possible flood levels. Archaeologists have found ruins of more than 100 settlements. The largest were Kalibangan, **Mohenjo-Daro (摩亨佐-达罗)**, and **Harappa** — the site that gives {{< vocab "Harappan civilization" zh=true >}} its name. *(约公元前 2500 年，当埃及人建造金字塔时，印度河流域的人们开始建造印度最早的城市。他们修筑坚固的堤坝和土墙抵御洪水；当这还不够时，便建造人工岛屿，将城市抬高到可能的洪水水位之上。考古学家已发现 100 多处遗址，其中最大的是卡利班甘、摩亨佐-达罗和哈拉帕——哈拉帕文明即因此得名。)*
+
+:::: {.columns}
+::: {.column width="45%"}
+![Figure 2: Plan of the Citadel at Mohenjo-Daro (Textbook p. 46)](images/mohenjo-daro-citadel-plan.png){width="100%" fig-alt="Plan of the Citadel at Mohenjo-Daro"}
+:::
+::: {.column width="55%"}
+### Planned Cities 规划城市 (Source: Textbook p. 46)
+A plan of the {{< vocab "citadel" zh=true >}} at Mohenjo-Daro shows streets, a granary, an assembly hall, and fortifications. *(摩亨佐-达罗城堡平面图显示了街道、谷仓、集会厅和防御工事。)*
+
+The citadel was a fortified area containing major buildings. Its organized plan suggests that a strong central government directed construction. *(城堡是设有防御工事的区域，包含主要建筑。其有序的规划表明强大的中央政府主导了建设。)*
+:::
+::::
+
+*→ Workbook · FA3 Compare Harappan and Mesopotamian city planning (练习册 · FA3 比较哈拉帕与美索不达米亚城市规划)*
+
+---
+
+## Section 4 · Planned Cities and Advanced Plumbing 规划城市与先进排水系统
+
+> **MAIN IDEA C:** How were the planned cities of the Indus Valley different from other early cities? *(印度河流域的规划城市与其他早期城市有何不同？)*
+
+The cities of early Mesopotamia were a jumble of buildings connected by winding streets. In contrast, Indus cities were laid out on a precise {{< vocab "grid system" zh=true >}}. Cities featured a fortified {{< vocab "citadel" zh=true >}} containing major buildings. Houses were laid out in block units, and some may have been three stories high. *(早期美索不达米亚的城市是建筑杂乱、街道弯曲的迷宫。相比之下，印度河城市按精确的网格系统布局，设有包含主要建筑的城堡。房屋排列成街区单元，有些可能高达三层。)*
+
+Builders used standard-size oven-baked bricks, unlike the irregular sun-dried mud bricks of Mesopotamia. The uniformity of bricks, streets, and drains suggests a strong central government that could organize labor and materials across the region. *(建筑者使用标准尺寸的烘烧砖，而不是美索不达米亚不规则的日晒泥砖。砖块、街道和排水系统的统一性表明存在一个能组织全地区劳动力和物资的强有力中央政府。)*
+
+:::: {.columns}
+::: {.column width="45%"}
+![Plumbing in Mohenjo-Daro (Textbook p. 47)](images/mohenjo-daro-plumbing.jpg){width="100%" fig-alt="Plumbing in Mohenjo-Daro"}
+:::
+::: {.column width="55%"}
+### Plumbing in Mohenjo-Daro 摩亨佐-达罗的排水系统 (Source: Textbook p. 47)
+Private bathrooms and brick sewers carried wastewater out of the city. *(私人浴室与砖砌下水道将废水排出城外。)*
+
+Almost every house in Mohenjo-Daro had a private bathroom and toilet. Brick sewers ran below streets, with manholes so workers could clean them. This level of convenience was not matched in Europe until the 19th and 20th centuries. *(摩亨佐-达罗几乎每座房屋都有私人浴室和厕所。砖砌下水道铺设在街道下，设有检修孔供工人清理。这种便利程度直到 19、20 世纪才在欧洲被赶上。)*
+:::
+::::
+
+*→ Workbook · FA4 Make an inference from the plumbing evidence (练习册 · FA4 从排水证据进行推断)*
+
+---
+
+## Section 5 · Harappan Culture 哈拉帕文化
+
+> **MAIN IDEA D:** What can artifacts tell us about Harappan language, religion, and trade? *(文物能告诉我们关于哈拉帕语言、宗教和贸易的什么信息？)*
+
+Harappan culture spread throughout the Indus Valley. Like Egypt and Mesopotamia, it was based on agriculture. Artifacts help explain daily life, beliefs, and connections with other regions. *(哈拉帕文化遍及印度河流域。与埃及和美索不达米亚一样，它以农业为基础。文物帮助我们了解日常生活、信仰以及与其他地区的联系。)*
+
+### Language 语言
+The Harappans developed a written language with about 400 symbols. Unlike {{< vocab "cuneiform" zh=true >}} and {{< vocab "hieroglyphics" zh=true >}}, it has never been deciphered because no bilingual inscriptions have been found. Symbols appear on stamps and {{< vocab "Harappan seals" text="seals" zh=true >}} used to mark ownership of pottery and tools. *(哈拉帕人发展出一种约有 400 个符号的书写语言。由于未发现双语铭文，它至今未被破译。符号出现在用于标记陶器和工具所有权的印章上。)*
+
+### Religion and Culture 宗教与文化
+Harappan cities show a remarkable uniformity in religion and culture. Housing suggests that social divisions were not great. Clay and wooden children's toys and few weapons of warfare suggest a relatively prosperous and peaceful society. *(哈拉帕城市在宗教和文化上表现出显著的统一性。住房差异不大，说明社会分化不严重。陶制和木制儿童玩具、少量战争武器表明社会相对富裕和平。)*
+
+Religious artifacts reveal links to modern Hindu culture: figures that may be early representations of Shiva, a mother goddess, fertility images, and the worship of the bull. Priests likely prayed for good harvests and safety from floods. *(宗教文物显示出与现代印度教文化的联系：可能是湿婆早期形象的人物、母神、生育图像以及公牛崇拜。祭司可能为丰收和免遭洪水而祈祷。)*
+
+### Trade 贸易
+The Harappans traded with peoples across a wide region. Gold and silver came from Afghanistan; semiprecious stones from Persia and the **Deccan Plateau (德干高原)** became jewelry. Brightly colored cotton cloth was a desirable trade item. The Indus River and Persian Gulf routes linked Harappans with the Mesopotamians. {{< vocab "Harappan seals" text="Seals" zh=true >}} found in Sumer probably identified Indus merchants' goods (`{{< vocab "cultural diffusion" zh=true >}}`). *(哈拉帕人与广大地区的人民进行贸易。黄金和白银来自阿富汗；波斯和德干高原的半宝石被制成珠宝。色彩鲜艳的棉布是受欢迎的贸易品。印度河与波斯湾航线将哈拉帕人与美索不达米亚人连接起来。苏美尔发现的印章可能用于标识印度河商人的货物。)*
+
+:::: {.columns}
+::: {.column width="35%"}
+![Figure 3: Harappan Seals (Textbook p. 48)](images/harappan-seals.png){width="100%" fig-alt="Harappan Seals: elephant, Indian rhinoceros, zebu bull"}
+:::
+::: {.column width="65%"}
+### Harappan Seals 哈拉帕印章 (Source: Textbook p. 48)
+Seals show an elephant, an Indian rhinoceros, and a zebu bull. *(印章上刻有大象、印度犀牛和瘤牛。)*
+
+These small stone stamps were used to mark trade goods. The animal images also suggest that animals held religious or cultural meaning. *(这些小型石质印章用于标记贸易商品。动物图像也表明动物在宗教或文化中具有重要意义。)*
+:::
+::::
+
+*→ Workbook · FA5 Analyze a Harappan seal and write about trade (练习册 · FA5 分析哈拉帕印章并撰写贸易说明)*
+
+---
+
+## Section 6 · The End of Indus Valley Culture 印度河流域文明的终结
+
+> **MAIN IDEA E:** What factors may have contributed to the decline of the Indus Valley civilization? *(哪些因素可能导致印度河流域文明衰落？)*
+
+Around 1750 B.C., the quality of building in Indus cities declined and the great cities fell into decay. For a long time, the reasons remained a mystery. *(约公元前 1750 年，印度河城市的建筑质量下降，大城市逐渐衰败。长期以来，原因一直是个谜。)*
+
+In the 1970s, satellite images revealed evidence of shifts in tectonic plates. These movements probably caused earthquakes and floods and altered the course of the Indus River. Some cities survived, while others were destroyed. The shifts may also have caused the Saraswati River to dry up, making trade impossible and cities to die. Soil exhausted by overuse may have reduced food production, forcing people to leave. *(20 世纪 70 年代的卫星图像揭示了板块移动的证据。这些移动可能引发地震和洪水，并改变印度河河道。一些城市幸存，另一些则被摧毁。板块移动还可能使萨拉斯瓦蒂河干涸，贸易无法进行，城市消亡。过度耕作耗尽的土壤也可能减少粮食产量，迫使人们离开。)*
+
+Other factors also had an impact. Around 1500 B.C., the **Aryans (雅利安人)**, nomadic people from north of the Hindu Kush mountains, swept into the Indus Valley. Indian civilization would grow again under the influence of these newcomers. *(其他因素也产生了影响。约公元前 1500 年，来自兴都库什山以北的游牧民族雅利安人涌入印度河流域。在这些新来者的影响下，印度文明将再次发展。)*
+
+:::: {.columns}
+::: {.column width="35%"}
+![The Bearded Figure / Priest-King (Textbook p. 49)](images/indus-priest-king.png){width="90%" fig-alt="Bearded Figure / Priest-King from Mohenjo-Daro"}
+:::
+::: {.column width="65%"}
+### The Bearded Figure 蓄须雕像 (Source: Textbook p. 49)
+This stone figure may represent a Harappan god or a priest-king. *(这尊石像可能代表哈拉帕神祇或祭司国王。)*
+
+The figure's calm expression and detailed clothing suggest a person of high status. Such artifacts remind us that Indus art and belief continue to raise questions. *(雕像平静的表情与精致的服饰表明其身份显赫。这类文物提醒我们，印度河艺术与信仰仍有许多未解之谜。)*
+:::
+::::
+
+*→ Workbook · ET Exit ticket: What caused the decline? (练习册 · 当堂检测：衰落的原因是什么？)*
+
+---
+
+## Section 7 · Questions to Think About 思考与讨论
+
+1. What landforms protected and limited settlement in the Indian {{< vocab "subcontinent" zh=true >}}?
+   *(印度次大陆的哪些地形既保护了定居点，又限制了定居范围？)*
+2. Why were {{< vocab "monsoon" text="monsoons" zh=true >}} both a gift and a danger to Indus farmers?
+   *(为什么季风对印度河农民既是礼物又是威胁？)*
+3. How do the streets, bricks, and drains of Harappan cities show central planning?
+   *(哈拉帕城市的街道、砖块和排水系统如何体现中央规划？)*
+4. Why is it difficult to know exactly what the Harappan language says?
+   *(为什么很难确切知道哈拉帕语言的内容？)*
+5. What are the most likely causes of the decline of the Indus Valley civilization?
+   *(印度河流域文明衰落最可能的原因是什么？)*
+
+---
+
+## Section 8 · Key Words 核心词汇
+
+```{python}
+#| output: asis
+print(vocab_table(pick(terms,
+    "subcontinent", "monsoon", "Harappan civilization",
+    "Indo-Gangetic Plain", "citadel", "grid system", "Harappan seals"
+)))
+```
+
+| Additional Lesson Terms 补充词汇 | Meaning 释义 |
+|---|---|
+| **Deccan Plateau 德干高原** | A dry highland in southern India bordered by the Eastern and Western Ghats. |
+| **Mohenjo-Daro 摩亨佐-达罗** | A major planned city of the Harappan civilization along the lower Indus River. |
+| **Aryans 雅利安人** | Nomadic people who entered the Indus Valley from north of the Hindu Kush around 1500 B.C. |

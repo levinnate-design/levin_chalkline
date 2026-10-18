@@ -1,0 +1,36 @@
+---
+title: "Unit 1: Ancient River Civilizations"
+short-title: "Unit 1 · River Civilizations"
+unit: 1
+format: html
+description: "How human communities turned the Tigris-Euphrates, Nile, and Indus river valleys into the world's first cities, writing systems, and legal codes."
+objectives:
+  - "I can explain the causal chain from river flooding and silt to irrigation, food surplus, division of labour, and the first city-states."
+  - "I can evaluate primary legal sources from the Code of Hammurabi to show how Babylonian laws enforced water management and social hierarchy."
+  - "I can compare how unpredictable rivers in Mesopotamia and predictable floods and desert barriers in Egypt shaped religion, afterlife beliefs, and political stability."
+  - "I can use archaeological evidence from Mohenjo-Daro and Harappa to deduce how Indus Valley cities were planned and explain the limits of undeciphered writing."
+  - "I can synthesize evidence across Mesopotamia, Ancient Egypt, and the Indus Valley to argue how physical environments forced communities to invent systems of law, leadership, and social control."
+listing:
+  contents: "*.qmd"
+  type: table
+  fields: [title, type, description]
+  field-display-names:
+    type: Type
+  sort: "order"
+  filter-ui: false
+  sort-ui: false
+---
+
+::: {.callout-note title="Statement of Inquiry · 单元探究命题" icon=false}
+**Human communities turned unpredictable river environments into the world's first cities, and the solutions they invented — from {{< vocab "irrigation" zh=true >}} to writing to laws — became the foundation of {{< vocab "civilization" zh=true >}}.**
+
+当人类社群把难以预料的河流环境改造成世界上最早的城市时，他们发明的解决方案——从灌溉、书写到法律——便奠定了人类文明的根基。
+
+**Key Concept:** Time, Place, and Space (时间、地点与空间) · **Related Concepts:** Civilization, Causality, Governance, Culture · **Global Context:** Orientation in Space and Time (3500 B.C.–1500 B.C.)
+:::
+
+{{< objectives >}}
+
+{{< packet >}}
+
+## Materials

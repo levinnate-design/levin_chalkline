@@ -1,0 +1,351 @@
+---
+title: "Pyramids on the Nile"
+subtitle: "尼罗河畔的金字塔 · Periods 1–3: The Gift of the Nile, Pyramids & Afterlife, Writing & Society"
+type: slides
+description: "How the predictable Nile and desert barriers unified Egypt, why pharaohs built pyramids and mummified bodies, and how the Rosetta Stone unlocked 3,000 years of civilization."
+order: 6
+audience: [teacher, student, parent]
+format: revealjs
+title-slide-attributes:
+  data-background-color: "#003477"
+  data-background-image: images/great-pyramid-giza.png
+  data-background-opacity: "0.35"
+---
+
+```{python}
+import sys; sys.path.append("scripts")
+from vocab import load_unit, pick, card_grid
+terms = load_unit(1)
+```
+
+# Period 1: The Gift of the Nile 第1节：尼罗河的礼物 {background-color="#003477"}
+
+**Big Question · 核心问题:** How did the Nile shape ancient Egypt — and why did Egypt unite so early? *(尼罗河如何塑造了古埃及？为什么埃及能早早统一？)*
+
+## Period 1 Flow · 今日流程 (45 min)
+
+:::: {.columns}
+::: {.column width="50%"}
+1. **Warm-up 导入 (5′):** Recall {{< vocab "Mesopotamia" >}} & Predict the Nile *(回顾两河，预测尼罗河人口分布)*
+2. **Direct Instruction 讲授 (13′):** The Gift of the Nile & Unification under King Narmer *(尼罗河的馈赠与纳尔迈统一)*
+:::
+::: {.column width="50%"}
+3. **Learning Activity 学习活动 (17′):** FA1 Map Activity & FA2 Achievement Web *(地图定位与成就网状图)*
+4. **Exit Ticket 当堂检测 (5′):** ET1 Three short questions without notes *(三道简答题，不看笔记)*
+:::
+::::
+
+## Warm-up: Recall & Predict 导入：回顾与预测
+
+:::: {.columns}
+::: {.column width="46%"}
+![](images/ancient-egypt-map.png){fig-alt="Map of Ancient Egypt, 3000–2000 B.C." height="420px"}
+:::
+::: {.column width="54%"}
+Answer in **Period 1 Learning Sheet (WU1–WU2)**:
+
+1. **WU1:** Why might people want to live near the Nile River? (1–2 sentences)
+2. **WU2:** The Nile flooded every July — {{< vocab "list" >}} **two ways** this helped Egyptian farmers.
+3. **WU3:** Look at the map: where is most of Egypt green, and which direction does the Nile flow (**north** or **south**)?
+
+{{< timer 3 >}}
+:::
+::::
+
+## Direct Instruction: The Gift of the Nile 尼罗河的礼物
+
+:::: {.columns}
+::: {.column width="56%"}
+- **The Longest River (世界最长河流):** Flows **NORTH** over 4,100 miles from the East African highlands into the Mediterranean Sea.
+- **A Predictable Flood (可预测的泛滥):** Every **July** the Nile rose; by **October** it receded, leaving a rich layer of black **{{< vocab "silt" >}}** (*Kemet* / 黑土).
+- **Two Regions (上下埃及):**
+  - **Upper Egypt (上埃及):** High-elevation narrow southern valley down to the First **{{< vocab "cataract" text="Cataract" >}}** (瀑布/急流).
+  - **Lower Egypt (下埃及):** Broad, marshy northern **{{< vocab "delta" >}}** (三角洲) at the Mediterranean mouth.
+- **Deserts as Walls (沙漠屏障):** Sahara and Eastern deserts blocked invasions and spared Egypt the constant warfare of the {{< vocab "Fertile Crescent" >}}.
+:::
+::: {.column width="44%"}
+![](images/nile-satellite-view.png){fig-alt="NASA Landsat satellite view of the Nile River" height="320px"}
+
+::: {.small-note}
+Greek historian **Herodotus**: Egypt was *"the gift of the Nile."*
+:::
+:::
+::::
+
+## The Nile: A Gift with Conditions 有条件的礼物
+
+| Environmental Condition 环境挑战 | Egyptian Solution 古埃及人的应对方案 |
+|---|---|
+| **Flood too HIGH (洪水过高)**<br>Destroys mud-brick homes, granaries, and canals | **Built dikes, reservoirs & {{< vocab "irrigation" >}} ditches**<br>修筑防洪堤坝、水库与灌溉水渠 |
+| **Flood too LOW (洪水过低)**<br>Leaves no {{< vocab "silt" >}} or water → crop failure and famine | **Stored grain {{< vocab "surplus" >}} in royal granaries**<br>丰年由国家粮仓储备余粮以备荒年 |
+| **Travel & Defense along the River**<br>Churning rapids at the First {{< vocab "cataract" text="Cataract" >}}; vast deserts on both sides | **Used north-flowing current & south-blowing winds**<br>顺流向北航行，扬帆借北风向南逆流而上 |
+
+::: {.callout-tip title="Think · 思考" icon=false}
+Why was a **predictable** flood so much better for farmers than the violent, unpredictable floods of the Tigris and Euphrates?
+:::
+
+## Direct Instruction: Egypt Unites into a Kingdom 埃及统一为王国
+
+::: {.timeline}
+- **c. 5000 B.C. · Farming Villages Along the Nile (农业村落)**
+  Each village had its own rituals, gods, and chieftain.
+- **c. 3200 B.C. · Two Separate Kingdoms (上下埃及两个王国)**
+  **Upper Egypt** (south, tall **White Crown**) and **Lower Egypt** (north delta, **Red Crown**).
+- **c. 3000 B.C. · King Narmer Unites Egypt (纳尔迈统一上下埃及)**
+  The carved **Narmer Palette** shows **King Narmer** wearing the **Double Crown** (红白双冠 — two lands, one ruler). He founded his capital at **Memphis (孟菲斯)** where Upper and Lower Egypt met, launching **31 {{< vocab "dynasty" text="dynasties" >}}** over 2,600 years.
+- **2660–2180 B.C. · The Old Kingdom (古王国时期)**
+  The great age of {{< vocab "pharaoh" text="pharaohs" >}}, **{{< vocab "theocracy" >}}**, and **{{< vocab "pyramid" >}}** building.
+:::
+
+## Learning Activity: FA1 Map Activity & FA2 Achievement Web
+
+:::: {.columns}
+::: {.column width="44%"}
+![](images/ancient-egypt-map.png){fig-alt="Map of Ancient Egypt" height="400px"}
+:::
+::: {.column width="56%"}
+**MYP Criterion A — Knowing & Understanding**
+
+1. **Label 6 features on your map (FA1):**
+   - Nile River · Nile {{< vocab "delta" text="Delta" >}} · First {{< vocab "cataract" text="Cataract" >}} · Upper Egypt · Lower Egypt · Memphis · Mediterranean Sea
+2. **Q1 Movement (流向):** In which direction does the Nile flow, and how can you tell from the map?
+3. **Q2 Location (位置):** Why is **Upper Egypt** drawn *below* **Lower Egypt** on the map?
+4. **FA2 Notes Web:** Begin filling in the 4 branches of Egyptian Achievements (*Geography, Government, Belief, Writing & Science*).
+
+{{< timer 12 >}}
+:::
+::::
+
+## Period 1 Exit Ticket (ET1 · 5 min · No Notes)
+
+::: {.callout-warning title="Exit Ticket ET1 — Answer from Memory" icon=false}
+1. Define **{{< vocab "delta" >}}** and **{{< vocab "cataract" >}}** in one sentence each.
+2. {{< vocab "list" text="List" >}} **two ways** the Nile's regular flooding helped Egyptian farmers, and **one risk** when the flood was too high or too low.
+3. Who is credited with uniting Upper and Lower Egypt around 3000 B.C., and what symbol did he create?
+:::
+
+# Period 2: Pyramids, Gods & the Afterlife 第2节：金字塔、众神与来世 {background-color="#003477"}
+
+**Big Question · 核心问题:** Why did the Egyptians build {{< vocab "pyramid" text="pyramids" >}} and mummify their rulers? *(为什么古埃及人要建金字塔，并为法老制作木乃伊？)*
+
+## Warm-up: Predict the Great Pyramid 导入：看图预测
+
+:::: {.columns}
+::: {.column width="48%"}
+![](images/great-pyramid-giza.png){fig-alt="The Great Pyramid of Giza diagram and photo"}
+:::
+::: {.column width="52%"}
+Answer in **Period 2 Learning Sheet (Stage 1 Warm-up)**:
+
+1. The Great Pyramid is **481 feet tall** and used **over 2 million stone blocks**. Predict: what kind of people and organization had to work together to build it?
+2. A **{{< vocab "pharaoh" >}}** was called a living god on earth. If the king *is* a god, who do you obey — and who do you blame when the flood fails?
+3. Why would a **tomb (陵墓)** be even more important than a **palace (宫殿)** to an Egyptian king?
+
+{{< timer 3 >}}
+:::
+::::
+
+## Direct Instruction: Pharaohs Rule as Gods 法老以神之名统治
+
+:::: {.columns}
+::: {.column width="55%"}
+- **{{< vocab "theocracy" text="Theocracy" >}} (神权政治):** Government in which rule is based on religious authority — the {{< vocab "pharaoh" >}} was both the political and religious leader.
+- Unlike Mesopotamian kings (seen as *servants/representatives* of the gods), Egyptian **{{< vocab "pharaoh" text="pharaohs" >}} were living gods**.
+- Egyptians believed the pharaoh caused:
+  1. **The sun to rise** every morning;
+  2. **The Nile to flood** every July;
+  3. **The crops to grow** and truth/justice (*ma'at*) to prevail.
+- **The Eternal {{< vocab "ka" text="Ka" >}} (永恒的“卡”):** Because a king's spirit (**{{< vocab "ka" >}}**) continued to govern Egypt after death, his eternal tomb ({{< vocab "pyramid" >}}) was even more important than his palace!
+:::
+::: {.column width="45%"}
+::: {.callout-note title="Major Egyptian Deities · 主要神祇" icon=false}
+- **Re (拉):** Sun god; the most important deity.
+- **Osiris (奥西里斯):** God of the dead and ruler of the underworld.
+- **Isis (伊西斯):** Goddess representing the ideal mother and wife.
+- **Anubis (阿努比斯):** Jackal-headed god and guide of the underworld who weighed dead souls' hearts.
+:::
+:::
+::::
+
+## Builders of the Great Pyramid 金字塔的建造者
+
+:::: {.columns}
+::: {.column width="48%"}
+![](images/great-pyramid-giza.png){fig-alt="Great Pyramid of Giza cutaway diagram"}
+:::
+::: {.column width="52%"}
+- **By the Numbers (吉萨大金字塔数据):**
+  - **481 feet tall** (taller than a 40-story building), covering **13 acres**
+  - **2,000,000+ limestone & granite blocks**, weighing **2.5 to 15 tons** each
+  - Built **without the wheel** and **without iron tools**!
+- **Who Built Them? (建造者是谁？)**
+  - **Peasant labourers** (not slaves!) working for the state during the July–October flood season when fields were underwater, provided with food and housing.
+  - Work crews carved their proud team nicknames inside the stones: *"The Vigorous Gang"* (活力队), *"The Enduring Gang"* (耐久队), *"The Craftsman Gang"* (工匠队).
+:::
+::::
+
+## Direct Instruction: Mummification & Herodotus 木乃伊制作与希罗多德
+
+:::: {.columns}
+::: {.column width="34%"}
+![](images/herodotus-bust.png){fig-alt="Marble bust of Herodotus" height="270px"}
+
+::: {.small-note}
+**Herodotus** (c. 484–425 B.C.), Greek historian who recorded Egyptian embalming in *The Histories*, Book II.
+:::
+:::
+::: {.column width="66%"}
+**Why {{< vocab "mummification" >}}?** To preserve the body so the **{{< vocab "ka" >}}** could recognize and return to it in the afterlife.
+
+**Herodotus's 7 Steps (Sequence in FA5):**
+1. **Remove the brain** through the nostrils with an iron hook.
+2. **Make an incision** in the side and **remove the internal organs** (placed in four **Canopic Jars** guarded by the Sons of Horus; the **heart was left inside** for judgment!).
+3. **Fill the belly** with pure myrrh, cassia, and perfumes.
+4. **Sew up** the belly.
+5. **Steep in natron** (natural drying mineral salt) for **70 days**.
+6. **Wash the corpse** after 70 days.
+7. **Wrap the whole body** in waxen linen bandages and place in the tomb with the ***Book of the Dead* (《亡灵书》)**.
+:::
+::::
+
+## Learning Activity: Artifact Analysis & Weighing of the Heart (FA3–FA5, FA7)
+
+:::: {.columns}
+::: {.column width="38%"}
+![](images/tutankhamun-mask.png){fig-alt="Solid gold death mask of Pharaoh Tutankhamun" height="320px"}
+
+::: {.small-note}
+**Tutankhamun's Death Mask** (c. 1323 B.C., solid gold, 22 lbs, Egyptian Museum, Cairo).
+:::
+:::
+::: {.column width="62%"}
+Complete **Stage 3 (FA3, FA4, FA5)** in your Period 2 Learning Sheet:
+
+- **FA3 (Great Pyramid):** Egypt had not yet invented the wheel when the pyramids were built. Does that make the achievement more impressive — or less?
+- **FA4 (Tutankhamun's Mask):** Why place a **22-pound solid gold mask** over the mummy? What does it show about (a) views of the {{< vocab "pharaoh" >}} and (b) Egypt's wealth?
+- **FA5 (Herodotus):** Number the 7 mummification steps in order and {{< vocab "list" >}} **two areas of scientific knowledge** embalmers needed.
+- **Weighing of the Heart (称心仪式 · ET2):** **Anubis** weighed the dead person's heart against the **Feather of Ma'at (Truth)**.
+  - **Lighter than the feather** → eternal life in the beautiful Other World.
+  - **Heavy with sin** → devoured by the fierce *Devourer of Souls*.
+
+{{< timer 12 >}}
+:::
+::::
+
+## Period 2 Exit Ticket (ET2 · 5 min · No Notes)
+
+::: {.callout-warning title="Exit Ticket ET2 — MYP Criterion D" icon=false}
+1. In the **Weighing of the Heart**, what kind of person would pass the test? {{< vocab "list" text="List" >}} at least **three qualities** Egyptians valued.
+2. {{< vocab "Mesopotamia" >}}'s afterlife was a bleak *"land of no return,"* while Egypt's could be a beautiful Other World. Why did their river environments lead to such different views of death?
+3. Filling royal tombs with gold and treasures: was it **deep respect for human dignity**, or **a waste of resources**? Defend your view in 2 sentences.
+:::
+
+# Period 3: Writing, Science & the Rise and Fall of Power 第3节：文字、科技与兴衰 {background-color="#003477"}
+
+**Big Question · 核心问题:** What made Egypt's {{< vocab "civilization" >}} last 3,000 years — and how do we still read it today? *(是什么让古埃及文明延续 3000 年？我们今天又如何读懂它？)*
+
+## Direct Instruction: Hieroglyphics, Papyrus & the Rosetta Stone
+
+:::: {.columns}
+::: {.column width="42%"}
+![](images/rosetta-stone.png){fig-alt="The Rosetta Stone at the British Museum" height="360px"}
+:::
+::: {.column width="58%"}
+- **{{< vocab "hieroglyphics" text="Hieroglyphics" >}} (象形文字):** Greek for *"sacred carving."* Pictures first stood for objects/ideas, and later for **sounds** (like an owl for the *m* sound).
+- **{{< vocab "papyrus" text="Papyrus" >}} (纸莎草纸):** Split reeds from the marshy Nile {{< vocab "delta" >}}, pressed crosswise into lightweight paper-like scrolls — much easier to carry and store than Mesopotamian clay tablets!
+- **The {{< vocab "Rosetta Stone" >}} (罗塞塔石碑):**
+  - Found in **1799** by French soldiers near Rosetta in the Nile Delta.
+  - Carved in **196 B.C.** with the **same royal decree in three scripts**: (1) **{{< vocab "hieroglyphics" >}}**, (2) **Demotic** (everyday Egyptian script), and (3) **Ancient Greek**.
+  - Because scholars already knew **Ancient Greek**, French scholar **Jean-François Champollion** unlocked hieroglyphics in **1822**!
+:::
+::::
+
+## Direct Instruction: Practical Science & Technology 实用科学与技术
+
+| Egyptian Innovation 埃及科技成就 | Practical Problem Solved 解决的实际问题 |
+|---|---|
+| **365-Day Solar Calendar (365天太阳历)** | Priests tracked the star **Sirius (天狼星)** appearing right before the July flood → **12 months of 30 days + 5 holiday days** (accurate to within 6 hours of the true solar year!). |
+| **Written Numbers & Geometry (算术与几何)** | Used to **re-survey farm boundaries** washed away by the annual Nile flood, calculate grain taxes, and engineer precise {{< vocab "pyramid" text="pyramids" >}} and stone columns. |
+| **Medicine & Surgery (医学与外科)** | Doctors checked **heart rate by feeling the pulse**, set broken bones with **splints**, treated wounds and fevers, and performed surgery. |
+
+## Direct Instruction: Life in Egyptian Society 埃及社会金字塔
+
+:::: {.columns}
+::: {.column width="45%"}
+![](images/egyptian-social-pyramid.png){fig-alt="Egyptian Social Pyramid diagram" height="360px"}
+:::
+::: {.column width="55%"}
+1. **Top (顶层):** **King ({{< vocab "pharaoh" text="Pharaoh" >}}), Queen & Royal Family**
+2. **Upper Class (上层阶级):** Wealthy landowners, government officials, priests, and army commanders.
+3. **Middle Class (中层阶级):** Merchants and skilled artisans.
+4. **Lower Class (底层阶级 — Largest Group):** Peasant farmers and laborers (plus enslaved war captives in later periods).
+
+::: {.callout-tip title="Social Mobility & Women's Rights · 阶层流动与女性权利" icon=false}
+- **Literacy = Mobility:** Anyone who learned to read and write {{< vocab "hieroglyphics" >}} could rise to high office in the army, treasury, priesthood, or royal court.
+- **Egyptian Women:** Could **own and trade property**, **propose marriage**, and **seek divorce** (keeping **one-third** of the couple's property!).
+:::
+:::
+::::
+
+## The Rise and Fall of Power & Comparison with Mesopotamia
+
+:::: {.columns}
+::: {.column width="48%"}
+**Timeline of Egyptian Power:**
+- **Old Kingdom (c. 2660–2180 B.C.):** Great age of pyramid building; collapsed when pharaohs' power declined.
+- **Middle Kingdom (c. 2040–1640 B.C.):** Order restored; dug **Nile–Red Sea canal**, built dikes, drained delta swamps for new farmland.
+- **Hyksos Invasion (1640–1523 B.C.):** West Asian **Hyksos** (*"rulers of foreign lands"*) crossed Suez on horse-drawn chariots and ruled Egypt for a century — before Egypt rose again in the **New Kingdom**.
+:::
+::: {.column width="52%"}
+| Dimension 维度 | Ancient Egypt 古埃及 | {{< vocab "Mesopotamia" >}} 两河流域 |
+|---|---|---|
+| **Rivers** | One river: **Nile** (flows north) | Two rivers: **Tigris & Euphrates** |
+| **Floods** | **Predictable** every July | **Unpredictable**, violent floods |
+| **Barriers** | **Deserts, seas & {{< vocab "cataract" text="cataracts" >}}** | **Flat open plain** (no barriers) |
+| **Government** | Unified **{{< vocab "theocracy" >}}** ({{< vocab "pharaoh" >}} = god) | Competing **{{< vocab "city-state" text="city-states" >}}** → shifting empires |
+| **Afterlife** | Optimistic **Other World** ({{< vocab "ka" >}}) | Gloomy *"land of no return"* |
+| **Writing** | **{{< vocab "hieroglyphics" text="Hieroglyphics" >}}** on **{{< vocab "papyrus" >}}** | **{{< vocab "cuneiform" text="Cuneiform" >}}** on clay tablets |
+:::
+::::
+
+## Learning Activity: FA6 Argument & FA10 Comparison (17 min)
+
+:::: {.columns}
+::: {.column width="52%"}
+**Task A (FA6 · MYP Criterion C):**
+Write a **5–7 sentence argument paragraph**:
+*Was Egypt's {{< vocab "theocracy" >}} — {{< vocab "pharaoh" >}} as a living god — a fair system of government?*
+- State a clear position (**Yes / No / It depends**);
+- Cite **two specific features** of Egyptian theocracy;
+- Acknowledge **one counter-argument** (e.g., 3,000 years of stability, women's rights, or literacy-based mobility);
+- End with a conclusion sentence.
+:::
+::: {.column width="48%"}
+**Task B (FA10 · MYP Criterion B):**
+Compare Egypt and {{< vocab "Mesopotamia" >}} across three dimensions, then answer the **Big Takeaway**:
+*Why did Egypt last 3,000 years as a recognizable culture while Mesopotamia kept changing empires?*
+
+{{< timer 14 >}}
+:::
+::::
+
+## Period 3 Exit Ticket & Ancient Egypt Vocabulary
+
+:::: {.columns}
+::: {.column width="48%"}
+::: {.callout-warning title="Exit Ticket ET3 (5 min · No Notes)" icon=false}
+1. {{< vocab "list" text="List" >}} **two Egyptian achievements** and {{< vocab "explain" >}} how each changed daily life.
+2. Why was the **Greek text** on the **{{< vocab "Rosetta Stone" >}}** the key to reading **{{< vocab "hieroglyphics" >}}**?
+3. What happened to Egyptian unity when the **Hyksos** invaded around 1640 B.C.?
+:::
+:::
+::: {.column width="52%"}
+```{python}
+#| output: asis
+print(card_grid(pick(terms,
+    "cataract", "delta", "pharaoh", "theocracy", "ka",
+    "mummification", "pyramid", "hieroglyphics", "papyrus", "Rosetta Stone"
+)))
+```
+:::
+::::

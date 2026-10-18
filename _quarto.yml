@@ -57,6 +57,9 @@ website:
       - text: "History vocab 词汇"
         href: vocab/app/index.html   # the vocab app (copied in via resources above)
         icon: book
+      - text: "Command Terms 指令词"
+        href: course/references/command-terms.qmd
+        icon: card-checklist
       - auto: course/units      # one section per unit folder, titled from its index.qmd
       - auto: course/summatives # one section per summative folder, titled from its index.qmd
 

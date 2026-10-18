@@ -1,0 +1,105 @@
+---
+title: "Athens vs Sparta 雅典与斯巴达"
+type: worksheet
+description: "Compare government, school, the army and daily life in two city-states, then decide where you'd rather live. Teacher copy has an answer key."
+order: 3
+audience: [teacher, student]
+doc-type: Worksheet
+name-box: true
+format:
+  html: default
+  typst: default
+---
+
+```{python}
+import sys; sys.path.append("scripts")
+from vocab import load_unit, pick, word_bank
+terms = load_unit(91)
+```
+
+Athens and Sparta were both Greek {{< vocab "city-state" text="city-states" zh=true >}}, but life in them was very different. {{< vocab "use" text="Use" zh=true >}} the slides and the word bank.
+
+```{python}
+#| output: asis
+print(word_bank({
+    "Government": pick(terms, "democracy", "citizen", "assembly", "vote"),
+    "Places": pick(terms, "city-state", "peninsula", "colony"),
+}))
+```
+
+## 1. Compare
+
+**a. Who made the laws?**
+
+:::: {layout-ncol=2}
+::: {}
+**Athens 雅典**
+{{< lines 2 >}}
+:::
+::: {}
+**Sparta 斯巴达**
+{{< lines 2 >}}
+:::
+::::
+
+**b. What did boys learn?**
+
+:::: {layout-ncol=2}
+::: {}
+**Athens 雅典**
+{{< lines 2 >}}
+:::
+::: {}
+**Sparta 斯巴达**
+{{< lines 2 >}}
+:::
+::::
+
+**c. What were they best at?**
+
+:::: {layout-ncol=2}
+::: {}
+**Athens 雅典**
+{{< lines 2 >}}
+:::
+::: {}
+**Sparta 斯巴达**
+{{< lines 2 >}}
+:::
+::::
+
+{{< pagebreak >}}
+
+## 2. Same or different?
+
+{{< vocab "identify" text="Identify" zh=true >}} **one thing** that was the same in Athens and Sparta.
+
+{{< lines 2 >}}
+
+## 3. Who could vote in Athens?
+
+{{< vocab "identify" text="Identify" zh=true >}} and circle the people who could vote in the Athenian {{< vocab "assembly" zh=true >}}.
+
+**a free man with Athenian parents** · **a woman** · **an enslaved person** · **a trader from Egypt living in Athens**
+
+## 4. Your choice
+
+Would you rather live in Athens or Sparta? {{< vocab "justify" text="Justify" zh=true >}} your choice with **two reasons**.
+
+*I would rather live in ______________ because …*
+
+{{< lines 4 >}}
+
+::: {.content-visible when-profile="teacher"}
+{{< pagebreak >}}
+
+::: {.callout-note title="Answer key"}
+**1.** (a) Athens: citizens voted in the Assembly (democracy); Sparta: two kings and a council of elders. (b) Athens: reading, writing, music, public speaking; Sparta: army training from age 7. (c) Athens: the navy, trade, plays and philosophy; Sparta: the army on land.
+
+**2.** Both were Greek city-states; both spoke Greek; both honored the same gods; both went to the Olympic Games.
+
+**3.** Only *a free man with Athenian parents*.
+
+**4.** Any choice with two reasons from the lesson.
+:::
+:::

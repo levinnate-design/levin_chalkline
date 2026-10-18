@@ -1,0 +1,209 @@
+---
+title: "Indus Valley Learning Sheet (Period 1) 印度河流域学习单"
+type: worksheet
+description: "Period 1 guided notes, map labeling, monsoon analysis, Harappan vs. Mesopotamian city planning comparison, plumbing inference, and seal analysis."
+order: 13
+audience: [teacher, student]
+doc-type: Worksheet
+name-box: true
+format:
+  html: default
+  typst: default
+---
+
+```{python}
+import sys; sys.path.append("scripts")
+from vocab import load_unit, pick, word_bank
+terms = load_unit(1)
+```
+
+::: {.callout-note title="Big Question · 核心问题" icon=false}
+**How did the people of the Indus Valley create planned cities, and why did the {{< vocab "civilization" zh=true >}} decline?**
+*(印度河流域的居民如何创造了规划城市？这一文明又为何衰落？)*
+
+*Think and write in Chinese or English. Use the sentence frames below when English output is required. (请用中文或英文思考与作答；需要英文输出时，可使用下方句型支架。)*
+:::
+
+```{python}
+#| output: asis
+print(word_bank({
+    "Geography & Climate": pick(terms, "subcontinent", "Indo-Gangetic Plain", "monsoon", "silt"),
+    "Planned Cities & Culture": pick(terms, "Harappan civilization", "grid system", "citadel", "Harappan seals"),
+}))
+```
+
+| Additional Terms 补充词汇 | 中文 |
+|---|---|
+| **Deccan Plateau** | 德干高原 |
+| **Mohenjo-Daro** | 摩亨佐-达罗 |
+| **Aryans** | 雅利安人 |
+
+---
+
+## Stage 1 · Warm-up 导入 (WU1–WU3 · 5 min)
+
+*Instruction: Write 1–2 sentences each. Turn & talk with your partner for 30 seconds. (指令：每题写 1–2 句；写完后与同桌讨论 30 秒。)*
+
+### WU1 · Recall 回顾
+**In {{< vocab "Mesopotamia" zh=true >}}, why did people live near rivers?** *(在美索不达米亚，人们为什么住在河流附近？)*
+
+> *Sentence frame 句式支架:* The role of rivers in early civilizations includes \_\_\_\_\_\_\_\_\_\_. *(河流对早期文明的作用包括 \_\_\_\_\_\_\_\_。)*
+
+{{< lines 2 >}}
+
+### WU2 · Predict 预测 *(We will revisit this before the end of class 本课结束前回看)*
+**Look at the map: the highest mountains in the world are in the north of the Indian {{< vocab "subcontinent" zh=true >}}. How do you think these mountains affected people's lives?** *(看地图：印度次大陆北部有世界上最高的山脉。你认为这些山脉会怎样影响那里的人们生活？)*
+
+> *Sentence frame 句式支架:* I think these mountains probably made life \_\_\_\_\_\_\_\_\_\_ because \_\_\_\_\_\_\_\_\_\_. *(我认为这些山脉可能使人们的生活变得 \_\_\_\_\_\_\_\_，因为 \_\_\_\_\_\_\_\_。)*
+
+{{< lines 2 >}}
+
+### WU3 · Observe 观察
+**Find the Indus and Ganges on the map. Which sea or bay does each river flow into?** *(在地图上找出印度河（Indus）和恒河（Ganges）。它们分别流向哪个海洋或海湾？)*
+
+> *Sentence frame 句式支架:* The Indus River flows into \_\_\_\_\_\_\_\_\_\_; the Ganges River flows into \_\_\_\_\_\_\_\_\_\_. *(印度河流入 \_\_\_\_\_\_\_\_；恒河流入 \_\_\_\_\_\_\_\_。)*
+
+{{< lines 2 >}}
+
+---
+
+## Stage 2 · Direct Instruction Notes 讲授笔记 (12 min · Not Graded 不计分)
+
+*Rule: Fill in the blanks with keywords as the teacher explains. One or two words are enough. (规则：教师讲授时，将关键词填入空格；可用 1–2 个词。)*
+
+1. The Indian {{< vocab "subcontinent" zh=true >}} includes modern-day \_\_\_\_\_\_\_\_\_\_\_\_\_\_, \_\_\_\_\_\_\_\_\_\_\_\_\_\_, and \_\_\_\_\_\_\_\_\_\_\_\_\_\_.
+   *(印度次大陆包括今天的 \_\_\_\_\_\_\_\_、\_\_\_\_\_\_\_\_ 和 \_\_\_\_\_\_\_\_ 等国家。)*
+2. The mountain ranges that separate the subcontinent from the rest of Asia are \_\_\_\_\_\_\_\_\_\_\_\_\_\_, \_\_\_\_\_\_\_\_\_\_\_\_\_\_, and \_\_\_\_\_\_\_\_\_\_\_\_\_\_.
+   *(把印度次大陆与亚洲其他地区隔开的主要山脉是 \_\_\_\_\_\_\_\_、\_\_\_\_\_\_\_\_ 和 \_\_\_\_\_\_\_\_。)*
+3. The fertile plain formed by the Indus and Ganges is called the \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.
+   *(印度河与恒河形成的肥沃平原叫做 \_\_\_\_\_\_\_\_。)*
+4. The summer wind that brings heavy rain is called the \_\_\_\_\_\_\_\_\_\_\_\_\_\_; if too strong or too weak, it brings \_\_\_\_\_\_\_\_\_\_\_\_\_\_ to farmers.
+   *(带来暴雨的夏季风叫做 \_\_\_\_\_\_\_\_；如果太强或太弱，都会给农民带来 \_\_\_\_\_\_\_\_。)*
+5. Around 2500 B.C., the \_\_\_\_\_\_\_\_\_\_\_\_\_\_ civilization appeared in the Indus Valley; its largest cities included \_\_\_\_\_\_\_\_\_\_\_\_\_\_ and \_\_\_\_\_\_\_\_\_\_\_\_\_\_.
+   *(约公元前 2500 年，印度河流域出现了 \_\_\_\_\_\_\_\_ 文明，其最大城市包括 \_\_\_\_\_\_\_\_ 与 \_\_\_\_\_\_\_\_。)*
+
+---
+
+## Stage 3 · Learning Activity 学习活动 (FA1–FA5 · 18 min)
+
+### FA1 · Map Labeling 地图标注 (MYP Criterion A — Knowing and Understanding)
+*Write the geographic names and match them to Figure 1 in your Student Textbook (在地图上写出名称并对应教材图 1):*
+
+| # | Feature 地理特征 | Location Notes 位置说明 |
+|---|---|---|
+| **1** | **Himalayas 喜马拉雅山脉** | |
+| **2** | **Indus River 印度河** | |
+| **3** | **Ganges River 恒河** | |
+| **4** | **Arabian Sea 阿拉伯海** | |
+| **5** | **Bay of Bengal 孟加拉湾** | |
+| **6** | **Deccan Plateau 德干高原** | |
+
+---
+
+### FA2 · Interpreting Monsoons 季风解读 (MYP Criterion B — Investigating)
+*Read Figure 1 in your Student Textbook and answer (读图并回答):*
+
+**FA2-a: From which direction do the winter {{< vocab "monsoon" text="monsoons" zh=true >}} blow? What kind of weather do they bring?** *(冬季季风从哪个方向吹来？它带来什么天气？)*
+
+> *Sentence frame 句式支架:* The winter monsoon blows from \_\_\_\_\_\_\_\_\_\_ and brings \_\_\_\_\_\_\_\_\_\_ weather. *(冬季季风从 \_\_\_\_\_\_\_\_ 吹来，带来 \_\_\_\_\_\_\_\_ 的天气。)*
+
+{{< lines 2 >}}
+
+**FA2-b: Summer monsoons carry moisture from the ocean. What problems do farmers face if the summer monsoon is too strong or too weak?** *(夏季季风从海洋带来大量水汽。如果夏季季风过强或过弱，农民会面临什么问题？)*
+
+> *Sentence frame 句式支架:* If the summer monsoon is too weak, it causes \_\_\_\_\_\_\_\_\_\_; if too strong, it causes \_\_\_\_\_\_\_\_\_\_. *(如果夏季季风太弱，会导致 \_\_\_\_\_\_\_\_；如果太强，会导致 \_\_\_\_\_\_\_\_。)*
+
+{{< lines 2 >}}
+
+---
+
+### FA3 · Compare City Planning 城市规划比较 (MYP Criterion D — Thinking Critically)
+*Compare Harappan and Mesopotamian cities using Section 4 and Figure 2 of your Student Textbook (对比哈拉帕与美索不达米亚城市):*
+
+| Feature 特征 | Harappan City 哈拉帕城市 | Mesopotamian City 美索不达米亚城市 |
+|---|---|---|
+| **Street layout 街道布局** | <br><br> | Sprawling and disorganized / 杂乱无章且蔓延无序的 |
+| **Building materials 建筑材料** | <br><br> | Sun-dried mud bricks / 日晒泥砖 |
+| **Defense / public buildings 防御/公共建筑** | <br><br> | Mud-brick city walls for defense and a central {{< vocab "ziggurat" zh=true >}} (temple tower) / 用于防御的土坯城墙，以及中央的金字形神塔 |
+
+**FA3-Conclusion:** Based on the table, what was the most striking feature of Harappan city planning? *(根据表格，哈拉帕城市规划最突出的特点是什么？)*
+
+> *Sentence frame 句式支架:* The most striking feature of Harappan city planning was \_\_\_\_\_\_\_\_\_\_. *(哈拉帕城市规划最突出的特点是 \_\_\_\_\_\_\_\_。)*
+
+{{< lines 2 >}}
+
+---
+
+### FA4 · Inference from Plumbing 从排水系统推断 (MYP Criterion C — Communicating)
+*Almost every house in **Mohenjo-Daro (摩亨佐-达罗)** had a private bathroom and toilet, with brick sewers under the streets. Use two pieces of evidence to show how organized Harappan society was. (摩亨佐-达罗几乎每座房屋都有私人浴室和厕所，街道下有砖砌下水道。用两个证据说明哈拉帕社会的组织程度。)*
+
+> *Sentence frame 句式支架:*
+>
+> - **Evidence 1:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_; this shows \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_. *(证据一：\_\_\_\_\_\_\_\_；这显示 \_\_\_\_\_\_\_\_。)*
+> - **Evidence 2:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_; this shows \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_. *(证据二：\_\_\_\_\_\_\_\_；这显示 \_\_\_\_\_\_\_\_。)*
+
+{{< lines 3 >}}
+
+---
+
+### FA5 · Analyze a Harappan Seal 印章分析 (MYP Criterion D — Thinking Critically)
+*Observe Figure 3 in your Student Textbook and explain (观察文物并解释):*
+
+**FA5-a: What meanings might the animals on the {{< vocab "Harappan seals" text="seals" zh=true >}} have had? (Hints: ownership mark, religious belief, or trade use)** *(印章上的动物可能有什么意义？提示：可作为所有权标记、宗教信仰或贸易用途)*
+
+> *Sentence frame 句式支架:* These animals probably represented \_\_\_\_\_\_\_\_\_\_ because \_\_\_\_\_\_\_\_\_\_. *(这些动物可能代表 \_\_\_\_\_\_\_\_，因为 \_\_\_\_\_\_\_\_。)*
+
+{{< lines 2 >}}
+
+**FA5-b: Why has Harappan writing not been deciphered? What difficulty does this create for historians?** *(为什么哈拉帕文字至今未被破译？这对历史学家研究哈拉帕文化造成了什么困难？)*
+
+> *Sentence frame 句式支架:* Harappan writing has not been deciphered because \_\_\_\_\_\_\_\_\_\_; this makes it hard for historians to \_\_\_\_\_\_\_\_\_\_. *(哈拉帕文字未被破译是因为 \_\_\_\_\_\_\_\_；这使历史学家难以 \_\_\_\_\_\_\_\_。)*
+
+{{< lines 2 >}}
+
+---
+
+## Stage 4 · Exit Ticket 当堂检测 (ET1 · 5 min · MYP Criterion A)
+
+*Rule: No textbook. Answer independently using what you learned (1–2 sentences each). (规则：不翻书，用本课所学独立作答。每题 1–2 句。)*
+
+1. **ET1-a:** What natural features of the Indian {{< vocab "subcontinent" zh=true >}} both protected it and limited farming? *(印度次大陆的哪些自然地理特征既保护了它，又限制了农耕？)*
+
+{{< lines 2 >}}
+
+2. **ET1-b:** What is the most surprising thing about Harappan city planning? Use evidence. *(哈拉帕城市规划中，哪一点最让你惊讶？用证据说明。)*
+
+{{< lines 2 >}}
+
+3. **ET1-c:** What do you think was the most likely cause of the decline of the Indus Valley civilization? Give one reason. *(你认为印度河流域文明衰落的最可能原因是什么？请给出一个理由。)*
+
+{{< lines 2 >}}
+
+::: {.content-visible when-profile="teacher"}
+---
+
+## Teacher Answer Key & Notes 教师参考答案
+
+- **WU1:** People lived near rivers for fresh water, fertile {{< vocab "silt" >}} for farming, and transportation/trade.
+- **WU2:** High mountains (Himalayas, Hindu Kush, Karakorum) protected the subcontinent from invaders and cold northern winds, but also isolated it and limited movement.
+- **WU3:** The Indus River flows southwest into the **Arabian Sea**; the Ganges River flows east into the **Bay of Bengal**.
+- **Stage 2 Notes:**
+  1. India, Pakistan, Bangladesh
+  2. Himalayas, Hindu Kush, Karakorum
+  3. {{< vocab "Indo-Gangetic Plain" >}}
+  4. {{< vocab "monsoon" >}}; drought or floods / crop disasters
+  5. {{< vocab "Harappan civilization" >}}; Harappa, Mohenjo-Daro (or Kalibangan)
+- **FA2-a:** Winter monsoons blow from the **northeast** and bring **dry** weather.
+- **FA2-b:** If the summer monsoon is too weak, it causes **drought and crop failure/hunger**; if too strong, it causes **destructive floods** that sweep away villages and crops.
+- **FA3 Table (Harappan Column):**
+  - *Street layout:* Precise **{{< vocab "grid system" >}}** (streets crossing at right angles) / 精确的直角网格街道
+  - *Building materials:* Standard-size **oven-baked bricks** / 标准尺寸的烘烧砖
+  - *Defense / public buildings:* Fortified **{{< vocab "citadel" >}}** on a raised mound containing granary, assembly hall, and Great Bath / 高台上的防御城堡（含谷仓、集会厅和大浴场）
+  - *FA3-Conclusion:* Uniformity and central planning (grid streets, standard baked bricks, and city-wide underground plumbing).
+- **FA4:** Evidence 1: Standard oven-baked bricks and a grid street layout across cities show that a strong central government planned construction and organized labor. Evidence 2: Underground brick sewers with maintenance manholes connected to private bathrooms in almost every house show public health planning and municipal maintenance.
+- **FA5-a:** The animals (bull, elephant, rhinoceros) likely represented religious symbols (such as bull worship linked to early Hindu traditions) or merchant clan/ownership marks on trade goods sent to Mesopotamia.
+- **FA5-b:** Harappan writing has not been deciphered because **no bilingual inscription** (like Egypt's {{< vocab "Rosetta Stone" >}}) has ever been found; this makes it hard for historians to know Harappan rulers' names, laws, or exact religious beliefs.
+- **ET1-a:** The **Himalayas, Hindu Kush, and Karakorum** mountains in the north and the dry **Deccan Plateau** in the south protected the region but restricted most early farming to the **{{< vocab "Indo-Gangetic Plain" >}}**.
+- **ET1-b:** Almost every home had a private bathroom and toilet connected to brick-lined underground street sewers with manholes, or the uniform oven-baked bricks and right-angle grid streets across 100+ settlements.
+- **ET1-c:** Tectonic plate shifts around 1750 B.C. causing earthquakes, floods, and the drying up of the Saraswati River / altered course of the Indus River, combined with soil exhaustion and Aryan migration around 1500 B.C.
+:::

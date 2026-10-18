@@ -1,0 +1,83 @@
+---
+title: "Connect to Today: Creating a Language 抄写员挑战：创造与破译符号语言"
+type: handout
+description: "Step into the shoes of an ancient Egyptian scribe: design a 10–15 symbol writing system, write a coded message, and trade with a partner to decipher it using a Rosetta Stone key."
+order: 9
+audience: [teacher, student]
+doc-type: Handout
+name-box: true
+format:
+  html: default
+  typst: default
+---
+
+::: {.callout-note title="Historical Connection · 历史背景" icon=false}
+In Ancient Egypt, professional scribes used **{{< vocab "hieroglyphics" zh=true >}}** (*"sacred carvings"*) — a sophisticated writing system combining pictorial symbols, ideograms (idea signs), and phonograms (sound signs) to record history, religious beliefs, trade, and royal decrees on **{{< vocab "papyrus" zh=true >}}** and tomb walls. For thousands of years, these symbols remained a mystery until scholars deciphered them in 1822 using the **{{< vocab "Rosetta Stone" zh=true >}}**.
+
+在古埃及，受过专业训练的抄写员（Scribes）使用了象形文字（Hieroglyphics）——一套由图画符号、表意符号和表音符号组成的复杂文字系统，用于在纸莎草纸和神庙石壁上记录历史、宗教、贸易与法老诏令。数千年来这些符号一直是个神秘的谜团，直到学者们利用罗塞塔石碑（Rosetta Stone）才破解了它们的真正含义。
+:::
+
+::: {.callout-important title="Your Scribe Challenge · 你的挑战任务" icon=false}
+Step into the shoes of an ancient Egyptian scribe! Design your own set of symbolic characters (a modern hieroglyphic system) to represent letters, words, or ideas. Write **2–3 secret sentences** using your symbols in **Part 1**, complete your **Translation Key** in **Part 2**, and then exchange papers with a classmate to see if they can decipher your coded message!
+:::
+
+### Assignment Checklist · 学生自查清单
+
+- [ ] **1. Symbol Creation (符号创造):** I created **10–15 unique symbols** representing letters, words, or concepts. *(我创造了 10–15 个独特的符号，分别代表字母、词汇或概念。)*
+- [ ] **2. Translation Key (密码对照表):** I fully completed the **Translation Key** in Part 2. *(我已完整填写第二部分的“翻译密码表”。)*
+- [ ] **3. Coded Message (符号密文):** I wrote **2–3 complete sentences** in Part 1 using **ONLY** my newly invented symbols. *(我已在第一部分仅使用我创造的符号写下了 2–3 句完整的密文。)*
+- [ ] **4. Neatness & Clarity (书写工整):** My symbols are drawn clearly so my partner can accurately distinguish each character. *(我的符号书写清晰规范，方便同伴准确辨认每个字符。)*
+- [ ] **5. Peer Deciphering (同学破译):** My classmate successfully translated my secret message, and I verified its accuracy. *(同学已成功写出破译后的译文，且经我核对无误。)*
+
+---
+
+## Part 1: Write Your Secret Coded Message 第一部分：编写你的符号密文
+
+**Directions:** Draw your **2–3 sentences** below using **ONLY** your new symbolic language. Do not write English or Chinese words here! *(请在此区域仅使用你创造的符号书写 2–3 句密文，请勿写出任何英文或中文文字！)*
+
+::: {.answer-lines}
+- 
+- 
+- 
+- 
+- 
+- 
+:::
+
+---
+
+## Part 2: Translation Key (Your Rosetta Stone) 第二部分：符号与含义对照表
+
+**Scribe Name (主创抄写员):** _________________________ · **Decipherer Name (破译同学):** _________________________
+
+**Instructions:** Draw each symbol on the left and write the letter, word, or concept it represents on the right. *(请在左侧画出你设计的符号，在右侧写出其代表的字母、词汇或概念。)*
+
+| Symbol (符号) | Meaning (代表含义) | Symbol (符号) | Meaning (代表含义) |
+|---|---|---|---|
+| *(Example)* ☀️ | Sun / Light (太阳/光明) | *(Example)* ✒️ | Write / Scribe (书写/抄写员) |
+| **1.** | | **9.** | |
+| **2.** | | **10.** | |
+| **3.** | | **11.** | |
+| **4.** | | **12.** | |
+| **5.** | | **13.** | |
+| **6.** | | **14.** | |
+| **7.** | | **15.** | |
+| **8.** | | **16.** | |
+
+---
+
+## Part 3: Peer Deciphering Workspace 第三部分：同伴破译记录区
+
+**Instructions for Decipherer (破译者指南):** {{< vocab "use" text="Use" zh=true >}} the Translation Key in Part 2 to translate your classmate's secret message from Part 1. Write the English or Chinese translation below!
+
+::: {.answer-lines}
+- 
+- 
+- 
+- 
+:::
+
+**Scribe Verification (抄写员核对确认):**
+*"I verify that my partner has accurately deciphered my secret message!" (我确认同伴已准确破译我的符号密文！)*
+
+**Scribe Signature (抄写员签名):** ___________________________ · **Date (日期):** ___________________

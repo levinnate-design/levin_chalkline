@@ -1,0 +1,67 @@
+---
+title: "Unit 1 Review Day — Slides"
+subtitle: "单元复习日 · Comparative River Valley Civilizations (Mesopotamia, Egypt & Indus Valley)"
+type: slides
+description: "Collaborative review comparing geography, belief systems, innovations, and government across Mesopotamia, Egypt, and the Indus Valley, followed by the River Valley Immigrant Pitch."
+order: 14
+audience: [teacher, student]
+format: revealjs
+title-slide-attributes:
+  data-background-color: "#003477"
+  data-background-image: images/river-valleys-overview.jpg
+  data-background-opacity: "0.35"
+---
+
+## Review Day 单元复习日
+
+:::: {.columns}
+::: {.column width="55%"}
+**Unit 1: Ancient River Valley Civilizations**
+
+*Imagine you are time-traveling back to 2500 B.C. You must choose ONE river valley to build your home and raise your family. Where would you go — and why?*
+
+(假设你穿越回公元前 2500 年，必须选择一个河谷定居生活。你会去哪里？为什么？)
+:::
+::: {.column width="45%"}
+![](images/river-valleys-overview.jpg){width="100%" fig-alt="Ancient River Valley Civilizations Overview"}
+:::
+::::
+
+## Group Roles & Task 小组角色与任务
+
+Each table group assigns four roles (每组分配四个角色):
+
+- **Scribe 📝 (记录员):** Writes for the group (负责为小组记录).
+- **Map Specialist 🧭 (地图专员):** Uses the class maps (使用课堂地图).
+- **Researcher 🔎 (研究员):** Finds facts in the Reading Packets (在阅读材料中寻找信息).
+- **Presenter 🗣️ (汇报员):** Speaks to the class (向全班汇报).
+
+### Your Task 你们的任务
+1. Complete the **3-Civilization Comparison Matrix** comparing {{< vocab "Mesopotamia" >}}, Ancient Egypt, and the Indus Valley.
+2. Write a **group argument paragraph** evaluating which ancient {{< vocab "civilization" >}} your group would want to live in.
+3. Deliver a 60-second **"Immigrant Pitch"** to the class!
+
+## Comparative River Valley Matrix 三大河谷文明对比矩阵
+
+| Dimension / Category | Mesopotamia (Tigris & Euphrates) | Ancient Egypt (Nile River) | Indus Valley (Indus & Ganges) |
+|---|---|---|---|
+| **1. Geography & Environment** *(Rivers, Flooding & Barriers)* | • Rivers:<br>• Flooding:<br>• Barriers: | • River:<br>• Flooding:<br>• Barriers: | • Rivers:<br>• Climate:<br>• Barriers: |
+| **2. Belief Systems & Afterlife** *(Gods, Worldview & Tombs)* | • Religion:<br>• View of Deities:<br>• Afterlife: | • Religion:<br>• Afterlife:<br>• Tombs: | • Religion:<br>• Society: |
+| **3. Inventions & Innovations** *(Writing, Tech & Science)* | • Writing:<br>• Innovations:<br>• Architecture: | • Writing:<br>• Tech: | • Writing:<br>• City Planning: |
+| **4. Social & Political Order** *(Government, Laws & Hierarchy)* | • Government:<br>• Laws: | • Government:<br>• Social Structure: | • Government:<br>• Decline: |
+
+## Cause and Effect Sentence Frames 因果与反驳句式支架 (20 min)
+
+### Cause & Effect Stems (Grade 7)
+- *Because* `[Challenge]`, *the society* `[Solution]`...
+- *Due to* `[Environmental Condition]`, `[Historical Outcome]` *gradually occurred over time...*
+- `[Environmental Factor]` *was a significant factor; as a result,* `[Civilization Effect]`...
+- `[Challenge]` *created a need for* `[Specific Solution]`; *consequently,* `[Action taken]`...
+
+### Advanced Stems (Grade 8)
+- *Stemming from* `[Geographic Advantage/Disadvantage]`, *the community experienced* `[Systemic Effect]`...
+- `[Environmental/Political Factor]` *fundamentally altered* `[Social System]`, *thus allowing for* `[Outcome]`...
+
+### Counter-Argument Stems (Required)
+- *While* `[Other Claim]` *offered* `[Positive Feature]`, *we chose* `[Your Claim]` *because* `[Key Reason]`...
+- *Unlike* `[Other Claim]` *which suffered from* `[Specific Problem]`, *our choice provided* `[Specific Benefit]`...

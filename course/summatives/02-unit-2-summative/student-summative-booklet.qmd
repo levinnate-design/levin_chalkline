@@ -52,6 +52,7 @@ format:
 # Section 1 (Lesson 1): Prompt Breakdown, Thesis & Research Plan 第一部分（第1课时）：审题拆解、中心论点与研究计划
 
 ::: {.callout-tip title="Essential Bilingual Academic Vocabulary Bank 核心双语学术词汇库（写作高频词）" icon=false}
+- **MYP Command Terms 核心指令词:** {{< vocab "formulate" zh=true >}} · {{< vocab "investigate" zh=true >}} · {{< vocab "analyse" text="analyze" zh=true >}} · {{< vocab "evaluate" zh=true >}} · {{< vocab "explain" zh=true >}} · {{< vocab "justify" zh=true >}} · {{< vocab "synthesize" zh=true >}} · {{< vocab "document" zh=true >}} · {{< vocab "reflect" zh=true >}}
 - **Governance & Law 治理与法律:** direct {{< vocab "democracy" zh=true >}} 直接民主制 | {{< vocab "citizen" zh=true >}} {{< vocab "assembly" zh=true >}} | oligarchy 寡头政治 | {{< vocab "republic" zh=true >}} | checks and balances 权力制衡 | {{< vocab "senate" zh=true >}} | {{< vocab "consul" text="consuls" zh=true >}} | tribunes 保民官 | Twelve Tables 《十二铜表法》 | due process 正当法律程序 | legal equality 法律面前公民平等
 - **Slavery & Hierarchy 奴隶制与等级控制:** chattel slavery 动产奴隶制（把人视为财产） | continuous dependence 持续依赖 | helots 希洛人（斯巴达国有奴隶） | latifundia 古罗马大奴隶制庄园 | {{< vocab "gladiator" text="gladiators" zh=true >}} | systemic exploitation 系统性剥削 | disenfranchisement 剥夺政治权利 | civic exclusion 公民权排斥（女性、奴隶、外邦人）
 :::
@@ -62,14 +63,14 @@ format:
 | Prompt Key Phrase 题目关键词句 | Guiding Questions (Bilingual) 思考引导问题（双语） | My Initial Brainstorm & Examples 我的初步思路与历史例证 |
 |---|---|---|
 | **1. "To what extent…"**<br>“在多大程度上……” | How much real progress was achieved? Was it major progress, partial/limited progress, or progress only for a privileged minority?<br>究竟实现了多少真正的进步？是巨大的进步、部分的/有限的进步，还是仅仅属于少数特权公民的进步？ | {{< lines 3 >}} |
-| **2. "…Classical Mediterranean systems of governance represent progress…"**<br>“……古典地中海治理体系代表了进步……” | Which system(s) will you analyze (Athenian Democracy, Spartan Oligarchy, Roman Republic & Twelve Tables)? How did voting, checks & balances, or written law protect citizens?<br>你将分析哪些制度（雅典民主、斯巴达寡头、罗马共和与《十二铜表法》）？公民投票、权力制衡或成文法如何保障公民权利？ | {{< lines 3 >}} |
+| **2. "…Classical Mediterranean systems of governance represent progress…"**<br>“……古典地中海治理体系代表了进步……” | Which system(s) will you {{< vocab "analyse" text="analyze" zh=true >}} (Athenian Democracy, Spartan Oligarchy, Roman Republic & Twelve Tables)? How did voting, checks & balances, or written law protect citizens?<br>你将分析哪些制度（雅典民主、斯巴达寡头、罗马共和与《十二铜表法》）？公民投票、权力制衡或成文法如何保障公民权利？ | {{< lines 3 >}} |
 | **3. "…given their continuous dependence on slavery?"**<br>“……鉴于其对奴隶制度的持续依赖？” | How did Athens (silver mine & domestic slaves), Sparta (8:1 helots), and/or Rome (33% enslaved population on latifundia & gladiators) depend on forced labor? Who else was excluded (women, non-citizens)?<br>雅典（银矿与家务奴隶）、斯巴达（8:1的希洛人）和/或罗马（占人口33%的庄园与角斗士奴隶）如何依赖强制劳动？还有谁被排斥在外？ | {{< lines 3 >}} |
 :::
 
 ## Step 1.2: Focused Research Question & Initial Thesis Claim | 步骤 1.2：聚焦研究问题与初始中心论点（标准 B Strand i）
 
 ::: {.keep}
-**1. My Focused Research Question (focused on Greece, Rome, or both):**
+**1. {{< vocab "formulate" text="Formulate" zh=true >}} My Focused Research Question (focused on Greece, Rome, or both):**
 我的聚焦研究问题（聚焦古希腊、古罗马或两者对比）：
 
 {{< lines 3 >}}
@@ -82,7 +83,7 @@ format:
 :::
 
 ::: {.keep}
-**2. My Initial Thesis Statement (Write in English):**
+**2. {{< vocab "formulate" text="Formulate" zh=true >}} My Initial Thesis Statement (Write in English):**
 我的初始中心论点（请用英文撰写）：
 
 {{< lines 4 >}}
@@ -92,7 +93,7 @@ format:
 
 ## Step 1.3: Research & Evidence Harvesting Log (Library Books & Class Texts) | 步骤 1.3：史料研究与证据收集记录表（标准 B Strand iii）
 
-Use the provided library books and your class texts to gather specific historical facts, statistics, laws, and quotes. Record page numbers and titles so you can cite them accurately.
+{{< vocab "use" text="Use" zh=true >}} the provided library books and your class texts to {{< vocab "investigate" zh=true >}} and gather specific historical facts, statistics, laws, and quotes. {{< vocab "document" text="Document" zh=true >}} page numbers and titles so you can cite them accurately.
 请使用老师提供的图书馆书籍以及课堂教材/阅读包，收集具体的历史事实、数据、法律条文与引文。请务必记录书名、作者与页码，以便在论文中规范引用。
 
 ::: {.keep}
@@ -144,7 +145,7 @@ Use the provided library books and your class texts to gather specific historica
 ## Step 1.4: Claim-Evidence Alignment & Criterion B Self-Assessment | 步骤 1.4：论点与证据匹配度核查及标准 B 自我评估表
 
 ::: {.keep}
-**Alignment Reflection & Thesis Revision (End of Lesson 1 / Start of Lesson 2) 论点与证据匹配反思及中心论点修正：**
+**Alignment {{< vocab "reflect" text="Reflection" zh=true >}} & Thesis Revision (End of Lesson 1 / Start of Lesson 2) 论点与证据匹配反思及中心论点修正：**
 
 1. **Does my research evidence directly align with my initial thesis?** 我收集到的史料证据是否与初始中心论点一致？
    ☐ Yes, fully aligned 完全一致 · ☐ Partially — I need to adjust my claim or find another source 部分一致（需微调论点或补充史料）
@@ -156,23 +157,23 @@ Use the provided library books and your class texts to gather specific historica
 
 | Criterion B Investigation & Source Quality Criteria 标准 B 探究与史料质量自评指标 | Lesson 1 Check 第1课自评 | Lesson 2 Check 第2课自评 | Lesson 3 Final 第3课最终确认 |
 |---|---|---|---|
-| **1. Focused Research Question 聚焦的研究问题 (Strand i):**<br>I formulated a clear, focused research question examining Classical governance and slavery. 我提出了清晰聚焦的研究问题。 | ☐ Not Yet 未完成<br>☐ Partial 部分<br>☐ Complete 完成 | ☐ Not Yet 未完成<br>☐ Partial 部分<br>☐ Complete 完成 | ☐ Verified Complete 已确认完成 |
+| **1. Focused Research Question 聚焦的研究问题 (Strand i):**<br>I {{< vocab "formulate" text="formulated" >}} a clear, focused research question examining Classical governance and slavery. 我提出了清晰聚焦的研究问题。 | ☐ Not Yet 未完成<br>☐ Partial 部分<br>☐ Complete 完成 | ☐ Not Yet 未完成<br>☐ Partial 部分<br>☐ Complete 完成 | ☐ Verified Complete 已确认完成 |
 | **2. Arguable Thesis Claim 可论证的中心论点 (Strand i):**<br>My thesis clearly answers "to what extent" governance represented progress given slavery. 我的论点明确回应了“在多大程度上代表进步”。 | ☐ Not Yet 未完成<br>☐ Partial 部分<br>☐ Complete 完成 | ☐ Not Yet 未完成<br>☐ Partial 部分<br>☐ Complete 完成 | ☐ Verified Complete 已确认完成 |
-| **3. Library Books & Class Texts 图书馆书籍与课堂教材 (Strand iii):**<br>I recorded specific evidence from BOTH library books and class texts with titles & page numbers. 我同时从图书馆书籍和课堂教材中收集了带页码的证据。 | ☐ Not Yet 未完成<br>☐ Partial 部分<br>☐ Complete 完成 | ☐ Not Yet 未完成<br>☐ Partial 部分<br>☐ Complete 完成 | ☐ Verified Complete 已确认完成 |
+| **3. Library Books & Class Texts 图书馆书籍与课堂教材 (Strand iii):**<br>I {{< vocab "document" text="documented" >}} specific evidence from BOTH library books and class texts with titles & page numbers. 我同时从图书馆书籍和课堂教材中收集了带页码的证据。 | ☐ Not Yet 未完成<br>☐ Partial 部分<br>☐ Complete 完成 | ☐ Not Yet 未完成<br>☐ Partial 部分<br>☐ Complete 完成 | ☐ Verified Complete 已确认完成 |
 | **4. Evidence for Governance Progress 治理进步的证据 (Strand iii):**<br>I found strong historical evidence showing how democracy, republic, or law benefitted citizens. 我找到了证明民主、共和或法律造福公民的具体史实。 | ☐ Not Yet 未完成<br>☐ Partial 部分<br>☐ Complete 完成 | ☐ Not Yet 未完成<br>☐ Partial 部分<br>☐ Complete 完成 | ☐ Verified Complete 已确认完成 |
 | **5. Evidence for Slavery Dependence 奴隶制依赖的证据 (Strand iii):**<br>I found strong historical evidence showing how slavery (helots/latifundia/mines) limited progress. 我找到了证明奴隶制与社会排斥限制进步的具体史实。 | ☐ Not Yet 未完成<br>☐ Partial 部分<br>☐ Complete 完成 | ☐ Not Yet 未完成<br>☐ Partial 部分<br>☐ Complete 完成 | ☐ Verified Complete 已确认完成 |
 | **6. Claim-Evidence Alignment 论点与证据匹配 (Strand ii/iv):**<br>I checked that my sources support my claim and revised my thesis if needed. 我核查了证据与论点的匹配度，并按需修正了论点。 | ☐ Not Yet 未完成<br>☐ Partial 部分<br>☐ Complete 完成 | ☐ Not Yet 未完成<br>☐ Partial 部分<br>☐ Complete 完成 | ☐ Verified Complete 已确认完成 |
 
-### Source Appropriateness, Value & Limitation Evaluation | 史料适用性、价值与局限性评估（标准 B Strand iv）
+### Source Appropriateness, Value & Limitation {{< vocab "evaluate" text="Evaluation" zh=true >}} | 史料适用性、价值与局限性评估（标准 B Strand iv）
 
 ::: {.keep}
-**1. Source Value 史料价值:** Pick ONE library book or primary source you used. Why is it appropriate and helpful for supporting your essay? 选择你使用的一本图书馆书籍或原始史料，说明它为何适合并能有效支持你的论文？
+**1. Source Value 史料价值:** {{< vocab "identify" text="Identify" zh=true >}} ONE library book or primary source you used and {{< vocab "evaluate" zh=true >}} why it is appropriate and helpful for supporting your essay. 选择你使用的一本图书馆书籍或原始史料，说明它为何适合并能有效支持你的论文？
 
 {{< lines 3 >}}
 :::
 
 ::: {.keep}
-**2. Source Limitation 史料局限性:** What is one limitation of this source (e.g., written by elite citizens rather than enslaved people)? 该史料存在什么局限性（例如：由精英公民撰写，缺乏被奴役者的直接声音）？
+**2. Source Limitation 史料局限性:** {{< vocab "identify" text="Identify" zh=true >}} and {{< vocab "explain" zh=true >}} one limitation of this source (e.g., written by elite citizens rather than enslaved people). 该史料存在什么局限性（例如：由精英公民撰写，缺乏被奴役者的直接声音）？
 
 {{< lines 3 >}}
 :::
@@ -202,8 +203,8 @@ Use the provided library books and your class texts to gather specific historica
 **Checklist 写作核查:**
 
 ☐ Clear Topic Sentence 清晰的主题句\
-☐ Cited evidence from library books/class texts (Athenian Assembly, Roman Republic checks & balances, Twelve Tables) 引用图书馆书籍或教材中的具体史实\
-☐ Explain HOW this represented progress for citizens 解释这如何代表了公民权利与法治的进步
+☐ {{< vocab "document" text="Documented" zh=true >}} evidence from library books/class texts (Athenian Assembly, Roman Republic checks & balances, Twelve Tables) 引用图书馆书籍或教材中的具体史实\
+☐ {{< vocab "explain" text="Explain" zh=true >}} HOW this represented progress for citizens 解释这如何代表了公民权利与法治的进步
 
 {{< lines 10 >}}
 
@@ -214,8 +215,8 @@ Use the provided library books and your class texts to gather specific historica
 **Checklist 写作核查:**
 
 ☐ Topic Sentence with contrast transition (e.g., *"However, despite these breakthroughs…"*) 带转折词的主题句\
-☐ Cited evidence of slavery (Athenian silver mines, Spartan helots 8:1, Roman 33% enslaved population/latifundia) & exclusion of women/non-citizens 引用奴隶制与社会排斥的具体证据\
-☐ Criterion D Perspective Analysis (citizen vs. enslaved person) 标准D多视角分析（对比公民与奴隶的处境）
+☐ {{< vocab "document" text="Documented" zh=true >}} evidence of slavery (Athenian silver mines, Spartan helots 8:1, Roman 33% enslaved population/latifundia) & exclusion of women/non-citizens 引用奴隶制与社会排斥的具体证据\
+☐ Criterion D Perspective {{< vocab "analyse" text="Analysis" zh=true >}} (citizen vs. enslaved person) 标准D多视角分析（对比公民与奴隶的处境）
 
 {{< lines 10 >}}
 
@@ -223,17 +224,17 @@ Use the provided library books and your class texts to gather specific historica
 
 **Checklist 写作核查（进阶路径学生填写）:**
 
-☐ State a strong Counter-Claim (e.g., *"Some historians argue that Classical democracy/law was still a revolutionary leap forward regardless of slavery…"*) 提出合理的反方历史观点\
-☐ Refute/Rebut the counter-claim with evidence showing why slavery cannot be separated from Classical governance 用史实证据有力批驳反方观点，维护你的中心论点
+☐ {{< vocab "formulate" text="Formulate" zh=true >}} a strong Counter-Claim (e.g., *"Some historians argue that Classical democracy/law was still a revolutionary leap forward regardless of slavery…"*) 提出合理的反方历史观点\
+☐ {{< vocab "justify" text="Justify" zh=true >}} your rebuttal with evidence showing why slavery cannot be separated from Classical governance 用史实证据有力批驳反方观点，维护你的中心论点
 
 {{< lines 9 >}}
 
-## Final Paragraph (Lesson 3): Conclusion — Synthesis & Final "To What Extent" Judgment | 末段：结论段
+## Final Paragraph (Lesson 3): Conclusion — {{< vocab "synthesize" text="Synthesis" zh=true >}} & Final "To What Extent" Judgment | 末段：结论段
 
 **Checklist 写作核查:**
 
 ☐ Restate your thesis in new words 用不同措辞重申中心论点\
-☐ Weigh civic/legal breakthroughs against the human cost of slavery 综合权衡政治法律成就与奴隶制的人道代价\
+☐ {{< vocab "evaluate" text="Evaluate" zh=true >}} and weigh civic/legal breakthroughs against the human cost of slavery 综合权衡政治法律成就与奴隶制的人道代价\
 ☐ Final reasoned judgment answering "To what extent?" 给出有理有据的最终历史评判
 
 {{< lines 8 >}}
@@ -251,11 +252,11 @@ Use the provided library books and your class texts to gather specific historica
 | Criteria C & D Peer Audit Checkpoints 标准 C 与标准 D 同伴互评核查点 | Peer Rating 同伴评级 | Peer Suggestion / Note 同伴具体修改建议 |
 |---|---|---|
 | **1. Thesis Clarity 中心论点清晰度 (Crit D):**<br>Does the intro end with a clear "to what extent" claim connecting governance progress and slavery? 引言是否以清晰的“在多大程度上”中心论点收尾？ | ☐ Strong 优秀 (PR/EX)<br>☐ Developing 发展中 (DE)<br>☐ Missing 缺失 (EM) | {{< lines 2 >}} |
-| **2. Governance Progress Evidence 治理进步证据 (Crit B/D):**<br>Does Body 1 include specific, cited historical facts/laws from library books or class texts? 主体段1是否引用了图书馆书籍或教材中的具体法律或制度史实？ | ☐ Strong 优秀 (PR/EX)<br>☐ Developing 发展中 (DE)<br>☐ Missing 缺失 (EM) | {{< lines 2 >}} |
-| **3. Slavery & Perspective Analysis 奴隶制与多视角分析 (Crit D):**<br>Does Body 2 analyze how slavery worked systemically and contrast citizen vs. enslaved perspectives? 主体段2是否深入分析了奴隶制并对比了公民与奴隶的不同视角？ | ☐ Strong 优秀 (PR/EX)<br>☐ Developing 发展中 (DE)<br>☐ Missing 缺失 (EM) | {{< lines 2 >}} |
+| **2. Governance Progress Evidence 治理进步证据 (Crit B/D):**<br>Does Body 1 include specific, {{< vocab "document" text="cited" >}} historical facts/laws from library books or class texts? 主体段1是否引用了图书馆书籍或教材中的具体法律或制度史实？ | ☐ Strong 优秀 (PR/EX)<br>☐ Developing 发展中 (DE)<br>☐ Missing 缺失 (EM) | {{< lines 2 >}} |
+| **3. Slavery & Perspective Analysis 奴隶制与多视角分析 (Crit D):**<br>Does Body 2 {{< vocab "analyse" text="analyze" >}} how slavery worked systemically and contrast citizen vs. enslaved perspectives? 主体段2是否深入分析了奴隶制并对比了公民与奴隶的不同视角？ | ☐ Strong 优秀 (PR/EX)<br>☐ Developing 发展中 (DE)<br>☐ Missing 缺失 (EM) | {{< lines 2 >}} |
 | **4. Counter-Claim & Rebuttal 反方观点与批驳 (Advanced - Crit D):**<br>If included, does Body 3 state a fair counter-argument and refute it with evidence? （如选写）主体段3是否提出了合理的反方观点并用证据批驳？ | ☐ Strong 优秀 (PR/EX)<br>☐ Developing 发展中 (DE)<br>☐ Missing 缺失 (EM) | {{< lines 2 >}} |
 | **5. Academic Structure & Transitions 篇章结构与衔接词 (Crit C):**<br>Are paragraphs clearly organized with analytical transitions (*however, whereas, despite*)? 段落结构是否清晰，是否恰当使用了英文分析性过渡词？ | ☐ Strong 优秀 (PR/EX)<br>☐ Developing 发展中 (DE)<br>☐ Missing 缺失 (EM) | {{< lines 2 >}} |
-| **6. Source Citations 史料引用规范 (Crit C):**<br>Are library books and class texts explicitly cited in the paragraphs? 段内是否明确标明了所引用的书籍或教材来源？ | ☐ Strong 优秀 (PR/EX)<br>☐ Developing 发展中 (DE)<br>☐ Missing 缺失 (EM) | {{< lines 2 >}} |
+| **6. Source Citations 史料引用规范 (Crit C):**<br>Are library books and class texts explicitly {{< vocab "document" text="documented" >}} in the paragraphs? 段内是否明确标明了所引用的书籍或教材来源？ | ☐ Strong 优秀 (PR/EX)<br>☐ Developing 发展中 (DE)<br>☐ Missing 缺失 (EM) | {{< lines 2 >}} |
 :::
 
 ::: {.keep}
@@ -280,7 +281,7 @@ Use the provided library books and your class texts to gather specific historica
 
 # Section 4 (Lesson 5): Second Draft, Revisions & Bibliography 第四部分（第5课时）：第二稿修改与参考文献整理
 
-Use feedback from your Lesson 4 Peer Audit and teacher guidance to write your revised Second Draft below. Strengthen your Criterion D historical explanation, transitions, and source citations so you are ready to type into Toddle in Lesson 6.
+{{< vocab "use" text="Use" zh=true >}} feedback from your Lesson 4 Peer Audit and teacher guidance to write your revised Second Draft below. Strengthen your Criterion D historical {{< vocab "explain" text="explanation" zh=true >}}, transitions, and source citations so you are ready to type into Toddle in Lesson 6.
 请结合第4课时的同伴互评反馈与老师指导，在下方撰写修改后的第二稿。重点强化标准 D 的历史深度分析、段落过渡词以及标准 C 的史料引用，为第6课时在 Toddle 上直接录入终稿做好准备。
 
 ## Second Draft / Revised Essay Workspace (Write in English) | 第二稿 / 论文修改手写区
@@ -295,7 +296,7 @@ Use feedback from your Lesson 4 Peer Audit and teacher guidance to write your re
 
 ## Works Cited / Bibliography Organizer (Criterion C) | 参考文献列表整理区（准备录入 Toddle）
 
-List all library books and class texts cited in your essay.
+{{< vocab "list" text="List" zh=true >}} and {{< vocab "document" zh=true >}} all library books and class texts cited in your essay.
 **Example format 格式示例:** `Author Last Name, First Name. Title of Book. Publisher, Year, pp. xx–xx.`
 
 {{< lines 6 >}}

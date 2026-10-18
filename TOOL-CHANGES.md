@@ -16,6 +16,37 @@ Newest entries first.
 - **AI assistant:** which one made the change.
 -->
 
+## 2026-10-18: Shared local AI Activity Log (`AI-ACTIVITY-LOG.md` & `scripts/ai_log.py`) for multi-agent sync
+- **Asked for:** "I want you include a new Workbuddy account into the chalkline work flow, create something that I can copy and paste into workbuddy to get it set up." / "Create a set up such that the various AI tools have a log on my local storage that they upload to so that all my AI platforms can be up to date with what each of them have been doing."
+- **Why:** So multiple AI assistants and accounts (Antigravity subagents, Tencent WorkBuddy accounts, Claude, etc.) working across `chalkline-mingwan` and WeDrive can see what each platform has done or is currently working on without stepping on each other.
+- **Changed:**
+  - `AI-ACTIVITY-LOG.md` — created shared local activity feed and project snapshot in `chalkline-mingwan` (and mirrored to WeDrive `Social Studies/AI-ACTIVITY-LOG.md`).
+  - `scripts/ai_log.py` — added CLI tool (`show`, `add`, `sync`) to read, prepend timestamped activity entries, and automatically mirror `AI-ACTIVITY-LOG.md` between `chalkline-mingwan` and WeDrive.
+  - `CLAUDE.md`, `AGENTS.md`, `GEMINI.md` — added canonical paths (`chalkline-mingwan` + WeDrive), GitHub remote, and required `AI-ACTIVITY-LOG.md` read/write rules for all AI assistants.
+- **Who it helps:** this course, and any Chalkline teacher using multiple AI assistants on the same course.
+- **AI assistant:** Gemini (Antigravity)
+
+## 2026-10-18: Add `RIV` (River Civilizations) vocabulary domain
+- **Asked for:** "I want you to rewrite the 'Unit1: Ancient Greece' content and rebrand it as a 'TEST UNIT 1: Ancient Greece' because I want you to upload and format the Unit 1 (Ancient River Civilizations) content to take its place as unit 1 content."
+- **Why:** To support Unit 1: Ancient River Civilizations vocabulary (`RIV-001`..`RIV-032`) in the interactive vocab app and inline pop-up glosses across Mesopotamia, Ancient Egypt, and Indus Valley materials.
+- **Changed:**
+  - `vocab/schema.yaml` — added `RIV` to `id_pattern` and `domains` (`RIV: [geography, mesopotamia, egypt, indus]`).
+  - `vocab/config.js` — added `RIV` ("River Civilizations" / "早期河谷文明") and subdomain labels/translations (`mesopotamia`, `egypt`, `indus`).
+- **Who it helps:** this course (and any world history Chalkline course covering Ancient River Valley Civilizations).
+- **AI assistant:** Gemini (Antigravity)
+
+## 2026-10-18: IB MYP Command Terms vocab topic, dedicated reference page, and instruction glossing
+- **Asked for:** "Please add `/Users/nathaniellevin/Library/Containers/com.tencent.WeWorkMac/Data/WeDrive/明湾学校/Social Studies/Curriculum Building` files as a key foundational reference for my chalkline, specifically 'Command Terms' should have their own vocab page on the Chalkline and should be defined similar to vocabulary on any instructions the students see."
+- **Why:** To ground all curriculum materials in the IB MYP Individuals & Societies guide and Command Terms, give students a dedicated bilingual Command Terms reference page and interactive vocab cards, and provide inline `{{< vocab >}}` pop-up/print definitions for Command Terms in student-facing instructions across worksheets, slides, and summative booklets.
+- **Changed:**
+  - `vocab/schema.yaml` — added `CMD` to `id_pattern` and `domains` (`CMD: [knowing, investigating, communicating, thinking]`).
+  - `vocab/config.js` — added `CMD` ("Command Terms" / "MYP 指令词"), Criterion A–D subdomain names/translations, and quick-reference links to the Command Terms page and official PDF.
+  - `vocab/tools/draw_icons.py` — added 20 custom SVG icons (`CMD-001` to `CMD-020`) illustrating each MYP Command Term.
+  - `_quarto.yml` — added `Command Terms 指令词` (`course/references/command-terms.qmd`) to the main sidebar navigation.
+  - `CLAUDE.md` — documented the `course/references/curriculum-building/` PDFs as foundational references and added the rule to gloss MYP Command Terms in student instructions.
+- **Who it helps:** every IB MYP Chalkline course (and any course that wants instructional command verbs glossed like content vocabulary).
+- **AI assistant:** Gemini (Antigravity)
+
 ## 2026-10-18: Publish student site (`_site`) to GitHub Pages
 - **Asked for:** "create a website link for my chalkline" -> selected "Publish online to GitHub Pages (`https://levinnate-design.github.io/levin_chalkline/`)" and "Student version (`_site/`, without answer keys and teacher notes) so you can share the public URL directly with students".
 - **Why:** GitHub Pages is public, so a real course's public website link should serve the student edition without answer keys or teacher-only notes.

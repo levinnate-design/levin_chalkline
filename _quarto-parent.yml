@@ -20,9 +20,17 @@ website:
   drafts:
   - course/summatives/02-unit-2-summative/student-summative-booklet.qmd
   - course/summatives/02-unit-2-summative/summative-slides.qmd
-  - course/units/01-ancient-greece/athens-vs-sparta.qmd
-  - course/units/01-ancient-greece/class-vote.qmd
-  - course/units/01-ancient-greece/greek-ideas-slides.qmd
-  - course/units/02-ancient-rome/aqueduct-challenge.qmd
-  - course/units/02-ancient-rome/republic-or-empire.qmd
-  - course/units/02-ancient-rome/republic-to-empire-slides.qmd
+  - course/units/01-ancient-river-civilizations/egypt-formative.qmd
+  - course/units/01-ancient-river-civilizations/egypt-learning-sheets.qmd
+  - course/units/01-ancient-river-civilizations/egypt-scribe-challenge.qmd
+  - course/units/01-ancient-river-civilizations/indus-learning-sheet.qmd
+  - course/units/01-ancient-river-civilizations/mesopotamia-formative.qmd
+  - course/units/01-ancient-river-civilizations/mesopotamia-learning-sheets.qmd
+  - course/units/01-ancient-river-civilizations/unit-1-review-matrix.qmd
+  - course/units/01-ancient-river-civilizations/unit-1-review-slides.qmd
+  - course/units/91-test-unit-1-ancient-greece/athens-vs-sparta.qmd
+  - course/units/91-test-unit-1-ancient-greece/class-vote.qmd
+  - course/units/91-test-unit-1-ancient-greece/greek-ideas-slides.qmd
+  - course/units/92-test-unit-2-ancient-rome/aqueduct-challenge.qmd
+  - course/units/92-test-unit-2-ancient-rome/republic-or-empire.qmd
+  - course/units/92-test-unit-2-ancient-rome/republic-to-empire-slides.qmd

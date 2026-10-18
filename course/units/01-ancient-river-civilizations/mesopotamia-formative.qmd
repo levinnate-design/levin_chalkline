@@ -1,0 +1,161 @@
+---
+title: "Mesopotamia Formative Assessment 美索不达米亚形成性评估"
+type: worksheet
+description: "Open-note formative assessment covering Mesopotamian geography, culture, and Hammurabi's Code, with Criterion A analytical paragraph and G7/G8 rubrics."
+order: 5
+audience: [teacher, student]
+doc-type: Worksheet
+name-box: true
+format:
+  html: default
+  typst: default
+---
+
+::: {.callout-note title="Instructions · 评估说明" icon=false}
+You may {{< vocab "use" zh=true >}} your completed Learning Sheets and notes. Answer **Section 1** briefly in 1–2 complete sentences each. For **Section 2**, write a complete **5–7 sentence paragraph**.
+*(你可以使用已完成的学习单和课堂笔记。第一部分每题用 1–2 句完整句子简答；第二部分写一段完整的 5–7 句论述段落。)*
+:::
+
+---
+
+## Section 1: Content Recall & Short Answer 第一部分：知识回顾与简答
+
+1. What does the Greek word **"{{< vocab "Mesopotamia" >}}"** translate to in English? Why would a Greek word be used to name this region? *(希腊语“Mesopotamia”在英语中译作什么？为什么会用希腊语来命名该地区？)*
+
+::: {.answer-lines}
+- 
+- 
+:::
+
+2. {{< vocab "identify" text="Identify" zh=true >}} the **two major rivers** that frame the Mesopotamian river valley. *(请列举构成美索不达米亚河谷的两条主要河流。)*
+
+::: {.answer-lines}
+- 
+:::
+
+3. The Sumerians faced unpredictable flooding and droughts. State **ONE solution** they invented to control their water supply. *(苏美尔人面临难以预测的洪水和干旱。请说明他们为控制水资源而发明的一种解决方案。)*
+
+::: {.answer-lines}
+- 
+:::
+
+4. Since {{< vocab "Mesopotamia" >}} lacked natural barriers, how did Sumerians protect their {{< vocab "city-state" text="city-states" >}}? *(由于美索不达米亚缺乏天然屏障，苏美尔人如何保护他们的城邦？)*
+
+::: {.answer-lines}
+- 
+:::
+
+5. Define **{{< vocab "polytheism" >}}** and name **one Sumerian god**. Why did Sumerians believe they had so many powerful, easily angered gods? *(解释“多神教”的含义并列举一位苏美尔神祇。苏美尔人为何认为众神如此强大且易怒？)*
+
+::: {.answer-lines}
+- 
+- 
+:::
+
+6. Compare the Mesopotamian view of the **afterlife (来世观)** to your own view, or to how the afterlife is viewed in traditional Chinese culture. *(将美索不达米亚人对来世的看法与你自己的看法或中国传统文化中的观念进行比较。)*
+
+::: {.answer-lines}
+- 
+- 
+:::
+
+7. Look at the Sumerian **social pyramid (社会金字塔)**. Who occupied the very top level, and who occupied the bottom? Why might this be? *(谁占据了苏美尔社会金字塔的顶端，谁又处于底层？原因可能是什么？)*
+
+::: {.answer-lines}
+- 
+- 
+:::
+
+8. **Sargon of Akkad** is famous for creating the world's first **{{< vocab "empire" >}}**. How does an {{< vocab "empire" >}} differ from a **{{< vocab "city-state" >}}**? *(阿卡德的萨尔贡因建立世界上第一个帝国而闻名。帝国与城邦有何区别？)*
+
+::: {.answer-lines}
+- 
+- 
+:::
+
+9. What was the stated goal of the **{{< vocab "Code of Hammurabi" >}}**, according to its **Prologue (序言)**? *(根据《汉谟拉比法典》的序言，该法典的明确目标是什么？)*
+
+::: {.answer-lines}
+- 
+:::
+
+10. **Law §196** states *"an eye for an eye,"* but **Law §199** states that destroying a slave's eye only requires paying half his value. What does this difference tell us about Babylonian justice? *(第196条规定“以眼还眼”，但第199条规定损毁奴隶之眼只需赔偿半价。这一差异揭示了巴比伦司法体系的什么特点？)*
+
+::: {.answer-lines}
+- 
+- 
+:::
+
+---
+
+## Section 2: Criterion A Paragraph Task 第二部分：Criterion A 段落写作任务
+
+::: {.callout-important title="Writing Prompt · 写作提示" icon=false}
+**Theme:** *Human communities turned unpredictable river environments into the world's first cities, and the solutions they invented became the foundation of {{< vocab "civilization" >}}.*
+*(本单元核心主题：“人类社群将难以预测的河流环境转变为世界上最早的城市，他们发明的解决方案成为了文明的基石。”)*
+
+Choose **ONE environmental challenge** the Sumerians faced. Write a **5–7 sentence paragraph** detailing:
+*(选择苏美尔人面临的一个环境挑战，写一段 5–7 句的段落，详细说明：)*
+
+1. How the Sumerians **solved** this challenge *(苏美尔人如何解决这一挑战)*;
+2. How this solution required them to **change their society** — e.g., the need for cooperation, leadership, or social classes *(这一解决方案如何要求他们改变社会，例如对合作、领导力或社会阶层的需求)*;
+3. How this growing societal complexity eventually led to the need for a **formal system of justice**, like the {{< vocab "Code of Hammurabi" >}} *(这种日益增长的社会复杂性最终如何导致对正式司法体系如《汉谟拉比法典》的需求)*.
+:::
+
+::: {.answer-lines}
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+:::
+
+---
+
+## Assessment Rubrics · 评估量规 (Grade 7 & Grade 8 Targets)
+
+### Grade 7 Target: Relational Understanding (Target Command Term: {{< vocab "explain" text="EXPLAIN" zh=true >}})
+
+*Expectation (期望):* Grade 7 students should demonstrate how things connect (the *"How"* and *"Why"*). They must accurately **{{< vocab "explain" >}}** the historical sequence of events (*Environment → Solution → Social Organization → Laws*) using correct terminology.
+
+| Achievement Level 成绩等级 | Grade 7 Descriptor (Criterion A: Knowing & Understanding) | Example Sentence (Unrelated Prompt) |
+|---|---|---|
+| **1–2 (Developing)** | Lists or describes facts but struggles to connect them in time. Attempts to explain the prompt but misses the causal nuance; uses terms inconsistently.<br>*罗列或描述事实，但难以在时间上将它们联系起来；遗漏因果关系的细微差别；术语使用不连贯。* | *"Johannes Gutenberg invented the printing press in Europe, and people read more books, and then society changed."* |
+| **3 (Proficient — Target)** | Thoroughly explains how the events are related in time. Accurately uses specific terminology.<br>*深入解释事件在时间上是如何相关联的；准确使用专业术语。* | *"The invention of the printing press significantly lowered the cost of book production, which allowed new ideas to spread quickly and increased literacy rates across Europe."* |
+
+### Grade 8 Target: Analytical Reasoning (Target Command Term: {{< vocab "analyse" text="ANALYSE" zh=true >}})
+
+*Expectation (期望):* Grade 8 students must deconstruct the narrative. Beyond explaining the sequence, they must **{{< vocab "analyse" >}}** the structural implications of these changes (e.g., how centralized resource management structurally created the social inequality formalized in Hammurabi's Code).
+
+| Achievement Level 成绩等级 | Grade 8 Descriptor (Criterion A: Knowing & Understanding) | Example Sentence (Unrelated Prompt) |
+|---|---|---|
+| **1–2 (Developing)** | Explains concepts but struggles to break them down further. Attempts to analyse the prompt, but the breakdown of historical continuity is superficial or one-sided.<br>*解释概念，但难以将其进一步解构；对历史连续性的剖析是肤浅或片面的。* | *"The printing press made books cheaper, which meant regular people could read the Bible instead of just the priests having all the power."* |
+| **3 (Proficient — Target)** | Analyses historical continuity causally. Deconstructs how early environmental survival mechanisms (like centralized irrigation) created structural inequalities that were later codified and justified by Hammurabi's laws.<br>*通过因果关系分析历史的连续性；解构早期的环境生存机制（如集中灌溉）如何造成了结构性的不平等，并在汉谟拉比法律中被编纂和合理化。* | *"By breaking the Church's monopoly on the production of texts, the printing press decentralized intellectual authority, allowing grassroots movements like the Protestant Reformation to challenge established political hierarchies."* |
+
+::: {.content-visible when-profile="teacher"}
+---
+
+## Teacher Answer Key · 教师参考答案
+
+### Section 1 Short Answer Key
+1. **Mesopotamia:** Means *"land between the rivers"* in Greek. Later Greek historians and geographers named the region between the Tigris and Euphrates rivers when Greek culture spread across the ancient Near East.
+2. **Two Rivers:** The **Tigris River** and the **Euphrates River**.
+3. **Water Solution:** They dug **{{< vocab "irrigation" >}} ditches, canals, and dikes/dams** to carry river water to dry fields and control flooding.
+4. **Defense Solution:** They built thick **city walls out of sun-dried mud bricks** around their cities.
+5. **Polytheism:** Belief in many gods (e.g., **Enlil**, god of storms, or **Shamash**, sun-god of justice). Because the rivers flooded violently and unpredictably and droughts were harsh, Sumerians believed the gods controlling nature were fierce, moody, and easily angered.
+6. **Afterlife Comparison:** Sumerians viewed the afterlife as a gloomy *"land of no return"* where souls ate dust and clay with no reward or joy, whereas traditional Chinese beliefs (or modern views) often emphasize ancestor veneration, family continuity, or moral judgment/reincarnation.
+7. **Social Pyramid:** **Top:** Kings, landlords, and high priests (because they communicated with the gods, managed irrigation/taxes, and led armies). **Bottom:** Enslaved people — war captives or debt slaves (who had no land or political power).
+8. **Empire vs. City-State:** A **{{< vocab "city-state" >}}** is a single city and its surrounding farmland operating as an independent state, while an **{{< vocab "empire" >}}** unites many previously independent cities, peoples, and territories under one central ruler.
+9. **Prologue Goal:** *"To bring about the rule of righteousness in the land, to destroy the wicked and evil-doers; so that the strong should not harm the weak."*
+10. **Law §196 vs. §199:** It proves that Babylonian justice was **unequal and stratified by social class**. Noblemen received physical retaliation (*"an eye for an eye"*), whereas enslaved people were treated as property whose injury only required paying silver to their owner.
+
+### Section 2 Exemplar Responses (G7 & G8)
+- **Grade 7 Exemplar ({{< vocab "explain" text="EXPLAIN" >}}):**
+  > *One major environmental challenge the Sumerians faced in Mesopotamia was unpredictable flooding followed by severe drought. To solve this problem, Sumerian villagers dug complex irrigation ditches and canals that carried water from the Tigris and Euphrates rivers to their fields, producing a food surplus. Building and cleaning miles of canals was too difficult for one family, so it required large groups of people to cooperate under the direction of priests and kings. As cities grew and a division of labour separated rulers, merchants, farmers, and slaves, disputes broke out over water rights, land, and property. Consequently, rulers like King Hammurabi created a formal written law code so that rules about irrigation dams (such as Law §53) and property were publicly enforced across the empire.*
+- **Grade 8 Exemplar ({{< vocab "analyse" text="ANALYSE" >}}):**
+  > *In southern Mesopotamia, unpredictable flooding and scorching droughts forced Sumerian communities to engineer large-scale irrigation canals to trap silt-rich water and generate an agricultural surplus. Because digging and maintaining this hydraulic network required collective coordination, temple priests and military kings gained centralized authority to tax grain harvests and command labor from ordinary farmers. This centralization of water and food management structurally divided society into a rigid hierarchy of elite rulers at the top and dependent laborers and debt slaves at the bottom. As competing city-states were absorbed into the Babylonian Empire, informal village customs could no longer manage property conflicts or water negligence across such a stratified population. Ultimately, King Hammurabi codified 282 public laws — enforcing both collective dam maintenance (§53) and class-based punishments (§196 vs. §199) — to preserve the very social hierarchy that irrigation organization had created.*
+:::

@@ -9,7 +9,7 @@ list_separator: ";"
 
 vocab:
   file: data/vocab.csv
-  id_pattern: "^(GRC|ROM|ECO)-\\d{3}$"
+  id_pattern: "^(RIV|GRC|ROM|ECO|CMD)-\\d{3}$"
   columns:
     - {name: id,            required: true}
     - {name: term_en,       required: true}
@@ -28,9 +28,11 @@ vocab:
     - {name: status,        required: true}
 
   domains:
+    RIV: [geography, mesopotamia, egypt, indus]
     GRC: [geography, government, culture]
     ROM: [government, army, daily-life, engineering]
     ECO: [systems]
+    CMD: [knowing, investigating, communicating, thinking]
 
 frames:
   file: data/frames.csv

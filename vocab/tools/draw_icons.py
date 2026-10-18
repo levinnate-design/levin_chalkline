@@ -185,6 +185,139 @@ ICONS = {
                 f'<circle cx="{48 + i * 34}" cy="{112 + j * 30}" r="4" fill="{GOLD}"/>' for j in range(2) for i in range(5)) +
         f'<line x1="120" y1="20" x2="120" y2="92" stroke="{INK}" stroke-width="4"/>'
         f'<path d="M120,22 l-22,-6 l10,12 l-14,2 l26,8 l26,-8 l-14,-2 l10,-12 Z" fill="{GOLD}"/>'),
+    "CMD-001": svg(  # Analyse: breaking a whole into connected parts
+        f'<rect x="92" y="22" width="56" height="34" rx="6" fill="{NAVY}"/>'
+        f'<text x="120" y="44" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="{WHITE}">WHOLE</text>'
+        f'<path d="M120,56 L60,96 M120,56 L120,96 M120,56 L180,96" stroke="{ORANGE}" stroke-width="3.5" stroke-linecap="round"/>'
+        f'<rect x="34" y="96" width="52" height="34" rx="6" fill="{BLUE}"/>'
+        f'<rect x="94" y="96" width="52" height="34" rx="6" fill="{TURQ}"/>'
+        f'<rect x="154" y="96" width="52" height="34" rx="6" fill="{BLUE}"/>'
+        f'<text x="120" y="156" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="{NAVY}">parts + connections</text>'),
+    "CMD-002": svg(  # Demonstrate: prove with evidence + checkmark
+        f'<rect x="52" y="28" width="110" height="124" rx="8" fill="{WHITE}" stroke="{NAVY}" stroke-width="3"/>'
+        f'<line x1="70" y1="56" x2="140" y2="56" stroke="{NAVY}" stroke-width="4"/>'
+        f'<line x1="70" y1="78" x2="140" y2="78" stroke="{BLUE}" stroke-width="4"/>'
+        f'<line x1="70" y1="100" x2="120" y2="100" stroke="{BLUE}" stroke-width="4"/>'
+        f'<circle cx="164" cy="118" r="28" fill="{GRASS}" stroke="{WHITE}" stroke-width="3"/>'
+        f'<path d="M150,118 l10,10 l18,-20" fill="none" stroke="{WHITE}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>'),
+    "CMD-003": svg(  # Describe: detailed picture with descriptive lines
+        f'<rect x="28" y="36" width="88" height="108" rx="8" fill="{WHITE}" stroke="{NAVY}" stroke-width="3"/>'
+        f'<circle cx="56" cy="64" r="10" fill="{GOLD}"/>'
+        f'<polygon points="34,132 64,92 92,132" fill="{GRASS}"/><polygon points="64,132 90,102 110,132" fill="{TURQ}"/>'
+        f'<line x1="134" y1="54" x2="210" y2="54" stroke="{NAVY}" stroke-width="5" stroke-linecap="round"/>'
+        f'<line x1="134" y1="78" x2="200" y2="78" stroke="{BLUE}" stroke-width="4" stroke-linecap="round"/>'
+        f'<line x1="134" y1="102" x2="210" y2="102" stroke="{BLUE}" stroke-width="4" stroke-linecap="round"/>'
+        f'<line x1="134" y1="126" x2="184" y2="126" stroke="{ORANGE}" stroke-width="4" stroke-linecap="round"/>'),
+    "CMD-004": svg(  # Discuss: two balanced viewpoints in speech bubbles
+        f'<path d="M26,40 h82 a10,10 0 0 1 10,10 v38 a10,10 0 0 1 -10,10 h-44 l-16,16 v-16 h-22 a10,10 0 0 1 -10,-10 v-38 a10,10 0 0 1 10,-10 Z" fill="{NAVY}"/>'
+        f'<text x="67" y="74" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="{WHITE}">Side A</text>'
+        f'<path d="M132,68 h82 a10,10 0 0 1 10,10 v38 a10,10 0 0 1 -10,10 h-22 v16 l-16,-16 h-44 a10,10 0 0 1 -10,-10 v-38 a10,10 0 0 1 10,-10 Z" fill="{ORANGE}"/>'
+        f'<text x="173" y="102" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="{WHITE}">Side B</text>'
+        f'<text x="120" y="162" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="{INK}">balanced review + evidence</text>'),
+    "CMD-005": svg(  # Document: book with citation quotes & reference tag
+        f'<rect x="56" y="30" width="128" height="120" rx="8" fill="{WHITE}" stroke="{NAVY}" stroke-width="3"/>'
+        f'<text x="90" y="78" font-family="serif" font-size="44" font-weight="700" fill="{ORANGE}">“ ”</text>'
+        f'<line x1="76" y1="98" x2="164" y2="98" stroke="{NAVY}" stroke-width="3.5"/>'
+        f'<rect x="76" y="112" width="88" height="22" rx="4" fill="{SKY}" stroke="{BLUE}" stroke-width="1.5"/>'
+        f'<text x="120" y="128" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="{NAVY}">(Author, p. 12)</text>'),
+    "CMD-006": svg(  # Evaluate: balance scale weighing pros and limitations
+        f'<line x1="120" y1="34" x2="120" y2="148" stroke="{NAVY}" stroke-width="5"/>'
+        f'<rect x="86" y="146" width="68" height="10" rx="4" fill="{NAVY}"/>'
+        f'<line x1="56" y1="62" x2="184" y2="50" stroke="{ORANGE}" stroke-width="4" stroke-linecap="round"/>'
+        f'<path d="M56,62 L38,104 H74 Z" fill="none" stroke="{NAVY}" stroke-width="2.5"/>'
+        f'<path d="M34,104 Q56,118 78,104 Z" fill="{BLUE}"/>'
+        f'<path d="M184,50 L166,92 H202 Z" fill="none" stroke="{NAVY}" stroke-width="2.5"/>'
+        f'<path d="M162,92 Q184,106 206,92 Z" fill="{TURQ}"/>'),
+    "CMD-007": svg(  # Exemplify: general rule pointing to a concrete example star
+        f'<rect x="30" y="64" width="76" height="52" rx="8" fill="{NAVY}"/>'
+        f'<text x="68" y="95" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="700" fill="{WHITE}">IDEA</text>'
+        f'<line x1="112" y1="90" x2="144" y2="90" stroke="{ORANGE}" stroke-width="5" stroke-linecap="round"/>'
+        f'<polygon points="142,82 156,90 142,98" fill="{ORANGE}"/>'
+        f'<rect x="160" y="54" width="56" height="72" rx="8" fill="{WHITE}" stroke="{ORANGE}" stroke-width="3"/>'
+        f'<text x="188" y="96" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="700" fill="{ORANGE}">e.g.</text>'),
+    "CMD-008": svg(  # Explain: CAUSE -> WHY / HOW -> EFFECT
+        f'<rect x="22" y="64" width="74" height="52" rx="8" fill="{BLUE}"/>'
+        f'<text x="59" y="95" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="{WHITE}">CAUSE</text>'
+        f'<line x1="102" y1="90" x2="134" y2="90" stroke="{ORANGE}" stroke-width="5"/>'
+        f'<polygon points="132,82 146,90 132,98" fill="{ORANGE}"/>'
+        f'<rect x="148" y="64" width="74" height="52" rx="8" fill="{NAVY}"/>'
+        f'<text x="185" y="95" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="{WHITE}">EFFECT</text>'
+        f'<text x="120" y="46" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="700" fill="{ORANGE}">WHY? / HOW?</text>'),
+    "CMD-009": svg(  # Explore: compass for systematic discovery
+        f'<circle cx="120" cy="90" r="58" fill="{WHITE}" stroke="{NAVY}" stroke-width="5"/>'
+        f'<polygon points="120,42 134,90 120,78 106,90" fill="{ORANGE}"/>'
+        f'<polygon points="120,138 134,90 120,102 106,90" fill="{NAVY}"/>'
+        f'<circle cx="120" cy="90" r="6" fill="{GOLD}"/>'),
+    "CMD-010": svg(  # Formulate: structured blueprint building blocks
+        f'<rect x="44" y="34" width="152" height="32" rx="6" fill="{NAVY}"/>'
+        f'<text x="120" y="55" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="{WHITE}">1. Clear Question</text>'
+        f'<rect x="44" y="76" width="152" height="32" rx="6" fill="{BLUE}"/>'
+        f'<text x="120" y="97" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="{WHITE}">2. Key Concept</text>'
+        f'<rect x="44" y="118" width="152" height="32" rx="6" fill="{ORANGE}"/>'
+        f'<text x="120" y="139" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="{WHITE}">3. Thesis Claim</text>'),
+    "CMD-011": svg(  # Identify: spotlighting one distinct item among options
+        f'<circle cx="60" cy="90" r="22" fill="{STONE}" stroke="{STONE_DK}" stroke-width="2"/>'
+        f'<circle cx="120" cy="90" r="26" fill="{ORANGE}" stroke="{NAVY}" stroke-width="4"/>'
+        f'<circle cx="180" cy="90" r="22" fill="{STONE}" stroke="{STONE_DK}" stroke-width="2"/>'
+        f'<path d="M120,30 v22 M112,44 l8,10 l8,-10" fill="none" stroke="{NAVY}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>'
+        f'<text x="120" y="150" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="{NAVY}">pick &amp; name it</text>'),
+    "CMD-012": svg(  # Interpret: data bars + trend line -> meaning
+        f'<line x1="40" y1="142" x2="200" y2="142" stroke="{NAVY}" stroke-width="3"/>'
+        f'<rect x="54" y="106" width="24" height="36" fill="{BLUE}"/>'
+        f'<rect x="96" y="84" width="24" height="58" fill="{BLUE}"/>'
+        f'<rect x="138" y="56" width="24" height="86" fill="{NAVY}"/>'
+        f'<path d="M54,96 L108,72 L166,42" fill="none" stroke="{ORANGE}" stroke-width="4" stroke-linecap="round"/>'
+        f'<circle cx="166" cy="42" r="6" fill="{ORANGE}"/>'),
+    "CMD-013": svg(  # Investigate: magnifying glass examining clues
+        f'<rect x="46" y="34" width="110" height="114" rx="8" fill="{WHITE}" stroke="{STONE_DK}" stroke-width="2"/>'
+        f'<line x1="64" y1="60" x2="136" y2="60" stroke="{STONE_DK}" stroke-width="4"/>'
+        f'<line x1="64" y1="84" x2="136" y2="84" stroke="{NAVY}" stroke-width="4"/>'
+        f'<line x1="64" y1="108" x2="116" y2="108" stroke="{STONE_DK}" stroke-width="4"/>'
+        f'<circle cx="138" cy="96" r="32" fill="{SKY}" fill-opacity="0.7" stroke="{NAVY}" stroke-width="6"/>'
+        f'<line x1="162" y1="120" x2="194" y2="152" stroke="{ORANGE}" stroke-width="9" stroke-linecap="round"/>'),
+    "CMD-014": svg(  # Justify: claim held up by strong evidence pillars
+        f'<polygon points="40,62 120,28 200,62" fill="{NAVY}"/>'
+        f'<text x="120" y="55" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="{WHITE}">CLAIM</text>'
+        f'<rect x="56" y="62" width="24" height="72" fill="{ORANGE}"/>'
+        f'<rect x="108" y="62" width="24" height="72" fill="{ORANGE}"/>'
+        f'<rect x="160" y="62" width="24" height="72" fill="{ORANGE}"/>'
+        f'<rect x="38" y="134" width="164" height="16" rx="4" fill="{NAVY}"/>'
+        f'<text x="120" y="146" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="{WHITE}">EVIDENCE &amp; REASONS</text>'),
+    "CMD-015": svg(  # List: numbered sequence 1, 2, 3
+        f'<rect x="48" y="26" width="144" height="128" rx="10" fill="{WHITE}" stroke="{NAVY}" stroke-width="3"/>'
+        + "".join(f'<text x="68" y="{62 + i * 32}" font-family="sans-serif" font-size="18" font-weight="700" fill="{ORANGE}">{i + 1}.</text>'
+                  f'<line x1="94" y1="{56 + i * 32}" x2="170" y2="{56 + i * 32}" stroke="{NAVY}" stroke-width="4" stroke-linecap="round"/>'
+                  for i in range(3))),
+    "CMD-016": svg(  # Recognize: spotting a matching pattern
+        f'<circle cx="56" cy="70" r="16" fill="{BLUE}"/>'
+        f'<rect x="92" y="54" width="32" height="32" rx="4" fill="{ORANGE}"/>'
+        f'<circle cx="160" cy="70" r="16" fill="{BLUE}"/>'
+        f'<rect x="184" y="50" width="40" height="40" rx="6" fill="none" stroke="{NAVY}" stroke-width="3" stroke-dasharray="5 4"/>'
+        f'<rect x="190" y="56" width="28" height="28" rx="4" fill="{ORANGE}"/>'
+        f'<text x="120" y="138" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="{NAVY}">spot the pattern</text>'),
+    "CMD-017": svg(  # Reflect: thoughtful consideration bubble
+        f'<circle cx="86" cy="116" r="24" fill="{NAVY}"/>'
+        f'<path d="M56,164 q30,-28 60,0" fill="{NAVY}"/>'
+        f'<circle cx="118" cy="84" r="5" fill="{BLUE}"/><circle cx="132" cy="68" r="8" fill="{BLUE}"/>'
+        f'<ellipse cx="172" cy="52" rx="42" ry="26" fill="{WHITE}" stroke="{BLUE}" stroke-width="3"/>'
+        f'<text x="172" y="57" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="{NAVY}">Hmm…</text>'),
+    "CMD-018": svg(  # Summarize: funnel condensing many details into main point
+        f'<polygon points="44,34 196,34 140,104 100,104" fill="{BLUE}"/>'
+        f'<circle cx="86" cy="54" r="6" fill="{WHITE}"/><circle cx="120" cy="60" r="6" fill="{WHITE}"/><circle cx="154" cy="52" r="6" fill="{WHITE}"/>'
+        f'<rect x="78" y="118" width="84" height="34" rx="8" fill="{ORANGE}"/>'
+        f'<text x="120" y="140" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="{WHITE}">MAIN POINT</text>'),
+    "CMD-019": svg(  # Synthesize: two overlapping circles creating a new idea
+        f'<circle cx="94" cy="82" r="42" fill="{BLUE}" fill-opacity="0.75"/>'
+        f'<circle cx="146" cy="82" r="42" fill="{ORANGE}" fill-opacity="0.75"/>'
+        f'<text x="72" y="86" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="{WHITE}">Idea A</text>'
+        f'<text x="168" y="86" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="{WHITE}">Idea B</text>'
+        f'<text x="120" y="86" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="{NAVY}">NEW</text>'
+        f'<text x="120" y="152" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="{NAVY}">combine into new insight</text>'),
+    "CMD-020": svg(  # Use: gear putting knowledge into practice
+        f'<circle cx="120" cy="90" r="36" fill="{NAVY}"/>'
+        + "".join(f'<rect x="112" y="38" width="16" height="104" rx="4" fill="{NAVY}" transform="rotate({r} 120 90)"/>' for r in (0, 45, 90, 135)) +
+        f'<circle cx="120" cy="90" r="18" fill="{ORANGE}"/>'
+        f'<polygon points="115,82 130,90 115,98" fill="{WHITE}"/>'),
 }
 
 def slope_bridge(x0=130, x1=520, y0=100, y1=216, ground=268, n=8):

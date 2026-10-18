@@ -1,0 +1,188 @@
+---
+title: "City-States and Democracy"
+subtitle: "古希腊：城邦与民主 · Ancient Greece, part 1"
+type: slides
+description: "Greek geography, city-states, Athens and Sparta, and how democracy worked in Athens."
+order: 1
+audience: [teacher, student, parent]
+format: revealjs
+title-slide-attributes:
+  data-background-color: "#003477"
+  data-background-image: images/acropolis-parthenon.jpg
+  data-background-opacity: "0.45"      # the picture, dimmed, so the title stays readable
+---
+
+```{python}
+import sys; sys.path.append("scripts")
+from vocab import load_unit, pick, card_grid
+terms = load_unit(91)
+```
+
+## Ancient Greece on a timeline
+
+:::: {.columns}
+::: {.column width="58%"}
+::: {.timeline}
+- **776 BC** · The first recorded {{< vocab "Olympic Games" >}} at Olympia.
+- **About 508 BC** · Athens starts a {{< vocab "democracy" >}}.
+- **447–432 BC** · The Parthenon {{< vocab "temple" >}} is built in Athens.
+- **399 BC** · The {{< vocab "philosopher" >}} Socrates dies in Athens.
+:::
+:::
+::: {.column width="42%"}
+![](images/parthenon-west.jpg){.photo fig-alt="The Parthenon, a ruined marble temple with rows of columns, under a blue sky"}
+
+[The Parthenon in Athens today, about 2,450 years old.]{.photo-caption}
+:::
+::::
+
+::: {.small-note}
+BC means "before Christ": the years count *down* toward year 1. So 776 BC came before 508 BC.
+:::
+
+::: notes
+Ask: which of these words do you already know in Chinese? We'll meet each one this unit.
+:::
+
+## Mountains and sea
+
+:::: {.columns}
+::: {.column width="55%"}
+- Greece is a rocky {{< vocab "peninsula" >}} with many islands.
+- Mountains split the land into small valleys.
+- Each valley grew its own {{< vocab "city-state" >}}: one city and its farms.
+- The sea connected them. Greeks traded by ship and started a {{< vocab "colony" >}} wherever they found good land.
+:::
+::: {.column width="45%"}
+```{python}
+#| output: asis
+print(card_grid(pick(terms, "peninsula", "colony"), zh=True))
+```
+:::
+::::
+
+::: notes
+Ask: why would mountains make it hard for one king to rule all of Greece? (Hard to travel, hard to send armies, people stayed in their own valley.)
+:::
+
+## Key words: who decides?
+
+```{python}
+#| output: asis
+print(card_grid(pick(terms, "city-state", "citizen", "democracy", "assembly"), zh=True))
+```
+
+## Athens and Sparta
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.callout-note title="Athens 雅典" icon=false}
+- A {{< vocab "democracy" >}}: {{< vocab "citizen" text="citizens" >}} voted on laws
+- Famous for plays, art and {{< vocab "philosopher" text="philosophers" >}}
+- A strong navy and lots of trade
+- Boys went to school to read, write and speak in public
+:::
+:::
+::: {.column width="50%"}
+::: {.callout-warning title="Sparta 斯巴达" icon=false}
+- Two kings and a council of elders
+- Life was built around the army
+- Boys left home at 7 to train as soldiers
+- The strongest army on land in Greece
+:::
+:::
+::::
+
+::: notes
+Both were city-states, only a few days' walk apart, but life was very different. They fought each other in the Peloponnesian War (431–404 BC), which Sparta won.
+:::
+
+## Athens or Sparta?
+
+Guess first, then click to see each answer.
+
+::: {.quiz-list}
+Boys left home at age 7 to train as soldiers. [Sparta 斯巴达]{.fragment .reveal-answer .sparta}
+
+Citizens voted on laws in the Assembly. [Athens 雅典]{.fragment .reveal-answer .athens}
+
+Famous for plays, art and philosophers. [Athens 雅典]{.fragment .reveal-answer .athens}
+
+Two kings ruled at the same time. [Sparta 斯巴达]{.fragment .reveal-answer .sparta}
+:::
+
+```{=html}
+<style>
+  .reveal .quiz-list p { display: flex; justify-content: space-between; align-items: center; gap: 1em;
+                         margin: 0; padding: 0.4em 0.6em; border-bottom: 2px solid #e3e6ea; }
+  .reveal .reveal-answer { flex: none; padding: 0.1em 0.8em; border-radius: 999px; font-weight: 700; color: #003477; }
+  .reveal .reveal-answer.athens { background: #d6efff; }
+  .reveal .reveal-answer.sparta { background: #ffe0bd; }
+</style>
+```
+
+::: notes
+**Fragments:** each answer is hidden until you press → (or click). Ask for a show of hands first: "Athens or Sparta?", then reveal. In the source, an answer is just `[Sparta]{.fragment}`.
+:::
+
+## How democracy worked in Athens
+
+- The {{< vocab "assembly" >}} met about 40 times a year on a hill called the Pnyx.
+- Any {{< vocab "citizen" >}} could stand up and speak.
+- Then they voted, usually by raising their hands: {{< vocab "vote" >}}.
+- In court, juries of hundreds of citizens voted with small tokens.
+
+::: {.small-note}
+*Demos* = people, *kratos* = power. Democracy = power of the people.
+:::
+
+## Who could vote?
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.callout-tip title="Could vote" icon=false}
+Free adult men with Athenian parents
+:::
+:::
+::: {.column width="50%"}
+::: {.callout-warning title="Could not vote" icon=false}
+- Women
+- Enslaved people
+- Foreigners living in Athens
+:::
+:::
+::::
+
+Only a small part of the people living in Athens were {{< vocab "citizen" text="citizens" >}}.
+
+::: notes
+Discussion: Was Athens a real democracy? Who would you add to the voters? How is this different from democracies today?
+:::
+
+## Think, pair, share
+
+**Would you rather live in Athens or Sparta? {{< vocab "justify" text="Justify" >}} why.**
+
+:::: {.columns}
+::: {.column width="60%"}
+{{< vocab "use" text="Use" >}} a sentence frame:
+
+- I would rather live in ______ because ______.
+- One thing I would miss about ______ is ______.
+:::
+::: {.column width="40%"}
+{{< timer 3 >}}
+:::
+::::
+
+## Exit ticket
+
+::: {.poll type="choice" options="All adults living in Athens | Free men who were citizens | Only the king" correct="B"}
+{{< vocab "identify" text="Identify" >}}: Who could vote in the Athenian Assembly?
+:::
+
+## Picture credits {.credits}
+
+- **Title:** the Acropolis of Athens, photo by Jebulon, CC0, via Wikimedia Commons.
+- **The Parthenon:** photo by User:Mountain, public domain, via Wikimedia Commons.
+- Drawings: original, made for this course. Full list: `images/CREDITS.md`.

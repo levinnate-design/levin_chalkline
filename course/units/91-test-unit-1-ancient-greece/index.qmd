@@ -1,0 +1,27 @@
+---
+title: "TEST UNIT 1: Ancient Greece"
+short-title: "TEST UNIT 1 · Ancient Greece"
+unit: 91
+format: html
+description: "How geography shaped the Greek city-states, how democracy worked in Athens, and the Greek ideas we still use today."
+objectives:
+  - I can explain how mountains and the sea led to many separate city-states.
+  - I can compare life and government in Athens and Sparta.
+  - I can describe how Athenian democracy worked, and who could and couldn't vote.
+  - I can name Greek ideas we still use today, from the Olympics to columns and theater.
+listing:
+  contents: "*.qmd"
+  type: table
+  fields: [title, type, description]
+  field-display-names:
+    type: Type
+  sort: "order"
+  filter-ui: false
+  sort-ui: false
+---
+
+{{< objectives >}}
+
+{{< packet >}}
+
+## Materials

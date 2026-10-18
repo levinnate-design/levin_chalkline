@@ -7,11 +7,11 @@ order: 1
 audience: [teacher, student, parent]
 format: revealjs
 resources:
-  - ../01-ancient-greece/odyssey/*   # the interactive story map (it lives with the Greece unit)
-  - ../01-ancient-greece/images/school-of-athens.jpg   # the title backdrop
+  - ../91-test-unit-1-ancient-greece/odyssey/*   # the interactive story map (it lives with the Greece unit)
+  - ../91-test-unit-1-ancient-greece/images/school-of-athens.jpg   # the title backdrop
 title-slide-attributes:
   data-background-color: "#003477"
-  data-background-image: ../01-ancient-greece/images/school-of-athens.jpg
+  data-background-image: ../91-test-unit-1-ancient-greece/images/school-of-athens.jpg
   data-background-opacity: "0.35"      # the picture, dimmed, so the title stays readable
 ---
 
@@ -207,9 +207,9 @@ Tap an answer on the board (or press 1–4), then press R or click Show results.
 :::: {.columns}
 ::: {.column width="68%"}
 ```{=html}
-<link rel="stylesheet" href="../01-ancient-greece/odyssey/odyssey.css">
+<link rel="stylesheet" href="../91-test-unit-1-ancient-greece/odyssey/odyssey.css">
 <div class="odyssey"></div>
-<script src="../01-ancient-greece/odyssey/odyssey.js"></script>
+<script src="../91-test-unit-1-ancient-greece/odyssey/odyssey.js"></script>
 ```
 :::
 ::: {.column .ody-side width="32%"}
@@ -236,17 +236,17 @@ Each one is a working example in this course. Click to jump there.
 ::: {.feature-list}
 :::: {.columns}
 ::: {.column width="50%"}
-- 👆 **Fragments:** [reveal answers one click at a time](../01-ancient-greece/city-states-slides.html#/athens-or-sparta)
-- ✨ **Transitions:** [zoom into a slide](../01-ancient-greece/greek-ideas-slides.html#/the-odyssey-ten-years-to-get-home), or [glide a picture into place](../01-ancient-greece/greek-ideas-slides.html#/three-kinds-of-column) (auto-animate)
-- 🎬 **Embedded videos:** [a TED-Ed video inside a slide](../01-ancient-greece/greek-ideas-slides.html#/watch-the-odyssey-in-five-minutes)
-- 🧩 **Interactive activities:** [tap-to-match](../01-ancient-greece/greek-ideas-slides.html#/match-it), [a story map](../01-ancient-greece/greek-ideas-slides.html#/the-odyssey-ten-years-to-get-home)
-- 📐 **Infographics:** [a draw.io diagram you can hover](../02-ancient-rome/republic-to-empire-slides.html#/republic-infographic)
+- 👆 **Fragments:** [reveal answers one click at a time](../91-test-unit-1-ancient-greece/city-states-slides.html#/athens-or-sparta)
+- ✨ **Transitions:** [zoom into a slide](../91-test-unit-1-ancient-greece/greek-ideas-slides.html#/the-odyssey-ten-years-to-get-home), or [glide a picture into place](../91-test-unit-1-ancient-greece/greek-ideas-slides.html#/three-kinds-of-column) (auto-animate)
+- 🎬 **Embedded videos:** [a TED-Ed video inside a slide](../91-test-unit-1-ancient-greece/greek-ideas-slides.html#/watch-the-odyssey-in-five-minutes)
+- 🧩 **Interactive activities:** [tap-to-match](../91-test-unit-1-ancient-greece/greek-ideas-slides.html#/match-it), [a story map](../91-test-unit-1-ancient-greece/greek-ideas-slides.html#/the-odyssey-ten-years-to-get-home)
+- 📐 **Infographics:** [a draw.io diagram you can hover](../92-test-unit-2-ancient-rome/republic-to-empire-slides.html#/republic-infographic)
 :::
 ::: {.column width="50%"}
-- 🗳️ **Polls:** [tap-to-vote on the board](../01-ancient-greece/city-states-slides.html#/exit-ticket)
-- ⏱️ **Timers:** [think, pair, share](../01-ancient-greece/city-states-slides.html#/think-pair-share)
-- 🔊 **Vocab pop-ups:** [with 中文 and read-aloud](../01-ancient-greece/city-states-slides.html#/mountains-and-sea)
-- 🏛️ **Pictures and backdrops:** [a full-screen title](../02-ancient-rome/roman-engineering-slides.html#/title-slide), [photos with captions](../02-ancient-rome/roman-engineering-slides.html#/concrete-and-the-colosseum)
+- 🗳️ **Polls:** [tap-to-vote on the board](../91-test-unit-1-ancient-greece/city-states-slides.html#/exit-ticket)
+- ⏱️ **Timers:** [think, pair, share](../91-test-unit-1-ancient-greece/city-states-slides.html#/think-pair-share)
+- 🔊 **Vocab pop-ups:** [with 中文 and read-aloud](../91-test-unit-1-ancient-greece/city-states-slides.html#/mountains-and-sea)
+- 🏛️ **Pictures and backdrops:** [a full-screen title](../92-test-unit-2-ancient-rome/roman-engineering-slides.html#/title-slide), [photos with captions](../92-test-unit-2-ancient-rome/roman-engineering-slides.html#/concrete-and-the-colosseum)
 - 🗒️ **Speaker notes:** press **S** on any slide
 :::
 ::::
@@ -265,7 +265,7 @@ These links jump between slide decks, too: any slide can link to any other slide
 :::
 
 ::: notes
-Every link opens the example slide in another deck: press the browser's Back button to return here. In a slide, a link to another deck is just `[text](../01-ancient-greece/city-states-slides.html#/athens-or-sparta)`.
+Every link opens the example slide in another deck: press the browser's Back button to return here. In a slide, a link to another deck is just `[text](../91-test-unit-1-ancient-greece/city-states-slides.html#/athens-or-sparta)`.
 :::
 
 ## It always looks like your school

@@ -1,0 +1,173 @@
+---
+title: "Ancient Egypt Formative Assessment 古埃及文明课堂形成性评估"
+type: worksheet
+description: "30-minute formative assessment (16 points) covering Egyptian key terms, core concepts, and a first-person social persona synthesis paragraph, with G7 and G8 MYP rubrics."
+order: 10
+audience: [teacher, student]
+doc-type: Worksheet
+name-box: true
+format:
+  html: default
+  typst: default
+---
+
+::: {.callout-note title="General Instructions · 答题说明 (Time: 30 Mins · Total: 16 Points)" icon=false}
+Complete all sections of this formative assessment independently using your reading notes and knowledge of ancient Egyptian {{< vocab "civilization" >}}. Write clearly and support your answers with specific historical evidence.
+*(请根据阅读笔记和古埃及文明的相关知识独立完成此形成性评估。书写工整，并用具体历史证据支持你的回答。)*
+:::
+
+---
+
+## Part 1: Key Terms & Names 第一部分：核心词汇与人物 (4 Points · Pick 4 任选4题)
+
+**Directions:** Choose **FOUR (4)** of the terms or names below (`1 point each`). For each chosen term, write **one complete sentence** defining the term and explaining its historical significance in ancient Egypt. *(从以下8个词汇或人物中任选4个，分别写出一句完整的定义并解释其在古埃及的历史意义。)*
+
+1. **{{< vocab "delta" >}} (三角洲):**
+   ___________________________________________________________________
+   ___________________________________________________________________
+2. **Narmer (纳尔迈):**
+   ___________________________________________________________________
+   ___________________________________________________________________
+3. **{{< vocab "pharaoh" >}} (法老):**
+   ___________________________________________________________________
+   ___________________________________________________________________
+4. **{{< vocab "theocracy" >}} (神权政治):**
+   ___________________________________________________________________
+   ___________________________________________________________________
+5. **{{< vocab "pyramid" >}} (金字塔):**
+   ___________________________________________________________________
+   ___________________________________________________________________
+6. **{{< vocab "mummification" >}} (木乃伊制作):**
+   ___________________________________________________________________
+   ___________________________________________________________________
+7. **{{< vocab "hieroglyphics" >}} (象形文字):**
+   ___________________________________________________________________
+   ___________________________________________________________________
+8. **{{< vocab "papyrus" >}} (纸莎草纸):**
+   ___________________________________________________________________
+   ___________________________________________________________________
+
+---
+
+## Part 2: Main Ideas & Core Concepts 第二部分：核心概念与主要观点 (4 Points · Pick 2 任选2题)
+
+**Directions:** Choose **TWO (2)** of the questions below (`2 points each`) and answer using specific details from your reading packet and class notes. *(从以下4道题中任选2题，结合阅读材料和课堂笔记的具体细节作答。)*
+
+9. **Egyptian Achievements (古埃及成就):** Which of the ancient Egyptian achievements (e.g., 365-day solar calendar, early geometry, medical practices, stone architecture, {{< vocab "papyrus" >}} writing surface) do you consider the most important? {{< vocab "explain" text="Explain" >}} why with specific reasoning.
+
+::: {.answer-lines}
+- 
+- 
+- 
+:::
+
+10. **Geographic Environment (地理环境):** How did being surrounded by vast deserts on both sides benefit ancient Egypt's stability and historical development?
+
+::: {.answer-lines}
+- 
+- 
+- 
+:::
+
+11. **Divine Kingship (君权神授):** How did ancient Egyptians view the {{< vocab "pharaoh" >}}, and how did this view affect the pharaoh's duties and government authority?
+
+::: {.answer-lines}
+- 
+- 
+- 
+:::
+
+12. **Religious Beliefs & Afterlife (宗教信仰与来世):** Why did ancient Egyptians mummify bodies, and how was this practice connected to their belief in the **{{< vocab "ka" >}}** and the afterlife?
+
+::: {.answer-lines}
+- 
+- 
+- 
+:::
+
+---
+
+## Part 3: First-Person Synthesis Paragraph 第三部分：第一人称角色综合写作 (8 Points)
+
+::: {.callout-important title="Task Prompt · 写作任务要求 (6–8 Sentences)" icon=false}
+Imagine that you live in **Ancient Egypt** during the height of the Old, Middle, or New Kingdom. Choose **ANY social class** for your character — the **{{< vocab "pharaoh" text="Pharaoh" >}}**, a powerful **Priest**, a **Scribe/Scholar**, a skilled **Artisan or Merchant**, a **Peasant Farmer** along the Nile, or an **Enslaved Person** working on monument projects.
+
+Write a structured **6–8 sentence first-person synthesis paragraph (`"I am..."`)** explaining what type of place Ancient Egypt is from your specific perspective and daily experience. You **MUST** incorporate learning from **ALL THREE sections**:
+
+1. **Section 1 (Geography & Nile 地理与尼罗河):** {{< vocab "explain" text="Explain" >}} how the Nile River (predictable flooding, fertile {{< vocab "silt" >}}, {{< vocab "delta" >}}) and desert boundaries shape your environment, food supply, and security.
+2. **Section 2 (Religion & Pharaoh 宗教与法老):** Explain how you view the {{< vocab "pharaoh" >}} as a living god, {{< vocab "theocracy" >}}, {{< vocab "pyramid" >}} construction, and preparations for the afterlife ({{< vocab "ka" >}} & {{< vocab "mummification" >}}).
+3. **Section 3 (Social Order & Innovations 社会秩序与文明创新):** Explain how your place in the social hierarchy defines your daily labor or duties, and how innovations ({{< vocab "hieroglyphics" >}}, {{< vocab "papyrus" >}}, geometry, 365-day calendar) impact your life.
+:::
+
+::: {.callout-tip title="Student Scaffolding & Sentence Starters · 词汇与句型支架" icon=false}
+- **Academic Vocabulary Bank:** `silt` (淤泥) · `delta` (三角洲) · `double crown` (双冠) · `theocracy` (神权政治) · `ka` (灵魂/卡) · `mummification` (木乃伊制作) · `hieroglyphics` (象形文字) · `papyrus` (纸莎草纸) · `geometry` (几何学) · `365-day calendar` (365天太阳历) · `cultural continuity` (文化延续性)
+- **Sentence Frames:**
+  - *"I am a **[chosen role]** living in Ancient Egypt, where the geography of the Nile shapes my life by providing fertile silt through predictable flooding, while surrounding deserts…"*
+  - *"Because Egyptians view the pharaoh as a living god in our theocracy, my daily duties involve… to honor the pharaoh's eternal ka…"*
+  - *"In addition to religious monuments, practical innovations such as [hieroglyphics / papyrus / geometry / the 365-day calendar] allow me or our government to…"*
+  - *"From my perspective at the [top / middle / base] of the social pyramid, Ancient Egypt is a place of…"*
+:::
+
+**Chosen Persona / 所选角色身份:** ____________________________________________________
+
+::: {.answer-lines}
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+:::
+
+---
+
+## Part 4: MYP Assessment Rubrics & Self-Check 评分标准与学生自查表
+
+### Grade 8 MYP Rubric (Analytical & Evaluative Target)
+
+| MYP Criterion 评估标准 | 1–2 (Developing) | 3 (Proficient — Target) |
+|---|---|---|
+| **Criterion A: Knowing & Understanding**<br>标准A：知识与理解 | Attempts to analyze, but breakdown of concepts or geographic connections is superficial. | Accurately defines key terms (`delta`, `theocracy`, `pharaoh`) and explains geographic advantages. *(准确定义核心词汇并解释地理优势。)* |
+| **Criterion C: Communicating**<br>标准C：交流表达 | Presents ideas, but paragraph lacks cohesion or consistent academic vocabulary. | Constructs a structured, coherent 6–8 sentence paragraph incorporating academic vocabulary and sentence frames. *(运用学术词汇与句型框架，撰写结构严谨、连贯的综合段落。)* |
+| **Criterion D: Thinking Critically**<br>标准D：批判性思维 | Attempts to evaluate perspectives, but lacks a clear connection to social hierarchy or religious power. | Evaluates how religious beliefs in the `ka` and `theocracy` drove mummification/pyramids, and how social class shapes daily life. *(探讨宗教信仰与社会等级地位如何塑造古埃及的日常生活。)* |
+| **Prompt Completion (0–2 pts)** | **0–1:** Incompletely explains what type of place Ancient Egypt is from the chosen perspective. | **2:** Clearly explains what type of place Ancient Egypt is from the chosen perspective across all 3 sections. |
+
+### Grade 7 MYP Rubric (Relational & Perspective Target)
+
+| G7 Criterion Strand | 0.5 (Emerging 起步) | 1 (Developing 发展) | 2 (Proficient 熟练 — Target) | Exceeding (卓越) |
+|---|---|---|---|---|
+| **Criterion A: Knowing & Understanding**<br>*(Content & Causality)* | Lists isolated facts about Egypt; struggles to connect geography, pharaohs, or inventions to daily life. | Attempts to explain concepts like `silt` or `theocracy`, but misses key connections to their specific social role. | Thoroughly explains **HOW** the Nile (`silt`/flooding), divine `pharaoh`/`ka`, and Egyptian innovations shape their persona's daily life. | Provides an exceptionally detailed explanation connecting all 3 sections seamlessly into their role's daily reality. |
+| **Criterion C: Communicating**<br>*(Structure, Voice & Evidence)* | Attempts first-person voice (`"I am..."`) but struggles with sentence structure; lacks specific terms. | Uses first-person voice; includes basic vocabulary but lacks consistent textual evidence. | Formulates a cohesive first-person narrative (`"I am..."`) that uses specific vocabulary (`papyrus`, `ka`) and documents unit evidence. | Formulates a compelling, fluently structured persona narrative; integrates academic terms and evidence seamlessly. |
+| **Criterion D: Thinking Critically**<br>*(Perspective & Cause/Effect)* | Struggles to adopt a realistic historical perspective or recognize how social status affects experience. | Identifies basic viewpoints of their chosen role, but description remains mostly superficial or generic. | Interprets differing viewpoints accurately; explains cause-and-effect relationships between social class, labor, and religious duties. | Interprets deep structural connections between social hierarchy and religious power, demonstrating insightful empathy. |
+| **Prompt Completion** | Talked about Ancient Egypt in a way unrelated to the prompt. | Explained OR showed examples of what type of place Ancient Egypt was for the chosen person. | Explained AND showed concrete examples of what type of place Ancient Egypt was for the chosen person. | — |
+
+::: {.content-visible when-profile="teacher"}
+---
+
+## Teacher Answer Key & Exemplar Persona Paragraph · 教师参考答案与范文
+
+### Part 1 Key (Any 4 × 1 pt = 4 pts)
+1. **Delta:** A broad, marshy triangular region formed by deposits of fertile {{< vocab "silt" >}} at the mouth of the Nile River in Lower Egypt where much of Egypt's grain and papyrus grew.
+2. **Narmer:** The Egyptian king who united Upper and Lower Egypt around 3000 B.C., created the red-and-white Double Crown, and founded the first dynasty at Memphis.
+3. **Pharaoh:** The ruler of Ancient Egypt who was worshipped as a living god on earth responsible for causing the sun to rise, the Nile to flood, and the crops to grow.
+4. **Theocracy:** A system of government in which rule is based on religious authority, uniting political and religious power in the pharaoh.
+5. **Pyramid:** An immense limestone and granite tomb built during the Old Kingdom as an eternal resting place for a pharaoh's mummified body and `ka`.
+6. **Mummification:** The process of embalming, drying with natron salt for 70 days, and wrapping a corpse in linen bandages so the soul (`ka`) could return to it in the afterlife.
+7. **Hieroglyphics:** The ancient Egyptian writing system (*"sacred carvings"*) in which pictures stood for ideas and sounds, carved on temples and written on papyrus.
+8. **Papyrus:** A lightweight, paper-like writing sheet made from pressed reeds growing in the marshy Nile delta, used by scribes for keeping records and writing *Book of the Dead* scrolls.
+
+### Part 2 Key (Any 2 × 2 pts = 4 pts)
+- **Q9 (Achievements):** Any supported choice (e.g., **365-day solar calendar** based on Sirius allowed accurate flood prediction and planting; **geometry** allowed re-surveying flooded fields for fair taxation and building the pyramids; **papyrus/hieroglyphics** allowed governing a unified kingdom).
+- **Q10 (Geography):** Vast deserts to the east and west acted as natural walls that kept out invaders, sparing Egypt the constant warfare of Mesopotamia and allowing 3,000 years of cultural continuity.
+- **Q11 (Divine Kingship):** Viewing the pharaoh as a living god gave him absolute authority over Egypt's government, religion, and army, while making him responsible for cosmic order (*Ma'at*), the annual flood, and the harvest.
+- **Q12 (Afterlife & Mummification):** Egyptians believed a person's eternal life force (**`ka`**) needed a preserved body to recognize and inhabit in the Other World after passing Anubis's Weighing of the Heart.
+
+### Part 3 Exemplar Response (8 pts — Peasant Farmer Persona)
+> *I am a peasant farmer living in a mud-brick village along the narrow Black Land of Upper Egypt. Every July, the predictable flooding of the Nile River spills over our banks and leaves behind a thick layer of fertile black silt, while the vast Sahara and Eastern deserts protect our kingdom from foreign invaders. Once the floodwaters recede in October, I dig irrigation channels to water my wheat and barley, guided by the priests' 365-day solar calendar and the royal scribes who use geometry and papyrus scrolls to re-measure my field boundaries for taxes. In our theocracy, I worship the pharaoh as a living god who causes the sun to rise and the Nile to flood. During the summer flood months when my fields are underwater, I travel north to Giza to haul massive limestone blocks for the pharaoh's Great Pyramid, receiving grain and housing from the state. Although my work at the base of the social pyramid is exhausting, I gladly serve because protecting the pharaoh's mummified body and eternal ka keeps our land in harmony with the gods, and I hope my own heart will weigh lighter than the feather of truth so I can enter the Other World.*
+:::

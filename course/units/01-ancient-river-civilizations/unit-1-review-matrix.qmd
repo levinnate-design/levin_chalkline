@@ -1,0 +1,114 @@
+---
+title: "Unit 1 Review — Comparison Matrix & Study Guide 单元复习矩阵与指南"
+type: worksheet
+description: "Collaborative 3-civilization comparison matrix (Mesopotamia, Egypt, Indus Valley), cause-and-effect argument paragraph, Factual/Conceptual/Debatable inquiry questions, and teacher lesson plan with answer key."
+order: 15
+audience: [teacher, student]
+doc-type: Worksheet
+name-box: true
+format:
+  html: default
+  typst: default
+---
+
+::: {.callout-note title="Unit Review Challenge: The Great River Valley Decision" icon=false}
+**Directions:** In your table groups, use your Reading Packets (Lesson 1 {{< vocab "Mesopotamia" zh=true >}}, Lesson 3 Egypt, Lesson 4 Indus Valley) to complete the comparison matrix below. Then, synthesize your findings to choose **ONE** river {{< vocab "civilization" zh=true >}} to live in and construct a group argument using cause-and-effect sentence stems.
+
+*(小组合作，利用第 1、3、4 课教材阅读材料完成下方三大河谷文明对比矩阵。随后综合全组结论，选择一个你们最想定居的古代河谷文明，并运用因果与反驳句式完成论证段落。)*
+:::
+
+---
+
+## Part 1 · Three-Civilization Comparison Matrix 三大河谷文明对比矩阵
+
+| Dimension / Category 维度 | Mesopotamia 美索不达米亚 (Tigris & Euphrates) | Ancient Egypt 古埃及 (Nile River) | Indus Valley 印度河流域 (Indus & Ganges) |
+|---|---|---|---|
+| **1. Geography & Environment 地理与环境**<br>*(Rivers, Flooding & Barriers)* | • **Rivers:**<br><br>• **Flooding:**<br><br>• **Barriers:**<br><br> | • **River:**<br><br>• **Flooding:**<br><br>• **Barriers:**<br><br> | • **Rivers:**<br><br>• **Climate:**<br><br>• **Barriers:**<br><br> |
+| **2. Belief Systems & Afterlife 信仰与来世**<br>*(Gods, Worldview & Tombs)* | • **Religion:**<br><br>• **View of Deities:**<br><br>• **Afterlife:**<br><br> | • **Religion:**<br><br>• **Afterlife:**<br><br>• **Tombs:**<br><br> | • **Religion:**<br><br>• **Society:**<br><br> |
+| **3. Inventions & Innovations 发明与创新**<br>*(Writing, Tech & Science)* | • **Writing:**<br><br>• **Innovations:**<br><br>• **Architecture:**<br><br> | • **Writing:**<br><br>• **Tech:**<br><br> | • **Writing:**<br><br>• **City Planning:**<br><br> |
+| **4. Social & Political Order 社会与政治秩序**<br>*(Government, Laws & Hierarchy)* | • **Government:**<br><br>• **Laws:**<br><br> | • **Government:**<br><br>• **Social Structure:**<br><br> | • **Government:**<br><br>• **Decline:**<br><br> |
+
+---
+
+## Part 2 · Group Decision & Justification Argument 小组抉择与论证
+
+**Which river valley civilization did your table group choose to live in? Check one (勾选你们小组选择定居的文明):**
+
+- [ ] **Mesopotamia** (Tigris & Euphrates)
+- [ ] **Ancient Egypt** (Nile River)
+- [ ] **Indus Valley** (Harappan Cities)
+
+### Cause & Effect Sentence Stem Bank 因果与反驳句式库 *(Must use at least 2 stems 至少使用 2 个句式)*
+
+- **Grade 6/7 Stems:**
+  - *Because* `[Geographic Feature/Challenge]`, *the society* `[Effect/Solution]`...
+  - *Due to* `[Environmental Condition]`, `[Historical Outcome]` *gradually occurred over time...*
+  - `[Environmental Factor]` *was a significant factor; as a result,* `[Civilization Effect]`...
+  - `[Challenge]` *created a need for* `[Innovation]`; *consequently,* `[Action taken]`...
+- **Grade 8 Stems:**
+  - *Stemming from* `[Geographic Advantage/Disadvantage]`, *the community experienced* `[Systemic Effect]`...
+  - `[Environmental/Political Factor]` *fundamentally altered* `[Social System]`, *thus allowing for* `[Outcome]`...
+- **Counter-Argument Stems (Required 必选反驳句式):**
+  - *While* `[Other Civilization]` *offered* `[Positive Feature]`, *we chose* `[Our Civilization]` *because* `[Key Reason]`...
+  - *Unlike* `[Other Civilization]` *which suffered from* `[Specific Problem]`, *our choice provided* `[Specific Benefit]`...
+
+### Write your group's synthesized argument paragraph below (5–7 sentences):
+
+{{< lines 7 >}}
+
+---
+
+## Part 3 · Student Self-Check & Peer Verification Checklist 自评与互评清单
+
+| Check | Worksheet Requirement / Quality Standard | Verified By |
+|---|---|---|
+| [ ] | **Comparison Matrix Complete:** All 4 dimensions filled for Mesopotamia, Egypt, and Indus Valley using Reading Packet evidence. | Self / Partner |
+| [ ] | **Civilization Selected:** Group clearly checked one river civilization to settle in. | Table Scribe |
+| [ ] | **Historical Evidence Included:** Argument cites at least 2 specific historical features (e.g., {{< vocab "silt" zh=true >}}, {{< vocab "grid system" zh=true >}}, {{< vocab "mummification" zh=true >}}, {{< vocab "Code of Hammurabi" zh=true >}}). | Research Lead |
+| [ ] | **Cause & Effect Stems Used:** Argument includes at least 2 stems from the bank (e.g., *"Due to..."*, *"Consequently..."*, *"Stemming from..."*). | Facilitator |
+| [ ] | **Counter-Argument Included:** Argument includes a 1–2 sentence counter-argument evaluating another civilization's drawbacks. | Peer Verifier |
+
+---
+
+## Part 4 · Unit 1 Inquiry Review Guide 单元探究复习指南
+
+Use these Factual, Conceptual, and Debatable questions (along with the [Unit 1 Blooket Review Set](https://play.blooket.com/play?hwId=6abc52aaf68ee1157294bb9b)) to review all of Unit 1:
+
+| Question Type | English Questions | 中文问题 |
+|---|---|---|
+| **Factual 事实性** | 1. What three river valleys gave rise to the world's earliest civilizations?<br>2. What were three environmental challenges that Sumerians faced in southern Mesopotamia?<br>3. Identify one new technology or invention developed by each of the three civilizations.<br>4. What does the {{< vocab "Code of Hammurabi" zh=true >}} tell us about Babylonian society? | 1. 世界上最早的文明起源于哪三条河谷？<br>2. 苏美尔人在美索不达米亚南部面临哪三个环境挑战？<br>3. 三大文明分别发展出哪些新技术或新发明？（各举一例）<br>4. 《汉谟拉比法典》能告诉我们关于巴比伦社会的什么信息？ |
+| **Conceptual 概念性** | 5. How does the geography of a river valley shape the civilization that develops there?<br>6. Why did the earliest civilizations all arise in river valleys rather than in other environments?<br>7. How does a society's belief system ({{< vocab "polytheism" zh=true >}}, {{< vocab "theocracy" zh=true >}}, ancestor worship) reflect its environment and political structure?<br>8. What does "{{< vocab "civilization" zh=true >}}" actually mean — and how do we know one when we see it? | 5. 河谷的地理环境如何塑造了在那里诞生的文明？<br>6. 为何最早的文明都出现在河谷，而非其他地方？<br>7. 一个社会的信仰体系（多神信仰、神权政治、祖先崇拜）如何反映其环境与政治结构？<br>8. “文明”究竟指什么？我们如何辨认它？ |
+| **Debatable 辩论性** | 9. Was Hammurabi's Code a fair system of justice?<br>10. Did geography *determine* the rise of civilizations, or only *enable* it?<br>11. Which of the three civilizations made the most lasting contribution to human history? Why? | 9. 《汉谟拉比法典》是一个公正的司法体系吗？<br>10. 地理环境是“决定”了文明的兴起，还是仅“促成”了它的兴起？<br>11. 三大文明中，哪一个对人类历史做出了最持久的影响？为什么？ |
+
+::: {.content-visible when-profile="teacher"}
+---
+
+## Teacher Answer Key & Lesson Plan 教师答案与教案
+
+### Completed 3-Civilization Comparison Matrix (Answer Key)
+
+| Dimension / Category | Mesopotamia (Tigris & Euphrates) | Ancient Egypt (Nile River) | Indus Valley (Indus & Ganges) |
+|---|---|---|---|
+| **1. Geography & Environment**<br>*(Rivers, Flooding & Barriers)* | • **Rivers:** Tigris & Euphrates<br>• **Flooding:** Unpredictable & violent; left fertile {{< vocab "silt" >}}<br>• **Barriers:** NO natural barriers (open plain; vulnerable to invasion) | • **River:** Nile (flows north to {{< vocab "delta" >}})<br>• **Flooding:** Predictable (July–Oct); rich black silt<br>• **Barriers:** Vast deserts & seas on both sides (highly secure) | • **Rivers:** Indus & Ganges ({{< vocab "Indo-Gangetic Plain" >}})<br>• **Climate:** Seasonal {{< vocab "monsoon" text="monsoons" >}} (wet summer / dry winter)<br>• **Barriers:** Himalayas, Hindu Kush & Karakorum mountains |
+| **2. Belief Systems & Afterlife**<br>*(Gods, Worldview & Tombs)* | • **Religion:** {{< vocab "polytheism" text="Polytheistic" >}} (2,000+ gods; Enlil = storm god)<br>• **View of Deities:** Powerful, unpredictable & angry<br>• **Afterlife:** Gloomy "land of no return" (souls eat dust) | • **Religion:** Polytheistic (Re, Osiris, Isis; {{< vocab "pharaoh" >}} = living god)<br>• **Afterlife:** Beautiful Other World ({{< vocab "ka" >}} preserved via {{< vocab "mummification" >}})<br>• **Tombs:** Monumental {{< vocab "pyramid" text="Pyramids" >}} | • **Religion:** Polytheistic links to early Hinduism (Shiva, mother goddess, bull worship)<br>• **Society:** Relatively peaceful (few weapons; clay/wooden toys found) |
+| **3. Inventions & Innovations**<br>*(Writing, Tech & Science)* | • **Writing:** {{< vocab "cuneiform" text="Cuneiform" >}} on clay tablets<br>• **Innovations:** Wheel, sail, plow, bronze, base-60 math (60 sec/min, 360° circle)<br>• **Architecture:** {{< vocab "ziggurat" text="Ziggurats" >}}, arches, mud-brick walls | • **Writing:** {{< vocab "hieroglyphics" text="Hieroglyphics" >}} on {{< vocab "papyrus" >}} ({{< vocab "Rosetta Stone" >}} key)<br>• **Tech:** 365-day solar calendar, geometry, advanced medicine (pulse, splints, surgery) | • **Writing:** Undeciphered script (~400 symbols on {{< vocab "Harappan seals" text="seals" >}})<br>• **City Planning:** Precise {{< vocab "grid system" >}}, fortified {{< vocab "citadel" >}}, standard oven-baked bricks, private bathrooms & brick sewers |
+| **4. Social & Political Order**<br>*(Government, Laws & Hierarchy)* | • **Government:** Independent {{< vocab "city-state" text="city-states" >}} → {{< vocab "dynasty" text="Dynasties" >}} → {{< vocab "empire" text="Empires" >}} (Sargon, Hammurabi)<br>• **Laws:** {{< vocab "Code of Hammurabi" >}} (282 laws; stratified justice) | • **Government:** Unified Kingdom under Pharaoh ({{< vocab "theocracy" >}}; 31 dynasties; capital Memphis)<br>• **Social Structure:** Social pyramid; social mobility via literacy; women held property/divorce rights | • **Government:** Strong central government (indicated by uniform bricks, streets, and drains across cities)<br>• **Decline:** Tectonic shifts (earthquakes/floods/river shift), soil exhaustion, Aryan migration |
+
+### 50-Minute Review Lesson Flow (Mingwan School Lesson Plan)
+
+1. **Stage 1 · Hook & Framing: Where Would You Settle? (7 min):**
+   - *Hook (2 min):* Project the 2500 B.C. time-travel prompt.
+   - *Direct Framing (2 min):* Explain the collaborative comparison matrix and the "River Valley Immigrant Pitch" challenge.
+   - *Role Assignment (3 min):* Assign Scribe, Map Specialist, Researcher, and Presenter.
+2. **Stage 2 · Collaborative Practice: 3-Civilization Matrix (18 min):**
+   - *Group Matrix Work (15 min):* Table groups use their Reading Packets (Lessons 1, 3, and 4) to fill in all 4 dimensions of the matrix.
+   - *Teacher Circulation (3 min):* Verify that students distinguish between unpredictable Tigris/Euphrates floods and predictable Nile floods, and note Harappan grid planning vs. Mesopotamian winding streets.
+3. **Stage 3 · Decision & Synthesis: Group Choice & Argument (15 min):**
+   - *Group Decision (3 min):* Table groups vote on ONE river civilization to settle in.
+   - *Argument Construction (12 min):* Scribes draft a 5–7 sentence argument using at least 2 historical facts, 2 cause-and-effect stems, and a counter-argument addressing another civilization.
+4. **Stage 4 · Group Presentations: The Immigrant Pitch (7 min):**
+   - *Speedy Pitch Showcase (5 min):* 3 selected Spokespersons deliver a 60-second pitch defending their chosen civilization.
+   - *Peer Verification (2 min):* Classmates verify the pitch using the Part 3 checklist.
+5. **Stage 5 · Closure & Self-Check (3 min):**
+   - Students complete the self-check checklist and turn in their sheets.
+:::

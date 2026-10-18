@@ -1,0 +1,315 @@
+---
+title: "Ancient Egypt Learning Sheets (Periods 1–3) 古埃及学习单（第1–3课时）"
+type: worksheet
+description: "Combined Periods 1–3 guided notes, Nile map tasks, Great Pyramid & Herodotus source analysis, theocracy argument paragraph, and exit tickets."
+order: 8
+audience: [teacher, student]
+doc-type: Worksheet
+name-box: true
+format:
+  html: default
+  typst: default
+---
+
+```{python}
+import sys; sys.path.append("scripts")
+from vocab import load_unit, pick, word_bank
+terms = load_unit(1)
+```
+
+```{python}
+#| output: asis
+print(word_bank({
+    "Period 1 (Nile & Unification)": pick(terms, "cataract", "delta", "silt", "irrigation", "dynasty", "pharaoh", "theocracy"),
+    "Period 2 (Pyramids & Afterlife)": pick(terms, "ka", "mummification", "pyramid", "polytheism"),
+    "Period 3 (Writing & Society)": pick(terms, "hieroglyphics", "papyrus", "Rosetta Stone"),
+}))
+```
+
+---
+
+## Period 1 · The Gift of the Nile 第1节：尼罗河的礼物（地理与统一）
+
+**Big Question · 核心问题:** How did the Nile shape ancient Egypt — and why did Egypt unite so early? *(尼罗河如何塑造了古埃及？为什么埃及能早早统一？)*
+
+### Stage 1 · Warm-up 导入 (WU1–WU2 · MYP Criterion A)
+
+1. Why might people want to live near the Nile River? (1–2 sentences · 人们为什么想住在尼罗河附近？)
+
+::: {.answer-lines}
+- 
+- 
+:::
+
+2. The Nile flooded every July — {{< vocab "list" zh=true >}} **TWO ways** this helped Egyptian farmers. *(尼罗河每年7月泛滥——列出两种帮助埃及农民的方式。)*
+
+::: {.answer-lines}
+- 
+- 
+:::
+
+3. Look at the map of Ancient Egypt. Where do you think **most people** lived? Why? (2 sentences · 你觉得哪里人口最多？为什么？)
+
+::: {.answer-lines}
+- 
+- 
+:::
+
+### Stage 2 · Direct Instruction 讲授笔记 (边听边填)
+
+**A · Complete the Causal Chain 完成因果链 (1–2 words per blank):**
+
+$$\text{Nile Flooding 泛滥} \rightarrow \text{Silt + Irrigation 淤泥与灌溉} \rightarrow \underline{\hspace{3cm}} \rightarrow \text{Population Growth 人口增长} \rightarrow \underline{\hspace{3cm}}$$
+
+**B · In Your Own Words 用自己的话:** What is a **{{< vocab "theocracy" zh=true >}}**? *(Hint: `theo-` = god, `-cracy` = rule · 1 sentence)*
+
+::: {.answer-lines}
+- 
+:::
+
+**C · Strategic Capital 首都选址:** Why did **King Narmer** build his capital at **Memphis (孟菲斯)**, near the border of Upper and Lower Egypt? (1–2 sentences)
+
+::: {.answer-lines}
+- 
+- 
+:::
+
+### Stage 3 · Learning Activity 课堂活动 (FA1 Map & FA2 Web)
+
+1. **FA1 Map Labeling:** On your map of Ancient Egypt, label 6 features: **Nile River, Nile {{< vocab "delta" text="Delta" zh=true >}}, Upper Egypt, Lower Egypt, First {{< vocab "cataract" text="Cataract" zh=true >}}, Memphis, and Mediterranean Sea**.
+2. **Q1 (Movement 流向):** In which direction does the Nile flow, and how can you tell from the map? *(Hint: which way does the river fan out into a delta?)*
+
+::: {.answer-lines}
+- 
+- 
+:::
+
+3. **Q2 (Location 位置):** Where are **Upper Egypt** and **Lower Egypt**? Why is Upper Egypt called *"Upper"* even though it is drawn **below (south of)** Lower Egypt on the map?
+
+::: {.answer-lines}
+- 
+- 
+:::
+
+### Stage 4 · Period 1 Exit Ticket (ET1 · Answer from Memory 独立完成)
+
+1. Define these terms in one sentence each:
+   - **{{< vocab "delta" >}}:** _________________________________________________________________
+   - **{{< vocab "cataract" >}}:** ______________________________________________________________
+   - **{{< vocab "theocracy" >}}:** _____________________________________________________________
+2. {{< vocab "list" text="List" zh=true >}} **TWO ways** the Nile's regular flooding helped Egyptian farmers, and **ONE risk** when the flood was too high or too low:
+   ___________________________________________________________________
+   ___________________________________________________________________
+3. Who is credited with uniting Upper and Lower Egypt around 3000 B.C., and what symbol did he create?
+   ___________________________________________________________________
+
+---
+
+## Period 2 · Pyramids, Gods & the Afterlife 第2节：金字塔、众神与来世
+
+**Big Question · 核心问题:** Why did the Egyptians build {{< vocab "pyramid" text="pyramids" zh=true >}} and mummify their rulers? *(为什么古埃及人要建金字塔，并为法老做木乃伊？)*
+
+### Stage 1 · Warm-up 导入 (看图预测)
+
+1. The **Great Pyramid of Giza** is 481 feet tall and used over 2 million stone blocks. Predict: what kind of people and organization had to work together to build it? (2 sentences)
+
+::: {.answer-lines}
+- 
+- 
+:::
+
+2. A **{{< vocab "pharaoh" zh=true >}}** was called a living god on earth. If the king *is* a god, who do you obey — and who do you blame when the harvest fails?
+
+::: {.answer-lines}
+- 
+- 
+:::
+
+3. Predict: Why would a **tomb (陵墓)** be even more important than a **palace (宫殿)** to an Egyptian king?
+
+::: {.answer-lines}
+- 
+- 
+:::
+
+### Stage 2 · Direct Instruction 讲授笔记 (边听边填)
+
+**A · Complete the Belief Chain 完成信仰因果链:**
+
+$$\text{Pharaoh as God 法老即神} \rightarrow \text{Eternal } ka \text{ 永恒的“卡”} \rightarrow \text{Need Permanent Tomb 永久陵墓} \rightarrow \underline{\hspace{2.8cm}} \text{ \& } \underline{\hspace{2.8cm}}$$
+
+**B · In Your Own Words 用自己的话:** What is **{{< vocab "mummification" zh=true >}}**, and why was it done? (2 sentences)
+
+::: {.answer-lines}
+- 
+- 
+:::
+
+### Stage 3 · Learning Activity 课堂活动 (FA3, FA4, FA5 · MYP Criteria B & D)
+
+1. **A · (FA3 · Great Pyramid Source Analysis):** Egypt had not yet invented the wheel when the pyramids were built. How does that make the engineering achievement more impressive — or less? (2 sentences)
+
+::: {.answer-lines}
+- 
+- 
+:::
+
+2. **B · (FA4 · Tutankhamun's Death Mask):** Tutankhamun's **22-pound solid gold mask** was placed over his mummy. Why use **gold**? What does this tell us about **(a)** Egyptian views of the {{< vocab "pharaoh" >}} and **(b)** the wealth of the Egyptian state? (2–3 sentences)
+
+::: {.answer-lines}
+- 
+- 
+- 
+:::
+
+3. **C · (FA5 · Herodotus on Mummification — Sequence 1–7):** Number the mummification steps `1` to `7` in the exact order Herodotus describes them:
+   - `[   ]` Wash the corpse after 70 days. *(70天后清洗遗体。)*
+   - `[   ]` Pull out the brains through the nostrils with an iron hook. *(用铁钩从鼻孔取出脑髓。)*
+   - `[   ]` Wrap the whole body in waxen-cloth linen bandages. *(用蜡布亚麻绷带包裹全身。)*
+   - `[   ]` Steep (cover) the body in **natron** drying salt for 70 days. *(用泡碱浸泡覆盖 70 天。)*
+   - `[   ]` Make an incision in the side and remove the internal organs (bowels). *(在侧腹切口并取出内脏。)*
+   - `[   ]` Fill the belly with pure myrrh, cassia, and other perfumes. *(用没药、肉桂等香料填腹。)*
+   - `[   ]` Sew up the belly. *(缝合腹部。)*
+
+4. **D · (FA5 · Scientific Knowledge):** {{< vocab "list" text="List" zh=true >}} **TWO areas of scientific or technical knowledge** the mummification procedure required Egyptian embalmers to have:
+   ___________________________________________________________________
+
+### Stage 4 · Period 2 Exit Ticket: Weighing of the Heart (ET2 · MYP Criterion D)
+
+1. **Q1 (Making Inferences):** In the **Weighing of the Heart** ritual against the Feather of Truth (*Ma'at*), what kind of person would pass the test? {{< vocab "list" text="List" zh=true >}} at least **THREE qualities** the Egyptians valued.
+
+::: {.answer-lines}
+- 
+- 
+:::
+
+2. **Q2 (Comparing & Contrasting):** {{< vocab "Mesopotamia" >}}'s afterlife was a bleak *"land of no return,"* whereas Egypt's could be a beautiful Other World. What does this difference suggest about each civilization's environment, view of life, and view of the gods?
+
+::: {.answer-lines}
+- 
+- 
+:::
+
+3. **Q3 ({{< vocab "evaluate" text="Evaluating" zh=true >}}):** Filling royal tombs with gold and goods: was it **deep respect for human dignity**, or **a waste of resources**? Which view is more convincing, and why? (2 sentences)
+
+::: {.answer-lines}
+- 
+- 
+:::
+
+---
+
+## Period 3 · Writing, Science & the Rise and Fall of Power 第3节：文字、科学与权力的兴衰
+
+**Big Question · 核心问题:** What made Egypt's {{< vocab "civilization" zh=true >}} last 3,000 years, and how do we still read it today? *(是什么让埃及文明延续 3000 年？我们今天如何读懂它？)*
+
+### Stage 1 · Warm-up 导入 (Rosetta Stone Prediction)
+
+1. The **{{< vocab "Rosetta Stone" zh=true >}}** shows the same royal message in **three scripts** ({{< vocab "hieroglyphics" >}}, demotic, and ancient Greek). Why was the **Greek** version the key to reading the hieroglyphics? (2 sentences)
+
+::: {.answer-lines}
+- 
+- 
+:::
+
+2. Predict: A civilization lasts 3,000 years. What might make it finally fall or lose unity? (1–2 sentences)
+
+::: {.answer-lines}
+- 
+- 
+:::
+
+### Stage 2 · Direct Instruction 讲授笔记 (边听边填)
+
+**A · Complete the Writing Chain 完成文字破译链:**
+
+$$\text{Hieroglyphics 象形文字} \rightarrow \text{Papyrus 纸莎草纸} \rightarrow \underline{\hspace{3.5cm}} \text{ (1799)} \rightarrow \text{Champollion 商博良 (1822)}$$
+
+**B · Science & Medicine 科学与医学:**
+
+1. How did the **365-day solar calendar** help Egyptian farmers? (1–2 sentences)
+   ___________________________________________________________________
+2. {{< vocab "list" text="List" zh=true >}} **TWO medical procedures or skills** that Egyptian doctors used:
+   ___________________________________________________________________
+
+### Stage 3 · Learning Activity 课堂活动 (FA6, FA9, FA10)
+
+**A · (FA6 · MYP Criterion C Argument Paragraph):**
+Write a **5–7 sentence argument**: *"Was Egypt's {{< vocab "theocracy" >}} — {{< vocab "pharaoh" >}} as a living god — a fair system of government?"*
+- State a clear position (**Yes / No / It depends**);
+- Cite **two specific features** of Egyptian theocracy;
+- Acknowledge **one counter-argument**;
+- End with a conclusion sentence.
+
+::: {.answer-lines}
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+:::
+
+**B · (FA9 · Egyptian Social Pyramid & Women's Rights):**
+1. Fill in the **four levels** of the Egyptian social pyramid from top to bottom, with an example of who belonged to each level:
+   - **1. Top:** _______________________________________________________
+   - **2. Second Tier:** ________________________________________________
+   - **3. Third Tier:** _________________________________________________
+   - **4. Base:** ______________________________________________________
+2. Give **ONE specific legal right** Egyptian women held and {{< vocab "explain" zh=true >}} what it meant in daily life:
+   ___________________________________________________________________
+
+**C · (FA10 · MYP Criterion B — Compare Egypt & Mesopotamia):**
+
+| Dimension 比较维度 | Ancient Egypt 古埃及 | Mesopotamia 美索不达米亚 |
+|---|---|---|
+| **1. Flood Pattern (洪水规律)** |  |  |
+| **2. Geographic Barriers (地理屏障)** |  |  |
+| **3. Government & Afterlife (政体与来世观)** |  |  |
+
+**D · Big Takeaway 总结思考:** Why did Egypt last **3,000 years** as one recognizable culture while Mesopotamia kept changing empires? (2–3 sentences)
+
+::: {.answer-lines}
+- 
+- 
+- 
+:::
+
+### Stage 4 · Period 3 Exit Ticket (ET3 · Answer from Memory 独立完成)
+
+1. {{< vocab "list" text="List" zh=true >}} **TWO inventions or achievements** of ancient Egypt and {{< vocab "explain" zh=true >}} how each changed daily life:
+   ___________________________________________________________________
+   ___________________________________________________________________
+2. Why was the **Greek version** on the **{{< vocab "Rosetta Stone" >}}** the key that finally let scholars read **{{< vocab "hieroglyphics" >}}**?
+   ___________________________________________________________________
+3. What happened to Egyptian unity when the **Hyksos** invaded around 1640 B.C.?
+   ___________________________________________________________________
+
+::: {.content-visible when-profile="teacher"}
+---
+
+## Teacher Answer Key · 教师参考答案 (Periods 1–3)
+
+### Period 1 Key
+- **Stage 1 Warm-up:** (1) The Nile provided fresh water, food, transportation, and fertile soil in the middle of the Sahara Desert. (2) July floods watered the dry land and deposited a fresh layer of fertile black {{< vocab "silt" >}} every October. (3) Most people lived in the narrow green Nile River valley and the northern {{< vocab "delta" >}} because the surrounding Red Land was arid desert.
+- **Stage 2 Notes:** **A:** Nile flooding → Silt + irrigation → **Food {{< vocab "surplus" >}} (农业余粮)** → Population growth → **Unified Kingdom / Civilization (统一王国)**. **B:** A {{< vocab "theocracy" >}} is a government in which rule is based on religious authority and the ruler ({{< vocab "pharaoh" >}}) is worshipped as a living god. **C:** King Narmer built **Memphis** right on the border where Upper and Lower Egypt met so he could govern and unite both regions from a central location.
+- **Stage 3 (FA1):** **Q1 (Movement):** The Nile flows **north** from the East African highlands into the Mediterranean Sea (shown by the river branching out into the fan-shaped delta at the Mediterranean coast). **Q2 (Location):** Upper Egypt is in the south and Lower Egypt is in the north because "Upper" and "Lower" refer to **elevation (upstream vs. downstream)**, not compass direction.
+- **Stage 4 (ET1):** (1) **Delta:** A broad, marshy, triangular area of land formed by deposits of silt at the mouth of a river. **Cataract:** Churning rocky rapids in a river that block boats from passing. **Theocracy:** Government based on religious authority. (2) Helped by providing predictable water and rich black silt; risked destroying homes/granaries if too high or causing famine/starvation if too low. (3) **King Narmer** (c. 3000 B.C.), who created the red-and-white **Double Crown**.
+
+### Period 2 Key
+- **Stage 2 Notes:** **A:** Pharaoh as god → Eternal *ka* → Need permanent tomb → **{{< vocab "pyramid" text="Pyramids" >}} (金字塔)** & **{{< vocab "mummification" text="Mummification" >}} (木乃伊制作)**. **B:** Mummification is embalming and drying a dead body to prevent decay so the person's eternal spirit ({{< vocab "ka" >}}) could recognize and return to it in the afterlife.
+- **Stage 3 (FA3–FA5):**
+  - **FA3:** More impressive — moving and stacking over 2 million stone blocks weighing 2.5 to 15 tons each up to 481 feet using only ramps, ropes, copper tools, and human organization without wheels required extraordinary mathematical precision and state coordination.
+  - **FA4:** Gold never tarnishes or decays, symbolizing the eternal, divine nature of the pharaoh as a god; the 22-pound solid gold mask also proves the immense wealth and gold-mining tribute controlled by the Egyptian state.
+  - **FA5 Sequence:** `[ 6 ]` Wash the corpse; `[ 1 ]` Pull out brains through nostrils; `[ 7 ]` Wrap in waxen-cloth bandages; `[ 5 ]` Steep in natron for 70 days; `[ 2 ]` Make incision and remove bowels; `[ 3 ]` Fill belly with myrrh/perfumes; `[ 4 ]` Sew up the belly.
+  - **FA5 Knowledge Areas:** Human **anatomy/medicine** (removing organs, preserving the heart), **chemistry** (using natron salt, resins, and oils to dehydrate tissue), and **religious ritual**.
+- **Stage 4 (ET2):** (1) Qualities valued: honesty/truthfulness (*Ma'at*), justice, kindness, obedience to the gods and pharaoh, and moral purity (a heart "lighter than a feather"). (2) Predictable, life-giving Nile floods gave Egyptians an optimistic view of benevolent gods and an eternal Other World, whereas violent, unpredictable Tigris-Euphrates floods led Mesopotamians to expect angry gods and a gloomy *"land of no return."*
+
+### Period 3 Key
+- **Stage 2 Notes:** **A:** Hieroglyphics → Papyrus → **{{< vocab "Rosetta Stone" >}} (罗塞塔石碑)** → Champollion 1822. **B1:** Tracked the star Sirius to calculate a 365-day year (12 months of 30 days + 5 days), allowing farmers to predict the annual July flood and plant on time. **B2:** Checking heart rate by feeling the pulse, setting broken bones with splints, treating wounds and fevers, and performing surgery.
+- **Stage 3 (FA6, FA9, FA10):**
+  - **FA6 Sample Argument:** *Egypt's theocracy was an effective but unequal system of government. Because Egyptians believed the pharaoh was a living god who caused the sun to rise and the Nile to flood, the pharaoh held absolute power and commanded millions of peasant laborers to build giant pyramids for his eternal ka. Ordinary farmers paid heavy grain taxes and had no vote in choosing their ruler. However, others might argue that theocracy brought 3,000 years of peace, order (Ma'at), royal grain storage against famine, and strong legal rights for women. Overall, while Egyptian theocracy created remarkable stability, it concentrated immense wealth and power in the hands of one god-king.*
+  - **FA9 Social Pyramid:** (1) **Top:** King (pharaoh), queen & royal family; (2) **Second:** Upper class (wealthy landowners, priests, government officials, army commanders); (3) **Third:** Middle class (merchants, artisans); (4) **Base:** Lower class (peasant farmers, laborers, and enslaved people). **Women's Right:** Could own/trade property, propose marriage, or seek divorce and keep one-third of the couple's property.
+  - **FA10 Big Takeaway:** Egypt lasted 3,000 years as a unified culture because the Sahara and Eastern deserts and the Nile cataracts shielded it from constant invasion, and the Nile's predictable flooding fostered early unification and trust in pharaonic rule. In contrast, Mesopotamia's flat open plains had no natural barriers and suffered violent floods, leading to constant warfare and shifting empires.
+:::

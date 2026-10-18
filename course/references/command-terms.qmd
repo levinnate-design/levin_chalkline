@@ -1,0 +1,92 @@
+---
+title: "Command Terms 指令词"
+type: vocab
+description: "All 20 IB MYP Individuals & Societies command terms with student-friendly meanings, official IB definitions, and 中文 support."
+order: 1
+audience: [teacher, student, parent]
+doc-type: Reference
+format:
+  html: default
+  typst: default
+---
+
+Every question, worksheet, and summative task in Social Studies starts with a **Command Term** (指令词). The command term tells you **how** to answer—whether you only need to name a quick fact ({{< vocab "identify" zh=true >}} / {{< vocab "list" zh=true >}}) or build a deeper explanation or argument ({{< vocab "explain" zh=true >}} / {{< vocab "analyse" zh=true >}} / {{< vocab "evaluate" zh=true >}}).
+
+::: {.content-visible when-format="html"}
+::: {.callout-tip title="Interactive Vocab Cards & Audio" icon=false}
+Hover or tap any dotted Command Term below to hear it read aloud in English and 中文, or open the [**Command Terms topic in the Vocab App**](../../vocab/app/index.html#CMD) to practice with visual cards.
+:::
+:::
+
+## Criterion A: Knowing and Understanding (标准 A：知识与理解)
+
+These command terms ask you to recall, select, and show what you know using clear facts and examples.
+
+| Command Term | Student-Friendly Meaning | Official IB MYP Definition |
+|---|---|---|
+| {{< vocab "demonstrate" text="Demonstrate" zh=true >}} | Prove or make clear using reasoning, evidence, or examples. | Prove or make clear by reasoning or evidence, illustrating with examples or practical application. |
+| {{< vocab "describe" text="Describe" zh=true >}} | Give a detailed picture or account of a situation, event, or process. | Give a detailed account or picture of a situation, event, pattern or process. |
+| {{< vocab "exemplify" text="Exemplify" zh=true >}} | Show or clarify an idea using a specific example. | Represent with an example. |
+| {{< vocab "explain" text="Explain" zh=true >}} | Give a detailed account including the reasons or causes (*why* and *how*). | Give a detailed account including reasons or causes. |
+| {{< vocab "identify" text="Identify" zh=true >}} | Pick out and briefly state a key fact, answer, or feature. | Provide an answer from a number of possibilities. Recognize and state briefly a distinguishing fact or feature. |
+| {{< vocab "list" text="List" zh=true >}} | Write a short sequence of items or brief answers without long explanation. | Provide a sequence of items or brief answers. |
+| {{< vocab "recognize" text="Recognize" zh=true >}} | Spot and identify something by its patterns or features. | Identify through patterns or features. |
+| {{< vocab "use" text="Use" zh=true >}} | Apply your knowledge or rules to put an idea into practice. | Apply knowledge or rules to put theory into practice. |
+: {tbl-colwidths="[24,36,40]"}
+
+## Criterion B: Investigating (标准 B：调查研究)
+
+These command terms guide how you plan an inquiry, ask research questions, gather evidence, and look back on your process.
+
+| Command Term | Student-Friendly Meaning | Official IB MYP Definition |
+|---|---|---|
+| {{< vocab "explore" text="Explore" zh=true >}} | Carry out a step-by-step process of discovery. | Undertake a systematic process of discovery. |
+| {{< vocab "formulate" text="Formulate" zh=true >}} | State a clear, structured concept, research question, or argument. | Express precisely and systematically the relevant concept(s) or argument(s). |
+| {{< vocab "investigate" text="Investigate" zh=true >}} | Study or examine carefully to find facts and reach new conclusions. | Observe, study or make a detailed and systematic examination, in order to establish facts and reach new conclusions. |
+| {{< vocab "justify" text="Justify" zh=true >}} | Give strong reasons or evidence to support your answer or conclusion. | Give valid reasons or evidence to support an answer or conclusion. |
+| {{< vocab "reflect" text="Reflect" zh=true >}} | Think deeply and carefully about your learning, process, or results. | Think about deeply; consider. |
+: {tbl-colwidths="[24,36,40]"}
+
+{{< pagebreak >}}
+
+## Criterion C: Communicating (标准 C：交流表达)
+
+This command term reminds you to show academic honesty by crediting every source you use.
+
+| Command Term | Student-Friendly Meaning | Official IB MYP Definition |
+|---|---|---|
+| {{< vocab "document" text="Document" zh=true >}} | Credit your information sources in your text and in a Works Cited list. | To credit sources of information used by referencing (or citing) following a recognized referencing system. References should be included in the text and also at the end of the piece of work in a reference list or bibliography. |
+: {tbl-colwidths="[24,36,40]"}
+
+## Criterion D: Thinking Critically (标准 D：批判性思考)
+
+These command terms ask you to break down complex ideas, weigh different sides, judge sources, and combine evidence into a deeper conclusion.
+
+| Command Term | Student-Friendly Meaning | Official IB MYP Definition |
+|---|---|---|
+| {{< vocab "analyse" text="Analyse" zh=true >}} | Break down into key parts and show how they connect to reach a conclusion. | Break down in order to bring out the essential elements or structure. To identify parts and relationships, and to interpret information to reach conclusions. |
+| {{< vocab "discuss" text="Discuss" zh=true >}} | Give a balanced review of different arguments supported by evidence. | Offer a considered and balanced review that includes a range of arguments, factors or hypotheses. Opinions or conclusions should be presented clearly and supported by appropriate evidence. |
+| {{< vocab "evaluate" text="Evaluate" zh=true >}} | Weigh strengths and limitations to make a reasoned judgment. | Assess the implications and limitations; make judgments about the ideas, works, solutions or methods in relation to selected criteria. |
+| {{< vocab "interpret" text="Interpret" zh=true >}} | Use your knowledge to spot trends and draw conclusions from information. | Use knowledge and understanding to recognize trends and draw conclusions from given information. |
+| {{< vocab "summarize" text="Summarize" zh=true >}} | State the main theme or key points briefly in your own words. | Abstract a general theme or major point(s). |
+| {{< vocab "synthesize" text="Synthesize" zh=true >}} | Combine different ideas or sources to create a new understanding. | Combine different ideas in order to create new understanding. |
+: {tbl-colwidths="[24,36,40]"}
+
+## Quick Check: Common Confusions (易混指令词对比)
+
+- **{{< vocab "identify" text="Identify" >}} / {{< vocab "list" text="List" >}} vs. {{< vocab "describe" text="Describe" >}}:** *Identify* or *List* only needs a brief name or item; *Describe* needs a detailed picture of what it looks like or how it works.
+- **{{< vocab "describe" text="Describe" >}} vs. {{< vocab "explain" text="Explain" >}}:** *Describe* tells **what** happened; *Explain* tells **why** or **how** it happened (causes and reasons).
+- **{{< vocab "analyse" text="Analyse" >}} vs. {{< vocab "evaluate" text="Evaluate" >}}:** *Analyse* breaks an issue into parts and shows how they connect; *Evaluate* weighs strengths and limitations to make a final judgment.
+
+::: {.content-visible when-format="html"}
+## Official IB MYP Reference
+
+- [📄 Official MYP Command Terms for Individuals and Societies (PDF)](curriculum-building/MYP_Individuals_and_Societies_CommandTerms.pdf)
+:::
+
+::: {.content-visible when-profile="teacher"}
+::: {.callout-note title="Teacher Reference: MYP Curriculum Building Files"}
+- [📄 MYP Individuals and Societies Guide (2014 PDF)](curriculum-building/MYP_Individuals_and_Societies_Guide_20141.pdf)
+- [📄 MYP Command Terms Appendix (PDF)](curriculum-building/MYP_Individuals_and_Societies_CommandTerms.pdf)
+:::
+:::
