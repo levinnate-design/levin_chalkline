@@ -36,7 +36,7 @@ Draw the three branches and add arrows showing how each one **checks** the other
 | **2. {{< vocab "senate" text="Senate" zh=true >}} (~300)** 元老院 | {{< vocab "patrician" text="Patrician" zh=true >}} elders, **for life** | Treasury and foreign treaties | Controls the money the consuls need |
 | **3. {{< vocab "tribune" text="Tribunes" zh=true >}}** 保民官 | Elected by {{< vocab "plebeian" text="plebeians" zh=true >}} | Forum veto over magistrates | Can cancel a patrician official's decision |
 
-{{< drawing-box label="Draw the triangle: Consuls ⟷ Senate ⟷ Tribunes, with arrows both ways" height="4.2in" >}}
+{{< drawing-box label="Draw the triangle: Consuls ↔ Senate ↔ Tribunes, with arrows both ways" height="4.2in" >}}
 
 **Bilingual anchor 双语锚点:** *{{< vocab "veto" zh=true >}}* = Latin for **"I forbid!"**（拉丁语原意：“我禁止！”）
 

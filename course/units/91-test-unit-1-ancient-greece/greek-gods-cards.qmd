@@ -15,36 +15,36 @@ The Greeks believed their most important gods lived on Mount Olympus. Each {{< v
 :::: {layout-ncol=2}
 ::: {.callout-note title="Zeus 宙斯" icon=false}
 **King of the gods.** In charge of the sky and thunder.\
-**Symbol:** a thunderbolt ⚡
+**Symbol:** a thunderbolt
 :::
 
 ::: {.callout-note title="Hera 赫拉" icon=false}
 **Queen of the gods**, Zeus's wife. Goddess of marriage and family.\
-**Symbol:** a peacock 🦚
+**Symbol:** a peacock
 :::
 ::::
 
 :::: {layout-ncol=2}
 ::: {.callout-note title="Poseidon 波塞冬" icon=false}
 **God of the sea**, storms and earthquakes. Zeus's brother.\
-**Symbol:** a trident (three-pointed spear) 🔱
+**Symbol:** a trident (three-pointed spear)
 :::
 
 ::: {.callout-note title="Athena 雅典娜" icon=false}
 **Goddess of wisdom** and protector of Athens. The Parthenon was her {{< vocab "temple" zh=true >}}.\
-**Symbol:** an owl 🦉
+**Symbol:** an owl
 :::
 ::::
 
 :::: {layout-ncol=2}
 ::: {.callout-note title="Apollo 阿波罗" icon=false}
 **God of music**, poetry, light and healing.\
-**Symbol:** a lyre (small harp) 🎵
+**Symbol:** a lyre (small harp)
 :::
 
 ::: {.callout-note title="Artemis 阿耳忒弥斯" icon=false}
 **Goddess of hunting**, the wild and the moon. Apollo's twin sister.\
-**Symbol:** a bow and arrow 🏹
+**Symbol:** a bow and arrow
 :::
 ::::
 

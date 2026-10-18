@@ -54,7 +54,7 @@ Step into the shoes of an ancient Egyptian scribe! Design your own set of symbol
 
 | Symbol (符号) | Meaning (代表含义) | Symbol (符号) | Meaning (代表含义) |
 |---|---|---|---|
-| *(Example)* ☀️ | Sun / Light (太阳/光明) | *(Example)* ✒️ | Write / Scribe (书写/抄写员) |
+| *(Example)* a sun shape | Sun / Light (太阳/光明) | *(Example)* a pen shape | Write / Scribe (书写/抄写员) |
 | **1.** | | **9.** | |
 | **2.** | | **10.** | |
 | **3.** | | **11.** | |

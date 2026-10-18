@@ -78,7 +78,7 @@ Everything in this sample was made this way. Open any slide deck or worksheet fi
 :::
 ::: {.column width="54%"}
 ::: {style="font-size: 0.82em"}
-- ✏️ **Edit it like a document.** Change a word, save, and the slide updates.
+- **Edit it like a document.** Change a word, save, and the slide updates.
 - 💬 **Or ask an AI to edit it.** *"Add a bullet about the navy."* Plain text is easy for AI to change correctly.
 - 🎨 **It can't look messy.** Fonts, colors and layout come from the school style, on every slide.
 - 🔁 **Write once.** The same words become the slides, the web page and the PDF.
@@ -244,7 +244,7 @@ Each one is a working example in this course. Click to jump there.
 :::
 ::: {.column width="50%"}
 - 🗳️ **Polls:** [tap-to-vote on the board](../91-test-unit-1-ancient-greece/city-states-slides.html#/exit-ticket)
-- ⏱️ **Timers:** [think, pair, share](../91-test-unit-1-ancient-greece/city-states-slides.html#/think-pair-share)
+- **Timers:** [think, pair, share](../91-test-unit-1-ancient-greece/city-states-slides.html#/think-pair-share)
 - 🔊 **Vocab pop-ups:** [with 中文 and read-aloud](../91-test-unit-1-ancient-greece/city-states-slides.html#/mountains-and-sea)
 - 🏛️ **Pictures and backdrops:** [a full-screen title](../92-test-unit-2-ancient-rome/roman-engineering-slides.html#/title-slide), [photos with captions](../92-test-unit-2-ancient-rome/roman-engineering-slides.html#/concrete-and-the-colosseum)
 - 🗒️ **Speaker notes:** press **S** on any slide
