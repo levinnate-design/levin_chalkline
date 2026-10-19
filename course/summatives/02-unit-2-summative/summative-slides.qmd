@@ -67,7 +67,7 @@ Make sure students check off their chosen pathway (Standard 4-paragraph or Advan
 |---|---|---|
 | **W1 · Lesson 1** | Deconstruct prompt, {{< vocab "formulate" >}} RQ & Thesis, {{< vocab "investigate" >}} book/text evidence | Crit B Check 1 |
 | **W1 · Lesson 2** | Complete Source {{< vocab "evaluate" text="Evaluation" >}}; draft Intro + Body 1 & Body 2 | Crit B Check 2 |
-| **W1 · Lesson 3** | Finalize Crit B Checklist; draft Body 3 (Advanced) + Conclusion ({{< vocab "synthesize" >}}) | **Crit B Finalized** & 1st Draft |
+| **W1 · Lesson 3** | Finalize Crit B Checklist; draft Step 2.4 (Advanced) + Step 2.5 Conclusion | **Crit B Finalized** & 1st Draft |
 | **W2 · Lesson 4** | Peer Audit (Track A) or 1st Draft Catch-Up Buffer (Track B) | Peer Audit & Action Plan |
 | **W2 · Lesson 5** | Write 2nd Draft revisions & {{< vocab "document" >}} Works Cited list | Polished 2nd Draft |
 | **W2 · Lesson 6** | Type final English essay & submit booklet | **Final Essay Submitted** |
@@ -78,7 +78,7 @@ Make sure students check off their chosen pathway (Standard 4-paragraph or Advan
 
 **第1周 · 第1课：审题拆解、中心论点与史料收集**
 
-- Booklet Section 1 (Steps 1.1 – 1.4)
+- Booklet Step 1 (Steps 1.1 – 1.4)
 - Criterion B: Investigating (Strands i–iii)
 
 ::: notes
@@ -178,7 +178,7 @@ Before class ends today:
 
 1. **{{< vocab "reflect" text="Reflect" >}} on Claim-Evidence Alignment (Step 1.4):** Does the evidence you found match your initial thesis? Revise your thesis if needed.
 2. **Start Criterion B Checklist:** Tick your Lesson 1 progress on the 6 criteria.
-3. **Sign Progress Tracker (Page 1):** Mark your Week 1 · L1 status (`Completed` / `In Progress` / `Needs Help`).
+3. **Fill Progress Tracker & Reflection:** Mark your Week 1 · L1 status and write your reflection.
 
 ---
 
@@ -187,7 +187,7 @@ Before class ends today:
 **第1周 · 第2课：完成标准B自评 & 撰写引言与主体段 1、2**
 
 - Finalize Criterion B Source Evaluation (Value & Limitation)
-- Booklet Section 2: Introduction + Body Paragraph 1 + Body Paragraph 2
+- Booklet Step 2: Steps 2.1 – 2.3 (Intro + Legal & Slavery Body ¶)
 
 ::: notes
 Lesson 2 (50 min):
@@ -245,15 +245,15 @@ What is one limitation of this source?
 :::
 ::::
 
-## Lesson 2 · Drafting Intro, Body 1 & Body 2 第一稿写作
+## Lesson 2 · Drafting Steps 2.1 – 2.3 第一稿写作
 
 :::: {.columns}
 ::: {.column width="62%"}
-Open **Section 2** of your booklet and draft by hand:
+Open **Step 2** of your booklet and draft by hand:
 
-1. **Paragraph 1 (Intro):** Context + citizen rights vs. slavery + **Thesis**.
-2. **Paragraph 2 (Body 1 — Governance):** How the {{< vocab "assembly" >}}, {{< vocab "senate" >}} / {{< vocab "consul" text="consuls" >}}, or Twelve Tables protected citizens.
-3. **Paragraph 3 (Body 2 — Slavery):** Contrast transition (*"However…"*) + cited forced labor evidence + **citizen vs. enslaved perspective**.
+1. **Step 2.1 Intro:** Context + citizen rights vs. slavery + **Thesis**.
+2. **Step 2.2 Legal Body ¶:** How the {{< vocab "assembly" >}}, {{< vocab "senate" >}} / {{< vocab "consul" text="consuls" >}}, or Twelve Tables protected citizens.
+3. **Step 2.3 Slavery Body ¶:** Contrast transition (*"However…"*) + cited forced labor evidence + **citizen vs. enslaved perspective**.
 :::
 ::: {.column width="38%"}
 {{< timer 30 >}}
@@ -267,19 +267,19 @@ Open **Section 2** of your booklet and draft by hand:
 **第1周 · 第3课：标准B最终确认、反方观点段与结论段**
 
 - **Final Deadline:** Criterion B Self-Assessment Checklist complete!
-- Draft Body Paragraph 3 (Advanced Path) & Conclusion (All Students)
+- Draft **Step 2.4** Counter-Claim (Advanced Path) & **Step 2.5** Conclusion (All Students)
 
 ::: notes
 Lesson 3 (50 min):
-- Verify every student's Criterion B section is 100% complete for Assessment 1.
-- Differentiated instruction: Advanced Path writes Counter-Claim & Rebuttal; Standard Path deepens perspective analysis in Body 1 & 2, then all students write Conclusion.
+- Verify every student's Criterion B section (Step 1.4) is 100% complete for Assessment 1.
+- Differentiated instruction: Advanced Path writes Step 2.4 Counter-Claim & Rebuttal; Standard Path deepens perspective analysis in Steps 2.2 & 2.3, then all students write Step 2.5 Conclusion.
 :::
 
-## Lesson 3 · Two Pathways 进阶反方段与标准深化
+## Lesson 3 · Two Pathways: Step 2.4 进阶反方段与标准深化
 
 :::: {.columns}
 ::: {.column width="50%"}
-::: {.callout-tip title="Advanced Path 进阶路径 (Body 3)" icon=false}
+::: {.callout-tip title="Step 2.4 · Advanced Path 进阶路径" icon=false}
 **Counter-Claim & Rebuttal 反方观点与批驳**
 
 1. **{{< vocab "formulate" text="Formulate" >}} Counter-Claim:** *"Some historians argue that judged by ancient standards, [democracy / law] was still revolutionary because…"*
@@ -287,16 +287,16 @@ Lesson 3 (50 min):
 :::
 :::
 ::: {.column width="50%"}
-::: {.callout-note title="Standard Path 标准路径 (Deepen Body 1 & 2)" icon=false}
+::: {.callout-note title="Standard Path 标准路径 (Deepen Steps 2.2 & 2.3)" icon=false}
 **Deepen Perspective & Citations 深化分析**
 
-1. Check that Body 1 and Body 2 both {{< vocab "document" text="cite" >}} **specific page numbers** from library books and class texts.
+1. Check that Steps 2.2 and 2.3 both {{< vocab "document" text="cite" >}} **specific page numbers** from library books and class texts.
 2. Explicitly {{< vocab "analyse" text="analyze" >}} and compare the lived experience of a free male {{< vocab "citizen" >}} vs. an enslaved laborer or helot.
 :::
 :::
 ::::
 
-## Lesson 3 · Final Paragraph: The Conclusion 结论段
+## Lesson 3 · Step 2.5: The Conclusion 结论段
 
 :::: {.columns}
 ::: {.column width="62%"}
@@ -317,7 +317,7 @@ Your conclusion must {{< vocab "synthesize" >}} your essay in **three steps**:
 
 **第2周 · 第4课：同伴互评（通道A）与初稿缓冲完成（通道B）**
 
-- Booklet Section 3: Criteria C & D Peer Audit Protocol
+- Booklet **Step 3**: Criteria C & D Peer Audit Protocol
 - Actionable Revision Plan for Lesson 5
 
 ::: notes
@@ -330,7 +330,7 @@ Lesson 4 (50 min):
 :::: {.columns}
 ::: {.column width="62%"}
 - **Track A (Ready for Peer Audit 已完成初稿):**
-  1. Swap booklets and {{< vocab "evaluate" >}} the **6 Criteria C & D Checkpoints** in Section 3 (`Strong` / `Developing` / `Missing`).
+  1. Swap booklets and {{< vocab "evaluate" >}} the **6 Criteria C & D Checkpoints** in Step 3 (`Strong` / `Developing` / `Missing`).
   2. Write **2 Glows (亮点)** and **2 Grows (改进点)**.
 - **Track B (Drafting Buffer 仍在完成初稿):**
   1. Finish remaining 1st Draft paragraphs (first 25 min), then complete a rapid audit & **Author's Revision Plan**.
@@ -345,9 +345,9 @@ Lesson 4 (50 min):
 | Checkpoint 核查点 | What to Look For 互评检查重点 |
 |---|---|
 | **1. Thesis Clarity (Crit D)** | Does the Intro end with a clear *"to what extent"* claim linking governance and slavery? |
-| **2. Governance Evidence (Crit B/D)** | Does Body 1 {{< vocab "document" text="cite" >}} specific laws/facts from library books or class texts? |
-| **3. Slavery & Perspectives (Crit D)** | Does Body 2 {{< vocab "analyse" text="analyze" >}} and contrast the perspective of a free citizen vs. an enslaved worker/helot? |
-| **4. Counter-Claim (Adv · Crit D)** | *(If Advanced Path)* Does Body 3 state a fair counter-argument and {{< vocab "justify" >}} its rebuttal with evidence? |
+| **2. Step 2.2 Governance Evidence (Crit B/D)** | Does the Legal Body ¶ {{< vocab "document" text="cite" >}} specific laws/facts from library books or class texts? |
+| **3. Step 2.3 Slavery & Perspectives (Crit D)** | Does the Slavery Body ¶ {{< vocab "analyse" text="analyze" >}} and contrast the perspective of a free citizen vs. an enslaved worker/helot? |
+| **4. Step 2.4 Counter-Claim (Adv · Crit D)** | *(If Advanced Path)* Does the Counter-Claim ¶ state a fair counter-argument and {{< vocab "justify" >}} its rebuttal with evidence? |
 | **5. Structure & Transitions (Crit C)** | Are paragraphs organized with analytical transitions (*however, whereas, despite*)? |
 | **6. Source Citations (Crit C)** | Are book titles/authors and page numbers explicitly {{< vocab "document" text="documented" >}} inside the paragraphs? |
 
@@ -358,12 +358,12 @@ Lesson 4 (50 min):
 **第2周 · 第5课：撰写修改第二稿与整理参考文献列表**
 
 - Upgrade Developing (`DE`) analysis to Proficient/Exceeding (`PR`/`EX`)
-- Booklet Section 4: Revised 2nd Draft & Works Cited Organizer
+- Booklet **Step 4**: 2nd Draft (Steps 4.1–4.5 across 2 pages) + Step 4.6 Works Cited Organizer
 
 ::: notes
 Lesson 5 (50 min):
 - 10 min: Mini-lesson on upgrading DE to PR/EX and formatting Works Cited.
-- 35 min: Handwritten 2nd Draft / targeted revisions and Works Cited list in Section 4.
+- 35 min: Handwritten 2nd Draft / targeted revisions (Steps 4.1–4.5) and Works Cited list in Step 4.
 - 5 min: Pre-publication check for Lesson 6.
 :::
 
@@ -380,10 +380,10 @@ Lesson 5 (50 min):
 
 :::: {.columns}
 ::: {.column width="62%"}
-In **Section 4** of your booklet:
+In **Step 4** of your booklet:
 
-1. **Write your revised Second Draft** using your partner's feedback and your Revision Plan.
-2. **Complete the Works Cited Organizer ({{< vocab "document" text="Document" >}}):**
+1. **Write your revised Second Draft** in Steps 4.1 → 4.5 across 2 pages (or attach loose-leaf paper), using your partner's feedback and your Revision Plan.
+2. **Complete Step 4.6 Works Cited Organizer ({{< vocab "document" text="Document" >}}):** copy the MLA entries you drafted in Step 1.3.
    - `Author. Title of Book. Publisher, Year, pp. xx–xx.`
    - Check that every source cited in your essay is listed!
 :::
@@ -399,7 +399,7 @@ In **Section 4** of your booklet:
 **第2周 · 第6课：录入论文终稿并上交手册**
 
 - Academic Integrity Protocol (HOLD Status)
-- Booklet Section 5: Final Pre-Submission Checklist & Rubrics
+- Booklet **Step 5**: Final Pre-Submission Checklist & Rubrics
 
 ::: notes
 Lesson 6 (50 min):
@@ -413,7 +413,7 @@ Lesson 6 (50 min):
 ::: {.column width="62%"}
 1. **Booklet Only 仅限使用纸质手册:** Type directly from your physical Summative Booklet. **No AI tools, translators, or external websites.**
 2. **Include Works Cited 附上参考文献:** {{< vocab "document" text="Document" >}} your full Works Cited list at the bottom of your essay.
-3. **Pre-Submission Check (Section 5):**
+3. **Pre-Submission Check (Step 5):**
    - ☐ Crit B Checklist 100% finished
    - ☐ Essay & Works Cited proofread
    - ☐ Hand in physical booklet!

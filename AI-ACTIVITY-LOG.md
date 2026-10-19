@@ -47,6 +47,16 @@ This file is the **shared local memory and handoff log** across all AI assistant
 
 <!-- AI_LOG_FEED_START -->
 
+### [2026-10-19 11:07] COMPLETED — Format Unit 2 summative booklet & slides (compact TOC, table tracker, 2-page 2nd draft)
+- **AI Assistant:** Antigravity (Gemini)
+- **Status:** COMPLETED
+- **Files Touched:** course/summatives/02-unit-2-summative/student-summative-booklet.qmd, course/summatives/02-unit-2-summative/summative-slides.qmd
+- **Notes:** 1) Replaced bloated TOC with a 5-row compact Table of Contents at the front. 2) Preserved clean table format for the Class-by-Class tracker, removed teacher check, and added dedicated reflection prompts ('What actions led to success?' and 'What can you do to be more successful next class?'). 3) Standardized Step 1-5 nomenclature across booklet and slides (2.1 Intro, 2.2 Legal Body, 2.3 Slavery Body, 2.4 Counter-Claim Adv, 2.5 Conclusion, Step 3 Peer Audit, Step 4 2nd Draft, Step 5 Type Final Essay & Rubrics). 4) Step 4 streamlined to exactly 2 pages with a note allowing students to attach separate lined paper if needed. 5) Step 1.3 includes MLA quick templates and entry drafting boxes under each source. 6) Vocab bank bolding updated per requirements.
+### [2026-10-19 11:02] IN PROGRESS — Format Unit 2 summative booklet & slides (compact TOC, table tracker, 2-page 2nd draft)
+- **AI Assistant:** Antigravity (Gemini)
+- **Status:** IN PROGRESS
+- **Files Touched:** course/summatives/02-unit-2-summative/student-summative-booklet.qmd, course/summatives/02-unit-2-summative/summative-slides.qmd
+- **Notes:** Implementing user's streamlined formatting: compact front TOC, table-format class tracker with specific reflection prompts, standardized Step nomenclature (Steps 1-5), 2-page Step 4 2nd draft, Step 1.3 MLA entry templates, and vocab bank bolding.
 ### [2026-10-19 10:46] COMPLETED — Revert Unit 2 summative packet and companion slides to eb0e416
 - **AI Assistant:** Antigravity (Gemini)
 - **Status:** COMPLETED
