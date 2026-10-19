@@ -75,6 +75,5 @@ Multiple AI assistants (including **Tencent WorkBuddy** accounts and **Google An
    - **Never delete protected files:** Never delete `AI-ACTIVITY-LOG.md`, `TOOL-CHANGES.md`, `CLAUDE.md`, `AGENTS.md`, `GEMINI.md`, `vocab/data/vocab.csv` (or existing permanent vocab IDs), `course/references/curriculum-building/*`, or `.git/`.
    - **WeDrive deletions require archiving or explicit request:** Because WeDrive (`/Users/nathaniellevin/Library/Containers/com.tencent.WeWorkMac/Data/WeDrive/明湾学校/Social Studies`) is not a Git repository, do **not** permanently delete teacher curriculum files there unless explicitly instructed by Nathan; when reorganizing or retiring old drafts in WeDrive, prefer moving them into an `_Archive/` subfolder first.
    - **Chalkline repo deletions:** When deleting or replacing files in `/Users/nathaniellevin/chalkline-mingwan`, ensure `git status` is clean or committed beforehand so Git history preserves a recoverable snapshot, and always list deleted files in your `AI-ACTIVITY-LOG.md` entry (`--files "DELETED: ..."`).
-
-
-
+6. **Recursive SOP Check (Continuous Protocol Sync):**
+   - **Never rely on a stale in-context copy of the SOP:** Before starting **every** new task (and before finalizing any multi-step task), recursively re-read `CLAUDE.md`, `AGENTS.md`, and `AI-ACTIVITY-LOG.md` (`python scripts/ai_log.py show`) from disk to check for updates to your Standard Operating Procedures (SOP). If any SOP file was modified during your session, immediately adopt the updated rules.

@@ -68,6 +68,13 @@ def sync_logs(prefer: Path | None = None) -> tuple[Path, bool]:
 
 def cmd_show(args: argparse.Namespace) -> int:
     log_path, _ = sync_logs()
+    claude_md = REPO_ROOT / "CLAUDE.md"
+    if claude_md.exists():
+        mtime_str = datetime.fromtimestamp(claude_md.stat().st_mtime).strftime("%Y-%m-%d %H:%M:%S")
+        print(
+            f"[SOP Check] {claude_md} last updated: {mtime_str} "
+            f"(Re-read CLAUDE.md from disk if updated since your last check!)\n"
+        )
     text = log_path.read_text(encoding="utf-8")
     lines = text.splitlines()
     limit = args.lines

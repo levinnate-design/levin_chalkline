@@ -358,7 +358,7 @@ Lesson 4 (50 min):
 **第2周 · 第5课：撰写修改第二稿与整理参考文献列表**
 
 - Upgrade Developing (`DE`) analysis to Proficient/Exceeding (`PR`/`EX`)
-- Booklet **Step 4**: 2nd Draft on Loose Lined Paper + Step 4.6 Works Cited Organizer (p. 9)
+- Booklet **Step 4**: 2nd Draft on Loose Lined Paper + Step 4.6 Works Cited Organizer (p. 10)
 
 ::: notes
 Lesson 5 (50 min):
@@ -380,7 +380,7 @@ Lesson 5 (50 min):
 
 :::: {.columns}
 ::: {.column width="62%"}
-In **Step 4 (Page 9)** of your booklet:
+In **Step 4 (Page 10)** of your booklet:
 
 1. **Write your revised Second Draft** on loose lined paper using your partner's feedback and your Revision Plan.
 2. **Complete Step 4.6 Works Cited Organizer ({{< vocab "document" text="Document" >}}):** copy the MLA entries you drafted in Step 1.3.
@@ -399,7 +399,7 @@ In **Step 4 (Page 9)** of your booklet:
 **第2周 · 第6课：录入论文终稿并上交手册**
 
 - Academic Integrity Protocol (HOLD Status)
-- Booklet **Step 5**: Final Pre-Submission Checklist & Rubrics (p. 10)
+- Booklet **Step 5**: Final Pre-Submission Checklist & Rubrics (p. 11)
 
 ::: notes
 Lesson 6 (50 min):

@@ -32,3 +32,5 @@ vocab/app/brand.css
 
 # Saved Python results (scripts/freeze_check.py clears them when data changes)
 _freeze/
+
+**/*.quarto_ipynb
