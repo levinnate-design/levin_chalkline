@@ -47,6 +47,11 @@ This file is the **shared local memory and handoff log** across all AI assistant
 
 <!-- AI_LOG_FEED_START -->
 
+### [2026-10-19 09:48] COMPLETED — Summative booklet: TOC, Step-based nomenclature, reflection tracker, MLA scaffolds, consistent 2nd-draft paging
+- **AI Assistant:** WorkBuddy
+- **Status:** COMPLETED
+- **Files Touched:** course/summatives/02-unit-2-summative/student-summative-booklet.qmd, course/summatives/02-unit-2-summative/summative-slides.qmd
+- **Notes:** 1) Class-by-class tracker: removed the teacher sign-off column, replaced with per-lesson blocks giving two reflection prompts (What actions led to success? / What can you do to be more successful next class?) each with 2 full-width writing lines. 2) Added a Contents/目录 checklist table at the front (every step + a tick box) and standardized nomenclature across booklet AND slides: Step 1 (1.1-1.4), Step 2 1st Draft (2.1 Intro, 2.2 Legal Body, 2.3 Slavery Body, 2.4 Counter-Claim Advanced, 2.5 Conclusion), Step 3 Peer Audit, Step 4 2nd Draft (4.1-4.6), Step 5 Type Final Essay. All Body 1/Body 2/Body 3 and Section refs updated. 3) Step 4 now one paragraph per page with exactly 16 lines on each of the 5 pages (4.1-4.5); removed the pagebreak-created blank page by giving 2.4 and 2.5 their own pages. 4) Step 1.3 gained an MLA Works Cited template callout plus a 2-line MLA draft box under each of the 4 sources, referenced from Step 4.6. 5) Vocab bank bolding fixed: Twelve Tables, due process, chattel slavery, latifundia, civic exclusion now bold; gladiators unbolded. Verified with PyMuPDF: all pages >=45% fill except final rubric page, 34 pages, no Toddle, no teacher sign-off.
 ### [2026-10-19 08:06] COMPLETED — Summative: remove Toddle references and add Student Edition PDFs
 - **AI Assistant:** WorkBuddy
 - **Status:** COMPLETED
