@@ -27,12 +27,12 @@ format:
 ☐ **Standard Path 标准路径 (4 Paragraphs 四段式):** Intro 引言 + Body 1 治理进步 + Body 2 奴隶制局限 + Conclusion 结论\
 ☐ **Advanced Path 进阶路径 (5 Paragraphs 五段式):** Adds Body 3 Counter-Claim & Rebuttal 增加第三主体段“反方观点与批驳”
 
-## How You Will Be Assessed on Toddle | Toddle 平台双重评估说明
+## How You Will Be Assessed | 双重评估说明
 
-| Toddle Assessment 评估项目 | MYP Criteria 评估标准 | Deliverables & Timeline 完成内容与时间节点 |
+| Assessment 评估项目 | MYP Criteria 评估标准 | Deliverables & Timeline 完成内容与时间节点 |
 |---|---|---|
 | **Assessment 1 评估一:** Research & Action Plan 研究问题与行动计划 *(In Booklet 在本手册完成)* | **Criterion B: Investigating** 标准 B：探究 *(Strands i–iv)* | **Completed in Lessons 1–2 (finalized by Lesson 3 at the latest) 在第1–2课时完成（最迟不超过第3课时）：**<br>1. Prompt Breakdown, Research Question & Initial Thesis 审题拆解、聚焦研究问题与初始论点<br>2. Research Log (Library Books & Class Texts) 图书馆书籍与课堂教材证据收集表<br>3. Claim-Evidence Alignment Check & Revised Thesis 论点与证据匹配核查及论点修正<br>4. Criterion B Self-Assessment & Source Evaluation Checklist 标准B进度与史料质量自评表 |
-| **Assessment 2 评估二:** Final Summative Essay 总结性历史论文 *(Booklet + Typed on Toddle 手册草稿 + Toddle 终稿)* | **Criterion C: Communicating** 沟通表达 & **Criterion D: Thinking Critically** 批判性思维 | **Completed across Lessons 2–6 (第2–6课时逐步完成)：**<br>1. Handwritten 1st Draft in Booklet 手册内手写论文第一稿（第2–3课时）<br>2. Peer Audit & Revision Plan 同伴互评与修改计划（第4课时）<br>3. Handwritten 2nd Draft / Revisions & Bibliography 手写第二稿/修改与参考文献表（第5课时）<br>4. Final Essay Typed Directly into Toddle 在 Toddle 上直接输入英文论文终稿（第6课时） |
+| **Assessment 2 评估二:** Final Summative Essay 总结性历史论文 *(Handwritten drafts in this booklet + typed final essay 手册手写稿 + 终稿录入)* | **Criterion C: Communicating** 沟通表达 & **Criterion D: Thinking Critically** 批判性思维 | **Completed across Lessons 2–6 (第2–6课时逐步完成)：**<br>1. Handwritten 1st Draft in Booklet 手册内手写论文第一稿（第2–3课时）<br>2. Peer Audit & Revision Plan 同伴互评与修改计划（第4课时）<br>3. Handwritten 2nd Draft / Revisions & Bibliography 手写第二稿/修改与参考文献表（第5课时）<br>4. Final Essay Typed and Submitted 英文论文终稿录入并提交（第6课时） |
 
 ## Class-by-Class Action Plan & Progress Tracker | 分课时行动计划与进度追踪表（标准 B Strand ii）
 
@@ -44,7 +44,7 @@ format:
 | **Week 1 · L3**<br>第1周 第3课 | Finalize Criterion B Checklist (latest); draft Body Paragraph 3 (Counter-Claim for Advanced Path) + Conclusion.<br>最终确认完成标准B自评表（最迟节点）；撰写反方观点段（进阶路径）及结论段。 | ☐ Completed 已完成<br>☐ In Progress 进行中<br>☐ Needs Help 需支持 | Note 备注: {{< blank 1.2in >}}<br>Teacher 教师签字: {{< blank 0.8in >}} |
 | **Week 2 · L4**<br>第2周 第4课 | Conduct Peer Audit (for students with completed 1st draft) OR use buffer time to finish remaining 1st draft paragraphs.<br>进行同伴互评（已完成初稿者），或利用缓冲时间继续完成第一稿剩余段落。 | ☐ Completed 已完成<br>☐ In Progress 进行中<br>☐ Needs Help 需支持 | Note 备注: {{< blank 1.2in >}}<br>Teacher 教师签字: {{< blank 0.8in >}} |
 | **Week 2 · L5**<br>第2周 第5课 | Write 2nd Draft / targeted revisions in booklet based on feedback and compile Works Cited / Bibliography list.<br>根据互评反馈在手册中撰写第二稿/进行针对性修改，并整理参考文献列表。 | ☐ Completed 已完成<br>☐ In Progress 进行中<br>☐ Needs Help 需支持 | Note 备注: {{< blank 1.2in >}}<br>Teacher 教师签字: {{< blank 0.8in >}} |
-| **Week 2 · L6**<br>第2周 第6课 | Type final polished English essay and Works Cited list directly into Toddle and submit this physical booklet.<br>在 Toddle 平台直接输入最终英文论文与参考文献，并上交本纸质手册。 | ☐ Completed 已完成<br>☐ In Progress 进行中<br>☐ Needs Help 需支持 | Note 备注: {{< blank 1.2in >}}<br>Teacher 教师签字: {{< blank 0.8in >}} |
+| **Week 2 · L6**<br>第2周 第6课 | Type your final polished English essay and Works Cited list, then submit this physical booklet.<br>录入最终英文论文与参考文献，并上交本纸质手册。 | ☐ Completed 已完成<br>☐ In Progress 进行中<br>☐ Needs Help 需支持 | Note 备注: {{< blank 1.2in >}}<br>Teacher 教师签字: {{< blank 0.8in >}} |
 :::
 
 {{< pagebreak >}}
@@ -153,7 +153,7 @@ format:
 {{< lines 3 >}}
 :::
 
-### Toddle Assessment 1: Criterion B Progress & Source Evaluation Checklist | 标准 B 研究进度与史料质量自评核查表（第1–2课完成，最迟第3课确认）
+### Assessment 1: Criterion B Progress & Source Evaluation Checklist | 标准 B 研究进度与史料质量自评核查表（第1–2课完成，最迟第3课确认）
 
 | Criterion B Investigation & Source Quality Criteria 标准 B 探究与史料质量自评指标 | Lesson 1 Check 第1课自评 | Lesson 2 Check 第2课自评 | Lesson 3 Final 第3课最终确认 |
 |---|---|---|---|
@@ -281,8 +281,8 @@ format:
 
 # Section 4 (Lesson 5): Second Draft, Revisions & Bibliography 第四部分（第5课时）：第二稿修改与参考文献整理
 
-{{< vocab "use" text="Use" zh=true >}} feedback from your Lesson 4 Peer Audit and teacher guidance to write your revised Second Draft below. Strengthen your Criterion D historical {{< vocab "explain" text="explanation" zh=true >}}, transitions, and source citations so you are ready to type into Toddle in Lesson 6.
-请结合第4课时的同伴互评反馈与老师指导，在下方撰写修改后的第二稿。重点强化标准 D 的历史深度分析、段落过渡词以及标准 C 的史料引用，为第6课时在 Toddle 上直接录入终稿做好准备。
+{{< vocab "use" text="Use" zh=true >}} feedback from your Lesson 4 Peer Audit and teacher guidance to write your revised Second Draft below. Strengthen your Criterion D historical {{< vocab "explain" text="explanation" zh=true >}}, transitions, and source citations so you are ready to type your final essay in Lesson 6.
+请结合第4课时的同伴互评反馈与老师指导，在下方撰写修改后的第二稿。重点强化标准 D 的历史深度分析、段落过渡词以及标准 C 的史料引用，为第6课时录入终稿做好准备。
 
 ## Second Draft / Revised Essay Workspace (Write in English) | 第二稿 / 论文修改手写区
 
@@ -294,7 +294,7 @@ format:
 
 {{< lines 16 >}}
 
-## Works Cited / Bibliography Organizer (Criterion C) | 参考文献列表整理区（准备录入 Toddle）
+## Works Cited / Bibliography Organizer (Criterion C) | 参考文献列表整理区（准备录入终稿）
 
 {{< vocab "list" text="List" zh=true >}} and {{< vocab "document" zh=true >}} all library books and class texts cited in your essay.
 **Example format 格式示例:** `Author Last Name, First Name. Title of Book. Publisher, Year, pp. xx–xx.`
@@ -303,15 +303,15 @@ format:
 
 {{< pagebreak >}}
 
-# Section 5 (Lesson 6): Typing into Toddle & Bilingual Rubrics 第五部分（第6课时）：Toddle 终稿录入核查与双语评估量规
+# Section 5 (Lesson 6): Final Essay Submission & Bilingual Rubrics 第五部分（第6课时）：终稿提交核查与双语评估量规
 
-::: {.callout-important title="Lesson 6 Final Pre-Submission Checklist 第6课时 Toddle 提交前最终核查清单" icon=false}
+::: {.callout-important title="Lesson 6 Final Pre-Submission Checklist 第6课时 终稿提交前最终核查清单" icon=false}
 ☐ **1. Assessment 1 (Criterion B) Complete 评估一（标准B）已完成:** My Research Question, Research Log, Alignment Check, and Criterion B Self-Assessment Checklist in this booklet are 100% finished. 本手册中的研究问题、史料记录表、论点匹配核查及标准B自评表已全部完成。\
-☐ **2. Assessment 2 (Criteria C & D) Typed into Toddle 评估二（标准C与D）已录入 Toddle:** I have typed my revised English essay directly into Toddle, checked spelling/grammar, and included my Works Cited list. 我已将修改后的英文论文直接输入 Toddle，检查了拼写与语法，并在文末附上了参考文献列表。\
-☐ **3. Physical Booklet Turned In 纸质手册已上交:** I am submitting this physical booklet to my teacher alongside my digital Toddle submission. 我已在提交 Toddle 电子稿的同时，将本纸质手册交给老师。
+☐ **2. Assessment 2 (Criteria C & D) Final Essay Complete 评估二（标准C与D）终稿已完成:** I have typed my revised English essay, checked spelling/grammar, and included my Works Cited list. 我已录入修改后的英文论文，检查了拼写与语法，并在文末附上了参考文献列表。\
+☐ **3. Physical Booklet Turned In 纸质手册已上交:** I am submitting this physical booklet to my teacher alongside my final essay. 我已在提交论文终稿的同时，将本纸质手册交给老师。
 :::
 
-## Mingwan Bilingual Proficiency Rubric | 明湾学校学业水平双语评定量规（对接 Toddle 报告系统）
+## Mingwan Bilingual Proficiency Rubric | 明湾学校学业水平双语评定量规（对接成绩报告系统）
 
 | Band 等级 | Assessment 1: Criterion B Investigating 探究 (Booklet 手册) | Assessment 2: Criterion D Thinking Critically 批判性思维 | Assessment 2: Criterion C Communicating 沟通表达 |
 |---|---|---|---|
@@ -321,12 +321,12 @@ format:
 | **EM**<br>Emerging<br>起步阶段<br>*(1–59%)* | • Unclear or missing research question/claim. 研究问题或中心论点缺失或混乱。<br>• Minimal source evidence recorded; checklist incomplete. 几乎未记录有效史料证据，自评表未完成。 | • Inaccurate or minimal explanation of governance and slavery. 对古典治理或奴隶制的理解不准确。<br>• Expresses unsupported personal opinions without historical evidence. 仅凭个人主观印象发表观点，缺乏史实依据。 | • Fragmented writing lacking paragraph structure. 文字零散，缺乏基本的段落组织。<br>• Minimal academic vocabulary; no source citations. 学术词汇匮乏，无任何史料引用。 |
 
 ::: {.content-visible when-profile="teacher"}
-::: {.callout-note title="Teacher Guide: 6-Lesson Pacing & Dual Toddle Checkpoints"}
+::: {.callout-note title="Teacher Guide: 6-Lesson Pacing & Dual Checkpoints"}
 - **Lesson 1 (50 min) — Prompt, Thesis & Research:** Deconstruct prompt terms; model focused RQ & initial thesis frame; introduce curated library books & class texts. *Checkpoint:* Criterion B Check 1 (Steps 1.1–1.4 initiated).
 - **Lesson 2 (50 min) — Body Paragraphs 1 & 2:** Mini-lesson on TEEL paragraph structure & embedding citations; finalize Criterion B Source Quality Checklist; draft Intro, Body 1 (Governance Progress), and Body 2 (Slavery & Exclusion). *Checkpoint:* Criterion B Check 2 + 1st Draft Body 1 & 2.
-- **Lesson 3 (50 min) — Counter-Claim & Conclusion:** Final deadline to verify Criterion B Self-Assessment Checklist (ready for Toddle Assessment 1); Advanced Path drafts Body 3 (Counter-Claim & Rebuttal); all students draft Conclusion. *Checkpoint:* Criterion B Finalized + Complete 1st Draft.
+- **Lesson 3 (50 min) — Counter-Claim & Conclusion:** Final deadline to verify Criterion B Self-Assessment Checklist (ready for Assessment 1); Advanced Path drafts Body 3 (Counter-Claim & Rebuttal); all students draft Conclusion. *Checkpoint:* Criterion B Finalized + Complete 1st Draft.
 - **Lesson 4 (50 min) — Peer Audit + Drafting Buffer:** Track A (Ready Students) conducts structured Peer Audit in Section 3 (2 Glows, 2 Grows, Revision Plan); Track B (Drafting Students) finishes 1st Draft paragraphs followed by rapid check.
 - **Lesson 5 (50 min) — 2nd Draft & Revisions:** Mini-lesson on upgrading `DE` to `PR`/`EX` (citizen vs. enslaved perspective analysis, analytical transitions, Works Cited formatting); write 2nd Draft in Section 4.
-- **Lesson 6 (50 min) — Type Essay into Toddle:** HOLD status academic integrity rules (students type directly from this annotated physical booklet; no generative AI or external websites). Collect physical booklet alongside digital Toddle submission.
+- **Lesson 6 (50 min) — Type the Final Essay:** HOLD status academic integrity rules (students type directly from this annotated physical booklet; no generative AI or external websites). Collect the physical booklet alongside the final essay.
 :::
 :::

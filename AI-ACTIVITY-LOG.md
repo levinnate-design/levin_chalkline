@@ -47,6 +47,16 @@ This file is the **shared local memory and handoff log** across all AI assistant
 
 <!-- AI_LOG_FEED_START -->
 
+### [2026-10-19 08:06] COMPLETED — Summative: remove Toddle references and add Student Edition PDFs
+- **AI Assistant:** WorkBuddy
+- **Status:** COMPLETED
+- **Files Touched:** course/summatives/02-unit-2-summative/student-summative-booklet.qmd, course/summatives/02-unit-2-summative/summative-slides.qmd, course/summatives/02-unit-2-summative/index.qmd, scripts/student_copies.py, _quarto.yml, TOOL-CHANGES.md
+- **Notes:** Removed every Toddle mention from the Unit 2 summative booklet and slides (assessment table, lesson-6 checklist, rubric header, teacher pacing guide, slide notes) so printed booklets can't contradict the digital workflow later. New tool script scripts/student_copies.py (run from post-render) renders each printable that has teacher-only content again WITHOUT the teacher profile and writes it to the teacher site as <name>-student-edition.pdf: no TEACHER EDITION corner tab, no answer keys. Teacher site now has both editions side by side; the summative index page links them. Rebuilt the summative packet in both editions. Verified: 0 'Toddle' and 0 'teacher edition' in the Student Edition PDFs.
+### [2026-10-19 08:04] COMPLETED — Summative: remove Toddle references and add Student Edition PDFs
+- **AI Assistant:** WorkBuddy
+- **Status:** COMPLETED
+- **Files Touched:** course/summatives/02-unit-2-summative/student-summative-booklet.qmd, course/summatives/02-unit-2-summative/summative-slides.qmd, course/summatives/02-unit-2-summative/index.qmd, scripts/student_copies.py, _quarto.yml, TOOL-CHANGES.md
+- **Notes:** Removed every Toddle mention from the Unit 2 summative booklet and slides (assessment table, lesson-6 checklist, rubric header, teacher pacing guide, slide notes) so printed booklets can't contradict the digital workflow later. New tool script scripts/student_copies.py (run from post-render) renders each printable that has teacher-only content again WITHOUT the teacher profile and writes it to the teacher site as <name>-student-edition.pdf: no TEACHER EDITION corner tab, no answer keys. Teacher site now has both editions side by side; the summative index page links them. Rebuilt the summative packet in both editions. Verified: 0 'Toddle' and 0 'teacher edition' in the Student Edition PDFs.
 ### [2026-10-19 07:37] COMPLETED — Draw vocab pictures for Units 1 and 2 (all 97 terms now illustrated)
 - **AI Assistant:** WorkBuddy
 - **Status:** COMPLETED

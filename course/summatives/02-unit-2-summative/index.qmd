@@ -24,4 +24,11 @@ listing:
 
 {{< packet >}}
 
+::: {.content-visible when-profile="teacher"}
+## Editions 版本
+
+- [🔑 Teacher Edition (PDF)](student-summative-booklet.pdf) — includes the 6-lesson pacing guide and teacher notes. The corner tab says TEACHER EDITION.
+- [🎒 Student Edition (PDF)](student-summative-booklet-student-edition.pdf) — the same booklet without the teacher notes and without the corner tab. **Print this one for class.**
+:::
+
 ## Materials

@@ -16,6 +16,13 @@ Newest entries first.
 - **AI assistant:** which one made the change.
 -->
 
+## 2026-10-19: A Student Edition PDF next to every Teacher Edition PDF (`scripts/student_copies.py`)
+- **Asked for:** "create both 'Teacher Edition' and 'Student Edition' pdf copies on my chalkline. The 'Student Edition' should not have any 'Teacher Edition' in the top right header."
+- **Why:** the teacher build stamps TEACHER EDITION on every PDF and keeps the answer keys, so there was no clean copy to print for class — and the file was still named after students (`student-summative-booklet.pdf`), which reads as a contradiction.
+- **Changed:** new `scripts/student_copies.py`, run from `post-render` in `_quarto.yml`. On the teacher site it re-renders each printable *without* the teacher profile and writes it next to the teacher copy as `<name>-student-edition.pdf`: no TEACHER EDITION tab, no `when-profile="teacher"` content. Only printables that actually contain teacher-only content get a second copy. It sits out the quick renders `quarto preview` does on save, the same way packets do.
+- **Who it helps:** probably every Chalkline course — any teacher printing from the teacher site.
+- **AI assistant:** WorkBuddy
+
 ## 2026-10-19: Draw the missing vocab pictures for Units 1 and 2 (`vocab/tools/draw_icons.py`)
 - **Asked for:** "Create image links for both unit 1 and 2 vocab terms in chalkline."
 - **Why:** Only 45 of the 97 rows in `vocab/data/vocab.csv` had a picture. The gap was almost entirely Unit 1: all 36 `RIV` terms (Ancient River Civilizations) had none, plus the 14 Unit 2 terms added in the previous task (`GRC-014`–`019`, `ROM-013`–`020`) and the 2 `ECO` words. So {{< vocab >}} pop-ups for those words opened with no image at all.

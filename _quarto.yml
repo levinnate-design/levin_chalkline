@@ -20,6 +20,7 @@ project:
   post-render:
     - scripts/parent_site.py  # family site only: removes pages and PDFs not meant for families
     - scripts/packets.py   # each unit's printables as one packet PDF, plus a year packet (full renders only)
+    - scripts/student_copies.py   # teacher site: a clean Student Edition PDF next to the Teacher Edition (full renders only)
     - scripts/slides_pdf.py   # every slide deck as a PDF, one slide per page (full renders only)
   render:
     - index.qmd
