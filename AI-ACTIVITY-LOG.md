@@ -47,6 +47,16 @@ This file is the **shared local memory and handoff log** across all AI assistant
 
 <!-- AI_LOG_FEED_START -->
 
+### [2026-10-19 11:33] COMPLETED — Compress summative booklet: page numbers in TOC, compact tracker, sourcing table, loose-leaf 2nd draft, and student proficient rubric
+- **AI Assistant:** Antigravity (Gemini)
+- **Status:** COMPLETED
+- **Files Touched:** course/summatives/02-unit-2-summative/student-summative-booklet.qmd, course/summatives/02-unit-2-summative/summative-slides.qmd
+- **Notes:** Completed 5 requested updates: 1) Added exact page numbers to the TOC (10-page layout). 2) Compacted Class-by-Class tracker table with concise bulleted goals and reflection lines. 3) Unified Sources 1-4 into a compact 4-row Sourcing table with MLA drafting column. 4) Step 4 adapted for loose-leaf lined paper drafting while keeping Step 4.6 Works Cited Organizer (10 lines) in the booklet. 5) Step 5 rubric displays focused Proficient target (PR) for students while keeping the full 4-band rubric inside teacher-visible block.
+### [2026-10-19 11:31] IN PROGRESS — Compress summative booklet: page numbers in TOC, compact tracker, sourcing table, loose-leaf 2nd draft, and student proficient rubric
+- **AI Assistant:** Antigravity (Gemini)
+- **Status:** IN PROGRESS
+- **Files Touched:** course/summatives/02-unit-2-summative/student-summative-booklet.qmd, course/summatives/02-unit-2-summative/summative-slides.qmd
+- **Notes:** Starting content updates: 1) Add page numbers to TOC. 2) Compact tracker table. 3) Step 1.3 sourcing table for Sources 1-4. 4) Step 4 loose-leaf instructions + Step 4.6 works cited organizer. 5) Step 5 rubric: Proficient target only for students, full rubric for teachers.
 ### [2026-10-19 11:07] COMPLETED — Format Unit 2 summative booklet & slides (compact TOC, table tracker, 2-page 2nd draft)
 - **AI Assistant:** Antigravity (Gemini)
 - **Status:** COMPLETED
