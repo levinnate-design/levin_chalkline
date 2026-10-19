@@ -47,6 +47,11 @@ This file is the **shared local memory and handoff log** across all AI assistant
 
 <!-- AI_LOG_FEED_START -->
 
+### [2026-10-19 10:46] COMPLETED — Revert Unit 2 summative packet and companion slides to eb0e416
+- **AI Assistant:** Antigravity (Gemini)
+- **Status:** COMPLETED
+- **Files Touched:** course/summatives/02-unit-2-summative/student-summative-booklet.qmd, course/summatives/02-unit-2-summative/summative-slides.qmd
+- **Notes:** Reverted changes from commit 5906e33 on both the student summative booklet and companion slides back to commit eb0e416, restoring original section structure and removing the step-based TOC/reflections per user request.
 ### [2026-10-19 09:48] COMPLETED — Summative booklet: TOC, Step-based nomenclature, reflection tracker, MLA scaffolds, consistent 2nd-draft paging
 - **AI Assistant:** WorkBuddy
 - **Status:** COMPLETED

@@ -27,29 +27,6 @@ format:
 ☐ **Standard Path 标准路径 (4 Paragraphs 四段式):** Intro 引言 + Body 1 治理进步 + Body 2 奴隶制局限 + Conclusion 结论\
 ☐ **Advanced Path 进阶路径 (5 Paragraphs 五段式):** Adds Body 3 Counter-Claim & Rebuttal 增加第三主体段“反方观点与批驳”
 
-## Contents 目录
-
-Tick each step as you finish it. The step numbers below are the same ones in your workbook.
-
-| Step 步骤 | Lesson 课时 | Done 完成 |
-|---|---|---|
-| **Step 1: Prompt Breakdown, Thesis & Research Plan**<br>审题拆解、中心论点与研究计划 | L1 | ☐ |
-| **1.1** Deconstruct the Prompt 拆解总结性评估题目 | L1 | ☐ |
-| **1.2** Focused Research Question & Initial Thesis 聚焦研究问题与初始中心论点 | L1 | ☐ |
-| **1.3** Research & Evidence Harvesting Log (Sources 1–4) 史料研究与证据收集记录表 | L1 | ☐ |
-| **1.4** Claim-Evidence Alignment & Criterion B Self-Assessment 论点匹配核查与自评表 | L1–L3 | ☐ |
-| **Step 2: 1st Draft**<br>论文第一稿手写 | L2–L3 | ☐ |
-| **2.1** Introduction Paragraph 引言段 | L2 | ☐ |
-| **2.2** Legal Body Paragraph 治理与法律进步主体段 | L2 | ☐ |
-| **2.3** Slavery Body Paragraph 奴隶制依赖与排斥主体段 | L2 | ☐ |
-| **2.4** Counter-Claim Paragraph *(Advanced Path 进阶路径)* 反方观点与批驳 | L3 | ☐ |
-| **2.5** Conclusion Paragraph 结论段 | L3 | ☐ |
-| **Step 3: Peer Audit & Revision Plan**<br>同伴互评与修改行动计划 | L4 | ☐ |
-| **Step 4: 2nd Draft, Revisions & Bibliography**<br>第二稿修改与参考文献整理 | L5 | ☐ |
-| **4.1 → 4.5** 2nd Draft workspace 第二稿手写区 | L5 | ☐ |
-| **4.6** Works Cited Organizer 参考文献列表整理区 | L5 | ☐ |
-| **Step 5: Type Final Essay & Rubrics**<br>终稿录入核查与双语评估量规 | L6 | ☐ |
-
 ## How You Will Be Assessed | 双重评估说明
 
 | Assessment 评估项目 | MYP Criteria 评估标准 | Deliverables & Timeline 完成内容与时间节点 |
@@ -59,116 +36,25 @@ Tick each step as you finish it. The step numbers below are the same ones in you
 
 ## Class-by-Class Action Plan & Progress Tracker | 分课时行动计划与进度追踪表（标准 B Strand ii）
 
-::: {.keep}
-### Week 1 · Lesson 1 第1周 第1课
-
-**Goal 本课目标:** Break down the prompt, draft your Research Question & Thesis, research library books and class texts, and check claim alignment.
-拆解题目，撰写研究问题与初始论点，查阅图书馆书籍与教材收集证据，核查证据与论点是否匹配。
-
-**Status 课末状态:** ☐ Completed 已完成　☐ In Progress 进行中　☐ Needs Help 需支持
-
-**What actions led to success? 哪些具体做法带来了成功？**
-
-{{< lines 2 >}}
-
-**What can you do to be more successful next class? 下一课我如何做得更好？**
-
-{{< lines 2 >}}
-:::
-
-::: {.keep}
-### Week 1 · Lesson 2 第1周 第2课
-
-**Goal 本课目标:** Finish the Criterion B Source Checklist (Steps 1.3–1.4); draft Steps 2.1 Intro, 2.2 Legal Body Paragraph and 2.3 Slavery Body Paragraph.
-完成标准B史料核查表（步骤1.3–1.4）；撰写步骤2.1引言段、2.2治理与法律进步主体段、2.3奴隶制主体段。
-
-**Status 课末状态:** ☐ Completed 已完成　☐ In Progress 进行中　☐ Needs Help 需支持
-
-**What actions led to success? 哪些具体做法带来了成功？**
-
-{{< lines 2 >}}
-
-**What can you do to be more successful next class? 下一课我如何做得更好？**
-
-{{< lines 2 >}}
-:::
-
-::: {.keep}
-### Week 1 · Lesson 3 第1周 第3课
-
-**Goal 本课目标:** Finalize the Criterion B Checklist; draft Step 2.4 Counter-Claim (Advanced Path) and Step 2.5 Conclusion.
-最终确认完成标准B自评表；撰写步骤2.4反方观点段（进阶路径）与步骤2.5结论段。
-
-**Status 课末状态:** ☐ Completed 已完成　☐ In Progress 进行中　☐ Needs Help 需支持
-
-**What actions led to success? 哪些具体做法带来了成功？**
-
-{{< lines 2 >}}
-
-**What can you do to be more successful next class? 下一课我如何做得更好？**
-
-{{< lines 2 >}}
-:::
-
-::: {.keep}
-### Week 2 · Lesson 4 第2周 第4课
-
-**Goal 本课目标:** Complete Step 3 Peer Audit with a partner, OR use the time to finish your 1st Draft paragraphs, then write your Revision Plan.
-完成步骤3同伴互评，或利用时间补齐第一稿剩余段落，然后写出修改计划。
-
-**Status 课末状态:** ☐ Completed 已完成　☐ In Progress 进行中　☐ Needs Help 需支持
-
-**What actions led to success? 哪些具体做法带来了成功？**
-
-{{< lines 2 >}}
-
-**What can you do to be more successful next class? 下一课我如何做得更好？**
-
-{{< lines 2 >}}
-:::
-
-::: {.keep}
-### Week 2 · Lesson 5 第2周 第5课
-
-**Goal 本课目标:** Write your Step 4 Second Draft from your Revision Plan, and complete Step 4.6 Works Cited Organizer.
-根据修改计划在步骤4撰写第二稿，并完成步骤4.6参考文献列表整理区。
-
-**Status 课末状态:** ☐ Completed 已完成　☐ In Progress 进行中　☐ Needs Help 需支持
-
-**What actions led to success? 哪些具体做法带来了成功？**
-
-{{< lines 2 >}}
-
-**What can you do to be more successful next class? 下一课我如何做得更好？**
-
-{{< lines 2 >}}
-:::
-
-::: {.keep}
-### Week 2 · Lesson 6 第2周 第6课
-
-**Goal 本课目标:** Type your final polished English essay and Works Cited list, then hand in this booklet.
-录入最终英文论文与参考文献，并上交本纸质手册。
-
-**Status 课末状态:** ☐ Completed 已完成　☐ In Progress 进行中　☐ Needs Help 需支持
-
-**What actions led to success? 哪些具体做法带来了成功？**
-
-{{< lines 2 >}}
-
-**What can you do to be more successful next class? 下一课我如何做得更好？**
-
-{{< lines 2 >}}
+::: {.write-in}
+| Lesson 课时 | Target Lesson Goal 本课目标任务 | End-of-Class Status 课末完成状态 | Reflection & Teacher Check 反思记录与教师签字 |
+|---|---|---|---|
+| **Week 1 · L1**<br>第1周 第1课 | Break down prompt, draft Research Question & Thesis, research library books/class texts, and check claim alignment.<br>拆解题目，撰写研究问题与初始论点，查阅图书馆书籍与教材收集证据，核查证据与论点是否匹配。 | ☐ Completed 已完成<br>☐ In Progress 进行中<br>☐ Needs Help 需支持 | Note 备注: {{< blank 1.2in >}}<br>Teacher 教师签字: {{< blank 0.8in >}} |
+| **Week 1 · L2**<br>第1周 第2课 | Complete Criterion B Source Checklist; draft Intro + Body Paragraph 1 (Governance Progress) & Body Paragraph 2 (Slavery).<br>完成标准B史料核查表；撰写引言、主体段1（治理进步）与主体段2（奴隶制局限）。 | ☐ Completed 已完成<br>☐ In Progress 进行中<br>☐ Needs Help 需支持 | Note 备注: {{< blank 1.2in >}}<br>Teacher 教师签字: {{< blank 0.8in >}} |
+| **Week 1 · L3**<br>第1周 第3课 | Finalize Criterion B Checklist (latest); draft Body Paragraph 3 (Counter-Claim for Advanced Path) + Conclusion.<br>最终确认完成标准B自评表（最迟节点）；撰写反方观点段（进阶路径）及结论段。 | ☐ Completed 已完成<br>☐ In Progress 进行中<br>☐ Needs Help 需支持 | Note 备注: {{< blank 1.2in >}}<br>Teacher 教师签字: {{< blank 0.8in >}} |
+| **Week 2 · L4**<br>第2周 第4课 | Conduct Peer Audit (for students with completed 1st draft) OR use buffer time to finish remaining 1st draft paragraphs.<br>进行同伴互评（已完成初稿者），或利用缓冲时间继续完成第一稿剩余段落。 | ☐ Completed 已完成<br>☐ In Progress 进行中<br>☐ Needs Help 需支持 | Note 备注: {{< blank 1.2in >}}<br>Teacher 教师签字: {{< blank 0.8in >}} |
+| **Week 2 · L5**<br>第2周 第5课 | Write 2nd Draft / targeted revisions in booklet based on feedback and compile Works Cited / Bibliography list.<br>根据互评反馈在手册中撰写第二稿/进行针对性修改，并整理参考文献列表。 | ☐ Completed 已完成<br>☐ In Progress 进行中<br>☐ Needs Help 需支持 | Note 备注: {{< blank 1.2in >}}<br>Teacher 教师签字: {{< blank 0.8in >}} |
+| **Week 2 · L6**<br>第2周 第6课 | Type your final polished English essay and Works Cited list, then submit this physical booklet.<br>录入最终英文论文与参考文献，并上交本纸质手册。 | ☐ Completed 已完成<br>☐ In Progress 进行中<br>☐ Needs Help 需支持 | Note 备注: {{< blank 1.2in >}}<br>Teacher 教师签字: {{< blank 0.8in >}} |
 :::
 
 {{< pagebreak >}}
 
-# Step 1 (Lesson 1): Prompt Breakdown, Thesis & Research Plan 步骤一（第1课时）：审题拆解、中心论点与研究计划
+# Section 1 (Lesson 1): Prompt Breakdown, Thesis & Research Plan 第一部分（第1课时）：审题拆解、中心论点与研究计划
 
 ::: {.callout-tip title="Essential Bilingual Academic Vocabulary Bank 核心双语学术词汇库（写作高频词）" icon=false}
 - **MYP Command Terms 核心指令词:** {{< vocab "formulate" zh=true >}} · {{< vocab "investigate" zh=true >}} · {{< vocab "analyse" text="analyze" zh=true >}} · {{< vocab "evaluate" zh=true >}} · {{< vocab "explain" zh=true >}} · {{< vocab "justify" zh=true >}} · {{< vocab "synthesize" zh=true >}} · {{< vocab "document" zh=true >}} · {{< vocab "reflect" zh=true >}}
-- **Governance & Law 治理与法律:** direct {{< vocab "democracy" zh=true >}} 直接民主制 | {{< vocab "citizen" zh=true >}} {{< vocab "assembly" zh=true >}} | oligarchy 寡头政治 | {{< vocab "republic" zh=true >}} | checks and balances 权力制衡 | {{< vocab "senate" zh=true >}} | {{< vocab "consul" text="consuls" zh=true >}} | tribunes 保民官 | **Twelve Tables** 《十二铜表法》 | **due process** 正当法律程序 | legal equality 法律面前公民平等
-- **Slavery & Hierarchy 奴隶制与等级控制:** **chattel slavery** 动产奴隶制（把人视为财产） | continuous dependence 持续依赖 | helots 希洛人（斯巴达国有奴隶） | **latifundia** 古罗马大奴隶制庄园 | gladiators 角斗士 | systemic exploitation 系统性剥削 | disenfranchisement 剥夺政治权利 | **civic exclusion** 公民权排斥（女性、奴隶、外邦人）
+- **Governance & Law 治理与法律:** direct {{< vocab "democracy" zh=true >}} 直接民主制 | {{< vocab "citizen" zh=true >}} {{< vocab "assembly" zh=true >}} | oligarchy 寡头政治 | {{< vocab "republic" zh=true >}} | checks and balances 权力制衡 | {{< vocab "senate" zh=true >}} | {{< vocab "consul" text="consuls" zh=true >}} | tribunes 保民官 | Twelve Tables 《十二铜表法》 | due process 正当法律程序 | legal equality 法律面前公民平等
+- **Slavery & Hierarchy 奴隶制与等级控制:** chattel slavery 动产奴隶制（把人视为财产） | continuous dependence 持续依赖 | helots 希洛人（斯巴达国有奴隶） | latifundia 古罗马大奴隶制庄园 | {{< vocab "gladiator" text="gladiators" zh=true >}} | systemic exploitation 系统性剥削 | disenfranchisement 剥夺政治权利 | civic exclusion 公民权排斥（女性、奴隶、外邦人）
 :::
 
 ## Step 1.1: Deconstructing the Summative Prompt | 步骤 1.1：拆解总结性评估题目
@@ -210,15 +96,6 @@ Tick each step as you finish it. The step numbers below are the same ones in you
 {{< vocab "use" text="Use" zh=true >}} the provided library books and your class texts to {{< vocab "investigate" zh=true >}} and gather specific historical facts, statistics, laws, and quotes. {{< vocab "document" text="Document" zh=true >}} page numbers and titles so you can cite them accurately.
 请使用老师提供的图书馆书籍以及课堂教材/阅读包，收集具体的历史事实、数据、法律条文与引文。请务必记录书名、作者与页码，以便在论文中规范引用。
 
-::: {.callout-tip title="MLA Works Cited Template 参考文献（MLA）格式模板" icon=false}
-`Author Last Name, First Name. Title of Book. Publisher, Year, pp. xx–xx.`
-
-作者姓, 名字. *书名*. 出版社, 出版年份, 第 xx–xx 页.
-
-Fill in one template box under **every** source below. Then you only have to copy them into Step 4.6 later — no hunting for page numbers on the last day.
-请在下方**每一则**史料后都填写一条MLA草稿。到步骤 4.6 时，你只需把它们抄到参考文献列表里，不必在最后一天再翻书找页码。
-:::
-
 ::: {.keep}
 ### Source 1 史料一: Class Textbook or Unit Reading Packet (课堂教材或单元阅读材料)
 **Focus 关注维度:** ☐ Governance Progress 治理进步 · ☐ Slavery / Exclusion 奴隶制与排斥 · ☐ Counter-Claim / Baseline 反方观点/基准
@@ -227,10 +104,6 @@ Fill in one template box under **every** source below. Then you only have to cop
 - **Key Historical Evidence / Direct Quote / Specific Law 核心史实 / 直接引文 / 具体法律或数据：**
 {{< lines 3 >}}
 - **How does this evidence support or challenge my thesis claim? 该证据如何支持或挑战我的中心论点？**
-{{< lines 2 >}}
-
-**My MLA Works Cited Draft 我的MLA参考文献草稿** *(copy this into Step 4.6 稍后抄到步骤 4.6):*
-
 {{< lines 2 >}}
 :::
 
@@ -243,10 +116,6 @@ Fill in one template box under **every** source below. Then you only have to cop
 {{< lines 3 >}}
 - **How does this evidence support or challenge my thesis claim? 该证据如何支持或挑战我的中心论点？**
 {{< lines 2 >}}
-
-**My MLA Works Cited Draft 我的MLA参考文献草稿** *(copy this into Step 4.6 稍后抄到步骤 4.6):*
-
-{{< lines 2 >}}
 :::
 
 ::: {.keep}
@@ -258,10 +127,6 @@ Fill in one template box under **every** source below. Then you only have to cop
 {{< lines 3 >}}
 - **How does this evidence support or challenge my thesis claim? 该证据如何支持或挑战我的中心论点？**
 {{< lines 2 >}}
-
-**My MLA Works Cited Draft 我的MLA参考文献草稿** *(copy this into Step 4.6 稍后抄到步骤 4.6):*
-
-{{< lines 2 >}}
 :::
 
 ::: {.keep}
@@ -272,10 +137,6 @@ Fill in one template box under **every** source below. Then you only have to cop
 - **Key Historical Evidence / Direct Quote / Specific Law 核心史实 / 直接引文 / 具体法律或数据：**
 {{< lines 3 >}}
 - **How does this evidence support or challenge my thesis claim? 该证据如何支持或挑战我的中心论点？**
-{{< lines 2 >}}
-
-**My MLA Works Cited Draft 我的MLA参考文献草稿** *(copy this into Step 4.6 稍后抄到步骤 4.6):*
-
 {{< lines 2 >}}
 :::
 
@@ -319,7 +180,7 @@ Fill in one template box under **every** source below. Then you only have to cop
 
 {{< pagebreak >}}
 
-# Step 2 (Lessons 2 & 3): 1st Draft 步骤二（第2–3课时）：论文第一稿手写区
+# Section 2 (Lessons 2 & 3): Essay Blueprint & First Draft 第二部分（第2–3课时）：论文结构蓝图与第一稿手写区
 
 ::: {.callout-tip title="Academic Sentence Starters & Transitions Bank 英文学术句型与过渡词工具箱" icon=false}
 - **To Show Governance Progress 阐述治理与法律进步:** *"A major political breakthrough in [Athens/Rome] was…"* | *"According to [Source/Author], the Twelve Tables established…"* | *"Compared to earlier monarchies, this system empowered citizens by…"*
@@ -327,7 +188,7 @@ Fill in one template box under **every** source below. Then you only have to cop
 - **For Counter-Claim & Rebuttal (Advanced Path) 反方观点与批驳（进阶路径）:** *"Some historians might argue that judged by ancient standards, [democracy/republican law] was still revolutionary because…"* → *"Nevertheless, this argument overlooks the reality that freedom for citizens was directly financed by…"*
 :::
 
-## Step 2.1: Introduction Paragraph (Hook / Context + Thesis) | 步骤 2.1：引言段
+## Paragraph 1: Introduction (Hook / Historical Context + Thesis Statement) | 第一段：引言
 
 **Checklist 写作核查:**
 
@@ -337,7 +198,7 @@ Fill in one template box under **every** source below. Then you only have to cop
 
 {{< lines 8 >}}
 
-## Step 2.2 (Lesson 2): Legal Body Paragraph — Governance & Legal Progress | 步骤 2.2：治理与法律进步主体段
+## Paragraph 2 (Lesson 2): Body Paragraph 1 — Governance & Legal Progress | 第二段：主体段一（治理与法律进步）
 
 **Checklist 写作核查:**
 
@@ -349,7 +210,7 @@ Fill in one template box under **every** source below. Then you only have to cop
 
 {{< pagebreak >}}
 
-## Step 2.3 (Lesson 2): Slavery Body Paragraph — Continuous Dependence on Slavery & Exclusion | 步骤 2.3：奴隶制依赖与排斥主体段
+## Paragraph 3 (Lesson 2): Body Paragraph 2 — Continuous Dependence on Slavery & Exclusion | 第三段：主体段二（对奴隶制的持续依赖与排斥）
 
 **Checklist 写作核查:**
 
@@ -359,9 +220,7 @@ Fill in one template box under **every** source below. Then you only have to cop
 
 {{< lines 10 >}}
 
-{{< pagebreak >}}
-
-## Step 2.4 (Lesson 3 — Advanced Pathway): Counter-Claim Paragraph & Rebuttal | 步骤 2.4：反方观点与批驳（进阶路径）
+## Paragraph 4 (Lesson 3 — Advanced Pathway): Counter-Claim & Rebuttal | 第四段（进阶路径选写）：反方观点与批驳
 
 **Checklist 写作核查（进阶路径学生填写）:**
 
@@ -370,9 +229,7 @@ Fill in one template box under **every** source below. Then you only have to cop
 
 {{< lines 9 >}}
 
-{{< pagebreak >}}
-
-## Step 2.5 (Lesson 3): Conclusion Paragraph — {{< vocab "synthesize" text="Synthesis" zh=true >}} & Final "To What Extent" Judgment | 步骤 2.5：结论段
+## Final Paragraph (Lesson 3): Conclusion — {{< vocab "synthesize" text="Synthesis" zh=true >}} & Final "To What Extent" Judgment | 末段：结论段
 
 **Checklist 写作核查:**
 
@@ -380,11 +237,11 @@ Fill in one template box under **every** source below. Then you only have to cop
 ☐ {{< vocab "evaluate" text="Evaluate" zh=true >}} and weigh civic/legal breakthroughs against the human cost of slavery 综合权衡政治法律成就与奴隶制的人道代价\
 ☐ Final reasoned judgment answering "To what extent?" 给出有理有据的最终历史评判
 
-{{< lines 10 >}}
+{{< lines 8 >}}
 
 {{< pagebreak >}}
 
-# Step 3 (Lesson 4): Peer Audit & Revision Plan 步骤三（第4课时）：同伴互评与修改行动计划
+# Section 3 (Lesson 4): Peer Audit & Revision Action Plan 第三部分（第4课时）：同伴互评与修改行动计划
 
 **Track A (First Draft Ready 通道 A):** Exchange booklets with a partner and complete the Peer Audit below.
 **Track B (Still Drafting 通道 B):** Use extra time in Lesson 4 to finish your First Draft, then complete a rapid peer/self audit.
@@ -395,9 +252,9 @@ Fill in one template box under **every** source below. Then you only have to cop
 | Criteria C & D Peer Audit Checkpoints 标准 C 与标准 D 同伴互评核查点 | Peer Rating 同伴评级 | Peer Suggestion / Note 同伴具体修改建议 |
 |---|---|---|
 | **1. Thesis Clarity 中心论点清晰度 (Crit D):**<br>Does the intro end with a clear "to what extent" claim connecting governance progress and slavery? 引言是否以清晰的“在多大程度上”中心论点收尾？ | ☐ Strong 优秀 (PR/EX)<br>☐ Developing 发展中 (DE)<br>☐ Missing 缺失 (EM) | {{< lines 2 >}} |
-| **2. Step 2.2 Governance Progress Evidence 治理进步证据 (Crit B/D):**<br>Does the Legal Body Paragraph include specific, {{< vocab "document" text="cited" >}} historical facts/laws from library books or class texts? 主体段是否引用了图书馆书籍或教材中的具体法律或制度史实？ | ☐ Strong 优秀 (PR/EX)<br>☐ Developing 发展中 (DE)<br>☐ Missing 缺失 (EM) | {{< lines 2 >}} |
-| **3. Step 2.3 Slavery & Perspective Analysis 奴隶制与多视角分析 (Crit D):**<br>Does the Slavery Body Paragraph {{< vocab "analyse" text="analyze" >}} how slavery worked systemically and contrast citizen vs. enslaved perspectives? 该段是否深入分析了奴隶制并对比了公民与奴隶的不同视角？ | ☐ Strong 优秀 (PR/EX)<br>☐ Developing 发展中 (DE)<br>☐ Missing 缺失 (EM) | {{< lines 2 >}} |
-| **4. Step 2.4 Counter-Claim & Rebuttal 反方观点与批驳 (Advanced - Crit D):**<br>If included, does the Counter-Claim Paragraph state a fair counter-argument and refute it with evidence? （如选写）该段是否提出了合理的反方观点并用证据批驳？ | ☐ Strong 优秀 (PR/EX)<br>☐ Developing 发展中 (DE)<br>☐ Missing 缺失 (EM) | {{< lines 2 >}} |
+| **2. Governance Progress Evidence 治理进步证据 (Crit B/D):**<br>Does Body 1 include specific, {{< vocab "document" text="cited" >}} historical facts/laws from library books or class texts? 主体段1是否引用了图书馆书籍或教材中的具体法律或制度史实？ | ☐ Strong 优秀 (PR/EX)<br>☐ Developing 发展中 (DE)<br>☐ Missing 缺失 (EM) | {{< lines 2 >}} |
+| **3. Slavery & Perspective Analysis 奴隶制与多视角分析 (Crit D):**<br>Does Body 2 {{< vocab "analyse" text="analyze" >}} how slavery worked systemically and contrast citizen vs. enslaved perspectives? 主体段2是否深入分析了奴隶制并对比了公民与奴隶的不同视角？ | ☐ Strong 优秀 (PR/EX)<br>☐ Developing 发展中 (DE)<br>☐ Missing 缺失 (EM) | {{< lines 2 >}} |
+| **4. Counter-Claim & Rebuttal 反方观点与批驳 (Advanced - Crit D):**<br>If included, does Body 3 state a fair counter-argument and refute it with evidence? （如选写）主体段3是否提出了合理的反方观点并用证据批驳？ | ☐ Strong 优秀 (PR/EX)<br>☐ Developing 发展中 (DE)<br>☐ Missing 缺失 (EM) | {{< lines 2 >}} |
 | **5. Academic Structure & Transitions 篇章结构与衔接词 (Crit C):**<br>Are paragraphs clearly organized with analytical transitions (*however, whereas, despite*)? 段落结构是否清晰，是否恰当使用了英文分析性过渡词？ | ☐ Strong 优秀 (PR/EX)<br>☐ Developing 发展中 (DE)<br>☐ Missing 缺失 (EM) | {{< lines 2 >}} |
 | **6. Source Citations 史料引用规范 (Crit C):**<br>Are library books and class texts explicitly {{< vocab "document" text="documented" >}} in the paragraphs? 段内是否明确标明了所引用的书籍或教材来源？ | ☐ Strong 优秀 (PR/EX)<br>☐ Developing 发展中 (DE)<br>☐ Missing 缺失 (EM) | {{< lines 2 >}} |
 :::
@@ -422,58 +279,31 @@ Fill in one template box under **every** source below. Then you only have to cop
 
 {{< pagebreak >}}
 
-# Step 4 (Lesson 5): 2nd Draft, Revisions & Bibliography 步骤四（第5课时）：第二稿修改与参考文献整理
+# Section 4 (Lesson 5): Second Draft, Revisions & Bibliography 第四部分（第5课时）：第二稿修改与参考文献整理
 
-{{< vocab "use" text="Use" zh=true >}} feedback from your Step 3 Peer Audit and teacher guidance to write your revised Second Draft below. Strengthen your Criterion D historical {{< vocab "explain" text="explanation" zh=true >}}, transitions, and source citations so you are ready to type your final essay in Lesson 6.
-请结合同伴互评反馈与老师指导，在下方撰写修改后的第二稿。重点强化标准 D 的历史深度分析、段落过渡词以及标准 C 的史料引用，为第6课时录入终稿做好准备。
+{{< vocab "use" text="Use" zh=true >}} feedback from your Lesson 4 Peer Audit and teacher guidance to write your revised Second Draft below. Strengthen your Criterion D historical {{< vocab "explain" text="explanation" zh=true >}}, transitions, and source citations so you are ready to type your final essay in Lesson 6.
+请结合第4课时的同伴互评反馈与老师指导，在下方撰写修改后的第二稿。重点强化标准 D 的历史深度分析、段落过渡词以及标准 C 的史料引用，为第6课时录入终稿做好准备。
 
-Write one section per page, in the same order as Step 2. Copy the MLA entries you drafted in Step 1.3 into Step 4.6.
-请按照与步骤二相同的顺序，每一页面写一个段落；并把步骤 1.3 中写好的MLA条目抄到步骤 4.6。
+## Second Draft / Revised Essay Workspace (Write in English) | 第二稿 / 论文修改手写区
+
+{{< lines 18 >}}
 
 {{< pagebreak >}}
 
-## Step 4.1 · 2nd Draft: Introduction 第二稿 · 引言段
+## Second Draft Workspace (Continued) | 第二稿手写区（续页）
 
 {{< lines 16 >}}
 
-{{< pagebreak >}}
+## Works Cited / Bibliography Organizer (Criterion C) | 参考文献列表整理区（准备录入终稿）
 
-## Step 4.2 · 2nd Draft: Legal Body 第二稿 · 治理法律进步段
-
-{{< lines 16 >}}
-
-{{< pagebreak >}}
-
-## Step 4.3 · 2nd Draft: Slavery Body 第二稿 · 奴隶制依赖段
-
-{{< lines 16 >}}
-
-{{< pagebreak >}}
-
-## Step 4.4 · 2nd Draft: Counter-Claim 第二稿 · 反方观点段 *(Advanced)*
-
-{{< lines 16 >}}
-
-{{< pagebreak >}}
-
-## Step 4.5 · 2nd Draft: Conclusion 第二稿 · 结论段
-
-{{< lines 16 >}}
-
-{{< pagebreak >}}
-
-## Step 4.6: Works Cited Organizer (Criterion C) 步骤 4.6：参考文献列表整理区
-
-{{< vocab "list" text="List" zh=true >}} and {{< vocab "document" zh=true >}} all library books and class texts cited in your essay. Copy your Step 1.3 MLA drafts here.
-请抄写步骤 1.3 中已写好的MLA条目，列出论文中引用的全部书籍与教材。
-
-**MLA format 格式模板:** `Author Last Name, First Name. Title of Book. Publisher, Year, pp. xx–xx.`
+{{< vocab "list" text="List" zh=true >}} and {{< vocab "document" zh=true >}} all library books and class texts cited in your essay.
+**Example format 格式示例:** `Author Last Name, First Name. Title of Book. Publisher, Year, pp. xx–xx.`
 
 {{< lines 6 >}}
 
 {{< pagebreak >}}
 
-# Step 5 (Lesson 6): Type Final Essay & Rubrics 步骤五（第6课时）：终稿录入核查与双语评估量规
+# Section 5 (Lesson 6): Final Essay Submission & Bilingual Rubrics 第五部分（第6课时）：终稿提交核查与双语评估量规
 
 ::: {.callout-important title="Lesson 6 Final Pre-Submission Checklist 第6课时 终稿提交前最终核查清单" icon=false}
 ☐ **1. Assessment 1 (Criterion B) Complete 评估一（标准B）已完成:** My Research Question, Research Log, Alignment Check, and Criterion B Self-Assessment Checklist in this booklet are 100% finished. 本手册中的研究问题、史料记录表、论点匹配核查及标准B自评表已全部完成。\
@@ -493,10 +323,10 @@ Write one section per page, in the same order as Step 2. Copy the MLA entries yo
 ::: {.content-visible when-profile="teacher"}
 ::: {.callout-note title="Teacher Guide: 6-Lesson Pacing & Dual Checkpoints"}
 - **Lesson 1 (50 min) — Prompt, Thesis & Research:** Deconstruct prompt terms; model focused RQ & initial thesis frame; introduce curated library books & class texts. *Checkpoint:* Criterion B Check 1 (Steps 1.1–1.4 initiated).
-- **Lesson 2 (50 min) — Steps 2.2 & 2.3 (Legal + Slavery Body ¶):** Mini-lesson on TEEL paragraph structure & embedding citations; finalize Criterion B Source Quality Checklist; draft Step 2.1 Intro, Step 2.2 Legal Body Paragraph (Governance Progress), and Step 2.3 Slavery Body Paragraph. *Checkpoint:* Criterion B Check 2 + Steps 2.1–2.3 drafted.
-- **Lesson 3 (50 min) — Step 2.4 Counter-Claim & Step 2.5 Conclusion:** Final deadline to verify Criterion B Self-Assessment Checklist (ready for Assessment 1); Advanced Path drafts Step 2.4 (Counter-Claim & Rebuttal); all students draft Step 2.5 Conclusion. *Checkpoint:* Criterion B Finalized + Complete 1st Draft.
-- **Lesson 4 (50 min) — Peer Audit + Drafting Buffer:** Track A (Ready Students) conducts structured Peer Audit in Step 3 (2 Glows, 2 Grows, Revision Plan); Track B (Drafting Students) finishes 1st Draft paragraphs followed by rapid check.
-- **Lesson 5 (50 min) — 2nd Draft & Revisions:** Mini-lesson on upgrading `DE` to `PR`/`EX` (citizen vs. enslaved perspective analysis, analytical transitions, Works Cited formatting); write the 2nd Draft in Steps 4.1–4.5 and copy MLA drafts into Step 4.6.
+- **Lesson 2 (50 min) — Body Paragraphs 1 & 2:** Mini-lesson on TEEL paragraph structure & embedding citations; finalize Criterion B Source Quality Checklist; draft Intro, Body 1 (Governance Progress), and Body 2 (Slavery & Exclusion). *Checkpoint:* Criterion B Check 2 + 1st Draft Body 1 & 2.
+- **Lesson 3 (50 min) — Counter-Claim & Conclusion:** Final deadline to verify Criterion B Self-Assessment Checklist (ready for Assessment 1); Advanced Path drafts Body 3 (Counter-Claim & Rebuttal); all students draft Conclusion. *Checkpoint:* Criterion B Finalized + Complete 1st Draft.
+- **Lesson 4 (50 min) — Peer Audit + Drafting Buffer:** Track A (Ready Students) conducts structured Peer Audit in Section 3 (2 Glows, 2 Grows, Revision Plan); Track B (Drafting Students) finishes 1st Draft paragraphs followed by rapid check.
+- **Lesson 5 (50 min) — 2nd Draft & Revisions:** Mini-lesson on upgrading `DE` to `PR`/`EX` (citizen vs. enslaved perspective analysis, analytical transitions, Works Cited formatting); write 2nd Draft in Section 4.
 - **Lesson 6 (50 min) — Type the Final Essay:** HOLD status academic integrity rules (students type directly from this annotated physical booklet; no generative AI or external websites). Collect the physical booklet alongside the final essay.
 :::
 :::
