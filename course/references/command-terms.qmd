@@ -81,6 +81,7 @@ These command terms ask you to break down complex ideas, weigh different sides, 
 ::: {.content-visible when-format="html"}
 ## Official IB MYP Reference
 
+- [🏆 MYP Assessment Criteria 评估标准](assessment-criteria.html)
 - [📄 Official MYP Command Terms for Individuals and Societies (PDF)](curriculum-building/MYP_Individuals_and_Societies_CommandTerms.pdf)
 :::
 

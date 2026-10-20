@@ -16,6 +16,14 @@ Newest entries first.
 - **AI assistant:** which one made the change.
 -->
 
+## 2026-10-20: Add MYP Assessment Criteria to sidebar navigation (`_quarto.yml`)
+- **Asked for:** "IB Alignment: Create a page on Chalkine that displays the MYP Individuals and Societies Criterion."
+- **Why:** To make the official IB MYP Individuals and Societies Year 3 criteria (Criteria A, B, C, D) directly discoverable from the global sidebar navigation alongside the Command Terms reference.
+- **Changed:**
+  - `_quarto.yml` — added `course/references/assessment-criteria.qmd` ("Assessment Criteria 评估标准") under `website.sidebar.contents` with the `award` icon.
+- **Who it helps:** this course and any MYP course needing a prominent sidebar link to its assessment rubrics.
+- **AI assistant:** Antigravity (Gemini)
+
 ## 2026-10-19: A Student Edition PDF next to every Teacher Edition PDF (`scripts/student_copies.py`)
 - **Asked for:** "create both 'Teacher Edition' and 'Student Edition' pdf copies on my chalkline. The 'Student Edition' should not have any 'Teacher Edition' in the top right header."
 - **Why:** the teacher build stamps TEACHER EDITION on every PDF and keeps the answer keys, so there was no clean copy to print for class — and the file was still named after students (`student-summative-booklet.pdf`), which reads as a contradiction.

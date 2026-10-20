@@ -61,6 +61,9 @@ website:
       - text: "Command Terms 指令词"
         href: course/references/command-terms.qmd
         icon: card-checklist
+      - text: "Assessment Criteria 评估标准"
+        href: course/references/assessment-criteria.qmd
+        icon: award
       - auto: course/units      # one section per unit folder, titled from its index.qmd
       - auto: course/summatives # one section per summative folder, titled from its index.qmd
 

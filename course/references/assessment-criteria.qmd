@@ -1,0 +1,170 @@
+---
+title: "MYP Assessment Criteria 评估标准"
+type: reference
+description: "Official IB MYP Individuals & Societies Year 3 assessment criteria covering Criteria A, B, C, and D with level descriptors, student targets, and 中文 support."
+order: 2
+audience: [teacher, student, parent]
+doc-type: Reference
+packet: false
+format:
+  html: default
+  typst: default
+---
+
+In the IB Middle Years Programme (MYP) Individuals and Societies, student learning is assessed against four equally weighted criteria. Each criterion has a maximum score of **8 points**, giving a total possible score of **32 points**.
+
+These criteria evaluate not just recall of historical facts, but how students investigate questions, communicate insights, and critically analyse perspectives and sources.
+
+::: {.callout-tip title="Four Assessment Criteria at a Glance (评估标准总览)" icon=false}
+| Criterion | Focus | Max Score | Key Question You Answer |
+|---|---|:---:|---|
+| **Criterion A: Knowing and understanding**<br>标准 A：知识与理解 | Facts, concepts, terminology, and causal explanations. | **/ 8** | *What happened, why did it happen, and what key vocabulary describes it?* |
+| **Criterion B: Investigating**<br>标准 B：调查研究 | Research questions, action plans, collecting evidence, and evaluating methods. | **/ 8** | *How do you plan, gather evidence, and evaluate your research process?* |
+| **Criterion C: Communicating**<br>标准 C：交流表达 | Organization, style, audience awareness, and citing sources. | **/ 8** | *How effectively do you organize your work and credit your sources?* |
+| **Criterion D: Thinking critically**<br>标准 D：批判性思考 | Analyzing sources (OPCVL), balancing perspectives, and making reasoned arguments. | **/ 8** | *How do you analyze evidence, detect bias, and build supported conclusions?* |
+: {tbl-colwidths="[30,30,12,28]"}
+:::
+
+::: {.content-visible when-format="html"}
+::: {.callout-note title="Year 3 Rubrics (Grade 7 & 8)"}
+These descriptors are the official **IB MYP Year 3** criteria from the *MYP Individuals and Societies Guide*. They set the expected standards for Grade 7 and Grade 8 students.
+:::
+:::
+
+{{< pagebreak >}}
+
+## Criterion A: Knowing and Understanding (标准 A：知识与理解)
+
+**Maximum: 8**
+
+At the end of year 3, students should be able to:
+
+i. **{{< vocab "use" text="use" zh=true >}} a range of terminology in context** *(在特定语境中准确运用一系列学科专业术语)*
+ii. **{{< vocab "demonstrate" text="demonstrate" zh=true >}} knowledge and understanding of subject-specific content and concepts**, through {{< vocab "describe" text="descriptions" zh=true >}}, {{< vocab "explain" text="explanations" zh=true >}} and {{< vocab "exemplify" text="examples" zh=true >}} *(通过描述、解释和举例，展示对学科内容和概念的知识与理解)*
+
+| Achievement level | Level descriptor |
+|:---:|---|
+| **0** | The student does not reach a standard described by any of the descriptors below.<br>*(学生未达到下列任何标准所述的水平。)* |
+| **1–2** | The student:<br>i. makes **limited** use of terminology<br>ii. demonstrates **basic** knowledge and understanding of content and concepts through **limited** descriptions and/or examples.<br>*(学生：很少使用专业术语；通过有限的描述和／或举例，展示对内容和概念的基础知识与理解。)* |
+| **3–4** | The student:<br>i. uses some terminology **accurately**<br>ii. demonstrates **satisfactory** knowledge and understanding of content and concepts through **simple** descriptions, explanations and examples.<br>*(学生：准确使用部分专业术语；通过简单的描述、解释和举例，展示对内容和概念令人满意的知识与理解。)* |
+| **5–6** | The student:<br>i. uses **considerable** and **relevant** terminology **accurately**<br>ii. demonstrates **substantial** knowledge and understanding of content and concepts through descriptions, explanations and examples.<br>*(学生：准确使用大量且相关的专业术语；通过深入的描述、解释和举例，展示对内容和概念实质性的知识与理解。)* |
+| **7–8** | The student:<br>i. **consistently** uses a **range** of terminology **accurately**<br>ii. demonstrates **detailed** knowledge and understanding of content and concepts through **developed** and **accurate** descriptions, explanations and examples.<br>*(学生：一贯准确运用广泛的专业术语；通过充分展开且准确的描述、解释和举例，展示对内容和概念详尽透彻的知识与理解。)* |
+: {tbl-colwidths="[18,82]"}
+
+::: {.callout-note title="Criterion A Key Progression at a Glance" icon=false}
+- **Terminology:** Limited (1–2) $\rightarrow$ Some accurate (3–4) $\rightarrow$ Considerable & relevant (5–6) $\rightarrow$ Consistently uses a range accurately (7–8)
+- **Knowledge & Concepts:** Basic / limited (1–2) $\rightarrow$ Satisfactory / simple (3–4) $\rightarrow$ Substantial (5–6) $\rightarrow$ Detailed, developed & accurate (7–8)
+:::
+
+{{< pagebreak >}}
+
+## Criterion B: Investigating (标准 B：调查研究)
+
+**Maximum: 8**
+
+At the end of year 3, students should be able to:
+
+i. **{{< vocab "formulate" text="formulate" zh=true >}}/choose a clear and focused research question**, explaining its relevance *(提出／选择一个清晰聚焦的探究问题，并解释其相关性)*
+ii. **formulate and follow an action plan** to {{< vocab "investigate" text="investigate" zh=true >}} a research question *(制定并执行调查行动计划以探究该问题)*
+iii. **{{< vocab "use" text="use" zh=true >}} methods to collect and record relevant information** *(运用适当的方法收集并记录相关信息)*
+iv. **{{< vocab "evaluate" text="evaluate" zh=true >}} the process and results of the investigation**, with guidance *(在指导下评估调查的过程与结果)*
+
+| Achievement level | Level descriptor |
+|:---:|---|
+| **0** | The student does not reach a standard described by any of the descriptors below.<br>*(学生未达到下列任何标准所述的水平。)* |
+| **1–2** | The student:<br>i. **identifies** a research question that is **clear, focused and relevant**<br>ii. formulates a **limited** action plan or **does not follow** a plan<br>iii. collects and records **limited or sometimes irrelevant** information<br>iv. with guidance, **reflects** on the research process and results in a **limited** way.<br>*(学生：指出一个清晰、聚焦且相关的探究问题；制定有限的行动计划或未遵循计划；收集并记录有限或有时不相关的信息；在指导下以有限的方式反思探究过程与结果。)* |
+| **3–4** | The student:<br>i. **formulates/chooses** a research question that is **clear and focused** and **describes its relevance**<br>ii. formulates and **occasionally follows** a **partial** action plan to investigate a research question<br>iii. uses a method(s) to collect and record **some relevant** information<br>iv. with guidance, **reflects** on the research process and results.<br>*(学生：提出／选择一个清晰聚焦的探究问题并描述其相关性；制定并偶尔遵循部分行动计划以调查该问题；运用方法收集并记录部分相关信息；在指导下反思探究过程与结果。)* |
+| **5–6** | The student:<br>i. **formulates/chooses** a clear and focused research question and **describes its relevance in detail**<br>ii. formulates and **mostly follows** a **sufficiently developed** action plan to investigate a research question<br>iii. uses methods to collect and record **appropriate relevant** information<br>iv. with guidance, **evaluates** on the research process and results.<br>*(学生：提出／选择清晰聚焦的探究问题并详细描述其相关性；制定并基本遵循充分发展的行动计划以调查该问题；运用方法收集并记录恰当的相关信息；在指导下评估探究过程与结果。)* |
+| **7–8** | The student:<br>i. **formulates/chooses** a clear and focused research question and **explains its relevance**<br>ii. formulates and **effectively follows** a **consistent** action plan to investigate a research question<br>iii. uses methods to collect and record **appropriate and varied relevant** information<br>iv. with guidance, provides a **detailed evaluation** of the research process and results.<br>*(学生：提出／选择清晰聚焦的探究问题并充分解释其相关性；制定并切实遵循一贯的行动计划以调查该问题；运用方法收集并记录恰当、多样且相关的信息；在指导下对探究过程与结果提供详细深入的评估。)* |
+: {tbl-colwidths="[18,82]"}
+
+::: {.callout-note title="Criterion B Key Progression at a Glance" icon=false}
+- **Research Question:** Identifies (1–2) $\rightarrow$ Formulates/chooses & describes relevance (3–4) $\rightarrow$ Describes relevance in detail (5–6) $\rightarrow$ Explains relevance (7–8)
+- **Action Plan:** Limited / does not follow (1–2) $\rightarrow$ Partial / occasionally follows (3–4) $\rightarrow$ Sufficiently developed / mostly follows (5–6) $\rightarrow$ Consistent / effectively follows (7–8)
+- **Information:** Limited or irrelevant (1–2) $\rightarrow$ Some relevant (3–4) $\rightarrow$ Appropriate relevant (5–6) $\rightarrow$ Appropriate and varied relevant (7–8)
+- **Evaluation:** Limited reflection (1–2) $\rightarrow$ Reflects on process & results (3–4) $\rightarrow$ Evaluates process & results (5–6) $\rightarrow$ Detailed evaluation of process & results (7–8)
+:::
+
+{{< pagebreak >}}
+
+## Criterion C: Communicating (标准 C：交流表达)
+
+**Maximum: 8**
+
+At the end of year 3, students should be able to:
+
+i. **communicate information and ideas in a way that is appropriate for the audience and purpose** *(以适合受众和目的的方式传达信息与观点)*
+ii. **structure information and ideas according to the task instructions** *(根据任务指令组织信息和观点的结构)*
+iii. **create a reference list and cite sources of information** *(编制参考文献列表并注明信息来源)*
+
+| Achievement level | Level descriptor |
+|:---:|---|
+| **0** | The student does not reach a standard described by any of the descriptors below.<br>*(学生未达到下列任何标准所述的水平。)* |
+| **1–2** | The student:<br>i. communicates information and ideas in a style that is **not always clear**<br>ii. organizes information and ideas in a **limited way**<br>iii. lists sources of information **inconsistently**.<br>*(学生：传达信息和观点的文风不够清晰；以有限的方式组织信息和观点；列出信息来源不一致。)* |
+| **3–4** | The student:<br>i. communicates information and ideas in a way that is **somewhat clear**<br>ii. **somewhat organizes** information and ideas<br>iii. creates an **adequate** reference list and **sometimes cites** sources.<br>*(学生：以较为清晰的方式传达信息和观点；一定程度上组织信息和观点；编制合格的参考文献列表且有时注明出处。)* |
+| **5–6** | The student:<br>i. communicates information and ideas in a style that is **mostly appropriate** to the audience and purpose<br>ii. **mostly structures** information and ideas according to the task instructions<br>iii. creates an **adequate** reference list and **usually cites** sources.<br>*(学生：以基本适合受众和目的的风格传达信息和观点；基本根据任务指令组织信息和观点结构；编制合格的参考文献列表且通常注明出处。)* |
+| **7–8** | The student:<br>i. communicates information and ideas in a style that is **completely appropriate** to the audience and purpose<br>ii. structures information and ideas **completely** according to the task instructions<br>iii. creates a **complete** reference list and **always cites** sources.<br>*(学生：以完全适合受众和目的的风格传达信息和观点；完全根据任务指令组织信息和观点结构；编制完整的参考文献列表且始终准确注明出处。)* |
+: {tbl-colwidths="[18,82]"}
+
+::: {.callout-note title="Criterion C Key Progression at a Glance" icon=false}
+- **Style & Clarity:** Not always clear (1–2) $\rightarrow$ Somewhat clear (3–4) $\rightarrow$ Mostly appropriate (5–6) $\rightarrow$ Completely appropriate (7–8)
+- **Structure:** Limited way (1–2) $\rightarrow$ Somewhat organizes (3–4) $\rightarrow$ Mostly structures (5–6) $\rightarrow$ Completely structures (7–8)
+- **Sources & Citations:** Inconsistently lists (1–2) $\rightarrow$ Adequate list & sometimes cites (3–4) $\rightarrow$ Adequate list & usually cites (5–6) $\rightarrow$ Complete reference list & always cites (7–8)
+:::
+
+{{< pagebreak >}}
+
+## Criterion D: Thinking Critically (标准 D：批判性思考)
+
+**Maximum: 8**
+
+At the end of year 3, students should be able to:
+
+i. **{{< vocab "analyse" text="analyse" zh=true >}} concepts, issues, models, visual representation and/or theories** *(分析概念、议题、模型、视觉表征和／或理论)*
+ii. **{{< vocab "summarize" text="summarize" zh=true >}} information to make valid, well-supported arguments** *(概括信息以提出有效、论据充分的论点)*
+iii. **analyse a range of sources/data in terms of origin and purpose, recognizing values and limitations** *(从出处与目的角度分析多元史料／数据，认识其价值与局限性)*
+iv. **{{< vocab "recognize" text="recognize" zh=true >}} different perspectives and {{< vocab "explain" text="explain" zh=true >}} their implications** *(识别不同视角并解释其深远影响)*
+
+| Achievement level | Level descriptor |
+|:---:|---|
+| **0** | The student does not reach a standard described by any of the descriptors below.<br>*(学生未达到下列任何标准所述的水平。)* |
+| **1–2** | The student:<br>i. **begins to analyse** concepts, issues, models, visual representation and/or theories in a **limited way**<br>ii. **begins to identify** connections between information to make **simple** arguments<br>iii. recognizes the origin and purpose of **few** sources/data as well as **few** values and limitations of sources/data<br>iv. **identifies** different perspectives.<br>*(学生：开始以有限的方式分析概念、议题、模型、视觉表征和／或理论；开始识别信息之间的联系以提出简单论点；仅认识少数史料／数据的出处和目的以及少数价值与局限性；指出不同视角。)* |
+| **3–4** | The student:<br>i. completes a **simple analysis** of concepts, issues, models, visual representation and/or theories<br>ii. summarizes information to make **some adequate** arguments<br>iii. analyses sources/data in terms of origin and purpose, recognizing **some** values and limitations<br>iv. recognizes different perspectives and **suggests some** of their implications.<br>*(学生：完成对概念、议题、模型、视觉表征和／或理论的简单分析；概括信息以提出一些恰当的论点；从出处和目的分析史料／数据，认识到部分价值与局限性；认识不同视角并提出其中一些影响。)* |
+| **5–6** | The student:<br>i. completes a **substantial analysis** of concepts, issues, models, visual representation and/or theories<br>ii. summarizes information in order to make **usually valid** arguments<br>iii. analyses sources/data in terms of origin and purpose, **usually recognizing** values and limitations<br>iv. **clearly recognizes** different perspectives and **describes most** of their implications.<br>*(学生：完成对概念、议题、模型、视觉表征和／或理论的实质性深入分析；概括信息以提出通常有效的论点；从出处和目的分析史料／数据，通常能认识到价值与局限性；清晰认识不同视角并描述其大部分影响。)* |
+| **7–8** | The student:<br>i. completes a **detailed analysis** of concepts, issues, models, visual representation and/or theories<br>ii. summarizes information to make **consistent, well-supported** arguments<br>iii. **effectively analyses** a range of sources/data in terms of origin and purpose, **consistently recognizing** values and limitations<br>iv. **clearly recognizes** different perspectives and **consistently explains** their implications.<br>*(学生：完成对概念、议题、模型、视觉表征和／或理论的详尽深入分析；概括信息以提出一贯、论据充分的有力论点；从出处和目的有效分析一系列史料／数据，一贯认识其价值与局限性；清晰认识不同视角并一贯透彻解释其影响。)* |
+: {tbl-colwidths="[18,82]"}
+
+::: {.callout-note title="Criterion D Key Progression at a Glance" icon=false}
+- **Analysis:** Begins in a limited way (1–2) $\rightarrow$ Simple analysis (3–4) $\rightarrow$ Substantial analysis (5–6) $\rightarrow$ Detailed analysis (7–8)
+- **Arguments:** Simple arguments (1–2) $\rightarrow$ Some adequate arguments (3–4) $\rightarrow$ Usually valid arguments (5–6) $\rightarrow$ Consistent, well-supported arguments (7–8)
+- **Sources (OPCVL):** Few sources, few values/limitations (1–2) $\rightarrow$ Recognizes some values & limitations (3–4) $\rightarrow$ Usually recognizes values & limitations (5–6) $\rightarrow$ Effectively analyses range, consistently recognizing values & limitations (7–8)
+- **Perspectives:** Identifies (1–2) $\rightarrow$ Suggests some implications (3–4) $\rightarrow$ Describes most implications (5–6) $\rightarrow$ Consistently explains implications (7–8)
+:::
+
+{{< pagebreak >}}
+
+## MYP 1–7 Overall Grade Boundaries (IB 综合总评等级换算)
+
+At the end of each reporting period, your marks across all four criteria (Criterion A + B + C + D) are added together for a **Criterion Total out of 32**.
+
+The International Baccalaureate translates this 32-point total into a final **MYP Grade from 1 to 7**:
+
+| Final MYP Grade | Criteria Total (out of 32) | Performance Summary (学业表现概述) |
+|:---:|:---:|---|
+| **7** | **28 – 32** | **High-quality, frequently innovative work.** Comprehensive conceptual understanding; sophisticated critical thinking and independent inquiry. |
+| **6** | **24 – 27** | **High-quality work.** Extensive conceptual understanding; consistently demonstrates critical and analytical thinking. |
+| **5** | **19 – 23** | **Generally high-quality work.** Secure conceptual understanding; demonstrates critical and analytical thinking with good independence. |
+| **4** | **15 – 18** | **Good-quality work.** Basic understanding of most concepts with few misunderstandings; analytical in familiar contexts. |
+| **3** | **10 – 14** | **Acceptable quality work.** Basic understanding of many concepts; begins to demonstrate analytical thinking. |
+| **2** | **6 – 9** | **Limited quality work.** Significant conceptual misunderstandings; rarely demonstrates analytical thinking. |
+| **1** | **1 – 5** | **Very limited quality work.** Many significant misunderstandings; shows very little analytical thinking. |
+: {tbl-colwidths="[18,22,60]"}
+
+---
+
+## Helpful Course Links (相关学习链接)
+
+- [**Command Terms 指令词 Reference Page**](command-terms.html): Learn the exact meaning of all 20 IB command terms used in task instructions and rubrics.
+- [**History Vocab App 词汇应用**](../../vocab/app/index.html): Practice and master key subject terminology for Criterion A.
+- [**Official IB MYP Individuals and Societies Guide (PDF)**](curriculum-building/MYP_Individuals_and_Societies_Guide_20141.pdf): The full curriculum framework published by the International Baccalaureate.
+- [**Official MYP Command Terms Guide (PDF)**](curriculum-building/MYP_Individuals_and_Societies_CommandTerms.pdf): The official IB glossary of assessment command terms.

@@ -47,6 +47,16 @@ This file is the **shared local memory and handoff log** across all AI assistant
 
 <!-- AI_LOG_FEED_START -->
 
+### [2026-10-20 11:37] COMPLETED — Create MYP Individuals and Societies Assessment Criteria page
+- **AI Assistant:** Antigravity (Gemini)
+- **Status:** COMPLETED
+- **Files Touched:** course/references/assessment-criteria.qmd, course/references/command-terms.qmd, _quarto.yml, TOOL-CHANGES.md
+- **Notes:** Created official IB MYP Individuals & Societies Year 3 Assessment Criteria reference page covering Criteria A, B, C, and D with official achievement level descriptors (0, 1-2, 3-4, 5-6, 7-8), bilingual strand definitions, progression callouts, and 1-7 final grade conversion. Added sidebar link in _quarto.yml, cross-link in command-terms.qmd, and logged tool change in TOOL-CHANGES.md. Verified HTML and Typst PDF compilation.
+### [2026-10-20 11:29] IN PROGRESS — Create IB MYP Individuals and Societies Assessment Criteria page
+- **AI Assistant:** Antigravity (Gemini)
+- **Status:** IN PROGRESS
+- **Files Touched:** course/references/assessment-criteria.qmd, _quarto.yml
+- **Notes:** Building the official IB MYP Year 3 Assessment Criteria reference page covering Criteria A, B, C, and D with level descriptors, student-friendly explanations, and 中文 support, and adding sidebar navigation.
 ### [2026-10-20 09:29] COMPLETED — Pushed pending commits to origin main to trigger GitHub Pages publish
 - **AI Assistant:** Antigravity (Gemini)
 - **Status:** COMPLETED
