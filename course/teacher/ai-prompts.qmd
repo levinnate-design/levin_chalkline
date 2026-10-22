@@ -6,7 +6,7 @@ order: 2
 format:
   html: default
   typst: default
-description: "Curated collection of copy-and-paste AI prompts for lesson drafting, vocab building, differentiated worksheets, interactive polls/timers, and git sync."
+description: "Non-coder copy-and-paste prompts for everyday teaching tasks: modifying slides, differentiating worksheets, adding timers and polls, and publishing updates."
 ---
 
 ::: {.content-hidden when-profile="teacher"}
@@ -19,101 +19,132 @@ This reference document is confidential and restricted to teachers. It contains 
 
 ::: {.content-visible when-profile="teacher"}
 
-::: {.callout-note title="How to Use These Prompts · 如何使用提示词" icon=false}
-These prompts have been battle-tested on **Tencent WorkBuddy**, **Google Antigravity**, **Claude**, and **ChatGPT/Codex**. You can copy and paste them directly into your AI assistant session. Just replace the bracketed items `[...]` with your unit or lesson details.
-以下提示词均在 **腾讯 WorkBuddy**、**Google Antigravity**、**Claude** 等 AI 平台上经过实战验证。您可以直接复制并替换括号 `[...]` 中的内容发给 AI 助手。
+::: {.callout-note title="How to Use These Prompts · 如何使用提示词 (免代码基础)" icon=false}
+You **do not need any coding knowledge** to edit this course with AI assistants (**Tencent WorkBuddy**, **Google Antigravity**, **Claude**, or **ChatGPT**).
+Each box below contains a **ready-to-use prompt**. Simply:
+1. Copy the text in the box.
+2. Replace any bracketed words `[...]` with your lesson topic or unit name.
+3. Paste into your AI chat window and press Enter!
+
+您**无需掌握任何编程或代码知识**。下方每个文本框中的提示词均可直接复制使用。只需替换括号 `[...]` 中的单元或课题名称，粘贴发送给 AI 助手即可！
 :::
 
 ---
 
-## 1. Lesson Decks & Slide Design · 课件制作与幻灯片设计
+## 1. Modifying Slides · 课件制作与幻灯片调整
 
-### Prompt 1.1: Add a New Slide with Bilingual Glosses (添加含双语注释的幻灯片)
+### 1.1 Add a New Slide with Vocabulary & Chinese Pop-ups (添加带生词注释的幻灯片)
+> Use this when you want to introduce a new historical concept or story during class.
+
 ```text
-Read CLAUDE.md first. Add a new slide to course/units/[unit-folder]/[file-slides.qmd] about [topic, e.g. Roman aqueducts and the Pont du Gard]. 
-- Include 3 concise bullet points written for middle school English learners (one idea per bullet).
-- Gloss key vocabulary and IB MYP Command Terms using {{< vocab "term" >}} (e.g. {{< vocab "aqueduct" >}} and {{< vocab "explain" text="Explain" >}}).
-- Add speaker notes in a "::: notes" block for teacher guidance.
-- Avoid 🤖, 💩, and 🔒 emoji.
+Add a slide to the [Unit name, e.g. Egypt / Rome / Greece] slides about [Topic, e.g. mummification and the afterlife]. Write 3 short bullet points in simple English for middle school learners, gloss the key words with Chinese pop-ups, and add teacher speaking notes at the bottom.
 ```
 
-### Prompt 1.2: Add an Interactive Tap-to-Vote Poll (添加课堂触摸投票)
+### 1.2 Add a Classroom Countdown Timer (添加课堂活动计时器)
+> Use this when setting a timed group activity, challenge, or quick brainstorm.
+
 ```text
-Add an interactive exit-ticket poll slide to the end of course/units/[unit-folder]/[file-slides.qmd]:
-- Use ::: {.poll type="choice" options="Option A | Option B | Option C" correct="B"}
-- Question: [Insert middle-school question checking understanding of today's key concept]
-- Follow it with a poll results summary slide marked with {.poll-summary-slide}.
+Add a [10 / 15]-minute countdown timer to the group activity slide in the [Unit name] slides, and make sure it chime when it reaches zero.
 ```
 
-### Prompt 1.3: Add Timers and Vertical Drill-Down Slides (添加计时器与垂直下沉幻灯片)
+### 1.3 Add an Interactive Voting Poll (添加课堂触摸互动投票)
+> Use this at the end of class for a quick tap-to-vote exit ticket on the interactive board.
+
 ```text
-In course/units/[unit-folder]/[file-slides.qmd], add an inline 10-minute group challenge timer {{< timer 10 >}}. 
-Directly below the overview slide, add a detailed slide marked with {.subslide} containing deeper primary source evidence so Nate or Xinyi can press Down for depth or Right to proceed.
+Add an interactive multiple-choice tap-to-vote poll to the end of the [Unit name] lesson slides with 3 options to check student understanding, followed by a poll summary slide.
 ```
 
----
+### 1.4 Add a Deep-Dive Slide (添加垂直下沉详细解析幻灯片)
+> Use this when you want extra details or primary sources available without cluttering your main slide deck.
 
-## 2. Bilingual Co-Teaching & Chinese History Leads · 双语共教分工
-
-### Prompt 2.1: Chinese History Unit Draft for Xinyi's Lead (Xinyi 主导的中国史单元开发)
 ```text
-Read CLAUDE.md and AI-ACTIVITY-LOG.md. We are drafting Lesson [X] of Unit [Y] where Xinyi takes the lead on Chinese history and Nate provides world history connections:
-- Primary text should feature the historical Chinese excerpt along with clear modern Chinese explanation and English summaries.
-- Gloss key English IB MYP Command Terms ({{< vocab "compare" text="比较" zh=true >}}, {{< vocab "analyse" text="分析" zh=true >}}).
-- Include bilingual teacher look-fors in "::: {.content-visible when-profile=\"teacher\"}" with specific talking points for both Xinyi and Nate.
+Under the overview slide in the [Unit name] slides, add a vertical drill-down slide with deeper primary source evidence so I can press Down on my keyboard during class if students ask for more depth.
 ```
 
 ---
 
-## 3. Worksheets, Differentiated Packets & Rubrics · 练习单与分层教学
+## 2. Worksheets, Handouts & Reading Sheets · 练习单与阅读材料
 
-### Prompt 3.1: Differentiate a Worksheet for English Learners (练习单降维与语言支架)
+### 2.1 Make a Worksheet Easier for Beginner English Learners (降低练习单语言难度 / 增加支架)
+> Use this when a reading sheet or worksheet is too difficult or dense for your students.
+
 ```text
-Read CLAUDE.md. Make course/units/[unit-folder]/[worksheet.qmd] more accessible for beginner and intermediate English learners:
-- Shorten questions to 10–12 words each and highlight key verbs with {{< vocab "..." zh=true >}}.
-- Add a word bank box at the top with Chinese translations.
-- Include ruled writing lines using {{< lines 3 >}}.
-- Put the complete teacher answer key inside ::: {.content-visible when-profile="teacher"}.
+Make the [Topic, e.g. Athens vs Sparta] worksheet easier for beginner English learners: use shorter sentences (under 12 words), add a word bank at the top with Chinese support, and add 3 ruled writing lines for each answer.
 ```
 
-### Prompt 3.2: Align Summative Booklet with MYP Strands (设计符合 MYP 维度的终结性评估)
+### 2.2 Add Ruled Writing Lines or Drawing Boxes (添加手写横线或绘图框)
+> Use this when you want students to handwrite answers or sketch diagrams on printed copies.
+
 ```text
-Read course/references/assessment-criteria.qmd. In course/summatives/[folder]/student-summative-booklet.qmd:
-- Scaffold Criterion B (Investigating) by providing a 4-step action plan table and research question evaluation checklist.
-- Scaffold Criterion D (Thinking Critically) by adding sentence stems for contrasting historical perspectives.
-- Add teacher evaluation look-fors for each strand under when-profile="teacher".
+In the [Unit name] student worksheet, add 4 ruled handwriting lines under Question 2, and add a dot-grid drawing box under Question 3 for students to sketch their design.
 ```
 
----
+### 2.3 Add Teacher Answer Keys (添加仅教师可见的答案与解析)
+> Use this to embed sample student answers and teacher grading tips that students cannot see.
 
-## 4. Vocabulary & Icons · 双语词汇库与图标生成
-
-### Prompt 4.1: Add New Words and Generate Visual Cards (添加生词与绘制图标)
 ```text
-Read vocab/README.md and vocab/data/vocab.csv.
-- Add the following words to vocab/data/vocab.csv: [word 1, word 2]
-- Follow the rules: simple English short_def (<= 75 chars), accurate Chinese translation, domain [RIV/GRC/ROM/CMD].
-- Update vocab/tools/draw_icons.py to draw appropriate minimalist SVG icons in vocab/images/.
-- Run python vocab/validate.py and confirm 0 errors.
+Add a complete teacher answer key and look-for criteria to the [Unit name] worksheet, making sure it is wrapped inside the teacher-only section so students cannot see it.
 ```
 
 ---
 
-## 5. Multi-Agent Git Coordination & WeDrive Sync · 跨平台同步与提交
+## 3. Bilingual Co-Teaching & Chinese History · 双语共教分工
 
-### Prompt 5.1: Pre-Task Inspection (任务前检查协作状态)
+### 3.1 Draft a Lesson for Xinyi's Lead on Chinese History (为 Xinyi 设计中国史主导课件与文稿)
+> Use this when preparing a unit where Xinyi leads on Chinese content and Nate provides world history connections.
+
 ```text
-Run python scripts/ai_log.py show -n 30 and git status. 
-Summarize what Nate, Xinyi, or other AI sessions have recently worked on, and verify whether CLAUDE.md or any SOPs have been updated before we begin.
+Draft a lesson for [Topic, e.g. Shang Dynasty oracle bones / Qin unification] where Xinyi leads the Chinese history content and Nate provides comparative world history links: include the primary Chinese historical source, clear student summaries, English MYP command terms, and bilingual discussion questions for both teachers.
 ```
 
-### Prompt 5.2: Finishing Task, Packet Rebuild & Push (任务结束合包与推送)
+### 3.2 Align Student Prompts with IB MYP Command Terms (与 IB 指令词规范对齐)
+> Use this to train students on MYP assessment vocabulary (*Identify, Describe, Explain, Evaluate*).
+
 ```text
-I have finished editing [unit folder]. Now:
-1. Rebuild the unit packet: python scripts/packets.py --unit [unit-number].
-2. Record this completed work in AI-ACTIVITY-LOG.md:
-   python scripts/ai_log.py add --agent "[My-AI-Name]" --status "COMPLETED" --task "[Title]" --files "[Files modified]" --notes "[Brief summary]"
-3. Stage only the modified content files and AI-ACTIVITY-LOG.md, commit with a descriptive message, and push to origin main.
+Review the instructions on the [Unit name] summative task and make sure all student action verbs use and define the official IB MYP Command Terms (such as Describe, Explain, or Analyse) with bilingual glosses.
+```
+
+---
+
+## 4. Bilingual Vocabulary & Visual Cards · 双语词汇库与词卡
+
+### 4.1 Add New Words to the Vocab App (向词汇库添加新词与图标)
+> Use this whenever you teach a new unit and want students to practice words in the History Vocab app.
+
+```text
+Add "[Word 1, e.g. pharaoh]" and "[Word 2, e.g. dynasty]" to our course vocabulary list with simple English definitions (under 75 characters), Chinese translations, and minimalist SVG icons, then validate the list.
+```
+
+### 4.2 Generate Printable Flashcards or Quizlet/Kahoot Files (导出练习卡片与复习游戏)
+> Use this to export flashcards or classroom review games before an assessment.
+
+```text
+Export our [Unit name] vocabulary list into Quizlet and Kahoot spreadsheet format so we can run a review game in class.
+```
+
+---
+
+## 5. Daily Git Sync, Packets & Publishing · 保存、合包与发布上线
+
+### 5.1 Check What Happened Before You Start (开始前检查最新更新)
+> Always send this first when opening a new AI session to see what Nate, Xinyi, or other AIs worked on.
+
+```text
+Show me the recent entries from AI-ACTIVITY-LOG.md and tell me what Nate, Xinyi, or other AI assistants have worked on before we begin.
+```
+
+### 5.2 Rebuild the Unit Packet PDF (重新生成单元可打印合辑小册子)
+> Use this whenever you finish updating worksheets and want the unit packet PDF updated for printing.
+
+```text
+I have finished updating the worksheets for [Unit 1 / Unit 2]. Please rebuild the unit packet PDF for printing.
+```
+
+### 5.3 Save Everything and Publish to the Website (保存、记录日志并发布到网站)
+> Use this when you are completely done and want your changes live on the student website.
+
+```text
+I am finished with my work on [Unit name]. Please record a summary in AI-ACTIVITY-LOG.md, commit all modified files with a clear message, and push to GitHub origin main so the online student site updates.
 ```
 
 :::

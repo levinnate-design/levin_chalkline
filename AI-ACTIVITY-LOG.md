@@ -47,6 +47,11 @@ This file is the **shared local memory and handoff log** across all AI assistant
 
 <!-- AI_LOG_FEED_START -->
 
+### [2026-10-22 08:43] COMPLETED — Reformat AI prompt guide into copy-and-paste non-coder prompts
+- **AI Assistant:** Antigravity
+- **Status:** COMPLETED
+- **Files Touched:** course/teacher/ai-prompts.qmd
+- **Notes:** Reformatted all prompts in course/teacher/ai-prompts.qmd into clean, one-click copyable prompts written in natural teacher language without code syntax or technical paths; synced across chalkline-mingwan and chalkline-g6.
 ### [2026-10-22 08:39] COMPLETED — Fix YAML frontmatter delimiter formatting in index.qmd files
 - **AI Assistant:** Antigravity
 - **Status:** COMPLETED
