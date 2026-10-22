@@ -3,7 +3,7 @@ title: "Design Challenge: Build an Aqueduct 设计引水渠"
 type: worksheet
 description: "Design an aqueduct that carries water from a hilltop spring to a city using only gravity: sketch, label and explain."
 order: 5
-audience: [teacher, student]
+audience: [teacher]
 doc-type: Design Challenge
 name-box: true
 format:

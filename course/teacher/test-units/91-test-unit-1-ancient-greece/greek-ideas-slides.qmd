@@ -4,7 +4,7 @@ subtitle: "流传至今的希腊思想 · Ancient Greece, part 2"
 type: slides
 description: "The Olympic Games, gods and myths, philosophers, temples and columns, and theater."
 order: 2
-audience: [teacher, student]
+audience: [teacher]
 format: revealjs
 resources:
   - odyssey/*             # the interactive Odyssey map

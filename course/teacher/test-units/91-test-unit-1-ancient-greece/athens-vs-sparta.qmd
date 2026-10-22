@@ -3,7 +3,7 @@ title: "Athens vs Sparta 雅典与斯巴达"
 type: worksheet
 description: "Compare government, school, the army and daily life in two city-states, then decide where you'd rather live. Teacher copy has an answer key."
 order: 3
-audience: [teacher, student]
+audience: [teacher]
 doc-type: Worksheet
 name-box: true
 format:

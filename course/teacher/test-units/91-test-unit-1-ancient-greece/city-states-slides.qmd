@@ -4,7 +4,7 @@ subtitle: "古希腊：城邦与民主 · Ancient Greece, part 1"
 type: slides
 description: "Greek geography, city-states, Athens and Sparta, and how democracy worked in Athens."
 order: 1
-audience: [teacher, student, parent]
+audience: [teacher]
 format: revealjs
 title-slide-attributes:
   data-background-color: "#003477"

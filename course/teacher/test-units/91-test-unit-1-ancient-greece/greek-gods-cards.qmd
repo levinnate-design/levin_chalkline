@@ -3,7 +3,7 @@ title: "Greek Gods Fact Cards 希腊诸神"
 type: reference
 description: "Six of the Olympian gods: what each was in charge of and a symbol, with 中文 names, plus a blank card to design your own."
 order: 4
-audience: [teacher, student, parent]
+audience: [teacher]
 doc-type: Reference
 format:
   html: default

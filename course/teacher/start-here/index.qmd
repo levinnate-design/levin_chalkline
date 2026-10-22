@@ -1,5 +1,4 @@
----
-title: "Start Here: What Chalkline Does"
+---title: "Start Here: What Chalkline Does"
 short-title: "Start here"
 unit: 0
 format: html
@@ -17,6 +16,7 @@ listing:
   sort: "order"
   filter-ui: false
   sort-ui: false
+audience: [teacher]
 ---
 
 {{< objectives >}}

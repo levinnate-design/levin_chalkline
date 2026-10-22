@@ -20,6 +20,22 @@ website:
   drafts:
   - course/summatives/02-unit-2-summative/student-summative-booklet.qmd
   - course/summatives/02-unit-2-summative/summative-slides.qmd
+  - course/teacher/ai-prompts.qmd
+  - course/teacher/co-teacher-onboarding.qmd
+  - course/teacher/start-here/index.qmd
+  - course/teacher/start-here/slides.qmd
+  - course/teacher/test-units/91-test-unit-1-ancient-greece/athens-vs-sparta.qmd
+  - course/teacher/test-units/91-test-unit-1-ancient-greece/city-states-slides.qmd
+  - course/teacher/test-units/91-test-unit-1-ancient-greece/class-vote.qmd
+  - course/teacher/test-units/91-test-unit-1-ancient-greece/greek-gods-cards.qmd
+  - course/teacher/test-units/91-test-unit-1-ancient-greece/greek-ideas-slides.qmd
+  - course/teacher/test-units/91-test-unit-1-ancient-greece/index.qmd
+  - course/teacher/test-units/92-test-unit-2-ancient-rome/aqueduct-challenge.qmd
+  - course/teacher/test-units/92-test-unit-2-ancient-rome/index.qmd
+  - course/teacher/test-units/92-test-unit-2-ancient-rome/republic-or-empire.qmd
+  - course/teacher/test-units/92-test-unit-2-ancient-rome/republic-to-empire-slides.qmd
+  - course/teacher/test-units/92-test-unit-2-ancient-rome/roman-engineering-slides.qmd
+  - course/teacher/test-units/92-test-unit-2-ancient-rome/roman-numerals.qmd
   - course/units/01-ancient-river-civilizations/egypt-formative.qmd
   - course/units/01-ancient-river-civilizations/egypt-learning-sheets.qmd
   - course/units/01-ancient-river-civilizations/egypt-scribe-challenge.qmd
@@ -32,9 +48,3 @@ website:
   - course/units/02-classical-mediterranean/rome-entry-exit-tickets.qmd
   - course/units/02-classical-mediterranean/rome-guided-notes.qmd
   - course/units/02-classical-mediterranean/unit-2-review-matrix.qmd
-  - course/units/91-test-unit-1-ancient-greece/athens-vs-sparta.qmd
-  - course/units/91-test-unit-1-ancient-greece/class-vote.qmd
-  - course/units/91-test-unit-1-ancient-greece/greek-ideas-slides.qmd
-  - course/units/92-test-unit-2-ancient-rome/aqueduct-challenge.qmd
-  - course/units/92-test-unit-2-ancient-rome/republic-or-empire.qmd
-  - course/units/92-test-unit-2-ancient-rome/republic-to-empire-slides.qmd

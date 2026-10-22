@@ -3,7 +3,7 @@ title: "Republic or Empire? 共和国还是帝国？"
 type: worksheet
 description: "Sort ten facts into the Roman Republic or the Roman Empire, put five events in order, and explain the change. Teacher copy has an answer key."
 order: 3
-audience: [teacher, student]
+audience: [teacher]
 doc-type: Worksheet
 name-box: true
 format:

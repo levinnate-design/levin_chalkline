@@ -87,8 +87,8 @@ Ensure your local Tencent WeWork (企业微信) client is logged in and WeDrive 
 
 ## 5. Daily Co-Teaching & Git Workflow · 日常编写与同步步骤
 
-To ensure Nathan and your Chinese co-teacher collaborate smoothly without overwriting each other's work, please follow this loop:
-为了保证中外教协作顺畅且代码不产生冲突，请遵守以下“四步工作法”：
+To ensure Nate and Xinyi collaborate smoothly without overwriting each other's work, please follow this loop:
+为了保证 Nate 与 Xinyi 协作顺畅且代码不产生冲突，请遵守以下“四步工作法”：
 
 ### Step 1: Pull Before You Begin (编辑前拉取最新内容)
 - Open GitHub Desktop and click **Fetch origin** $\rightarrow$ **Pull origin**.
@@ -130,8 +130,8 @@ To ensure Nathan and your Chinese co-teacher collaborate smoothly without overwr
 
 | Content Area · 教学板块 | Primary Lead · 主导教师 | Supporting Lead · 配合教师 | Classroom Format · 课堂展现形式 |
 |---|---|---|---|
-| **World History Units**<br>(Mesopotamia, Egypt, Greece, Rome...) | Nathan | Chinese Co-Teacher | English primary text; Chinese vocabulary glosses; bilingual guided discussion. |
-| **Chinese History & Geography**<br>(Yellow River, Shang/Zhou, Dynastic Governance...) | Chinese Co-Teacher | Nathan | Chinese lead text and historical primary sources; English MYP command terms; comparative world synthesis. |
+| **World History Units**<br>(Mesopotamia, Egypt, Greece, Rome...) | Nate | Xinyi | English primary text; Chinese vocabulary glosses; bilingual guided discussion. |
+| **Chinese History & Geography**<br>(Yellow River, Shang/Zhou, Dynastic Governance...) | Xinyi | Nate | Chinese lead text and historical primary sources; English MYP command terms; comparative world synthesis. |
 | **Summative Inquiry & Academic Writing**<br>(Criterion B Investigation & Criterion C Essay) | Shared (共同主导) | Shared (共同主导) | Scaffolding packets, bilingual peer-audit rubrics, structured research logs. |
 
 ---
@@ -139,9 +139,16 @@ To ensure Nathan and your Chinese co-teacher collaborate smoothly without overwr
 ## 7. Emergency Help & Support · 常见问题与求助
 
 - **Git Conflict Warning (遇到代码合并冲突)**:
-  Do not panic. If GitHub Desktop reports a conflict, notify Nathan or run `git merge --abort`.
-  若提交时提示冲突，请勿强制覆盖，直接联系 Nathan 处理。
+  Do not panic. If GitHub Desktop reports a conflict, notify Nate or run `git merge --abort`.
+  若提交时提示冲突，请勿强制覆盖，直接联系 Nate 处理。
 - **Preview server stopped (网页打不开)**:
   Simply close the terminal window and double-click `Start Chalkline.command` / `.bat` again.
   直接关闭黑色终端窗口，重新双击 `Start Chalkline` 启动文件即可。
+
+---
+
+## 8. AI Prompt Guide · AI 提示词指南
+
+For a curated collection of copy-and-paste AI prompts (for lesson drafting, vocab generation, quiz creation, and git handoffs), see the dedicated [**AI Assistant Prompts Guide**](ai-prompts.qmd).
+常用 AI 提示词与课件开发模板已整理在 [**AI 提示词实用指南**](ai-prompts.qmd)，支持一键复制到 WorkBuddy 或其他 AI 助手使用。
 :::

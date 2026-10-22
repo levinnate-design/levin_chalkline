@@ -8,7 +8,7 @@ project:
   output-dir: _site-teacher  # keep teacher files separate so they never get mixed up
 
 website:
-  title: "Chalkline Sample (TEACHER)"
+  title: "Mingwan School · Social Studies (TEACHER)"
   sidebar:
     contents:
       - text: "Overview"
@@ -22,11 +22,19 @@ website:
       - text: "Assessment Criteria 评估标准"
         href: course/references/assessment-criteria.qmd
         icon: award
+      - auto: course/units
+      - auto: course/summatives
       - section: "Teachers Only 教师专区"
         contents:
           - text: "Co-Teacher Onboarding 教师协作指南"
             href: course/teacher/co-teacher-onboarding.qmd
-      - auto: course/units
-      - auto: course/summatives
+          - text: "AI Assistant Prompts 提示词指南"
+            href: course/teacher/ai-prompts.qmd
+          - text: "Chalkline Tour 课件系统演示"
+            href: course/teacher/start-here/slides.qmd
+          - text: "Test Unit 1: Ancient Greece"
+            href: course/teacher/test-units/91-test-unit-1-ancient-greece/index.qmd
+          - text: "Test Unit 2: Ancient Rome"
+            href: course/teacher/test-units/92-test-unit-2-ancient-rome/index.qmd
 
 edition: Teacher Edition       # printed on the corner tab of teacher PDFs

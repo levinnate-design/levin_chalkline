@@ -43,7 +43,7 @@ filters:
   - classroom                # turns content markers into slides/PDF/web output (see _extensions/classroom)
 
 website:
-  title: "Chalkline Sample"
+  title: "Mingwan School · Social Studies"
   favicon: brand/logos/icon-sailboat.svg
   page-navigation: true      # previous/next buttons at the bottom of every page, to flip through
   search:

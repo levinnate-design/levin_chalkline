@@ -16,6 +16,19 @@ Newest entries first.
 - **AI assistant:** which one made the change.
 -->
 
+## 2026-10-22: Move Test Units & Tour to Teachers Only and rebrand site to 'Mingwan School · Social Studies'
+- **Asked for:** "Remove references to 'Nathan' and 'Chinese Co-teacher' they should be referred to as 'Nate' and 'Xinyi' respectively. Also add a list of suggested AI prompts (such as the prompts that I have been using here) to the teachers only section to help with Chalkline use. Also move all 'TEST' units to the teachers only section and remove all tutorial-like markings outside of the teachers only area."
+- **Why:** To make the public and student-facing sites completely authentic to Mingwan School Social Studies (showing only real curriculum units in the catalog and navigation), while keeping tutorial slides (`00-start-here`) and sample test units (`91` & `92`) accessible to teachers under the Teachers Only sidebar section.
+- **Changed:**
+  - `_quarto.yml` — updated site title to `Mingwan School · Social Studies`.
+  - `_quarto-teacher.yml` — expanded `Teachers Only 教师专区` to include `course/teacher/ai-prompts.qmd`, `course/teacher/start-here/slides.qmd`, and test units 91 & 92.
+  - `course/teacher/test-units/` — moved `91-test-unit-1-ancient-greece` and `92-test-unit-2-ancient-rome` out of `course/units/` and set `audience: [teacher]`.
+  - `course/teacher/start-here/` — moved `00-start-here` out of `course/units/` and set `audience: [teacher]`.
+  - `course/teacher/ai-prompts.qmd` — created curated AI prompt library for Nate and Xinyi.
+  - `CLAUDE.md`, `AGENTS.md`, `GEMINI.md`, `AI-ACTIVITY-LOG.md`, `course/teacher/co-teacher-onboarding.qmd` — standardized teacher names to Nate and Xinyi.
+- **Who it helps:** this course and any school deploying Chalkline for real students.
+- **AI assistant:** Gemini (Antigravity)
+
 ## 2026-10-22: Add 'Teachers Only 教师专区' section to teacher profile (`_quarto-teacher.yml`)
 - **Asked for:** "Add the new onboarding page for my coteacher to the current Chalkline, under a teachers only section"
 - **Why:** To provide an exclusive sidebar section in the Teacher Edition (`_site-teacher/`) for teacher onboarding, setup guides, and co-teaching rubrics without exposing internal developer and git credentials on the student or parent sites.

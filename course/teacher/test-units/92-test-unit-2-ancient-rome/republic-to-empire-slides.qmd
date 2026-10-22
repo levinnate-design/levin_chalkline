@@ -4,7 +4,7 @@ subtitle: "古罗马：从共和国到帝国 · Ancient Rome, part 1"
 type: slides
 description: "The founding legend, the Roman Republic (senate and consuls), Julius Caesar, Augustus and the empire, and the legions."
 order: 1
-audience: [teacher, student]
+audience: [teacher]
 format: revealjs
 resources:
   - drawio/*.svg          # the draw.io infographic and its hover script

@@ -4,7 +4,7 @@ subtitle: "Write it once. Teach it everywhere. · 一次编写，处处可用"
 type: slides
 description: "What Chalkline makes for you from one file, the classroom tools in every deck, and how to start your own unit."
 order: 1
-audience: [teacher, student, parent]
+audience: [teacher]
 format: revealjs
 resources:
   - ../91-test-unit-1-ancient-greece/odyssey/*   # the interactive story map (it lives with the Greece unit)

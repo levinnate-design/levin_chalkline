@@ -1,5 +1,4 @@
----
-title: "TEST UNIT 1: Ancient Greece"
+---title: "TEST UNIT 1: Ancient Greece"
 short-title: "TEST UNIT 1 · Ancient Greece"
 unit: 91
 format: html
@@ -18,6 +17,7 @@ listing:
   sort: "order"
   filter-ui: false
   sort-ui: false
+audience: [teacher]
 ---
 
 {{< objectives >}}

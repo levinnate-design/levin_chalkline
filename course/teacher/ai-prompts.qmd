@@ -1,0 +1,119 @@
+---
+title: "AI Assistant Prompts Guide · AI 提示词实用指南"
+type: reference
+audience: [teacher]
+order: 2
+format:
+  html: default
+  typst: default
+description: "Curated collection of copy-and-paste AI prompts for lesson drafting, vocab building, differentiated worksheets, interactive polls/timers, and git sync."
+---
+
+::: {.content-hidden when-profile="teacher"}
+::: {.callout-warning}
+## Teacher Edition Only · 仅教师可见
+This reference document is confidential and restricted to teachers. It contains internal prompt patterns and curriculum generation templates.
+本指南属于教师专区，仅在教师端（Teacher Edition）开放。
+:::
+:::
+
+::: {.content-visible when-profile="teacher"}
+
+::: {.callout-note title="How to Use These Prompts · 如何使用提示词" icon=false}
+These prompts have been battle-tested on **Tencent WorkBuddy**, **Google Antigravity**, **Claude**, and **ChatGPT/Codex**. You can copy and paste them directly into your AI assistant session. Just replace the bracketed items `[...]` with your unit or lesson details.
+以下提示词均在 **腾讯 WorkBuddy**、**Google Antigravity**、**Claude** 等 AI 平台上经过实战验证。您可以直接复制并替换括号 `[...]` 中的内容发给 AI 助手。
+:::
+
+---
+
+## 1. Lesson Decks & Slide Design · 课件制作与幻灯片设计
+
+### Prompt 1.1: Add a New Slide with Bilingual Glosses (添加含双语注释的幻灯片)
+```text
+Read CLAUDE.md first. Add a new slide to course/units/[unit-folder]/[file-slides.qmd] about [topic, e.g. Roman aqueducts and the Pont du Gard]. 
+- Include 3 concise bullet points written for middle school English learners (one idea per bullet).
+- Gloss key vocabulary and IB MYP Command Terms using {{< vocab "term" >}} (e.g. {{< vocab "aqueduct" >}} and {{< vocab "explain" text="Explain" >}}).
+- Add speaker notes in a "::: notes" block for teacher guidance.
+- Avoid 🤖, 💩, and 🔒 emoji.
+```
+
+### Prompt 1.2: Add an Interactive Tap-to-Vote Poll (添加课堂触摸投票)
+```text
+Add an interactive exit-ticket poll slide to the end of course/units/[unit-folder]/[file-slides.qmd]:
+- Use ::: {.poll type="choice" options="Option A | Option B | Option C" correct="B"}
+- Question: [Insert middle-school question checking understanding of today's key concept]
+- Follow it with a poll results summary slide marked with {.poll-summary-slide}.
+```
+
+### Prompt 1.3: Add Timers and Vertical Drill-Down Slides (添加计时器与垂直下沉幻灯片)
+```text
+In course/units/[unit-folder]/[file-slides.qmd], add an inline 10-minute group challenge timer {{< timer 10 >}}. 
+Directly below the overview slide, add a detailed slide marked with {.subslide} containing deeper primary source evidence so Nate or Xinyi can press Down for depth or Right to proceed.
+```
+
+---
+
+## 2. Bilingual Co-Teaching & Chinese History Leads · 双语共教分工
+
+### Prompt 2.1: Chinese History Unit Draft for Xinyi's Lead (Xinyi 主导的中国史单元开发)
+```text
+Read CLAUDE.md and AI-ACTIVITY-LOG.md. We are drafting Lesson [X] of Unit [Y] where Xinyi takes the lead on Chinese history and Nate provides world history connections:
+- Primary text should feature the historical Chinese excerpt along with clear modern Chinese explanation and English summaries.
+- Gloss key English IB MYP Command Terms ({{< vocab "compare" text="比较" zh=true >}}, {{< vocab "analyse" text="分析" zh=true >}}).
+- Include bilingual teacher look-fors in "::: {.content-visible when-profile=\"teacher\"}" with specific talking points for both Xinyi and Nate.
+```
+
+---
+
+## 3. Worksheets, Differentiated Packets & Rubrics · 练习单与分层教学
+
+### Prompt 3.1: Differentiate a Worksheet for English Learners (练习单降维与语言支架)
+```text
+Read CLAUDE.md. Make course/units/[unit-folder]/[worksheet.qmd] more accessible for beginner and intermediate English learners:
+- Shorten questions to 10–12 words each and highlight key verbs with {{< vocab "..." zh=true >}}.
+- Add a word bank box at the top with Chinese translations.
+- Include ruled writing lines using {{< lines 3 >}}.
+- Put the complete teacher answer key inside ::: {.content-visible when-profile="teacher"}.
+```
+
+### Prompt 3.2: Align Summative Booklet with MYP Strands (设计符合 MYP 维度的终结性评估)
+```text
+Read course/references/assessment-criteria.qmd. In course/summatives/[folder]/student-summative-booklet.qmd:
+- Scaffold Criterion B (Investigating) by providing a 4-step action plan table and research question evaluation checklist.
+- Scaffold Criterion D (Thinking Critically) by adding sentence stems for contrasting historical perspectives.
+- Add teacher evaluation look-fors for each strand under when-profile="teacher".
+```
+
+---
+
+## 4. Vocabulary & Icons · 双语词汇库与图标生成
+
+### Prompt 4.1: Add New Words and Generate Visual Cards (添加生词与绘制图标)
+```text
+Read vocab/README.md and vocab/data/vocab.csv.
+- Add the following words to vocab/data/vocab.csv: [word 1, word 2]
+- Follow the rules: simple English short_def (<= 75 chars), accurate Chinese translation, domain [RIV/GRC/ROM/CMD].
+- Update vocab/tools/draw_icons.py to draw appropriate minimalist SVG icons in vocab/images/.
+- Run python vocab/validate.py and confirm 0 errors.
+```
+
+---
+
+## 5. Multi-Agent Git Coordination & WeDrive Sync · 跨平台同步与提交
+
+### Prompt 5.1: Pre-Task Inspection (任务前检查协作状态)
+```text
+Run python scripts/ai_log.py show -n 30 and git status. 
+Summarize what Nate, Xinyi, or other AI sessions have recently worked on, and verify whether CLAUDE.md or any SOPs have been updated before we begin.
+```
+
+### Prompt 5.2: Finishing Task, Packet Rebuild & Push (任务结束合包与推送)
+```text
+I have finished editing [unit folder]. Now:
+1. Rebuild the unit packet: python scripts/packets.py --unit [unit-number].
+2. Record this completed work in AI-ACTIVITY-LOG.md:
+   python scripts/ai_log.py add --agent "[My-AI-Name]" --status "COMPLETED" --task "[Title]" --files "[Files modified]" --notes "[Brief summary]"
+3. Stage only the modified content files and AI-ACTIVITY-LOG.md, commit with a descriptive message, and push to origin main.
+```
+
+:::

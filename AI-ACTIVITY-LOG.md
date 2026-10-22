@@ -1,6 +1,6 @@
 # Shared AI Activity Log (`AI-ACTIVITY-LOG.md`)
 
-This file is the **shared local memory and handoff log** across all AI assistants working on Nathan's curriculum (**Google Antigravity**, **Tencent WorkBuddy** accounts, **Claude**, **Cursor**, **Codex**, etc.).
+This file is the **shared local memory and handoff log** across all AI assistants working on Nate & Xinyi's curriculum (**Google Antigravity**, **Tencent WorkBuddy** accounts, **Claude**, **Cursor**, **Codex**, etc.).
 
 **Canonical locations (kept in sync by `python scripts/ai_log.py`):**
 1. **Chalkline Repo:** `/Users/nathaniellevin/chalkline-mingwan/AI-ACTIVITY-LOG.md`
@@ -23,7 +23,7 @@ This file is the **shared local memory and handoff log** across all AI assistant
    ```
    *(If you edit `AI-ACTIVITY-LOG.md` directly instead, run `python /Users/nathaniellevin/chalkline-mingwan/scripts/ai_log.py sync` afterward so the Chalkline and WeDrive copies stay identical.)*
 4. **Never Delete Earlier Entries:** Always add new entries at the top of the **Activity Feed** section.
-5. **Log All Deletions & Protect Non-Git Files:** If you delete or move files (in `chalkline-mingwan` or WeDrive), explicitly prefix them with `DELETED:` or `MOVED:` in `--files`. Never delete `AI-ACTIVITY-LOG.md`, `TOOL-CHANGES.md`, `CLAUDE.md`, `vocab/data/vocab.csv`, or foundational MYP PDFs. In WeDrive (which has no Git history), move retired drafts to an `_Archive/` folder unless Nathan explicitly asks for permanent deletion.
+5. **Log All Deletions & Protect Non-Git Files:** If you delete or move files (in `chalkline-mingwan` or WeDrive), explicitly prefix them with `DELETED:` or `MOVED:` in `--files`. Never delete `AI-ACTIVITY-LOG.md`, `TOOL-CHANGES.md`, `CLAUDE.md`, `vocab/data/vocab.csv`, or foundational MYP PDFs. In WeDrive (which has no Git history), move retired drafts to an `_Archive/` folder unless Nate or Xinyi explicitly asks for permanent deletion.
 6. **Recursively Check for SOP Updates:** Before starting **every** new task (and before finishing any multi-step task), re-read `/Users/nathaniellevin/chalkline-mingwan/CLAUDE.md`, `AGENTS.md`, and `AI-ACTIVITY-LOG.md` from disk—never rely solely on an earlier read cached in your conversation context—so any SOP updates take effect immediately.
 
 
@@ -47,6 +47,11 @@ This file is the **shared local memory and handoff log** across all AI assistant
 
 <!-- AI_LOG_FEED_START -->
 
+### [2026-10-22 08:31] COMPLETED — Update teacher names to Nate & Xinyi, add AI Prompt Guide, move TEST units to Teachers Only
+- **AI Assistant:** Antigravity
+- **Status:** COMPLETED
+- **Files Touched:** CLAUDE.md, AGENTS.md, GEMINI.md, AI-ACTIVITY-LOG.md, _quarto.yml, _quarto-teacher.yml, course/links.yml, course/teacher/*, TOOL-CHANGES.md
+- **Notes:** Standardized teacher names to Nate and Xinyi; created course/teacher/ai-prompts.qmd; moved 91, 92, and 00-start-here out of course/units/ into course/teacher/; rebranded site to Mingwan School · Social Studies; mirrored updates to chalkline-g6.
 ### [2026-10-22 08:10] COMPLETED — Add Co-Teacher Onboarding page to Teacher Portal & initialize Grade 6 repo
 - **AI Assistant:** Antigravity
 - **Status:** COMPLETED

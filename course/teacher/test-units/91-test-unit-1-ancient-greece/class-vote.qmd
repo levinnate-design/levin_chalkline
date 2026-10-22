@@ -3,7 +3,7 @@ title: "The Assembly Votes 公民大会投票"
 type: handout
 description: "A classroom Athenian Assembly: speeches for and against, a show-of-hands vote, a tally, and a reflection on who got to vote."
 order: 5
-audience: [teacher, student]
+audience: [teacher]
 doc-type: Activity
 name-box: true
 format:
