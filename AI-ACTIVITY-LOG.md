@@ -47,6 +47,11 @@ This file is the **shared local memory and handoff log** across all AI assistant
 
 <!-- AI_LOG_FEED_START -->
 
+### [2026-10-22 08:39] COMPLETED — Fix YAML frontmatter delimiter formatting in index.qmd files
+- **AI Assistant:** Antigravity
+- **Status:** COMPLETED
+- **Files Touched:** course/teacher/start-here/index.qmd, course/teacher/test-units/91-test-unit-1-ancient-greece/index.qmd, course/teacher/test-units/92-test-unit-2-ancient-rome/index.qmd
+- **Notes:** Fixed missing newline after opening --- delimiter in moved teacher index.qmd files across chalkline-mingwan and chalkline-g6, resolving Quarto render error.
 ### [2026-10-22 08:31] COMPLETED — Update teacher names to Nate & Xinyi, add AI Prompt Guide, move TEST units to Teachers Only
 - **AI Assistant:** Antigravity
 - **Status:** COMPLETED
