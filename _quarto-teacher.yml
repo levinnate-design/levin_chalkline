@@ -9,5 +9,24 @@ project:
 
 website:
   title: "Chalkline Sample (TEACHER)"
+  sidebar:
+    contents:
+      - text: "Overview"
+        href: index.qmd
+      - text: "History vocab 词汇"
+        href: vocab/app/index.html
+        icon: book
+      - text: "Command Terms 指令词"
+        href: course/references/command-terms.qmd
+        icon: card-checklist
+      - text: "Assessment Criteria 评估标准"
+        href: course/references/assessment-criteria.qmd
+        icon: award
+      - section: "Teachers Only 教师专区"
+        contents:
+          - text: "Co-Teacher Onboarding 教师协作指南"
+            href: course/teacher/co-teacher-onboarding.qmd
+      - auto: course/units
+      - auto: course/summatives
 
 edition: Teacher Edition       # printed on the corner tab of teacher PDFs

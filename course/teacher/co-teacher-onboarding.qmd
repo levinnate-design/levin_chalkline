@@ -1,0 +1,147 @@
+---
+title: "Co-Teacher Onboarding · 教师协作与操作指南"
+type: reference
+audience: [teacher]
+order: 1
+format:
+  html: default
+  typst: default
+description: "Turnkey workstation setup, GitHub Desktop GUI sync, bilingual co-teaching workflow, and AI collaboration protocol for co-teachers."
+---
+
+::: {.content-hidden when-profile="teacher"}
+::: {.callout-warning}
+## Teacher Edition Only · 仅教师可见
+This reference document is confidential and restricted to teachers. It contains internal git workflows, shared credential protocols, and co-teaching rubrics.
+本协作指南属于教师专区，仅在教师端（Teacher Edition）开放，学生端与家长端不予展示。
+:::
+:::
+
+::: {.content-visible when-profile="teacher"}
+
+::: {.callout-note title="Welcome to Chalkline · 欢迎使用 Chalkline 教学系统" icon=false}
+**Chalkline** is our integrated curriculum publishing system at Mingwan School. It automatically compiles plain-text lesson notes, slides, bilingual vocabulary pop-ups, printable student worksheets, and unit packets into clean web portals and A4 PDFs for class.
+**Chalkline** 是明湾学校的跨学科/个人与社会课程自动化发布系统。它能够自动将课件文稿、幻灯片、双语词汇弹窗、学生练习单与单元小册子一键编译为网站页面和 A4 打印版 PDF。
+:::
+
+---
+
+## 1. One-Time Software Setup · 首次软件配置 (仅需安装一次)
+
+Download and install the following standard tools using default settings:
+请在您的个人电脑上下载并以默认选项安装以下软件：
+
+| Software · 软件 | Purpose · 用途 | Download Link · 官网下载 |
+|---|---|---|
+| **VS Code** | Code and lesson Markdown editor (编辑课件与文稿) | [code.visualstudio.com](https://code.visualstudio.com/) |
+| **GitHub Desktop** | Visual Git sync tool (可视化提交与更新，避免冲突) | [desktop.github.com](https://desktop.github.com/) |
+| **Quarto CLI** | Markdown compiler to HTML & Typst PDF (编译核心引擎) | [quarto.org/docs/get-started](https://quarto.org/docs/get-started/) |
+| **Python 3** (3.11+) | Runs build scripts and vocab validation (运行验证与构建脚本) | [python.org/downloads](https://www.python.org/downloads/) |
+| **Google Chrome / Edge** | Prints slide decks to PDF (课件 PDF 自动生成核心) | 已有浏览器即可 |
+
+> **Windows Users 注意**: 安装 Python 时，务必勾选底部 **"Add python.exe to PATH"**。
+
+---
+
+## 2. Sync Tencent WeDrive · 关联微盘课程文件夹
+
+Ensure your local Tencent WeWork (企业微信) client is logged in and WeDrive local synchronization is active:
+请确保您的企业微信微盘本地同步正常：
+- **Local Path · 根路径**: `明湾学校/Social Studies/`
+- **Key Folders · 核心文件夹**:
+  - `Curriculum Building/`: IB MYP Guides and Command Terms official references.
+  - `2026-2027/`: Current academic year lesson plans and source readings.
+  - `Textbooks/`: Digital textbook backups.
+  - `AI-ACTIVITY-LOG.md`: Auto-synced log of all updates across AI tools and teachers.
+
+---
+
+## 3. Clone Repository in GitHub Desktop · 克隆课程仓库
+
+1. Open **GitHub Desktop** and log into our shared humanities GitHub account.
+   打开 **GitHub Desktop** 并登录共享的教研组 GitHub 账号。
+2. Click **File > Clone Repository...** (文件 > 克隆仓库)。
+3. Select `chalkline-mingwan` (or the Grade 6 repository `chalkline-g6`).
+   选择对应的年级仓库。
+4. Choose a local destination path (e.g. `/Users/<your-username>/chalkline-mingwan` or `C:\Users\<your-username>\Documents\chalkline-mingwan`).
+   选择本地保存路径并点击克隆。
+
+---
+
+## 4. Launching the Local Teacher Portal · 启动教师本地预览
+
+1. Open the project folder and double-click:
+   进入项目文件夹，双击运行：
+   - **Mac**: `Start Chalkline.command`
+   - **Windows**: `Start Chalkline.bat`
+2. **First Run (首次运行)**: The script will automatically create a private Python `.venv` environment and install all packages. This takes about 2 minutes.
+   首次运行会自动搭建 Python 独立环境并安装依赖包，大约需要 2 分钟。
+3. **Teacher Portal Access (教师端页面)**:
+   Your browser will automatically open:
+   浏览器会自动弹出教师端主页：
+   $$\text{\bf http://localhost:4100}$$
+   *(Includes teacher answer keys, lesson look-fors, and direct PDF packet download links).*
+   *(包含教师教案提示、练习答案、全套可打印 PDF 及单元合辑包)。*
+
+---
+
+## 5. Daily Co-Teaching & Git Workflow · 日常编写与同步步骤
+
+To ensure Nathan and your Chinese co-teacher collaborate smoothly without overwriting each other's work, please follow this loop:
+为了保证中外教协作顺畅且代码不产生冲突，请遵守以下“四步工作法”：
+
+### Step 1: Pull Before You Begin (编辑前拉取最新内容)
+- Open GitHub Desktop and click **Fetch origin** $\rightarrow$ **Pull origin**.
+- 在开始编写任何课件前，在 GitHub Desktop 点击 **Pull origin**，拉取最新修改。
+- Check `AI-ACTIVITY-LOG.md` (or run `python scripts/ai_log.py show`) to see what has been updated recently.
+- 查看 `AI-ACTIVITY-LOG.md`，了解合作者与 AI 刚刚完成了哪些模块。
+
+### Step 2: Edit in VS Code (在 VS Code 中编写或修改)
+- All course materials live in `course/units/` or `course/summatives/`.
+- **Glossing Key Words & IB MYP Command Terms (指令词与生词标注)**:
+  - In slides (幻灯片): Write `{{< vocab "democracy" >}}` or `{{< vocab "analyse" text="分析" >}}`. Hovering pops up the card with Chinese and picture.
+  - In worksheets (打印练习单): Write `{{< vocab "democracy" zh=true >}}`. The Chinese character is automatically printed beside it.
+- **Teacher-Only Answer Keys & Look-Fors (教师专区)**:
+  ```markdown
+  ::: {.content-visible when-profile="teacher"}
+  **Teacher Look-Fors / 答案与教学提示:**
+  Students should identify at least two environmental constraints.
+  学生应指出至少两项地理环境制约因素。
+  :::
+  ```
+
+### Step 3: Fast Live Preview (实时预览)
+- As long as `Start Chalkline` terminal window remains open, saving any `.qmd` file will immediately hot-reload and update your browser at `http://localhost:4100`.
+- 只要终端窗口保持开启，每次在 VS Code 中按 `Ctrl+S` (或 `Cmd+S`) 保存，网页都会在数秒内自动刷新。
+
+### Step 4: Commit & Push (提交并推送到云端)
+1. Switch back to **GitHub Desktop**: changed files are highlighted in green/yellow on the left panel.
+   切回 GitHub Desktop，左侧会列出您修改的文件。
+2. In the bottom-left box, type a short message (e.g. `Update Unit 2 Lesson 3 reading & worksheet`).
+   在左下角摘要框输入本次修改概述（例如：`完善第2单元第3课阅读与练习单`）。
+3. Click **Commit to main** (提交到主分支).
+4. Click **Push origin** (推送到云端).
+5. GitHub will automatically rebuild the live student website!
+   云端 GitHub Pages 将在 1 分钟内自动更新在线学生网站。
+
+---
+
+## 6. Bilingual Roles & Co-Teaching Division · 双语教学分工模式
+
+| Content Area · 教学板块 | Primary Lead · 主导教师 | Supporting Lead · 配合教师 | Classroom Format · 课堂展现形式 |
+|---|---|---|---|
+| **World History Units**<br>(Mesopotamia, Egypt, Greece, Rome...) | Nathan | Chinese Co-Teacher | English primary text; Chinese vocabulary glosses; bilingual guided discussion. |
+| **Chinese History & Geography**<br>(Yellow River, Shang/Zhou, Dynastic Governance...) | Chinese Co-Teacher | Nathan | Chinese lead text and historical primary sources; English MYP command terms; comparative world synthesis. |
+| **Summative Inquiry & Academic Writing**<br>(Criterion B Investigation & Criterion C Essay) | Shared (共同主导) | Shared (共同主导) | Scaffolding packets, bilingual peer-audit rubrics, structured research logs. |
+
+---
+
+## 7. Emergency Help & Support · 常见问题与求助
+
+- **Git Conflict Warning (遇到代码合并冲突)**:
+  Do not panic. If GitHub Desktop reports a conflict, notify Nathan or run `git merge --abort`.
+  若提交时提示冲突，请勿强制覆盖，直接联系 Nathan 处理。
+- **Preview server stopped (网页打不开)**:
+  Simply close the terminal window and double-click `Start Chalkline.command` / `.bat` again.
+  直接关闭黑色终端窗口，重新双击 `Start Chalkline` 启动文件即可。
+:::

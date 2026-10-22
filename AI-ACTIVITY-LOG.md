@@ -47,6 +47,11 @@ This file is the **shared local memory and handoff log** across all AI assistant
 
 <!-- AI_LOG_FEED_START -->
 
+### [2026-10-22 08:10] COMPLETED — Add Co-Teacher Onboarding page to Teacher Portal & initialize Grade 6 repo
+- **AI Assistant:** Antigravity
+- **Status:** COMPLETED
+- **Files Touched:** course/teacher/co-teacher-onboarding.qmd, _quarto-teacher.yml, TOOL-CHANGES.md, /Users/nathaniellevin/chalkline-g6/*
+- **Notes:** Added Co-Teacher Onboarding under Teachers Only section in _quarto-teacher.yml; created independent chalkline-g6 repository emphasizing IB MYP Year 1 strand rubrics and scaffolding.
 ### [2026-10-20 11:37] COMPLETED — Create MYP Individuals and Societies Assessment Criteria page
 - **AI Assistant:** Antigravity (Gemini)
 - **Status:** COMPLETED

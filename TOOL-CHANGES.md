@@ -16,6 +16,15 @@ Newest entries first.
 - **AI assistant:** which one made the change.
 -->
 
+## 2026-10-22: Add 'Teachers Only 教师专区' section to teacher profile (`_quarto-teacher.yml`)
+- **Asked for:** "Add the new onboarding page for my coteacher to the current Chalkline, under a teachers only section"
+- **Why:** To provide an exclusive sidebar section in the Teacher Edition (`_site-teacher/`) for teacher onboarding, setup guides, and co-teaching rubrics without exposing internal developer and git credentials on the student or parent sites.
+- **Changed:**
+  - `_quarto-teacher.yml` — added `Teachers Only 教师专区` section containing `course/teacher/co-teacher-onboarding.qmd` to the teacher sidebar.
+  - `course/teacher/co-teacher-onboarding.qmd` — created bilingual co-teacher onboarding and workstation setup guide.
+- **Who it helps:** this course and any co-taught course with internal teacher onboarding workflows.
+- **AI assistant:** Gemini (Antigravity)
+
 ## 2026-10-20: Add MYP Assessment Criteria to sidebar navigation (`_quarto.yml`)
 - **Asked for:** "IB Alignment: Create a page on Chalkine that displays the MYP Individuals and Societies Criterion."
 - **Why:** To make the official IB MYP Individuals and Societies Year 3 criteria (Criteria A, B, C, D) directly discoverable from the global sidebar navigation alongside the Command Terms reference.
