@@ -7,6 +7,9 @@
 #   scripts/                CODE: catalog builder, vocab tools
 #   index.qmd               overview page, built automatically from every document's labels
 
+profile:
+  default: student           # `quarto render` builds the student site (_quarto-student.yml); --profile teacher builds yours
+
 project:
   type: website
   output-dir: _site          # student build goes here
@@ -18,26 +21,28 @@ project:
     - scripts/vocab_terms.py   # reads vocab/data/vocab.csv and writes generated/vocab-terms.json for {{< vocab >}} pop-ups
     - scripts/vocab_brand.py   # gives the vocab app the brand colors and fonts (writes vocab/app/brand.css)
   post-render:
-    - scripts/parent_site.py  # family site only: removes pages and PDFs not meant for families
+    - scripts/student_site.py  # student site only: removes teachers-only pages and their PDFs
     - scripts/packets.py   # each unit's printables as one packet PDF, plus a year packet (full renders only)
     - scripts/student_copies.py   # teacher site: a clean Student Edition PDF next to the Teacher Edition (full renders only)
     - scripts/slides_pdf.py   # every slide deck as a PDF, one slide per page (full renders only)
   render:
     - index.qmd
+    - families.qmd
     - "course/**/*.qmd"
   resources:                 # the vocab app and its data, copied into the site as-is (vocab/app/)
     - /vocab/index.html      # the leading / means "from the project folder"; without it these
-    - /vocab/app/**          # also match the copies inside _site-teacher/ and _site-parent/
+    - /vocab/app/**          # also match the copies inside _site-teacher/
     - /vocab/data/*.csv
     - /vocab/config.js       # the vocab app's settings for this course
     - /vocab/images/**
     - /brand/fonts/*.ttf     # web fonts, for the vocab app (not brand/fonts/print/: those are for PDFs only)
   preview:
-    port: 4100               # the site is always at http://localhost:4100 (teacher 4101, parent 4102 later)
+    port: 4100               # the site is always at http://localhost:4100
     browser: true            # open it in the browser when the preview starts
 
 brand: brand/_brand.yml      # colors, fonts, logos (see brand/README.md)
 vocab-title: "History Vocab"  # name of the vocab app, used on {{< vocab >}} pop-up links
+student-site: "https://levinnate-design.github.io/levin_chalkline/"   # published student site for toolbox QR codes
 
 filters:
   - classroom                # turns content markers into slides/PDF/web output (see _extensions/classroom)
@@ -58,12 +63,21 @@ website:
       - text: "History vocab 词汇"
         href: vocab/app/index.html   # the vocab app (copied in via resources above)
         icon: book
+      - text: "Review games 复习游戏"
+        href: course/review-games.qmd  # any game, any unit (slides)
+        icon: controller
+      - text: "Play at home 课后闯关"
+        href: course/play.qmd    # one-player games for phones and computers; teachers only until audience includes student
+        icon: phone
       - text: "Command Terms 指令词"
         href: course/references/command-terms.qmd
         icon: card-checklist
       - text: "Assessment Criteria 评估标准"
         href: course/references/assessment-criteria.qmd
         icon: award
+      - text: "For families 给家长"
+        href: families.qmd       # a welcome, the unit goals, and the files marked for families
+        icon: house-heart
       - auto: course/units      # one section per unit folder, titled from its index.qmd
       - auto: course/summatives # one section per summative folder, titled from its index.qmd
 

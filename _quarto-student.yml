@@ -1,0 +1,33 @@
+# Student profile: the student (public) site, and the default build: `quarto render` and
+# `quarto preview` use it unless you ask for --profile teacher (into _site/).
+# Layered on top of _quarto.yml. It leaves out any page whose labels don't include
+# audience: [..., student] (a teachers-only page): such pages are "drafts" here, so they're not in the
+# site, its sidebar or its search (scripts/student_site.py tidies up after). The teacher site has them all.
+#
+# Families use this site too: its "For families" page (families.qmd) welcomes them and lists the
+# files marked audience: [..., parent].
+
+website:
+  draft-mode: gone
+  # ---- Everything below is written by scripts/catalog.py before each render. Don't edit by hand. ----
+  drafts:
+  - course/play.qmd
+  - course/teacher/ai-prompts.qmd
+  - course/teacher/co-teacher-onboarding.qmd
+  - course/teacher/start-here/index.qmd
+  - course/teacher/start-here/slides.qmd
+  - course/teacher/test-units/91-test-unit-1-ancient-greece/athens-vs-sparta.qmd
+  - course/teacher/test-units/91-test-unit-1-ancient-greece/city-states-slides.qmd
+  - course/teacher/test-units/91-test-unit-1-ancient-greece/class-vote.qmd
+  - course/teacher/test-units/91-test-unit-1-ancient-greece/greek-gods-cards.qmd
+  - course/teacher/test-units/91-test-unit-1-ancient-greece/greek-ideas-slides.qmd
+  - course/teacher/test-units/91-test-unit-1-ancient-greece/index.qmd
+  - course/teacher/test-units/91-test-unit-1-ancient-greece/review-games-slides.qmd
+  - course/teacher/test-units/92-test-unit-2-ancient-rome/aqueduct-challenge.qmd
+  - course/teacher/test-units/92-test-unit-2-ancient-rome/index.qmd
+  - course/teacher/test-units/92-test-unit-2-ancient-rome/learning-activities-slides.qmd
+  - course/teacher/test-units/92-test-unit-2-ancient-rome/republic-or-empire.qmd
+  - course/teacher/test-units/92-test-unit-2-ancient-rome/republic-to-empire-slides.qmd
+  - course/teacher/test-units/92-test-unit-2-ancient-rome/roman-engineering-slides.qmd
+  - course/teacher/test-units/92-test-unit-2-ancient-rome/roman-numerals.qmd
+  - course/teacher/test-units/92-test-unit-2-ancient-rome/rome-timeline-slides.qmd

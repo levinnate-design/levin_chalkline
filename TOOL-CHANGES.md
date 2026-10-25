@@ -16,6 +16,18 @@ Newest entries first.
 - **AI assistant:** which one made the change.
 -->
 
+## 2026-10-26: Import upstream Chalkline tool features (Toolbox, Sidebars, Review Games, Learning Activities, PDF Viewer, Card Overview) & update Teachers Only Start Here
+- **Asked for:** "I want to import newly added features from the original chalkline (insufficient doubt) ... Update the 'Start Here' part of teachers only, but do not import the new units 'Gobekli Tepe' and 'STEM/Robot Lifts'"
+- **Why:** To bring in the latest upstream Chalkline tool capabilities (Classroom Toolbox `W` menu, Vocab `V` and Packet `P` slide sidebars, Word Blitz/Jeopardy/Snowman/Bingo review games, interactive learning activities, slide PDF viewer with touch-pen annotation, and card-based overview) while preserving all Mingwan School Social Studies curriculum units, vocabulary, and IB MYP customizations without cluttering the course with sample STEM/Göbekli Tepe units.
+- **Changed:**
+  - `_extensions/classroom/` & `_extensions/pdf-viewer/` — imported upstream toolbox, games, learning activities, quickref, video-fit, and pdf-viewer extensions while preserving `course/summatives/` and `course/teacher/test-units/` support in `shortcodes.lua` and `filter.lua`.
+  - `brand/` — imported upstream card-overview styling, playful print fonts (`Fredoka`, `PatrickHand`), and updated Typst partials while preserving dark-slide contrast rules in `brand/revealjs.scss`.
+  - `scripts/catalog.py`, `scripts/packets.py`, `scripts/vocab_terms.py`, `scripts/student_site.py`, `scripts/slides_pdf.py`, `scripts/build_if_needed.py`, `scripts/open_site.py` — imported upstream scripts while preserving `SECTION_DIRS = ("units", "summatives")`, isolating `course/teacher/` from student builds, and excluding test units (`unit >= 90`) from the public game-picker unit dropdown.
+  - `_quarto.yml`, `_quarto-teacher.yml`, `_quarto-student.yml`, `index.qmd`, `families.qmd`, `course/review-games.qmd`, `course/play.qmd` — added Review Games, Play at Home, and For Families pages, student profile draft filtering, and QR student-site URL while preserving Mingwan School branding and Teachers Only sidebar navigation.
+  - `course/teacher/start-here/slides.qmd` & `course/teacher/test-units/` — updated the Teachers Only Chalkline Tour deck (50-feature interactive catalog, omitting STEM/Göbekli Tepe) and added upstream's demo decks (`review-games-slides.qmd`, `learning-activities-slides.qmd`, `rome-timeline-slides.qmd`) inside `course/teacher/test-units/` (`audience: [teacher]`).
+- **Who it helps:** this course (and any Chalkline course selectively upgrading its tool layer from upstream without overwriting local curriculum).
+- **AI assistant:** Antigravity (Gemini)
+
 ## 2026-10-22: Move Test Units & Tour to Teachers Only and rebrand site to 'Mingwan School · Social Studies'
 - **Asked for:** "Remove references to 'Nathan' and 'Chinese Co-teacher' they should be referred to as 'Nate' and 'Xinyi' respectively. Also add a list of suggested AI prompts (such as the prompts that I have been using here) to the teachers only section to help with Chalkline use. Also move all 'TEST' units to the teachers only section and remove all tutorial-like markings outside of the teachers only area."
 - **Why:** To make the public and student-facing sites completely authentic to Mingwan School Social Studies (showing only real curriculum units in the catalog and navigation), while keeping tutorial slides (`00-start-here`) and sample test units (`91` & `92`) accessible to teachers under the Teachers Only sidebar section.

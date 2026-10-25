@@ -6,4 +6,6 @@ contributes:
   shortcodes:
     - shortcodes.lua
   filters:
+    - path: video-shape.lua   # before shortcodes run: marks each video tall or wide
+      at: pre-ast
     - filter.lua

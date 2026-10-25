@@ -5,7 +5,10 @@ type: slides
 description: "Greek geography, city-states, Athens and Sparta, and how democracy worked in Athens."
 order: 1
 audience: [teacher]
-format: revealjs
+format:
+  revealjs:
+    chalkboard:          # press C to draw on a slide, B for a blank chalkboard
+      buttons: true
 title-slide-attributes:
   data-background-color: "#003477"
   data-background-image: images/acropolis-parthenon.jpg
@@ -17,6 +20,18 @@ import sys; sys.path.append("scripts")
 from vocab import load_unit, pick, card_grid
 terms = load_unit(91)
 ```
+
+## This unit's printables {#unit-printables}
+
+Here is all the work for this unit. Tap a page to see it big.
+
+{{< pdf-viewer "01-ancient-greece-packet.pdf" layout="gallery" title="Unit 1 packet: Ancient Greece" >}}
+
+::: notes
+**PDF gallery:** every page of the unit packet. Tap a page to open it large. Drag the window by its top bar; resize it from the bottom-right corner. Use ‹ › or the arrow keys to turn pages; Esc closes it. Tap a pen to write on the page. Your ink stays (on this computer) until you press the bin button.
+
+In the source this is one line: `{{</* pdf-viewer "01-ancient-greece-packet.pdf" layout="gallery" */>}}`. The packet is made by a full build, so it shows here after the site's first full build.
+:::
 
 ## Ancient Greece on a timeline
 
@@ -125,6 +140,56 @@ Two kings ruled at the same time. [Sparta 斯巴达]{.fragment .reveal-answer .s
 **Fragments:** each answer is hidden until you press → (or click). Ask for a show of hands first: "Athens or Sparta?", then reveal. In the source, an answer is just `[Sparta]{.fragment}`.
 :::
 
+## Same or different? {#draw-on-the-slide}
+
+**How were Athens and Sparta the same? How were they different?**
+
+::: {.venn-labels}
+[Athens 雅典]{.athens} [Both]{.both} [Sparta 斯巴达]{.sparta}
+:::
+
+::: {.small-note}
+Say it: "Athens had ______, but Sparta had ______." · "Both ______."
+:::
+
+```{=html}
+<style>
+  .reveal .venn-labels p { display: flex; justify-content: space-between; margin: 0.6em 1.5em 7.2em; font-weight: 700; }
+  .reveal .venn-labels span { padding: 0.1em 0.8em; border-radius: 999px; color: #003477; }
+  .reveal .venn-labels .athens { background: #d6efff; }
+  .reveal .venn-labels .both { background: #ebf7fd; }
+  .reveal .venn-labels .sparta { background: #ffe0bd; }
+</style>
+```
+
+::: notes
+**Chalkboard:** press **C** (or the pen button, bottom left) to draw on this slide. Draw two big circles that overlap under the labels, then write the class's ideas in them: Athens only, Sparta only, and "Both" in the middle. Press **B** for a blank chalkboard instead. **Delete** clears the drawing. Press **C** again to stop drawing and move on.
+
+Ideas to look for: both were Greek city-states, spoke Greek, honored the same gods, went to the Olympic Games. Different: who made the laws, what boys learned, navy vs army.
+:::
+
+## Worksheet: Athens vs Sparta {#worksheet-on-a-slide}
+
+:::: {.columns}
+::: {.column width="60%"}
+**Work with a partner.**
+
+1. Part 1: fill in the chart. Use the slides.
+2. Part 2: write **one** thing that was the same.
+3. Part 3: circle the people who could {{< vocab "vote" >}}.
+4. Part 4: give **two** reasons.
+:::
+::: {.column width="40%"}
+{{< pdf-viewer "athens-vs-sparta.pdf" title="Athens vs Sparta" >}}
+:::
+::::
+
+::: notes
+**PDF on a slide:** the worksheet's own PDF, with ‹ › to turn pages. Tap a pen to write on it, for example to fill in the first answer together as a model. The ink stays (on this computer) until you press the bin button. ⤢ opens it large. This always shows the student copy, even on the teacher site, so the answer key never goes on the board. (For teacher training, `prefer=false` in the shortcode shows the teacher edition.)
+
+In the source this is one line: `{{</* pdf-viewer "athens-vs-sparta.pdf" */>}}`.
+:::
+
 ## How democracy worked in Athens
 
 - The {{< vocab "assembly" >}} met about 40 times a year on a hill called the Pnyx.
@@ -161,11 +226,11 @@ Discussion: Was Athens a real democracy? Who would you add to the voters? How is
 
 ## Think, pair, share
 
-**Would you rather live in Athens or Sparta? {{< vocab "justify" text="Justify" >}} why.**
+**Would you rather live in Athens or Sparta? Why?**
 
 :::: {.columns}
 ::: {.column width="60%"}
-{{< vocab "use" text="Use" >}} a sentence frame:
+Use a sentence frame:
 
 - I would rather live in ______ because ______.
 - One thing I would miss about ______ is ______.
@@ -178,7 +243,20 @@ Discussion: Was Athens a real democracy? Who would you add to the voters? How is
 ## Exit ticket
 
 ::: {.poll type="choice" options="All adults living in Athens | Free men who were citizens | Only the king" correct="B"}
-{{< vocab "identify" text="Identify" >}}: Who could vote in the Athenian Assembly?
+Who could vote in the Athenian Assembly?
+:::
+
+## Quick reference {#quick-reference}
+
+::: {.quick-ref}
+- [Mountains and sea](#/mountains-and-sea)
+- [Athens or Sparta?](#/athens-or-sparta)
+- [Worksheet: Athens vs Sparta](#/worksheet-on-a-slide)
+- [Exit ticket](#/exit-ticket)
+:::
+
+::: notes
+Every link in this unit on one slide: the key slides on the left (in this deck), everything else on the right. Click one; press the browser's Back button to come back here.
 :::
 
 ## Picture credits {.credits}

@@ -1,0 +1,56 @@
+<!--
+  Down arrow for reveal.js slides: when the slide has another slide below it (a column of
+  slides: a # heading with ## slides under it), a bouncing ↓ shows at the bottom of the screen.
+  Click it or press ↓ to go down. Added to every deck by filter.lua; turn off with `down-arrow: false`.
+-->
+<style>
+  #down-hint {
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    z-index: 45;
+    display: grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    margin-left: -23px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: var(--brand-blue, #0087ff);
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(0, 52, 119, 0.3);
+    cursor: pointer;
+    animation: down-hint-bounce 1.6s ease-in-out infinite;
+  }
+  #down-hint[hidden] { display: none; }
+  #down-hint:hover { background: var(--brand-navy, #003477); }
+  @keyframes down-hint-bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+  /* The running timer's small box sits there too: it moves up above the arrow. */
+  body:has(#down-hint:not([hidden])) #cd-mini { bottom: 66px; }
+  @media print { #down-hint { display: none; } }
+</style>
+
+<script>
+(function () {
+  // Speaker view shows slide previews with "receiver" in the address; the PDF export uses print-pdf.
+  if (/[?&](receiver|print-pdf)/.test(window.location.search) || !window.Reveal) return;
+  const hint = document.createElement("button");
+  hint.id = "down-hint";
+  hint.hidden = true;
+  hint.title = "There's a slide below: click or press ↓";
+  hint.setAttribute("aria-label", "Next slide down");
+  hint.innerHTML = '<svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="3" ' +
+    'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>';
+  hint.addEventListener("click", function () { hint.blur(); Reveal.down(); });
+  document.body.appendChild(hint);
+  function update() {
+    hint.hidden = !(Reveal.availableRoutes().down) || Reveal.isOverview();
+  }
+  Reveal.on("ready", update);
+  Reveal.on("slidechanged", update);
+  Reveal.on("overviewshown", update);
+  Reveal.on("overviewhidden", update);
+  if (Reveal.isReady()) update();
+})();
+</script>

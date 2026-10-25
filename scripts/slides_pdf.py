@@ -35,8 +35,10 @@ NO_THROTTLE = ["--disable-background-timer-throttling", "--disable-renderer-back
 WORKERS = max(1, min(4, (os.cpu_count() or 2) // 2))
 READY = """() => window.Reveal && Reveal.isReady && Reveal.isReady()
            && document.querySelectorAll('.pdf-page').length > 0
-           && [...document.images].every(i => i.complete || !i.offsetParent)"""
-# (images that aren't shown, like the vocab pop-up pictures, load lazily and may never load: skip them)
+           && [...document.images].every(i => i.complete || !i.offsetParent)
+           && !document.querySelector('.pdfv[data-pending]')"""
+# (images that aren't shown, like the vocab pop-up pictures, load lazily and may never load: skip them;
+#  .pdfv[data-pending]: a {{< pdf-viewer >}} still drawing its pages)
 
 
 def decks():
@@ -82,6 +84,7 @@ async def print_deck(context, limit, url, pdf):
             try:
                 state = await page.evaluate("""() => ({reveal: !!(window.Reveal && Reveal.isReady && Reveal.isReady()),
                   pages: document.querySelectorAll('.pdf-page').length,
+                  pdfs: document.querySelectorAll('.pdfv[data-pending]').length,
                   waiting: [...document.images].filter(i => !i.complete).map(i => i.src).slice(0, 5)})""")
             except Exception:
                 state = "?"

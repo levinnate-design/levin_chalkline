@@ -1,19 +1,15 @@
 <!--
-  Countdown timer & vertical sub-slide stacker for reveal.js slides.
+  Countdown timer for reveal.js slides.
 
-  1. Inline timer on a slide:
-       {{< timer 20 >}}
-     Buttons: Start / Pause, Reset, +1 min. Keyboard on the timer slide: T = start/pause.
+  Add to a slide deck's front matter:
+      include-after-body: ../../assets/countdown.html
+  Then put a timer on any slide:
+      ::: {.countdown data-minutes="20"}
+      :::
 
-  2. Floating, draggable timer overlay on ANY slide:
-     Press F to open/hide the timer overlay on any slide. Drag its header (or anywhere on the
-     card) to reposition it anywhere on the screen; its position is remembered.
-     While any timer runs, a small draggable pill (#cd-mini) stays visible when you move
-     to other slides or minimize the overlay.
-
-  3. Vertical drill-down sub-slides ({.subslide}):
-     Add {.subslide} to any ## slide heading to nest it vertically underneath the preceding
-     overview slide: press Down (↓) for details, or Right (→) to proceed to the next topic.
+  Buttons: Start / Pause, Reset, +1 min. Keyboard on the timer slide: T = start/pause.
+  While it runs, a small copy follows you onto other slides (bottom center).
+  It turns orange at 5 minutes left, red at 1 minute, and chimes at zero.
 -->
 <style>
   .countdown {
@@ -21,11 +17,11 @@
     --cd-warn: var(--brand-orange, #ff8c0f);
     --cd-end: #C8372D;
     text-align: center;
-    margin-top: 0.35em;
+    margin-top: 0.4em;
   }
   .countdown .cd-time {
     font-family: var(--r-heading-font, inherit);
-    font-size: 3.2em;
+    font-size: 3.6em;
     font-weight: 700;
     line-height: 1;
     letter-spacing: 0.02em;
@@ -33,24 +29,10 @@
     font-variant-numeric: tabular-nums;
     transition: color 0.4s;
   }
-  /* When a timer sits below other content on the same slide, keep it compact so buttons never clip */
-  .countdown:not(:first-child) {
-    margin-top: 0.25em;
-    padding: 0.35em 0.6em 0.45em;
-    background: var(--brand-sky, #ebf7fd);
-    border-radius: 14px;
-  }
-  .countdown:not(:first-child) .cd-time {
-    font-size: 2.1em;
-  }
-  .countdown:not(:first-child) .cd-bar {
-    margin: 0.3em auto 0.4em;
-    height: 10px;
-  }
   .countdown .cd-bar {
     height: 14px;
     width: 70%;
-    margin: 0.45em auto 0.6em;
+    margin: 0.5em auto 0.7em;
     border-radius: 7px;
     background: rgba(0, 0, 0, 0.08);
     overflow: hidden;
@@ -61,29 +43,27 @@
     background: var(--cd-ok);
     transition: width 1s linear, background 0.4s;
   }
-  .countdown button,
-  #cd-overlay button {
+  .countdown button {
     font: inherit;
-    font-size: 0.52em;
+    font-size: 0.55em;
     font-weight: 600;
-    padding: 0.32em 1em;
-    margin: 0 0.2em;
+    padding: 0.35em 1.1em;
+    margin: 0 0.25em;
     border-radius: 999px;
     border: 2px solid var(--brand-navy, #003477);
     background: #fff;
     color: var(--brand-navy, #003477);
     cursor: pointer;
   }
-  .countdown button.cd-primary,
-  #cd-overlay button.cd-primary {
+  .countdown button.cd-primary {
     background: var(--brand-navy, #003477);
     color: #fff;
   }
-  .countdown.warn .cd-time, #cd-overlay.warn .cd-time { color: var(--cd-warn); }
-  .countdown.warn .cd-fill, #cd-overlay.warn .cd-fill { background: var(--cd-warn); }
-  .countdown.end .cd-time,  #cd-overlay.end .cd-time  { color: var(--cd-end); }
-  .countdown.end .cd-fill,  #cd-overlay.end .cd-fill  { background: var(--cd-end); }
-  .countdown.done .cd-time, #cd-overlay.done .cd-time { animation: cd-pulse 1s ease-in-out infinite; }
+  .countdown.warn .cd-time { color: var(--cd-warn); }
+  .countdown.warn .cd-fill { background: var(--cd-warn); }
+  .countdown.end .cd-time { color: var(--cd-end); }
+  .countdown.end .cd-fill { background: var(--cd-end); }
+  .countdown.done .cd-time { animation: cd-pulse 1s ease-in-out infinite; }
   @keyframes cd-pulse { 50% { opacity: 0.35; } }
 
   #cd-mini {
@@ -92,313 +72,21 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 50;
-    padding: 4px 16px;
+    padding: 4px 14px;
     border-radius: 999px;
     background: var(--brand-navy, #003477);
     color: #fff;
     font: 700 22px/1.3 system-ui, sans-serif;
     font-variant-numeric: tabular-nums;
     display: none;
-    cursor: grab;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: none;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
   }
-  #cd-mini:active { cursor: grabbing; }
   #cd-mini.warn { background: var(--brand-orange, #ff8c0f); color: #003477; }
-  #cd-mini.end { background: #C8372D; color: #fff; }
-
-  /* Floating Draggable Timer Overlay (press F on any slide) */
-  #cd-overlay {
-    --cd-ok: var(--brand-blue, #0087ff);
-    --cd-warn: var(--brand-orange, #ff8c0f);
-    --cd-end: #C8372D;
-    position: fixed;
-    top: 80px;
-    right: 36px;
-    z-index: 95;
-    width: min(440px, 88vw);
-    background: #fff;
-    border: 2px solid rgba(0, 52, 119, 0.18);
-    border-top: 8px solid var(--brand-navy, #003477);
-    border-radius: 18px;
-    padding: 16px 22px 16px;
-    text-align: center;
-    box-shadow: 0 16px 44px rgba(0, 25, 60, 0.32);
-    font: 30px/1.25 var(--r-main-font, system-ui, sans-serif);
-    color: var(--brand-navy, #003477);
-    display: none;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  #cd-overlay.open {
-    display: block;
-  }
-  #cd-overlay .cd-ov-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 4px;
-    padding: 4px 2px 6px;
-    cursor: grab;
-    touch-action: none;
-    border-bottom: 1px solid rgba(0, 52, 119, 0.1);
-  }
-  #cd-overlay .cd-ov-head:active {
-    cursor: grabbing;
-  }
-  #cd-overlay .cd-ov-title {
-    font-size: 0.48em;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--brand-navy, #003477);
-  }
-  #cd-overlay .cd-ov-close {
-    border: none;
-    background: transparent;
-    font-size: 0.72em;
-    line-height: 1;
-    padding: 2px 8px;
-    margin: 0;
-    color: var(--brand-navy, #003477);
-    opacity: 0.7;
-  }
-  #cd-overlay .cd-ov-close:hover { opacity: 1; }
-  #cd-overlay .cd-time {
-    font-family: var(--r-heading-font, inherit);
-    font-size: 2.9em;
-    font-weight: 700;
-    line-height: 1.05;
-    margin-top: 4px;
-    color: var(--cd-ok);
-    font-variant-numeric: tabular-nums;
-    cursor: grab;
-    touch-action: none;
-  }
-  #cd-overlay .cd-time:active { cursor: grabbing; }
-  #cd-overlay .cd-bar {
-    height: 11px;
-    width: 85%;
-    margin: 10px auto 12px;
-    border-radius: 6px;
-    background: rgba(0, 0, 0, 0.08);
-    overflow: hidden;
-  }
-  #cd-overlay .cd-fill {
-    height: 100%;
-    width: 100%;
-    background: var(--cd-ok);
-    transition: width 1s linear, background 0.4s;
-  }
-  #cd-overlay .cd-presets {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-  #cd-overlay .cd-presets button {
-    font-size: 0.43em;
-    padding: 0.24em 0.65em;
-    margin: 0;
-    border: 1.5px solid rgba(0, 52, 119, 0.3);
-    background: var(--brand-sky, #ebf7fd);
-    color: var(--brand-navy, #003477);
-  }
-  #cd-overlay .cd-presets button.active {
-    background: var(--brand-blue, #0087ff);
-    border-color: var(--brand-blue, #0087ff);
-    color: #fff;
-  }
-  #cd-overlay .cd-controls {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    justify-content: center;
-    align-items: center;
-  }
-  #cd-overlay .cd-controls button {
-    margin: 0;
-  }
-  #cd-overlay .cd-hint {
-    margin-top: 8px;
-    font-size: 0.38em;
-    color: #52606d;
-  }
-
-  /* Vertical sub-slide navigation pill */
-  .subslide-nav-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4em;
-    margin-top: 0.55em;
-    padding: 0.28em 0.85em;
-    border-radius: 999px;
-    background: var(--brand-navy, #003477);
-    color: #fff !important;
-    font-size: 0.58em;
-    font-weight: 600;
-    cursor: pointer;
-    box-shadow: 0 3px 10px rgba(0, 52, 119, 0.2);
-    transition: transform 0.15s, background 0.2s;
-  }
-  .subslide-nav-pill:hover {
-    background: var(--brand-blue, #0087ff);
-    transform: translateY(1px);
-  }
-  .subslide-up-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35em;
-    margin-top: 0.45em;
-    padding: 0.22em 0.75em;
-    border-radius: 999px;
-    background: var(--brand-sky, #ebf7fd);
-    border: 1.5px solid var(--brand-blue, #0087ff);
-    color: var(--brand-navy, #003477) !important;
-    font-size: 0.54em;
-    font-weight: 600;
-    cursor: pointer;
-  }
-
-  @media print {
-    #cd-overlay, #cd-mini, .subslide-nav-pill, .subslide-up-pill { display: none !important; }
-  }
+  #cd-mini.end { background: #C8372D; }
 </style>
 
 <script>
 (function () {
-  if (/[?&]receiver/.test(window.location.search)) return;
-
-  // ---- 0. Group {.subslide} sections into 2D vertical Reveal.js stacks -----
-  function setupVerticalSubslides() {
-    if (/print-pdf/i.test(window.location.search)) return;
-    const slidesRoot = document.querySelector(".reveal .slides");
-    if (!slidesRoot) return;
-    const subslides = Array.from(slidesRoot.querySelectorAll(":scope > section.subslide"));
-    if (!subslides.length) return;
-
-    subslides.forEach(function (sub) {
-      const prev = sub.previousElementSibling;
-      if (!prev) return;
-      let stack = prev;
-      if (!prev.classList.contains("stack")) {
-        stack = document.createElement("section");
-        stack.className = "stack";
-        slidesRoot.insertBefore(stack, prev);
-        stack.appendChild(prev);
-      }
-      stack.appendChild(sub);
-    });
-
-    // Add helpful clickable "Press Down (↓) for details" badges on parent overview slides
-    slidesRoot.querySelectorAll(":scope > section.stack").forEach(function (stack) {
-      const children = Array.from(stack.querySelectorAll(":scope > section"));
-      if (children.length < 2) return;
-      const topSlide = children[0];
-      const count = children.length - 1;
-      if (!topSlide.querySelector(".subslide-nav-pill")) {
-        const pill = document.createElement("div");
-        pill.className = "subslide-nav-pill";
-        pill.innerHTML = "↓ Press <strong>Down</strong> for detailed breakdown (" + count + " slide" + (count > 1 ? "s" : "") + ") · or <strong>Right →</strong> to skip";
-        pill.addEventListener("click", function () {
-          if (window.Reveal) Reveal.down();
-        });
-        topSlide.appendChild(pill);
-      }
-      children.slice(1).forEach(function (child, idx) {
-        if (!child.querySelector(".subslide-up-pill")) {
-          const nav = document.createElement("div");
-          nav.className = "subslide-up-pill";
-          const more = idx + 1 < count ? "↓ Down for Part " + (idx + 2) + " · " : "";
-          nav.innerHTML = more + "↑ Up to Overview · → Right for Next Topic";
-          nav.addEventListener("click", function () {
-            if (window.Reveal) {
-              const indices = Reveal.getIndices(topSlide);
-              Reveal.slide(indices.h, 0);
-            }
-          });
-          child.appendChild(nav);
-        }
-      });
-    });
-
-    if (window.Reveal) {
-      if (Reveal.isReady && Reveal.isReady()) {
-        Reveal.configure({ navigationMode: "default", controls: true });
-        Reveal.sync();
-        const idx = Reveal.getIndices();
-        Reveal.slide(idx.h || 0, idx.v || 0);
-      } else {
-        Reveal.on("ready", function () {
-          Reveal.configure({ navigationMode: "default", controls: true });
-          Reveal.sync();
-          const idx = Reveal.getIndices();
-          Reveal.slide(idx.h || 0, idx.v || 0);
-        });
-      }
-    }
-  }
-  setupVerticalSubslides();
-
-  // ---- Generic drag helper for fixed-position elements ---------------------
-  function makeDraggable(el, handleEl, storageKey, onClickCallback) {
-    try {
-      const saved = JSON.parse(localStorage.getItem(storageKey) || "null");
-      if (saved && typeof saved.left === "number" && typeof saved.top === "number") {
-        el.style.left = Math.max(4, Math.min(window.innerWidth - 120, saved.left)) + "px";
-        el.style.top = Math.max(4, Math.min(window.innerHeight - 60, saved.top)) + "px";
-        el.style.right = "auto";
-        el.style.bottom = "auto";
-        el.style.transform = "none";
-      }
-    } catch (e) {}
-
-    let dragging = false, moved = false, startX = 0, startY = 0, offX = 0, offY = 0;
-    handleEl.addEventListener("pointerdown", function (e) {
-      if (e.target.closest("button")) return;
-      if (e.button && e.button !== 0) return;
-      dragging = true;
-      moved = false;
-      startX = e.clientX;
-      startY = e.clientY;
-      const rect = el.getBoundingClientRect();
-      offX = e.clientX - rect.left;
-      offY = e.clientY - rect.top;
-      handleEl.setPointerCapture(e.pointerId);
-      e.preventDefault();
-      e.stopPropagation();
-    });
-    handleEl.addEventListener("pointermove", function (e) {
-      if (!dragging) return;
-      if (Math.abs(e.clientX - startX) > 4 || Math.abs(e.clientY - startY) > 4) {
-        moved = true;
-      }
-      if (!moved) return;
-      const x = Math.max(4, Math.min(window.innerWidth - el.offsetWidth - 4, e.clientX - offX));
-      const y = Math.max(4, Math.min(window.innerHeight - el.offsetHeight - 4, e.clientY - offY));
-      el.style.left = x + "px";
-      el.style.top = y + "px";
-      el.style.right = "auto";
-      el.style.bottom = "auto";
-      el.style.transform = "none";
-    });
-    handleEl.addEventListener("pointerup", function () {
-      if (!dragging) return;
-      dragging = false;
-      if (moved) {
-        try {
-          const rect = el.getBoundingClientRect();
-          localStorage.setItem(storageKey, JSON.stringify({ left: Math.round(rect.left), top: Math.round(rect.top) }));
-        } catch (err) {}
-      } else if (onClickCallback) {
-        onClickCallback();
-      }
-    });
-  }
-
   function fmt(s) {
     const m = Math.floor(s / 60), r = s % 60;
     return m + ":" + String(r).padStart(2, "0");
@@ -420,29 +108,9 @@
 
   const mini = document.createElement("div");
   mini.id = "cd-mini";
-  mini.title = "Drag to move · Click or press F to open timer";
+  mini.title = "Timer (click to jump to it)";
   document.body.appendChild(mini);
 
-  let activeController = null;
-
-  function updateMini() {
-    if (!activeController) {
-      mini.style.display = "none";
-      return;
-    }
-    const st = activeController.getState();
-    mini.textContent = "⏱ " + (st.left > 0 ? fmt(st.left) : "0:00");
-    mini.className = st.state;
-    mini.style.display = st.showMini() ? "block" : "none";
-  }
-
-  makeDraggable(mini, mini, "slide-cd-mini-pos", function () {
-    if (activeController && activeController.onMiniClick) {
-      activeController.onMiniClick();
-    }
-  });
-
-  // ---- 1. Inline slide timers ({{< timer N >}}) ----------------------------
   document.querySelectorAll(".countdown").forEach(function (el) {
     const total = Math.round(parseFloat(el.dataset.minutes || "5") * 60);
     let left = total, timer = null, endAt = 0, full = total;
@@ -455,30 +123,6 @@
     const time = el.querySelector(".cd-time"), fill = el.querySelector(".cd-fill"),
           go = el.querySelector(".cd-go");
 
-    function onTimerSlide() {
-      return window.Reveal && Reveal.getCurrentSlide && Reveal.getCurrentSlide().contains(el);
-    }
-
-    const controller = {
-      getState: function () {
-        const state = left <= 0 ? "end" : left <= 60 ? "end" : left <= 300 ? "warn" : "";
-        return {
-          left: left,
-          state: state,
-          showMini: function () { return (timer || (left < total)) && !onTimerSlide(); }
-        };
-      },
-      onMiniClick: function () {
-        const slide = el.closest("section");
-        if (window.Reveal && slide) {
-          const idx = Reveal.getIndices(slide);
-          Reveal.slide(idx.h, idx.v);
-        }
-      },
-      toggle: function () { timer ? stop() : start(); },
-      isOnCurrentSlide: onTimerSlide
-    };
-
     function paint() {
       time.textContent = left > 0 ? fmt(left) : "Time's up!";
       fill.style.width = (100 * left / full) + "%";
@@ -486,8 +130,10 @@
       el.classList.toggle("warn", state === "warn");
       el.classList.toggle("end", state === "end");
       el.classList.toggle("done", left <= 0);
+      mini.textContent = left > 0 ? fmt(left) : "0:00";
+      mini.className = state;
       go.textContent = timer ? "Pause" : (left < total && left > 0 ? "Resume" : "Start");
-      if (activeController === controller) updateMini();
+      showMini();
     }
 
     function tick() {
@@ -497,7 +143,6 @@
     }
     function start() {
       if (left <= 0) return;
-      activeController = controller;
       endAt = Date.now() + left * 1000;
       timer = setInterval(tick, 250);
       paint();
@@ -506,9 +151,11 @@
 
     go.addEventListener("click", function () { timer ? stop() : start(); });
     el.querySelector(".cd-reset").addEventListener("click", function () {
-      stop(); left = total; full = total;
-      if (activeController === controller) activeController = null;
-      paint(); updateMini();
+      stop(); left = total; full = total; paint();
+    });
+    // The toolbox's "Reset for the next class".
+    document.addEventListener("chalkline:reset", function (e) {
+      if (e.detail && e.detail.timers) { stop(); left = total; full = total; paint(); }
     });
     el.querySelector(".cd-add").addEventListener("click", function () {
       left += 60; full = Math.max(full, left);
@@ -516,184 +163,27 @@
       paint();
     });
 
+    // The small corner copy shows while the timer runs and you're on another slide.
+    function onTimerSlide() {
+      return window.Reveal && Reveal.getCurrentSlide && Reveal.getCurrentSlide().contains(el);
+    }
+    function showMini() {
+      mini.style.display = (timer || (left < total)) && !onTimerSlide() ? "block" : "none";
+    }
+    mini.addEventListener("click", function () {
+      const slide = el.closest("section");
+      if (window.Reveal && slide) {
+        const idx = Reveal.getIndices(slide);
+        Reveal.slide(idx.h, idx.v);
+      }
+    });
     if (window.Reveal) {
-      Reveal.on("slidechanged", updateMini);
+      Reveal.on("slidechanged", showMini);
+      Reveal.addKeyBinding({ keyCode: 84, key: "T", description: "Start/pause timer" }, function () {
+        if (onTimerSlide()) { timer ? stop() : start(); }
+      });
     }
     paint();
   });
-
-  // ---- 2. Floating Draggable Timer Overlay (press F on any slide) ----------
-  const ov = document.createElement("div");
-  ov.id = "cd-overlay";
-  ov.setAttribute("role", "dialog");
-  ov.setAttribute("aria-label", "Classroom Timer");
-  ov.innerHTML =
-    '<div class="cd-ov-head" title="Drag to move timer anywhere on screen">' +
-      '<span class="cd-ov-title">⏱ Classroom Timer (Drag to Move)</span>' +
-      '<button type="button" class="cd-ov-close" title="Minimize timer (F or Esc)">✕</button>' +
-    '</div>' +
-    '<div class="cd-time" title="Drag to move timer">5:00</div>' +
-    '<div class="cd-bar"><div class="cd-fill"></div></div>' +
-    '<div class="cd-presets">' +
-      '<button type="button" data-min="1">1m</button>' +
-      '<button type="button" data-min="3">3m</button>' +
-      '<button type="button" data-min="5" class="active">5m</button>' +
-      '<button type="button" data-min="10">10m</button>' +
-      '<button type="button" data-min="15">15m</button>' +
-      '<button type="button" data-min="20">20m</button>' +
-      '<button type="button" data-min="25">25m</button>' +
-      '<button type="button" data-min="30">30m</button>' +
-    '</div>' +
-    '<div class="cd-controls">' +
-      '<button type="button" class="cd-sub">−1 min</button>' +
-      '<button type="button" class="cd-primary cd-go">Start</button>' +
-      '<button type="button" class="cd-reset">Reset</button>' +
-      '<button type="button" class="cd-add">+1 min</button>' +
-    '</div>' +
-    '<div class="cd-hint">Drag header or numbers to reposition · <strong>F</strong> show/hide · <strong>T</strong> start/pause</div>';
-  document.body.appendChild(ov);
-
-  const ovTime = ov.querySelector(".cd-time"),
-        ovFill = ov.querySelector(".cd-fill"),
-        ovGo = ov.querySelector(".cd-go"),
-        presetBtns = ov.querySelectorAll(".cd-presets button");
-
-  makeDraggable(ov, ov.querySelector(".cd-ov-head"), "slide-cd-overlay-pos");
-  makeDraggable(ov, ovTime, "slide-cd-overlay-pos");
-
-  let ovTotal = 5 * 60, ovLeft = ovTotal, ovFull = ovTotal, ovTimer = null, ovEndAt = 0;
-
-  const ovController = {
-    getState: function () {
-      const state = ovLeft <= 0 ? "end" : ovLeft <= 60 ? "end" : ovLeft <= 300 ? "warn" : "";
-      return {
-        left: ovLeft,
-        state: state,
-        showMini: function () { return (ovTimer || (ovLeft < ovTotal)) && !ov.classList.contains("open"); }
-      };
-    },
-    onMiniClick: function () {
-      toggleOverlay(true);
-    },
-    toggle: function () { ovTimer ? ovStop() : ovStart(); }
-  };
-
-  function ovPaint() {
-    ovTime.textContent = ovLeft > 0 ? fmt(ovLeft) : "Time's up!";
-    ovFill.style.width = (100 * ovLeft / Math.max(1, ovFull)) + "%";
-    const state = ovLeft <= 0 ? "end" : ovLeft <= 60 ? "end" : ovLeft <= 300 ? "warn" : "";
-    ov.classList.toggle("warn", state === "warn");
-    ov.classList.toggle("end", state === "end");
-    ov.classList.toggle("done", ovLeft <= 0);
-    ovGo.textContent = ovTimer ? "Pause" : (ovLeft < ovTotal && ovLeft > 0 ? "Resume" : "Start");
-    if (activeController === ovController) updateMini();
-  }
-
-  function ovTick() {
-    ovLeft = Math.max(0, Math.round((ovEndAt - Date.now()) / 1000));
-    if (ovLeft === 0) { ovStop(); chime(); }
-    ovPaint();
-  }
-
-  function ovStart() {
-    if (ovLeft <= 0) return;
-    activeController = ovController;
-    ovEndAt = Date.now() + ovLeft * 1000;
-    ovTimer = setInterval(ovTick, 250);
-    ovPaint();
-  }
-
-  function ovStop() {
-    clearInterval(ovTimer);
-    ovTimer = null;
-    ovPaint();
-  }
-
-  function setOvMinutes(mins) {
-    ovStop();
-    ovTotal = Math.round(mins * 60);
-    ovLeft = ovTotal;
-    ovFull = ovTotal;
-    presetBtns.forEach(function (b) {
-      b.classList.toggle("active", parseFloat(b.dataset.min) === mins);
-    });
-    ovPaint();
-  }
-
-  presetBtns.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      setOvMinutes(parseFloat(btn.dataset.min));
-    });
-  });
-
-  ovGo.addEventListener("click", function () { ovTimer ? ovStop() : ovStart(); });
-  ov.querySelector(".cd-reset").addEventListener("click", function () {
-    ovStop();
-    ovLeft = ovTotal;
-    ovFull = ovTotal;
-    if (activeController === ovController) activeController = null;
-    ovPaint();
-    updateMini();
-  });
-  ov.querySelector(".cd-add").addEventListener("click", function () {
-    ovLeft += 60;
-    ovFull = Math.max(ovFull, ovLeft);
-    if (ovTimer) ovEndAt += 60000;
-    ovPaint();
-  });
-  ov.querySelector(".cd-sub").addEventListener("click", function () {
-    if (ovLeft > 60) {
-      ovLeft -= 60;
-      if (ovTimer) ovEndAt -= 60000;
-      ovPaint();
-    }
-  });
-  ov.querySelector(".cd-ov-close").addEventListener("click", function () {
-    toggleOverlay(false);
-  });
-
-  function toggleOverlay(forceOpen) {
-    const open = typeof forceOpen === "boolean" ? forceOpen : !ov.classList.contains("open");
-    ov.classList.toggle("open", open);
-    updateMini();
-  }
-
-  // Intercept 'F' in capture phase so Reveal.js doesn't enter fullscreen instead of opening the timer overlay.
-  window.addEventListener("keydown", function (e) {
-    if (e.target && (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA" || e.target.isContentEditable)) return;
-    if (e.metaKey || e.ctrlKey || e.altKey) return;
-    if (e.key === "f" || e.key === "F") {
-      e.preventDefault();
-      e.stopImmediatePropagation();
-      toggleOverlay();
-    } else if (e.key === "Escape" && ov.classList.contains("open")) {
-      e.preventDefault();
-      e.stopImmediatePropagation();
-      toggleOverlay(false);
-    } else if ((e.key === "t" || e.key === "T")) {
-      if (ov.classList.contains("open")) {
-        e.preventDefault();
-        e.stopImmediatePropagation();
-        ovController.toggle();
-      }
-    }
-  }, true);
-
-  if (window.Reveal) {
-    Reveal.addKeyBinding({ keyCode: 70, key: "F", description: "Show/hide timer overlay" }, function () {
-      toggleOverlay();
-    });
-    Reveal.addKeyBinding({ keyCode: 84, key: "T", description: "Start/pause timer" }, function () {
-      if (ov.classList.contains("open")) {
-        ovController.toggle();
-        return;
-      }
-      const cur = Reveal.getCurrentSlide && Reveal.getCurrentSlide();
-      const inlineEl = cur && cur.querySelector(".countdown .cd-go");
-      if (inlineEl) inlineEl.click();
-    });
-  }
-
-  ovPaint();
 })();
 </script>

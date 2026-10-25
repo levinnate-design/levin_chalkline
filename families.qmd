@@ -1,0 +1,32 @@
+---
+title: "For families 给家长"
+format: html
+toc: false
+page-layout: full
+---
+
+:::: {.overview}
+
+Welcome, families! This is where you can follow what your child is learning: the goals for each unit, the slides we use in class, and the **vocabulary** (English, with 中文). Everything on this site is open to you; the files below are the best places to start.
+
+欢迎各位家长！在这里可以了解孩子正在学习的内容：每个单元的学习目标、课堂使用的幻灯片，以及**词汇**（英文配中文）。本网站的所有内容都向您开放；下面的文件是最好的起点。
+
+[History vocab 词汇: every word with a picture and 中文](vocab/app/index.html){.btn .btn-primary}
+
+## What we're learning
+
+```{python}
+#| output: asis
+import sys; sys.path.append("scripts")
+from catalog import markdown_learning, markdown_family_picks
+print(markdown_learning())
+```
+
+## Good to look at together
+
+```{python}
+#| output: asis
+print(markdown_family_picks())
+```
+
+::::

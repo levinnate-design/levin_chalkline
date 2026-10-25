@@ -35,7 +35,7 @@ Yellow `#fbc400` and cyan `#0abee6` are kept only for charts and polls that need
 
 1. Put new logo files in `logos/`. SVG is best; PNG works too.
 2. In `_brand.yml`, update the hex codes under `palette:`, the font names under `typography:`, and the logo paths if the file names changed.
-3. The slide stylesheet (`revealjs.scss`) and the poll, timer and clock widgets in `_extensions/classroom/` repeat the hex codes; update them too.
+3. The slide stylesheet (`revealjs.scss`) and the poll and timer widgets in `_extensions/classroom/` repeat the hex codes; update them too. The toolbox, games and activities take their colors, corners and shadows from one file, `_extensions/classroom/ui/ui.css`: change them there.
 4. Run `quarto render`.
 
 ## Worksheet options (set at the top of a `.qmd` file)
@@ -58,6 +58,25 @@ poster-center: true   # optional: center the content up and down the page
 ```
 
 The poster blocks (`.value`, `.big-quote`, `.steps`) are described in the main README. Their PDF look is in `typst-template.typ` (`poster-value`, `poster-quote`, `poster-steps`) and their web look in `styles.scss`.
+
+## Playful worksheets, for younger students (set at the top of a printable's `.qmd` file)
+
+```yaml
+layout: playful       # handwriting fonts, a hand-drawn frame, a dashed "cloud" title, a big Name line
+playful-theme: nature # optional: a green frame and title, leaves in the corners and beside headings
+name-box: true        # the Name and Date line
+```
+
+Fonts: **Patrick Hand** for text and **Fredoka** for titles and numbers (both SIL Open Font License, in `fonts/print/`). Inside a playful printable, raw Typst blocks can use the playful kit from `typst-template.typ`:
+
+```{=typst}
+#doodle("robot", width: 1.2in)       // line art to color: robot, pencil, star, gear, sun, cloud, sparkle,
+                                     //   leaf, flower, tree, ladybug, butterfly, mushroom, bee, snail
+#star-num(3)                         // a number in a star (or #flower-num(3), in a flower)
+#work-box(height: 1.4in)[Draw it!]   // a dashed box with room to work
+```
+
+The doodles are simple outlines drawn for Chalkline. For more (animals, school things), add bought or openly licensed clip art and credit it like any picture. Example: `course/units/04-stem/garden-times-tables.qmd`.
 
 ## Writing space, checkboxes, callouts
 

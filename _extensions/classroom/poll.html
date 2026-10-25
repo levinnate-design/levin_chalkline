@@ -420,6 +420,16 @@
       paint();
     }
 
+    // The toolbox's "Reset for the next class": votes back to 0, no "Sure?" needed.
+    document.addEventListener("chalkline:reset", function (e) {
+      if (!e.detail || !e.detail.polls) return;
+      choices.forEach(c => { counts[c.key] = 0; });
+      save(storeKey, counts);
+      el.classList.remove("revealed");
+      paint();
+      renderSummaries();
+    });
+
     showBtn.addEventListener("click", function (e) { e.stopPropagation(); toggleResults(); });
     resetBtn.addEventListener("click", function (e) { e.stopPropagation(); reset(); });
     if (isPreview) controls.style.visibility = "hidden";

@@ -1,0 +1,72 @@
+<!--
+  Videos fill their slide: a {{< video >}} (YouTube or Vimeo) with no width or height of its own
+  becomes as big as it can in the room it has, in its own shape, centered. The room is the width of
+  where it sits (the slide, or its column) and the height left in that place: under whatever is above
+  it, above whatever is below it (text in another column doesn't count). The shape comes from
+  video-shape.lua: a YouTube Short is tall (9:16), other videos are wide (16:9), and
+  aspect-ratio="9x16" sets it by hand. Give the video a width or a height and it keeps yours.
+  Added to every deck by filter.lua.
+-->
+<style>
+  .reveal .video-shape { display: block; }
+  .reveal p:has(> .video-shape) { margin: 0; }
+</style>
+<script>
+(function () {
+  const SEL = ['youtube.com/embed', 'youtube-nocookie.com/embed', 'player.vimeo.com']
+    .map(function (s) { return 'iframe[src*="' + s + '"], iframe[data-src*="' + s + '"]'; }).join(", ");
+
+  function shape(f) {   // width ÷ height
+    const tag = f.closest(".video-shape"), a = ((tag && tag.dataset.aspect) || "16/9").split("/");
+    return (+a[0] || 16) / (+a[1] || 9);
+  }
+
+  function fit(slide) {
+    if (!slide || !window.Reveal) return;
+    const vids = Array.prototype.filter.call(slide.querySelectorAll(SEL), function (f) {
+      return !f.hasAttribute("width") && !f.hasAttribute("height");
+    });
+    if (!vids.length) return;
+    const scale = Reveal.getScale ? Reveal.getScale() : 1, H = Reveal.getConfig().height || 700, W = Reveal.getConfig().width || 1050;
+    const s0 = slide.getBoundingClientRect();
+    const rel = function (r) { return { top: (r.top - s0.top) / scale, bottom: (r.bottom - s0.top) / scale, left: (r.left - s0.left) / scale, width: r.width / scale }; };
+    // measure with every video folded away, so each one sees only the other things in its place
+    vids.forEach(function (f) { f.style.display = "block"; f.style.width = "0px"; f.style.height = "0px"; f.style.margin = "0"; });
+    // videos in the same place (a column, or the slide) share its height
+    const places = new Map();
+    vids.forEach(function (f) { const k = f.closest(".column") || slide; places.set(k, (places.get(k) || []).concat([f])); });
+    places.forEach(function (list, place) {
+      const inColumn = place !== slide;
+      const width = rel((list[0].closest(".video-shape") || list[0].parentElement).getBoundingClientRect()).width;   // the column's width, or the slide's text area
+      const top = rel(list[0].getBoundingClientRect()).top;
+      let bottom = top;   // the lowest thing in this place, with the videos folded away
+      Array.prototype.forEach.call(place.children, function (el) {
+        if (el.matches("aside, .notes, script, style")) return;
+        const r = el.getBoundingClientRect();
+        if (r.height) bottom = Math.max(bottom, rel(r).bottom);
+      });
+      const below = Math.max(0, bottom - top);   // text under the videos
+      const room = Math.max(160, (H - top - below - 12) / list.length);
+      list.forEach(function (f) {
+        const k = shape(f);
+        let w = Math.min(width, room * k), h = w / k;
+        f.style.maxWidth = "none";
+        f.style.width = Math.round(w) + "px";
+        f.style.height = Math.round(h) + "px";
+        // center it: in its column, or on the slide (the slide's text area is a little narrower than the slide)
+        const left = inColumn ? (width - w) / 2 : (W - w) / 2 - (rel(f.getBoundingClientRect()).left);
+        f.style.marginLeft = Math.round(left) + "px";
+      });
+    });
+  }
+
+  function current() { fit(Reveal.getCurrentSlide()); }
+  function start() {
+    Reveal.on("slidechanged", current);
+    Reveal.on("resize", current);
+    current();
+  }
+  if (window.Reveal && Reveal.isReady && Reveal.isReady()) start();
+  else if (window.Reveal) Reveal.on("ready", start);
+})();
+</script>

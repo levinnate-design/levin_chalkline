@@ -1,0 +1,26 @@
+---
+title: "Review games"
+subtitle: "复习游戏 · Choose a game and a unit, and play"
+type: slides
+order: 1
+audience: [teacher, student]
+description: "Snowman, Picture reveal, Jeopardy, Quick-fire, Word Blitz and more with the vocab from any unit, ready to play on the board or at home."
+format:
+  revealjs:
+    center: false          # the game stays at the top when you switch games
+    controls: false
+    progress: false
+    slide-number: false
+title-slide-attributes:
+  data-visibility: hidden  # open straight on the games
+---
+
+## {#play}
+
+{{< game-picker >}}
+
+::: notes
+Choose a game along the top, then a unit (or all units). Every game uses that unit's vocab, and **New word** (or **New board**, **New cards**…) gives a fresh one. The page remembers your last choice on this computer. Between classes, press **W** and **↺ Reset for the next class**.
+
+To put one of these games in your own slide deck, see the *Greek Word Games* deck in Unit 1.
+:::

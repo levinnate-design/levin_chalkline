@@ -11,7 +11,7 @@ it, so they don't count as changed.
 
     python scripts/build_if_needed.py                    build only if something changed
     python scripts/build_if_needed.py --force            build anyway
-    python scripts/build_if_needed.py --profile parent   the family site (_site-parent/); also teacher
+    python scripts/build_if_needed.py --profile teacher  the teacher site (_site-teacher/); none: the student site
 """
 
 import os
@@ -55,8 +55,8 @@ def out_of_date(since):
 
 
 def main():
-    if PROFILE == "parent":
-        # Refresh the list of pages the family site leaves out before Quarto reads _quarto-parent.yml.
+    if PROFILE != "teacher":
+        # Refresh the list of pages the student site leaves out before Quarto reads _quarto-student.yml.
         subprocess.run([sys.executable, "scripts/catalog.py"], cwd=ROOT, env=os.environ, capture_output=True)
     stale = out_of_date(STAMP.stat().st_mtime) if STAMP.exists() else None
     if "--force" not in sys.argv and stale == []:

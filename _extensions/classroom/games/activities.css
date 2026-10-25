@@ -1,0 +1,128 @@
+/* Learning activities (activities.js): Sentence builder, Fill in the blanks, Put it in order.
+   The same calm look as the other games: white tiles, thin borders, green right, red wrong. */
+
+:is(.reveal, .cg-host) .ca-tile {
+  padding: 6px 16px;
+  border: 1px solid var(--ui-line);
+  border-radius: var(--ui-r-sm);
+  background: var(--ui-surface);
+  color: var(--ui-ink);
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.25;
+  box-shadow: var(--ui-shadow-sm);
+  cursor: pointer;
+  touch-action: none;
+  transition: transform 0.1s;
+}
+:is(.reveal, .cg-host) .ca-tile.cg-selected { border: 2px solid var(--ui-focus); background: var(--ui-focus-soft); transform: translateY(-2px); }
+:is(.reveal, .cg-host) .ca-tile.cg-ok { border: 1.5px solid var(--ui-ok); background: var(--ui-ok-soft); color: var(--ui-ok); }
+:is(.reveal, .cg-host) .ca-tile.cg-no { border: 1.5px solid var(--ui-bad); background: var(--ui-bad-soft); color: var(--ui-bad); animation: cg-shake 0.35s; }
+:is(.reveal, .cg-host) .ca-tile.ca-dragging, :is(.reveal, .cg-host) .ca-card.ca-dragging { position: relative; z-index: 10; transition: none; box-shadow: 0 8px 20px rgba(0, 20, 60, 0.3); }
+
+:is(.reveal, .cg-host) .ca-bank {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  gap: 8px;
+  min-height: 62px;
+  padding: 10px;
+  border: 1px solid var(--ui-line);
+  border-radius: var(--ui-r);
+  background: var(--ui-soft);
+}
+:is(.reveal, .cg-host) .ca-count { color: var(--ui-muted); font-size: 18px; font-weight: 700; text-align: center; min-height: 1.2em; }
+
+/* ---- Sentence builder ---- */
+:is(.reveal, .cg-host) .ca-sb-top { display: flex; justify-content: center; align-items: center; gap: 18px; margin: 4px 0 10px; }
+:is(.reveal, .cg-host) .ca-pic { max-width: 300px; max-height: 190px; margin: 0; border-radius: 10px; object-fit: cover; }
+:is(.reveal, .cg-host) .ca-pic[hidden], :is(.reveal, .cg-host) .ca-hint[hidden] { display: none; }
+:is(.reveal, .cg-host) .ca-hint { max-width: 520px; color: #3b4a5e; font-size: 24px; font-style: italic; }
+:is(.reveal, .cg-host) .ca-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 74px;
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  border: 0;
+  border-bottom: 4px solid var(--cg-navy);
+  background: #fff;
+  cursor: pointer;
+}
+:is(.reveal, .cg-host) .ca-placeholder { color: #8a97a8; font-size: 20px; font-weight: 600; }
+:is(.reveal, .cg-host) .ca-end { margin-left: -4px; font-size: 30px; font-weight: 800; }
+
+/* ---- Fill in the blanks ---- */
+:is(.reveal, .cg-host) .ca-bank-label { margin-bottom: 4px; color: var(--ui-muted); font-size: 16px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
+:is(.reveal, .cg-host) .ca-wordbank { margin-bottom: 14px; }
+:is(.reveal, .cg-host) .ca-text { font-size: 28px; line-height: 2.05; }
+:is(.reveal, .cg-host) .ca-text p { margin: 0 0 8px; }
+:is(.reveal, .cg-host) .ca-gap {
+  display: inline-block;
+  min-width: 130px;
+  min-height: 1.5em;
+  margin: 0 3px;
+  padding: 0 10px;
+  border: 0;
+  border-bottom: 3px solid #8a97a8;
+  border-radius: var(--ui-r-sm) var(--ui-r-sm) 0 0;
+  background: var(--ui-soft);
+  color: var(--cg-navy);
+  font: inherit;
+  font-weight: 700;
+  line-height: 1.4;
+  vertical-align: baseline;
+  cursor: pointer;
+}
+:is(.reveal, .cg-host) .ca-gap.cg-target { background: var(--ui-focus-soft); border-bottom-color: var(--ui-focus); }
+:is(.reveal, .cg-host) .ca-gap.ca-filled { background: var(--ui-surface); border-bottom-color: var(--ui-ink); }
+:is(.reveal, .cg-host) .ca-gap.cg-ok { background: var(--ui-ok-soft); border-bottom-color: var(--ui-ok); color: var(--ui-ok); }
+:is(.reveal, .cg-host) .ca-gap.cg-no { background: var(--ui-bad-soft); border-bottom-color: var(--ui-bad); color: var(--ui-bad); animation: cg-shake 0.35s; }
+
+/* ---- Put it in order ---- */
+:is(.reveal, .cg-host) .ca-ends { color: var(--ui-muted); font-size: 16px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
+:is(.reveal, .cg-host) .ca-ends-row { display: flex; justify-content: space-between; }
+:is(.reveal, .cg-host) .ca-order { display: flex; flex-direction: column; gap: 6px; margin: 4px 0; }
+:is(.reveal, .cg-host) .ca-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 6px 14px 6px 8px;
+  border: 1px solid var(--ui-line);
+  border-radius: var(--ui-r);
+  background: var(--ui-surface);
+  color: var(--ui-ink);
+  font-size: 23px;
+  font-weight: 600;
+  text-align: left;
+  box-shadow: var(--ui-shadow-sm);
+  cursor: grab;
+  touch-action: none;
+}
+:is(.reveal, .cg-host) .ca-card.cg-selected { border: 2px solid var(--ui-focus); background: var(--ui-focus-soft); }
+:is(.reveal, .cg-host) .ca-card.cg-ok { border: 1.5px solid var(--ui-ok); background: var(--ui-ok-soft); }
+:is(.reveal, .cg-host) .ca-card.cg-no { border: 1.5px solid var(--ui-bad); background: var(--ui-bad-soft); animation: cg-shake 0.35s; }
+:is(.reveal, .cg-host) .ca-num {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--cg-navy);
+  color: #fff;
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 34px;
+  text-align: center;
+}
+:is(.reveal, .cg-host) .ca-card img { width: 64px; height: 46px; margin: 0; border-radius: 6px; object-fit: cover; }
+:is(.reveal, .cg-host) .ca-card-text { display: flex; flex-direction: column; }
+:is(.reveal, .cg-host) .ca-card-text small { color: #3b4a5e; font-size: 17px; font-weight: 400; }
+/* All pictures: the cards sit side by side, first on the left */
+:is(.reveal, .cg-host) .ca-row .ca-order { flex-direction: row; gap: 10px; }
+:is(.reveal, .cg-host) .ca-row .ca-card { flex: 1; flex-direction: column; align-items: center; gap: 6px; padding: 8px; text-align: center; }
+:is(.reveal, .cg-host) .ca-row .ca-card img { width: 100%; height: 150px; }
+:is(.reveal, .cg-host) .ca-row .ca-card-text { align-items: center; font-size: 19px; }

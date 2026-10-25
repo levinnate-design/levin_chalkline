@@ -8,7 +8,6 @@ audience: [teacher]
 format: revealjs
 resources:
   - odyssey/*             # the interactive Odyssey map
-  - match/*               # the tap-to-match activity
 title-slide-attributes:
   data-background-color: "#003477"
   data-background-image: images/ulysses-sirens.jpg
@@ -151,7 +150,7 @@ Ask: where in our city have you seen columns like these? (Banks, museums, govern
 
 ![](images/GRC-011.svg){width="70%" fig-alt="Three Greek columns: Doric, Ionic and Corinthian"}
 
-{{< vocab "recognize" text="Recognize" >}} which is which: look at the **tops**.
+Which is which? Look at the **tops**.
 
 ## Three kinds of column {auto-animate="true"}
 
@@ -191,23 +190,21 @@ English words from Greek theater: *drama*, *scene*, *chorus*, *comedy*, *tragedy
 
 ## Match it
 
-Tap a word, then {{< vocab "identify" >}} and tap its meaning.
+Tap a word, then tap its meaning.
 
-```{=html}
-<link rel="stylesheet" href="match/match.css">
-<div class="match">
-  <p data-term="myth">A traditional story about gods and heroes.</p>
-  <p data-term="philosopher">A thinker who asks big questions about life and truth.</p>
-  <p data-term="temple">A building where people worship a god or goddess.</p>
-  <p data-term="column">A tall post that holds up a roof.</p>
-  <p data-term="theater">An outdoor place for plays, with seats in a half circle.</p>
-  <p data-term="Olympic Games">Sports contests at Olympia every four years, to honor Zeus.</p>
-</div>
-<script src="match/match.js"></script>
-```
+::: {.matching}
+- myth | A traditional story about gods and heroes.
+- philosopher | A thinker who asks big questions about life and truth.
+- temple | A building where people worship a god or goddess.
+- column | A tall post that holds up a roof.
+- theater | An outdoor place for plays, with seats in a half circle.
+- Olympic Games | Sports contests at Olympia every four years, to honor Zeus.
+:::
 
 ::: notes
-**Interactive activity:** this matching game is a small script in `match/`, reusable on any slide: just list the pairs. It's review, so English only (no 中文). The slide PDF shows the answer key.
+**Answer key:** myth: a traditional story about gods and heroes · philosopher: a thinker who asks big questions · temple: a building to worship a god · column: a tall post that holds up a roof · theater: an outdoor place for plays · Olympic Games: sports contests to honor Zeus.
+
+This is the Matching game: a list of pairs, each a word, a `|`, then its meaning. A right pair locks in; a wrong one shakes; it counts the tries. It's review, so English only (no 中文).
 :::
 
 ## Quick check
@@ -223,7 +220,7 @@ False: they were held at Olympia. The first *modern* Olympics, in 1896, were in 
 ## Exit ticket
 
 ::: {.poll type="smileys"}
-How well can you {{< vocab "identify" >}} three Greek ideas we still use?
+How well can you name three Greek ideas we still use?
 :::
 
 ## Picture credits {.credits}

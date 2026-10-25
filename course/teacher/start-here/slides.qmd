@@ -7,11 +7,11 @@ order: 1
 audience: [teacher]
 format: revealjs
 resources:
-  - ../91-test-unit-1-ancient-greece/odyssey/*   # the interactive story map (it lives with the Greece unit)
-  - ../91-test-unit-1-ancient-greece/images/school-of-athens.jpg   # the title backdrop
+  - ../test-units/91-test-unit-1-ancient-greece/odyssey/*   # the interactive story map (it lives with the Greece unit)
+  - ../test-units/91-test-unit-1-ancient-greece/images/school-of-athens.jpg   # the title backdrop
 title-slide-attributes:
   data-background-color: "#003477"
-  data-background-image: ../91-test-unit-1-ancient-greece/images/school-of-athens.jpg
+  data-background-image: ../test-units/91-test-unit-1-ancient-greece/images/school-of-athens.jpg
   data-background-opacity: "0.35"      # the picture, dimmed, so the title stays readable
 ---
 
@@ -49,7 +49,7 @@ Ask the room: how many places does the same lesson live for you right now? Slide
 - A **web page** and a **printable PDF** of each worksheet
 - A **unit packet**: every printable in one PDF, with a cover and contents
 - A **year packet** with every unit
-- A **student**, a **teacher** and a **family** website
+- A **student** website (with a page for families) and a **teacher** website
 :::
 :::
 ::::
@@ -78,7 +78,7 @@ Everything in this sample was made this way. Open any slide deck or worksheet fi
 :::
 ::: {.column width="54%"}
 ::: {style="font-size: 0.82em"}
-- **Edit it like a document.** Change a word, save, and the slide updates.
+- ✏️ **Edit it like a document.** Change a word, save, and the slide updates.
 - 💬 **Or ask an AI to edit it.** *"Add a bullet about the navy."* Plain text is easy for AI to change correctly.
 - 🎨 **It can't look messy.** Fonts, colors and layout come from the school style, on every slide.
 - 🔁 **Write once.** The same words become the slides, the web page and the PDF.
@@ -149,39 +149,36 @@ The words live in one spreadsheet. Slides, worksheets, the **vocab app** and Qui
 ::::
 
 ::: notes
-Try the pop-ups now. Then open "History vocab 词汇" in the sidebar: all 25 words from both units, searchable in English or Chinese.
+Try the pop-ups now. Then open "History vocab 词汇" in the sidebar: all 37 words from the three units, searchable in English or Chinese.
 :::
 
-## Three websites from the same files
+## Two websites from the same files
 
 :::: {.columns}
-::: {.column width="33%"}
-::: {.callout-note title="Students" icon=false}
-Slides, worksheets, vocab. No answer keys.
+::: {.column width="50%"}
+::: {.callout-note title="Students and families" icon=false}
+Slides, worksheets, vocab. No answer keys, no speaker notes, no teacher tools. A **For families** page welcomes parents with the unit goals and the files you pick for them.
 :::
 :::
-::: {.column width="33%"}
+::: {.column width="50%"}
 ::: {.callout-warning title="Teachers" icon=false}
-Everything, plus **answer keys**, **speaker notes** and teacher packets.
-:::
-:::
-::: {.column width="33%"}
-::: {.callout-tip title="Families" icon=false}
-The objectives, the **vocab app** and only the slides you choose to share.
+Everything, plus **answer keys**, **speaker notes**, the **toolbox** and teacher packets. Turn on **Who sees it** on the overview to check what students and families get.
 :::
 :::
 ::::
 
-One label decides who sees a file: `audience: [teacher, student, parent]`
+One label decides who sees a file: `audience: [teacher, student, parent]`. Leave out `student` and it stays in the teacher site; add `parent` to list it on the For families page.
 
 ## Classroom tools in every deck
 
 :::: {.columns}
 ::: {.column width="50%"}
 - A **timer** on any slide (press **T**)
-- A **clock** in the corner (press **K**)
+- A **clock** you can drag anywhere (press **K**)
 - **Speaker notes** in a second window (press **S**)
+- A **toolbox** (press **W**): scoreboard, voice level, traffic light, noise meter, QR code, stopwatch, dice, spotlight, music, and the unit's **vocab** and **packet** on any slide
 - **Tap-to-vote polls**: no devices, no accounts
+- **Games**: Snowman, Picture reveal, Jeopardy, Quick-fire (see Unit 1)
 :::
 ::: {.column width="50%"}
 {{< timer 2 >}}
@@ -194,7 +191,7 @@ Start the timer to show it. It keeps running in a small box if you change slides
 
 ## Try a poll
 
-::: {.poll type="choice" options="Packets | Vocab pop-ups | Family site | Slide PDFs"}
+::: {.poll type="choice" options="Packets | Vocab pop-ups | For families page | Slide PDFs"}
 Which feature will you try first?
 :::
 
@@ -207,9 +204,9 @@ Tap an answer on the board (or press 1–4), then press R or click Show results.
 :::: {.columns}
 ::: {.column width="68%"}
 ```{=html}
-<link rel="stylesheet" href="../91-test-unit-1-ancient-greece/odyssey/odyssey.css">
+<link rel="stylesheet" href="../test-units/91-test-unit-1-ancient-greece/odyssey/odyssey.css">
 <div class="odyssey"></div>
-<script src="../91-test-unit-1-ancient-greece/odyssey/odyssey.js"></script>
+<script src="../test-units/91-test-unit-1-ancient-greece/odyssey/odyssey.js"></script>
 ```
 :::
 ::: {.column .ody-side width="32%"}
@@ -231,41 +228,79 @@ The code lives in `course/units/01-ancient-greece/odyssey/`, and the Greece unit
 
 ## So what else can you do?
 
-Each one is a working example in this course. Click to jump there.
+[**50 ready-made features,** all working in this course today. Click any chip to open a live example, or press **W** right now for the toolbox.]{.cat-lead}
 
-::: {.feature-list}
-:::: {.columns}
-::: {.column width="50%"}
-- 👆 **Fragments:** [reveal answers one click at a time](../91-test-unit-1-ancient-greece/city-states-slides.html#/athens-or-sparta)
-- ✨ **Transitions:** [zoom into a slide](../91-test-unit-1-ancient-greece/greek-ideas-slides.html#/the-odyssey-ten-years-to-get-home), or [glide a picture into place](../91-test-unit-1-ancient-greece/greek-ideas-slides.html#/three-kinds-of-column) (auto-animate)
-- 🎬 **Embedded videos:** [a TED-Ed video inside a slide](../91-test-unit-1-ancient-greece/greek-ideas-slides.html#/watch-the-odyssey-in-five-minutes)
-- 🧩 **Interactive activities:** [tap-to-match](../91-test-unit-1-ancient-greece/greek-ideas-slides.html#/match-it), [a story map](../91-test-unit-1-ancient-greece/greek-ideas-slides.html#/the-odyssey-ten-years-to-get-home)
-- 📐 **Infographics:** [a draw.io diagram you can hover](../92-test-unit-2-ancient-rome/republic-to-empire-slides.html#/republic-infographic)
+:::: {.catalog}
+
+:::: {.cat-col}
+::: {.cat-box .cat-games}
+[Review games]{.cat-head} [8]{.cat-n}
+
+[Snowman](../test-units/91-test-unit-1-ancient-greece/review-games-slides.html#/word-1){.chip} [Word scramble](../test-units/91-test-unit-1-ancient-greece/review-games-slides.html#/unscramble-it){.chip} [Picture reveal](../test-units/91-test-unit-1-ancient-greece/review-games-slides.html#/what-is-it){.chip} [Matching](../test-units/91-test-unit-1-ancient-greece/review-games-slides.html#/greek-gods){.chip} [Memory](../test-units/91-test-unit-1-ancient-greece/review-games-slides.html#/find-the-pairs){.chip} [Jeopardy, with teams](../test-units/91-test-unit-1-ancient-greece/review-games-slides.html#/ancient-greece){.chip} [Quick-fire](../test-units/91-test-unit-1-ancient-greece/review-games-slides.html#/greece-review){.chip} [Bingo, printed cards](../test-units/91-test-unit-1-ancient-greece/review-games-slides.html#/ancient-greece-bingo){.chip}
+
+[**Review games page:** any game, any unit](../../review-games.html){.chip .chip-wide}
 :::
-::: {.column width="50%"}
-- 🗳️ **Polls:** [tap-to-vote on the board](../91-test-unit-1-ancient-greece/city-states-slides.html#/exit-ticket)
-- **Timers:** [think, pair, share](../91-test-unit-1-ancient-greece/city-states-slides.html#/think-pair-share)
-- 🔊 **Vocab pop-ups:** [with 中文 and read-aloud](../91-test-unit-1-ancient-greece/city-states-slides.html#/mountains-and-sea)
-- 🏛️ **Pictures and backdrops:** [a full-screen title](../92-test-unit-2-ancient-rome/roman-engineering-slides.html#/title-slide), [photos with captions](../92-test-unit-2-ancient-rome/roman-engineering-slides.html#/concrete-and-the-colosseum)
-- 🗒️ **Speaker notes:** press **S** on any slide
+
+::: {.cat-box .cat-learn}
+[Learning activities]{.cat-head} [7]{.cat-n}
+
+[Label a photo](../test-units/92-test-unit-2-ancient-rome/rome-timeline-slides.html#/label-the-aqueduct){.chip} [Put it on the timeline](../test-units/92-test-unit-2-ancient-rome/rome-timeline-slides.html#/put-rome-on-the-timeline){.chip} [Sort it, with reasons](../test-units/91-test-unit-1-ancient-greece/review-games-slides.html#/greek-or-roman){.chip} [Venn diagram](../test-units/92-test-unit-2-ancient-rome/learning-activities-slides.html#/greece-rome-or-both){.chip} [Build the sentence](../test-units/92-test-unit-2-ancient-rome/learning-activities-slides.html#/build-the-sentence){.chip} [Fill in the blanks](../test-units/92-test-unit-2-ancient-rome/learning-activities-slides.html#/fill-in-the-blanks){.chip} [Put it in order](../test-units/92-test-unit-2-ancient-rome/learning-activities-slides.html#/how-to-build-a-roman-road){.chip}
 :::
 ::::
+
+::: {.cat-box .cat-teach}
+[Teach with it]{.cat-head} [11]{.cat-n}
+
+[Timeline: tap to zoom in](../test-units/92-test-unit-2-ancient-rome/rome-timeline-slides.html#/rome-timeline){.chip} [Timeline across slides](../test-units/92-test-unit-2-ancient-rome/rome-timeline-slides.html#/the-first-emperor){.chip} [Story map](../test-units/91-test-unit-1-ancient-greece/greek-ideas-slides.html#/the-odyssey-ten-years-to-get-home){.chip} [Diagram you can hover](../test-units/92-test-unit-2-ancient-rome/republic-to-empire-slides.html#/republic-infographic){.chip} [Video in a slide](../test-units/91-test-unit-1-ancient-greece/greek-ideas-slides.html#/watch-the-odyssey-in-five-minutes){.chip} [Step-by-step answers](../test-units/91-test-unit-1-ancient-greece/city-states-slides.html#/athens-or-sparta){.chip} [Zoom and glide](../test-units/91-test-unit-1-ancient-greece/greek-ideas-slides.html#/three-kinds-of-column){.chip} [Full-screen titles](../test-units/92-test-unit-2-ancient-rome/roman-engineering-slides.html#/title-slide){.chip} [Photos with captions](../test-units/92-test-unit-2-ancient-rome/roman-engineering-slides.html#/concrete-and-the-colosseum){.chip} [Quick reference: every link in a unit](../test-units/91-test-unit-1-ancient-greece/city-states-slides.html#/quick-reference){.chip} [Speaker notes: press S]{.chip .chip-key}
 :::
+
+::: {.cat-box .cat-board}
+[On the board]{.cat-head} [8]{.cat-n}
+
+[Tap-to-vote polls](../test-units/91-test-unit-1-ancient-greece/city-states-slides.html#/exit-ticket){.chip} [True or false checks](../test-units/91-test-unit-1-ancient-greece/greek-ideas-slides.html#/quick-check){.chip} [PDF gallery](../test-units/91-test-unit-1-ancient-greece/city-states-slides.html#/unit-printables){.chip} [Write on a worksheet](../test-units/91-test-unit-1-ancient-greece/city-states-slides.html#/worksheet-on-a-slide){.chip} [Download it with notes](../test-units/91-test-unit-1-ancient-greece/city-states-slides.html#/worksheet-on-a-slide){.chip} [Chalkboard](../test-units/91-test-unit-1-ancient-greece/city-states-slides.html#/draw-on-the-slide){.chip} [Vocab pop-ups, 中文, read aloud](../test-units/91-test-unit-1-ancient-greece/city-states-slides.html#/mountains-and-sea){.chip} [Timers](../test-units/91-test-unit-1-ancient-greece/city-states-slides.html#/think-pair-share){.chip}
+:::
+
+::: {.cat-box .cat-tools}
+[Toolbox on every slide: press W]{.cat-head} [16]{.cat-n}
+
+[Name picker]{.chip .chip-key data-icon="hand"} [Groups]{.chip .chip-key data-icon="users"} [Scoreboard]{.chip .chip-key data-icon="trophy"} [Voice level]{.chip .chip-key data-icon="volume-2"} [Noise meter]{.chip .chip-key data-icon="mic"} [Traffic light]{.chip .chip-key data-icon="traffic-cone"} [QR code]{.chip .chip-key data-icon="qr-code"} [Stopwatch]{.chip .chip-key data-icon="timer"} [Dice]{.chip .chip-key data-icon="dices"} [Slide size]{.chip .chip-key data-icon="ruler"} [Reset for the next class]{.chip .chip-key data-icon="rotate-ccw"} [Clock (K)]{.chip .chip-key data-icon="clock"} [Spotlight]{.chip .chip-key data-icon="flashlight"} [Music from YouTube]{.chip .chip-key data-icon="music"} [Unit vocab, any slide]{.chip .chip-key data-icon="book-a"} [Unit packet, any slide]{.chip .chip-key data-icon="files"}
+:::
+
+::::
 
 ```{=html}
 <style>
-  .reveal .feature-list { font-size: 0.74em; }
-  .reveal .feature-list li { margin-bottom: 0.35em; }
-  .reveal .feature-list a { color: #0068c4; text-decoration: underline; text-underline-offset: 3px; }
+  /* Chalkline's design values (ui/ui.css): the same chips, borders and corners as the tools and games */
+  .reveal .cat-lead { display: block; margin: -0.25em 0 0.4em; font-size: 0.62em; color: var(--ui-muted); }
+  .reveal .catalog { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; font-size: 0.47em; }
+  .reveal .cat-box { padding: 8px 12px 8px; border: 1px solid var(--ui-line); border-top: 3px solid var(--cat); border-radius: var(--ui-r); background: var(--ui-surface); box-shadow: var(--ui-shadow-sm); }
+  .reveal .cat-box p { margin: 0 0 3px; line-height: 1.6; }
+  .reveal .cat-games { --cat: #0087ff; }
+  .reveal .cat-learn { --cat: #d6458f; }
+  .reveal .cat-col { display: flex; flex-direction: column; gap: 10px; }
+  .reveal .cat-col .cat-box { flex: 1; }
+  .reveal .cat-teach { --cat: #2e9e4f; }
+  .reveal .cat-board { --cat: #ff8c0f; }
+  .reveal .cat-tools { --cat: #7b4fc9; grid-column: 1 / -1; }
+  .reveal .cat-head { color: var(--ui-ink); font-size: 1.2em; font-weight: 700; }
+  .reveal .cat-n { margin-left: 6px; padding: 0 8px; border-radius: 999px; background: var(--ui-soft); color: var(--ui-muted); font-size: 0.85em; font-weight: 700; }
+  .reveal .chip { display: inline-flex; align-items: center; gap: 5px; margin: 0 2px 3px 0; padding: 0 9px; border: 1px solid var(--ui-line); border-radius: var(--ui-r-sm); background: var(--ui-surface); color: var(--ui-ink); font-weight: 500; line-height: 1.6; white-space: nowrap; text-decoration: none; }
+  .reveal a.chip:hover { border-color: var(--ui-line-strong); background: var(--ui-soft); }
+  .reveal .chip-key { background: var(--ui-soft); }
+  .reveal .chip .ui-icon { color: var(--ui-muted); }
+  .reveal .chip-wide { margin-top: 4px; background: var(--ui-accent-soft); }
 </style>
+<script>
+  // The toolbox chips get the toolbox's own line icons (ui/icons.js loads at the end of the page).
+  window.addEventListener("load", function () {
+    if (!window.ChalklineIcons) return;
+    document.querySelectorAll(".catalog [data-icon]").forEach(function (chip) { chip.prepend(ChalklineIcons.el(chip.dataset.icon)); });
+  });
+</script>
 ```
 
-::: {.small-note}
-These links jump between slide decks, too: any slide can link to any other slide.
-:::
-
 ::: notes
-Every link opens the example slide in another deck: press the browser's Back button to return here. In a slide, a link to another deck is just `[text](../91-test-unit-1-ancient-greece/city-states-slides.html#/athens-or-sparta)`.
+Every chip with a solid border opens a working example in another deck: press the browser's Back button to come back here. The toolbox tools (grey) are on every slide: press **W** to open them, right here. The newest are the review games, the learning activities (timelines, labelling, sorting with reasons, a Venn diagram, sentence building, fill in the blanks, putting things in order), and the toolbox. In a slide, a link to another deck is just `[text](../test-units/91-test-unit-1-ancient-greece/city-states-slides.html#/athens-or-sparta)`.
 :::
 
 ## It always looks like your school
@@ -299,7 +334,7 @@ Example request: "Add a 5-question exit ticket to the Rome republic deck, with C
 :::
 ::: {.column width="48%"}
 ::: {.callout-tip title="The address" icon=false}
-`https://github.com/insufficientdoubt/chalkline-sample`
+`https://github.com/insufficientdoubt/project-chalkline`
 :::
 
 ::: {.callout-note title="Then" icon=false}
@@ -309,11 +344,11 @@ Your site opens at **localhost:4100**, in the teacher version. Your copy is your
 ::::
 
 ::: {.small-note}
-Just want to look first? The online version: **insufficientdoubt.github.io/chalkline-sample**
+Just want to look first? The online version: **insufficientdoubt.github.io/project-chalkline**
 :::
 
 ::: notes
-In a terminal instead of VS Code: `git clone https://github.com/insufficientdoubt/chalkline-sample.git`, then open the folder. No GitHub account is needed to clone; you need one only to save changes back to GitHub.
+In a terminal instead of VS Code: `git clone https://github.com/insufficientdoubt/project-chalkline.git`, then open the folder. No GitHub account is needed to clone; you need one only to save changes back to GitHub.
 :::
 
 ## How this sample is organized
@@ -324,7 +359,7 @@ course/units/01-ancient-greece/
   city-states-slides.qmd  a slide deck
   athens-vs-sparta.qmd    a worksheet (web + PDF)
   images/                 photos for this unit's slides
-vocab/data/vocab.csv      the 25 vocab words
+vocab/data/vocab.csv      the 37 vocab words
 vocab/images/             vocab pictures (GRC-003.svg = democracy)
 brand/                    colors, fonts, logos
 ```

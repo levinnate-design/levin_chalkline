@@ -1,0 +1,96 @@
+---
+title: "Rome: Build It, Fill It, Order It"
+subtitle: "Learning activities · Ancient Rome"
+type: slides
+description: "Whiteboard activities: build a sentence, fill in the blanks, put the steps in order, and a Greece–Rome Venn diagram. Copy any slide to make your own."
+order: 7
+audience: [teacher]
+format: revealjs
+title-slide-attributes:
+  data-background-color: "#003477"
+  data-background-image: images/via-appia.jpg
+  data-background-opacity: "0.45"      # the picture, dimmed, so the title stays readable
+---
+
+## Build the sentence
+
+::: {.sentence-builder}
+- The Romans / built / long, straight roads. ![](images/via-appia.jpg)
+- Aqueducts / carried / water / to the city. ![](images/pont-du-gard.jpg)
+- Augustus / was / the first emperor / of Rome. ![](images/augustus-prima-porta.jpg)
+- Gladiators / fought / in the Colosseum. ![](images/colosseum-forum.jpg)
+- The Senate / gave / advice / to the consuls. | Who gave advice?
+:::
+
+::: notes
+Students drag the words into order (or tap them in order). **Check** turns the words in the right place green and the others red. Then **Next sentence**.
+
+To make your own: a `::: {.sentence-builder}` list, one sentence each. The words are mixed up for you. Use `/` to keep words together as one tile ("long, straight roads"); without `/`, every word is its own tile. The full stop stays at the end. Add a picture, or a hint after a `|`.
+:::
+
+## Fill in the blanks
+
+::: {.fill-blanks extra="soldiers, temples"}
+The Romans needed lots of clean [water] for their cities. They built [aqueducts] to carry it from the mountains.
+
+The water flowed down a gentle [slope], so they needed no pumps. Many aqueducts went over valleys on tall [arches].
+:::
+
+::: notes
+Students drag each word from the word bank into its gap (or tap a word, then a gap). Tap a filled gap to take its word out. **Check** marks each gap green or red.
+
+To make your own: write the text, with each missing word in `[square brackets]`. The word bank is made from them. `extra="soldiers, temples"` adds wrong words to the bank, so it's harder.
+:::
+
+## How to build a Roman road
+
+::: {.put-in-order}
+- Dig a deep trench. | First, the workers dug down about a meter.
+- Fill it with big stones. | Big stones made a strong base.
+- Add small stones and sand. | Smaller stones filled the gaps.
+- Put flat stones on top. | Flat stones made a smooth surface.
+- Make the middle a little higher. | Rain ran off to the sides.
+:::
+
+::: notes
+Students drag the cards into order (or tap one card, then the place it goes). **Check** turns the cards in the right place green. When they're all right, the reasons show.
+
+To make your own: a `::: {.put-in-order}` list in the **right** order; the cards are mixed up for you. A reason after a `|` is optional. When every card has a picture, the cards sit side by side (next slide). `first="Oldest" last="Newest"` changes the words at the ends.
+:::
+
+## Rome's story, in pictures
+
+::: {.put-in-order first="Earliest" last="Latest"}
+- Rome becomes a republic ![](images/roman-senate-maccari.jpg)
+- Augustus becomes emperor ![](images/augustus-prima-porta.jpg)
+- The Colosseum opens ![](images/colosseum-forum.jpg)
+- Trajan's Column is built ![](images/trajans-column-legion.jpg)
+:::
+
+## Greece, Rome, or both?
+
+::: {.sort layout="venn"}
+- **Ancient Greece**
+  - The first democracy | Athens had the first democracy.
+  - The Olympic Games | The first Olympic Games were in Greece.
+  - City-states | Greece was many city-states, not one country.
+- **Both**
+  - Many gods | Greeks and Romans both prayed to many gods.
+  - Temples with columns | Both built temples with tall columns.
+  - Theaters and plays | Both watched plays in big theaters.
+- **Ancient Rome**
+  - Emperors | Rome had emperors, like Augustus.
+  - Aqueducts | The Romans built aqueducts to carry water.
+  - Latin | The Romans spoke Latin. The Greeks spoke Greek.
+:::
+
+::: notes
+A Sort it with `layout="venn"`: exactly three groups, in the order left circle, middle ("both"), right circle. Students tap an item, then a part of the diagram. A wrong one shakes and shows the reason after the `|`.
+:::
+
+## Picture credits {.credits}
+
+- **Via Appia:** photo by Nicolò Musmeci, public domain. **Augustus of Prima Porta:** photo by Till Niermann, public domain. **Trajan's Column:** photo by Joe Mabel, public domain.
+- **The Colosseum:** photo by Wilfredor, CC0, via Wikimedia Commons. ***Cicero Denounces Catiline*:** painting by Cesare Maccari (1889), public domain.
+- **Pont du Gard:** photo by Benh LIEU SONG, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), via Wikimedia Commons.
+- Full list: `images/CREDITS.md`.

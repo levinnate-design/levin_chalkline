@@ -27,6 +27,25 @@ what each one becomes in each output format (slides, web page, PDF, Word).
                                          Terms come from vocab/data/vocab.csv
                                          (via scripts/vocab_terms.py). PDF/Word: the word in bold.
 
+  {{< snowman >}}                        slide games (slides only). A random word from the vocab
+  {{< picture-reveal >}}                 list, with 🔀 for a new one; unit=1 for one unit's words;
+  {{< jeopardy unit=1 >}}                or name a word: {{< snowman "democracy" >}}. Your own
+  {{< trivia unit=1 >}}                  word: {{< snowman "Parthenon" hint="..." image="..." >}}.
+                                         Your own Jeopardy and quick-fire questions: a ::: div
+                                         (see filter.lua). Options: tiles=16 (picture-reveal),
+                                         rows=4 teams=2 (jeopardy), count=5 seconds=10 title="..." (trivia).
+  {{< matching unit=1 >}}                pairs: tap a word, then its meaning (with="picture": its picture)
+  {{< memory unit=1 >}}                  pairs: turn over two cards (a word and its picture, or with="meaning")
+                                         count=6 pairs. Your own pairs: ::: {.matching} or {.memory} (filter.lua).
+  {{< scramble unit=1 >}}                the letters of a word, mixed up (words as for snowman)
+  {{< sort unit=1 >}}                    sort words into groups: their topics (one unit) or units
+  {{< bingo unit=1 >}}                   bingo: make printable cards (PDF, in the browser), then call
+  {{< blitz unit=1 >}}                   Word Blitz, like Kahoot for one player: a picture and four words
+                                         (or a word and four pictures), streaks multiply, high scores
+  {{< game-picker >}}                    the Review games page: choose any game and unit, and play.
+                                         games="blitz,snowman" offers only those (the Play page).
+  Games work on slides and on web pages (format: html); in PDFs and Word they're one line.
+
 Quarto's built-in {{< pagebreak >}} also works everywhere.
 ]]
 
@@ -53,10 +72,10 @@ local function include_once(file)
 end
 
 -- VEX vocab terms, loaded once from generated/vocab-terms.json and looked up by ID, term or "also called" name.
-local vex_vocab
+local vex_vocab, vex_list, vex_units
 local function vocab_lookup(key)
   if not vex_vocab then
-    vex_vocab = {}
+    vex_vocab, vex_list, vex_units = {}, {}, {}
     local path = (quarto.project.directory or ".") .. "/generated/vocab-terms.json"
     local f = io.open(path, "r")
     if not f then
@@ -65,7 +84,9 @@ local function vocab_lookup(key)
     end
     local data = quarto.json.decode(f:read("a"))
     f:close()
+    vex_units = data.units or {}
     for _, t in ipairs(data.terms) do
+      table.insert(vex_list, t)
       for _, k in ipairs({ t.id, t.term, table.unpack(t.aka or {}) }) do
         local lk = k:lower()
         if vex_vocab[lk] == nil then vex_vocab[lk] = t end
@@ -73,6 +94,54 @@ local function vocab_lookup(key)
     end
   end
   return vex_vocab[key:lower()]
+end
+
+-- Slide games (games/): settings for a game from its shortcode. Three ways to choose the words:
+--   {{< snowman >}}                     a random word from the whole vocab list (🔀 gives a new one)
+--   {{< snowman unit=1 >}}              a random word from unit 1's list (🔀 too)
+--   {{< snowman "democracy" >}}         this vocab word: its picture and definition are the hint
+--   {{< snowman "Parthenon" hint="A famous temple in Athens" image="images/parthenon.jpg" >}}
+--                                       your own word (hint and image optional)
+-- No 中文: games are review, and 中文 stays out of review materials.
+local games = dofile(quarto.utils.resolve_path("games/games.lua"))
+
+local function game_word(t, up)
+  return { word = t.term, hint = t.definition, image = t.image ~= "" and (up .. t.image) or "", example = t.example or "",
+           units = t.units or {}, topic = t.topic or "" }
+end
+
+local function game_config(args, kwargs, kind)
+  local up = quarto.project.offset and (quarto.project.offset .. "/") or ""
+  local image = str(kwargs["image"], nil)
+  if image and not image:match("^%a+://") then   -- so the picture is copied to the site (the path is from this file)
+    quarto.doc.add_resource(pandoc.path.join({ pandoc.path.directory(quarto.doc.input_file), image }))
+  end
+  local word = str(args[1], nil)
+  if word then
+    local t = vocab_lookup(word)
+    local w = t and game_word(t, up) or { word = word, hint = "", image = "", example = "" }
+    w.hint = str(kwargs["hint"], w.hint)
+    w.image = image or w.image
+    if kind == "picture-reveal" and w.image == "" then
+      quarto.log.warning(kind .. ' shortcode: "' .. word .. '" has no picture; add image="..."')
+    end
+    return { words = { w }, random = false }
+  end
+  vocab_lookup("")   -- loads the list
+  local unit = tonumber(str(kwargs["unit"], ""))
+  local words = {}
+  for _, t in ipairs(vex_list or {}) do
+    local in_unit = not unit
+    for _, u in ipairs(t.units or {}) do
+      if u == unit then in_unit = true end
+    end
+    if in_unit and (kind ~= "picture-reveal" or t.image ~= "") then table.insert(words, game_word(t, up)) end
+  end
+  if #words == 0 then
+    quarto.log.warning(kind .. " shortcode: no vocab words" .. (unit and (" for unit " .. unit) or "") ..
+      " (is the unit's list in course/vocab/?)")
+  end
+  return { words = words, random = true, units = vex_units, unit = unit }
 end
 
 -- Outside PDFs: page counts from generated/pdf-pages.json, and paths from the project root.
@@ -195,19 +264,25 @@ return {
     include_once("vocab-card.html")
     -- Picture and link paths are from the site root; add the "../" this page needs.
     local up = quarto.project.offset and (quarto.project.offset .. "/") or ""
-    local img = t.image ~= "" and ('<img src="' .. html_escape(up .. t.image) .. '" alt="" loading="lazy">') or ""
-    -- 🔊 buttons read the word aloud (English, then 中文) with the computer's voices (vocab-card.html).
+    local img = t.image ~= "" and ('<span class="vc-pic"><img src="' .. html_escape(up .. t.image) .. '" alt="" loading="lazy"></span>') or ""
+    -- Line icons (Lucide, like the classroom tools'): a speaker, and an arrow for the link.
+    local function svg(paths)
+      return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' .. paths .. '</svg>'
+    end
+    local SPEAKER = svg('<path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.364 18.364a9 9 0 0 0 0-12.728"/>')
+    local ARROW = svg('<path d="M7 7h10v10"/><path d="M7 17 17 7"/>')
+    -- Speaker buttons read the word aloud (English, then 中文) with the computer's voices (vocab-card.html).
     local function say(text, lang, label)
       return '<button type="button" class="vc-say" data-lang="' .. lang .. '" data-say="' .. html_escape(text) ..
-             '" aria-label="' .. label .. '" title="' .. label .. '">🔊</button>'
+             '" aria-label="' .. label .. '" title="' .. label .. '">' .. SPEAKER .. '</button>'
     end
-    local zh = t.zh ~= "" and (' <span class="vc-zh">' .. html_escape(t.zh) .. say(t.zh, "zh-CN", "Say it in Chinese") .. '</span>') or ""
+    local zh = t.zh ~= "" and ('<span class="vc-zh">' .. html_escape(t.zh) .. say(t.zh, "zh-CN", "Say it in Chinese") .. '</span>') or ""
     return pandoc.RawInline("html",
       '<span class="vocab-term" tabindex="0">' .. html_escape(shown) ..
       '<span class="vocab-card" role="tooltip">' .. img ..
-      '<span class="vc-term">' .. html_escape(t.term) .. say(t.term, "en-US", "Say it in English") .. zh .. '</span>' ..
+      '<span class="vc-term">' .. html_escape(t.term) .. say(t.term, "en-US", "Say it in English") .. '</span>' .. zh ..
       '<span class="vc-def">' .. html_escape(t.definition) .. '</span>' ..
-      '<a class="vc-link" href="' .. html_escape(up .. t.url) .. '" target="_blank" rel="noopener">' .. html_escape(str(meta and meta["vocab-title"], "Vocab")) .. ' ↗</a>' ..
+      '<a class="vc-link" href="' .. html_escape(up .. t.url) .. '" target="_blank" rel="noopener">' .. html_escape(str(meta and meta["vocab-title"], "Vocab")) .. ARROW .. '</a>' ..
       '</span></span>')
   end,
 
@@ -243,7 +318,6 @@ return {
   ["packet"] = function()
     local teacher = false
     for _, profile in ipairs(quarto.project.profile or {}) do
-      if profile == "parent" then return pandoc.Null() end   -- the family site has no packets
       if profile == "teacher" then teacher = true end
     end
     local p = packet_for_this_page()
@@ -260,12 +334,13 @@ return {
         return pandoc.Div({ pandoc.Para({ button(label, file, { "btn" }) }),
                             pandoc.Para({ pandoc.Str(note) }) }, pandoc.Attr("", { "packet-card", cls }))
       end
+      -- the student copy first: printing it for class is a teacher's first move; the answer keys come second
       return pandoc.Div({
-        card("packet-teacher", "🔑 Teacher edition (PDF)", "With answer keys and teacher notes. For you, not for students.", teacher_file),
-        card("packet-student", "🎒 Student copy (PDF)", "No answer keys. Print this one for class. All " .. count .. ".", name),
+        card("packet-student", "Student copy (PDF)", "No answer keys. Print this one for class. All " .. count .. ".", name),
+        card("packet-teacher", "Teacher edition (PDF)", "With answer keys and teacher notes. For you, not for students.", teacher_file),
       }, pandoc.Attr("", { "packet-cards" }))
     end
-    return pandoc.Para({ button("📄 Unit packet (PDF)", name, { "btn", "btn-primary" }),
+    return pandoc.Para({ button("Unit packet (PDF)", name, { "btn", "btn-primary", "packet-one" }),
                          pandoc.Span({ pandoc.Str(" · all " .. count .. " in one file, ready to print") },
                                      pandoc.Attr("", { "text-muted" })) })
   end,
@@ -320,7 +395,119 @@ return {
     for _, o in ipairs(list) do
       table.insert(items, { pandoc.Plain(pandoc.Inlines(pandoc.utils.stringify(o))) })
     end
-    return pandoc.BulletList(items)
+    if not quarto.doc.is_format("html") then return pandoc.BulletList(items) end
+    return pandoc.Div({ pandoc.Div({ pandoc.Plain({ pandoc.Str("In this unit") }) }, pandoc.Attr("", { "objectives-head" })),
+                        pandoc.BulletList(items) }, pandoc.Attr("", { "objectives" }))
+  end,
+
+  -- Slide games. See games/games.js for how each one plays.
+  ["snowman"] = function(args, kwargs)
+    if not games.web() then return games.placeholder("Snowman") end
+    return games.div("snowman", game_config(args, kwargs, "snowman"))
+  end,
+
+  ["picture-reveal"] = function(args, kwargs)
+    if not games.web() then return games.placeholder("Picture reveal") end
+    local c = game_config(args, kwargs, "picture-reveal")
+    c.tiles = tonumber(str(kwargs["tiles"], "16")) or 16
+    return games.div("picture-reveal", c)
+  end,
+
+  -- Jeopardy and quick-fire from the vocab list. To write your own questions, use a ::: div
+  -- (filter.lua): ::: {.jeopardy} and ::: {.trivia}.
+  ["jeopardy"] = function(args, kwargs)
+    if not games.web() then return games.placeholder("Jeopardy") end
+    local c = game_config({}, kwargs, "jeopardy")
+    c.rows = tonumber(str(kwargs["rows"], "4")) or 4
+    c.teams = tonumber(str(kwargs["teams"], "2")) or 2   -- 2 to 4 teams take turns; teams=0: no teams
+    return games.div("jeopardy", c)
+  end,
+
+  ["trivia"] = function(args, kwargs)
+    if not games.web() then return games.placeholder("Quick-fire questions") end
+    local c = game_config({}, kwargs, "trivia")
+    c.count = tonumber(str(kwargs["count"], "5")) or 5
+    c.seconds = tonumber(str(kwargs["seconds"], "10")) or 10
+    c.title = str(kwargs["title"], "Quick-fire!")
+    return games.div("trivia", c)
+  end,
+
+  -- Matching (tap a word, then its partner) and Memory (turn over two cards): pairs from the vocab
+  -- list. with="meaning" or "picture" chooses each word's partner; count=6 pairs.
+  ["matching"] = function(args, kwargs)
+    if not games.web() then return games.placeholder("Matching") end
+    local c = game_config({}, kwargs, "matching")
+    c.count = tonumber(str(kwargs["count"], "6")) or 6
+    c.with = str(kwargs["with"], "meaning")
+    return games.div("matching", c)
+  end,
+
+  ["memory"] = function(args, kwargs)
+    if not games.web() then return games.placeholder("Memory") end
+    local c = game_config({}, kwargs, "memory")
+    c.count = tonumber(str(kwargs["count"], "6")) or 6
+    c.with = str(kwargs["with"], "picture")
+    return games.div("memory", c)
+  end,
+
+  -- Word scramble: the same words as Snowman (random, unit=1, a vocab word, or your own).
+  ["scramble"] = function(args, kwargs)
+    if not games.web() then return games.placeholder("Word scramble") end
+    return games.div("scramble", game_config(args, kwargs, "scramble"))
+  end,
+
+  -- Sort it from the vocab list: words from several units go into their units; from one unit
+  -- (unit=1), into their topics. Your own groups: ::: {.sort} (filter.lua).
+  ["sort"] = function(args, kwargs)
+    if not games.web() then return games.placeholder("Sort it") end
+    local c = game_config({}, kwargs, "sort")
+    c.with = str(kwargs["with"], "words")              -- with="picture": the vocab pictures
+    c.feedback = str(kwargs["feedback"], "now")        -- feedback="end": wait for Check
+    return games.div("sort", c)
+  end,
+
+  -- Bingo: make printable cards (in the browser) before class, then call the words in class.
+  ["bingo"] = function(args, kwargs)
+    if not games.web() then return games.placeholder("Bingo") end
+    local c = game_config({}, kwargs, "bingo")
+    c.unit = c.unit or 0
+    for _, u in ipairs(vex_units or {}) do
+      if u.unit == c.unit then c.title = u.title end
+    end
+    return games.div("bingo", c)
+  end,
+
+  -- Word Blitz (like Kahoot, for one player): a picture and four words, or a word and four pictures,
+  -- against the clock; right answers in a row multiply the points. High scores are kept in the browser.
+  -- mode="classic" (20 questions, or 10 for a course with fewer than 20 words; count= changes it) or
+  -- mode="survival" (3 lives): the mode it starts on; students can switch. seconds=10,
+  -- ask="picture" (choose the word) or ask="word" (choose the picture); both, mixed, if not given.
+  ["blitz"] = function(args, kwargs)
+    if not games.web() then return games.placeholder("Word Blitz") end
+    local up = quarto.project.offset and (quarto.project.offset .. "/") or ""
+    local c = game_config({}, kwargs, "blitz")
+    c.all = {}   -- every word, for the wrong answers (one of the four comes from another unit)
+    for _, t in ipairs(vex_list or {}) do table.insert(c.all, game_word(t, up)) end
+    c.count = tonumber(str(kwargs["count"], ""))   -- nil: games.js decides (20, or 10 for a small course)
+    c.seconds = tonumber(str(kwargs["seconds"], "10")) or 10
+    c.ask = str(kwargs["ask"], "both")
+    c.mode = str(kwargs["mode"], "classic")
+    c.title = str(kwargs["title"], "Word Blitz")
+    return games.div("blitz", c)
+  end,
+
+  -- The Review games page: choose a game and a unit, then play (every vocab word, with its units).
+  -- games="blitz,snowman": only those games, the first one chosen at first (the Play page).
+  ["game-picker"] = function(args, kwargs)
+    if not games.web() then return games.placeholder("Review games") end
+    local up = quarto.project.offset and (quarto.project.offset .. "/") or ""
+    vocab_lookup("")   -- loads the list
+    local words = {}
+    for _, t in ipairs(vex_list or {}) do table.insert(words, game_word(t, up)) end
+    local only = {}
+    for id in str(kwargs and kwargs["games"], ""):gmatch("[%w-]+") do table.insert(only, id) end
+    return games.div("picker", { words = words, units = vex_units, random = true, games = only,
+      home = quarto.doc.is_format("revealjs") and (up .. "index.html") or nil })   -- a web page has the sidebar
   end,
 
   ["timer"] = function(args)

@@ -16,12 +16,21 @@ website:
       - text: "History vocab 词汇"
         href: vocab/app/index.html
         icon: book
+      - text: "Review games 复习游戏"
+        href: course/review-games.qmd
+        icon: controller
+      - text: "Play at home 课后闯关"
+        href: course/play.qmd
+        icon: phone
       - text: "Command Terms 指令词"
         href: course/references/command-terms.qmd
         icon: card-checklist
       - text: "Assessment Criteria 评估标准"
         href: course/references/assessment-criteria.qmd
         icon: award
+      - text: "For families 给家长"
+        href: families.qmd
+        icon: house-heart
       - auto: course/units
       - auto: course/summatives
       - section: "Teachers Only 教师专区"
@@ -38,3 +47,7 @@ website:
             href: course/teacher/test-units/92-test-unit-2-ancient-rome/index.qmd
 
 edition: Teacher Edition       # printed on the corner tab of teacher PDFs
+
+pdf-viewer:                    # slides show the student copy of a PDF (no answer keys) when there is one:
+  prefer: "{name}-student.pdf" # scripts/packets.py writes it next to the teacher edition. To show the
+                               # teacher edition on a slide (say, for training), add prefer=false to it.

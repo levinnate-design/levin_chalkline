@@ -47,6 +47,16 @@ This file is the **shared local memory and handoff log** across all AI assistant
 
 <!-- AI_LOG_FEED_START -->
 
+### [2026-10-26 07:38] COMPLETED — Import upstream Chalkline tool features and update Teachers Only Start Here without sample units
+- **AI Assistant:** Antigravity
+- **Status:** COMPLETED
+- **Files Touched:** _extensions/classroom/, _extensions/pdf-viewer/, brand/, scripts/catalog.py, scripts/packets.py, scripts/vocab_terms.py, scripts/student_site.py, _quarto.yml, _quarto-teacher.yml, _quarto-student.yml, index.qmd, families.qmd, course/review-games.qmd, course/play.qmd, course/teacher/start-here/slides.qmd, course/teacher/test-units/*, TOOL-CHANGES.md, DELETED: _extensions/classroom/clock.html, DELETED: _quarto-parent.yml, DELETED: scripts/parent_site.py, DELETED: course/teacher/test-units/91-test-unit-1-ancient-greece/match/*
+- **Notes:** Imported all upstream Chalkline tool features (Classroom Toolbox W menu, V/P slide sidebars, Review Games/Word Blitz/Jeopardy/Snowman/Bingo, Learning Activities, Slide PDF Viewer with touch-pen annotation, Card Overview, For Families page) while preserving Mingwan Social Studies curriculum, summatives, and IB MYP references. Updated Teachers Only Start Here (course/teacher/start-here/slides.qmd) and test-unit demo decks without importing Gobekli Tepe or STEM/Robot Lifts. Verified renders with zero errors.
+### [2026-10-26 07:25] IN PROGRESS — Import upstream Chalkline tool features and update Teachers Only Start Here without sample units
+- **AI Assistant:** Antigravity
+- **Status:** IN PROGRESS
+- **Files Touched:** _extensions/, brand/, scripts/, _quarto*.yml, index.qmd, course/teacher/start-here/, TOOL-CHANGES.md
+- **Notes:** Fetching upstream/main from project-chalkline, importing new tool features (Classroom Toolbox, Slide Sidebars, Review Games/Word Blitz/Jeopardy, Learning Activities, PDF Viewer, Card Overview) and updating course/teacher/start-here/ while excluding Gobekli Tepe and STEM sample units.
 ### [2026-10-22 08:43] COMPLETED — Reformat AI prompt guide into copy-and-paste non-coder prompts
 - **AI Assistant:** Antigravity
 - **Status:** COMPLETED

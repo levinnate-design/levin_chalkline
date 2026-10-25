@@ -1,24 +1,34 @@
 <!-- Vocab pop-ups for {{< vocab "term" >}}: hover, keyboard focus or tap a term to see its card. -->
 <style>
-.vocab-term { position: relative; border-bottom: 2px dotted #0087ff; cursor: help; white-space: nowrap; }
-.vocab-term:focus { outline: 2px solid #0087ff; outline-offset: 2px; border-radius: 3px; }
+/* Colors, corners and shadows from Chalkline's design layer (ui/ui.css), like the classroom tools */
+.vocab-term { position: relative; border-bottom: 2px dotted var(--ui-focus, #0087ff); cursor: help; white-space: nowrap; }
+.vocab-term:focus { outline: 2px solid var(--ui-focus, #0087ff); outline-offset: 2px; border-radius: 3px; }
 .vocab-card { display: none; position: absolute; z-index: 100; left: 50%; bottom: calc(100% + 10px); transform: translateX(-50%);
-  width: 240px; padding: 10px 12px 12px; background: #fff; color: #1F2933; border: 1px solid #c6d0da; border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 52, 119, .18); font: 15px/1.35 system-ui, -apple-system, "PingFang SC", sans-serif;
+  width: 260px; padding: 8px; background: var(--ui-surface, #fff); color: var(--ui-ink, #10233f);
+  border-radius: var(--ui-r-lg, 20px); box-shadow: var(--ui-shadow-pop, 0 18px 48px rgba(16, 35, 63, 0.22), 0 0 0 1px rgba(16, 35, 63, 0.07));
+  font: 15px/1.35 "Source Sans 3", system-ui, -apple-system, "PingFang SC", sans-serif;
   text-align: left; white-space: normal; cursor: auto; }
 .vocab-card::after { content: ""; position: absolute; left: 0; right: 0; top: 100%; height: 12px; }  /* lets the mouse reach the card */
 .vocab-card.below { bottom: auto; top: calc(100% + 10px); }
 .vocab-card.below::after { top: auto; bottom: 100%; }
 .vocab-term:hover > .vocab-card, .vocab-term:focus-within > .vocab-card, .vocab-term.open > .vocab-card { display: block; }
-.vocab-card img { display: block; width: 100%; height: 150px; object-fit: contain; background: #fff; margin: 0 0 6px; border-radius: 8px; }
-.reveal .vocab-card img { margin: 0 0 6px; max-height: 150px; }
-.vocab-card .vc-term { display: block; font-weight: 700; color: #003477; font-size: 17px; }
-.vocab-card .vc-zh { font-weight: 500; color: #52606d; font-size: 15px; margin-left: 4px; }
-.vocab-card .vc-def { display: block; margin-top: 3px; }
-.vocab-card .vc-say { border: none; background: none; padding: 0 2px; margin-left: 2px; cursor: pointer; font-size: 15px; line-height: 1; vertical-align: middle; opacity: 0.75; }
-.vocab-card .vc-say:hover, .vocab-card .vc-say:focus { opacity: 1; }
+.vocab-card .vc-pic { display: block; height: 140px; margin-bottom: 4px; border-radius: var(--ui-r, 14px); background: var(--ui-soft, #f3f5f8); overflow: hidden; }
+.vocab-card img, .reveal .vocab-card img { display: block; width: 100%; height: 100%; max-height: none; margin: 0; object-fit: contain; }
+.vocab-card .vc-term { display: flex; align-items: center; gap: 6px; padding: 4px 6px 0; font-size: 20px; font-weight: 700; line-height: 1.15; }
+.vocab-card .vc-zh { display: flex; align-items: center; gap: 6px; padding: 0 6px; color: var(--ui-muted, #5b6b80); font-size: 16px; }
+.vocab-card .vc-def { display: block; padding: 4px 6px 0; }
+.vocab-card .vc-say {
+  display: inline-grid; place-items: center; flex: none; width: 26px; height: 26px; padding: 0; margin: 0; border: 0; border-radius: 50%; cursor: pointer;
+  background: var(--ui-accent-soft, #e6edf7); color: var(--ui-accent, #003477); transition: background 0.12s;
+}
+.vocab-card .vc-zh .vc-say { width: 22px; height: 22px; background: var(--ui-soft, #f3f5f8); color: var(--ui-muted, #5b6b80); }
+.vocab-card .vc-say:hover, .vocab-card .vc-say:focus-visible { background: #d3e0f1; outline: none; }
+.vocab-card .vc-say svg { width: 15px; height: 15px; }
+.vocab-card .vc-zh .vc-say svg { width: 13px; height: 13px; }
 .no-speech .vc-say { display: none; }
-.vocab-card .vc-link { display: inline-block; margin-top: 6px; font-size: 13px; color: #0068c4; font-weight: 600; text-decoration: none; }
+.vocab-card .vc-link { display: inline-flex; align-items: center; gap: 2px; margin: 6px 6px 2px; font-size: 13px; color: var(--ui-focus, #0087ff); font-weight: 600; text-decoration: none; }
+.vocab-card .vc-link:hover { text-decoration: underline; }
+.vocab-card .vc-link svg { width: 13px; height: 13px; }
 </style>
 <script>
 (function () {

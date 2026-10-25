@@ -1,0 +1,116 @@
+/* Chalkline's design layer: one set of values (colors, corners, shadows) and one set of parts
+   (buttons, fields, menus, cards) for everything interactive: the classroom tools, the games and
+   activities, the vocab pop-ups, the PDF viewer and the quick reference. Change a value here and
+   every one of them follows. The brand colors themselves come from brand/; these fall back to them.
+
+   On every page and deck (filter.lua). The tools' web components link this same file inside
+   themselves (toolbox/kit.js), so a part looks the same inside a tool as outside it. The PDF viewer
+   also works without Chalkline: it uses these values when they're here, its own when they're not.
+
+   The parts:
+     .ui-btn (.ui-primary, .ui-small, .ui-armed)   a pill button; the main one filled
+     .ui-icon-btn (.ui-on)                         a round button with just an icon
+     .ui-field                                     a text box
+     .ui-select > select + .ui-select-arrow        a menu
+     .ui-seg > button (.ui-on)                     a switch between two or three choices
+     .ui-actions                                   a row of buttons
+     .ui-card, .ui-pop                             a card on the slide; a menu or pop-up above it
+     .ui-menu-item (strong, small)                 a choice in a .ui-pop menu
+     .ui-label                                     a small capitals label over a group
+     .ui-empty                                     "nothing here yet", centered
+*/
+:root {
+  /* colors */
+  --ui-ink: #10233f;                          /* text */
+  --ui-muted: #5b6b80;                        /* quieter text: labels, status lines, icons */
+  --ui-line: #d6dee8;                         /* borders */
+  --ui-line-strong: #aebdd0;                  /* a border on hover */
+  --ui-soft: #f3f5f8;                         /* a light grey box: word banks, buttons, the PDF viewer */
+  --ui-soft-hover: #e6ebf1;
+  --ui-surface: #ffffff;                      /* cards, menus */
+  --ui-accent: var(--brand-navy, #003477);    /* the main button, the chosen thing */
+  --ui-accent-hover: #0a4389;
+  --ui-accent-soft: #e6edf7;                  /* a chosen menu item */
+  --ui-focus: var(--brand-blue, #0087ff);     /* the thing you've picked up, links */
+  --ui-focus-soft: #eaf4ff;
+  --ui-ok: #23824a;  --ui-ok-soft: #e8f5ee;   /* right */
+  --ui-bad: #c23b3b; --ui-bad-soft: #fbecec;  /* wrong */
+  --ui-alarm: #C8372D;                        /* stop, too loud, sure? */
+  /* corners */
+  --ui-r-sm: 10px;                            /* fields, small buttons, menu items */
+  --ui-r: 14px;                               /* boxes, tiles, pictures */
+  --ui-r-lg: 20px;                            /* cards, tools, windows, menus */
+  --ui-r-pill: 999px;                         /* buttons, chips */
+  /* shadows: on the page, floating over the slide, and a menu over everything */
+  --ui-shadow-sm: 0 1px 2px rgba(16, 35, 63, 0.06);
+  --ui-shadow: 0 1px 2px rgba(16, 35, 63, 0.06), 0 8px 24px rgba(16, 35, 63, 0.12), 0 0 0 1px rgba(16, 35, 63, 0.08);
+  --ui-shadow-float: 0 1px 3px rgba(16, 35, 63, 0.12), 0 16px 40px rgba(16, 35, 63, 0.28);
+  --ui-shadow-pop: 0 1px 2px rgba(16, 35, 63, 0.06), 0 18px 48px rgba(16, 35, 63, 0.22), 0 0 0 1px rgba(16, 35, 63, 0.07);
+}
+
+/* A line icon (ui/icons.js): 1em square, in the text's color */
+.ui-icon { display: inline-flex; flex: none; width: 1em; height: 1em; vertical-align: -0.125em; }
+.ui-icon svg { width: 100%; height: 100%; }
+
+/* Buttons */
+.ui-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.35em;
+  min-height: 2.1em; padding: 0.25em 1em; border: 0; border-radius: var(--ui-r-pill);
+  background: var(--ui-soft); color: var(--ui-ink);
+  font: inherit; font-weight: 600 !important; line-height: 1.1; cursor: pointer;
+  transition: background 0.12s, transform 0.06s;
+}
+.ui-btn:hover { background: var(--ui-soft-hover); }
+.ui-btn:active { transform: scale(0.97); }
+.ui-btn:focus-visible, .ui-icon-btn:focus-visible { outline: 2px solid var(--ui-focus); outline-offset: 2px; }
+.ui-btn.ui-primary { background: var(--ui-accent); color: #fff; }
+.ui-btn.ui-primary:hover { background: var(--ui-accent-hover); }
+.ui-btn.ui-small { min-height: 1.8em; padding: 0.1em 0.75em; }
+.ui-btn.ui-armed { background: var(--ui-alarm); color: #fff; }
+.ui-btn:disabled { opacity: 0.45; cursor: default; transform: none; }
+.ui-icon-btn {
+  display: inline-grid; place-items: center; flex: none; width: 2.2em; height: 2.2em; padding: 0; border: 0;
+  border-radius: 50%; background: transparent; color: var(--ui-ink); font: inherit; cursor: pointer;
+  transition: background 0.12s, transform 0.06s;
+}
+.ui-icon-btn:hover { background: var(--ui-soft-hover); }
+.ui-icon-btn:active { transform: scale(0.94); }
+.ui-icon-btn.ui-on { background: var(--ui-accent); color: #fff; }
+.ui-icon-btn:disabled { opacity: 0.3; cursor: default; transform: none; }
+.ui-actions {
+  flex: none; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px;
+  padding-top: 8px; font-size: clamp(14px, 6.5cqmin, 24px);
+}
+
+/* Fields and menus */
+.ui-field {
+  padding: 8px 12px; border: 1px solid var(--ui-line); border-radius: var(--ui-r-sm);
+  background: var(--ui-soft); color: var(--ui-ink); font: inherit; font-size: 16px;
+}
+.ui-field:focus { outline: none; border-color: var(--ui-focus); background: var(--ui-surface); box-shadow: 0 0 0 3px var(--ui-focus-soft); }
+.ui-select { position: relative; display: block; flex: none; }
+.ui-select > select {
+  width: 100%; min-width: 0; height: 36px; padding: 0 30px 0 12px;
+  border: 1px solid var(--ui-line); border-radius: var(--ui-r-sm); background: var(--ui-soft);
+  color: var(--ui-ink); font-family: inherit; font-size: 15px; font-weight: 600; appearance: none; -webkit-appearance: none; cursor: pointer;
+}
+.ui-select > select:hover { border-color: var(--ui-line-strong); }
+.ui-select > select:focus-visible { outline: 2px solid var(--ui-focus); outline-offset: 1px; }
+.ui-select-arrow { position: absolute; right: 10px; top: 50%; display: inline-flex; color: var(--ui-muted); font-size: 16px; transform: translateY(-50%); pointer-events: none; }
+.ui-seg { display: inline-flex; padding: 3px; border-radius: var(--ui-r-pill); background: var(--ui-soft); }
+.ui-seg > button { padding: 0.3em 0.9em; border: 0; border-radius: var(--ui-r-pill); background: transparent; color: var(--ui-muted); font: inherit; font-weight: 600; cursor: pointer; }
+.ui-seg > button.ui-on { background: var(--ui-surface); color: var(--ui-ink); box-shadow: 0 1px 3px rgba(16, 35, 63, 0.18); }
+
+/* Cards and pop-ups */
+.ui-card { border-radius: var(--ui-r-lg); background: var(--ui-surface); color: var(--ui-ink); box-shadow: var(--ui-shadow-float); }
+.ui-pop { border-radius: var(--ui-r-lg); background: var(--ui-surface); color: var(--ui-ink); box-shadow: var(--ui-shadow-pop); }
+.ui-menu-item {
+  display: flex; align-items: center; gap: 12px; width: 100%; min-height: 48px; padding: 6px 12px;
+  border: 0; border-radius: var(--ui-r-sm); background: none; color: var(--ui-ink); text-align: left; font: inherit; cursor: pointer;
+}
+.ui-menu-item:hover, .ui-menu-item:focus-visible { background: var(--ui-soft); outline: none; }
+.ui-menu-item strong { display: block; font-weight: 600; }
+.ui-menu-item small { display: block; color: var(--ui-muted); font-size: 0.85em; }
+.ui-label { color: var(--ui-muted); font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.ui-empty { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; padding: 10px; color: var(--ui-muted); text-align: center; font-size: 15px; }
+.ui-empty p { margin: 0; }

@@ -43,16 +43,6 @@
       "problemMatcher": []
     },
     {
-      // Builds the family site if anything changed, then serves it at http://localhost:4102
-      "label": "Open family site (parents)",
-      "type": "shell",
-      "command": "${workspaceFolder}/.venv/bin/python scripts/open_site.py parent",
-      "windows": { "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe scripts\\open_site.py parent" },
-      "options": { "env": { "QUARTO_PYTHON": "${workspaceFolder}/.venv/bin/python" } },
-      "isBackground": true,
-      "problemMatcher": []
-    },
-    {
       // Builds the student site (no answer keys) if anything changed, then serves it at http://localhost:4101
       "label": "Open student site",
       "type": "shell",

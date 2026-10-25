@@ -28,6 +28,9 @@ $endif$
 $if(poster-center)$
   poster-center: true,
 $endif$
+$if(playful-theme)$
+  playful-theme: "$playful-theme$",
+$endif$
 $if(lang)$
   lang: "$lang$",
 $endif$
