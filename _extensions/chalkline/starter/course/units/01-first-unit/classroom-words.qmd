@@ -1,0 +1,36 @@
+---
+title: "Classroom Words 课堂词汇"
+type: handout
+description: "The four words for Unit 1, with meanings, 中文 and examples, and a box to write a summary."
+order: 2
+audience: [teacher, student, parent]
+doc-type: Handout
+name-box: true
+format:
+  html: default
+  typst: default
+---
+
+Use these words when you work in class. Keep this page in your folder.
+
+{{< vocab-table unit=1 >}}
+
+## Use the words
+
+**1.** What is our {{< vocab "goal" zh=true >}} for this unit?
+
+{{< lines 2 >}}
+
+**2.** Write one question to {{< vocab "discuss" zh=true >}} with a {{< vocab "partner" zh=true >}}.
+
+{{< lines 2 >}}
+
+**3.** Write a one-sentence {{< vocab "summary" zh=true >}} of today's lesson.
+
+{{< lines 2 >}}
+
+::: {.content-visible when-profile="teacher"}
+::: {.callout-note title="Look for"}
+Students use the word in a full sentence. For question 3, one sentence with the main idea only.
+:::
+:::

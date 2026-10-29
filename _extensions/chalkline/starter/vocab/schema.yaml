@@ -1,0 +1,46 @@
+# Column definitions and allowed values for data/*.csv.
+# `python chalkline.py validate` reads this file. Change allowed values here, not in the script.
+# Domains are the ID prefix: CLS = classroom words (the starter unit). Add one for each topic, like
+# GRC: [geography, government] (and give it a name in config.js).
+
+levels: [1, 2, 3]          # 1 = everyone, 2 = going further, 3 = expert
+statuses: [draft, reviewed, verified]
+list_separator: ";"
+
+vocab:
+  file: data/vocab.csv
+  id_pattern: "^[A-Z]{2,5}-\\d{3}$"
+  columns:
+    - {name: id,            required: true}
+    - {name: term_en,       required: true}
+    - {name: aka}
+    - {name: zh,            required_when_status: [verified]}
+    - {name: short_def,     required: true, max_length: 75}
+    - {name: explanation}
+    - {name: example,       warn_if_missing_when_status: [verified]}
+    - {name: confused_with, list: true, refs: vocab}
+    - {name: domain,        required: true}
+    - {name: subdomain,     required: true}
+    - {name: tags,          list: true}
+    - {name: level,         required: true}
+    - {name: image,         file_in: images}
+    - {name: ref_url,       pattern: "^https://"}  # one 'learn more' link
+    - {name: status,        required: true}
+
+  domains:
+    CLS: [classroom]
+
+frames:
+  file: data/frames.csv
+  id_pattern: "^FRM-\\d{3}$"
+  columns:
+    - {name: id,        required: true}
+    - {name: situation, required: true, allowed: [discussion, writing]}
+    - {name: function,  required: true, allowed: [agree, disagree, explain, compare, ask]}
+    - {name: frame_en,  required: true}
+    - {name: zh,        required_when_status: [verified]}
+    - {name: example}
+    - {name: level,     required: true}
+    - {name: vocab_ids, list: true, refs: vocab}
+    - {name: notes}
+    - {name: status,    required: true}

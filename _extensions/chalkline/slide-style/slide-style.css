@@ -1,0 +1,290 @@
+/*
+  TO BE REMOVED with slide-style.lua (see there).
+  Slide style: the look of a slide whose heading has {.styled kind="cards|narrative|bigidea" ...}.
+  One set of variables per colour scheme, one block of rules per type and look. Every class is
+  prefixed ss- because a vocab card (.card) and .zh already mean something else in a deck.
+  The Lua filter (slide-style.lua) adds the ss- classes and the data-ss-* settings; the language
+  switch in the slide's corner (slide-style.js) and the Style… panel (toolbox/tools/style.js) change them live. Sizes assume a 1280 x 720
+  slide: put  width: 1280  and  height: 720  in the deck's labels.
+  A teacher's own colour scheme is a block of these variables in the course's own CSS file.
+*/
+/* the slide itself: fills reveal's 1280 x 720 box. A little side padding: the game look's tilted cards and
+   the brutal look's shadows reach past a card's edge, and the slide cuts off anything outside it. */
+section.ss, section.ss *, section.ss *::before, section.ss *::after { box-sizing: border-box; }
+.reveal section.ss { width: 100% !important; height: 100% !important; top: 0 !important; left: 0 !important; padding: 6px 16px 52px; background: var(--bg); color: var(--ink); gap: 16px; text-align: left; overflow: hidden; }
+.reveal section.ss.present, .reveal section.ss.past, .reveal section.ss.future { display: flex !important; flex-direction: column; }
+.reveal section.ss[hidden] { display: none !important; }
+section.ss h2 { margin: 0; text-transform: none; text-align: left; }
+section.ss p { margin: 0; }
+section.ss img { margin: 0; max-width: none; max-height: none; background: none; border: 0; box-shadow: none; }
+section.ss .ss-pic img { width: 100%; height: 100%; }
+section.ss strong { color: inherit; }
+section.ss .ss-narr strong { color: var(--head); }
+section.ss ul, section.ss ol { margin: 0; }
+section.ss .ss-pic { text-align: left; }
+section.ss .ss-figcap { display: flex; flex-direction: column; }
+
+/* colour schemes */
+section.ss{--bg:#fff;--ink:#1F2933;--head:#003477;--muted:#52606D;--card:#EBF7FD;--accent:#14D7CD;--hot:#FF8C0F;--line:#003477;
+  --strip:#003477;--strip-fg:#fff;--strip-sec:#EBF7FD;--pill:#FF8C0F;--pill-fg:#003477;--spot-bg:#FF8C0F;--spot-fg:#003477;--card2:#fff;--spot-card:#fff;--spot-line:#003477}
+section.ss[data-ss-scheme=ink]{--bg:#F4ECDB;--ink:#2B2B2B;--head:#2B2B2B;--muted:#5A5648;--card:#FBF7EC;--accent:#2B2B2B;--hot:#B3261E;--line:#2B2B2B;
+  --strip:#2B2B2B;--strip-fg:#FBF7EC;--strip-sec:#D8CDB4;--pill:#B3261E;--pill-fg:#fff;--spot-bg:#EBD3A0;--spot-fg:#2B2B2B;--card2:#FFFDF6;--spot-card:#FBF7EC;--spot-line:#2B2B2B}
+section.ss[data-ss-scheme=mono]{--bg:#fff;--ink:#111;--head:#111;--muted:#555;--card:#F2F2F2;--accent:#111;--hot:#111;--line:#111;
+  --strip:#111;--strip-fg:#fff;--strip-sec:#ddd;--pill:#fff;--pill-fg:#111;--spot-bg:#DADADA;--spot-fg:#111;--card2:#fff;--spot-card:#fff;--spot-line:#111}
+
+
+/* pandoc wraps each line in <p> */
+section.ss p{margin:0}
+
+/* bilingual: the primary language is large, the other smaller and grey */
+.ss-bi{display:flex;flex-direction:column}
+.ss-bi .ss-en,.ss-bi .ss-zh{display:block}
+.ss-bi .ss-en{font-family:'Source Sans 3','Noto Sans SC',sans-serif}
+.ss-bi .ss-zh{font-family:'Noto Sans SC','Noto Sans CJK SC','Noto Sans CJK TC',sans-serif}
+section.ss[data-ss-primary=en] .ss-bi .ss-en,section.ss[data-ss-primary=zh] .ss-bi .ss-zh{order:0}
+section.ss[data-ss-primary=en] .ss-bi .ss-zh,section.ss[data-ss-primary=zh] .ss-bi .ss-en{order:1;font-size:.82em;color:var(--muted);font-weight:600}
+section.ss[data-ss-show=en] .ss-bi .ss-zh,section.ss[data-ss-show=zh] .ss-bi .ss-en{display:none}
+section.ss[data-ss-show=en] .ss-bi .ss-en,section.ss[data-ss-show=zh] .ss-bi .ss-zh{font-size:1em;color:inherit;font-weight:inherit}
+
+section.ss h2{font-size:38px;font-weight:700;color:var(--head);line-height:1.2}
+section.ss h2 .ss-en{font-family:Poppins,'Source Sans 3',sans-serif}
+section.ss h2:after{content:"";display:block;width:100px;height:6px;border-radius:3px;background:var(--accent);margin-top:8px}
+
+/* cards, shared */
+.ss-schools{flex:1;min-height:0;display:grid;gap:16px}
+.ss-card{min-width:0;display:flex;flex-direction:column;gap:8px;padding:var(--card-pad,14px 16px);background-color:var(--card);background-image:var(--card-art,none);background-size:var(--card-art-size,100% 100%);background-position:var(--card-art-pos,center);background-repeat:no-repeat;color:var(--ink);border-radius:14px;border-top:6px solid var(--accent)}
+.ss-card .ss-name{font-size:24px;font-weight:700;color:var(--head);line-height:1.15}
+.ss-card .ss-name .ss-en{font-family:Poppins,'Source Sans 3',sans-serif}
+.ss-card .ss-who{font-size:20px;font-weight:600}
+.ss-card .ss-idea{font-size:24px;font-weight:700;line-height:1.2;color:var(--head)}
+.ss-card .ss-text{font-size:18px;color:var(--muted)}
+.ss-card p:has(> .ss-text){margin-top:auto}
+.ss-card.ss-spot{background-color:var(--spot-card);border:3px solid var(--spot-line);border-top:8px solid var(--hot)}
+
+.ss-think{display:flex;align-items:center;gap:18px;padding:12px 24px;background:var(--strip);color:var(--strip-fg);border-radius:14px}
+.ss-think .ss-tag{flex-shrink:0;flex-direction:row;gap:6px;padding:4px 14px;border-radius:999px;background:var(--pill);color:var(--pill-fg);font-size:18px;font-weight:700;border:2px solid var(--pill-fg)}
+.ss-think .ss-tag .ss-bi,.ss-think .ss-tag .ss-zh,.ss-think .ss-tag .ss-en{color:inherit!important;font-size:1em!important;font-weight:700!important}
+.ss-think .ss-q{font-size:24px;font-weight:700;line-height:1.25}
+.ss-think .ss-q .ss-zh:not(:first-child),.ss-think .ss-q .ss-en:not(:first-child){color:var(--strip-sec)}
+section.ss[data-ss-primary=en] .ss-think .ss-q .ss-zh,section.ss[data-ss-primary=zh] .ss-think .ss-q .ss-en{color:var(--strip-sec)}
+
+/* TYPE */
+section.ss[data-ss-type=row] .ss-schools{grid-template-columns:repeat(var(--cols,5),1fr);grid-template-rows:repeat(var(--crow,1),1fr) auto}
+section.ss[data-ss-type=row] .ss-think{grid-column:1/-1}
+section.ss[data-ss-type=grid] .ss-schools{grid-template-columns:repeat(var(--cols,3),1fr);grid-template-rows:repeat(var(--crow,2),1fr)}
+section.ss[data-ss-type=grid] .ss-think{flex-direction:column;align-items:flex-start;justify-content:center;gap:10px;border-radius:14px}
+section.ss[data-ss-type=table] .ss-schools{grid-template-columns:1fr;grid-template-rows:repeat(var(--n,5),1fr) auto;gap:8px}
+section.ss[data-ss-type=table] .ss-card{display:grid;grid-template-columns:240px 190px 1fr 280px;align-items:center;gap:16px;padding:6px 16px;border-top-width:0;border-left:8px solid var(--accent);transform:none!important}
+section.ss[data-ss-type=table] .ss-card p:has(> .ss-text){margin-top:0}
+section.ss[data-ss-type=table] .ss-card .ss-name{font-size:23px}
+section.ss[data-ss-type=table] .ss-card .ss-idea{font-size:22px}
+section.ss[data-ss-type=table] .ss-card .ss-who{font-size:19px}
+section.ss[data-ss-type=table] .ss-card .ss-text{font-size:17px}
+section.ss[data-ss-type=table] .ss-card.ss-spot{border-left:8px solid var(--hot);border-top:3px solid var(--head)}
+
+/* LOOK */
+section.ss[data-ss-look=game] .ss-card{background-color:var(--card2);border:3px solid var(--line);border-top-width:3px;border-radius:18px;box-shadow:0 6px 0 var(--line)}
+section.ss[data-ss-look=game] .ss-card:nth-child(odd){transform:rotate(-1.2deg)}
+section.ss[data-ss-look=game] .ss-card:nth-child(even){transform:rotate(1deg) translateY(6px)}
+section.ss[data-ss-look=game] .ss-card.ss-spot{border-width:4px;box-shadow:0 8px 0 var(--hot)}
+section.ss[data-ss-look=game] .ss-think{border-radius:999px}
+section.ss[data-ss-look=game][data-ss-type=grid] .ss-think{border-radius:18px}
+section.ss[data-ss-look=brutal] .ss-card{border-radius:0;border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);background-color:var(--card)}
+section.ss[data-ss-look=brutal] .ss-card:nth-child(even){background-color:var(--card2)}
+section.ss[data-ss-look=brutal] .ss-card.ss-spot{background-color:var(--spot-bg);color:var(--spot-fg)}
+section.ss[data-ss-look=brutal] .ss-think{border-radius:0;border:4px solid var(--line);box-shadow:7px 7px 0 var(--hot)}
+section.ss[data-ss-look=brutal] h2{display:inline-block;align-self:flex-start;padding:2px 16px;background:var(--accent);color:var(--bg);border:4px solid var(--line);box-shadow:6px 6px 0 var(--line)}
+section.ss[data-ss-look=brutal] h2 .ss-en,section.ss[data-ss-look=brutal] h2 .ss-zh{color:inherit!important}
+section.ss[data-ss-look=brutal] h2:after{display:none}
+section.ss[data-ss-look=brutal][data-ss-scheme=brand] h2{background:#14D7CD;color:#003477}
+section.ss[data-ss-look=brutal][data-ss-type=table] .ss-card{border-left:8px solid var(--line);box-shadow:5px 5px 0 var(--line)}
+
+section.ss[data-ss-look=brutal] .ss-card.ss-spot .ss-bi .ss-en,section.ss[data-ss-look=brutal] .ss-card.ss-spot .ss-bi .ss-zh{color:var(--spot-fg)}
+
+section.ss[data-ss-show=en] .ss-think .ss-q .ss-en,section.ss[data-ss-show=zh] .ss-think .ss-q .ss-zh{color:var(--strip-fg)!important}
+
+/* two more schemes, both variations on the brand colours */
+section.ss[data-ss-scheme=dusk]{--bg:#00234F;--ink:#EAF4FB;--head:#FFFFFF;--muted:#A9C4DE;--card:#073B7A;--card2:#0A4A94;--accent:#14D7CD;--hot:#FF8C0F;--line:#14D7CD;
+  --strip:#14D7CD;--strip-fg:#003477;--strip-sec:#0B4A6F;--pill:#FF8C0F;--pill-fg:#003477;--spot-bg:#FF8C0F;--spot-fg:#003477;--spot-card:#0A4A94;--spot-line:#FF8C0F}
+section.ss[data-ss-scheme=warm]{--bg:#FFF6EA;--ink:#1F2933;--head:#003477;--muted:#5C5448;--card:#FFE9CC;--card2:#FFFFFF;--accent:#FF8C0F;--hot:#14D7CD;--line:#003477;
+  --strip:#003477;--strip-fg:#FFFFFF;--strip-sec:#FFE9CC;--pill:#14D7CD;--pill-fg:#003477;--spot-bg:#14D7CD;--spot-fg:#003477;--spot-card:#FFFFFF;--spot-line:#003477}
+
+/* IMAGES: <figure class="pic"> sits in each card; data-img decides how it is drawn */
+.ss-pic{margin:0;display:none}
+.ss-pic img{display:block;width:100%;height:100%;object-fit:cover}
+.ss-pic .ss-figcap{display:flex;flex-direction:column;font-size:12px;line-height:1.25;color:var(--muted)}
+.ss-pic .ss-cap{font-weight:600}
+section.ss:not([data-ss-img=none]) .ss-pic{display:block}
+.ss-card{position:relative}
+.ss-card>*{position:relative}
+
+/* thumb: round portrait at the card corner */
+section.ss[data-ss-img=thumb] .ss-pic{position:absolute;right:12px;top:12px;width:60px;height:60px;border-radius:50%;overflow:hidden;border:3px solid var(--accent)}
+section.ss[data-ss-img=thumb] .ss-pic .ss-figcap{display:none}
+section.ss[data-ss-img=thumb] .ss-card .ss-name{padding-right:70px}
+
+/* banner: wide picture across the top of the card */
+section.ss[data-ss-img=banner] .ss-pic,section.ss[data-ss-img=duotone] .ss-pic,section.ss[data-ss-img=frame] .ss-pic{order:-1}
+section.ss[data-ss-img=banner] .ss-pic{height:84px;border-radius:8px;overflow:hidden;position:relative}
+section.ss[data-ss-img=banner] .ss-pic .ss-figcap{display:none}
+
+/* duotone: banner recoloured to the scheme so mixed sources look related */
+section.ss[data-ss-img=duotone] .ss-pic{height:84px;border-radius:8px;overflow:hidden;position:relative;background:var(--head)}
+section.ss[data-ss-img=duotone] .ss-pic img{filter:grayscale(1) contrast(1.1);mix-blend-mode:screen;opacity:.9}
+section.ss[data-ss-img=duotone] .ss-pic{background:var(--head)}
+section.ss[data-ss-img=duotone][data-ss-scheme=dusk] .ss-pic{background:#14D7CD}
+section.ss[data-ss-img=duotone][data-ss-scheme=dusk] .ss-pic img{mix-blend-mode:multiply;opacity:1}
+section.ss[data-ss-img=duotone] .ss-pic .ss-figcap{display:none}
+
+/* frame: museum-style mat with a caption line */
+section.ss[data-ss-img=frame] .ss-pic{padding:5px;background:#fff;border:1px solid var(--line);border-radius:4px}
+section.ss[data-ss-img=frame] .ss-pic img{height:62px}
+section.ss[data-ss-img=frame] .ss-pic .ss-figcap{color:#52606D;padding-top:3px}
+section.ss[data-ss-img=frame] .ss-pic .ss-credit{display:none}
+
+/* bg: picture fills the card behind the words */
+section.ss[data-ss-img=bg] .ss-pic{position:absolute;inset:0;border-radius:inherit;overflow:hidden;z-index:0}
+section.ss[data-ss-img=bg] .ss-pic img{filter:grayscale(.4)}
+section.ss[data-ss-img=bg] .ss-pic:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,24,60,.72),rgba(0,24,60,.9))}
+section.ss[data-ss-img=bg] .ss-pic .ss-figcap{display:none}
+section.ss[data-ss-img=bg] .ss-card{color:#fff;border-color:var(--accent)}
+section.ss[data-ss-img=bg] .ss-card .ss-name,section.ss[data-ss-img=bg] .ss-card .ss-idea,section.ss[data-ss-img=bg] .ss-card .ss-who{color:#fff}
+section.ss[data-ss-img=bg] .ss-card .ss-bi .ss-en,section.ss[data-ss-img=bg] .ss-card .ss-bi .ss-zh{color:#fff}
+section.ss[data-ss-img=bg] .ss-card .ss-bi .ss-zh:not(:first-child),section.ss[data-ss-img=bg] .ss-card .ss-bi .ss-en:not(:first-child){color:#D3E3F3}
+section.ss[data-ss-img=bg] .ss-card.ss-spot{border-color:var(--hot)}
+
+/* table rows only have room for a thumb, so every image mode falls back to it */
+section.ss[data-ss-type=table]:not([data-ss-img=none]) .ss-card{grid-template-columns:56px 240px 190px 1fr 270px}
+section.ss[data-ss-type=table]:not([data-ss-img=none]) .ss-pic{order:-1;position:relative;right:auto;top:auto;width:48px;height:48px;border-radius:50%;overflow:hidden;border:3px solid var(--accent);padding:0;background:none}
+section.ss[data-ss-type=table]:not([data-ss-img=none]) .ss-pic:after{display:none}
+section.ss[data-ss-type=table]:not([data-ss-img=none]) .ss-pic .ss-figcap{display:none}
+section.ss[data-ss-type=table]:not([data-ss-img=none]) .ss-pic img{height:100%;filter:none;mix-blend-mode:normal;opacity:1}
+section.ss[data-ss-type=table][data-ss-img=bg] .ss-card{color:var(--ink)}
+section.ss[data-ss-type=table][data-ss-img=bg] .ss-card .ss-name,section.ss[data-ss-type=table][data-ss-img=bg] .ss-card .ss-idea,section.ss[data-ss-type=table][data-ss-img=bg] .ss-card .ss-who{color:var(--head)}
+section.ss[data-ss-type=table][data-ss-img=bg] .ss-card .ss-bi .ss-en,section.ss[data-ss-type=table][data-ss-img=bg] .ss-card .ss-bi .ss-zh{color:inherit}
+section.ss[data-ss-type=table][data-ss-img=bg] .ss-card .ss-bi .ss-zh:not(:first-child),section.ss[data-ss-type=table][data-ss-img=bg] .ss-card .ss-bi .ss-en:not(:first-child){color:var(--muted)}
+
+
+section.ss .ss-card.ss-off{display:none!important}
+section.ss[data-ss-type=table][data-ss-img=thumb] .ss-card .ss-name{padding-right:0}
+
+/* ---------- more slide kinds ---------- */
+
+/* NARRATIVE: lots of text, each paragraph written once as [English | 中文]{.ss-bi} */
+.ss-narr{flex:1;min-height:0;display:flex;flex-direction:column;gap:12px;padding:16px 24px;background:var(--card);border-radius:14px;border-top:6px solid var(--accent);align-content:start}
+.ss-narr .ss-bi{font-size:21px;line-height:1.38;font-weight:500;color:var(--ink)}
+.ss-narr .ss-bi .ss-en,.ss-narr .ss-bi .ss-zh{display:block}
+section.ss[data-ss-primary=en] .ss-narr .ss-bi .ss-zh,section.ss[data-ss-primary=zh] .ss-narr .ss-bi .ss-en{font-size:.86em;font-weight:500;color:var(--muted)}
+section.ss[data-ss-show=en] .ss-narr .ss-bi .ss-zh,section.ss[data-ss-show=zh] .ss-narr .ss-bi .ss-en{display:none}
+section.ss[data-ss-show=en] .ss-narr .ss-bi .ss-en,section.ss[data-ss-show=zh] .ss-narr .ss-bi .ss-zh{font-size:1em;color:var(--ink)}
+.ss-narr strong{color:var(--head)}
+.ss-narr .ss-bi{display:flex;flex-direction:column;gap:2px}
+.ss-narr .ss-bi+.ss-bi{}
+
+/* side by side: primary language in the left column, the other in the right, paragraph by paragraph */
+section.ss[data-ss-flow=side] .ss-narr{display:grid;grid-template-columns:1fr 1fr;column-gap:44px;row-gap:12px;align-content:start}
+section.ss[data-ss-flow=side] .ss-narr p,section.ss[data-ss-flow=side] .ss-narr .ss-bi{display:contents}
+section.ss[data-ss-flow=side] .ss-narr .ss-bi .ss-en,section.ss[data-ss-flow=side] .ss-narr .ss-bi .ss-zh{grid-row:var(--r);font-size:19px!important;line-height:1.4}
+section.ss[data-ss-flow=side][data-ss-primary=en] .ss-narr .ss-bi .ss-en,section.ss[data-ss-flow=side][data-ss-primary=zh] .ss-narr .ss-bi .ss-zh{grid-column:1;color:var(--ink)}
+section.ss[data-ss-flow=side][data-ss-primary=en] .ss-narr .ss-bi .ss-zh,section.ss[data-ss-flow=side][data-ss-primary=zh] .ss-narr .ss-bi .ss-en{grid-column:2;color:var(--muted)}
+section.ss[data-ss-flow=side][data-ss-show=en] .ss-narr,section.ss[data-ss-flow=side][data-ss-show=zh] .ss-narr{grid-template-columns:1fr}
+section.ss[data-ss-flow=side][data-ss-show=en] .ss-narr .ss-bi .ss-en,section.ss[data-ss-flow=side][data-ss-show=zh] .ss-narr .ss-bi .ss-zh{grid-column:1;color:var(--ink);font-size:21px!important}
+
+section.ss[data-ss-look=game] .ss-narr{background:var(--card2);border:3px solid var(--line);border-radius:18px;box-shadow:0 6px 0 var(--line)}
+section.ss[data-ss-look=brutal] .ss-narr{border-radius:0;border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);background-color:var(--card)}
+
+/* BIG IDEA: one claim */
+section.ss.ss-bigidea{justify-content:center;gap:26px;padding-bottom:60px}
+section.ss.ss-bigidea:before{content:"";position:absolute;right:-170px;bottom:-250px;width:660px;height:660px;border-radius:50%;background:var(--card)}
+section.ss.ss-bigidea:after{content:"";position:absolute;right:360px;bottom:40px;width:90px;height:90px;border-radius:50%;background:var(--accent);opacity:.5}
+section.ss.ss-bigidea>*{position:relative;z-index:1}
+.ss-bigidea .ss-kicker{align-self:flex-start;flex-direction:row;gap:6px;padding:4px 16px;border-radius:999px;background:var(--pill);color:var(--pill-fg);border:2px solid var(--pill-fg);font-size:20px;font-weight:700}
+.ss-bigidea .ss-kicker .ss-en,.ss-bigidea .ss-kicker .ss-zh{color:inherit!important;font-size:1em!important;font-weight:700!important}
+.ss-bigidea .ss-stmt{max-width:1040px;font-size:64px;line-height:1.12;font-weight:700;color:var(--head)}
+.ss-bigidea .ss-stmt .ss-en{font-family:Poppins,'Source Sans 3',sans-serif}
+section.ss.ss-bigidea[data-ss-primary=en] .ss-stmt .ss-zh,section.ss.ss-bigidea[data-ss-primary=zh] .ss-stmt .ss-en{font-size:.5em;line-height:1.3;margin-top:14px;font-weight:600;color:var(--muted)}
+section.ss.ss-bigidea[data-ss-show=en] .ss-stmt .ss-en,section.ss.ss-bigidea[data-ss-show=zh] .ss-stmt .ss-zh{font-size:1em;color:var(--head);margin-top:0;font-weight:700}
+.ss-bigidea .ss-stmt:after{content:"";display:block;width:120px;height:8px;border-radius:4px;background:var(--accent);margin-top:26px}
+.ss-bigidea .ss-src{font-size:22px;font-weight:600;color:var(--muted)}
+section.ss.ss-bigidea[data-ss-look=game] .ss-stmt{align-self:flex-start;padding:34px 44px 38px;background:var(--card2);border:4px solid var(--line);border-radius:26px;box-shadow:0 10px 0 var(--line)}
+section.ss.ss-bigidea[data-ss-look=brutal] .ss-stmt{align-self:flex-start;padding:30px 40px 34px;background:var(--spot-bg);color:var(--spot-fg);border:6px solid var(--line);box-shadow:12px 12px 0 var(--line)}
+section.ss.ss-bigidea[data-ss-look=brutal] .ss-stmt .ss-en,section.ss.ss-bigidea[data-ss-look=brutal] .ss-stmt .ss-zh{color:var(--spot-fg)!important}
+section.ss.ss-bigidea[data-ss-look=game] .ss-stmt:after,section.ss.ss-bigidea[data-ss-look=brutal] .ss-stmt:after{display:none}
+.ss-bigidea p:has(> .ss-kicker),.ss-bigidea p:has(> .ss-stmt){align-self:flex-start}
+.ss-bigidea p:has(> .ss-stmt){max-width:1060px}
+.ss-bigidea .ss-stmt:after{order:2}
+.ss-narr{justify-content:space-evenly}
+section.ss[data-ss-flow=side] .ss-narr{align-content:space-evenly}
+section.ss[data-ss-look=brutal]:not([data-ss-scheme=brand]) h2{background:var(--spot-bg);color:var(--spot-fg)}
+section.ss[data-ss-show=en] .ss-narr .ss-bi,section.ss[data-ss-show=zh] .ss-narr .ss-bi{font-size:26px;line-height:1.4}
+section.ss.ss-bigidea[data-ss-primary=zh] .ss-stmt{font-size:48px}
+.ss-bigidea p:has(> .ss-stmt){max-width:1100px}
+
+/* NARRATIVE PICTURE: <figure class="pic"> next to the text panel */
+.ss-narbody{flex:1;min-height:0;display:flex;gap:20px}
+.ss-narbody .ss-narr{flex:1;min-width:0}
+section.ss .ss-narbody .ss-pic{display:flex!important;flex-direction:column;gap:6px;margin:0}
+section.ss[data-ss-pic=none] .ss-narbody .ss-pic{display:none!important}
+.ss-narbody .ss-pic img{flex:1;min-height:0;width:100%;height:100%;object-fit:cover;border-radius:12px}
+.ss-narbody .ss-pic .ss-figcap{font-size:13px;line-height:1.3;color:var(--muted)}
+section.ss[data-ss-pic=side] .ss-narbody .ss-pic{order:2;width:250px;flex:none}
+section.ss[data-ss-pic=side] .ss-narr .ss-bi{font-size:19px;line-height:1.35}
+section.ss[data-ss-pic=side][data-ss-show=en] .ss-narr .ss-bi,section.ss[data-ss-pic=side][data-ss-show=zh] .ss-narr .ss-bi{font-size:22px}
+/* top strip; also used when side-by-side text leaves no room for a side picture */
+section.ss[data-ss-pic=top] .ss-narbody,section.ss[data-ss-pic=side][data-ss-flow=side] .ss-narbody{flex-direction:column;gap:12px}
+section.ss[data-ss-pic=top] .ss-narbody .ss-pic,section.ss[data-ss-pic=side][data-ss-flow=side] .ss-narbody .ss-pic{order:-1;width:auto;height:88px;flex:none;position:relative}
+section.ss[data-ss-pic=top] .ss-narbody .ss-pic .ss-figcap,section.ss[data-ss-pic=side][data-ss-flow=side] .ss-narbody .ss-pic .ss-figcap{position:absolute;left:10px;bottom:6px;padding:2px 8px;border-radius:6px;background:rgba(0,20,50,.62);color:#fff;font-size:12px}
+section.ss[data-ss-pic=top] .ss-narbody .ss-pic .ss-credit,section.ss[data-ss-pic=side][data-ss-flow=side] .ss-narbody .ss-pic .ss-credit{display:none}
+section.ss[data-ss-pic=top] .ss-narr .ss-bi,section.ss[data-ss-pic=side][data-ss-flow=side] .ss-narr .ss-bi{font-size:18px;line-height:1.33}
+section.ss[data-ss-pic=top][data-ss-flow=side] .ss-narr .ss-bi .ss-en,section.ss[data-ss-pic=top][data-ss-flow=side] .ss-narr .ss-bi .ss-zh,section.ss[data-ss-pic=side][data-ss-flow=side] .ss-narr .ss-bi .ss-en,section.ss[data-ss-pic=side][data-ss-flow=side] .ss-narr .ss-bi .ss-zh{font-size:17px!important}
+section.ss[data-ss-pic=top][data-ss-show=en] .ss-narr .ss-bi,section.ss[data-ss-pic=top][data-ss-show=zh] .ss-narr .ss-bi{font-size:22px}
+section.ss[data-ss-look=game] .ss-narbody .ss-pic img{border:3px solid var(--line);box-shadow:0 5px 0 var(--line)}
+section.ss[data-ss-look=brutal] .ss-narbody .ss-pic img{border-radius:0;border:4px solid var(--line);box-shadow:6px 6px 0 var(--line)}
+
+/* ---------- single-language text: [儒家]{.ss-bi} or [Confucianism]{.ss-bi} (no bar) ---------- */
+.ss-bi.ss-mono{display:block}
+.ss-card .ss-bi.ss-who.ss-mono,.ss-card .ss-bi.ss-text.ss-mono{display:block}
+section.ss[data-ss-flow=side] .ss-narr .ss-bi.ss-mono{display:block;grid-column:1/-1;grid-row:var(--r)}
+section.ss h2 .ss-bi.ss-mono[lang=en],.ss-card .ss-name.ss-mono[lang=en],.ss-bigidea .ss-stmt.ss-mono[lang=en]{font-family:Poppins,'Source Sans 3',sans-serif}
+.ss-bigidea .ss-stmt.ss-mono:after{display:block}
+section.ss[data-ss-look=game] .ss-bigidea .ss-stmt.ss-mono:after,section.ss[data-ss-look=brutal] .ss-bigidea .ss-stmt.ss-mono:after{display:none}
+.ss-bigidea .ss-kicker.ss-mono,.ss-think .ss-tag.ss-mono{display:inline-block}
+
+/* ---------- selectable items (slide-select.js): click to select, click again to clear ---------- */
+section.ss{--sel-bg:#14D7CD;--sel-fg:#003477}
+section.ss[data-ss-scheme=ink]{--sel-bg:#2B2B2B;--sel-fg:#FBF7EC}
+section.ss[data-ss-scheme=mono]{--sel-bg:#111;--sel-fg:#fff}
+section.ss[data-ss-scheme=dusk]{--sel-bg:#14D7CD;--sel-fg:#003477}
+section.ss[data-ss-scheme=warm]{--sel-bg:#FF8C0F;--sel-fg:#003477}
+.ss-card,.ss-narr>p{cursor:pointer;outline:none}
+.ss-card{transition:transform .18s ease,background-color .18s ease,box-shadow .18s ease}
+.ss-card:focus-visible,.ss-narr>p:focus-visible{outline:3px solid var(--hot);outline-offset:3px}
+section.ss .ss-card.ss-selected{--head:var(--sel-fg);--ink:var(--sel-fg);--muted:var(--sel-fg);background-color:var(--sel-bg)!important;color:var(--sel-fg);border-color:var(--line);transform:scale(1.07)!important;z-index:4;box-shadow:0 10px 24px rgba(0,20,50,.28)}
+section.ss[data-ss-type=table] .ss-card.ss-selected{transform:scale(1.03)!important}
+section.ss[data-ss-look=game] .ss-card.ss-selected,section.ss[data-ss-look=brutal] .ss-card.ss-selected{box-shadow:0 10px 0 var(--line)}
+section.ss[data-ss-img=bg] .ss-card.ss-selected{background-color:transparent!important;box-shadow:0 0 0 5px var(--sel-bg),0 12px 24px rgba(0,20,50,.35)}
+section.ss[data-ss-img=bg] .ss-card.ss-selected .ss-pic:after{background:linear-gradient(180deg,rgba(0,24,60,.5),rgba(0,24,60,.8))}
+section.ss .ss-card.ss-selected .ss-bi .ss-zh:not(:first-child),section.ss .ss-card.ss-selected .ss-bi .ss-en:not(:first-child){opacity:.9}
+.ss-narr>p{transition:transform .18s ease}
+section.ss .ss-narr>p.ss-selected{--ink:var(--sel-fg);--head:var(--sel-fg);--muted:var(--sel-fg)}
+section.ss[data-ss-flow=interleave] .ss-narr>p.ss-selected{background:var(--sel-bg);box-shadow:0 0 0 10px var(--sel-bg);border-radius:4px;transform:scale(1.025);transform-origin:left center;position:relative;z-index:2}
+section.ss[data-ss-flow=side] .ss-narr>p.ss-selected .ss-bi .ss-en,section.ss[data-ss-flow=side] .ss-narr>p.ss-selected .ss-bi .ss-zh{background:var(--sel-bg);box-shadow:0 0 0 8px var(--sel-bg);border-radius:4px;transform:scale(1.02);position:relative;z-index:2;color:var(--sel-fg)}
+@media (prefers-reduced-motion:reduce){.ss-card,.ss-narr>p{transition:none}}
+
+/* the big idea's round shapes run off the slide, to the edge of the screen */
+.reveal section.ss.ss-bigidea { overflow: visible; }
+
+/* the language switch in the slide's top-right corner (slide-style.js): quiet until you point at it */
+section.ss .ss-corner{position:absolute;top:4px;right:6px;z-index:5;display:flex;align-items:center;gap:6px;font:600 14px/1 "Source Sans 3","Source Sans Pro",system-ui,sans-serif;color:var(--muted);opacity:.45;transition:opacity .15s}
+section.ss .ss-corner:hover,section.ss .ss-corner:focus-within{opacity:1}
+section.ss .ss-corner-seg{display:flex;border:1px solid color-mix(in srgb,var(--muted) 45%,transparent);border-radius:999px;overflow:hidden}
+section.ss .ss-corner-btn{all:unset;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;gap:3px;min-width:30px;height:24px;padding:0 8px;cursor:pointer;color:inherit;border-radius:999px;font:inherit}
+section.ss .ss-corner-btn svg{width:15px;height:15px}
+section.ss .ss-corner-seg .ss-corner-btn{border-radius:0}
+section.ss .ss-corner-btn:hover{color:var(--ink)}
+section.ss .ss-corner-btn:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+section.ss .ss-corner-btn.ss-on{background:var(--muted);color:var(--bg)}
+section.ss .ss-corner-swap{border:1px solid color-mix(in srgb,var(--muted) 45%,transparent)}
+section.ss .ss-corner-swap:disabled{opacity:.35;cursor:default}
+section.ss .ss-corner-style{font-weight:500;padding:0 4px;text-decoration:underline;text-underline-offset:3px;text-decoration-color:color-mix(in srgb,var(--muted) 50%,transparent)}
+html.print-pdf section.ss .ss-corner{display:none}

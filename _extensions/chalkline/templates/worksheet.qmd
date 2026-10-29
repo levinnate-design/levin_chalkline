@@ -1,0 +1,36 @@
+---
+title: "New worksheet"
+type: worksheet
+description: "One sentence: what students do. Teacher copy has an answer key."
+order: 1
+audience: [teacher, student]
+doc-type: Worksheet
+name-box: true
+format:
+  html: default
+  typst: default
+---
+
+One or two short sentences: what to do, and which slides or reading to use.
+
+{{< word-bank unit=1 >}}
+
+## 1. Read and answer
+
+**a. A question?**
+
+{{< lines 2 >}}
+
+**b. Another question?**
+
+{{< lines 2 >}}
+
+::: {.content-visible when-profile="teacher"}
+::: {.callout-note title="Answer key"}
+a. … b. …
+:::
+:::
+
+## 2. Draw it
+
+{{< drawing-box label="Draw and label" height="2.5in" >}}

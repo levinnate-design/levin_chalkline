@@ -1,0 +1,251 @@
+/*-- scss:defaults --*/
+// Chalkline's slide design. The course's own brand/revealjs.scss loads after this (fonts, overrides),
+// and the colors come from the course's brand/_brand.yml.
+
+$presentation-font-size-root: 34px;
+$presentation-heading-text-transform: none;
+$presentation-h2-font-size: 1.45em;
+
+/*-- scss:rules --*/
+
+// Chalkline's color roles, from the palette in _brand.yml (navy, blue, turquoise, orange, sky).
+// The rules below use them through the slide kit's tokens (var(--heading), var(--surface), ...; see
+// layout.scss), so a colour scheme (schemes.scss) or a teacher's own CSS can change them on any slide.
+// Roles: navy = text and banners; blue = stripes and rules; turquoise = decoration;
+// orange = warm highlight; sky = panels. Never put white text on turquoise or orange.
+// A palette without one of these names gets Chalkline's default for it.
+$navy: if(global-variable-exists(brand-navy), $brand-navy, #003477);
+$blue: if(global-variable-exists(brand-blue), $brand-blue, #0087ff);
+$turquoise: if(global-variable-exists(brand-turquoise), $brand-turquoise, #14d7cd);
+$orange: if(global-variable-exists(brand-orange), $brand-orange, #ff8c0f);
+$sky: if(global-variable-exists(brand-sky), $brand-sky, #ebf7fd);
+
+
+// Title slide: white text on the navy background.
+#title-slide {
+  text-align: left;
+  .title { color: #fff; font-size: 2.3em; }
+  .subtitle { color: $orange; font-weight: 600; }
+  .title::after {
+    content: "";
+    display: block;
+    width: 3.5em;
+    height: 8px;
+    margin-top: 0.3em;
+    background: $orange;
+    border-radius: 4px;
+  }
+}
+
+// Slide titles with a short blue underline.
+.reveal h2 {
+  color: var(--heading);
+  &::after {
+    content: "";
+    display: block;
+    width: 2.2em;
+    height: 6px;
+    margin-top: 0.15em;
+    background: var(--rule);
+    border-radius: 3px;
+  }
+}
+
+.reveal strong { color: var(--heading); }
+
+// Vocab cards (from card_grid() in scripts/vocab.py).
+.reveal .card-grid {
+  display: flex;
+  gap: 0.6em;
+}
+.reveal .card {
+  text-align: center;
+  font-size: 0.62em;
+  line-height: 1.3;
+  background: var(--surface);
+  border-radius: 14px;
+  padding: 0.6em 0.6em 0.8em;
+  border-top: 6px solid var(--accent);
+
+  img {
+    max-height: 210px;
+    margin: 0 auto 0.3em;
+    background: #fff;
+    border-radius: 10px;
+    padding: 6px;
+  }
+  p { margin: 0.25em 0; }
+  strong { font-size: 1.25em; }
+}
+.reveal .card-def { display: block; color: var(--ink); }
+.reveal .card-notes {
+  display: block;
+  margin-top: 0.4em;
+  font-size: 0.88em;
+  color: var(--ink-muted);
+  text-align: left;
+}
+.reveal .zh {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: var(--heading);
+  margin-left: 0.25em;
+}
+
+// Pictures in the game slides.
+.reveal .game-row {
+  text-align: center;
+  font-size: 0.75em;
+  img { max-height: 250px; border-radius: 10px; }
+  img.wide { width: 100%; height: 230px; max-height: none; object-fit: cover; }  // crops white space above and below
+}
+
+.reveal .small-note {
+  font-size: 0.65em;
+  color: var(--ink-muted);
+  margin-top: 0.8em;
+}
+
+.reveal .goal {
+  font-size: 1.15em;
+  background: var(--surface);
+  border-left: 10px solid var(--hot);
+  padding: 0.7em 0.9em;
+  border-radius: 0 14px 14px 0;
+  margin-top: 1em;
+}
+
+// Comparison table.
+.reveal table {
+  font-size: 0.6em;
+  th { background: var(--strong); color: var(--on-strong); border: none; }
+  td { border-bottom: 1px solid var(--line); }
+  tr:nth-child(even) td { background: var(--surface); }
+}
+
+// Quick-check answers.
+.reveal .answer {
+  display: inline-block;
+  color: var(--heading);
+  font-weight: 700;
+  background: rgba($blue, 0.12);
+  padding: 0.05em 0.5em;
+  border-radius: 8px;
+}
+
+.reveal .success {
+  background: var(--surface);
+  border-left: 8px solid var(--rule);
+  border-radius: 0 14px 14px 0;
+  padding: 0.5em 0.8em;
+  font-size: 0.85em;
+}
+
+.reveal .frames ul {
+  list-style: none;
+  margin-left: 0;
+  li {
+    background: var(--surface);
+    border-left: 6px solid var(--hot);
+    padding: 0.3em 0.7em;
+    margin: 0.4em 0;
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+.reveal .timer-slide { text-align: center; }
+.reveal .timer-slide h2::after { margin-left: auto; margin-right: auto; }
+
+// ---- Slide layouts: statement, section, closing, big numbers, timeline, steps ----
+
+// Big statement slides (navy background set on the slide).
+.reveal .statement { text-align: center; }
+.reveal .statement-en {
+  display: block;
+  font-size: 1.9em;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #fff;
+}
+.reveal .statement-zh {
+  display: block;
+  margin-top: 0.6em;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: $orange;
+}
+.reveal .section-slide h2 { color: #fff; font-size: 2.2em; text-align: center; }
+.reveal .section-slide h2::after { margin: 0.2em auto 0; background: $orange; }
+
+.reveal .closing { text-align: center; }
+.reveal .closing-kicker { display: block; font-size: 0.7em; color: $orange; font-weight: 700; letter-spacing: 0.04em; }
+.reveal .closing-big { display: block; margin-top: 0.8em; font-size: 2.6em; font-weight: 700; color: #fff; line-height: 1.1; }
+
+// Big numbers.
+.reveal .stat-slide .column { text-align: center; font-size: 0.8em; }
+.reveal .stat { display: block; font-size: 3em; font-weight: 700; color: var(--rule); line-height: 1.1; }
+
+// Timeline: a list down a line, with a dot at each item.
+.reveal .timeline ul { list-style: none; margin: 0; padding-left: 1em; border-left: 6px solid var(--accent); font-size: 0.8em; }
+.reveal .timeline li { position: relative; margin: 0 0 0.55em; padding-left: 0.4em; }
+.reveal .timeline li::before {
+  content: "";
+  position: absolute;
+  left: -1.55em;
+  top: 0.35em;
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+  background: var(--rule);
+}
+
+// Numbered steps drawn as cards.
+.reveal .steps ol {
+  display: flex;
+  gap: 0.5em;
+  margin: 0.4em 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+  font-size: 0.8em;
+  li {
+    flex: 1;
+    counter-increment: step;
+    background: var(--surface);
+    border-radius: 14px;
+    padding: 0.6em 0.7em;
+    &::before {
+      content: counter(step);
+      display: grid;
+      place-items: center;
+      width: 1.8em;
+      height: 1.8em;
+      margin-bottom: 0.3em;
+      border-radius: 50%;
+      background: var(--hot);
+      color: var(--on-hot);
+      font-weight: 700;
+    }
+  }
+}
+
+// Slides with no title (statement, closing): no underline.
+.reveal .statement h2::after, .reveal .closing h2::after { display: none; }
+
+// Callout boxes and code on slides: Quarto shrinks them to 70% and 55%, too small to read from
+// the back of a classroom. The callout's text is normal weight; only its title is bold.
+.reveal .slides section div.callout { font-size: 0.88em; }
+.reveal div.callout.callout-style-default div.callout-body,
+.reveal div.callout.callout-style-simple div.callout-body { font-weight: 400; }
+.reveal pre { font-size: 0.72em; }
+
+// Photos on slides (![](images/x.jpg){.photo}): rounded, shadowed, never taller than the slide.
+.reveal img.photo { border-radius: 10px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18); max-height: 420px; width: auto; max-width: 100%; object-fit: cover; margin: 0.2em 0 0.3em; }
+.reveal img.photo.tall { max-height: 520px; }
+.reveal .photo-caption { display: block; font-size: 0.5em; color: var(--ink-muted); line-height: 1.3; }
+// A deck's last slide listing picture credits (and sources): small print, with small column headings
+// (### Pictures, ### Sources) when it has two columns.
+.reveal .credits ul { font-size: 0.55em; }
+.reveal .credits h3 { font-size: 0.75em; margin: 0 0 0.3em; }
+// Title slides with a picture backdrop: a soft shadow keeps the words readable over busy images.
+#title-slide .title, #title-slide .subtitle { text-shadow: 0 2px 14px rgba(0, 20, 50, 0.65); }

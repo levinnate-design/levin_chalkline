@@ -1,0 +1,74 @@
+---
+title: "Chalkline Quick Start"
+type: reference
+description: "One page, from an empty computer to your own course: set up GitHub, install four programs, make a folder, run one command, double-click to start."
+order: 2
+audience: [teacher]
+doc-type: Quick start
+packet: false
+format:
+  html: default
+  typst: default
+---
+
+From an empty computer to your own course of slides, printable PDFs and a class website, in about 30 minutes. No coding needed.
+
+::: {.callout-tip title="Step 0 · Set up GitHub (once)" icon=false}
+- **Make a free account** at **github.com**. GitHub keeps a safe copy of your course online, and can put your class website on the internet.
+- **Install Git**: git-scm.com. This is how your computer talks to GitHub. The default choices are fine.
+- **Sign in:** after Step 1, click the person icon at the bottom left of VS Code › **Sign in with GitHub**.
+:::
+
+:::: {layout-ncol=2}
+::: {.callout-tip title="Step 1 · Install four programs (once)" icon=false}
+- **VS Code**: code.visualstudio.com
+- **Quarto**: quarto.org
+- **Python 3**: python.org. On Windows, tick **Add python.exe to PATH**.
+- **Google Chrome** (Mac). Windows has Edge.
+
+The default choices are fine.
+:::
+
+::: {.callout-tip title="Step 2 · Make an empty folder" icon=false}
+For example **Documents › Grade 7 History**. Name it for your class.
+
+Then open it in **VS Code**: **File › Open Folder…**, choose the folder. If VS Code asks *"Do you trust the authors?"*, click **Yes**.
+:::
+::::
+
+::: {.callout-tip title="Step 3 · Make your course: one command" icon=false}
+In VS Code, choose **Terminal › New Terminal**. Type or paste this line, then press **Enter**:
+
+```{.bash code-line-numbers="false"}
+quarto use template insufficientdoubt/project-chalkline
+```
+
+Quarto asks three questions. **Press Enter for each one.** The course files appear in the left panel.
+:::
+
+:::: {layout-ncol=2}
+::: {.callout-tip title="Step 4 · Start it" icon=false}
+Open your folder in Finder or File Explorer and **double-click Start Chalkline** (`.command` on a Mac, `.bat` on Windows).
+
+The **first time takes 5–10 minutes**. Then your course opens in the browser with a first unit: a slide deck, a handout and four words. Keep that window open.
+:::
+
+::: {.callout-tip title="Step 5 · Make it yours" icon=false}
+In VS Code, open **`_quarto.yml`**. Change **My Course** to your course name.
+
+Open **`course › units › 01-first-unit › welcome-slides.qmd`**. Change a sentence and **save** (Ctrl+S, Mac: Cmd+S). The browser updates by itself.
+:::
+::::
+
+:::: {layout-ncol=2}
+::: {.callout-note title="Step 6 · Let an AI assistant type" icon=false}
+Open your course folder in an AI assistant that edits files (Claude, Gemini, Copilot, WorkBuddy…). Start with *"Read CLAUDE.md first and follow it."* Then ask in plain words: *"Add a slide about the Silk Road, with Chinese glosses on the key words."*
+:::
+
+::: {.callout-note title="Good to know" icon=false}
+- **On a slide:** **W** classroom tools, **S** your notes, **C** draw.
+- **New deck or worksheet:** Terminal › Run Task… › *New slide deck…*
+- **New unit:** copy the `01-first-unit` folder and rename it `02-…`.
+- **Stuck?** Paste the red error message into your AI assistant, or ask John.
+:::
+::::

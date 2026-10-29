@@ -1,0 +1,54 @@
+---
+title: "Welcome to Class"
+subtitle: "欢迎 · Unit 1, part 1"
+type: slides
+description: "A starter deck to change: a goal, key words with pop-ups, a partner talk with a timer, and a review game."
+order: 1
+audience: [teacher, student]
+format:
+  revealjs:
+    chalkboard:          # press C to draw on a slide, B for a blank chalkboard
+      buttons: true
+---
+
+## Today we will…
+
+::: {.goal}
+- Learn four classroom words.
+- Talk with a partner.
+- Write a one-sentence summary.
+:::
+
+::: notes
+This is a starter deck. Change the words, add slides, or delete it. Only the teacher sees these notes (press **S**).
+:::
+
+## Key words
+
+- Our {{< vocab "goal" >}} is what we want to learn.
+- A {{< vocab "partner" >}} is the person you work with.
+- We {{< vocab "discuss" >}} a question together.
+- A {{< vocab "summary" >}} is short: only the main ideas.
+
+::: notes
+Point at a word with a dotted line: its card pops up, with 中文 and read-aloud. The words come from `vocab/data/vocab.csv`.
+:::
+
+## Talk with a partner
+
+{{< timer 3 >}}
+
+1. What is one thing you want to learn this year?
+2. Ask your partner: "Can you say more about that?"
+
+## Review: match the words
+
+{{< matching unit=1 >}}
+
+## Exit ticket
+
+Write a one-sentence **summary** of today's lesson.
+
+::: {.poll type="smileys"}
+How do you feel about this class?
+:::

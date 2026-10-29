@@ -1,0 +1,62 @@
+<!--
+  Colour schemes (styles/schemes.scss) on slides: reveal.js draws each slide's background in its own
+  layer, outside the slide, so a scheme's --paper, --paper-image and --paper-size are painted there
+  from here (also for a course's own scheme or look that sets them). ChalklineSchemes.paint(slide)
+  paints one slide again, for tools that change a slide's classes.
+  A deck's  slide-scheme: night  label puts the scheme on the whole deck (filter.lua sets data-scheme
+  below), including the screen around the slide. A slide's own background-color= or background-image=
+  always wins. Added to every deck by filter.lua.
+-->
+<script>
+(function () {
+  // paints a slide's --paper, --paper-image and --paper-size into its background layer
+  function paint(s) {
+    var bg = Reveal.getSlideBackground(s);
+    if (!bg) return;
+    var st = getComputedStyle(s), img = st.getPropertyValue("--paper-image").trim();
+    var has = img && img !== "none";
+    bg.style.backgroundColor = st.getPropertyValue("--paper").trim();
+    bg.style.backgroundImage = has ? img : "";
+    bg.style.backgroundSize = has ? (st.getPropertyValue("--paper-size").trim() || "auto") : "";
+    bg.style.backgroundPosition = has ? "center" : "";
+    var content = bg.querySelector(".slide-background-content");   // where background-color= draws
+    if (content) content.style.backgroundColor = "transparent";
+  }
+  function ownPicture(s) {
+    return s.hasAttribute("data-background-image") || s.hasAttribute("data-background-video") || s.hasAttribute("data-background-iframe");
+  }
+  var deck = "", deckPaper = "", deckImage = "";
+  function paintAll() {
+    [].forEach.call(document.querySelectorAll(".reveal .slides section"), function (s) {
+      if (s.querySelector(":scope > section") || ownPicture(s) || s.hasAttribute("data-background-color")) return;
+      var st = getComputedStyle(s);
+      // a deck scheme, or a slide whose scheme or look gives it its own paper
+      if (deck || st.getPropertyValue("--paper").trim() !== deckPaper || st.getPropertyValue("--paper-image").trim() !== deckImage) paint(s);
+    });
+  }
+  function start() {
+    var reveal = document.querySelector(".reveal");
+    deck = ((document.getElementById("chalkline-scheme") || {}).textContent || "").trim();
+    if (deck) reveal.classList.add("scheme-" + deck);
+    var rs = getComputedStyle(reveal);
+    deckPaper = rs.getPropertyValue("--paper").trim(); deckImage = rs.getPropertyValue("--paper-image").trim();
+    if (deck) {   // the screen around the slide too
+      var html = document.documentElement.style;
+      html.setProperty("--r-background-color", deckPaper);
+    }
+    paintAll();
+    // Reveal.configure() and Reveal.sync() (the toolbox's slide size, for one) throw the background
+    // layers away and make new, blank ones: paint those again (from the slides' classes, so a scheme
+    // a tool put on a slide stays too)
+    var layers = reveal.querySelector(":scope > .backgrounds"), queued = false;
+    if (layers) new MutationObserver(function () {
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(function () { queued = false; paintAll(); });
+    }).observe(layers, { childList: true });
+  }
+  window.ChalklineSchemes = { paint: paint, ownPicture: ownPicture };
+  if (!window.Reveal) return;
+  if (Reveal.isReady()) start(); else Reveal.on("ready", start);
+})();
+</script>

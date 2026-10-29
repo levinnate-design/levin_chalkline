@@ -21,7 +21,7 @@ if not exist ".venv\Scripts\python.exe" (
 
 set "QUARTO_PYTHON=%CD%\.venv\Scripts\python.exe"
 rem Full build first if anything changed, so pages open fast
-"%QUARTO_PYTHON%" scripts\build_if_needed.py --profile teacher
+"%QUARTO_PYTHON%" chalkline.py build --profile teacher
 echo Starting Chalkline (teacher version) at http://localhost:4100
 echo Leave this window open while you work. Close it to stop the site.
 rem The teacher version: answer keys and notes included

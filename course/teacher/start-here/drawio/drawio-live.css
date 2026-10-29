@@ -1,0 +1,17 @@
+/* Live draw.io infographics (drawio-live.js): hover or tap a box to lift it and fade the rest. */
+.drawio-live svg { width: 100%; height: auto; display: block; }
+.drawio-live svg g[data-cell-id] { transition: opacity 0.25s, filter 0.25s, transform 0.25s; }
+.drawio-live .live-box { cursor: pointer; transform-box: fill-box; transform-origin: center; }
+.drawio-live .live-box:hover, .drawio-live .live-box.focus {
+  transform: scale(1.04);
+  filter: drop-shadow(0 8px 14px rgba(0, 52, 119, 0.35)) brightness(1.06);
+}
+/* While a box is hovered (or tapped), everything else fades. */
+.drawio-live svg:has(.live-box:hover) g[data-cell-id]:not(:hover):not([data-cell-id="0"]):not([data-cell-id="1"]),
+.drawio-live svg:has(.live-box.focus) g[data-cell-id]:not(.focus):not([data-cell-id="0"]):not([data-cell-id="1"]) {
+  opacity: 0.3;
+}
+.drawio-label {
+  display: inline-block; font-size: 0.45em; font-weight: 700; color: #003477; background: #fff1e2;
+  border: 1.5px solid #ff8c0f; border-radius: 999px; padding: 0.1em 0.8em; vertical-align: middle;
+}

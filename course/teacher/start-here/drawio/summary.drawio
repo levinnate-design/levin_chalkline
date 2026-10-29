@@ -1,0 +1,106 @@
+<mxfile host="drawio" agent="Chalkline sample">
+  <diagram id="summary" name="Lesson summary: the Hundred Schools of Thought">
+    <mxGraphModel dx="0" dy="0" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1160" pageHeight="560" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="root" value="&lt;b style=&quot;font-size:22px&quot;&gt;Hundred Schools of Thought&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:22px&quot;&gt;百家争鸣&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#003477;strokeColor=#003477;fontColor=#FFFFFF;fontFamily=Source Sans 3;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="0" y="180" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="spring" value="&lt;b style=&quot;font-size:18px&quot;&gt;Began in the Spring and Autumn period&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:19px&quot;&gt;源于春秋&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFF1E2;strokeColor=#FF8C0F;strokeWidth=2;fontColor=#1F2933;fontFamily=Source Sans 3;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="185" y="58" width="165" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="warring" value="&lt;b style=&quot;font-size:18px&quot;&gt;Grew in the Warring States period&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:19px&quot;&gt;盛于战国&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFF1E2;strokeColor=#FF8C0F;strokeWidth=2;fontColor=#1F2933;fontFamily=Source Sans 3;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="185" y="330" width="165" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="laozi" value="&lt;b style=&quot;font-size:20px&quot;&gt;Laozi&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:19px&quot;&gt;老子&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#003477;strokeWidth=2;fontColor=#003477;fontFamily=Source Sans 3;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="390" y="0" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="confucius" value="&lt;b style=&quot;font-size:20px&quot;&gt;Confucius&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:19px&quot;&gt;孔子&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#003477;strokeWidth=2;fontColor=#003477;fontFamily=Source Sans 3;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="390" y="100" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ru" value="&lt;b style=&quot;font-size:20px&quot;&gt;Confucianism&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:19px&quot;&gt;儒家&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#003477;strokeWidth=2;fontColor=#003477;fontFamily=Source Sans 3;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="390" y="214" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mo" value="&lt;b style=&quot;font-size:20px&quot;&gt;Mohism&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:19px&quot;&gt;墨家&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#003477;strokeWidth=2;fontColor=#003477;fontFamily=Source Sans 3;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="390" y="312" width="150" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="dao" value="&lt;b style=&quot;font-size:20px&quot;&gt;Daoism&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:19px&quot;&gt;道家&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#003477;strokeWidth=2;fontColor=#003477;fontFamily=Source Sans 3;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="390" y="374" width="150" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="fa" value="&lt;b style=&quot;font-size:20px&quot;&gt;Legalism&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:19px&quot;&gt;法家&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#003477;strokeWidth=2;fontColor=#003477;fontFamily=Source Sans 3;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="390" y="436" width="150" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="laozi-idea" value="&lt;b style=&quot;font-size:19px&quot;&gt;The Way (Dao): follow nature. Rule by doing little.&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:18px&quot;&gt;道、顺应自然；无为而治&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#EAF4FB;strokeColor=#9FC3E0;fontColor=#1F2933;fontFamily=Source Sans 3;align=left;spacingLeft=12;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="580" y="0" width="580" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="confucius-idea" value="&lt;b style=&quot;font-size:19px&quot;&gt;Kindness (ren). Rule by virtue. School for everyone.&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:18px&quot;&gt;仁；为政以德；有教无类&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#EAF4FB;strokeColor=#9FC3E0;fontColor=#1F2933;fontFamily=Source Sans 3;align=left;spacingLeft=12;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="580" y="100" width="580" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mencius" value="&lt;b style=&quot;font-size:19px&quot;&gt;Mencius: kind government. The people come first.&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;孟子：“仁政”；“民贵君轻”&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#EAF4FB;strokeColor=#9FC3E0;fontColor=#1F2933;fontFamily=Source Sans 3;align=left;spacingLeft=12;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="580" y="190" width="580" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="xunzi" value="&lt;b style=&quot;font-size:19px&quot;&gt;Xunzi: rule by rites (good customs).&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;荀子：礼治&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#EAF4FB;strokeColor=#9FC3E0;fontColor=#1F2933;fontFamily=Source Sans 3;align=left;spacingLeft=12;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="580" y="248" width="580" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="mozi" value="&lt;b style=&quot;font-size:19px&quot;&gt;Mozi: love everyone. No wars of attack.&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:18px&quot;&gt;墨子：兼爱、非攻&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#EAF4FB;strokeColor=#9FC3E0;fontColor=#1F2933;fontFamily=Source Sans 3;align=left;spacingLeft=12;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="580" y="312" width="580" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="zhuangzi" value="&lt;b style=&quot;font-size:19px&quot;&gt;Zhuangzi: follow nature. Keep your mind free.&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:18px&quot;&gt;庄子：顺应自然，追求精神自由&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#EAF4FB;strokeColor=#9FC3E0;fontColor=#1F2933;fontFamily=Source Sans 3;align=left;spacingLeft=12;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="580" y="374" width="580" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="hanfei" value="&lt;b style=&quot;font-size:19px&quot;&gt;Han Fei: rule by law. A strong ruler.&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:18px&quot;&gt;韩非：以法治国&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#EAF4FB;strokeColor=#9FC3E0;fontColor=#1F2933;fontFamily=Source Sans 3;align=left;spacingLeft=12;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="580" y="436" width="580" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="banner" value="&lt;b style=&quot;font-size:22px&quot;&gt;The first high point of ideas in ancient China&lt;/b&gt;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;font-size:21px&quot;&gt;中国古代第一次思想文化发展的高峰&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#C8102E;strokeColor=none;fontColor=#FFFFFF;fontFamily=Source Sans 3;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="185" y="504" width="975" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=none;html=1;rounded=0;strokeColor=#52606D;strokeWidth=2;" edge="1" parent="1" source="root" target="spring">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=none;html=1;rounded=0;strokeColor=#52606D;strokeWidth=2;" edge="1" parent="1" source="root" target="warring">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=none;html=1;rounded=0;strokeColor=#52606D;strokeWidth=2;" edge="1" parent="1" source="spring" target="laozi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=none;html=1;rounded=0;strokeColor=#52606D;strokeWidth=2;" edge="1" parent="1" source="spring" target="confucius">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=none;html=1;rounded=0;strokeColor=#52606D;strokeWidth=2;" edge="1" parent="1" source="warring" target="ru">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=none;html=1;rounded=0;strokeColor=#52606D;strokeWidth=2;" edge="1" parent="1" source="warring" target="mo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=none;html=1;rounded=0;strokeColor=#52606D;strokeWidth=2;" edge="1" parent="1" source="warring" target="dao">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=none;html=1;rounded=0;strokeColor=#52606D;strokeWidth=2;" edge="1" parent="1" source="warring" target="fa">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=none;html=1;rounded=0;strokeColor=#52606D;strokeWidth=2;" edge="1" parent="1" source="laozi" target="laozi-idea">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=none;html=1;rounded=0;strokeColor=#52606D;strokeWidth=2;" edge="1" parent="1" source="confucius" target="confucius-idea">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=none;html=1;rounded=0;strokeColor=#52606D;strokeWidth=2;" edge="1" parent="1" source="ru" target="mencius">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=none;html=1;rounded=0;strokeColor=#52606D;strokeWidth=2;" edge="1" parent="1" source="ru" target="xunzi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=none;html=1;rounded=0;strokeColor=#52606D;strokeWidth=2;" edge="1" parent="1" source="mo" target="mozi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=none;html=1;rounded=0;strokeColor=#52606D;strokeWidth=2;" edge="1" parent="1" source="dao" target="zhuangzi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=none;html=1;rounded=0;strokeColor=#52606D;strokeWidth=2;" edge="1" parent="1" source="fa" target="hanfei">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

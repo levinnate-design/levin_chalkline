@@ -1,0 +1,50 @@
+---
+title: "New slide deck"
+subtitle: "中文 title · Unit name, part 1"
+type: slides
+description: "One sentence: what this deck teaches."
+order: 1
+audience: [teacher, student]
+format:
+  revealjs:
+    chalkboard:          # press C to draw on a slide, B for a blank chalkboard
+      buttons: true
+---
+
+## Today we will…
+
+::: {.goal}
+- Learn one big idea.
+- Use three new words.
+:::
+
+## A key word
+
+A {{< vocab "democracy" >}} is … (one short sentence).
+
+::: notes
+What to say on this slide. Only the teacher sees notes (press **S**).
+:::
+
+## Picture and words
+
+:::: {.columns}
+::: {.column width="55%"}
+- One idea per bullet.
+- Short sentences.
+:::
+::: {.column width="45%"}
+<!-- ![](images/picture.jpg){.photo fig-alt="What the picture shows"} -->
+:::
+::::
+
+## Talk with a partner
+
+{{< timer 3 >}}
+
+1. A question to discuss.
+2. Use the words from today.
+
+## Review
+
+{{< matching unit=1 >}}

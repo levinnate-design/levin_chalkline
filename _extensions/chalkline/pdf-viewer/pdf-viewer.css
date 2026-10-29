@@ -1,0 +1,265 @@
+/* PDF viewer (see pdf-viewer.lua). In a Chalkline course it takes its colors, corners and shadows
+   from Chalkline's design layer (--ui-…, chalkline/ui/ui.css), so it matches the tools and menus;
+   anywhere else it uses the values after the commas. */
+
+.pdfv, .pdfv-popup, .pdfv-menu {
+  --pdfv-accent: var(--ui-accent, #003477);
+  --pdfv-panel: var(--ui-soft, #f3f5f8);      /* the grey the page sits on */
+  --pdfv-line: var(--ui-line, #d6dee8);
+  --pdfv-ink: var(--ui-ink, #10233f);
+  --pdfv-muted: var(--ui-muted, #5b6b80);
+  --pdfv-hover: var(--ui-soft-hover, #e6ebf1);
+  --pdfv-r: var(--ui-r-lg, 20px);
+  --pdfv-r-sm: var(--ui-r-sm, 10px);
+  --pdfv-shadow-pop: var(--ui-shadow-pop, 0 18px 48px rgba(16, 35, 63, 0.22), 0 0 0 1px rgba(16, 35, 63, 0.07));
+  --pdfv-btn: 44px;            /* big enough to tap on a touch screen */
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--pdfv-ink);
+  box-sizing: border-box;
+}
+.pdfv *, .pdfv-popup * { box-sizing: border-box; }
+
+.pdfv {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--pdfv-panel);
+  border-radius: var(--pdfv-r);
+  padding: 8px;
+  margin: 0.4em 0;
+}
+.pdfv-viewer { height: 75vh; container-type: inline-size; }
+.reveal .pdfv-viewer { height: 560px; --pdfv-btn: 40px; }   /* a reveal.js slide is 700px tall */
+@container (max-width: 520px) {   /* narrow: room for the buttons */
+  .pdfv-viewer .pdfv-title { visibility: hidden; }
+}
+
+.pdfv-fallback { margin: auto; }
+.pdfv-error { margin: auto; padding: 1em; text-align: center; color: var(--pdfv-muted); font-size: 18px; }
+
+/* toolbars */
+.pdfv-bar, .pdfv-pens {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: none;
+  min-width: 0;
+}
+/* the pens: one white toolbar */
+.pdfv-pens {
+  flex-wrap: wrap;
+  align-self: flex-start;
+  gap: 2px;
+  padding: 4px;
+  border-radius: calc(var(--pdfv-btn) / 2 + 4px);
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(16, 35, 63, 0.08);
+}
+.pdfv-title {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 700;
+  color: var(--pdfv-ink);
+  padding: 0 8px;
+}
+.pdfv-count { white-space: nowrap; font-variant-numeric: tabular-nums; padding: 0 4px; color: var(--pdfv-muted); font-weight: 600; }
+
+.pdfv-btn {
+  width: var(--pdfv-btn);
+  height: var(--pdfv-btn);
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--pdfv-ink);
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: background 0.12s, transform 0.06s;
+}
+.pdfv-btn:hover { background: var(--pdfv-hover); }
+.pdfv-btn:active { transform: scale(0.94); }
+.pdfv-btn:focus-visible { outline: 2px solid var(--ui-focus, #0087ff); outline-offset: 1px; }
+.pdfv-btn:disabled { opacity: 0.3; cursor: default; background: transparent; transform: none; }
+.pdfv-btn[aria-pressed="true"] { background: var(--pdfv-accent); color: #fff; }
+.pdfv-btn svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+/* the Download menu: each choice spelled out */
+.pdfv-menu {
+  position: fixed;
+  z-index: 2100;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 300px;
+  padding: 6px;
+  background: #fff;
+  border-radius: var(--pdfv-r);
+  box-shadow: var(--pdfv-shadow-pop);
+  font-family: inherit;
+}
+.pdfv-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;            /* easy to tap */
+  padding: 6px 12px;
+  border: 0;
+  border-radius: var(--pdfv-r-sm);
+  background: none;
+  color: var(--pdfv-ink);
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+}
+.pdfv-menu-item:hover, .pdfv-menu-item:focus-visible { background: var(--pdfv-panel); outline: none; }
+.pdfv-menu-item svg { flex: none; width: 22px; height: 22px; fill: none; stroke: var(--pdfv-accent); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.pdfv-menu-item strong { display: block; font-size: 16px; font-weight: 600; color: var(--pdfv-ink); }
+.pdfv-menu-item small { display: block; font-size: 13px; color: var(--pdfv-muted); }
+
+/* pens: a dot of their color; the highlighter a wide bar */
+.pdfv-swatch svg { display: none; }
+.pdfv-swatch::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--pen);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12);
+}
+.pdfv-swatch.pdfv-hi::before { width: 26px; height: 12px; border-radius: 3px; }
+
+/* the page and its ink */
+.pdfv-stage {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  overflow: hidden;
+}
+.pdfv-zoomed .pdfv-stage { overflow: auto; cursor: grab; }   /* zoomed in: scroll or drag around */
+.pdfv-stage.pdfv-panning { cursor: grabbing; }
+.pdfv-page {
+  position: relative;
+  flex: none;
+  margin: auto;                /* in the middle, but scrolls fully when it's bigger than the stage */
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(16, 35, 63, 0.12), 0 6px 18px rgba(16, 35, 63, 0.12);
+}
+.pdfv-page canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  max-width: none;
+  max-height: none;
+}
+.pdfv-ink { pointer-events: none; }
+.pdfv-drawing .pdfv-ink { pointer-events: auto; touch-action: none; cursor: crosshair; }
+[data-tool="text"] .pdfv-ink { cursor: text; }
+.pdfv-textbtn:not([aria-pressed="true"]) { color: var(--pen); }   /* the T shows the text color */
+
+/* zoom */
+.pdfv-zoom { display: flex; align-items: center; gap: 2px; flex: none; margin-left: 6px; }
+.pdfv-btn.pdfv-zoom-label { width: auto; min-width: 3.6em; padding: 0 6px; border-radius: 999px; font: inherit; font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* text tool: the box you type in (it becomes ink when you press Enter or tap elsewhere) */
+.pdfv-text {
+  position: absolute;
+  z-index: 2;
+  min-width: 6em;
+  margin: 0;
+  padding: 0 2px;
+  border: 1px dashed currentColor;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.85);
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.2;
+  outline: none;
+}
+
+/* gallery */
+.pdfv-gallery { padding: 8px; }
+.pdfv-strip {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 4px 2px 8px;
+  justify-content: safe center;
+}
+.pdfv-thumb {
+  flex: none;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.reveal .pdfv-thumb { height: 230px; }
+.pdfv-thumb .pdfv-page { transition: transform 0.15s; }
+.pdfv-thumb:hover .pdfv-page, .pdfv-thumb:focus-visible .pdfv-page { transform: translateY(-4px); box-shadow: 0 2px 4px rgba(16, 35, 63, 0.12), 0 12px 28px rgba(16, 35, 63, 0.22); }
+.pdfv-thumb:focus-visible { outline: none; }
+.pdfv-num { font-size: 14px; font-weight: 600; color: var(--pdfv-muted); font-variant-numeric: tabular-nums; }
+
+/* popup: large and in the middle; drag the title bar, resize by the corner */
+.pdfv-popup {
+  position: fixed;
+  z-index: 2000;
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+  background: var(--pdfv-panel);
+  border-radius: var(--pdfv-r);
+  box-shadow: 0 2px 6px rgba(16, 35, 63, 0.12), 0 24px 64px rgba(16, 35, 63, 0.35), 0 0 0 1px rgba(16, 35, 63, 0.06);
+  --pdfv-btn: 50px;
+}
+.pdfv-popup.pdfv-open { display: flex; }
+.pdfv-head { cursor: move; touch-action: none; user-select: none; }
+.pdfv-grip {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  cursor: nwse-resize;
+  touch-action: none;
+}
+.pdfv-grip::after {   /* a small corner mark, like the classroom tools' */
+  content: "";
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 12px;
+  height: 12px;
+  border-right: 2.5px solid rgba(16, 35, 63, 0.35);
+  border-bottom: 2.5px solid rgba(16, 35, 63, 0.35);
+  border-bottom-right-radius: 4px;
+}
+
+/* slide PDFs (reveal.js print layout): no buttons, just the pages */
+html.print-pdf .pdfv-bar .pdfv-btn, html.print-pdf .pdfv-pens { display: none; }
+@media print { .pdfv-btn, .pdfv-pens, .pdfv-popup { display: none !important; } }

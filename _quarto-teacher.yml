@@ -16,6 +16,9 @@ website:
       - text: "History vocab 词汇"
         href: vocab/app/index.html
         icon: book
+      - text: "All slides 所有幻灯片"
+        href: all-slides.qmd
+        icon: grid-3x3-gap
       - text: "Review games 复习游戏"
         href: course/review-games.qmd
         icon: controller
@@ -39,8 +42,12 @@ website:
             href: course/teacher/co-teacher-onboarding.qmd
           - text: "AI Assistant Prompts 提示词指南"
             href: course/teacher/ai-prompts.qmd
+          - text: "Quick Start 快速上手"
+            href: course/teacher/start-here/quick-start.qmd
           - text: "Chalkline Tour 课件系统演示"
             href: course/teacher/start-here/slides.qmd
+          - text: "Slide Kit & Schemes 双语课件套件"
+            href: course/teacher/start-here/slide-kit-slides.qmd
           - text: "Test Unit 1: Ancient Greece"
             href: course/teacher/test-units/91-test-unit-1-ancient-greece/index.qmd
           - text: "Test Unit 2: Ancient Rome"

@@ -1,0 +1,11 @@
+---
+title: "All slides"
+subtitle: "所有幻灯片 · Every slide deck in the course, slide by slide"
+description: "Every unit's slide decks as rows of slide pictures. Click a slide to open its deck there."
+format:
+  html:
+    toc: false
+page-layout: full
+---
+
+{{< slide-wall >}}

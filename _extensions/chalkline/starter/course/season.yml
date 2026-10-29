@@ -1,0 +1,11 @@
+# Course facts used by slides and printables, so names and dates live in one place.
+# Only `name` is needed; the rest are optional.
+
+name: My Course
+name_zh: 我的课程
+season: 2026–2027
+
+events:              # shown as "Coming up" on the overview (the next two)
+  # - date: 2027-01-22
+  #   name: Project fair
+  #   kind: Class event

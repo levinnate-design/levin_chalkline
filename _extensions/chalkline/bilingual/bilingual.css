@@ -1,0 +1,66 @@
+/*
+  Bilingual text: [English | 中文]{.bi} (bilingual.lua), which becomes .bil in HTML (.bi is Bootstrap's icons). Only the second language is styled: smaller and
+  lighter, in whatever size, font and colour its place already has. So it works the same in a slide
+  title, a bullet, a card or a dark box, with no rule for each.
+  <html> carries the settings: data-bi-primary (en | zh) and data-bi-show (both | en | zh), set by
+  bilingual.js from the deck's labels or the slide's language switch, and .bi-slides on a deck.
+
+  A theme can change the look with these (on :root, a slide, or any box):
+    --bi-second-size    the second language's size          (0.8em)
+    --bi-second-color   its colour (default: the text colour, lighter, so it works on dark too)
+    --bi-second-weight  its weight                          (the place's own)
+    --bi-gap            space between the two when stacked  (0.1em)
+    --bi-zh-font        a font for 中文 (e.g. a serif for a "scroll" look); otherwise the place's own
+*/
+.bil { display: inline-flex; flex-wrap: wrap; align-items: baseline; column-gap: 0.35em; }
+.bil.bil-stack { display: flex; flex-direction: column; align-items: stretch; row-gap: var(--bi-gap, 0.1em); }
+.bil.bil-mono { display: inline; }
+.bil > .bil-zh, .bil.bil-mono[lang="zh"] { font-family: var(--bi-zh-font, inherit); }
+
+/* the second language */
+.bil > .bil-zh,
+html[data-bi-primary="zh"] .bil > .bil-en {
+  order: 1;
+  font-size: var(--bi-second-size, 0.8em);
+  font-weight: var(--bi-second-weight, inherit);
+  color: var(--bi-second-color, color-mix(in srgb, currentColor 68%, transparent));
+  line-height: 1.25;
+}
+/* the first: as the place has it (showing one language: that one) */
+html[data-bi-primary="zh"] .bil > .bil-zh,
+html[data-bi-show="en"] .bil > .bil-en,
+html[data-bi-show="zh"] .bil > .bil-zh {
+  order: 0; font-size: 1em; font-weight: inherit; color: inherit; line-height: inherit;
+}
+/* one language only: on a page the other is left out */
+html[data-bi-show="en"] .bil > .bil-zh,
+html[data-bi-show="zh"] .bil > .bil-en { display: none; }
+/* on slides (html.bi-slides, from bilingual.js) it is only invisible, in the second language's place
+   and size: boxes keep their height when one language is switched off */
+html.bi-slides[data-bi-show="en"] .bil > .bil-zh,
+html.bi-slides[data-bi-show="zh"] .bil > .bil-en {
+  display: revert; visibility: hidden;
+  order: 1; font-size: var(--bi-second-size, 0.8em); line-height: 1.25;
+}
+
+/* the language switch, top right of the slides (bilingual.js): quiet until you point at it */
+.bi-switch {
+  position: fixed; top: 8px; right: 64px; z-index: 30;   /* left of the slide number */
+  display: flex; align-items: center; gap: 6px;
+  font: 600 14px/1 "Source Sans 3", system-ui, sans-serif; color: #52606D;
+  opacity: 0.4; transition: opacity 0.15s;
+}
+.bi-switch:hover, .bi-switch:focus-within { opacity: 1; }
+.bi-switch[hidden] { display: none; }
+.bi-switch-seg { display: flex; border: 1px solid rgba(82, 96, 109, 0.45); border-radius: 999px; overflow: hidden; background: rgba(255, 255, 255, 0.85); }
+.bi-switch button {
+  all: unset; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; gap: 3px;
+  min-width: 30px; height: 24px; padding: 0 8px; cursor: pointer; color: inherit; font: inherit;
+}
+.bi-switch button svg { width: 15px; height: 15px; }
+.bi-switch button:hover { color: #1F2933; }
+.bi-switch button:focus-visible { outline: 2px solid #0087ff; outline-offset: -2px; }
+.bi-switch button[aria-pressed="true"] { background: #52606D; color: #fff; }
+.bi-switch .bi-swap { border: 1px solid rgba(82, 96, 109, 0.45); border-radius: 999px; background: rgba(255, 255, 255, 0.85); }
+.bi-switch .bi-swap:disabled { opacity: 0.35; cursor: default; }
+html.print-pdf .bi-switch { display: none; }

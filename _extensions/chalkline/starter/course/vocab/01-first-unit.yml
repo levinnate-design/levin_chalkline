@@ -1,0 +1,26 @@
+# The words for Unit 1, from vocab/data/vocab.csv. Remake this list with
+# `python chalkline.py import-vocab --unit 1 --title "My First Unit" --folder 01-first-unit --ids CLS-001 CLS-002 ...`
+
+unit: 1
+unit_title: My First Unit
+terms:
+- term: goal
+  definition: Something you want to learn or do.
+  example: Our goal today is to use four new words.
+  zh: 目标
+  id: CLS-001
+- term: partner
+  definition: A person you work with.
+  example: Turn to your partner and share your answer.
+  zh: 搭档
+  id: CLS-002
+- term: discuss
+  definition: To talk about something with other people.
+  example: We will discuss the question in groups.
+  zh: 讨论
+  id: CLS-003
+- term: summary
+  definition: A short version of the main ideas.
+  example: Write a one-sentence summary of the lesson.
+  zh: 总结
+  id: CLS-004

@@ -1,21 +1,21 @@
 # Chalkline sample course
 
-- Read `README.md` first. Content lives in `course/` and `vocab/`, appearance in `brand/`, code in `_extensions/` and `scripts/`.
-- Every slide deck and printable has labels at the top: `title`, `type` (slides, worksheet, checklist, handout, reference), `order`, `audience` ([teacher, student, parent]) and `description`. Keep them.
-- **Vocab:** `vocab/data/vocab.csv` is the source of truth; run `python vocab/validate.py` after editing it. Follow the rules in `vocab/README.md`: English is the target, 中文 is support; 中文 appears in reference materials, never in review materials (quizzes, flashcards); `short_def` is simple English, 75 characters or fewer; IDs are permanent.
-- **Gloss key vocab & Command Terms:** on slides, write key words and IB MYP Command Terms as `{{< vocab "democracy" >}}` or `{{< vocab "analyse" text="Analyze" >}}` (a pop-up with picture and 中文). On printables, use `{{< vocab "democracy" zh=true >}}` and `{{< vocab "explain" text="Explain" zh=true >}}` so the 中文 is printed too, except on quizzes and tests.
+- Read `README.md` first. Content lives in `course/` and `vocab/`, appearance in `brand/`, Chalkline itself (the tool) in `_extensions/chalkline/` (plus repo helpers in `scripts/`).
+- Every slide deck and printable has labels at the top: `title`, `type` (slides, worksheet, checklist, handout, reference, game), `order`, `audience` ([teacher, student, parent]) and `description`. Keep them.
+- **Vocab:** `vocab/data/vocab.csv` is the source of truth; run `python chalkline.py validate` (or `python vocab/validate.py`) after editing it. Follow the rules in `vocab/README.md`: English is the target, 中文 is support; 中文 appears in reference materials, never in review materials (quizzes, flashcards); `short_def` is simple English, 75 characters or fewer; IDs are permanent.
+- **Gloss key vocab & Command Terms:** on slides, write key words and IB MYP Command Terms as `{{< vocab "democracy" >}}` or `{{< vocab "analyse" text="Analyze" >}}` (a pop-up with picture and 中文). On printables, use `{{< vocab "democracy" zh=true >}}` and `{{< vocab "explain" text="Explain" zh=true >}}` so the 中文 is printed too, except on quizzes and tests. Bilingual slide/page/PDF spans can also use `[English | 中文]{.bi}`.
 - **Foundational MYP Curriculum References:** `course/references/curriculum-building/MYP_Individuals_and_Societies_CommandTerms.pdf` and `course/references/curriculum-building/MYP_Individuals_and_Societies_Guide_20141.pdf` (synced from `/Users/nathaniellevin/Library/Containers/com.tencent.WeWorkMac/Data/WeDrive/明湾学校/Social Studies/Curriculum Building`) are required foundational references for all curriculum building. All 20 IB MYP Individuals & Societies Command Terms (`CMD-001` to `CMD-020`) live in `vocab/data/vocab.csv` and have their own dedicated reference page at `course/references/command-terms.qmd`. Whenever you write or edit student instructions on slides, worksheets, or summatives, use and gloss the appropriate MYP Command Term (`{{< vocab "..." >}}`).
 - Write for middle-school English learners: short sentences, simple words, one idea per bullet.
 - Teacher-only content (answer keys, look-fors) goes inside `::: {.content-visible when-profile="teacher"}`.
-- Use original drawings or files with a clear license; credit outside sources in `course/links.yml`.
+- **Pictures & Credits slide:** use files with a clear license, or original drawings. Credit every outside picture in the `CREDITS.md` next to it (`images/CREDITS.md` in a unit, `vocab/images/CREDITS.md` for vocab); outside *links* go in `course/links.yml`. Every deck that uses outside pictures or sources ends with `## [Credits | 来源]{.bi} {#credits .credits}` in two columns (`### Pictures` and `### Sources`; see `course/teacher/start-here/slide-kit-slides.qmd`). When adding or replacing a vocab word's picture, look first for a clear, openly licensed real photo (Wikimedia Commons, museum open-access, Unsplash/Pexels); draw an original icon only when a photo cannot show the idea clearly.
 
 ## Editing printables and slides
 
 Keep the edit loop quick:
 
 1. While working on one worksheet (or deck), re-render **only that file** after each change: `quarto render course/units/<unit>/<file>.qmd` (add `--to typst` to check just the PDF). Don't run a full `quarto render` and don't rebuild packets on every change.
-2. When that file is done: save/commit it, then rebuild its unit packet once: `python scripts/packets.py --unit <unit number or folder>`.
-3. A full render (`quarto render`) or the launcher's startup check rebuilds everything else (the year packet, slide PDFs).
+2. When that file is done: save/commit it, then rebuild its unit packet once: `python chalkline.py packets --unit <unit number or folder>` (or `python scripts/packets.py --unit <unit number or folder>`).
+3. A full render (`quarto render`) or the launcher's startup check rebuilds everything else (the year packet, slide PDFs, slide pictures).
 
 If `quarto preview` is running, don't run a full `quarto render` at the same time: it empties `_site/` while the preview is serving it.
 
@@ -24,7 +24,7 @@ If `quarto preview` is running, don't run a full `quarto render` at the same tim
 This repo has two kinds of files:
 
 - **Content** (lessons, worksheets, vocab words, pictures): everything in `course/`, plus `vocab/data/` and `vocab/images/`. Change these freely. No log needed.
-- **The tool** (how Chalkline works and looks): `_extensions/`, `scripts/`, `brand/`, `vocab/app/`, `vocab/config.js`, `vocab/tools/`, `vocab/validate.py`, `vocab/schema.yaml`, `_quarto*.yml`, `index.qmd`, the `Start Chalkline` launchers, `.vscode/` and `.github/`.
+- **The tool** (how Chalkline works and looks): `_extensions/`, `chalkline.py`, `scripts/`, `brand/`, `vocab/config.js`, `vocab/tools/`, `vocab/validate.py`, `vocab/schema.yaml`, `_quarto*.yml`, `index.qmd`, `all-slides.qmd`, the `Start Chalkline` launchers, `.vscode/` and `.github/`.
 
 **Whenever you change a tool file, add an entry to the top of `TOOL-CHANGES.md`** (create it if it's missing), in the same change. Use this form:
 

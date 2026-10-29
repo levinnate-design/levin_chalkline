@@ -1,0 +1,176 @@
+<!--
+  This deck's own style picker (an experiment, not part of Chalkline): a palette button next to the
+  language switch opens a small panel to try Chalkline's colour schemes (styles/schemes.scss) and this
+  deck's looks (slide-kit-looks.css) on this slide or every slide. It only changes classes on the
+  slides, the same ones you'd write in the file: {.scheme-night .look-game}. Nothing is saved;
+  reload to undo, or press Reset. Loaded by `include-after-body:` in the deck's labels.
+-->
+<style>
+  /* the palette sits where the language switch was; the switch moves left to make room */
+  .bi-switch { right: 100px !important; }
+  .kit-style { position: fixed; top: 8px; right: 64px; z-index: 31; font: 600 14px/1 "Source Sans 3", system-ui, sans-serif; color: #52606D; }
+  .kit-style > button {
+    all: unset; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center;
+    width: 30px; height: 26px; border: 1px solid rgba(82, 96, 109, 0.45); border-radius: 999px;
+    background: rgba(255, 255, 255, 0.85); cursor: pointer; opacity: 0.4; transition: opacity 0.15s;
+  }
+  .kit-style > button:hover, .kit-style > button:focus-visible, .kit-style.open > button { opacity: 1; color: #1F2933; }
+  .kit-style > button:focus-visible { outline: 2px solid #0087ff; outline-offset: 1px; }
+  .kit-style > button svg { width: 16px; height: 16px; }
+  .kit-style-panel {
+    position: absolute; top: 34px; right: 0; width: 270px; padding: 12px 14px 14px;
+    background: #fff; color: #1F2933; border: 1px solid #d9dee7; border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 20, 50, 0.18); font-weight: 400;
+  }
+  .kit-style-panel[hidden] { display: none; }
+  .kit-style-panel h3 { all: unset; display: block; margin: 10px 0 6px; font-size: 12px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: #52606D; }
+  .kit-style-panel h3:first-child { margin-top: 0; }
+  .kit-style-opts { display: flex; flex-wrap: wrap; gap: 6px; }
+  .kit-style-opts button {
+    all: unset; box-sizing: border-box; display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px;
+    border: 1px solid #d9dee7; border-radius: 999px; cursor: pointer; font-size: 14px;
+  }
+  .kit-style-opts button:hover { border-color: #52606D; }
+  .kit-style-opts button:focus-visible { outline: 2px solid #0087ff; outline-offset: 1px; }
+  .kit-style-opts button[aria-pressed="true"] { background: #003477; border-color: #003477; color: #fff; }
+  .kit-style-opts .dot { width: 12px; height: 12px; border-radius: 50%; border: 1px solid rgba(0, 0, 0, 0.25); }
+  .kit-style-code { display: flex; align-items: center; gap: 8px; margin-top: 12px; padding-top: 10px; border-top: 1px solid #e6e9ef; }
+  .kit-style-code code { flex: 1; min-width: 0; overflow-wrap: anywhere; font: 13px/1.3 ui-monospace, Menlo, Consolas, monospace; color: #003477; }
+  .kit-style-code button { all: unset; cursor: pointer; font-size: 13px; font-weight: 600; color: #0060c0; }
+  .kit-style-code button:focus-visible { outline: 2px solid #0087ff; outline-offset: 2px; }
+  html.print-pdf .kit-style { display: none; }
+</style>
+<script>
+(function () {
+  if (/[?&](print-pdf|receiver)/.test(location.search) || !window.Reveal) return;
+
+  var SCHEMES = [["", "Default", "#ffffff"], ["night", "Night", "#0b1630"], ["sky", "Sky", "#ebf7fd"],
+                 ["lagoon", "Lagoon", "#14d7cd"], ["sunrise", "Sunrise", "#ffe9d3"],
+                 ["trail", "Trail", "#d9c9b2"], ["glass", "Glass", "#1f6fd6"]];   // trail and glass: this deck's own schemes (slide-kit-looks.css)
+  // game and brutal change shapes and take the colours from the scheme; scroll brings its own colours
+  var LOOKS = [["", "Plain"], ["game", "Game"], ["brutal", "Brutal"], ["scroll", "Scroll"]];
+  var PALETTE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+    '<path d="M12 22a10 10 0 1 1 10-10c0 2.8-2.2 4-4 4h-2a2 2 0 0 0-1.6 3.2A1.7 1.7 0 0 1 12 22z"/>' +
+    '<circle cx="7.5" cy="10.5" r="1"/><circle cx="12" cy="7.5" r="1"/><circle cx="16.5" cy="10.5" r="1"/></svg>';
+
+  var all = false;   // this slide, or every slide
+  var saved = new Map();   // each slide's classes and background as the file made them, for Reset
+
+  function slides() {
+    return [].filter.call(document.querySelectorAll(".reveal .slides section"), function (s) { return !s.querySelector(":scope > section"); });
+  }
+  function targets() { return all ? slides() : [Reveal.getCurrentSlide()]; }
+  function current(s, prefix) {
+    var c = [].find.call(s.classList, function (k) { return k.indexOf(prefix) === 0; });
+    return c ? c.slice(prefix.length) : "";
+  }
+  function layers(s) {   // reveal.js draws a slide's background here, and background-color= in its content
+    var bg = Reveal.getSlideBackground(s);
+    return bg ? [bg, bg.querySelector(".slide-background-content")].filter(Boolean) : [];
+  }
+  var PROPS = ["backgroundColor", "backgroundImage", "backgroundSize", "backgroundPosition"];
+  function remember(s) {
+    if (saved.has(s)) return;
+    saved.set(s, { cls: s.className, layers: layers(s).map(function (l) {
+      var o = {}; PROPS.forEach(function (k) { o[k] = l.style[k]; }); return o;
+    }) });
+  }
+  function set(prefix, value) {
+    targets().forEach(function (s) {
+      remember(s);
+      [].slice.call(s.classList).forEach(function (k) { if (k.indexOf(prefix) === 0) s.classList.remove(k); });
+      if (value) s.classList.add(prefix + value);
+      // a slide with its own picture or video keeps it; the others get the new paper (schemes.html)
+      if (window.ChalklineSchemes && !ChalklineSchemes.ownPicture(s)) ChalklineSchemes.paint(s);
+    });
+    Reveal.layout();
+    draw();
+  }
+  function reset() {
+    saved.forEach(function (v, s) {
+      s.className = v.cls;
+      layers(s).forEach(function (l, i) { PROPS.forEach(function (k) { l.style[k] = v.layers[i] ? v.layers[i][k] : ""; }); });
+    });
+    saved.clear();
+    Reveal.layout();
+    draw();
+  }
+
+  // ---------- the button and its panel ----------
+  var box, panel, refocus = null;   // the option to give focus back to after the panel is redrawn
+  function option(label, pressed, onclick, swatch) {
+    var b = document.createElement("button");
+    b.type = "button";
+    b.setAttribute("aria-pressed", pressed ? "true" : "false");
+    if (swatch) { var d = document.createElement("span"); d.className = "dot"; d.style.background = swatch; b.append(d); }
+    b.append(label);
+    b.addEventListener("click", function (e) { e.stopPropagation(); refocus = label; onclick(); });
+    return b;
+  }
+  function group(title, items) {
+    var h = document.createElement("h3"); h.textContent = title;
+    var g = document.createElement("div"); g.className = "kit-style-opts";
+    items.forEach(function (i) { g.append(i); });
+    panel.append(h, g);
+  }
+  function draw() {
+    if (!panel || panel.hidden) return;
+    var s = Reveal.getCurrentSlide(), scheme = current(s, "scheme-"), look = current(s, "look-");
+    panel.textContent = "";
+    group("Colours", SCHEMES.map(function (c) { return option(c[1], scheme === c[0], function () { set("scheme-", c[0]); }, c[2]); }));
+    group("Look", LOOKS.map(function (c) { return option(c[1], look === c[0], function () { set("look-", c[0]); }); }));
+    group("Change", [
+      option("This slide", !all, function () { all = false; draw(); }),
+      option("Every slide", all, function () { all = true; draw(); }),
+      option("Reset", false, reset),
+    ]);
+    var classes = [scheme && ".scheme-" + scheme, look && ".look-" + look].filter(Boolean).join(" ");
+    var code = document.createElement("div"); code.className = "kit-style-code";
+    var c = document.createElement("code");
+    c.textContent = classes ? "{" + classes + "}" : "No classes: the deck's own look";
+    code.append(c);
+    if (classes) {
+      var copy = document.createElement("button"); copy.type = "button"; copy.textContent = "Copy";
+      copy.title = "Put these classes on the slide's title in the file";
+      copy.addEventListener("click", function (e) {
+        e.stopPropagation();
+        if (navigator.clipboard) navigator.clipboard.writeText("{" + classes + "}").then(function () { copy.textContent = "Copied"; });
+      });
+      code.append(copy);
+    }
+    panel.append(code);
+    if (refocus) {
+      var again = [].find.call(panel.querySelectorAll("button"), function (x) { return x.textContent === refocus; });
+      refocus = null;
+      if (again) again.focus();
+    }
+  }
+  function toggle(open) {
+    panel.hidden = !open;
+    box.classList.toggle("open", open);
+    box.firstChild.setAttribute("aria-expanded", open ? "true" : "false");
+    draw();
+  }
+  function start() {
+    box = document.createElement("div");
+    box.className = "kit-style";
+    var b = document.createElement("button");
+    b.type = "button"; b.innerHTML = PALETTE; b.title = "Try colours and looks (this deck only)";
+    b.setAttribute("aria-label", b.title); b.setAttribute("aria-expanded", "false");
+    b.addEventListener("click", function (e) { e.stopPropagation(); toggle(panel.hidden); });
+    panel = document.createElement("div");
+    panel.className = "kit-style-panel"; panel.hidden = true;
+    panel.setAttribute("role", "dialog"); panel.setAttribute("aria-label", "Colours and looks");
+    panel.addEventListener("click", function (e) { e.stopPropagation(); });
+    box.append(b, panel);
+    box.addEventListener("keydown", function (e) { e.stopPropagation(); });   // keys in the panel don't turn the slide
+    document.addEventListener("keydown", function (e) {   // Esc closes the panel (and doesn't open reveal's overview)
+      if (e.key === "Escape" && !panel.hidden) { e.preventDefault(); e.stopImmediatePropagation(); toggle(false); b.focus(); }
+    }, true);
+    document.querySelector(".reveal").append(box);
+    document.addEventListener("click", function () { if (!panel.hidden) toggle(false); });
+    Reveal.on("slidechanged", draw);
+  }
+  if (Reveal.isReady()) start(); else Reveal.on("ready", start);
+})();
+</script>

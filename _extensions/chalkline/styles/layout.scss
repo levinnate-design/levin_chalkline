@@ -1,0 +1,229 @@
+/*-- scss:defaults --*/
+// Chalkline's slide kit: a few design tokens and building blocks for any slide (an experiment; see
+// course/units/00-start-here/slide-kit-slides.qmd for every piece in use). Loads after revealjs.scss,
+// so $navy and the other brand colours are set.
+
+/*-- scss:rules --*/
+
+// ---- Tokens: the names a theme changes. On .reveal for a whole deck, on a slide's class for one slide
+// (## Title {.my-look}, with .my-look { --accent: ... } in the deck's own CSS). Sizes are em, so they
+// follow the slide's own font size. The type scale is Utopia's naming (--step-0 = body text) at a fixed
+// ratio of 1.25: reveal scales the whole slide, so fluid sizes aren't needed.
+.reveal {
+  // colours
+  --paper: #fff;                 // the slide
+  --ink: #1F2933;                // text
+  --ink-muted: #52606D;          // quiet text
+  --heading: #{$navy};           // titles and box titles
+  --surface: #{$sky};            // a box
+  --surface-2: #fff;             // a second kind of box
+  --line: #{rgba($navy, 0.18)};  // borders
+  --accent: #{$turquoise};       // stripes, bars
+  --on-accent: #{$navy};         // text on --accent
+  --hot: #{$orange};             // the one thing to look at
+  --on-hot: #{$navy};
+  --hot-text: #{mix($orange, #000, 68%)};   // the same, dark enough for words on the slide (4.7:1 on white)
+  --strong: #{$navy};            // dark bands
+  --on-strong: #fff;
+  --rule: #{$blue};              // the line under slide titles, timeline dots, big numbers
+  --link: #{$navy};
+  // a slide's own background (a colour scheme sets these; schemes.html paints them behind the slide)
+  --paper-image: none;           // a pattern or picture over --paper (night's grid)
+  --paper-size: auto;            // its background-size: 40px 40px for a tile, cover for one picture
+  // shape
+  --radius: 14px;
+  --border: 0px;                 // a box's border width
+  --shadow: none;
+  --gap: 0.5em;
+  --pad: 0.55em 0.7em;
+  // type
+  --step--2: 0.64em;
+  --step--1: 0.8em;
+  --step-0: 1em;
+  --step-1: 1.25em;
+  --step-2: 1.56em;
+  --step-3: 1.95em;
+  --step-4: 2.44em;
+  --step-5: 3.05em;
+}
+
+// ---- Layout ----
+
+// Every slide's text follows the tokens, so a colour scheme reaches Chalkline's own pieces too.
+.reveal .slides section { color: var(--ink); }
+.reveal .slides section :is(h3, h4) { color: var(--heading); }
+.reveal .slides section a { color: var(--link); }
+
+// A slide with no title (## {#id}): no title line either.
+.reveal .slides section > h2:empty { display: none; }
+
+// Tiles: equal boxes side by side, as many columns as boxes (up to 5); 6 or more make two rows.
+// Another number: ::: {.tiles style="--cols: 2"}
+.reveal .tiles, .reveal .chain {
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(var(--cols, var(--n, 3)), minmax(0, 1fr));
+  align-items: stretch;
+  margin: 0.4em 0;
+  &:has(> :last-child:nth-child(1)) { --n: 1; }
+  &:has(> :last-child:nth-child(2)) { --n: 2; }
+  &:has(> :last-child:nth-child(4)) { --n: 4; }
+  &:has(> :last-child:nth-child(5)) { --n: 5; }
+  &:has(> :last-child:nth-child(7)), &:has(> :last-child:nth-child(8)) { --n: 4; }
+  &:has(> :nth-child(10)) { --n: 5; }
+  // narrow tiles (five in a row) get smaller words, so a long name still fits
+  > * { container-type: inline-size; }
+  > * > :is(h3, h4) { font-size: min(var(--step-1), 15cqi) !important; hyphens: auto; }
+  > * > p, > * > ul, > * > ol { font-size: min(1em, 12cqi); }
+}
+// Chain: tiles with an arrow between them (steps, causes, a flow).
+.reveal .chain {
+  align-items: center;
+  --gap: 1.4em;
+  > :not(:first-child) { position: relative; }
+  > :not(:first-child)::before {
+    content: "→";
+    position: absolute;
+    left: calc(var(--gap) / -2);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--hot-text);
+    font-weight: 700;
+  }
+}
+// Row: things side by side that wrap (pills, a number and its text).
+.reveal .row { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--gap); }
+.reveal .row:has(> p > .num) { align-items: center; }   // a number in a circle sits beside its text's middle
+.reveal .row > p { margin: 0; }
+// A small square picture in a row, beside a number and its words (a list of tasks or stations):
+//   ::: row   [1]{.num}   ![](images/mencius.jpg){.thumb fig-alt="Mencius"}   [the words]   :::
+// The row stays on one line and the words take the room left. --thumb changes the size.
+.reveal img.thumb {
+  width: var(--thumb, 3.4em); height: var(--thumb, 3.4em); max-width: none; max-height: none; margin: 0;
+  object-fit: cover; object-position: 50% 25%; border-radius: calc(var(--radius) * 0.6); background: var(--surface);
+}
+.reveal .row:has(img.thumb) { flex-wrap: nowrap; align-items: center; }
+.reveal .row:has(img.thumb) > :last-child { flex: 1; min-width: 0; }
+
+// Columns: Quarto draws slide columns as inline blocks side by side, so they have no gap (only the
+// width of a space), always line up at the top, and a box in one can't be as tall as the other.
+// Here they are a flex row: a real gap, and columns as tall as the tallest, so boxes in them line up.
+// The top margin stays 0, as the inline columns had none (decks keep their spacing).
+.reveal .slides .columns { display: flex; gap: var(--gap); align-items: stretch; margin-top: 0; }
+.reveal .slides .columns > .column:not([style*="width"]) { flex: 1 1 0; min-width: 0; }
+.reveal .slides .columns > .column:has(> .box:only-child) { display: flex; flex-direction: column; }
+.reveal .slides .columns > .column > .box:only-child { flex: 1; }
+
+// Spacing between the kit's blocks stacked one under another, so a box never touches the next one.
+// Not inside tiles, chains and rows: their own gap spaces them (a margin there pushes boxes out of line).
+.reveal :not(.tiles, .chain, .row) > :is(.box, .tiles, .chain, .strip, .columns, .steps) + :is(.box, .tiles, .chain, .strip, .columns, .steps) { margin-top: var(--gap); }
+// Cover: fills the slide's height and centres what's in it (section openers, a big idea).
+.reveal .slides section:has(> .cover) { height: 100%; }
+.reveal .cover {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--gap);
+}
+.reveal .cover > * { margin: 0; }
+// Media: a picture (or video) and its caption. The picture takes all the room the caption leaves,
+// so the caption never covers it:  ::: {.cover .media}  then the picture, then a box.
+.reveal .cover.media { justify-content: flex-start; padding-bottom: 1.4em; }   // clear of the footer
+.reveal .cover.media > :is(p, div):has(img, video, iframe) { flex: 1 1 0; min-height: 0; display: flex; justify-content: center; }
+.reveal .cover.media :is(img, video, iframe) { height: 100%; max-height: 100%; width: auto; max-width: 100%; object-fit: contain; margin: 0; }
+.reveal .cover.media figure { height: 100%; margin: 0; }
+// a line holding only a pinned (.absolute) thing takes no room
+.reveal .slides section > p:has(> .absolute:only-child) { margin: 0; height: 0; }
+
+// ---- Boxes ----
+
+.reveal .box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  padding: var(--pad);
+  background: var(--surface);
+  color: var(--ink);
+  border: var(--border) solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: left;
+  > * { margin: 0; }
+  h3, h4 { margin: 0; color: var(--heading); font-size: var(--step-1); line-height: 1.15; }
+  ul, ol { margin: 0; padding-left: 1.1em; }
+}
+.reveal .box.plain { background: var(--surface-2); --border: 1px; }
+.reveal .box.accent { background: var(--accent); color: var(--on-accent); }
+.reveal .box.hot { background: var(--hot); color: var(--on-hot); }
+.reveal .box.dark { background: var(--strong); color: var(--on-strong); }
+.reveal .box.dark, .reveal .strip { --hot-text: var(--hot); }   // the bright one reads well on dark
+.reveal .box.accent, .reveal .box.hot { --hot-text: currentColor; }
+.reveal .box.accent, .reveal .box.hot, .reveal .box.dark {
+  --heading: currentColor;
+  --ink-muted: currentColor;
+  h3, h4, strong { color: inherit; }
+}
+// the one box to look at
+.reveal .spot { outline: 4px solid var(--hot); outline-offset: -4px; }
+// a picture first in a box (a card's picture): as wide as the box, all cards' pictures the same height,
+// cropped to fill it:   ::: box   then   ![](images/mencius.jpg){fig-alt="Mencius"}   then the text.
+// --pic-height changes the height, --pic-position which part shows (faces are near the top),
+// --pic-fit: contain shows all of it (a drawing or an icon) instead of filling the space.
+.reveal .box > p:first-child:has(> img:only-child) { margin-bottom: 0.2em; }
+.reveal .box > p:first-child > img:only-child {
+  display: block; width: 100%; max-width: none; height: var(--pic-height, 4.5em); max-height: none; margin: 0;
+  object-fit: var(--pic-fit, cover); object-position: var(--pic-position, 50% 22%); border-radius: calc(var(--radius) * 0.6);
+}
+// a box's last line sits at its bottom (a source, a page number)
+.reveal .box > .end, .reveal .box > p:has(> .end) { margin-top: auto; }
+
+// Strip: a dark band across the slide, often a pill and a question.
+.reveal .strip {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  padding: 0.45em 0.9em;
+  margin: 0.4em 0;
+  background: var(--strong);
+  color: var(--on-strong);
+  border-radius: var(--radius);
+  > p { margin: 0; }
+  strong { color: inherit; }
+}
+
+// ---- Text roles: what the words are, not where they are ----
+
+.reveal .pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  flex-shrink: 0;
+  padding: 0.12em 0.7em;
+  background: var(--hot);
+  color: var(--on-hot);
+  border-radius: 999px;
+  font-size: var(--step--1);
+  font-weight: 700;
+}
+.reveal :where(.kicker, .big) { display: block; }   // :where: [A | B]{.bi .big} still stacks (bilingual.css)
+.reveal .kicker { font-size: var(--step--1); font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--hot-text); }
+.reveal .big { font-family: var(--r-heading-font); font-size: var(--step-4); font-weight: 700; line-height: 1.1; color: var(--heading); }
+.reveal .lead { font-size: var(--step-1); line-height: 1.3; }
+.reveal .muted { color: var(--ink-muted); }
+.reveal .small { font-size: var(--step--1); }
+.reveal .fine { font-size: var(--step--2); color: var(--ink-muted); }
+// a number in a circle: [1]{.num}
+.reveal .num {
+  display: inline-grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 1.7em;
+  height: 1.7em;
+  border-radius: 50%;
+  background: var(--strong);
+  color: var(--on-strong);
+  font-weight: 700;
+}
+// a blank to fill in: [ ]{.gap}
+.reveal .gap { display: inline-block; min-width: 4em; border-bottom: 3px solid currentColor; margin: 0 0.2em; }

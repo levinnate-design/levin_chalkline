@@ -1,0 +1,96 @@
+/*-- scss:defaults --*/
+// Chalkline's colour schemes, made from the brand colours (_brand.yml, through $navy, $blue, $turquoise,
+// $orange and $sky in revealjs.scss). Each one only sets the slide kit's tokens (layout.scss), and
+// Chalkline's own slide pieces read those, so tables, steps, vocab cards and boxes all follow.
+//
+//   One slide:   ## Title {.scheme-night}
+//   A deck:      slide-scheme: night          (in the deck's labels)
+//   A course:    slide-scheme: night          (in _quarto.yml, under format: revealjs:)
+//
+// The slide's own background is painted by schemes.html (reveal.js draws it in a separate layer).
+// A teacher's own scheme is a block like these in the course's CSS:  .reveal .scheme-mine { --paper: ...; }
+
+/*-- scss:rules --*/
+
+// Night: deep navy with faint graph paper, from the Robotics League course's "Workshop Night" slides.
+// Contrast on the slide: titles 18:1, text 15.4:1, quieter text 12.2:1, links 7.1:1.
+.reveal.scheme-night, .reveal .scheme-night {
+  --paper: #0b1630;
+  --paper-image: linear-gradient(rgba(120, 170, 255, 0.09) 1px, transparent 1px),
+                 linear-gradient(90deg, rgba(120, 170, 255, 0.09) 1px, transparent 1px);
+  --paper-size: 40px 40px;   // one square per hole, like the simulators
+  --ink: #e8eef8;
+  --ink-muted: #c9d6ea;
+  --heading: #fff;
+  --surface: #13223f;
+  --surface-2: #0f1d38;
+  --line: #26406b;
+  --accent: #{$turquoise};
+  --on-accent: #{$navy};
+  --hot: #{$orange};
+  --on-hot: #{$navy};
+  --hot-text: #{$orange};
+  --strong: #1f3a6b;
+  --on-strong: #fff;
+  --rule: #{mix($blue, #fff, 70%)};   // the brand blue, lighter, for the dark slide
+  --link: #{mix($blue, #fff, 70%)};
+  --border: 1px;
+}
+
+// Sky: the pale brand blue as the slide, white boxes, navy bands. Calm, for long reading.
+.reveal.scheme-sky, .reveal .scheme-sky {
+  --paper: #{$sky};
+  --surface: #fff;
+  --surface-2: #{mix($sky, #fff, 50%)};
+  --line: #{rgba($navy, 0.14)};
+  --accent: #{$blue};
+  --on-accent: #fff;
+  --strong: #{$navy};
+  --shadow: 0 2px 10px #{rgba($navy, 0.08)};
+}
+
+// Lagoon: the turquoise of the logo's hills as the slide, navy text (never white on turquoise), white
+// boxes. Loud: for openers, games and the one slide everyone should look at. Navy on turquoise: 7:1.
+.reveal.scheme-lagoon, .reveal .scheme-lagoon {
+  --paper: #{$turquoise};
+  // a slight diagonal: lighter turquoise at the top left, a little bluer at the bottom right.
+  // Navy text stays at 6:1 or better all the way across, quieter text at 4.7:1.
+  --paper-image: linear-gradient(135deg, #{mix($turquoise, #fff, 80%)} 0%, #{$turquoise} 50%, #{mix($turquoise, $blue, 85%)} 100%);
+  --paper-size: cover;
+  --ink: #{$navy};
+  --ink-muted: #{mix($navy, $turquoise, 88%)};
+  --heading: #{$navy};
+  --surface: #fff;
+  --surface-2: #{mix($turquoise, #fff, 18%)};
+  --line: #{$navy};
+  --border: 2px;
+  --accent: #{$navy};
+  --on-accent: #fff;
+  --hot-text: #{$navy};
+  --rule: #{$navy};
+  --strong: #{$navy};
+}
+
+// Sunrise: warm paper from the logo's orange sun, orange stripes, turquoise as the highlight.
+.reveal.scheme-sunrise, .reveal .scheme-sunrise {
+  --paper: #{mix($orange, #fff, 9%)};
+  --surface: #{mix($orange, #fff, 20%)};
+  --surface-2: #fff;
+  --line: #{rgba($navy, 0.16)};
+  --accent: #{$orange};
+  --on-accent: #{$navy};
+  --hot: #{$turquoise};
+  --on-hot: #{$navy};
+  --rule: #{$orange};
+  --strong: #{$navy};
+}
+
+// Dark schemes: Quarto's callouts and code have their own light colours
+.reveal .scheme-night, .reveal.scheme-night {
+  div.callout { background-color: var(--surface); border-color: var(--line); color: var(--ink); }
+  div.callout .callout-header { background-color: rgba(255, 255, 255, 0.05); }
+  div.callout .callout-title-container { color: var(--heading); }
+  pre { background: var(--surface-2); border: 1px solid var(--line); border-radius: 10px; }
+  code { color: #bff7f2; }
+  .vocab-term { border-bottom-color: var(--accent); }
+}

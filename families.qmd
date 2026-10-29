@@ -15,18 +15,10 @@ Welcome, families! This is where you can follow what your child is learning: the
 
 ## What we're learning
 
-```{python}
-#| output: asis
-import sys; sys.path.append("scripts")
-from catalog import markdown_learning, markdown_family_picks
-print(markdown_learning())
-```
+{{< overview learning >}}
 
 ## Good to look at together
 
-```{python}
-#| output: asis
-print(markdown_family_picks())
-```
+{{< overview family-picks >}}
 
 ::::

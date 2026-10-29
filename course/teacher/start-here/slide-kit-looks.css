@@ -1,0 +1,204 @@
+/* slide-kit-looks.css: this deck's own looks (loaded by `css:` in the deck's labels).
+   A look is a class on a slide's title, ## Title {.look-game}, and is mostly the slide kit's tokens:
+     --paper --ink --ink-muted --heading --surface --surface-2 --line --accent --on-accent
+     --hot --on-hot --strong --on-strong   --radius --border --shadow --gap --pad
+     --bi-second-size --bi-second-color --bi-zh-font   (bilingual text)
+   For a whole deck, put the tokens on .reveal instead of a slide's class.
+   --paper, --paper-image and --paper-size are the slide's background (Chalkline paints them behind it).
+   Rule of thumb: check that every text and background pair is easy to read. */
+
+/* game: thick outlines, hard shadows, tilted cards. Shapes only: the colours come from the slide's scheme. */
+.reveal section.look-game { --radius: 18px; --border: 3px; --line: var(--heading); --shadow: 0 6px 0 var(--heading); }
+.reveal section.look-game .tiles > .box:nth-child(odd) { transform: rotate(-1.2deg); }
+.reveal section.look-game .tiles > .box:nth-child(even) { transform: rotate(1deg) translateY(6px); }
+.reveal section.look-game .spot { outline: 0; --line: var(--hot); box-shadow: 0 8px 0 var(--hot); border-width: 4px; }
+.reveal section.look-game .strip { border-radius: 999px; }
+
+/* brutal: square corners, heavy borders, offset shadows. Shapes only, like game. */
+.reveal section.look-brutal { --radius: 0; --border: 4px; --line: var(--heading); --shadow: 7px 7px 0 var(--heading); }
+.reveal section.look-brutal .tiles > .box:nth-child(even) { --surface: var(--surface-2); }
+.reveal section.look-brutal .tiles > .box.spot, .reveal section.look-brutal .spot { outline: 0; --surface: var(--hot); --heading: var(--on-hot); --ink: var(--on-hot); --ink-muted: var(--on-hot); }
+.reveal section.look-brutal .strip { border: 4px solid var(--heading); box-shadow: 7px 7px 0 var(--hot); }
+.reveal section.look-brutal h2 { display: inline-block; padding: 2px 16px; background: var(--accent); color: var(--on-accent); border: 4px solid var(--heading); box-shadow: 6px 6px 0 var(--heading); }
+.reveal section.look-brutal h2::after { display: none; }
+
+/* dusk: a dark slide (with background-color="#00234F" on the title) */
+.reveal section.look-dusk {
+  --paper: #00234F;
+  --ink: #EAF4FB; --ink-muted: #A9C4DE; --heading: #fff; --surface: #073B7A; --line: #14D7CD; --border: 2px;
+  color: var(--ink);
+}
+.reveal section.look-dusk h2 { color: var(--heading); }
+.reveal section.look-dusk h2::after { background: #14D7CD; }
+
+/* trail: this deck's own colour scheme, for fun, after a handbag catalogue's "循迹" pages: cream paper,
+   suede and saddle leather, white stitching, olive line drawings (zigzag "tiger teeth", angled
+   connectors, a stitched circle) and turquoise beads. Pick it with Trail in the palette, or {.scheme-trail}. */
+.reveal .scheme-trail {
+  --paper: #f3eee6;
+  --paper-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 1280 720%27 preserveAspectRatio=%27xMidYMid slice%27%3E %3Cg fill=%27none%27 stroke=%27%238a7d4f%27 stroke-width=%272.2%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 opacity=%27.55%27%3E %3Cpath d=%27M1046 96 l14 -9 l14 9 l14 -9 l14 9 l14 -9 l14 9 l16 0%27/%3E %3Cpath d=%27M1030 132 h18 l12 10 l12 -10 l12 10 l12 -10 h40%27/%3E %3Cpath d=%27M1030 166 l12 -8 l12 8 l12 -8 l12 8 l12 -8 l12 8 h30%27/%3E %3Cpath d=%27M1066 202 h34 l14 14 l14 -14 h20 l14 14 l14 -14 h40%27/%3E %3Cpath d=%27M34 618 h40 l12 -12 l12 12 h26%27/%3E %3Cpath d=%27M60 650 l10 -7 l10 7 l10 -7 l10 7 l10 -7 l10 7%27/%3E %3Ccircle cx=%271214%27 cy=%27640%27 r=%2730%27 stroke-dasharray=%275 6%27/%3E %3Ccircle cx=%271214%27 cy=%27640%27 r=%276%27/%3E %3Cpath d=%27M1150 690 h40 l10 -10 h28%27/%3E %3C/g%3E %3Cg transform=%27rotate(-24 952 92)%27%3E %3Cellipse cx=%27952%27 cy=%2792%27 rx=%2734%27 ry=%2715%27 fill=%27%233aa8a0%27 opacity=%27.75%27 stroke=%27%238a7d4f%27 stroke-width=%272%27/%3E %3Cpath d=%27M926 92 l8 -6 l8 6 l8 -6 l8 6 l8 -6 l8 6%27 fill=%27none%27 stroke=%27%23f3eee6%27 stroke-width=%272%27 stroke-linecap=%27round%27/%3E %3C/g%3E %3Cg transform=%27rotate(62 1002 132)%27%3E %3Cellipse cx=%271002%27 cy=%27132%27 rx=%2722%27 ry=%2711%27 fill=%27%233aa8a0%27 opacity=%27.75%27 stroke=%27%238a7d4f%27 stroke-width=%272%27/%3E %3Cpath d=%27M986 132 l6 -5 l6 5 l6 -5 l6 5%27 fill=%27none%27 stroke=%27%23f3eee6%27 stroke-width=%272%27 stroke-linecap=%27round%27/%3E %3C/g%3E %3C/svg%3E");
+  --paper-size: cover;
+  --ink: #3a322b; --ink-muted: #6b5f52; --heading: #231d18;
+  --surface: #d9c9b2; --surface-2: #ece3d5; --line: rgba(75, 51, 36, 0.28);
+  --accent: #8a7d4f; --on-accent: #fff; --rule: #8a7d4f;
+  --hot: #3aa8a0; --on-hot: #10302d; --hot-text: #1d7a72;
+  --strong: #4b3324; --on-strong: #f4ede2;
+  --radius: 6px;
+  color: var(--ink);
+}
+.reveal .scheme-trail h2 { letter-spacing: 0.03em; }
+.reveal .scheme-trail h2 .bil-zh, .reveal .scheme-trail h2 [lang="zh"] { letter-spacing: 0.18em; }
+.reveal .scheme-trail h2::after { width: 120px; height: 14px; border-radius: 0; background: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 120 14%27%3E%3Cpath d=%27M2 10 l10 -7 l10 7 l10 -7 l10 7 l10 -7 l10 7 h56%27 fill=%27none%27 stroke=%27%238a7d4f%27 stroke-width=%272.4%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E") no-repeat left center / contain; }
+/* white stitching on suede and leather */
+.reveal .scheme-trail .box, .reveal .scheme-trail .strip, .reveal .scheme-trail .steps li { outline: 1.6px dashed rgba(255, 255, 255, 0.8); outline-offset: -7px; }
+.reveal .scheme-trail .box.plain { outline-color: rgba(75, 51, 36, 0.35); }
+.reveal .scheme-trail .tiles > .box.spot, .reveal .scheme-trail .spot { outline: 2px dashed var(--hot); outline-offset: -7px; box-shadow: 0 0 0 3px var(--hot); }
+/* a stitched ring on each card, like the one on the bag */
+.reveal .scheme-trail .tiles > .box { position: relative; }
+.reveal .scheme-trail .tiles > .box::after { content: ""; position: absolute; right: 14px; bottom: 14px; width: 22px; height: 22px; border-radius: 50%; border: 1.6px dashed rgba(255, 255, 255, 0.85); }
+.reveal .scheme-trail .pill { border-radius: 4px; }
+
+/* scroll: a mounted hanging scroll. Paper with fibres, a red frame with cloud-curl corners, a brush
+   stroke under the title, a seal, and cards hung from wooden rods with round ends. */
+.reveal section.look-scroll {
+  --paper: #EADFC4;
+  --paper-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27220%27 height=%27220%27%3E%3Cfilter id=%27f%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%27.9%27 numOctaves=%272%27 seed=%274%27/%3E%3CfeColorMatrix values=%270 0 0 0 .35 0 0 0 0 .24 0 0 0 0 .12 0 0 0 .09 0%27/%3E%3C/filter%3E%3Crect width=%27220%27 height=%27220%27 filter=%27url(%23f)%27/%3E%3C/svg%3E"), radial-gradient(ellipse at center, transparent 55%, rgba(90, 55, 20, 0.18));
+  --paper-size: 220px 220px, cover;
+  --ink: #2B2118; --ink-muted: #5E4E3A; --heading: #5A2A12; --surface: #FBF3DC; --surface-2: #FFF8E6;
+  --hot: #B3261E; --on-hot: #fff; --hot-text: #8C2F1B; --strong: #3B2414; --on-strong: #FBF3DC; --accent: #8C2F1B;
+  --rule: #8C2F1B; --radius: 2px; --shadow: 0 4px 10px rgba(60, 35, 10, 0.28);
+  --bi-zh-font: "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif;
+  --seal: "学";
+  color: var(--ink);
+}
+.reveal section.look-scroll::before {
+  content: ""; position: absolute; inset: -6px -10px; pointer-events: none; z-index: 0;
+  border: 1.5px solid rgba(140, 47, 27, 0.55); outline: 4px double rgba(140, 47, 27, 0.35); outline-offset: 6px;
+  background: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 80 80%27%3E%3Cg transform=%27rotate(0 40 40)%27 fill=%27none%27 stroke=%27%238C2F1B%27 stroke-width=%272.4%27 stroke-linecap=%27round%27%3E%3Cpath d=%27M4 76 V22 Q4 4 22 4 H76%27/%3E%3Cpath d=%27M12 76 V28 Q12 12 28 12 H76%27 stroke-width=%271.2%27/%3E%3Cpath d=%27M22 40 a10 10 0 1 1 10 10 a5 5 0 1 1 -5 -5%27/%3E%3Cpath d=%27M40 22 a10 10 0 1 0 10 -10%27/%3E%3C/g%3E%3C/svg%3E") left top / 64px no-repeat, url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 80 80%27%3E%3Cg transform=%27rotate(90 40 40)%27 fill=%27none%27 stroke=%27%238C2F1B%27 stroke-width=%272.4%27 stroke-linecap=%27round%27%3E%3Cpath d=%27M4 76 V22 Q4 4 22 4 H76%27/%3E%3Cpath d=%27M12 76 V28 Q12 12 28 12 H76%27 stroke-width=%271.2%27/%3E%3Cpath d=%27M22 40 a10 10 0 1 1 10 10 a5 5 0 1 1 -5 -5%27/%3E%3Cpath d=%27M40 22 a10 10 0 1 0 10 -10%27/%3E%3C/g%3E%3C/svg%3E") right top / 64px no-repeat,
+              url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 80 80%27%3E%3Cg transform=%27rotate(270 40 40)%27 fill=%27none%27 stroke=%27%238C2F1B%27 stroke-width=%272.4%27 stroke-linecap=%27round%27%3E%3Cpath d=%27M4 76 V22 Q4 4 22 4 H76%27/%3E%3Cpath d=%27M12 76 V28 Q12 12 28 12 H76%27 stroke-width=%271.2%27/%3E%3Cpath d=%27M22 40 a10 10 0 1 1 10 10 a5 5 0 1 1 -5 -5%27/%3E%3Cpath d=%27M40 22 a10 10 0 1 0 10 -10%27/%3E%3C/g%3E%3C/svg%3E") left bottom / 64px no-repeat, url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 80 80%27%3E%3Cg transform=%27rotate(180 40 40)%27 fill=%27none%27 stroke=%27%238C2F1B%27 stroke-width=%272.4%27 stroke-linecap=%27round%27%3E%3Cpath d=%27M4 76 V22 Q4 4 22 4 H76%27/%3E%3Cpath d=%27M12 76 V28 Q12 12 28 12 H76%27 stroke-width=%271.2%27/%3E%3Cpath d=%27M22 40 a10 10 0 1 1 10 10 a5 5 0 1 1 -5 -5%27/%3E%3Cpath d=%27M40 22 a10 10 0 1 0 10 -10%27/%3E%3C/g%3E%3C/svg%3E") right bottom / 64px no-repeat;
+}
+.reveal section.look-scroll > * { position: relative; z-index: 1; }
+.reveal section.look-scroll h2 { padding: 6px 0 0 56px; }   /* clear of the cloud-curl corner */
+.reveal section.look-scroll h2 { font-family: "Noto Serif SC", "Songti SC", Georgia, serif; color: var(--heading); }
+.reveal section.look-scroll h2::after { width: 180px; height: 12px; border-radius: 0; background: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 200 16%27 preserveAspectRatio=%27none%27%3E%3Cpath d=%27M2 9 C30 3 60 12 100 7 S170 4 198 8 L196 11 C160 9 120 14 80 12 S20 13 3 12 Z%27 fill=%27%238C2F1B%27/%3E%3C/svg%3E") no-repeat left center / 100% 100%; }
+/* the seal, bottom right */
+.reveal section.look-scroll::after {
+  content: var(--seal); position: absolute; right: 26px; bottom: 44px; z-index: 2;
+  width: 54px; height: 54px; display: grid; place-items: center; transform: rotate(-6deg);
+  background: #B3261E; color: #FBF3DC; border-radius: 6px; box-shadow: inset 0 0 0 3px #B3261E, inset 0 0 0 5px #FBF3DC;
+  font: 700 30px/1 "Noto Serif SC", "Songti SC", serif; opacity: 0.9;
+}
+/* cards hang from wooden rods with round ends */
+.reveal section.look-scroll .tiles { overflow: visible; row-gap: 30px; }
+.reveal section.look-scroll .tiles > .box {
+  position: relative; padding-top: 28px; padding-bottom: 28px; overflow: visible;
+  background: linear-gradient(180deg, #FFF9EA, #F4E7C6); border: 0; box-shadow: var(--shadow);
+}
+.reveal section.look-scroll .tiles > .box::before, .reveal section.look-scroll .tiles > .box::after {
+  content: ""; position: absolute; left: -9px; right: -9px; height: 13px; border-radius: 7px;
+  background: radial-gradient(circle at 6px 50%, #3B2414 5px, transparent 6px),
+              radial-gradient(circle at calc(100% - 6px) 50%, #3B2414 5px, transparent 6px),
+              linear-gradient(180deg, #A8703A, #7A4A21 60%, #5A3416);
+}
+.reveal section.look-scroll .tiles > .box::before { top: -6px; }
+.reveal section.look-scroll .tiles > .box::after { bottom: -6px; }
+.reveal section.look-scroll .tiles > .box h3 { font-family: "Noto Serif SC", "Songti SC", Georgia, serif; }
+.reveal section.look-scroll .spot { outline: 2px solid var(--hot); outline-offset: 4px; }
+.reveal section.look-scroll .strip { background: linear-gradient(90deg, #3B2414, #5A2A12 50%, #3B2414); box-shadow: inset 0 0 0 2px #3B2414, inset 0 0 0 4px rgba(232, 194, 122, 0.6); }
+.reveal section.look-scroll .pill { border-radius: 3px; background: #B3261E; color: #FBF3DC; }
+
+
+/* glass: flat and modern. A full-slide abstract picture (images/abstract-glow.jpg; swap in any photo, e.g.
+   one from Unsplash, and credit it in images/CREDITS.md) with frosted, semi-transparent tiles on it.
+   backdrop-filter blurs the picture behind each tile, so words stay readable wherever they sit. */
+.reveal .scheme-glass {
+  --paper: #0b2350;
+  --paper-image: url("images/abstract-glow.jpg");
+  --paper-size: cover;
+  --ink: #fff; --ink-muted: rgba(255, 255, 255, 0.78); --heading: #fff;
+  --surface: rgba(255, 255, 255, 0.13); --surface-2: rgba(8, 24, 56, 0.38);
+  --line: rgba(255, 255, 255, 0.32); --border: 1px;
+  --accent: #fff; --on-accent: #0b2350; --rule: #fff;
+  --hot: #ff8c0f; --on-hot: #0b2350; --hot-text: #ffc078;
+  --strong: rgba(6, 18, 44, 0.55); --on-strong: #fff;
+  --link: #bfe3ff;
+  --radius: 20px; --shadow: 0 10px 30px rgba(0, 10, 30, 0.25);
+  color: var(--ink);
+}
+.reveal .scheme-glass :is(.box, .strip, .steps li, table) {
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  backdrop-filter: blur(14px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+.reveal .scheme-glass .box.dark { background: var(--strong); }
+.reveal .scheme-glass .spot { outline: 0; border-color: var(--hot); box-shadow: 0 0 0 2px var(--hot), var(--shadow); }
+.reveal .scheme-glass h2 { letter-spacing: -0.01em; }
+.reveal .scheme-glass h2::after { height: 4px; width: 64px; border-radius: 2px; }
+.reveal .scheme-glass .pill { border-radius: 999px; }
+.reveal .scheme-glass .num { background: #fff; color: #0b2350; }
+.reveal .scheme-glass table { border-radius: 14px; overflow: hidden; }
+.reveal .scheme-glass table th { background: rgba(6, 18, 44, 0.55); }
+.reveal .scheme-glass table tr:nth-child(even) td { background: rgba(255, 255, 255, 0.08); }
+
+/* the bilingual slide (#bilingual): an orange box around the language controls, only while that slide shows */
+.reveal:has(section#bilingual.present) .bi-switch { opacity: 1; outline: 3px solid #ff8c0f; outline-offset: 5px; border-radius: 999px; }
+
+/* puzzle: four boxes in a 2 × 2 square that lock together like jigsaw pieces (the Jigsaw slide).
+   Each box's colour is --piece; a round tab of that colour sticks out into its neighbour. */
+.reveal .puzzle { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; height: 510px; font-size: 0.7em; --thumb: 2.8em; }
+.reveal .slides .puzzle > .box.box { position: relative; margin: 0; background: var(--piece); border-radius: 0; padding: 0.7em 1.4em; justify-content: center; gap: 0.5em; }
+.reveal .slides .puzzle > .box.box:nth-child(1) { border-top-left-radius: var(--radius); z-index: 2; }
+.reveal .slides .puzzle > .box.box:nth-child(2) { border-top-right-radius: var(--radius); }
+.reveal .slides .puzzle > .box.box:nth-child(3) { border-bottom-left-radius: var(--radius); }
+.reveal .slides .puzzle > .box.box:nth-child(4) { border-bottom-right-radius: var(--radius); z-index: 2; }
+.reveal .puzzle > .box:is(:nth-child(1), :nth-child(4))::before,
+.reveal .puzzle > .box:is(:nth-child(1), :nth-child(4))::after {
+  content: ""; position: absolute; width: 1.9em; height: 1.9em; border-radius: 50%; background: var(--piece);
+}
+.reveal .puzzle > .box:nth-child(1)::after { right: -0.95em; top: calc(50% - 0.95em); }    /* into B */
+.reveal .puzzle > .box:nth-child(1)::before { bottom: -0.95em; left: calc(50% - 0.95em); } /* into C */
+.reveal .puzzle > .box:nth-child(4)::after { top: -0.95em; left: calc(50% - 0.95em); }     /* into B */
+.reveal .puzzle > .box:nth-child(4)::before { left: -0.95em; top: calc(50% - 0.95em); }    /* into C */
+.reveal .puzzle .row .bil { font-weight: 700; }
+
+/* The lesson intro uses three sizes only, so nothing is promoted or demoted by accident:
+   all content (the table with its subject and date row, vocab words, frame, Do now questions) at the
+   body size; the tags a step smaller; the corner labels small. The whole slide is set one notch
+   smaller so it fits, instead of shrinking parts of it. 中文 is 0.8 of its line, as everywhere. */
+.reveal section#lesson-intro { font-size: 0.74em; }
+.reveal section#lesson-intro .box > h3 { font-size: var(--step-1); line-height: 1.15; }
+/* lesson-info: the lesson intro's topic, objective and homework, labels right-aligned against a line
+   (the Lesson intro slide). An ordinary Markdown table inside  ::: lesson-info */
+.reveal .lesson-info table { font-size: 1em; width: 100%; margin: 0; }   /* body size, not Chalkline's smaller table text */
+.reveal .lesson-info thead { display: none; }
+.reveal .lesson-info td { background: none !important; border-bottom: 2px solid color-mix(in srgb, var(--hot) 45%, transparent); padding: 0.2em 0.7em; vertical-align: top; }
+.reveal .lesson-info tr:last-child td { border-bottom: 0; }
+.reveal .lesson-info td:first-child { text-align: right; font-weight: 700; color: var(--heading); border-right: 3px solid var(--accent); }
+.reveal .lesson-info td:first-child .bil { align-items: flex-end; text-align: right; }
+/* vocab-row: focus words under their pictures, centred and a little larger than tiles make them */
+.reveal .tiles.vocab-row > .box { align-items: center; text-align: center; }
+.reveal .tiles.vocab-row > .box > p { font-size: 1em; }   /* body size: the words are content, not captions */
+
+/* area: a labelled part of a slide, the label small in its top-right corner, so an observer can't
+   miss it:  ::: {.area .content label="Content objective"}  (or .language). The label is the block's own words. */
+.reveal .area { position: relative; padding: 0.55em 0.8em 0.6em; border-radius: var(--radius); border-left: 6px solid var(--area-line); background: var(--area-bg); }
+.reveal .area + .area { margin-top: 0.5em; }
+.reveal .area::before {
+  content: attr(data-label); position: absolute; top: 0.45em; right: 0.8em;
+  font-size: 0.6em; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--area-line);
+}
+.reveal .area.content { --area-line: #0067C5; --area-bg: color-mix(in srgb, #0087FF 7%, var(--paper)); }
+.reveal .area.language { --area-line: #B85C00; --area-bg: color-mix(in srgb, #FF8C0F 9%, var(--paper)); }
+.reveal .area > .lesson-info { margin-top: 0.35em; }
+.reveal .area .obj { margin: 0.7em 0 0.3em; }
+.reveal .area .frame { margin: 0.3em 0 0; }
+.reveal .area .tiles { margin: 0.2em 0; }
+.reveal .area .tiles > .box { --surface-2: var(--paper); padding: 0.3em 0.4em; }
+.reveal .area .lesson-head { font-family: var(--r-heading-font); font-weight: 700; color: var(--heading); font-size: var(--step-1); line-height: 1.15; margin-top: 0.2em; }
+.reveal .area .tag { display: inline-block; font-size: var(--step--1); margin: 0.45em 0 0.1em; }
+.reveal .area .tag + .tiles { margin-top: 0.15em; }
+.reveal .lesson-info tr:first-child td { color: var(--area-line); font-weight: 700; }   /* subject and date: the first row, in the area's colour */
+.reveal .area.donow { --area-line: #0B7A75; --area-bg: color-mix(in srgb, #14D7CD 10%, var(--paper)); height: 100%; box-sizing: border-box; display: flex; flex-direction: column; padding-top: 1.6em; }
+.reveal .area.donow > ol { margin: 0; padding-left: 1.4em; }
+.reveal .area.donow > ol > li + li { margin-top: 0.5em; }
+.reveal .area.donow > .end { margin-top: auto; }

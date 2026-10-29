@@ -18,7 +18,7 @@ if [ ! -x .venv/bin/python ]; then
 fi
 
 export QUARTO_PYTHON="$PWD/.venv/bin/python"
-"$QUARTO_PYTHON" scripts/build_if_needed.py --profile teacher   # full build first if anything changed, so pages open fast
+"$QUARTO_PYTHON" chalkline.py build --profile teacher   # full build first if anything changed, so pages open fast
 echo "Starting Chalkline (teacher version) at http://localhost:4100"
 echo "Leave this window open while you work. Close it to stop the site."
 quarto preview --profile teacher   # the teacher version: answer keys and notes included

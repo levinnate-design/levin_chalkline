@@ -1,0 +1,27 @@
+<!-- Color-code slide decks and packets in tables and the sidebar, so they're easy to spot.
+     Finds each table's "Type" column (the overview, its By unit / By type tabs, unit pages)
+     and tags the row; styles/styles.scss does the coloring. Included on every web page via
+     include-after-body (the Chalkline project type in _extension.yml). -->
+<script>
+(function () {
+  const kinds = { slides: "row-slides", packet: "row-packet" };
+  const teacherSite = !!document.querySelector('a[href$="-teacher-packet.pdf"]');
+  document.querySelectorAll("table").forEach(function (table) {
+    const head = [...table.querySelectorAll("thead th")].map(th => th.textContent.trim().toLowerCase());
+    const col = head.indexOf("type");
+    if (col < 0) return;
+    table.querySelectorAll("tbody tr").forEach(function (tr) {
+      const cell = tr.children[col];
+      if (!cell) return;
+      const type = cell.textContent.trim().toLowerCase();
+      if (kinds[type]) tr.classList.add(kinds[type]);
+      if (type) { tr.classList.add("row-t-" + type.replace(/[^a-z]/g, "")); cell.classList.add("type-cell"); }
+      // Teacher site: tell the two packet editions apart (scripts/packets.py names the teacher one ...-teacher-packet.pdf).
+      if (type === "packet" && teacherSite)
+        tr.classList.add(tr.querySelector('a[href$="-teacher-packet.pdf"]') ? "row-packet-teacher" : "row-packet-student");
+    });
+  });
+  // Sidebar: slide decks (files named ...slides.qmd) get a marker.
+  document.querySelectorAll('#quarto-sidebar a.sidebar-link[href$="slides.html"]').forEach(a => a.classList.add("sidebar-slides"));
+})();
+</script>

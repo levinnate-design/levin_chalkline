@@ -1,0 +1,26 @@
+---
+title: "Unit 1: My First Unit"
+short-title: "Unit 1 · My First Unit"
+unit: 1
+format: html
+description: "A starter unit to copy and change: one slide deck, one handout and four vocab words."
+objectives:
+  - I can say what today's goal is.
+  - I can discuss a question with a partner.
+  - I can write a one-sentence summary.
+listing:
+  contents: "*.qmd"
+  type: table
+  fields: [title, type, description]
+  field-display-names:
+    type: Type
+  sort: "order"
+  filter-ui: false
+  sort-ui: false
+---
+
+{{< objectives >}}
+
+{{< packet >}}
+
+## Materials

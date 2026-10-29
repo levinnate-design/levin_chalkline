@@ -1,0 +1,179 @@
+# Builds both sites and puts them on Cloudflare Workers. How to set it up: HOSTING.md in the Chalkline
+# extension (_extensions/*/chalkline/HOSTING.md). Copy this file to .github/workflows/deploy.yml.
+#
+#   Public site  (quarto render)                    -> _site/          -> the Worker in hosting/public.jsonc
+#   Teacher site (quarto render --profile teacher)  -> _site-teacher/  -> the Worker in hosting/teacher.jsonc
+#
+# Every push, on any branch: builds both sites and keeps each as a download for a week
+# (Actions tab > the run > "Artifacts" at the bottom). Nothing goes online.
+# Pushes to main (or "Run workflow" on main): also uploads them, once the secrets
+# CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID exist.
+#
+# The teacher site is uploaded only when its address already asks for a sign-in (Cloudflare Access).
+# Until then the teacher Worker gets a placeholder page instead, so answer keys never go out unprotected.
+
+name: Build and publish
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:                      # one build per branch at a time; on other branches a newer push
+  group: publish-${{ github.ref }}  # replaces an older build, on main they wait their turn
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+env:
+  QUARTO_VERSION: 1.10.19         # use the same version as on your computer (quarto --version)
+
+jobs:
+  site:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {site: public,  profile: "",      folder: _site}
+          - {site: teacher, profile: teacher, folder: _site-teacher}
+    name: ${{ matrix.site }} site
+    runs-on: ubuntu-latest        # comes with Google Chrome, which prints the slide PDFs
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Python packages
+        run: pip install -r requirements.txt
+
+      - name: Chinese font for slide PDFs (Chalkline's own Noto Sans SC, so nothing to download)
+        run: |
+          mkdir -p ~/.local/share/fonts
+          cp _extensions/*/chalkline/fonts/print/*.otf ~/.local/share/fonts/
+          fc-cache -f
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: ${{ env.QUARTO_VERSION }}
+
+      - name: Build the ${{ matrix.site }} site
+        run: |
+          export QUARTO_PYTHON="$(which python)"
+          quarto render ${{ matrix.profile && format('--profile {0}', matrix.profile) }}
+
+      - name: Check the build
+        run: |
+          folder=${{ matrix.folder }}
+          test -f "$folder/index.html" || { echo "::error::$folder/index.html is missing"; exit 1; }
+          files=$(find "$folder" -type f | wc -l)
+          echo "$files files, $(du -sh "$folder" | cut -f1), $(find "$folder" -name '*.pdf' | wc -l) PDFs"
+          # Workers static assets: at most 20,000 files and 25 MiB a file (free plan)
+          [ "$files" -le 20000 ] || { echo "::error::$files files: more than Workers allows (20,000)"; exit 1; }
+          big=$(find "$folder" -type f -size +25M)
+          [ -z "$big" ] || { echo "::error::Too big for Workers (25 MiB a file): $big"; exit 1; }
+          if [ "${{ matrix.site }}" = public ]; then
+            # teacher files (manual-teacher.pdf, teacher packets) and teachers-only pages stay off the public site
+            leaked=$(find "$folder" \( -iname '*teacher*' -o -path "$folder/vocab/app/lessons.html" \) -not -path '*/site_libs/*')
+            [ -z "$leaked" ] || { echo "::error::Teacher files in the public site: $leaked"; exit 1; }
+          fi
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.site }}-site
+          path: ${{ matrix.folder }}
+          retention-days: 7
+
+      # Read-only, on every push: are the secrets there, and does Cloudflare accept them? (Prints no values.)
+      - name: Check the Cloudflare secrets
+        if: matrix.site == 'public'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          [ -n "$CLOUDFLARE_API_TOKEN" ] && echo "CLOUDFLARE_API_TOKEN: found" || echo "::warning::CLOUDFLARE_API_TOKEN: not found (Settings > Secrets and variables > Actions > Repository secrets)"
+          [ -n "$CLOUDFLARE_ACCOUNT_ID" ] && echo "CLOUDFLARE_ACCOUNT_ID: found" || echo "::warning::CLOUDFLARE_ACCOUNT_ID: not found (Settings > Secrets and variables > Actions > Repository secrets)"
+          if [ -n "$CLOUDFLARE_API_TOKEN" ]; then
+            # what the token looks like, without showing it: an API token is one piece (40 to about 55
+            # letters, digits, - and _); the Global API Key (not what we need) is 37 hex characters
+            python - <<'EOF'
+          import os, re
+          t = os.environ["CLOUDFLARE_API_TOKEN"]
+          print(f"Token: {len(t)} characters; spaces or line breaks: {'yes' if re.search(r'\s', t) else 'no'}; "
+                f"starts with 'Bearer': {'yes' if t.strip().lower().startswith('bearer') else 'no'}; "
+                f"looks like the Global API Key: {'yes' if re.fullmatch(r'[0-9a-f]{37}', t.strip()) else 'no'}")
+          parts = t.split()
+          print(f"Pieces separated by spaces or line breaks: {len(parts)}, of {', '.join(str(len(x)) for x in parts)} characters; "
+                f"a token is one piece, with no spaces")
+          a = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "")
+          print(f"Account ID: {len(a)} characters (should be 32); spaces or line breaks: {'yes' if re.search(r'\s', a) else 'no'}")
+          EOF
+            for url in "https://api.cloudflare.com/client/v4/user/tokens/verify" \
+                       "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/tokens/verify"; do
+              curl -s -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "$url" \
+                | python -c "import json,sys; d=json.load(sys.stdin); print('Token check, as a ' + ('user' if '/user/' in sys.argv[1] else 'account') + ' token (one of the two is enough):', d.get('result',{}).get('status') if d.get('success') else 'no: ' + '; '.join(e.get('message','') for e in d.get('errors', [])))" "$url"
+            done
+          fi
+          if [ -n "$CLOUDFLARE_API_TOKEN" ]; then
+            # the same token with any spaces and line breaks taken out (a phone can wrap a long token when copying it)
+            joined=$(printf '%s' "$CLOUDFLARE_API_TOKEN" | tr -d '[:space:]')
+            echo "::add-mask::$joined"
+            curl -s -H "Authorization: Bearer $joined" "https://api.cloudflare.com/client/v4/user/tokens/verify" \
+              | python -c "import json,sys; d=json.load(sys.stdin); print('Token with breaks taken out:', d.get('result',{}).get('status') if d.get('success') else 'no: ' + '; '.join(e.get('message','') for e in d.get('errors', [])))"
+          fi
+          if [ -n "$CLOUDFLARE_API_TOKEN" ] && [ -n "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            curl -s -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+              "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/subdomain" \
+              | python -c "import json,sys; d=json.load(sys.stdin); print('Cloudflare accepts them: workers.dev subdomain is', d['result']['subdomain']) if d.get('success') else print('::warning::Cloudflare said no:', '; '.join(e.get('message','') for e in d.get('errors', [])))"
+          fi
+
+      # ---- Going online: main only ----
+
+      - name: Decide whether to publish
+        id: live
+        run: |
+          live=false
+          if [ "$GITHUB_REF" = refs/heads/main ] && [ "$GITHUB_EVENT_NAME" != pull_request ]; then
+            if [ -z "${{ secrets.CLOUDFLARE_API_TOKEN }}" ] || [ -z "${{ secrets.CLOUDFLARE_ACCOUNT_ID }}" ]; then
+              echo "::warning::Not publishing: add the CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID secrets first (HOSTING.md in the Chalkline extension)."
+            else
+              live=true
+            fi
+          fi
+          echo "live=$live" >> "$GITHUB_OUTPUT"
+
+      - name: Is the teacher site behind a sign-in?
+        id: login
+        if: steps.live.outputs.live == 'true' && matrix.site == 'teacher'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          sub=$(curl -s -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+                "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/subdomain" \
+                | python -c "import json,sys; print((json.load(sys.stdin).get('result') or {}).get('subdomain', ''))")
+          name=$(grep -o "\"name\": *\"[^\"]*\"" hosting/teacher.jsonc | head -1 | cut -d\" -f4)
+          url="https://$name.$sub.workers.dev/"
+          # workers.dev turns away requests that look like a script's, so say who's asking
+          where=$(curl -s -o /dev/null -A "chalkline-publish-check/1.0" -w '%{redirect_url}' "$url" || true)
+          if [ -n "$sub" ] && [[ "$where" == *cloudflareaccess.com* ]]; then
+            echo "$url asks for a sign-in. Uploading the teacher site."
+            echo "config=hosting/teacher.jsonc" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::$url doesn't ask for a sign-in yet, so the teacher site was NOT uploaded (a placeholder page was). Turn on Cloudflare Access for the Worker $name (HOSTING.md in the Chalkline extension), then run this workflow again."
+            echo "config=hosting/teacher-placeholder.jsonc" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Upload to Cloudflare
+        if: steps.live.outputs.live == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          config="${{ steps.login.outputs.config || 'hosting/public.jsonc' }}"
+          npx --yes wrangler@4 deploy --config "$config" | tee deploy.log
+          grep -o 'https://[^ ]*workers.dev' deploy.log | head -1 | sed 's/^/Online at /' >> "$GITHUB_STEP_SUMMARY" || true

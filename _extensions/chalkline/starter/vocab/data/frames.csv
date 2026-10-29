@@ -1,0 +1,5 @@
+id,situation,function,frame_en,zh,example,level,vocab_ids,notes,status
+FRM-001,discussion,agree,I agree with ___ because ___.,我同意___，因为___。,I agree with Lin because the goal is clear.,1,,,reviewed
+FRM-002,discussion,disagree,I see it differently. I think ___.,我的看法不同。我认为___。,I see it differently. I think we need more time.,1,,,reviewed
+FRM-003,discussion,ask,Can you say more about ___?,你能多说一点关于___吗？,Can you say more about your idea?,1,,,reviewed
+FRM-004,writing,explain,"One reason ___ is that ___. For example, ___.",___的一个原因是___。例如，___。,"One reason I like group work is that I can learn from a partner. For example, Mia helped me with question 3.",1,CLS-002,,reviewed

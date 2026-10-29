@@ -1,0 +1,9 @@
+# Outside resources for the overview. They appear in the overview only, not on unit pages.
+# `source` is shown as a badge; anything that isn't "School" is treated as an outside source.
+
+- title: Simple English Wikipedia
+  url: https://simple.wikipedia.org/
+  type: reference
+  source: Wikipedia
+  audience: [teacher, student, parent]
+  description: An encyclopedia in easy English, for reading at home.

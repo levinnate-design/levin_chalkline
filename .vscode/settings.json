@@ -6,6 +6,12 @@
   // Turn on the project's .venv automatically in new terminals.
   "python.terminal.activateEnvironment": true,
 
+  // Lesson files (.qmd) open in Quarto's visual editor: headings, bold and lists look like a document.
+  // To see the plain text: Ctrl+Shift+F4 (Mac: Cmd+Shift+F4), or right-click the file > Edit in Source Mode.
+  "workbench.editorAssociations": {
+    "*.qmd": "quarto.visualEditor"
+  },
+
   // Wrap long lines of prose instead of scrolling sideways.
   "[quarto]": {
     "editor.wordWrap": "on"

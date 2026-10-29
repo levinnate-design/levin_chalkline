@@ -1,0 +1,468 @@
+<!--
+  Tap-to-vote polls for reveal.js slides. No server, no student devices:
+  students tap the buttons on the board (or you click them while counting hands).
+
+  Included in every slide deck by _quarto.yml. Write a poll on any slide:
+
+      ::: {.poll type="smileys"}
+      How confident do you feel?
+      :::
+
+      ::: {.poll type="choice" options="Athens | Sparta | Corinth" correct="B"}
+      Which city-state trained every boy to be a soldier?
+      :::
+
+      ::: {.poll type="truefalse" correct="false"}
+      Athens had a king.
+      :::
+
+  Options:
+    type      smileys, choice or truefalse
+    options   choice only: answers separated by |  (up to 6)
+    correct   optional: the right answer (a letter like B, or true/false), highlighted on reveal
+    cooldown  optional: seconds between taps (default 1), so one student can't vote 10 times fast
+
+  Results summary: put this on its own slide (usually the last one) to show every
+  poll in the deck on one page, ready to screenshot:
+
+      ## Poll results {.poll-summary-slide}
+
+      ::: {.poll-summary}
+      :::
+
+  On a poll slide:  R = show/hide results   1–6 = add a vote   (or use the buttons)
+  Votes are saved in this browser, so they survive changing slides or a refresh.
+-->
+<style>
+  .poll {
+    --poll-navy: #003477;
+    --poll-paper: #ebf7fd;
+    text-align: center;
+  }
+  .poll .poll-q { font-size: 1.05em; margin: 0.2em 0 0.6em; }
+  .poll .poll-q p { margin: 0; }
+
+  .poll .poll-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.4em;
+    flex-wrap: wrap;
+    margin: 0.7em 0 1em;
+  }
+  .poll .poll-btn {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25em;
+    width: 6.4em;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+  }
+  .poll .poll-face {
+    width: 4.8em;
+    height: 4.8em;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: var(--c);
+    color: var(--t, #fff);
+    font-weight: 700;
+    font-size: 1em;
+    box-shadow: 0 8px 0 rgba(0, 0, 0, 0.15);
+    transition: transform 0.12s, box-shadow 0.12s, filter 0.2s;
+  }
+  .poll .poll-face svg { width: 62%; height: 62%; }
+  .poll .poll-face .poll-letter { font-size: 2.1em; line-height: 1; }
+  .poll .poll-btn:hover .poll-face { transform: translateY(-3px); }
+  .poll .poll-btn:active .poll-face,
+  .poll .poll-btn.pop .poll-face { transform: translateY(4px) scale(0.94); box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15); }
+  .poll .poll-label { font-size: 0.62em; font-weight: 600; line-height: 1.2; color: #333; max-width: 10em; }
+  .poll.cooling .poll-face { filter: grayscale(0.6) opacity(0.55); }
+  .poll.cooling .poll-btn { cursor: default; }
+
+  .poll .poll-plus {
+    position: absolute;
+    top: -0.2em;
+    font-size: 0.6em;
+    font-weight: 700;
+    color: var(--c);
+    pointer-events: none;
+    animation: poll-float 0.8s ease-out forwards;
+  }
+  @keyframes poll-float { to { transform: translateY(-1.6em); opacity: 0; } }
+
+  .poll .poll-results { display: none; max-width: 92%; margin: 0.6em auto 0.9em; text-align: left; }
+  .poll.revealed .poll-results { display: block; }
+  .poll.revealed .poll-buttons { display: none; }
+  .poll .poll-row {
+    display: grid;
+    grid-template-columns: 1.7em 9em 1fr 6em;
+    align-items: center;
+    gap: 0.6em;
+    margin: 0.5em 0;
+    font-size: 0.8em;
+  }
+  .poll .poll-row .poll-face { width: 1.7em; height: 1.7em; font-size: 1em; box-shadow: none; }
+  .poll .poll-row-label { font-weight: 600; color: #222; line-height: 1.15; }
+  .poll .poll-row .poll-face .poll-letter { font-size: 0.9em; }
+  .poll .poll-track {
+    position: relative;
+    height: 1.7em;
+    background: rgba(0, 0, 0, 0.06);
+    border-radius: 0.85em;
+    overflow: hidden;
+  }
+  .poll .poll-bar {
+    height: 100%;
+    width: 0;
+    background: var(--c);
+    border-radius: 0.75em;
+    transition: width 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .poll .poll-num { font-weight: 700; color: var(--poll-navy); text-align: right; white-space: nowrap; }
+  .poll .poll-row.correct .poll-track { outline: 3px solid var(--poll-navy); outline-offset: 2px; }
+  .poll .poll-row.correct .poll-num::after { content: " ✓"; color: var(--poll-navy); }
+  .poll.has-correct .poll-row:not(.correct) { opacity: 0.6; }
+
+  .poll .poll-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6em;
+    font-size: 0.55em;
+    color: #555;
+  }
+  .poll .poll-controls button {
+    font: inherit;
+    font-weight: 600;
+    padding: 0.35em 1em;
+    border-radius: 999px;
+    border: 2px solid var(--poll-navy);
+    background: #fff;
+    color: var(--poll-navy);
+    cursor: pointer;
+  }
+  .poll .poll-controls .poll-show { background: var(--poll-navy); color: #fff; }
+  .poll .poll-total { min-width: 5.5em; }
+
+  /* Results summary slide */
+  .reveal .poll-summary-slide h2 { margin-bottom: 0.2em; }
+  .poll-summary { font-size: 0.62em; text-align: left; }
+  .poll-summary .poll-sum-head {
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+    margin-bottom: 0.6em;
+  }
+  .poll-summary .poll-sum-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    gap: 0.8em;
+  }
+  .poll-summary .poll-sum-card {
+    background: #ebf7fd;
+    border-radius: 0.8em;
+    padding: 0.7em 0.9em;
+    border-top: 0.35em solid #0087ff;
+  }
+  .poll-summary .poll-sum-title {
+    font-size: 0.75em;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #003477;
+  }
+  .poll-summary .poll-sum-q { font-weight: 600; line-height: 1.25; margin: 0.25em 0 0.5em; min-height: 2.5em; }
+  .poll-summary .poll-sum-q p { margin: 0; }
+  .poll-summary .poll-sum-row {
+    display: grid;
+    grid-template-columns: 6.5em 1fr 4.6em;
+    align-items: center;
+    gap: 0.4em;
+    margin: 0.3em 0;
+    font-size: 0.85em;
+  }
+  .poll-summary .poll-sum-label { line-height: 1.1; }
+  .poll-summary .poll-sum-row.correct .poll-sum-label { font-weight: 700; color: #003477; }
+  .poll-summary .poll-sum-track { height: 0.9em; background: rgba(0, 0, 0, 0.07); border-radius: 0.45em; overflow: hidden; }
+  .poll-summary .poll-sum-bar { display: block; height: 100%; background: var(--c); border-radius: 0.45em; }
+  .poll-summary .poll-sum-num { text-align: right; font-weight: 700; color: #003477; white-space: nowrap; }
+  .poll-summary .poll-sum-total { margin-top: 0.4em; font-size: 0.8em; color: #666; text-align: right; }
+</style>
+
+<script>
+(function () {
+  const polls = document.querySelectorAll(".poll");
+  if (!polls.length) return;
+  const isPreview = /[?&]receiver/.test(window.location.search);  // speaker-view thumbnails
+
+  // Brand colors, each with a readable text color (navy on light fills, white on dark).
+  const NAVY = "#003477";
+  const COLORS = [
+    { c: "#0087ff", t: "#fff" },   // blue
+    { c: "#ff8c0f", t: NAVY },     // orange
+    { c: "#14d7cd", t: NAVY },     // turquoise
+    { c: NAVY, t: "#fff" },        // navy
+    { c: "#fbc400", t: NAVY },     // yellow (extra)
+    { c: "#0abee6", t: NAVY },     // cyan (extra)
+  ];
+  const FACE = {
+    happy: '<svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"><circle cx="13" cy="15" r="1.5" fill="currentColor"/><circle cx="27" cy="15" r="1.5" fill="currentColor"/><path d="M11 24c4 5 14 5 18 0"/></svg>',
+    meh: '<svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"><circle cx="13" cy="15" r="1.5" fill="currentColor"/><circle cx="27" cy="15" r="1.5" fill="currentColor"/><path d="M12 26h16"/></svg>',
+    sad: '<svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"><circle cx="13" cy="15" r="1.5" fill="currentColor"/><circle cx="27" cy="15" r="1.5" fill="currentColor"/><path d="M11 29c4-5 14-5 18 0"/></svg>',
+    check: '<svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 21l7 7 13-15"/></svg>',
+    cross: '<svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"><path d="M12 12l16 16M28 12L12 28"/></svg>',
+  };
+
+  function attr(el, name) {
+    return el.getAttribute("data-" + name) ?? el.getAttribute(name) ?? "";
+  }
+
+  function choicesFor(el) {
+    const type = attr(el, "type").toLowerCase() || "choice";
+    if (type === "smileys" || type === "smiley") {
+      return [
+        { key: "happy", label: "Got it", color: "#14d7cd", text: NAVY, icon: FACE.happy },
+        { key: "meh", label: "Sort of", color: "#fbc400", text: NAVY, icon: FACE.meh },
+        { key: "sad", label: "Not yet", color: "#ff8c0f", text: NAVY, icon: FACE.sad },
+      ];
+    }
+    if (type === "truefalse" || type === "true-false" || type === "tf") {
+      return [
+        { key: "true", label: "True", color: "#14d7cd", text: NAVY, icon: FACE.check },
+        { key: "false", label: "False", color: "#ff8c0f", text: NAVY, icon: FACE.cross },
+      ];
+    }
+    const opts = attr(el, "options").split("|").map(s => s.trim()).filter(Boolean).slice(0, 6);
+    return opts.map((label, i) => {
+      const letter = String.fromCharCode(65 + i);
+      return { key: letter, label, color: COLORS[i].c, text: COLORS[i].t, icon: '<span class="poll-letter">' + letter + "</span>" };
+    });
+  }
+
+  function blip(freq) {
+    try {
+      const ctx = blip.ctx || (blip.ctx = new (window.AudioContext || window.webkitAudioContext)());
+      const o = ctx.createOscillator(), g = ctx.createGain();
+      o.type = "triangle";
+      o.frequency.setValueAtTime(freq, ctx.currentTime);
+      o.frequency.exponentialRampToValueAtTime(freq * 1.5, ctx.currentTime + 0.08);
+      g.gain.setValueAtTime(0.18, ctx.currentTime);
+      g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.18);
+      o.connect(g); g.connect(ctx.destination);
+      o.start(); o.stop(ctx.currentTime + 0.2);
+    } catch (e) { /* no sound available */ }
+  }
+
+  function load(key) {
+    try { return JSON.parse(localStorage.getItem(key)) || null; } catch (e) { return null; }
+  }
+  function save(key, value) {
+    try { localStorage.setItem(key, JSON.stringify(value)); } catch (e) { /* private window */ }
+  }
+
+  const controllers = [];
+
+  // --- Results summary: every poll in the deck on one slide ----------------
+  const summaries = document.querySelectorAll(".poll-summary");
+  function renderSummaries() {
+    if (!summaries.length || !controllers.length) return;
+    const stamp = new Date().toLocaleString([], { dateStyle: "medium", timeStyle: "short" });
+    const deck = (document.querySelector("#title-slide .title") || {}).textContent || document.title;
+    summaries.forEach(function (box) {
+      let html = '<div class="poll-sum-head"><strong>' + deck + '</strong><span>' + stamp + "</span></div>";
+      html += '<div class="poll-sum-grid">';
+      controllers.forEach(function (c) {
+        const n = c.sum(), pcts = c.percents(n), counts = c.counts();
+        html += '<div class="poll-sum-card">';
+        if (c.title()) html += '<div class="poll-sum-title">' + c.title() + "</div>";
+        html += '<div class="poll-sum-q">' + c.question() + "</div>";
+        c.choices.forEach(function (ch, i) {
+          const right = i === c.correctIndex;
+          html += '<div class="poll-sum-row' + (right ? " correct" : "") + '" style="--c:' + ch.color + '">' +
+            '<span class="poll-sum-label">' + ch.label + (right ? " ✓" : "") + "</span>" +
+            '<span class="poll-sum-track"><span class="poll-sum-bar" style="width:' + pcts[i] + '%"></span></span>' +
+            '<span class="poll-sum-num">' + counts[ch.key] + " · " + pcts[i] + "%</span></div>";
+        });
+        html += '<div class="poll-sum-total">' + n + (n === 1 ? " vote" : " votes") + "</div></div>";
+      });
+      box.innerHTML = html + "</div>";
+    });
+  }
+  if (window.Reveal) Reveal.on("slidechanged", renderSummaries);  // refresh the date/time stamp
+
+  polls.forEach(function (el, index) {
+    const choices = choicesFor(el);
+    if (!choices.length) return;
+    const storeKey = "poll:" + window.location.pathname + ":" + index;
+    const cooldown = Math.max(0, parseFloat(attr(el, "cooldown") || "1")) * 1000;
+    const correctRaw = attr(el, "correct").trim().toLowerCase();
+    const correctIndex = choices.findIndex(c => c.key.toLowerCase() === correctRaw || String(choices.indexOf(c) + 1) === correctRaw);
+
+    let counts = load(storeKey) || {};
+    choices.forEach(c => { counts[c.key] = counts[c.key] || 0; });
+    let cooling = false;
+
+    // Keep the question (the div's own content), then add the widget.
+    const q = document.createElement("div");
+    q.className = "poll-q";
+    while (el.firstChild) q.appendChild(el.firstChild);
+    el.appendChild(q);
+
+    const buttons = document.createElement("div");
+    buttons.className = "poll-buttons";
+    const results = document.createElement("div");
+    results.className = "poll-results";
+    choices.forEach(function (c, i) {
+      const b = document.createElement("button");
+      b.className = "poll-btn";
+      b.style.setProperty("--c", c.color);
+      b.style.setProperty("--t", c.text || "#fff");
+      b.setAttribute("aria-label", "Vote: " + c.label);
+      b.innerHTML = '<span class="poll-face">' + c.icon + '</span><span class="poll-label">' + c.label + "</span>";
+      b.addEventListener("click", function (e) { e.stopPropagation(); vote(i); });
+      buttons.appendChild(b);
+
+      const row = document.createElement("div");
+      row.className = "poll-row" + (i === correctIndex ? " correct" : "");
+      row.style.setProperty("--c", c.color);
+      row.style.setProperty("--t", c.text || "#fff");
+      row.innerHTML = '<span class="poll-face">' + c.icon + '</span>' +
+        '<span class="poll-row-label">' + c.label + "</span>" +
+        '<div class="poll-track"><div class="poll-bar"></div></div>' +
+        '<span class="poll-num"></span>';
+      results.appendChild(row);
+    });
+    el.appendChild(buttons);
+    el.appendChild(results);
+
+    const controls = document.createElement("div");
+    controls.className = "poll-controls";
+    controls.innerHTML = '<span class="poll-total"></span>' +
+      '<button class="poll-show">Show results</button><button class="poll-reset">Reset</button>';
+    el.appendChild(controls);
+    const total = controls.querySelector(".poll-total");
+    const showBtn = controls.querySelector(".poll-show");
+    const resetBtn = controls.querySelector(".poll-reset");
+
+    function sum() { return choices.reduce((n, c) => n + counts[c.key], 0); }
+
+    // Whole-number percentages that always add up to 100 (largest remainder method).
+    function percents(n) {
+      if (!n) return choices.map(() => 0);
+      const exact = choices.map(c => 100 * counts[c.key] / n);
+      const pct = exact.map(Math.floor);
+      let left = 100 - pct.reduce((a, b) => a + b, 0);
+      exact.map((x, i) => [x - Math.floor(x), i]).sort((a, b) => b[0] - a[0])
+        .slice(0, left).forEach(([, i]) => { pct[i] += 1; });
+      return pct;
+    }
+
+    function paint() {
+      renderSummaries();
+      const n = sum();
+      total.textContent = n + (n === 1 ? " vote" : " votes");
+      const revealed = el.classList.contains("revealed");
+      showBtn.textContent = revealed ? "Back to voting" : "Show results";
+      el.classList.toggle("has-correct", revealed && correctIndex >= 0);
+      const pcts = percents(n);
+      results.querySelectorAll(".poll-row").forEach(function (row, i) {
+        const v = counts[choices[i].key];
+        const pct = pcts[i];
+        row.querySelector(".poll-num").textContent = v + " · " + pct + "%";
+        row.querySelector(".poll-bar").style.width = revealed ? pct + "%" : "0";
+      });
+    }
+
+    function vote(i) {
+      if (cooling || el.classList.contains("revealed")) return;
+      const c = choices[i];
+      counts[c.key] += 1;
+      save(storeKey, counts);
+      blip(440 + i * 110);
+
+      const b = buttons.children[i];
+      b.classList.add("pop");
+      setTimeout(() => b.classList.remove("pop"), 150);
+      const plus = document.createElement("span");
+      plus.className = "poll-plus";
+      plus.textContent = "+1";
+      b.appendChild(plus);
+      setTimeout(() => plus.remove(), 800);
+
+      if (cooldown) {
+        cooling = true;
+        el.classList.add("cooling");
+        setTimeout(() => { cooling = false; el.classList.remove("cooling"); }, cooldown);
+      }
+      paint();
+    }
+
+    function toggleResults() {
+      el.classList.toggle("revealed");
+      // Let the bars start at 0, then grow.
+      requestAnimationFrame(() => requestAnimationFrame(paint));
+    }
+
+    let resetArmed = null;
+    function reset() {
+      if (!resetArmed) {
+        resetBtn.textContent = "Sure? Tap again";
+        resetArmed = setTimeout(() => { resetArmed = null; resetBtn.textContent = "Reset"; }, 3000);
+        return;
+      }
+      clearTimeout(resetArmed); resetArmed = null; resetBtn.textContent = "Reset";
+      choices.forEach(c => { counts[c.key] = 0; });
+      save(storeKey, counts);
+      el.classList.remove("revealed");
+      paint();
+    }
+
+    // The toolbox's "Reset for the next class": votes back to 0, no "Sure?" needed.
+    document.addEventListener("chalkline:reset", function (e) {
+      if (!e.detail || !e.detail.polls) return;
+      choices.forEach(c => { counts[c.key] = 0; });
+      save(storeKey, counts);
+      el.classList.remove("revealed");
+      paint();
+      renderSummaries();
+    });
+
+    showBtn.addEventListener("click", function (e) { e.stopPropagation(); toggleResults(); });
+    resetBtn.addEventListener("click", function (e) { e.stopPropagation(); reset(); });
+    if (isPreview) controls.style.visibility = "hidden";
+    paint();
+
+    controllers.push({
+      el, vote, toggleResults, choices, correctIndex, percents, sum,
+      counts: () => counts,
+      question: () => q.innerHTML,
+      title: () => { const h = el.closest("section")?.querySelector("h2"); return h ? h.textContent.trim() : ""; },
+    });
+  });
+
+  renderSummaries();  // now that every poll is set up
+
+  // Keyboard shortcuts, only on a slide that has a poll.
+  function currentPoll() {
+    if (!window.Reveal || !Reveal.getCurrentSlide) return null;
+    const slide = Reveal.getCurrentSlide();
+    return controllers.find(c => slide && slide.contains(c.el)) || null;
+  }
+  if (window.Reveal && !isPreview) {
+    Reveal.addKeyBinding({ keyCode: 82, key: "R", description: "Poll: show/hide results" }, function () {
+      const p = currentPoll(); if (p) p.toggleResults();
+    });
+    for (let n = 1; n <= 6; n++) {
+      const onKey = function () {
+        const p = currentPoll(); if (p && n <= p.choices.length) p.vote(n - 1);
+      };
+      // Only key 1 gets a line in the "?" help screen.
+      if (n === 1) Reveal.addKeyBinding({ keyCode: 49, key: "1–6", description: "Poll: add a vote" }, onKey);
+      else Reveal.addKeyBinding(48 + n, onKey);
+    }
+  }
+})();
+</script>

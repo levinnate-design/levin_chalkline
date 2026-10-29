@@ -1,0 +1,50 @@
+/* All slides ({{< slide-wall >}}): the values come from Chalkline's design layer (ui/ui.css). */
+.slide-wall { --sw-w: 200px; margin-top: 0.5rem; }
+.slide-wall[data-size="s"] { --sw-w: 132px; }
+.slide-wall[data-size="l"] { --sw-w: 300px; }
+@media (max-width: 600px) {   /* phones: two or three across, or one for Large */
+  .slide-wall { --sw-w: 140px; }
+  .slide-wall[data-size="s"] { --sw-w: 92px; }
+  .slide-wall[data-size="l"] { --sw-w: 100%; }
+}
+
+.sw-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 1rem; }
+.sw-total { color: var(--ui-muted, #5b6b80); font-weight: 600; }
+.sw-jump { display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0.75rem 0 0.25rem; }
+.sw-jump a { padding: 0.1rem 0.75rem; border: 1px solid var(--ui-line, #d6dee8); border-radius: var(--ui-r-pill, 999px);
+             color: var(--ui-ink, #10233f); font-size: 0.9rem; text-decoration: none; background: var(--ui-surface, #fff); }
+.sw-jump a:hover { border-color: var(--ui-line-strong, #aebdd0); background: var(--ui-soft, #f3f5f8); }
+
+.sw-unit { margin-top: 1.75rem; scroll-margin-top: 4rem; }
+.sw-unit-title { margin: 0 0 0.5rem; padding-bottom: 0.3rem; border-bottom: 2px solid var(--ui-line, #d6dee8); }
+.sw-unit-title a { color: inherit; text-decoration: none; }
+
+.sw-deck { margin: 0 0 1.25rem; }
+.sw-deck-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.75rem; margin-bottom: 0.4rem; }
+.sw-deck-title { font-weight: 700; font-size: 1.05rem; color: var(--ui-ink, #10233f); text-decoration: none; }
+.sw-deck-title:hover { text-decoration: underline; }
+.sw-deck-sub, .sw-deck-count { color: var(--ui-muted, #5b6b80); font-size: 0.9rem; }
+.sw-deck-pdf { font-size: 0.85rem; font-weight: 600; padding: 0 0.6rem; border-radius: var(--ui-r-pill, 999px);
+               background: var(--ui-soft, #f3f5f8); color: var(--ui-ink, #10233f); text-decoration: none; }
+.sw-deck-pdf:hover { background: var(--ui-soft-hover, #e6ebf1); }
+
+/* The slides: a contact sheet that wraps to the width of the page. */
+.sw-strip { display: grid; grid-template-columns: repeat(auto-fill, minmax(var(--sw-w), 1fr)); gap: 10px; }
+.sw-slide { display: block; color: var(--ui-ink, #10233f); text-decoration: none; }
+.sw-pic { position: relative; display: block; }
+.sw-slide img { display: block; width: 100%; aspect-ratio: var(--sw-ratio, 3 / 2); object-fit: cover;
+                border-radius: var(--ui-r-sm, 10px); background: var(--ui-soft, #f3f5f8);
+                box-shadow: 0 0 0 1px var(--ui-line, #d6dee8); transition: transform 0.15s, box-shadow 0.15s; }
+.sw-slide:hover img, .sw-slide:focus-visible img { transform: translateY(-2px);
+                box-shadow: 0 0 0 2px var(--ui-focus, #0087ff), 0 8px 20px rgba(16, 35, 63, 0.18); }
+.sw-n { position: absolute; bottom: 6px; left: 6px; min-width: 1.5em; padding: 0 0.35em; border-radius: var(--ui-r-pill, 999px);
+        background: rgba(16, 35, 63, 0.72); color: #fff; font-size: 0.72rem; font-weight: 700; line-height: 1.5; text-align: center; }
+.sw-cap { display: block; margin-top: 0.25rem; font-size: 0.8rem; line-height: 1.25; color: var(--ui-muted, #5b6b80);
+          overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.slide-wall[data-size="s"] .sw-cap { display: none; }
+.sw-empty { padding: 1rem 1.25rem; border-radius: var(--ui-r, 14px); background: var(--ui-soft, #f3f5f8); color: var(--ui-muted, #5b6b80); }
+
+@media print {
+  .sw-bar, .sw-jump { display: none; }
+  .sw-deck { break-inside: avoid; }
+}

@@ -24,12 +24,7 @@ listing:
 
 :::: {.overview}
 
-```{python}
-#| output: asis
-import sys; sys.path.append("scripts")
-from catalog import markdown_season, markdown_by_unit, markdown_by_type
-print(markdown_season())
-```
+{{< overview season >}}
 
 :::: {.content-visible when-profile="teacher"}
 ::: {.ov-notice}
@@ -43,10 +38,7 @@ print(markdown_season())
 
 ## By unit
 
-```{python}
-#| output: asis
-print(markdown_by_unit())
-```
+{{< overview by-unit >}}
 
 ## Everything
 
@@ -55,13 +47,9 @@ print(markdown_by_unit())
 
 ## By type
 
-```{python}
-#| output: asis
-print(markdown_by_type())
-```
+{{< overview by-type >}}
 
 :::
-
 
 ::::
 

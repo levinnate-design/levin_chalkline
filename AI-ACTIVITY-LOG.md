@@ -47,6 +47,16 @@ This file is the **shared local memory and handoff log** across all AI assistant
 
 <!-- AI_LOG_FEED_START -->
 
+### [2026-10-29 14:51] COMPLETED — Import latest upstream Chalkline features into local and live Chalklines
+- **AI Assistant:** Antigravity (Gemini)
+- **Status:** COMPLETED
+- **Files Touched:** _extensions/chalkline/, chalkline.py, all-slides.qmd, brand/styles.scss, brand/revealjs.scss, _quarto.yml, _quarto-teacher.yml, _quarto-student.yml, index.qmd, families.qmd, course/teacher/start-here/*, scripts/catalog.py, scripts/packets.py, Start Chalkline.*, .vscode/*, .github/workflows/publish.yml, .gitignore, requirements.txt, CLAUDE.md, TOOL-CHANGES.md, DELETED: _extensions/classroom/, DELETED: _extensions/pdf-viewer/, DELETED: brand/typst/, DELETED: brand/fonts/print/, DELETED: brand/type-colors.html, UNTRACKED-GENERATED: vocab/app/
+- **Notes:** Imported John's latest project-chalkline features through 4c5f4df into both local Teacher (_site-teacher) and live Student (_site / GitHub Pages) builds: unified _extensions/chalkline/ extension & chalkline.py CLI/templates, All Slides visual slide-wall (all-slides.qmd) across units & summatives, Bilingual [English | 中文]{.bi} text + corner EN/文A/中/⇅ switch, Slide Kit layout tokens & brand colour schemes (night, sky, lagoon, sunrise), View Source (U) & redesigned W toolbox menu (View Source, speaker notes, and Answer key gated to Teacher build; classroom tools active on both local and live sites), Quick Start & Slide Kit tour decks under Teachers Only. Verified 58/58 pages, packets, slide PDFs, and 114 slide pictures with 0 errors and pushed to origin/main.
+### [2026-10-29 14:38] IN PROGRESS — Import latest upstream Chalkline features into local and live Chalklines
+- **AI Assistant:** Antigravity (Gemini)
+- **Status:** IN PROGRESS
+- **Files Touched:** _extensions/chalkline/, chalkline.py, all-slides.qmd, brand/, _quarto*.yml, index.qmd, families.qmd, course/teacher/start-here/, .vscode/, .github/workflows/publish.yml, TOOL-CHANGES.md
+- **Notes:** Importing John's latest project-chalkline features (unified _extensions/chalkline/ extension, chalkline.py CLI & templates, All Slides wall, Bilingual [en | zh]{.bi} text & corner language switch, Slide Kit & colour schemes, View Source U & redesigned W toolbox, Quick Start & Slide Kit tour decks) into both local Teacher and live Student Chalklines.
 ### [2026-10-29 10:04] COMPLETED — Enable Classroom Toolbox, Packet/Vocab sidebars, and Play at Home on live site
 - **AI Assistant:** Antigravity (Gemini)
 - **Status:** COMPLETED

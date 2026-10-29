@@ -1,0 +1,43 @@
+title: Chalkline
+author: Chalkline
+version: 0.1.0
+quarto-required: ">=1.6.0"
+contributes:
+  shortcodes:
+    - shortcodes.lua
+    - pdf-viewer/pdf-viewer.lua
+    - blocks.lua               # vocab cards, word banks and the overview, built by scripts/blocks.py
+  filters:
+    - path: video-shape.lua   # before shortcodes run: marks each video tall or wide
+      at: pre-ast
+    - filter.lua
+    - slide-style/slide-style.lua   # TO BE REMOVED (the first experiment, replaced by bilingual/ and styles/layout.scss)
+    - bilingual/bilingual.lua       # [English | 中文]{.bi} anywhere: the two languages, and the switch on slides (see that file)
+  # A course's _quarto.yml says `project: type: chalkline` to get these. Its own settings are merged
+  # on top: lists (like a theme) add to these, so the course's own styles load after Chalkline's.
+  # Paths here are inside this extension.
+  project:
+    project:
+      type: website
+      pre-render:
+        - scripts/freeze_check.py  # clears saved Python results (_freeze/) when season, vocab, scripts or the date change
+        - scripts/catalog.py       # reads every document's labels and writes generated/catalog.yml for the overview
+        - scripts/lessons.py       # reads course/lessons/ and writes the lesson map and each lesson's before/next links
+        - scripts/vocab_terms.py   # reads vocab/data/vocab.csv and writes generated/vocab-terms.json for {{< vocab >}} pop-ups
+        - scripts/vocab_app.py     # copies the vocab app into vocab/app/, with the brand's colors, fonts and logo
+      post-render:
+        - scripts/student_site.py  # student site only: removes teachers-only pages and their PDFs
+        - scripts/packets.py       # each unit's printables as one packet PDF, plus a year packet (full renders only)
+        - scripts/slides_pdf.py    # every slide deck as a PDF, one slide per page (full renders only)
+        - scripts/slide_pictures.py   # a picture of every slide, for the All slides page (full renders only)
+    format:
+      html:
+        theme: [cosmo, styles/styles.scss]
+        include-after-body: styles/type-colors.html   # color-codes slide decks and packets in tables
+      revealjs:
+        theme: [default, styles/revealjs.scss, styles/layout.scss, styles/schemes.scss]   # layout.scss: the slide kit (tiles, boxes, text roles); schemes.scss: colour schemes; "default": no Google Fonts imports ("simple" pulls in two)
+      typst:
+        font-paths: [fonts/print]   # Fredoka, Patrick Hand, and Noto Sans SC for Chinese in PDFs
+        template-partials:          # Chalkline's page layouts (worksheets, posters, playful)
+          - typst/typst-template.typ
+          - typst/typst-show.typ

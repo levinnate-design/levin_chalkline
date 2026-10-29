@@ -21,10 +21,10 @@
       // Runs before the preview: a full build if anything changed since the last one, so pages open fast.
       "label": "Build site if needed",
       "type": "shell",
-      "command": "${workspaceFolder}/.venv/bin/python scripts/build_if_needed.py --profile teacher",
+      "command": "${workspaceFolder}/.venv/bin/python chalkline.py build --profile teacher",
       "options": { "env": { "QUARTO_PYTHON": "${workspaceFolder}/.venv/bin/python" } },
       "windows": {
-        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe scripts\\build_if_needed.py --profile teacher",
+        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe chalkline.py build --profile teacher",
         "options": { "env": { "QUARTO_PYTHON": "${workspaceFolder}\\.venv\\Scripts\\python.exe" } }
       },
       "problemMatcher": []
@@ -46,8 +46,8 @@
       // Builds the student site (no answer keys) if anything changed, then serves it at http://localhost:4101
       "label": "Open student site",
       "type": "shell",
-      "command": "${workspaceFolder}/.venv/bin/python scripts/open_site.py student",
-      "windows": { "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe scripts\\open_site.py student" },
+      "command": "${workspaceFolder}/.venv/bin/python chalkline.py open student",
+      "windows": { "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe chalkline.py open student" },
       "options": { "env": { "QUARTO_PYTHON": "${workspaceFolder}/.venv/bin/python" } },
       "isBackground": true,
       "problemMatcher": []
@@ -55,8 +55,28 @@
     {
       "label": "Export vocab (Quizlet, Kahoot, Anki)",
       "type": "shell",
-      "command": "python scripts/export_vocab.py",
+      "command": "python chalkline.py export-vocab",
+      "problemMatcher": []
+    },
+    {
+      // Asks for the kind (slides, worksheet...), the unit and the title, then makes the file from a template.
+      "label": "New slide deck or worksheet",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/python chalkline.py new ${input:newKind} ${input:newUnit} \"${input:newTitle}\"",
+      "windows": { "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe chalkline.py new ${input:newKind} ${input:newUnit} \"${input:newTitle}\"" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Check the vocab list",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/python chalkline.py validate",
+      "windows": { "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe chalkline.py validate" },
       "problemMatcher": []
     }
+  ],
+  "inputs": [
+    { "id": "newKind", "type": "pickString", "description": "What kind of file?", "options": ["slides", "worksheet"], "default": "slides" },
+    { "id": "newUnit", "type": "promptString", "description": "Which unit? (its number, like 2)" },
+    { "id": "newTitle", "type": "promptString", "description": "Title (the file name comes from it)" }
   ]
 }
