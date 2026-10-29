@@ -13,10 +13,10 @@
     const units = data ? data.units.filter(function (u) { return u.packet; }) : [];
     if (!units.length) { body.append(h("div", { class: "ui-empty", text: "This course has no unit packets yet." })); return {}; }
     let unit = (units.find(function (u) { return u.id === data.unit; }) || units[0]).id, teacher = false;
-    const key = h("button", { class: "ui-btn ui-small ct-packet-key", "aria-pressed": "false", text: "Answer key",
+    const key = data.teacher ? h("button", { class: "ui-btn ui-small ct-packet-key", "aria-pressed": "false", text: "Answer key",
       title: "Show the teacher edition, with the answer keys", onclick: function () {
         teacher = !teacher; key.setAttribute("aria-pressed", String(teacher)); paint();
-      } });
+      } }) : null;
     const pages = h("div", { class: "ct-packet-pages ct-nodrag" });
     body.append(h("div", { class: "ct-packet-head" }, unitMenu(units, unit, null, function (v) { unit = v; paint(); }), key), pages);
 

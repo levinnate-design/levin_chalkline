@@ -16,6 +16,16 @@ Newest entries first.
 - **AI assistant:** which one made the change.
 -->
 
+## 2026-10-29: Enable Classroom Toolbox, Packet/Vocab sidebars, and Play at Home on live site
+- **Asked for:** "There's no packet overlay on the live site? ... Yes push those features as well as the other tools (stop watch, voice levels, etc)"
+- **Why:** So teachers presenting directly from the live GitHub Pages site (and students reviewing slides) have full access to the Classroom Toolbox (`W` menu: Stopwatch, Clock `K`, Voice Level & Noise Meter, Traffic Light, Spotlight, Name Picker, Groups, Scoreboard, QR Code, Music, Dice, Slide Size), the Packet overlay sidebar (`P`), the Vocab sidebar (`V`), and the Play at Home review games page, while keeping answer keys and speaker notes restricted to the local Teacher build.
+- **Changed:**
+  - `_extensions/classroom/filter.lua` — removed the `and is_teacher()` gate from the reveal.js `classroom-tools` and `pdf-viewer` dependency injection so all slide tools and sidebars (`W`, `P`, `V`, `K`) load on the live student build as well as the teacher build; added `teacher = is_teacher()` to `#chalkline-course` JSON metadata; kept speaker notes (`::: notes`) teacher-only.
+  - `_extensions/classroom/toolbox/tools/packet.js` — gated the `"Answer key"` toggle button inside the Packet sidebar on `data.teacher` so the public live site displays the student unit packet PDF without attempting to load teacher-only answer key packets.
+  - `course/play.qmd` & `_quarto-student.yml` — updated `audience` to `[teacher, student]` so the Play at Home (`课后闯关`) one-player review games page is published on the live site.
+- **Who it helps:** probably every Chalkline course where teachers present from the hosted GitHub Pages URL in the classroom.
+- **AI assistant:** Antigravity (Gemini)
+
 ## 2026-10-26: Import upstream Chalkline tool features (Toolbox, Sidebars, Review Games, Learning Activities, PDF Viewer, Card Overview) & update Teachers Only Start Here
 - **Asked for:** "I want to import newly added features from the original chalkline (insufficient doubt) ... Update the 'Start Here' part of teachers only, but do not import the new units 'Gobekli Tepe' and 'STEM/Robot Lifts'"
 - **Why:** To bring in the latest upstream Chalkline tool capabilities (Classroom Toolbox `W` menu, Vocab `V` and Packet `P` slide sidebars, Word Blitz/Jeopardy/Snowman/Bingo review games, interactive learning activities, slide PDF viewer with touch-pen annotation, and card-based overview) while preserving all Mingwan School Social Studies curriculum units, vocabulary, and IB MYP customizations without cluttering the course with sample STEM/Göbekli Tepe units.

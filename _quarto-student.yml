@@ -11,7 +11,6 @@ website:
   draft-mode: gone
   # ---- Everything below is written by scripts/catalog.py before each render. Don't edit by hand. ----
   drafts:
-  - course/play.qmd
   - course/teacher/ai-prompts.qmd
   - course/teacher/co-teacher-onboarding.qmd
   - course/teacher/start-here/index.qmd

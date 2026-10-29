@@ -47,6 +47,11 @@ This file is the **shared local memory and handoff log** across all AI assistant
 
 <!-- AI_LOG_FEED_START -->
 
+### [2026-10-29 10:04] COMPLETED — Enable Classroom Toolbox, Packet/Vocab sidebars, and Play at Home on live site
+- **AI Assistant:** Antigravity (Gemini)
+- **Status:** COMPLETED
+- **Files Touched:** _extensions/classroom/filter.lua, _extensions/classroom/toolbox/tools/packet.js, course/play.qmd, _quarto-student.yml, TOOL-CHANGES.md, AI-ACTIVITY-LOG.md
+- **Notes:** Enabled Classroom Toolbox (W menu: Stopwatch, Clock K, Voice Level & Noise Meter, Traffic Light, Spotlight, Name Picker, Groups, Scoreboard, QR Code, Music, Dice, Slide Size), Packet overlay sidebar (P), Vocab sidebar (V), and Play at Home review games on the live student site while keeping answer keys and speaker notes restricted to the local Teacher build.
 ### [2026-10-29 09:41] COMPLETED — Verify repository status and live Chalkline site deployment
 - **AI Assistant:** Antigravity (Gemini)
 - **Status:** COMPLETED

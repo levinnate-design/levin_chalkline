@@ -72,7 +72,7 @@ local function course_data()
   local unit_id = here:match("^course/units/([^/]+)/")
                or here:match("^course/summatives/([^/]+)/")
                or here:match("^course/teacher/test%-units/([^/]+)/")
-  local data = { root = string.rep("../", select(2, here:gsub("/", ""))), unit = unit_id, units = {}, words = {} }
+  local data = { root = string.rep("../", select(2, here:gsub("/", ""))), unit = unit_id, teacher = is_teacher(), units = {}, words = {} }
   local packets = read("packets.json") or {}
   for _, u in ipairs(read("units.json") or {}) do
     table.insert(data.units, { id = u.id, number = u.number, title = u.short, packet = packets[u.id] and packets[u.id].pdf or nil })
@@ -350,13 +350,12 @@ local function Meta(meta)
   -- Slides: a {{< video >}} with no size of its own fills the room left on its slide.
   if quarto.doc.is_format("revealjs") then include_once("video-fit.html") end
   -- Slides: the classroom toolbox (toolbox/toolbox.js; turn off with `classroom-tools: false`).
-  -- Teacher build only: students (and families, on the student site) never see it.
   local tools = meta["classroom-tools"]
   local tools_off = tools ~= nil and pandoc.utils.type(tools) ~= "table" and pandoc.utils.stringify(tools) == "false"
   -- Chalkline's design layer (ui/ui.css) on every page and deck: the tools, games, vocab pop-ups
   -- and the PDF viewer all take their colors, corners and buttons from it.
   if quarto.doc.is_format("html") or quarto.doc.is_format("revealjs") then games.ui() end
-  if quarto.doc.is_format("revealjs") and not tools_off and is_teacher() then
+  if quarto.doc.is_format("revealjs") and not tools_off then
     -- The QR code sends students to this deck on the STUDENT site (never the teacher site, which has
     -- the answer keys): `student-site:` in _quarto.yml (or the older classroom-tools: qr-site:), plus
     -- this deck's path in the site.

@@ -3,8 +3,8 @@ title: "Play at home"
 subtitle: "Vocab games for one player, on a phone, tablet or computer"
 type: game
 order: 2
-audience: [teacher]   # teachers only for now. To let students play at home: audience: [teacher, student]
-description: "Word Blitz and other one-player vocab games, made for phones as well as computers. Teachers only until you turn it on for students."
+audience: [teacher, student]
+description: "Word Blitz and other one-player vocab games, made for phones as well as computers."
 format:
   html:
     toc: false
