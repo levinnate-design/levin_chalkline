@@ -47,6 +47,11 @@ This file is the **shared local memory and handoff log** across all AI assistant
 
 <!-- AI_LOG_FEED_START -->
 
+### [2026-11-01 17:24] COMPLETED — Roll out G7/8 tool updates to G6 Chalkline (unified _extensions/chalkline, All Slides wall, bilingual toggle, Slide Kit, and Review Games)
+- **AI Assistant:** Antigravity (Gemini)
+- **Status:** COMPLETED
+- **Files Touched:** /Users/nathaniellevin/chalkline-g6/*, AI-ACTIVITY-LOG.md
+- **Notes:** Upgraded chalkline-g6 to unified _extensions/chalkline extension and chalkline.py CLI, All Slides wall (all-slides.qmd), bilingual text switch, Slide Kit layouts & color schemes, Review Games, Play at Home, and For Families pages while preserving Grade 6 MYP Year 1 rubrics and site titles.
 ### [2026-11-01 17:02] COMPLETED — Update Overview hero banner & Year Packet PDF cover names to formal names across G7/8 and G6 Chalklines
 - **AI Assistant:** Antigravity (Gemini)
 - **Status:** COMPLETED
