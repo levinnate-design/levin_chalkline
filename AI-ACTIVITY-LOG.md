@@ -47,6 +47,11 @@ This file is the **shared local memory and handoff log** across all AI assistant
 
 <!-- AI_LOG_FEED_START -->
 
+### [2026-11-01 17:02] COMPLETED — Update Overview hero banner & Year Packet PDF cover names to formal names across G7/8 and G6 Chalklines
+- **AI Assistant:** Antigravity (Gemini)
+- **Status:** COMPLETED
+- **Files Touched:** course/season.yml, AI-ACTIVITY-LOG.md, /Users/nathaniellevin/chalkline-g6/course/season.yml
+- **Notes:** Updated course/season.yml name/name_zh from 'Chalkline Sample / 示例课程' to 'Social Studies Chalkline / 社会学科' (chalkline-mingwan) and 'Social Studies Chalkline - G6 / 六年级社会学科' (chalkline-g6) while preserving website titles as requested. Created GitHub Pages repo levin_chalkline_g6 and pushed both G7/8 and G6 sites live.
 ### [2026-10-29 14:51] COMPLETED — Import latest upstream Chalkline features into local and live Chalklines
 - **AI Assistant:** Antigravity (Gemini)
 - **Status:** COMPLETED

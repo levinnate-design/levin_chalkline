@@ -1,8 +1,8 @@
 # Course facts used by slides and printables, so names and dates live in one place.
 # Only `name` is needed; the rest are optional.
 
-name: Chalkline Sample
-name_zh: 示例课程
+name: Social Studies Chalkline
+name_zh: 社会学科
 season: 2026–2027
 
 events:              # shown as "Coming up" on the overview (the next two)
