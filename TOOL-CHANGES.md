@@ -16,6 +16,15 @@ Newest entries first.
 - **AI assistant:** which one made the change.
 -->
 
+## 2026-11-02: Slide Design Constraints & Image Layout Clamping (1050x700 Canvas)
+- **Asked for:** "Enact those 4 constraints."
+- **Why:** To eliminate vertical overflow, image blowouts, dark-on-dark contrast failures, and broken slide layouts across all slide decks created or edited by AI assistants.
+- **Changed:**
+  - `brand/revealjs.scss` — added strict media height clamps (`img:not(.stretch):not(.r-stretch) { max-height: 280px; object-fit: contain; }`, `.column img { max-height: 270px; }`), synced dark slide contrast rules, and compact slide padding for callouts and cards.
+  - `CLAUDE.md`, `AGENTS.md`, `GEMINI.md` — codified the 4 Slide Design Constraints into the assistant SOP (1050×700 virtual canvas budget, vertical item budget of max 4-5 items per slide, strict image height constraints, native Quarto layout syntax, and high-contrast color rules).
+- **Who it helps:** All teachers and students viewing or designing Chalkline slides.
+- **AI assistant:** Antigravity (Gemini)
+
 ## 2026-10-29: Import unified `_extensions/chalkline` extension, All Slides wall, Bilingual text, Slide Kit & Colour Schemes, View Source (`U`), and Quick Start into local & live sites
 - **Asked for:** "Lets import new features from John's (insufficent doubt) chalkline into both my local and live chalklines."
 - **Why:** To upgrade both the local Teacher build (`_site-teacher`) and the live GitHub Pages site (`_site`) with John's latest `project-chalkline` improvements while preserving all Mingwan Social Studies curriculum, summatives, IB MYP references, and live-site classroom tools.

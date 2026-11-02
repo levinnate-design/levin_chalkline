@@ -30,22 +30,101 @@ $presentation-heading-font: "Poppins", "Source Sans 3", "Noto Sans SC", sans-ser
 // The browser uses the first font in the list that has the character, so emoji that Source Sans 3 itself
 // contains (🤖 💩 🔒) always come out black and white: use other emoji.)
 
-// Any slide with an explicit dark background (e.g. {background-color="#003477"}, not using a token scheme):
-// ensure high contrast for headings, bold text, and Chinese text, while keeping dark text inside light callouts/cards.
-body:not([data-scheme]) .reveal .slides section.has-dark-background:not([class*="scheme-"]),
-.reveal .slides section.section-slide {
-  color: #fff;
-  h1, h2, h3, h4, p, li { color: #fff; }
-  h2::after { background: #ff8c0f; }
-  strong { color: #ff8c0f; }
-  .zh { color: #14d7cd; }
-  .small-note { color: rgba(255, 255, 255, 0.88); }
-  a, .vocab-term { color: #14d7cd; border-bottom-color: #14d7cd; }
+// Any slide with an explicit dark background (e.g. data-background-color="#003477", section-slide, or dark background):
+// ensure crystal-clear high contrast for text, headings, bold keywords, and Chinese text,
+// while giving cards and callouts an opaque white background and crisp dark text.
+.reveal .slides section[data-background-color^="#0"],
+.reveal .slides section[data-background-color^="#1"],
+.reveal .slides section[data-background-color^="#2"],
+.reveal .slides section[data-background-color^="#3"],
+.reveal .slides section.has-dark-background,
+.reveal .slides section.section-slide,
+.reveal.has-dark-background .slides section.present {
+  color: #ffffff;
+  --r-main-color: #ffffff;
 
-  .callout, .card, .challenge, .goal, .success, .judges, .example-line, .vocab-card {
-    color: #1F2933;
-    h1, h2, h3, h4, p, li { color: #1F2933; }
-    strong, .zh { color: #003477; }
-    a, .vocab-term { color: #003477; }
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff !important;
+  }
+  h2::after {
+    background: #ff8c0f !important;
+  }
+  p, li, span.bil-en, span.bil-mono, .speaker-text {
+    color: #ffffff;
+  }
+  strong {
+    color: #ffb347 !important; // warm golden amber for high contrast against navy
+  }
+  .zh, .bil-zh {
+    color: #2de2d6 !important; // vibrant turquoise for Chinese subtitles
+  }
+  .small-note {
+    color: rgba(255, 255, 255, 0.92) !important;
+  }
+  a, .vocab-term {
+    color: #2de2d6 !important;
+    border-bottom-color: #2de2d6 !important;
+  }
+
+  // Inside light cards and callouts on dark slides: ensure crisp dark navy text
+  .callout, .card, .challenge, .goal, .success, .judges, .example-line, .vocab-card, .countdown {
+    background: #ffffff !important;
+    color: #1F2933 !important;
+    border: 1.5px solid rgba(0, 52, 119, 0.25) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
+
+    h1, h2, h3, h4, .callout-title, .callout-header {
+      color: #003477 !important;
+    }
+    p, li, .callout-body, span.bil-en, span.bil-mono {
+      color: #1F2933 !important;
+    }
+    strong {
+      color: #003477 !important;
+    }
+    .zh, .bil-zh {
+      color: #005691 !important;
+    }
+    a, .vocab-term {
+      color: #005691 !important;
+      border-bottom-color: #005691 !important;
+    }
   }
 }
+
+// ==============================================================================
+// SLIDE DESIGN SAFEGUARDS & CONSTRAINTS (1050x700 Canvas Budget)
+// ==============================================================================
+.reveal .slides section {
+  // Prevent runaway images from pushing captions and content off-slide
+  img:not(.stretch):not(.r-stretch) {
+    max-height: 280px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  // Inside columns, enforce strict media height bounds
+  .column {
+    img:not(.stretch):not(.r-stretch) {
+      max-height: 270px;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  // Compact callouts on slides to respect vertical real estate
+  .callout {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    padding: 0.4em 0.8em;
+  }
+
+  // Ensure card elements don't sprawl
+  .card {
+    padding: 0.6em 0.9em;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+  }
+}
+

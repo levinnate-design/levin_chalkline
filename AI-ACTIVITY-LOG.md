@@ -47,6 +47,66 @@ This file is the **shared local memory and handoff log** across all AI assistant
 
 <!-- AI_LOG_FEED_START -->
 
+### [2026-11-02 21:33] COMPLETED — Enact 4 slide design constraints and media height limits across G6 and Mingwan Chalklines
+- **AI Assistant:** Antigravity (Gemini)
+- **Status:** COMPLETED
+- **Files Touched:** brand/revealjs.scss,CLAUDE.md,AGENTS.md,GEMINI.md,TOOL-CHANGES.md
+- **Notes:** Added strict image height clamps (max-height 280px, column 270px) and compact callout/card padding to brand/revealjs.scss; codified the 4 Slide Design Constraints into CLAUDE.md, AGENTS.md, and GEMINI.md across both G6 and G7/8 repositories; verified clean Quarto rendering.
+### [2026-11-02 11:54] COMPLETED — Update Header & Remove Draft Mention in G6 Mesopotamia Booklet
+- **AI Assistant:** Antigravity
+- **Status:** COMPLETED
+- **Files Touched:** course/units/01-ancient-river-civilizations-draft/mesopotamia-reading-booklet.qmd
+- **Notes:** Updated booklet title and running header to 'G6 Mesopotamia Reading Booklet & Activity Packet 美索不达米亚阅读与活动手册'; removed '(Draft Unit)' / '（草稿单元）' from subtitle; rebuilt PDF and HTML.
+### [2026-11-02 11:40] COMPLETED — Update Mesopotamia Artifact Images & Condense Sources to Single Page
+- **AI Assistant:** Antigravity
+- **Status:** COMPLETED
+- **Files Touched:** course/units/01-ancient-river-civilizations-draft/images/sumerian-votive-statue.png,course/units/01-ancient-river-civilizations-draft/images/ram-in-a-thicket-ur.png,course/units/01-ancient-river-civilizations-draft/mesopotamia-reading-booklet.qmd
+- **Notes:** Extracted high-res cutout Votive Statue and Golden Ram PNGs from teacher-provided docx; updated image assets; streamlined Activity 2.2 3-step investigation table so both sources, prompts, sentence frames, and Exit Ticket 2 fit cleanly on Page 6.
+### [2026-11-02 10:52] COMPLETED — Reformat G6 Mesopotamia Draft Student Packet
+- **AI Assistant:** Antigravity
+- **Status:** COMPLETED
+- **Files Touched:** course/units/01-ancient-river-civilizations-draft/mesopotamia-reading-booklet.qmd
+- **Notes:** Reformatted reading booklet into a clean 10-page 2-page spread structure with extensive simplified Chinese sentence frames, word banks, and translations; resized Votive Statue and Royal Ram/Bull images to 70pt in a side-by-side 2-column comparative table so both fit on Page 6 together with Exit Ticket 2.
+### [2026-11-02 10:12] COMPLETED — Recompile Mesopotamia Grade 6 Draft Slide Deck
+- **AI Assistant:** Antigravity
+- **Status:** COMPLETED
+- **Files Touched:** course/units/01-ancient-river-civilizations-draft/mesopotamia_grade6_deck.html
+- **Notes:** Recompiled standalone Reveal.js deck with isolated 16:9 styles, removed default theme conflicts, enforced max-height constraints (290px) on media cards, verified clean Quarto rendering of draft unit index.
+### [2026-11-02 09:02] COMPLETED — Add 3-period Mesopotamia deck and packet to G6 Chalkline under DRAFT
+- **AI Assistant:** Antigravity
+- **Status:** COMPLETED
+- **Files Touched:** course/units/01-ancient-river-civilizations-draft/mesopotamia-slides.qmd,course/units/01-ancient-river-civilizations-draft/mesopotamia_grade6_deck.html,course/units/01-ancient-river-civilizations-draft/mesopotamia-reading-booklet.qmd,course/units/01-ancient-river-civilizations-draft/index.qmd,course/units/00-start-here/index.qmd
+- **Notes:** Deployed user's 24-slide 3-period Mesopotamia curriculum (Period 1: Environment & City-States, Period 2: Sumerian Culture & Beliefs, Period 3: Empires & Hammurabi's Code) to G6 Draft unit. Generated standalone Reveal.js presentation with local image assets, built native Chalkline 24-slide Quarto deck with timers and overlay zones, upgraded paired reading packet with 3 Stop & Checks and 3 Exit Tickets, added 00-start-here index.qmd, rendered full student site, packets, and slide pictures with 0 errors, and pushed to origin/main.
+### [2026-11-01 22:02] COMPLETED — Create G6 draft unit for Ancient River Civilizations with interactive slides and reading packet
+- **AI Assistant:** Antigravity
+- **Status:** COMPLETED
+- **Files Touched:** course/units/01-ancient-river-civilizations-draft/*
+- **Notes:** Built separate G6 draft unit (course/units/01-ancient-river-civilizations-draft/): 5-slide interactive lesson deck with Chalkline overlay zones, bilingual vocab anchors, paired student reading booklet with Stop & Checks 1 & 2, and Tourism Poster Challenge workspace with MYP Criteria A & D rubrics. Rendered HTML, Typst PDF, and unit packet with 0 errors, committed and pushed to levin_chalkline_g6 (commit 5f73f25).
+### [2026-11-01 21:53] IN PROGRESS — Create draft Unit 1 with slides and reading booklet for G6
+- **AI Assistant:** Antigravity
+- **Status:** IN PROGRESS
+- **Files Touched:** course/units/01-ancient-river-civilizations-draft/*
+- **Notes:** Building G6-adapted draft unit: 5-slide interactive deck with Chalkline overlay space, paired student reading booklet with Stop & Checks, and poster challenge.
+### [2026-11-01 20:57] COMPLETED — Push Slide Style deck under units/00-start-here and enable toolbox menu
+- **AI Assistant:** Antigravity
+- **Status:** COMPLETED
+- **Files Touched:** course/units/00-start-here/slide-style-slides.qmd,course/units/00-start-here/slide-style-teacher.css,_extensions/chalkline/toolbox/tools/style.js,TOOL-CHANGES.md
+- **Notes:** Deployed John's exact path (course/units/00-start-here/slide-style-slides.qmd) with 10 historical images, enabled Slide style tool in Classroom Toolbox W menu, and pushed to origin/main (commit b449d2c).
+### [2026-11-01 20:54] COMPLETED — Draggable timers, contrast fix & slide style editor in G6 Chalkline
+- **AI Assistant:** Antigravity
+- **Status:** COMPLETED
+- **Files Touched:** _extensions/chalkline/countdown.html,brand/revealjs.scss,course/units/01-ancient-river-civilizations/mesopotamia-slides.qmd,course/teacher/start-here/slide-style-slides.qmd,course/teacher/start-here/slide-style-teacher.css,TOOL-CHANGES.md
+- **Notes:** Upgraded countdown timer to draggable card with 📌 Follow across slides and ⤢ Float/Dock controls; expanded revealjs dark contrast CSS rules for high readability; pulled John's slide style experiment deck & teacher CSS from upstream with live site support; committed & pushed to levin_chalkline_g6 (commit a179224).
+### [2026-11-01 19:14] COMPLETED — Simplify Mesopotamia content in G6 Chalkline from WeDrive markdown
+- **AI Assistant:** Antigravity
+- **Status:** COMPLETED
+- **Files Touched:** course/units/01-ancient-river-civilizations/mesopotamia-slides.qmd,course/units/01-ancient-river-civilizations/mesopotamia-learning-sheets.qmd,course/units/01-ancient-river-civilizations/mesopotamia-formative.qmd,course/vocab/01-ancient-river-civilizations.yml,vocab/data/vocab.csv
+- **Notes:** Built Grade 6 (MYP Year 1) 40-min 4-stage slides, all-in-one learning packet with section vocab banks and activities 1.1-1.3, and formative assessment. Wired up verified image assets, added RIV-037 (Sumerians) & RIV-038 (Hammurabi), integrated Year 1 Criteria A & D rubrics into Teacher profile, rendered both HTML and Typst PDFs with 0 errors, rebuilt unit packet, and pushed to origin/main (commit 7774af9).
+### [2026-11-01 19:08] IN PROGRESS — Adapt G6 Unit 1 Mesopotamia content from WeDrive markdown
+- **AI Assistant:** Antigravity
+- **Status:** IN PROGRESS
+- **Files Touched:** course/units/01-ancient-river-civilizations/mesopotamia-slides.qmd,course/units/01-ancient-river-civilizations/mesopotamia-learning-sheets.qmd,vocab/data/vocab.csv
+- **Notes:** Building G6-adapted 40-min 4-stage slides, all-in-one student learning packet with vocab banks & bilingual toggle, Year 1 MYP rubrics, and existing image assets.
 ### [2026-11-01 17:24] COMPLETED — Roll out G7/8 tool updates to G6 Chalkline (unified _extensions/chalkline, All Slides wall, bilingual toggle, Slide Kit, and Review Games)
 - **AI Assistant:** Antigravity (Gemini)
 - **Status:** COMPLETED
